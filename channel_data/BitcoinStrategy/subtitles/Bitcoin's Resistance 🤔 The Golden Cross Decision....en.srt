@@ -1,0 +1,704 @@
+1
+00:00:00,000 --> 00:00:04,560
+The crypto market is celebrating and
+
+2
+00:00:02,120 --> 00:00:07,600
+it's all because of one reason, the S&P
+
+3
+00:00:04,560 --> 00:00:10,000
+500 has hit a new all-time high. We know
+
+4
+00:00:07,600 --> 00:00:12,600
+there's correlation between stocks and
+
+5
+00:00:10,000 --> 00:00:14,840
+Bitcoin. At the top is the S&P 500, at
+
+6
+00:00:12,600 --> 00:00:17,160
+the bottom is Bitcoin. Both tend to
+
+7
+00:00:14,840 --> 00:00:19,560
+bottom out at the same time, both tend
+
+8
+00:00:17,160 --> 00:00:22,160
+to top out at the same time and now we
+
+9
+00:00:19,560 --> 00:00:25,440
+have a nice stock rally fueled by a
+
+10
+00:00:22,160 --> 00:00:28,840
+potential easing of the Iran conflict.
+
+11
+00:00:25,440 --> 00:00:31,520
+And so risk-on assets go up, altcoins go
+
+12
+00:00:28,840 --> 00:00:33,720
+up. But the question is for how long?
+
+13
+00:00:31,520 --> 00:00:35,440
+This year comes from Glassnode. It shows
+
+14
+00:00:33,720 --> 00:00:37,880
+the realized price, the true market
+
+15
+00:00:35,440 --> 00:00:40,400
+mean, the active investor mean, and the
+
+16
+00:00:37,880 --> 00:00:44,080
+short-term holder realized price. There
+
+17
+00:00:40,400 --> 00:00:45,360
+are many resistances close to the 80K
+
+18
+00:00:44,080 --> 00:00:47,120
+mark. Let's have a look at the
+
+19
+00:00:45,360 --> 00:00:49,760
+short-term holder cost basis or the
+
+20
+00:00:47,120 --> 00:00:53,040
+realized price in a bit more detail. It
+
+21
+00:00:49,760 --> 00:00:55,840
+tends to be a somewhat reliable support
+
+22
+00:00:53,040 --> 00:00:58,160
+during a bull market and resistance
+
+23
+00:00:55,840 --> 00:01:00,160
+during a bear market. We have bounced
+
+24
+00:00:58,160 --> 00:01:02,640
+off that resistance in the middle of
+
+25
+00:01:00,160 --> 00:01:05,360
+January of this year. And again, now
+
+26
+00:01:02,640 --> 00:01:09,480
+that resistance is at 80K or to be a bit
+
+27
+00:01:05,360 --> 00:01:09,480
+more specific, $80,896.
+
+28
+00:01:09,720 --> 00:01:13,840
+When we look at the number of short-term
+
+29
+00:01:11,240 --> 00:01:15,800
+holders in profit or in loss, that's
+
+30
+00:01:13,840 --> 00:01:18,040
+very much balanced right now. The
+
+31
+00:01:15,800 --> 00:01:21,040
+overall average cost basis, so the
+
+32
+00:01:18,040 --> 00:01:22,640
+overall realized price is still below
+
+33
+00:01:21,040 --> 00:01:24,960
+the current price though. That's at
+
+34
+00:01:22,640 --> 00:01:27,440
+$54,000.
+
+35
+00:01:24,960 --> 00:01:30,280
+And in prior bear markets, we tended to
+
+36
+00:01:27,440 --> 00:01:32,520
+fall below that price level before we
+
+37
+00:01:30,280 --> 00:01:34,560
+could turn around. So what is it? Will
+
+38
+00:01:32,520 --> 00:01:37,600
+altcoins continue to rally because the
+
+39
+00:01:34,560 --> 00:01:39,880
+S&P 500 goes up more or do we face
+
+40
+00:01:37,600 --> 00:01:41,680
+massive resistance and are we in for
+
+41
+00:01:39,880 --> 00:01:43,800
+another sell-off and do we have to come
+
+42
+00:01:41,680 --> 00:01:46,000
+below that realized price first? Have a
+
+43
+00:01:43,800 --> 00:01:48,520
+look at the realized profit and loss
+
+44
+00:01:46,000 --> 00:01:50,960
+ratio. So this is a 30-day exponential
+
+45
+00:01:48,520 --> 00:01:53,120
+moving average. We tended to fall in the
+
+46
+00:01:50,960 --> 00:01:55,360
+negatives, in the red at the end of
+
+47
+00:01:53,120 --> 00:01:57,920
+every bear market. We have already
+
+48
+00:01:55,360 --> 00:02:00,200
+fallen below it this time, but note how
+
+49
+00:01:57,920 --> 00:02:02,680
+in the past we also had our fake outs.
+
+50
+00:02:00,200 --> 00:02:05,240
+We had more loss realization than profit
+
+51
+00:02:02,680 --> 00:02:08,600
+realization over here and over here, but
+
+52
+00:02:05,240 --> 00:02:11,280
+subsequently Bitcoin still fell from 50K
+
+53
+00:02:08,600 --> 00:02:14,160
+all the way to 15K. So this signal
+
+54
+00:02:11,280 --> 00:02:16,240
+unfortunately is not very reliable. What
+
+55
+00:02:14,160 --> 00:02:18,920
+signal is reliable though? Let's have a
+
+56
+00:02:16,240 --> 00:02:21,000
+look at the perfect golden cross or
+
+57
+00:02:18,920 --> 00:02:23,120
+death cross. I've made an analysis for
+
+58
+00:02:21,000 --> 00:02:25,920
+Bitcoin. I checked all the different
+
+59
+00:02:23,120 --> 00:02:28,120
+combinations for a shorter term and a
+
+60
+00:02:25,920 --> 00:02:30,680
+longer term moving average. I tried to
+
+61
+00:02:28,120 --> 00:02:32,240
+figure out what's historically the best
+
+62
+00:02:30,680 --> 00:02:34,600
+for Bitcoin. Some moving average
+
+63
+00:02:32,240 --> 00:02:36,680
+combinations work better than others.
+
+64
+00:02:34,600 --> 00:02:39,720
+The best combination is over here, the
+
+65
+00:02:36,680 --> 00:02:41,880
+two-day with the 116-day
+
+66
+00:02:39,720 --> 00:02:44,320
+simple moving average. If you take a
+
+67
+00:02:41,880 --> 00:02:46,480
+fixed betting price, this is how our
+
+68
+00:02:44,320 --> 00:02:48,680
+equity line develops over time. So it's
+
+69
+00:02:46,480 --> 00:02:51,440
+a very nice constant winner. And while
+
+70
+00:02:48,680 --> 00:02:53,560
+we have already crossed the 116-day
+
+71
+00:02:51,440 --> 00:02:56,280
+simple moving average with the price, we
+
+72
+00:02:53,560 --> 00:02:58,720
+have not yet crossed it with the moving
+
+73
+00:02:56,280 --> 00:03:00,840
+average. So that's why the backtests are
+
+74
+00:02:58,720 --> 00:03:03,760
+useful. If we stay at our current price
+
+75
+00:03:00,840 --> 00:03:07,320
+level today on the 18th of April and we
+
+76
+00:03:03,760 --> 00:03:09,400
+close the day, UTC time zone, midnight
+
+77
+00:03:07,320 --> 00:03:11,800
+at that price level, then the moving
+
+78
+00:03:09,400 --> 00:03:13,840
+averages will cross. We've got a golden
+
+79
+00:03:11,800 --> 00:03:16,440
+cross and that would be bullish. But
+
+80
+00:03:13,840 --> 00:03:18,280
+there might also be the slight risk that
+
+81
+00:03:16,440 --> 00:03:20,480
+today isn't that bullish, that we sell
+
+82
+00:03:18,280 --> 00:03:23,200
+off again and then we get rejected one
+
+83
+00:03:20,480 --> 00:03:26,000
+more time. This is an extremely close
+
+84
+00:03:23,200 --> 00:03:28,640
+call. We had that close call on the 26th
+
+85
+00:03:26,000 --> 00:03:30,560
+of October of last year. We had that
+
+86
+00:03:28,640 --> 00:03:33,960
+again in the middle of January of this
+
+87
+00:03:30,560 --> 00:03:35,760
+year and now it's yet another major
+
+88
+00:03:33,960 --> 00:03:37,920
+decision that's going to be made over
+
+89
+00:03:35,760 --> 00:03:40,080
+the course of the next hours. Here's how
+
+90
+00:03:37,920 --> 00:03:42,240
+much that strategy of the two-day and
+
+91
+00:03:40,080 --> 00:03:43,960
+the 216-day simple moving average
+
+92
+00:03:42,240 --> 00:03:46,400
+outperformed just buying and holding. We
+
+93
+00:03:43,960 --> 00:03:50,040
+move from 21% per annum, so we start the
+
+94
+00:03:46,400 --> 00:03:51,800
+backtest in 2018 to 152%
+
+95
+00:03:50,040 --> 00:03:53,480
+per annum. The maximum drawdown is
+
+96
+00:03:51,800 --> 00:03:55,360
+comparable though, the maximum drawdown
+
+97
+00:03:53,480 --> 00:03:57,120
+duration is not. We do have some
+
+98
+00:03:55,360 --> 00:03:58,920
+volatility because we do introduce some
+
+99
+00:03:57,120 --> 00:04:02,160
+leverage as well. This is the optimal
+
+100
+00:03:58,920 --> 00:04:03,600
+leverage, 2.5x long and 2x short. And if
+
+101
+00:04:02,160 --> 00:04:05,840
+you're wondering how often does this
+
+102
+00:04:03,600 --> 00:04:09,120
+strategy change positions, on average
+
+103
+00:04:05,840 --> 00:04:10,640
+it's every 60 days. We can also look at
+
+104
+00:04:09,120 --> 00:04:12,360
+how well does this work over time
+
+105
+00:04:10,640 --> 00:04:14,640
+because this year is for the entire data
+
+106
+00:04:12,360 --> 00:04:16,720
+set, from the beginning of 2018 to
+
+107
+00:04:14,640 --> 00:04:19,040
+today. But here is what that looks like
+
+108
+00:04:16,720 --> 00:04:21,880
+over time. So this is our selected
+
+109
+00:04:19,040 --> 00:04:24,080
+moving average combination and the star,
+
+110
+00:04:21,880 --> 00:04:26,400
+that shows during a particular four-year
+
+111
+00:04:24,080 --> 00:04:28,360
+period what was the best combination at
+
+112
+00:04:26,400 --> 00:04:30,120
+the time. So we go here with half-year
+
+113
+00:04:28,360 --> 00:04:32,440
+increments. We look at four-year
+
+114
+00:04:30,120 --> 00:04:35,040
+windows. We check what was the best
+
+115
+00:04:32,440 --> 00:04:37,160
+golden and death cross for Bitcoin. And
+
+116
+00:04:35,040 --> 00:04:39,360
+we do see that for the majority of the
+
+117
+00:04:37,160 --> 00:04:41,840
+time, this particular combination is
+
+118
+00:04:39,360 --> 00:04:43,120
+actually not that bad. So I continue to
+
+119
+00:04:41,840 --> 00:04:45,440
+use it. It's actually not just
+
+120
+00:04:43,120 --> 00:04:48,440
+simulations. We started trading that
+
+121
+00:04:45,440 --> 00:04:50,880
+strategy in October of last year. We are
+
+122
+00:04:48,440 --> 00:04:53,640
+up somewhere around 5 to 10% while
+
+123
+00:04:50,880 --> 00:04:56,320
+Bitcoin during the same time period lost
+
+124
+00:04:53,640 --> 00:04:58,600
+37%. So again, we've got our
+
+125
+00:04:56,320 --> 00:05:01,120
+outperformance to a similar degree as we
+
+126
+00:04:58,600 --> 00:05:03,320
+expected with the backtest. Here's where
+
+127
+00:05:01,120 --> 00:05:05,440
+we started. Here's where we are now. And
+
+128
+00:05:03,320 --> 00:05:07,480
+interestingly enough, the current
+
+129
+00:05:05,440 --> 00:05:09,080
+resistance that we already see in the
+
+130
+00:05:07,480 --> 00:05:11,480
+short-term holder price level and that
+
+131
+00:05:09,080 --> 00:05:13,080
+we see here [snorts] with our backtest.
+
+132
+00:05:11,480 --> 00:05:15,640
+We can even see this in the trend
+
+133
+00:05:13,080 --> 00:05:17,360
+channel, in those two parallel lines.
+
+134
+00:05:15,640 --> 00:05:19,960
+Those lines have been drawn quite a
+
+135
+00:05:17,360 --> 00:05:21,640
+while ago. The Bitcoin price respected
+
+136
+00:05:19,960 --> 00:05:24,600
+it and so let's just see what happens
+
+137
+00:05:21,640 --> 00:05:27,360
+today. If we suddenly sell off and we
+
+138
+00:05:24,600 --> 00:05:29,720
+should continue to stay bearish or if we
+
+139
+00:05:27,360 --> 00:05:31,240
+suddenly break out and things become
+
+140
+00:05:29,720 --> 00:05:32,920
+very bullish. We might just stay at the
+
+141
+00:05:31,240 --> 00:05:36,120
+current level. That would already be
+
+142
+00:05:32,920 --> 00:05:38,040
+enough to satisfy the condition to buy
+
+143
+00:05:36,120 --> 00:05:39,760
+according to the best moving average
+
+144
+00:05:38,040 --> 00:05:41,800
+combination. So if you want to be part
+
+145
+00:05:39,760 --> 00:05:43,880
+of the Bitcoin trend follower, that's
+
+146
+00:05:41,800 --> 00:05:45,760
+over here. Automatic copy trading,
+
+147
+00:05:43,880 --> 00:05:47,880
+that's for the premium members. There's
+
+148
+00:05:45,760 --> 00:05:50,320
+also a similar trend follower for
+
+149
+00:05:47,880 --> 00:05:53,400
+Ethereum and for Solana. And there's
+
+150
+00:05:50,320 --> 00:05:56,760
+another one where we bet on altcoins
+
+151
+00:05:53,400 --> 00:05:59,600
+long-term to underperform. That's a
+
+152
+00:05:56,760 --> 00:06:01,320
+strategy that's independent of market
+
+153
+00:05:59,600 --> 00:06:04,440
+movements. Since the beginning of the
+
+154
+00:06:01,320 --> 00:06:07,040
+year, it's up roughly 10% and it's also
+
+155
+00:06:04,440 --> 00:06:09,880
+in line with our expectations, which is
+
+156
+00:06:07,040 --> 00:06:11,560
+44% per annum. So everything is going
+
+157
+00:06:09,880 --> 00:06:14,160
+according to plan. We will get a
+
+158
+00:06:11,560 --> 00:06:16,520
+decision very soon. We will see whether
+
+159
+00:06:14,160 --> 00:06:19,320
+or not the crypto market will freak out
+
+160
+00:06:16,520 --> 00:06:21,600
+about those high prices and take profit
+
+161
+00:06:19,320 --> 00:06:23,600
+or if it's open to continue to get
+
+162
+00:06:21,600 --> 00:06:26,280
+carried by traditional finance, to
+
+163
+00:06:23,600 --> 00:06:28,160
+continue to emulate the gains that are
+
+164
+00:06:26,280 --> 00:06:29,360
+being made in the stock market. If you
+
+165
+00:06:28,160 --> 00:06:30,560
+got some value out of this video, feel
+
+166
+00:06:29,360 --> 00:06:32,000
+free to give it a like. Feel free to
+
+167
+00:06:30,560 --> 00:06:33,920
+also subscribe. I publish videos
+
+168
+00:06:32,000 --> 00:06:35,520
+regularly on this channel. You can also
+
+169
+00:06:33,920 --> 00:06:36,640
+check out the premium membership. Again,
+
+170
+00:06:35,520 --> 00:06:38,960
+this is where you can join the copy
+
+171
+00:06:36,640 --> 00:06:41,320
+trading. You can also get access to the
+
+172
+00:06:38,960 --> 00:06:43,640
+analytics platform and create your own
+
+173
+00:06:41,320 --> 00:06:45,920
+backtests as well. So that's when you
+
+174
+00:06:43,640 --> 00:06:48,160
+want to dive a little bit deeper and
+
+175
+00:06:45,920 --> 00:06:51,640
+refine your altcoin trading. Thanks for
+
+176
+00:06:48,160 --> 00:06:51,640
+watching and see you next time. Bye-bye.
+

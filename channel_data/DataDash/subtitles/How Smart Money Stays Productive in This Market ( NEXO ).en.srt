@@ -1,0 +1,1192 @@
+1
+00:00:10,000 --> 00:00:13,080
+What's going on everybody? My name is
+
+2
+00:00:11,000 --> 00:00:14,600
+Paul Samson. Welcome back to Data Dash.
+
+3
+00:00:13,080 --> 00:00:16,280
+Today I wanted to talk about something
+
+4
+00:00:14,600 --> 00:00:18,360
+that I think is becoming one of the most
+
+5
+00:00:16,280 --> 00:00:20,520
+important shifts happening in crypto
+
+6
+00:00:18,360 --> 00:00:22,560
+right now. And it's not price, it's not
+
+7
+00:00:20,520 --> 00:00:25,200
+hype, it's not the next altcoin
+
+8
+00:00:22,560 --> 00:00:26,640
+narrative. It's how serious capital is
+
+9
+00:00:25,200 --> 00:00:28,760
+starting to think about capital
+
+10
+00:00:26,640 --> 00:00:31,360
+efficiency. Because while most retail
+
+11
+00:00:28,760 --> 00:00:34,000
+investors focus on one question, is
+
+12
+00:00:31,360 --> 00:00:36,040
+Bitcoin going up? Institutions tend to
+
+13
+00:00:34,000 --> 00:00:38,520
+focus on a very different question. How
+
+14
+00:00:36,040 --> 00:00:40,040
+is capital being managed while we wait?
+
+15
+00:00:38,520 --> 00:00:41,960
+Because markets don't just move in
+
+16
+00:00:40,040 --> 00:00:44,520
+straight lines. They expand, they
+
+17
+00:00:41,960 --> 00:00:46,600
+consolidate, they reset. And what we're
+
+18
+00:00:44,520 --> 00:00:48,560
+seeing right now looks much more like a
+
+19
+00:00:46,600 --> 00:00:50,160
+market reset than a breakdown. And
+
+20
+00:00:48,560 --> 00:00:52,360
+historically, these types of periods are
+
+21
+00:00:50,160 --> 00:00:54,240
+where biggest structural shifts happen
+
+22
+00:00:52,360 --> 00:00:56,280
+beneath the surface. Not in just price,
+
+23
+00:00:54,240 --> 00:00:58,480
+but in infrastructure. Because something
+
+24
+00:00:56,280 --> 00:01:00,640
+interesting happens as markets mature.
+
+25
+00:00:58,480 --> 00:01:02,880
+Early markets are speculation driven,
+
+26
+00:01:00,640 --> 00:01:04,720
+maturing markets become infrastructure
+
+27
+00:01:02,880 --> 00:01:06,760
+driven, and developed markets become
+
+28
+00:01:04,720 --> 00:01:09,280
+capital efficiency driven. Meaning the
+
+29
+00:01:06,760 --> 00:01:11,120
+conversation shifts from what will pump
+
+30
+00:01:09,280 --> 00:01:13,520
+to questions like how is liquidity
+
+31
+00:01:11,120 --> 00:01:15,960
+managed? How is risk controlled? How is
+
+32
+00:01:13,520 --> 00:01:17,600
+capital deployed? How do institutions
+
+33
+00:01:15,960 --> 00:01:19,640
+maintain exposure while managing
+
+34
+00:01:17,600 --> 00:01:21,680
+portfolios? And that's where an entire
+
+35
+00:01:19,640 --> 00:01:24,200
+category of crypto finance has started
+
+36
+00:01:21,680 --> 00:01:26,360
+to emerge. Not trading platforms, not
+
+37
+00:01:24,200 --> 00:01:28,200
+speculation tools, but financial
+
+38
+00:01:26,360 --> 00:01:29,960
+infrastructure built around digital
+
+39
+00:01:28,200 --> 00:01:31,960
+assets. And as always, folks, this is
+
+40
+00:01:29,960 --> 00:01:33,520
+educational content, not financial
+
+41
+00:01:31,960 --> 00:01:35,040
+advice. I'm just helping you better
+
+42
+00:01:33,520 --> 00:01:36,760
+understand these types of financial
+
+43
+00:01:35,040 --> 00:01:38,640
+platforms, how they operate within the
+
+44
+00:01:36,760 --> 00:01:40,760
+broader crypto ecosystem. And one of the
+
+45
+00:01:38,640 --> 00:01:43,200
+biggest inefficiencies in crypto today
+
+46
+00:01:40,760 --> 00:01:45,280
+is idle capital. Millions of investors
+
+47
+00:01:43,200 --> 00:01:46,720
+simply hold digital assets in wallets or
+
+48
+00:01:45,280 --> 00:01:48,400
+exchanges without interacting with
+
+49
+00:01:46,720 --> 00:01:50,120
+financial infrastructure around them.
+
+50
+00:01:48,400 --> 00:01:51,760
+Now, sometimes that makes sense.
+
+51
+00:01:50,120 --> 00:01:53,600
+Self-custody is important, risk
+
+52
+00:01:51,760 --> 00:01:55,960
+management matters, but historically in
+
+53
+00:01:53,600 --> 00:01:58,200
+traditional finance, capital rarely just
+
+54
+00:01:55,960 --> 00:02:00,240
+sits still. It may be allocated, used as
+
+55
+00:01:58,200 --> 00:02:01,560
+collateral, lent into the markets, or
+
+56
+00:02:00,240 --> 00:02:02,960
+even deployed into financial
+
+57
+00:02:01,560 --> 00:02:04,160
+instruments. Because portfolio
+
+58
+00:02:02,960 --> 00:02:05,960
+management isn't just about
+
+59
+00:02:04,160 --> 00:02:07,640
+appreciation, it's also about capital
+
+60
+00:02:05,960 --> 00:02:09,479
+efficiency. And this is exactly why
+
+61
+00:02:07,640 --> 00:02:11,640
+crypto financial platforms started
+
+62
+00:02:09,479 --> 00:02:13,840
+emerging. To bridge the gap between
+
+63
+00:02:11,640 --> 00:02:16,000
+owning digital assets and using digital
+
+64
+00:02:13,840 --> 00:02:17,840
+assets inside financial systems. And
+
+65
+00:02:16,000 --> 00:02:19,920
+this is where platforms like Nexo fit
+
+66
+00:02:17,840 --> 00:02:21,720
+into the conversation. Not as a trading
+
+67
+00:02:19,920 --> 00:02:23,680
+platform, but as financial service
+
+68
+00:02:21,720 --> 00:02:25,760
+platforms built around digital asset
+
+69
+00:02:23,680 --> 00:02:28,280
+holders. The simplest way to think about
+
+70
+00:02:25,760 --> 00:02:31,120
+it is a digital asset wealth platform
+
+71
+00:02:28,280 --> 00:02:33,400
+focused on three core functions. Earn,
+
+72
+00:02:31,120 --> 00:02:35,160
+borrow, and transact. The earn side
+
+73
+00:02:33,400 --> 00:02:36,720
+focuses on generating interest on
+
+74
+00:02:35,160 --> 00:02:38,840
+supported digital assets, while the
+
+75
+00:02:36,720 --> 00:02:40,920
+borrow side focuses on accessing
+
+76
+00:02:38,840 --> 00:02:42,720
+liquidity without selling the assets.
+
+77
+00:02:40,920 --> 00:02:45,080
+And the platform itself focuses heavily
+
+78
+00:02:42,720 --> 00:02:47,120
+on infrastructure, risk management, and
+
+79
+00:02:45,080 --> 00:02:48,760
+institutional partnerships. And one of
+
+80
+00:02:47,120 --> 00:02:50,360
+the reasons platforms like this started
+
+81
+00:02:48,760 --> 00:02:52,400
+getting more attention recently is
+
+82
+00:02:50,360 --> 00:02:54,320
+scale. According to Galaxy Research,
+
+83
+00:02:52,400 --> 00:02:56,640
+Nexo is currently the second largest
+
+84
+00:02:54,320 --> 00:02:58,720
+centralized crypto lender globally by
+
+85
+00:02:56,640 --> 00:03:01,240
+outstanding loan volume. They've paid
+
+86
+00:02:58,720 --> 00:03:03,560
+over 1.3 billion dollars in interest to
+
+87
+00:03:01,240 --> 00:03:05,480
+clients across multiple market cycles.
+
+88
+00:03:03,560 --> 00:03:07,320
+They manage over 8 billion dollars in
+
+89
+00:03:05,480 --> 00:03:09,920
+assets, and they've been operating since
+
+90
+00:03:07,320 --> 00:03:11,680
+2018 through multiple major drawdowns,
+
+91
+00:03:09,920 --> 00:03:13,200
+which matters. Because in this industry,
+
+92
+00:03:11,680 --> 00:03:14,920
+longevity tends to separate
+
+93
+00:03:13,200 --> 00:03:16,640
+infrastructure from experimentation.
+
+94
+00:03:14,920 --> 00:03:18,440
+Where this becomes interesting from an
+
+95
+00:03:16,640 --> 00:03:20,560
+investor standpoint is capital
+
+96
+00:03:18,440 --> 00:03:22,800
+efficiency. Because let's say someone
+
+97
+00:03:20,560 --> 00:03:24,520
+holds Bitcoin long-term. They believe in
+
+98
+00:03:22,800 --> 00:03:26,280
+the macro thesis, but they don't want to
+
+99
+00:03:24,520 --> 00:03:28,440
+sell. Traditionally, that creates a
+
+100
+00:03:26,280 --> 00:03:30,480
+limitation, because liquidity often
+
+101
+00:03:28,440 --> 00:03:32,560
+requires selling. But crypto finance
+
+102
+00:03:30,480 --> 00:03:34,840
+introduced another model, using digital
+
+103
+00:03:32,560 --> 00:03:36,720
+assets as collateral. Meaning instead of
+
+104
+00:03:34,840 --> 00:03:38,400
+selling and losing exposure, borrowing
+
+105
+00:03:36,720 --> 00:03:40,880
+against digital assets may provide
+
+106
+00:03:38,400 --> 00:03:42,680
+liquidity without requiring an immediate
+
+107
+00:03:40,880 --> 00:03:44,840
+sale of the collateral. I want to please
+
+108
+00:03:42,680 --> 00:03:47,120
+note here that this is not tax advice,
+
+109
+00:03:44,840 --> 00:03:48,960
+and individual tax situations vary, and
+
+110
+00:03:47,120 --> 00:03:50,280
+you should consult a qualified tax
+
+111
+00:03:48,960 --> 00:03:52,480
+professional. Now, this allows some
+
+112
+00:03:50,280 --> 00:03:54,560
+participants to access liquidity,
+
+113
+00:03:52,480 --> 00:03:56,640
+maintain exposure, and keep long-term
+
+114
+00:03:54,560 --> 00:03:58,640
+positioning intact. But of course, this
+
+115
+00:03:56,640 --> 00:04:01,040
+comes with risk considerations.
+
+116
+00:03:58,640 --> 00:04:03,360
+Loan-to-value ratios matter, collateral
+
+117
+00:04:01,040 --> 00:04:05,400
+management matters, volatility matters,
+
+118
+00:04:03,360 --> 00:04:07,640
+okay? So, which is why infrastructure
+
+119
+00:04:05,400 --> 00:04:09,600
+becomes so critical here. One thing
+
+120
+00:04:07,640 --> 00:04:11,800
+worth understanding is that this type of
+
+121
+00:04:09,600 --> 00:04:13,960
+borrowing is not new. You see similar
+
+122
+00:04:11,800 --> 00:04:16,160
+structures in equities, you see it in
+
+123
+00:04:13,960 --> 00:04:18,239
+real estate, and increasingly, you see
+
+124
+00:04:16,160 --> 00:04:19,680
+it in crypto. And according to Galaxy
+
+125
+00:04:18,239 --> 00:04:21,959
+Research, once again, crypto
+
+126
+00:04:19,680 --> 00:04:24,800
+collateralized lending reached new highs
+
+127
+00:04:21,959 --> 00:04:26,480
+in 2025, but with far tighter collateral
+
+128
+00:04:24,800 --> 00:04:29,400
+standards than the previous cycles.
+
+129
+00:04:26,480 --> 00:04:31,000
+Meaning the industry learned from 2022.
+
+130
+00:04:29,400 --> 00:04:33,160
+And today's lending environment is far
+
+131
+00:04:31,000 --> 00:04:35,320
+more collateralized, far more risk
+
+132
+00:04:33,160 --> 00:04:36,880
+monitored, and far more structured.
+
+133
+00:04:35,320 --> 00:04:38,520
+Which is a very different environment
+
+134
+00:04:36,880 --> 00:04:40,560
+than the leverage excess that caused
+
+135
+00:04:38,520 --> 00:04:42,200
+failures in the previous cycles. Now,
+
+136
+00:04:40,560 --> 00:04:44,040
+something I always think is important
+
+137
+00:04:42,200 --> 00:04:46,160
+when discussing any financial platform
+
+138
+00:04:44,040 --> 00:04:48,440
+is understanding. How does this business
+
+139
+00:04:46,160 --> 00:04:50,080
+actually operate? Because sustainability
+
+140
+00:04:48,440 --> 00:04:52,080
+matters more than hype. And from what we
+
+141
+00:04:50,080 --> 00:04:54,360
+can see, revenue in this category
+
+142
+00:04:52,080 --> 00:04:56,160
+typically comes from either interest
+
+143
+00:04:54,360 --> 00:04:58,320
+spreads, institutional lending,
+
+144
+00:04:56,160 --> 00:05:00,240
+transaction services,
+
+145
+00:04:58,320 --> 00:05:01,960
+or asset management activity. So,
+
+146
+00:05:00,240 --> 00:05:04,000
+similar to traditional financial
+
+147
+00:05:01,960 --> 00:05:05,560
+institutions, revenue tends to come from
+
+148
+00:05:04,000 --> 00:05:07,560
+financial services rather than
+
+149
+00:05:05,560 --> 00:05:09,480
+speculative positioning. And that's the
+
+150
+00:05:07,560 --> 00:05:11,880
+important distinction here. Because
+
+151
+00:05:09,480 --> 00:05:13,880
+long-term platforms usually diversify
+
+152
+00:05:11,880 --> 00:05:15,840
+revenue streams rather than relying on a
+
+153
+00:05:13,880 --> 00:05:18,280
+single product. Now, obviously, one of
+
+154
+00:05:15,840 --> 00:05:20,360
+the biggest questions people ask is how
+
+155
+00:05:18,280 --> 00:05:21,840
+is risk managed? And this is where
+
+156
+00:05:20,360 --> 00:05:25,640
+infrastructure matters more than the
+
+157
+00:05:21,840 --> 00:05:28,000
+marketing. Nexo focuses heavily on full
+
+158
+00:05:25,640 --> 00:05:29,760
+collateralization of loans, real-time
+
+159
+00:05:28,000 --> 00:05:32,040
+monitoring, automated liquidation
+
+160
+00:05:29,760 --> 00:05:34,440
+systems, custody partnerships, and
+
+161
+00:05:32,040 --> 00:05:36,520
+regulatory alignment. US operations are
+
+162
+00:05:34,440 --> 00:05:38,440
+built on infrastructure connected with
+
+163
+00:05:36,520 --> 00:05:40,240
+Bakkt, a publicly listed regulated
+
+164
+00:05:38,440 --> 00:05:42,600
+company, and loans are monitored
+
+165
+00:05:40,240 --> 00:05:44,200
+continuously by automated risk engines.
+
+166
+00:05:42,600 --> 00:05:46,000
+And the liquidity is sourced across
+
+167
+00:05:44,200 --> 00:05:48,240
+multiple venues rather than relying on a
+
+168
+00:05:46,000 --> 00:05:50,200
+single order book. The core idea of
+
+169
+00:05:48,240 --> 00:05:52,280
+being fully collateralized lending,
+
+170
+00:05:50,200 --> 00:05:53,720
+automated risk management, and market
+
+171
+00:05:52,280 --> 00:05:55,800
+neutral strategies rather than
+
+172
+00:05:53,720 --> 00:05:57,440
+directional bets. Which is how serious
+
+173
+00:05:55,800 --> 00:05:59,520
+financial infrastructure typically
+
+174
+00:05:57,440 --> 00:06:01,280
+operates. Another interesting piece here
+
+175
+00:05:59,520 --> 00:06:03,440
+is liquidity routing. Rather than
+
+176
+00:06:01,280 --> 00:06:05,800
+relying on a single exchange, platforms
+
+177
+00:06:03,440 --> 00:06:07,960
+like this often connect across multiple
+
+178
+00:06:05,800 --> 00:06:10,040
+venues to improve execution, which
+
+179
+00:06:07,960 --> 00:06:12,320
+matters because liquidity fragmentation
+
+180
+00:06:10,040 --> 00:06:14,600
+is a real issue in crypto. And smart
+
+181
+00:06:12,320 --> 00:06:16,320
+routing helps improve execution quality.
+
+182
+00:06:14,600 --> 00:06:18,680
+Now, this is something that institutions
+
+183
+00:06:16,320 --> 00:06:20,600
+pay attention to heavily, which retail
+
+184
+00:06:18,680 --> 00:06:22,160
+actually often ignores. But it's a major
+
+185
+00:06:20,600 --> 00:06:24,320
+part of financial infrastructure. Now,
+
+186
+00:06:22,160 --> 00:06:26,240
+the next question becomes who are these
+
+187
+00:06:24,320 --> 00:06:28,120
+types of platforms actually designed
+
+188
+00:06:26,240 --> 00:06:29,720
+for? Because they aren't necessarily for
+
+189
+00:06:28,120 --> 00:06:31,760
+everyone. And typically, they appeal
+
+190
+00:06:29,720 --> 00:06:34,040
+most to long-term crypto holders,
+
+191
+00:06:31,760 --> 00:06:36,080
+investors focused on capital efficiency,
+
+192
+00:06:34,040 --> 00:06:38,080
+portfolio managers, digital asset
+
+193
+00:06:36,080 --> 00:06:39,840
+investors seeking liquidity options, and
+
+194
+00:06:38,080 --> 00:06:41,360
+users wanting flexibility without
+
+195
+00:06:39,840 --> 00:06:43,240
+liquidating their positions. They
+
+196
+00:06:41,360 --> 00:06:45,240
+generally aren't built for short-term
+
+197
+00:06:43,240 --> 00:06:46,600
+traders chasing volatility. They're
+
+198
+00:06:45,240 --> 00:06:48,600
+built more around portfolio
+
+199
+00:06:46,600 --> 00:06:50,280
+optimization, which is a completely
+
+200
+00:06:48,600 --> 00:06:52,120
+different mindset. And honestly, this
+
+201
+00:06:50,280 --> 00:06:54,000
+fits into a much bigger macro shift
+
+202
+00:06:52,120 --> 00:06:55,840
+happening in crypto. The space is
+
+203
+00:06:54,000 --> 00:06:57,400
+maturing. We're moving from pure
+
+204
+00:06:55,840 --> 00:06:59,440
+speculation towards financial
+
+205
+00:06:57,400 --> 00:07:01,200
+infrastructure. From tokens to systems,
+
+206
+00:06:59,440 --> 00:07:03,400
+from hype to services. And whether
+
+207
+00:07:01,200 --> 00:07:04,720
+someone uses these platforms or not,
+
+208
+00:07:03,400 --> 00:07:06,160
+understanding this transition is
+
+209
+00:07:04,720 --> 00:07:07,440
+important. Because infrastructure
+
+210
+00:07:06,160 --> 00:07:09,400
+improvements have historically
+
+211
+00:07:07,440 --> 00:07:10,640
+accompanied markets as they mature. And
+
+212
+00:07:09,400 --> 00:07:12,120
+that's the pattern that's worth
+
+213
+00:07:10,640 --> 00:07:13,560
+understanding, regardless of what
+
+214
+00:07:12,120 --> 00:07:15,200
+someone decides to do with that
+
+215
+00:07:13,560 --> 00:07:16,800
+information. Because the evolution of
+
+216
+00:07:15,200 --> 00:07:18,280
+crypto is not just about the price
+
+217
+00:07:16,800 --> 00:07:20,640
+anymore, it's about financial
+
+218
+00:07:18,280 --> 00:07:22,760
+architecture. And during consolidation
+
+219
+00:07:20,640 --> 00:07:24,480
+phases especially, some participants are
+
+220
+00:07:22,760 --> 00:07:26,320
+going to look for ways to keep assets
+
+221
+00:07:24,480 --> 00:07:29,080
+productive rather than simply holding
+
+222
+00:07:26,320 --> 00:07:30,960
+passively. Nexo offers both flexible
+
+223
+00:07:29,080 --> 00:07:32,640
+yield and fixed-term options on
+
+224
+00:07:30,960 --> 00:07:34,680
+supported digital assets. And their
+
+225
+00:07:32,640 --> 00:07:36,920
+flexible yield allows daily interest
+
+226
+00:07:34,680 --> 00:07:38,760
+payouts with withdrawal flexibility, as
+
+227
+00:07:36,920 --> 00:07:41,120
+well as the fixed-terms offer, which is
+
+228
+00:07:38,760 --> 00:07:42,840
+higher stated rates in exchange for time
+
+229
+00:07:41,120 --> 00:07:45,600
+commitments. And as mentioned earlier,
+
+230
+00:07:42,840 --> 00:07:47,520
+Nexo has paid over 1.3 billion dollars
+
+231
+00:07:45,600 --> 00:07:49,600
+in interest historically across the
+
+232
+00:07:47,520 --> 00:07:51,720
+client base. Another core feature is
+
+233
+00:07:49,600 --> 00:07:54,080
+crypto credit lines. Borrowing against
+
+234
+00:07:51,720 --> 00:07:55,480
+digital assets without requiring a sale
+
+235
+00:07:54,080 --> 00:07:57,280
+of collateral, which is allowing
+
+236
+00:07:55,480 --> 00:07:59,480
+liquidity access while maintaining
+
+237
+00:07:57,280 --> 00:08:01,280
+exposure. The rates will vary depending
+
+238
+00:07:59,480 --> 00:08:03,480
+on collateral and the tier levels, and
+
+239
+00:08:01,280 --> 00:08:05,440
+loans can typically be repaid partially
+
+240
+00:08:03,480 --> 00:08:07,360
+or fully at any time. Again, this isn't
+
+241
+00:08:05,440 --> 00:08:09,640
+about aggressive leverage, it's about
+
+242
+00:08:07,360 --> 00:08:11,280
+structured liquidity access, very
+
+243
+00:08:09,640 --> 00:08:13,360
+different concepts. Another part of
+
+244
+00:08:11,280 --> 00:08:15,360
+their ecosystem is the Nexo token and
+
+245
+00:08:13,360 --> 00:08:17,040
+their wealth club structure, which acts
+
+246
+00:08:15,360 --> 00:08:19,320
+as a tiered loyalty system that can
+
+247
+00:08:17,040 --> 00:08:21,160
+improve borrowing rates, interest rates,
+
+248
+00:08:19,320 --> 00:08:23,000
+and transaction benefits depending on
+
+249
+00:08:21,160 --> 00:08:25,120
+participation levels. Now, the higher
+
+250
+00:08:23,000 --> 00:08:27,160
+tiers unlock better interest rates,
+
+251
+00:08:25,120 --> 00:08:29,440
+lower borrowing costs, transaction cash
+
+252
+00:08:27,160 --> 00:08:31,360
+back, and withdrawal benefits. Think of
+
+253
+00:08:29,440 --> 00:08:33,320
+it less as speculation and more of the
+
+254
+00:08:31,360 --> 00:08:35,280
+loyalty layer that's tying the platform
+
+255
+00:08:33,320 --> 00:08:37,479
+ecosystem together. Another factor worth
+
+256
+00:08:35,280 --> 00:08:39,240
+noting is scale. Nexo operates globally
+
+257
+00:08:37,479 --> 00:08:41,560
+across multiple jurisdictions and
+
+258
+00:08:39,240 --> 00:08:43,280
+emphasizes regulatory alignment. They've
+
+259
+00:08:41,560 --> 00:08:45,040
+partnered across major global sports,
+
+260
+00:08:43,280 --> 00:08:46,960
+including Formula 1 and professional
+
+261
+00:08:45,040 --> 00:08:49,080
+tennis, and recently expanded further
+
+262
+00:08:46,960 --> 00:08:50,640
+into Latin America through acquisitions.
+
+263
+00:08:49,080 --> 00:08:52,760
+Which signals something important. The
+
+264
+00:08:50,640 --> 00:08:54,480
+sector is becoming more professional.
+
+265
+00:08:52,760 --> 00:08:56,400
+We're seeing more institutional-grade
+
+266
+00:08:54,480 --> 00:08:58,440
+architecture emerge. So, stepping back,
+
+267
+00:08:56,400 --> 00:09:00,480
+the real takeaway here isn't just about
+
+268
+00:08:58,440 --> 00:09:02,680
+one platform, it's about understanding
+
+269
+00:09:00,480 --> 00:09:04,400
+how crypto finance is evolving and has
+
+270
+00:09:02,680 --> 00:09:07,080
+been evolving over time. We are moving
+
+271
+00:09:04,400 --> 00:09:08,920
+toward capital efficiency, digital asset
+
+272
+00:09:07,080 --> 00:09:10,600
+banking, crypto credit markets,
+
+273
+00:09:08,920 --> 00:09:12,760
+financial infrastructure, and more
+
+274
+00:09:10,600 --> 00:09:14,880
+sophisticated portfolio tools. And
+
+275
+00:09:12,760 --> 00:09:16,720
+again, whether someone uses Nexo or not,
+
+276
+00:09:14,880 --> 00:09:18,360
+understanding how these systems operate
+
+277
+00:09:16,720 --> 00:09:20,240
+is going to be valuable knowledge as
+
+278
+00:09:18,360 --> 00:09:22,120
+these markets mature. Because this next
+
+279
+00:09:20,240 --> 00:09:24,000
+phase of crypto, again, is not about the
+
+280
+00:09:22,120 --> 00:09:25,760
+price movement, it's about financial
+
+281
+00:09:24,000 --> 00:09:27,520
+architecture. And if you would like to
+
+282
+00:09:25,760 --> 00:09:29,360
+learn more about how platforms such as
+
+283
+00:09:27,520 --> 00:09:30,720
+Nexo operate, you can check them out
+
+284
+00:09:29,360 --> 00:09:32,680
+using the link down in the description
+
+285
+00:09:30,720 --> 00:09:34,520
+area below. You can also follow Nexo's
+
+286
+00:09:32,680 --> 00:09:36,320
+US channels for product updates and
+
+287
+00:09:34,520 --> 00:09:38,160
+market insights. And also, folks, be
+
+288
+00:09:36,320 --> 00:09:40,160
+sure to check out the Nexo Wealth
+
+289
+00:09:38,160 --> 00:09:41,680
+Premier Club that's also available from
+
+290
+00:09:40,160 --> 00:09:43,200
+the link down in the description below.
+
+291
+00:09:41,680 --> 00:09:45,240
+As always, everybody, please do your own
+
+292
+00:09:43,200 --> 00:09:46,960
+research, understand the risks, never
+
+293
+00:09:45,240 --> 00:09:48,400
+use financial tools that you don't fully
+
+294
+00:09:46,960 --> 00:09:49,480
+understand. Thank you as always for
+
+295
+00:09:48,400 --> 00:09:50,840
+tuning in with me. I'll see you all in
+
+296
+00:09:49,480 --> 00:09:54,360
+the next video, everybody. And until
+
+297
+00:09:50,840 --> 00:09:54,360
+then, everyone, cheers.
+
+298
+00:10:02,600 --> 00:10:04,640
+>> No.
+

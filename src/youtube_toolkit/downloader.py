@@ -43,6 +43,7 @@ class SubtitleDownloader:
             'writeautomaticsub': auto_generated,
             'subtitlesformat': format,
             'outtmpl': os.path.join(self.output_dir, '%(title)s.%(ext)s'),
+            'no_warnings': True,  # Suppress warnings (PO token warnings don't affect subtitles)
         }
 
         if languages:
@@ -106,6 +107,7 @@ class SubtitleDownloader:
         ydl_opts = {
             'skip_download': True,
             'quiet': True,
+            'no_warnings': True,
         }
 
         result = {

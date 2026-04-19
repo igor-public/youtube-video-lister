@@ -1,0 +1,904 @@
+1
+00:00:00,000 --> 00:00:04,360
+Crypto has been around for many years
+
+2
+00:00:02,120 --> 00:00:07,600
+now, and I find it interesting how still
+
+3
+00:00:04,360 --> 00:00:10,440
+to date very few people actually look at
+
+4
+00:00:07,600 --> 00:00:13,480
+relative valuations. Is Ethereum
+
+5
+00:00:10,440 --> 00:00:15,680
+expensive? Is it cheap? It's not visible
+
+6
+00:00:13,480 --> 00:00:17,680
+in US dollar charts, because in US
+
+7
+00:00:15,680 --> 00:00:20,520
+dollar charts, we just get the general
+
+8
+00:00:17,680 --> 00:00:23,640
+ups and downs of the market. But here,
+
+9
+00:00:20,520 --> 00:00:25,920
+we see Ethereum's market cap relative to
+
+10
+00:00:23,640 --> 00:00:27,920
+the altcoin market cap excluding the
+
+11
+00:00:25,920 --> 00:00:30,640
+stable coins. So, this is total three
+
+12
+00:00:27,920 --> 00:00:33,640
+ES. And this trades in a range. This is
+
+13
+00:00:30,640 --> 00:00:35,400
+a chart that starts in 2017. We have an
+
+14
+00:00:33,640 --> 00:00:37,480
+upper bound, we've got a lower bound,
+
+15
+00:00:35,400 --> 00:00:40,120
+and we've got the average ratio
+
+16
+00:00:37,480 --> 00:00:42,920
+indicated as this dotted line. Is
+
+17
+00:00:40,120 --> 00:00:45,160
+Ethereum currently expensive? Is it
+
+18
+00:00:42,920 --> 00:00:47,800
+currently cheap? At least relative to
+
+19
+00:00:45,160 --> 00:00:49,800
+the altcoin market, it's very close to
+
+20
+00:00:47,800 --> 00:00:52,240
+balance with currently positive
+
+21
+00:00:49,800 --> 00:00:54,280
+momentum. How much more potential upside
+
+22
+00:00:52,240 --> 00:00:58,720
+do we have? Maybe an outperformance of
+
+23
+00:00:54,280 --> 00:01:01,240
+45%, potentially 65%. We can also adjust
+
+24
+00:00:58,720 --> 00:01:03,800
+this. This is the Ethereum market cap
+
+25
+00:01:01,240 --> 00:01:06,040
+relative to the others market cap.
+
+26
+00:01:03,800 --> 00:01:08,480
+Again, we are slightly above the
+
+27
+00:01:06,040 --> 00:01:10,520
+equilibrium. The others market cap
+
+28
+00:01:08,480 --> 00:01:13,040
+measures the cryptocurrency market cap
+
+29
+00:01:10,520 --> 00:01:15,680
+except the top 10. So, we're looking at
+
+30
+00:01:13,040 --> 00:01:18,400
+all these smaller altcoins. Using charts
+
+31
+00:01:15,680 --> 00:01:20,600
+like this, we do get an idea at what
+
+32
+00:01:18,400 --> 00:01:22,920
+point it might make sense to buy the
+
+33
+00:01:20,600 --> 00:01:25,440
+bottom. So, that was here in April of
+
+34
+00:01:22,920 --> 00:01:27,680
+last year when Tom Lee of Bitmain
+
+35
+00:01:25,440 --> 00:01:29,720
+started to buying Ethereum. But you also
+
+36
+00:01:27,680 --> 00:01:31,240
+get the points in time where Ethereum
+
+37
+00:01:29,720 --> 00:01:33,680
+might be expensive. Now, those two
+
+38
+00:01:31,240 --> 00:01:35,920
+representations of Ethereum's price or
+
+39
+00:01:33,680 --> 00:01:37,320
+Ethereum's market cap relative to the
+
+40
+00:01:35,920 --> 00:01:39,600
+rest of the altcoin market aren't
+
+41
+00:01:37,320 --> 00:01:41,160
+necessarily that common. There is a more
+
+42
+00:01:39,600 --> 00:01:43,280
+common measure though, and that's
+
+43
+00:01:41,160 --> 00:01:45,080
+Ethereum dominance. The reason why
+
+44
+00:01:43,280 --> 00:01:47,840
+Ethereum dominance is interesting is
+
+45
+00:01:45,080 --> 00:01:49,800
+because enough people watch that chart,
+
+46
+00:01:47,840 --> 00:01:52,280
+and so it can become a self-fulfilling
+
+47
+00:01:49,800 --> 00:01:54,640
+prophecy. Enough people think that
+
+48
+00:01:52,280 --> 00:01:56,520
+Ethereum is cheap at one point, it might
+
+49
+00:01:54,640 --> 00:01:57,960
+simply get bought more. If enough people
+
+50
+00:01:56,520 --> 00:02:00,160
+think that Ethereum is comparatively
+
+51
+00:01:57,960 --> 00:02:02,640
+expensive, it might get sold more. And
+
+52
+00:02:00,160 --> 00:02:05,360
+so, this is Ethereum's again we bought
+
+53
+00:02:02,640 --> 00:02:07,720
+bottomed out in April of last year when
+
+54
+00:02:05,360 --> 00:02:10,119
+Tom Lee started buying. This top over
+
+55
+00:02:07,720 --> 00:02:12,880
+here, that was the move from proof of
+
+56
+00:02:10,119 --> 00:02:14,600
+work to proof of stake called the merge.
+
+57
+00:02:12,880 --> 00:02:17,120
+So, that's when the tokenomics and the
+
+58
+00:02:14,600 --> 00:02:19,280
+whole technical underpinning of Ethereum
+
+59
+00:02:17,120 --> 00:02:22,160
+changed. And we can adjust this chart
+
+60
+00:02:19,280 --> 00:02:24,760
+slightly by looking at Ethereum's market
+
+61
+00:02:22,160 --> 00:02:27,160
+cap relative to the rest of crypto
+
+62
+00:02:24,760 --> 00:02:29,840
+excluding the stable coins. But let's
+
+63
+00:02:27,160 --> 00:02:32,560
+first go to Ethereum's dominance. This
+
+64
+00:02:29,840 --> 00:02:35,520
+is a relatively obvious line to draw.
+
+65
+00:02:32,560 --> 00:02:37,800
+The bottoms align, the tops align. Those
+
+66
+00:02:35,520 --> 00:02:40,920
+are two parallel lines as well, and we
+
+67
+00:02:37,800 --> 00:02:42,760
+are now very close to the make or break.
+
+68
+00:02:40,920 --> 00:02:44,600
+A decision will be made very soon. Are
+
+69
+00:02:42,760 --> 00:02:47,840
+we breaking out and will Ethereum
+
+70
+00:02:44,600 --> 00:02:50,880
+continue its positive momentum versus
+
+71
+00:02:47,840 --> 00:02:53,000
+the altcoins, or will we stay in the
+
+72
+00:02:50,880 --> 00:02:56,080
+bearish trend? Now, I think that the
+
+73
+00:02:53,000 --> 00:02:57,720
+bear scenario is a bit less likely, and
+
+74
+00:02:56,080 --> 00:03:00,040
+there are several pointers for that. The
+
+75
+00:02:57,720 --> 00:03:02,080
+first pointer is Ethereum's market cap
+
+76
+00:03:00,040 --> 00:03:04,000
+relative to the rest of crypto excluding
+
+77
+00:03:02,080 --> 00:03:06,000
+the stable coins. So, the chart we just
+
+78
+00:03:04,000 --> 00:03:08,560
+briefly looked at. Here, we've already
+
+79
+00:03:06,000 --> 00:03:10,840
+seen the breakout. So, with stable
+
+80
+00:03:08,560 --> 00:03:13,440
+coins, we haven't broken out yet.
+
+81
+00:03:10,840 --> 00:03:15,080
+Without stable coins, we are already
+
+82
+00:03:13,440 --> 00:03:17,240
+bullish. But there's another reason to
+
+83
+00:03:15,080 --> 00:03:19,640
+start to get bullish on Ethereum, and
+
+84
+00:03:17,240 --> 00:03:22,280
+that's simulations of buying and selling
+
+85
+00:03:19,640 --> 00:03:24,000
+Ethereum trying to find trading rules
+
+86
+00:03:22,280 --> 00:03:25,720
+that historically worked very well for
+
+87
+00:03:24,000 --> 00:03:27,960
+Ethereum. When we look at those trading
+
+88
+00:03:25,720 --> 00:03:30,240
+rules, they tend to now turn bullish.
+
+89
+00:03:27,960 --> 00:03:32,440
+Let's first look at Bitcoin. Bitcoin
+
+90
+00:03:30,240 --> 00:03:34,400
+currently is still bearish. The shorter
+
+91
+00:03:32,440 --> 00:03:36,280
+term moving average is below the longer
+
+92
+00:03:34,400 --> 00:03:38,120
+term moving average. The two-day plus
+
+93
+00:03:36,280 --> 00:03:40,280
+the 160-day simple moving average
+
+94
+00:03:38,120 --> 00:03:42,840
+historically used to be the best for
+
+95
+00:03:40,280 --> 00:03:45,520
+Bitcoin. Here is the same for Ethereum,
+
+96
+00:03:42,840 --> 00:03:47,640
+and Ethereum has made a golden cross.
+
+97
+00:03:45,520 --> 00:03:50,680
+Here, the best moving averages are the
+
+98
+00:03:47,640 --> 00:03:52,520
+33-day and the 12-day simple moving
+
+99
+00:03:50,680 --> 00:03:54,680
+average. Here is how well that trading
+
+100
+00:03:52,520 --> 00:03:56,840
+strategy worked over time. So, this just
+
+101
+00:03:54,680 --> 00:03:59,320
+buying and holding Ethereum, and this is
+
+102
+00:03:56,840 --> 00:04:03,520
+using the trading strategy. And it turns
+
+103
+00:03:59,320 --> 00:04:05,040
+85% per annum return to 420%
+
+104
+00:04:03,520 --> 00:04:07,320
+per annum. The risk is pretty much the
+
+105
+00:04:05,040 --> 00:04:09,960
+same, the drawdowns are comparable, but
+
+106
+00:04:07,320 --> 00:04:12,000
+the return is much much higher following
+
+107
+00:04:09,960 --> 00:04:14,160
+those death crosses and golden crosses.
+
+108
+00:04:12,000 --> 00:04:16,280
+We had a death cross on the 26th of
+
+109
+00:04:14,160 --> 00:04:18,440
+January, which was the right decision
+
+110
+00:04:16,280 --> 00:04:19,920
+afterwards Ethereum fell. Then we had a
+
+111
+00:04:18,440 --> 00:04:21,840
+golden cross, another death cross,
+
+112
+00:04:19,920 --> 00:04:24,440
+another golden cross. This recent golden
+
+113
+00:04:21,840 --> 00:04:26,280
+cross, by the way, was also announced in
+
+114
+00:04:24,440 --> 00:04:28,040
+the premium membership here in the
+
+115
+00:04:26,280 --> 00:04:30,720
+announcement channel. It also shows the
+
+116
+00:04:28,040 --> 00:04:33,440
+exact sell signals and buy signals, and
+
+117
+00:04:30,720 --> 00:04:35,160
+that signal was from the 11th of April.
+
+118
+00:04:33,440 --> 00:04:36,800
+Now, let's say Ethereum really turns
+
+119
+00:04:35,160 --> 00:04:38,920
+around. Now, let's say it really goes
+
+120
+00:04:36,800 --> 00:04:41,160
+bullish. This will have an impact on the
+
+121
+00:04:38,920 --> 00:04:42,760
+general altcoin market as well, because
+
+122
+00:04:41,160 --> 00:04:44,960
+there is a lot of correlation. When
+
+123
+00:04:42,760 --> 00:04:46,320
+Ethereum goes up, most altcoins go up as
+
+124
+00:04:44,960 --> 00:04:48,160
+well. When Ethereum goes down, most
+
+125
+00:04:46,320 --> 00:04:50,240
+altcoins go down. There's actually more
+
+126
+00:04:48,160 --> 00:04:52,400
+correlation between Ethereum and the
+
+127
+00:04:50,240 --> 00:04:54,360
+altcoins between Bitcoin and the
+
+128
+00:04:52,400 --> 00:04:56,480
+altcoins. Really, Ethereum moves the
+
+129
+00:04:54,360 --> 00:04:58,080
+altcoin market, not necessarily Bitcoin
+
+130
+00:04:56,480 --> 00:05:00,720
+that much. Yes, at the beginning of the
+
+131
+00:04:58,080 --> 00:05:02,640
+video, we focused on Ethereum relative
+
+132
+00:05:00,720 --> 00:05:04,960
+to the altcoin market, but there is a
+
+133
+00:05:02,640 --> 00:05:06,680
+somewhat constant trading range. But
+
+134
+00:05:04,960 --> 00:05:08,840
+once we look at Ethereum's market cap
+
+135
+00:05:06,680 --> 00:05:11,280
+relative to the altcoin market cap, we
+
+136
+00:05:08,840 --> 00:05:13,720
+do see that there are more commonalities
+
+137
+00:05:11,280 --> 00:05:16,000
+than differences. So, Ethereum is in
+
+138
+00:05:13,720 --> 00:05:17,680
+green, the altcoin market is in white.
+
+139
+00:05:16,000 --> 00:05:19,360
+Sometimes Ethereum is expensive,
+
+140
+00:05:17,680 --> 00:05:21,240
+sometimes the altcoins are expensive,
+
+141
+00:05:19,360 --> 00:05:23,520
+but really if Ethereum was to rally from
+
+142
+00:05:21,240 --> 00:05:25,560
+here, it would definitely push this from
+
+143
+00:05:23,520 --> 00:05:28,120
+red to green as well. So, how much more
+
+144
+00:05:25,560 --> 00:05:30,040
+upside is there for Ethereum? If we just
+
+145
+00:05:28,120 --> 00:05:32,680
+stay in the trading range that had been
+
+146
+00:05:30,040 --> 00:05:34,920
+established four years ago, even without
+
+147
+00:05:32,680 --> 00:05:37,120
+being overly optimistic, ETH could
+
+148
+00:05:34,920 --> 00:05:40,600
+easily double from here, potentially
+
+149
+00:05:37,120 --> 00:05:42,960
+even go above $5,000. The question then
+
+150
+00:05:40,600 --> 00:05:44,400
+of course is, what is going to drive
+
+151
+00:05:42,960 --> 00:05:46,320
+that rally? Let's have a look at the
+
+152
+00:05:44,400 --> 00:05:49,360
+ETFs. Here is the assets under
+
+153
+00:05:46,320 --> 00:05:51,320
+management for the Bitcoin ETF as a
+
+154
+00:05:49,360 --> 00:05:54,240
+percent of the entire market cap. Over
+
+155
+00:05:51,320 --> 00:05:56,080
+the last year, this did indeed go up,
+
+156
+00:05:54,240 --> 00:05:57,560
+but not necessarily as consistent as
+
+157
+00:05:56,080 --> 00:05:59,960
+most people might expect. We are
+
+158
+00:05:57,560 --> 00:06:02,160
+currently at 6.66%.
+
+159
+00:05:59,960 --> 00:06:05,960
+Let's have a look at Ethereum. Here we
+
+160
+00:06:02,160 --> 00:06:08,120
+are at 5.1%. So, 5.1% of Ethereum supply
+
+161
+00:06:05,960 --> 00:06:09,880
+is currently held by the ETFs. What's
+
+162
+00:06:08,120 --> 00:06:12,800
+more consistent growth, Ethereum or
+
+163
+00:06:09,880 --> 00:06:14,480
+Bitcoin? It's probably quite comparable.
+
+164
+00:06:12,800 --> 00:06:16,760
+There's no clear winner. What about all
+
+165
+00:06:14,480 --> 00:06:19,160
+of those treasury companies? How quickly
+
+166
+00:06:16,760 --> 00:06:20,800
+are they buying Ethereum? Here are all
+
+167
+00:06:19,160 --> 00:06:23,040
+of those treasury companies combined.
+
+168
+00:06:20,800 --> 00:06:25,480
+This is a monthly chart. This is going
+
+169
+00:06:23,040 --> 00:06:27,760
+up, but unfortunately, the growth is
+
+170
+00:06:25,480 --> 00:06:30,640
+slowing down. This is different to
+
+171
+00:06:27,760 --> 00:06:32,160
+Bitcoin. Here are the Bitcoin treasury
+
+172
+00:06:30,640 --> 00:06:33,840
+companies, and the growth is not
+
+173
+00:06:32,160 --> 00:06:36,320
+necessarily slowing down here, but
+
+174
+00:06:33,840 --> 00:06:39,160
+that's all due to a single player, and
+
+175
+00:06:36,320 --> 00:06:41,080
+that's Michael Saylor's strategy. The
+
+176
+00:06:39,160 --> 00:06:43,400
+other entities aren't really buying that
+
+177
+00:06:41,080 --> 00:06:45,400
+much. But as long as Michael Saylor is
+
+178
+00:06:43,400 --> 00:06:47,960
+buying, Bitcoin will continue to see
+
+179
+00:06:45,400 --> 00:06:50,200
+support. Now, if Michael Saylor suddenly
+
+180
+00:06:47,960 --> 00:06:52,680
+stops acquiring Bitcoin at the same
+
+181
+00:06:50,200 --> 00:06:53,960
+pace, then potentially Ethereum could
+
+182
+00:06:52,680 --> 00:06:55,800
+outperform again, and that would of
+
+183
+00:06:53,960 --> 00:06:57,400
+course help Ethereum dominance. That
+
+184
+00:06:55,800 --> 00:07:00,200
+would of course also help the altcoin
+
+185
+00:06:57,400 --> 00:07:02,320
+market. So, paradoxically enough, less
+
+186
+00:07:00,200 --> 00:07:04,440
+purchases of Bitcoin might actually be
+
+187
+00:07:02,320 --> 00:07:06,560
+good, relatively speaking, for the alts.
+
+188
+00:07:04,440 --> 00:07:08,480
+Here is how I play this market. Ethereum
+
+189
+00:07:06,560 --> 00:07:10,640
+is already bullish, we had our golden
+
+190
+00:07:08,480 --> 00:07:12,480
+cross. We are still quite close to the
+
+191
+00:07:10,640 --> 00:07:14,800
+equilibrium relative to the altcoin
+
+192
+00:07:12,480 --> 00:07:16,520
+market, so there is upside potential. We
+
+193
+00:07:14,800 --> 00:07:18,960
+have not yet broken out of the negative
+
+194
+00:07:16,520 --> 00:07:21,320
+trend with Ethereum's dominance, but we
+
+195
+00:07:18,960 --> 00:07:23,120
+have broken out when we adjust for the
+
+196
+00:07:21,320 --> 00:07:25,600
+stable coins. And I think people will
+
+197
+00:07:23,120 --> 00:07:28,480
+notice once we get that breakout in
+
+198
+00:07:25,600 --> 00:07:30,880
+dominance as well. If Ethereum is not
+
+199
+00:07:28,480 --> 00:07:32,960
+selling off in the next days, if it just
+
+200
+00:07:30,880 --> 00:07:35,400
+stays at the current level, or it goes
+
+201
+00:07:32,960 --> 00:07:37,720
+up slightly, if it outperforms slightly,
+
+202
+00:07:35,400 --> 00:07:40,520
+then this could lead to a wave of
+
+203
+00:07:37,720 --> 00:07:42,440
+selling, because then it becomes obvious
+
+204
+00:07:40,520 --> 00:07:44,640
+that things are turning around for ETH.
+
+205
+00:07:42,440 --> 00:07:47,200
+But for Ethereum to double from here, we
+
+206
+00:07:44,640 --> 00:07:49,600
+do need positive momentum for Bitcoin as
+
+207
+00:07:47,200 --> 00:07:51,800
+well. We are getting closer to a golden
+
+208
+00:07:49,600 --> 00:07:54,040
+cross in ETH, but we've been bearish
+
+209
+00:07:51,800 --> 00:07:55,600
+since October of last year, and we've
+
+210
+00:07:54,040 --> 00:07:57,480
+been betting on falling prices of
+
+211
+00:07:55,600 --> 00:08:00,160
+Bitcoin since then. Without a golden
+
+212
+00:07:57,480 --> 00:08:02,000
+cross here, Ethereum is not going to
+
+213
+00:08:00,160 --> 00:08:03,360
+double. But the next weeks will be very
+
+214
+00:08:02,000 --> 00:08:05,520
+interesting. Maybe we already get a
+
+215
+00:08:03,360 --> 00:08:06,680
+decision by end of the month. If you got
+
+216
+00:08:05,520 --> 00:08:07,840
+some value out of this video, feel free
+
+217
+00:08:06,680 --> 00:08:09,240
+to give it a like, it helps the channel
+
+218
+00:08:07,840 --> 00:08:10,720
+grow. Feel free to also subscribe. I
+
+219
+00:08:09,240 --> 00:08:12,840
+publish here regularly. If you're
+
+220
+00:08:10,720 --> 00:08:13,960
+interested in doing your own back test,
+
+221
+00:08:12,840 --> 00:08:16,120
+or if you want to get the trading
+
+222
+00:08:13,960 --> 00:08:18,160
+signals as we write Bitcoin, Ethereum,
+
+223
+00:08:16,120 --> 00:08:19,520
+Solana, various altcoins, feel free to
+
+224
+00:08:18,160 --> 00:08:21,000
+check out the premium membership. Link
+
+225
+00:08:19,520 --> 00:08:24,760
+to premium is over here. Thanks for
+
+226
+00:08:21,000 --> 00:08:24,760
+watching, and see you next time. Cheers.
+

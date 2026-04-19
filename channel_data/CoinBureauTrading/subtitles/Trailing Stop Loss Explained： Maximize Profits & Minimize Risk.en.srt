@@ -1,0 +1,1068 @@
+1
+00:00:00,000 --> 00:00:03,640
+What's up, guys? It's Jordan here from
+
+2
+00:00:01,640 --> 00:00:05,640
+CoinBureau, and in today's video, I'm
+
+3
+00:00:03,640 --> 00:00:08,280
+going to be showing you how to use the
+
+4
+00:00:05,640 --> 00:00:10,400
+trailing stop to make sure that you are
+
+5
+00:00:08,280 --> 00:00:12,680
+locking in the maximum possible gains
+
+6
+00:00:10,400 --> 00:00:14,960
+that you can on your trades. This really
+
+7
+00:00:12,680 --> 00:00:17,160
+is one of my all-time favorite features
+
+8
+00:00:14,960 --> 00:00:19,000
+to use in trading when it comes to stop
+
+9
+00:00:17,160 --> 00:00:21,000
+loss, and one of my favorite things
+
+10
+00:00:19,000 --> 00:00:23,480
+about the Bybit platform, although it
+
+11
+00:00:21,000 --> 00:00:25,440
+can be found on some other exchanges. It
+
+12
+00:00:23,480 --> 00:00:27,160
+can help you to manage your risk and
+
+13
+00:00:25,440 --> 00:00:29,520
+lock in higher gains through using a
+
+14
+00:00:27,160 --> 00:00:31,320
+little bit of automation. And very
+
+15
+00:00:29,520 --> 00:00:33,280
+often, people think that using this is
+
+16
+00:00:31,320 --> 00:00:34,960
+actually more complex than it is, and
+
+17
+00:00:33,280 --> 00:00:37,160
+today I'm going to break it down so you
+
+18
+00:00:34,960 --> 00:00:39,200
+can all start using it. Knowing how to
+
+19
+00:00:37,160 --> 00:00:40,640
+use the trailing stop is a great asset
+
+20
+00:00:39,200 --> 00:00:42,840
+to any crypto trader and was a
+
+21
+00:00:40,640 --> 00:00:44,600
+game-changer for me when I found out how
+
+22
+00:00:42,840 --> 00:00:46,920
+to use it. We're going to be having a
+
+23
+00:00:44,600 --> 00:00:49,040
+look at what is a trailing stop, how it
+
+24
+00:00:46,920 --> 00:00:51,280
+can be used for higher gains and higher
+
+25
+00:00:49,040 --> 00:00:53,160
+win rate, and of course, how it works
+
+26
+00:00:51,280 --> 00:00:55,520
+and how to activate it using all of the
+
+27
+00:00:53,160 --> 00:00:57,480
+different parameters. If you are trading
+
+28
+00:00:55,520 --> 00:00:59,520
+along with us, use the Bybit link in the
+
+29
+00:00:57,480 --> 00:01:01,320
+description to set up an account, and I
+
+30
+00:00:59,520 --> 00:01:03,840
+will be demonstrating the trailing stop
+
+31
+00:01:01,320 --> 00:01:05,920
+today on Bybit. Please feel free to also
+
+32
+00:01:03,840 --> 00:01:07,960
+join my Discord trading community. The
+
+33
+00:01:05,920 --> 00:01:10,240
+link is in the description, and as you
+
+34
+00:01:07,960 --> 00:01:13,200
+can see from the P&L share group, the
+
+35
+00:01:10,240 --> 00:01:15,600
+crew is absolutely killing it. Okay, so
+
+36
+00:01:13,200 --> 00:01:18,440
+first things first, what is a trailing
+
+37
+00:01:15,600 --> 00:01:21,160
+stop? As the name suggests, it is a stop
+
+38
+00:01:18,440 --> 00:01:25,120
+loss that will trail automatically
+
+39
+00:01:21,160 --> 00:01:27,560
+behind the price at your given distance.
+
+40
+00:01:25,120 --> 00:01:29,560
+So, you select the distance behind the
+
+41
+00:01:27,560 --> 00:01:31,800
+price that you want the trailing stop to
+
+42
+00:01:29,560 --> 00:01:34,120
+follow, but and it will automatically
+
+43
+00:01:31,800 --> 00:01:37,000
+trail behind that price every time the
+
+44
+00:01:34,120 --> 00:01:38,840
+price moves further in the direction of
+
+45
+00:01:37,000 --> 00:01:41,920
+your trade. So, let's look at this
+
+46
+00:01:38,840 --> 00:01:44,560
+simple example now of Bitcoin as it is
+
+47
+00:01:41,920 --> 00:01:46,840
+at the current value area high of its
+
+48
+00:01:44,560 --> 00:01:48,880
+range. This is using the fixed range
+
+49
+00:01:46,840 --> 00:01:50,800
+volume profile. This means that
+
+50
+00:01:48,880 --> 00:01:53,120
+technically now we are looking for
+
+51
+00:01:50,800 --> 00:01:56,200
+signals on our other indicators for
+
+52
+00:01:53,120 --> 00:01:58,600
+confluence for a short trade on Bitcoin
+
+53
+00:01:56,200 --> 00:02:00,520
+somewhere in this zone. For the sake of
+
+54
+00:01:58,600 --> 00:02:02,560
+this teaching, let's say that we are
+
+55
+00:02:00,520 --> 00:02:05,240
+getting a confluence signal from our
+
+56
+00:02:02,560 --> 00:02:07,760
+other indicators telling us to go short
+
+57
+00:02:05,240 --> 00:02:09,920
+at the current moment. This could be RSI
+
+58
+00:02:07,760 --> 00:02:12,120
+and stochastic RSI in overbought at the
+
+59
+00:02:09,920 --> 00:02:14,720
+same time on this time frame. This could
+
+60
+00:02:12,120 --> 00:02:16,280
+be an SMC order block or a market cipher
+
+61
+00:02:14,720 --> 00:02:18,520
+red dot trigger wave or bearish
+
+62
+00:02:16,280 --> 00:02:20,560
+divergence or any other indicator that
+
+63
+00:02:18,520 --> 00:02:22,520
+you use for confluence on your trades.
+
+64
+00:02:20,560 --> 00:02:24,880
+If the short position is looking like
+
+65
+00:02:22,520 --> 00:02:27,320
+this with our stop loss above the
+
+66
+00:02:24,880 --> 00:02:29,840
+previous swing high wick, of course,
+
+67
+00:02:27,320 --> 00:02:32,480
+when we enter the trade, whether it's on
+
+68
+00:02:29,840 --> 00:02:35,080
+limit or market, we want to enter with a
+
+69
+00:02:32,480 --> 00:02:37,160
+stop loss so that there is no moment
+
+70
+00:02:35,080 --> 00:02:39,360
+that we are unprotected. I always
+
+71
+00:02:37,160 --> 00:02:41,520
+recommend here on Bybit to make sure
+
+72
+00:02:39,360 --> 00:02:44,320
+that when you are entering your trade,
+
+73
+00:02:41,520 --> 00:02:46,280
+you enter with a stop loss level. The
+
+74
+00:02:44,320 --> 00:02:48,240
+take profits are less important. You can
+
+75
+00:02:46,280 --> 00:02:50,240
+always go put them in at a later time,
+
+76
+00:02:48,240 --> 00:02:52,720
+but I would recommend opening your trade
+
+77
+00:02:50,240 --> 00:02:54,640
+with an initial stop loss in case you
+
+78
+00:02:52,720 --> 00:02:56,760
+lose internet connectivity, and you
+
+79
+00:02:54,640 --> 00:02:58,440
+should never be getting liquidated. So,
+
+80
+00:02:56,760 --> 00:03:00,520
+once you are in your trade, you can go
+
+81
+00:02:58,440 --> 00:03:02,080
+ahead and set your take profit limit
+
+82
+00:03:00,520 --> 00:03:03,720
+orders. You can do this in a number of
+
+83
+00:03:02,080 --> 00:03:05,720
+different ways depending on what you
+
+84
+00:03:03,720 --> 00:03:07,960
+prefer. One of the best ways, in my
+
+85
+00:03:05,720 --> 00:03:09,800
+opinion, is to use the fib retracement
+
+86
+00:03:07,960 --> 00:03:11,400
+tool. There is a tutorial on this on my
+
+87
+00:03:09,800 --> 00:03:13,360
+personal trading channel, so check it
+
+88
+00:03:11,400 --> 00:03:16,520
+out, and this allows us to find very
+
+89
+00:03:13,360 --> 00:03:19,040
+nice high probability take profit levels
+
+90
+00:03:16,520 --> 00:03:21,120
+to set our limit orders for our gradual
+
+91
+00:03:19,040 --> 00:03:22,880
+take profits. Now is when it gets
+
+92
+00:03:21,120 --> 00:03:24,920
+interesting when we start to understand
+
+93
+00:03:22,880 --> 00:03:26,880
+how to use the trailing stop, and there
+
+94
+00:03:24,920 --> 00:03:28,640
+are three major different ways of doing
+
+95
+00:03:26,880 --> 00:03:31,120
+this. The first way is to set your
+
+96
+00:03:28,640 --> 00:03:33,360
+trailing stop at the open of your trade
+
+97
+00:03:31,120 --> 00:03:35,520
+at the level of your stop loss. So, if
+
+98
+00:03:33,360 --> 00:03:37,480
+you do this, you open the trade here
+
+99
+00:03:35,520 --> 00:03:39,440
+with your stop loss here, and you also
+
+100
+00:03:37,480 --> 00:03:42,520
+set your trailing stop at that same
+
+101
+00:03:39,440 --> 00:03:44,600
+distance. Then, as you go into profit,
+
+102
+00:03:42,520 --> 00:03:47,080
+your trailing stop will trail behind
+
+103
+00:03:44,600 --> 00:03:49,160
+that price at the same distance, and
+
+104
+00:03:47,080 --> 00:03:51,320
+remember, it only moves in the positive
+
+105
+00:03:49,160 --> 00:03:53,680
+direction of the trade. So, if price
+
+106
+00:03:51,320 --> 00:03:55,720
+moves down this much, your stop loss
+
+107
+00:03:53,680 --> 00:03:58,320
+will also move down that much, and then
+
+108
+00:03:55,720 --> 00:04:00,320
+if price reverses and goes up, it will
+
+109
+00:03:58,320 --> 00:04:02,440
+hit your trailing stop. And this is the
+
+110
+00:04:00,320 --> 00:04:04,920
+main idea behind the trailing stop. It
+
+111
+00:04:02,440 --> 00:04:07,080
+is especially useful for scalpers and
+
+112
+00:04:04,920 --> 00:04:08,960
+trend following, but it really can be
+
+113
+00:04:07,080 --> 00:04:10,560
+used on all styles of trading. The
+
+114
+00:04:08,960 --> 00:04:12,960
+second major way to use the trailing
+
+115
+00:04:10,560 --> 00:04:15,240
+stop is to drop it in manually when you
+
+116
+00:04:12,960 --> 00:04:17,160
+want to remove all risk and when you
+
+117
+00:04:15,240 --> 00:04:20,200
+have taken a decent amount of profit off
+
+118
+00:04:17,160 --> 00:04:24,080
+the trade. So, say this trade has gone
+
+119
+00:04:20,200 --> 00:04:26,480
+to hit your TP1, TP2, and TP3, you can
+
+120
+00:04:24,080 --> 00:04:28,960
+now go drop in quite a tight trailing
+
+121
+00:04:26,480 --> 00:04:31,680
+stop so that your stop loss will trail
+
+122
+00:04:28,960 --> 00:04:33,520
+any further price movement as long as it
+
+123
+00:04:31,680 --> 00:04:35,960
+is in the direction of your trade, and
+
+124
+00:04:33,520 --> 00:04:37,960
+as soon as there is a pullback, you will
+
+125
+00:04:35,960 --> 00:04:39,680
+lock in that amount by closing the trade
+
+126
+00:04:37,960 --> 00:04:42,360
+at your trailing stop. This allows for
+
+127
+00:04:39,680 --> 00:04:44,760
+very high profit-taking efficiency, and
+
+128
+00:04:42,360 --> 00:04:47,120
+as I say, is just amazing for trend
+
+129
+00:04:44,760 --> 00:04:49,160
+following. As if there is a very big
+
+130
+00:04:47,120 --> 00:04:51,800
+impulse move, your trailing stop will
+
+131
+00:04:49,160 --> 00:04:54,520
+follow it, and once that move stops, you
+
+132
+00:04:51,800 --> 00:04:56,520
+will lock in those gains. The third most
+
+133
+00:04:54,520 --> 00:04:58,560
+popular way to use this, and actually my
+
+134
+00:04:56,520 --> 00:05:00,760
+favorite way of using it, is to use the
+
+135
+00:04:58,560 --> 00:05:02,640
+activation price function in the
+
+136
+00:05:00,760 --> 00:05:05,520
+trailing stop. This will allow you to
+
+137
+00:05:02,640 --> 00:05:07,960
+choose a price at which you want to
+
+138
+00:05:05,520 --> 00:05:10,120
+activate the trailing stop, and at that
+
+139
+00:05:07,960 --> 00:05:12,400
+activation price, how large you would
+
+140
+00:05:10,120 --> 00:05:14,240
+like your distance to be between price
+
+141
+00:05:12,400 --> 00:05:16,320
+and between the trailing stop. This for
+
+142
+00:05:14,240 --> 00:05:18,560
+me is an absolute ultimate tool when it
+
+143
+00:05:16,320 --> 00:05:20,800
+comes to risk management, as in essence,
+
+144
+00:05:18,560 --> 00:05:22,960
+you can automate moving your stop loss
+
+145
+00:05:20,800 --> 00:05:25,200
+to a break even after your first take
+
+146
+00:05:22,960 --> 00:05:28,520
+profit, and then letting that stop loss
+
+147
+00:05:25,200 --> 00:05:30,160
+trail price from then on. This ensures a
+
+148
+00:05:28,520 --> 00:05:32,320
+risk-free trade at your first take
+
+149
+00:05:30,160 --> 00:05:34,640
+profit without you having to be on the
+
+150
+00:05:32,320 --> 00:05:36,880
+charts at that moment to move your stop
+
+151
+00:05:34,640 --> 00:05:39,080
+loss to break even, and as the trade
+
+152
+00:05:36,880 --> 00:05:41,880
+goes in your favor, it also allows you
+
+153
+00:05:39,080 --> 00:05:43,680
+to lock in a stop that trails the price.
+
+154
+00:05:41,880 --> 00:05:47,040
+What I will usually do here is I will
+
+155
+00:05:43,680 --> 00:05:49,000
+take a one-to-one risk-to-reward ratio
+
+156
+00:05:47,040 --> 00:05:52,120
+from my stop loss,
+
+157
+00:05:49,000 --> 00:05:54,400
+find that price, and at that price, I
+
+158
+00:05:52,120 --> 00:05:57,360
+will set the activation price for my
+
+159
+00:05:54,400 --> 00:05:59,640
+trailing stop to be placed above break
+
+160
+00:05:57,360 --> 00:06:01,960
+even with a little bit of buffer for
+
+161
+00:05:59,640 --> 00:06:04,080
+fees. Then, in the trade, when price
+
+162
+00:06:01,960 --> 00:06:06,600
+hits that level, the trailing stop will
+
+163
+00:06:04,080 --> 00:06:08,880
+activate and appear, and of course, if
+
+164
+00:06:06,600 --> 00:06:11,200
+price retraces, it will close the trade
+
+165
+00:06:08,880 --> 00:06:13,240
+in a profit, and if price continues
+
+166
+00:06:11,200 --> 00:06:15,200
+further, the trailing stop will follow
+
+167
+00:06:13,240 --> 00:06:17,280
+along with it. So, this is helping you
+
+168
+00:06:15,200 --> 00:06:19,320
+to manage your risk better in two major
+
+169
+00:06:17,280 --> 00:06:21,960
+ways. It's allowing you to lock in
+
+170
+00:06:19,320 --> 00:06:24,560
+higher gains as the trade moves in your
+
+171
+00:06:21,960 --> 00:06:26,320
+favor for if or when the trend turns
+
+172
+00:06:24,560 --> 00:06:28,560
+around. It's also allowing you to
+
+173
+00:06:26,320 --> 00:06:30,560
+automate placing your stop loss into
+
+174
+00:06:28,560 --> 00:06:33,080
+profit, which can have a significant
+
+175
+00:06:30,560 --> 00:06:34,760
+effect on your win rate. All right, so
+
+176
+00:06:33,080 --> 00:06:36,880
+let's have a look now at how to actually
+
+177
+00:06:34,760 --> 00:06:38,920
+use the trailing stop on Bybit and which
+
+178
+00:06:36,880 --> 00:06:41,040
+parameters you need to understand in
+
+179
+00:06:38,920 --> 00:06:43,040
+order to execute it. For the sake of the
+
+180
+00:06:41,040 --> 00:06:46,040
+demonstration, I'm just going to open a
+
+181
+00:06:43,040 --> 00:06:48,640
+paper trade here on Fatcoin. Remember to
+
+182
+00:06:46,040 --> 00:06:51,000
+always open your trade with a stop loss
+
+183
+00:06:48,640 --> 00:06:53,040
+in place. Here you can see my trade
+
+184
+00:06:51,000 --> 00:06:55,840
+entry and my stop loss, and you can
+
+185
+00:06:53,040 --> 00:06:58,080
+always drag your stop loss around as you
+
+186
+00:06:55,840 --> 00:07:01,200
+need to. All right, so now we are in the
+
+187
+00:06:58,080 --> 00:07:04,120
+trade. Come to your trailing stop right
+
+188
+00:07:01,200 --> 00:07:06,360
+here in the open positions section and
+
+189
+00:07:04,120 --> 00:07:08,040
+click add. The main thing to understand
+
+190
+00:07:06,360 --> 00:07:11,200
+here first is that you can set it by
+
+191
+00:07:08,040 --> 00:07:14,720
+distance or by rate. By distance is the
+
+192
+00:07:11,200 --> 00:07:16,360
+amount of actual price between price and
+
+193
+00:07:14,720 --> 00:07:18,480
+where you want your trailing stop to
+
+194
+00:07:16,360 --> 00:07:21,120
+follow. It seems complicated, but it's
+
+195
+00:07:18,480 --> 00:07:23,400
+really not. You just subtract the price
+
+196
+00:07:21,120 --> 00:07:25,240
+at the distance of your trailing stop or
+
+197
+00:07:23,400 --> 00:07:26,960
+where you would like it to be from the
+
+198
+00:07:25,240 --> 00:07:29,320
+current price, and you're left with the
+
+199
+00:07:26,960 --> 00:07:31,560
+price difference. Try to look at the
+
+200
+00:07:29,320 --> 00:07:33,680
+candles on the lower time frames and see
+
+201
+00:07:31,560 --> 00:07:35,960
+how big the volatility is within the
+
+202
+00:07:33,680 --> 00:07:37,600
+trend to find your ultimate distance for
+
+203
+00:07:35,960 --> 00:07:39,560
+your trailing stop so that you are
+
+204
+00:07:37,600 --> 00:07:42,200
+trailing behind the trend as it moves
+
+205
+00:07:39,560 --> 00:07:44,040
+up, but if there is a major retracement,
+
+206
+00:07:42,200 --> 00:07:45,840
+the trailing stop will lock in the gains
+
+207
+00:07:44,040 --> 00:07:48,000
+for you. The other way, and the way
+
+208
+00:07:45,840 --> 00:07:50,120
+which I think is the easiest, is to just
+
+209
+00:07:48,000 --> 00:07:52,120
+measure the distance that you would like
+
+210
+00:07:50,120 --> 00:07:53,920
+in percentage between price and your
+
+211
+00:07:52,120 --> 00:07:56,160
+trailing stop. So, if we come back to
+
+212
+00:07:53,920 --> 00:07:58,080
+our trade here, we simply measure how
+
+213
+00:07:56,160 --> 00:08:00,080
+far we would like our trailing stop to
+
+214
+00:07:58,080 --> 00:08:02,280
+be placed, you can always drag this
+
+215
+00:08:00,080 --> 00:08:05,160
+around afterwards. So, let's start with
+
+216
+00:08:02,280 --> 00:08:09,440
+a 2%. We then go and add the trailing
+
+217
+00:08:05,160 --> 00:08:11,840
+stop in at a rate of 2% and click
+
+218
+00:08:09,440 --> 00:08:14,280
+confirm. As you can see, this has placed
+
+219
+00:08:11,840 --> 00:08:16,080
+a trailing stop for us here, and this is
+
+220
+00:08:14,280 --> 00:08:18,480
+really where it does get fun. This
+
+221
+00:08:16,080 --> 00:08:21,800
+trailing stop will trail automatically
+
+222
+00:08:18,480 --> 00:08:24,280
+behind your price. As you can see here,
+
+223
+00:08:21,800 --> 00:08:26,840
+this is the trailing stop, and it is
+
+224
+00:08:24,280 --> 00:08:29,280
+following now automatically
+
+225
+00:08:26,840 --> 00:08:31,640
+as the price drops according to the
+
+226
+00:08:29,280 --> 00:08:33,560
+distance at which I've dropped it into
+
+227
+00:08:31,640 --> 00:08:36,680
+the chart. It will keep following at
+
+228
+00:08:33,560 --> 00:08:39,159
+this distance to any new maximum that
+
+229
+00:08:36,680 --> 00:08:41,360
+the price reaches on that trend. Then,
+
+230
+00:08:39,159 --> 00:08:43,400
+when the trend retraces by the distance
+
+231
+00:08:41,360 --> 00:08:46,360
+that I've chosen, the trailing stop will
+
+232
+00:08:43,400 --> 00:08:48,360
+get hit and lock in the gains. Then, as
+
+233
+00:08:46,360 --> 00:08:50,560
+I was explaining, another really big
+
+234
+00:08:48,360 --> 00:08:54,120
+brain way to use this is by using the
+
+235
+00:08:50,560 --> 00:08:56,600
+activation price. This is the price at
+
+236
+00:08:54,120 --> 00:08:58,400
+which your trailing stop will activate.
+
+237
+00:08:56,600 --> 00:09:00,720
+You don't have to use this feature, but
+
+238
+00:08:58,400 --> 00:09:02,560
+it can be very useful for automating
+
+239
+00:09:00,720 --> 00:09:04,800
+when you bring your stop loss to break
+
+240
+00:09:02,560 --> 00:09:07,040
+even if you do want this to be a
+
+241
+00:09:04,800 --> 00:09:09,120
+trailing stop. You might even choose to
+
+242
+00:09:07,040 --> 00:09:11,600
+do this after your second or third take
+
+243
+00:09:09,120 --> 00:09:13,560
+profits, which really helps you lock in
+
+244
+00:09:11,600 --> 00:09:15,000
+the maximum amount of gains you are
+
+245
+00:09:13,560 --> 00:09:17,600
+pulling out of a trade in any
+
+246
+00:09:15,000 --> 00:09:19,640
+eventuality. I usually do this at my
+
+247
+00:09:17,600 --> 00:09:21,440
+first take profit. Especially for
+
+248
+00:09:19,640 --> 00:09:23,600
+scalpers, you might want to do this at
+
+249
+00:09:21,440 --> 00:09:25,360
+your first take profit you are taking
+
+250
+00:09:23,600 --> 00:09:27,280
+all risk off the table and then
+
+251
+00:09:25,360 --> 00:09:29,440
+following with your take profit behind
+
+252
+00:09:27,280 --> 00:09:31,680
+the trend that you are scalping. This is
+
+253
+00:09:29,440 --> 00:09:34,040
+very simple to use. You choose the
+
+254
+00:09:31,680 --> 00:09:36,640
+activation price at which you would like
+
+255
+00:09:34,040 --> 00:09:39,880
+the trailing stop to be implemented as
+
+256
+00:09:36,640 --> 00:09:41,880
+well as the distance behind that price.
+
+257
+00:09:39,880 --> 00:09:43,480
+I really hope this has been useful in
+
+258
+00:09:41,880 --> 00:09:45,480
+shedding some light on the trailing
+
+259
+00:09:43,480 --> 00:09:47,520
+stop. It's really not as complicated as
+
+260
+00:09:45,480 --> 00:09:49,840
+you might think. It's so easy to use,
+
+261
+00:09:47,520 --> 00:09:51,440
+and it is so useful. Please let me know
+
+262
+00:09:49,840 --> 00:09:53,840
+any questions that you have in the
+
+263
+00:09:51,440 --> 00:09:56,440
+comments. As always, try to backtest
+
+264
+00:09:53,840 --> 00:09:58,720
+this using paper trades or demo first in
+
+265
+00:09:56,440 --> 00:10:00,520
+case you make any mistakes, and always
+
+266
+00:09:58,720 --> 00:10:03,280
+play from a position of power and
+
+267
+00:10:00,520 --> 00:10:03,280
+strength.
+

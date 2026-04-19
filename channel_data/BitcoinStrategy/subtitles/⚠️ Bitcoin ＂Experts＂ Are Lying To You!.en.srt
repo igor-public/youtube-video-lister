@@ -1,0 +1,1036 @@
+1
+00:00:00,000 --> 00:00:05,800
+Let's be honest, nobody knows where the
+
+2
+00:00:03,320 --> 00:00:08,040
+Bitcoin price will go. We're all just
+
+3
+00:00:05,800 --> 00:00:10,480
+guessing. We try to draw parallels from
+
+4
+00:00:08,040 --> 00:00:12,400
+the past. We're trying to find structure
+
+5
+00:00:10,480 --> 00:00:15,040
+in the data. And while we can't be
+
+6
+00:00:12,400 --> 00:00:16,800
+certain about anything, there are some
+
+7
+00:00:15,040 --> 00:00:19,120
+good arguments that we might have
+
+8
+00:00:16,800 --> 00:00:22,080
+already bottomed in Bitcoin. One of the
+
+9
+00:00:19,120 --> 00:00:25,680
+best arguments is over here. It's the
+
+10
+00:00:22,080 --> 00:00:27,720
+weekly RSI. What we see at the top,
+
+11
+00:00:25,680 --> 00:00:30,080
+that's the Bitcoin price. What we see at
+
+12
+00:00:27,720 --> 00:00:32,279
+the bottom is the weekly relative
+
+13
+00:00:30,080 --> 00:00:34,320
+strength indicator. And in the past,
+
+14
+00:00:32,279 --> 00:00:37,960
+when we went into this oversold
+
+15
+00:00:34,320 --> 00:00:40,080
+territory, we tended to also bottom out
+
+16
+00:00:37,960 --> 00:00:43,520
+in the Bitcoin price. And we have just
+
+17
+00:00:40,080 --> 00:00:45,400
+hit a low in the weekly RSI again. And
+
+18
+00:00:43,520 --> 00:00:47,800
+so there are always those two competing
+
+19
+00:00:45,400 --> 00:00:50,120
+forces. There's the valuation of an
+
+20
+00:00:47,800 --> 00:00:52,280
+asset and there's the current momentum.
+
+21
+00:00:50,120 --> 00:00:54,000
+If momentum is negative, if the trend is
+
+22
+00:00:52,280 --> 00:00:55,560
+currently bearish, it's very hard to
+
+23
+00:00:54,000 --> 00:00:57,840
+turn this around. But when the
+
+24
+00:00:55,560 --> 00:01:00,560
+valuations are cheap enough, people
+
+25
+00:00:57,840 --> 00:01:03,440
+might buy against the momentum. Now, the
+
+26
+00:01:00,560 --> 00:01:05,640
+weekly RSI is one thing, but then we've
+
+27
+00:01:03,440 --> 00:01:08,160
+also got this curved line over here.
+
+28
+00:01:05,640 --> 00:01:11,800
+This is nothing scientific. It's just
+
+29
+00:01:08,160 --> 00:01:14,240
+coincidentally a very nice support over
+
+30
+00:01:11,800 --> 00:01:16,960
+the different bear markets. And that
+
+31
+00:01:14,240 --> 00:01:19,840
+line does not tell the story that we've
+
+32
+00:01:16,960 --> 00:01:22,120
+already bottomed out. That line tells us
+
+33
+00:01:19,840 --> 00:01:25,520
+that we could potentially fall by
+
+34
+00:01:22,120 --> 00:01:27,480
+another 45% from here, all the way down
+
+35
+00:01:25,520 --> 00:01:29,120
+to $36,000
+
+36
+00:01:27,480 --> 00:01:31,080
+in Bitcoin. And so we've got two
+
+37
+00:01:29,120 --> 00:01:33,360
+competing narratives here. So let's have
+
+38
+00:01:31,080 --> 00:01:35,160
+a look at how the capital is flowing.
+
+39
+00:01:33,360 --> 00:01:37,360
+Let's have a look at the stablecoin
+
+40
+00:01:35,160 --> 00:01:39,520
+market cap. This used to be a pretty
+
+41
+00:01:37,360 --> 00:01:41,800
+good indication whether or not we have
+
+42
+00:01:39,520 --> 00:01:43,920
+bottomed out or if we potentially fall
+
+43
+00:01:41,800 --> 00:01:46,080
+further. And this here is the stablecoin
+
+44
+00:01:43,920 --> 00:01:48,880
+market cap over the last few months. It
+
+45
+00:01:46,080 --> 00:01:51,000
+appears as if money is still flowing
+
+46
+00:01:48,880 --> 00:01:52,920
+into the system. It's still going up.
+
+47
+00:01:51,000 --> 00:01:54,480
+Not as quickly anymore as it used to,
+
+48
+00:01:52,920 --> 00:01:56,200
+but in general this seems to be
+
+49
+00:01:54,480 --> 00:01:58,040
+positive. The reason why I like to look
+
+50
+00:01:56,200 --> 00:02:00,160
+at the stablecoin market cap is because
+
+51
+00:01:58,040 --> 00:02:02,080
+it tells us a story whether or not
+
+52
+00:02:00,160 --> 00:02:04,440
+people are putting money into the
+
+53
+00:02:02,080 --> 00:02:07,120
+system. So people convert their fiat
+
+54
+00:02:04,440 --> 00:02:09,960
+currency into stablecoins or if people
+
+55
+00:02:07,120 --> 00:02:11,880
+net withdraw from the crypto ecosystem.
+
+56
+00:02:09,960 --> 00:02:13,920
+If people withdraw, if they convert
+
+57
+00:02:11,880 --> 00:02:16,000
+their stablecoins into fiat currency,
+
+58
+00:02:13,920 --> 00:02:17,640
+then stablecoins get burnt, then this
+
+59
+00:02:16,000 --> 00:02:20,520
+chart is going down. Now, the growth
+
+60
+00:02:17,640 --> 00:02:23,920
+rate has slowed down a lot. And I'm not
+
+61
+00:02:20,520 --> 00:02:26,880
+so sure if that growth is new deposits
+
+62
+00:02:23,920 --> 00:02:29,120
+or if it's just interest. Because when
+
+63
+00:02:26,880 --> 00:02:32,680
+we look at the stablecoin market cap
+
+64
+00:02:29,120 --> 00:02:36,080
+relative to the US money supply, that is
+
+65
+00:02:32,680 --> 00:02:37,680
+not growing since October of last year.
+
+66
+00:02:36,080 --> 00:02:39,880
+Measured in US dollars, we are still
+
+67
+00:02:37,680 --> 00:02:42,560
+slightly going up, but relative to the
+
+68
+00:02:39,880 --> 00:02:46,680
+money supply, we are not. Before October
+
+69
+00:02:42,560 --> 00:02:49,560
+of 2025, we tended to go up much faster
+
+70
+00:02:46,680 --> 00:02:51,360
+in the stablecoin market cap relative to
+
+71
+00:02:49,560 --> 00:02:53,280
+the monetary base. And have a look at
+
+72
+00:02:51,360 --> 00:02:56,560
+what happened with the cryptocurrency
+
+73
+00:02:53,280 --> 00:02:59,560
+market cap excluding the stablecoins. It
+
+74
+00:02:56,560 --> 00:03:01,920
+peaked exactly at the moment when the
+
+75
+00:02:59,560 --> 00:03:04,280
+inflows stopped. Bitcoin, Ethereum,
+
+76
+00:03:01,920 --> 00:03:06,880
+Solana, all the altcoins combined and
+
+77
+00:03:04,280 --> 00:03:10,560
+excluding the stablecoins, that went
+
+78
+00:03:06,880 --> 00:03:11,880
+down by almost 50% since the inflows
+
+79
+00:03:10,560 --> 00:03:13,960
+stopped. I like to look at the
+
+80
+00:03:11,880 --> 00:03:16,360
+stablecoin market cap because it has
+
+81
+00:03:13,960 --> 00:03:18,920
+very little volatility. It tends to show
+
+82
+00:03:16,360 --> 00:03:20,800
+the current trend very clearly. That's
+
+83
+00:03:18,920 --> 00:03:22,400
+different to crypto prices. Crypto
+
+84
+00:03:20,800 --> 00:03:24,600
+prices are much more volatile. They
+
+85
+00:03:22,400 --> 00:03:26,680
+fluctuate much more. Figuring out where
+
+86
+00:03:24,600 --> 00:03:29,080
+we currently are in the trend is harder.
+
+87
+00:03:26,680 --> 00:03:31,440
+This here is when we had the Terra Luna
+
+88
+00:03:29,080 --> 00:03:33,760
+collapse. So when the UST stablecoin
+
+89
+00:03:31,440 --> 00:03:37,080
+depegged, people withdrew their money
+
+90
+00:03:33,760 --> 00:03:40,000
+from crypto and Bitcoin as a result went
+
+91
+00:03:37,080 --> 00:03:43,160
+down. Then we had a consolidation phase
+
+92
+00:03:40,000 --> 00:03:47,120
+from December of 2022 to September of
+
+93
+00:03:43,160 --> 00:03:49,280
+2023. Starting in October of 2023, we
+
+94
+00:03:47,120 --> 00:03:51,080
+got the inflows again. Just have a look
+
+95
+00:03:49,280 --> 00:03:53,000
+at how this correlates with the Bitcoin
+
+96
+00:03:51,080 --> 00:03:55,520
+price. With the consolidation, we
+
+97
+00:03:53,000 --> 00:03:59,320
+already saw a slight appreciation, but
+
+98
+00:03:55,520 --> 00:04:02,600
+really the main profit was made once we
+
+99
+00:03:59,320 --> 00:04:04,520
+saw clear inflows. Bitcoin appreciated
+
+100
+00:04:02,600 --> 00:04:06,360
+by 350%
+
+101
+00:04:04,520 --> 00:04:09,720
+while the stablecoin market cap during
+
+102
+00:04:06,360 --> 00:04:11,280
+the same time frame grew by 130%. So
+
+103
+00:04:09,720 --> 00:04:14,000
+there's a leverage effect here, right?
+
+104
+00:04:11,280 --> 00:04:16,239
+$1 invested in the crypto ecosystem,
+
+105
+00:04:14,000 --> 00:04:19,000
+once we buy a risk-on asset, tends to
+
+106
+00:04:16,239 --> 00:04:21,239
+push up market caps more than by $1.
+
+107
+00:04:19,000 --> 00:04:23,440
+Once the prevailing momentum stops, we
+
+108
+00:04:21,239 --> 00:04:25,800
+tend to see a turnaround in the price
+
+109
+00:04:23,440 --> 00:04:28,040
+movements. So once the outflows stop, we
+
+110
+00:04:25,800 --> 00:04:30,360
+tended to see rising prices. Once the
+
+111
+00:04:28,040 --> 00:04:32,480
+inflows stop, we tend to see falling
+
+112
+00:04:30,360 --> 00:04:35,720
+prices. And so that then begs the
+
+113
+00:04:32,480 --> 00:04:39,520
+question, are we really cheap enough in
+
+114
+00:04:35,720 --> 00:04:42,120
+Bitcoin already or is rather this curved
+
+115
+00:04:39,520 --> 00:04:45,240
+line prevailing and are we going all the
+
+116
+00:04:42,120 --> 00:04:47,960
+way down below 40K? Now, I believe there
+
+117
+00:04:45,240 --> 00:04:49,640
+are two major drivers for crypto prices.
+
+118
+00:04:47,960 --> 00:04:51,520
+There's the in and outflows out of the
+
+119
+00:04:49,640 --> 00:04:53,520
+entire system and those are quite
+
+120
+00:04:51,520 --> 00:04:55,200
+long-term cycles. That's the stablecoin
+
+121
+00:04:53,520 --> 00:04:57,680
+market cap. But then there's also
+
+122
+00:04:55,200 --> 00:04:59,760
+swapping activity, trading activity
+
+123
+00:04:57,680 --> 00:05:01,880
+within crypto. So there might be a lot
+
+124
+00:04:59,760 --> 00:05:03,920
+of capital in the crypto market, but
+
+125
+00:05:01,880 --> 00:05:05,320
+when everybody is selling Bitcoin, is
+
+126
+00:05:03,920 --> 00:05:08,080
+selling Ethereum, is selling the
+
+127
+00:05:05,320 --> 00:05:11,240
+altcoins for the stablecoins, then
+
+128
+00:05:08,080 --> 00:05:13,400
+prices come down. So it also depends on
+
+129
+00:05:11,240 --> 00:05:15,680
+what's currently the short-term outlook.
+
+130
+00:05:13,400 --> 00:05:18,200
+How much are people currently risk-on or
+
+131
+00:05:15,680 --> 00:05:20,400
+risk-off? How much of a portfolio on
+
+132
+00:05:18,200 --> 00:05:22,320
+average is currently in stablecoins
+
+133
+00:05:20,400 --> 00:05:25,200
+versus risk-on assets? And that's why I
+
+134
+00:05:22,320 --> 00:05:27,680
+find the stablecoin dominance very
+
+135
+00:05:25,200 --> 00:05:29,320
+useful. So how much percent of all of
+
+136
+00:05:27,680 --> 00:05:31,120
+crypto is currently in stablecoins?
+
+137
+00:05:29,320 --> 00:05:33,040
+That's what we are seeing in this chart.
+
+138
+00:05:31,120 --> 00:05:36,080
+When the stablecoin dominance is high,
+
+139
+00:05:33,040 --> 00:05:38,560
+when it's close to 16%, then crypto
+
+140
+00:05:36,080 --> 00:05:40,640
+prices tend to be low. When the
+
+141
+00:05:38,560 --> 00:05:43,120
+stablecoin dominance is low though, when
+
+142
+00:05:40,640 --> 00:05:45,040
+everybody has invested their stablecoins
+
+143
+00:05:43,120 --> 00:05:46,800
+and when the market is risk-on, then
+
+144
+00:05:45,040 --> 00:05:48,720
+prices [snorts] tend to be high. When
+
+145
+00:05:46,800 --> 00:05:50,240
+the stablecoin dominance goes up, prices
+
+146
+00:05:48,720 --> 00:05:52,880
+go down. When the stablecoin dominance
+
+147
+00:05:50,240 --> 00:05:56,000
+goes down, prices go up. So we've got an
+
+148
+00:05:52,880 --> 00:05:59,080
+inverse correlation here. And this chart
+
+149
+00:05:56,000 --> 00:06:01,280
+would imply that maybe we have to wait
+
+150
+00:05:59,080 --> 00:06:03,480
+until we hit the 16%
+
+151
+00:06:01,280 --> 00:06:06,400
+mark in the stablecoin dominance again.
+
+152
+00:06:03,480 --> 00:06:09,600
+That's when the past we tended to bottom
+
+153
+00:06:06,400 --> 00:06:11,880
+out. We are currently at 12.6%. Now, how
+
+154
+00:06:09,600 --> 00:06:13,800
+much could we fall in case the
+
+155
+00:06:11,880 --> 00:06:15,800
+stablecoin dominance goes up like this?
+
+156
+00:06:13,800 --> 00:06:18,840
+Let's have a look at the data point in
+
+157
+00:06:15,800 --> 00:06:20,960
+the past. So here, in August of 2022, we
+
+158
+00:06:18,840 --> 00:06:23,040
+were at very similar stablecoin
+
+159
+00:06:20,960 --> 00:06:27,360
+dominance marks and then we went all the
+
+160
+00:06:23,040 --> 00:06:28,520
+way up to 16%. How much did Bitcoin fall
+
+161
+00:06:27,360 --> 00:06:31,040
+while the stablecoin dominance
+
+162
+00:06:28,520 --> 00:06:33,320
+appreciated this way? Let's take the
+
+163
+00:06:31,040 --> 00:06:36,160
+same two data points and let's have a
+
+164
+00:06:33,320 --> 00:06:39,560
+look at the crypto market cap excluding
+
+165
+00:06:36,160 --> 00:06:41,680
+the stablecoins. It went down by roughly
+
+166
+00:06:39,560 --> 00:06:43,600
+27%.
+
+167
+00:06:41,680 --> 00:06:45,200
+If the stablecoin dominance was to hit
+
+168
+00:06:43,600 --> 00:06:47,600
+16%,
+
+169
+00:06:45,200 --> 00:06:50,440
+then Bitcoin, Ethereum, Solana, etc.
+
+170
+00:06:47,600 --> 00:06:52,440
+should go down by around 27%. So let's
+
+171
+00:06:50,440 --> 00:06:55,000
+have a look at our long-term Bitcoin
+
+172
+00:06:52,440 --> 00:06:57,160
+chart again and see where this brings
+
+173
+00:06:55,000 --> 00:07:00,520
+us. Going all the way down to the white
+
+174
+00:06:57,160 --> 00:07:03,480
+line, that implies a drop below 40K.
+
+175
+00:07:00,520 --> 00:07:08,120
+Going 27% down though, that would bring
+
+176
+00:07:03,480 --> 00:07:09,760
+us to a bear market bottom of $48,000.
+
+177
+00:07:08,120 --> 00:07:11,960
+And I think that's a pretty realistic
+
+178
+00:07:09,760 --> 00:07:14,360
+scenario. It's not too pessimistic. It's
+
+179
+00:07:11,960 --> 00:07:16,240
+not Bitcoin going to zero, but it's also
+
+180
+00:07:14,360 --> 00:07:18,200
+not too optimistic that we say we're
+
+181
+00:07:16,240 --> 00:07:21,120
+going to get new all-time highs when at
+
+182
+00:07:18,200 --> 00:07:23,240
+the same time no money is flowing into
+
+183
+00:07:21,120 --> 00:07:25,560
+the system. If the stablecoin market cap
+
+184
+00:07:23,240 --> 00:07:27,720
+is stable and if no money gets into the
+
+185
+00:07:25,560 --> 00:07:30,000
+system, how can we hit new all-time
+
+186
+00:07:27,720 --> 00:07:32,400
+highs? Or how would the current momentum
+
+187
+00:07:30,000 --> 00:07:35,560
+turn around? Valuations first need to be
+
+188
+00:07:32,400 --> 00:07:37,520
+low enough. The market has to be spooked
+
+189
+00:07:35,560 --> 00:07:40,360
+enough. The stablecoin dominance needs
+
+190
+00:07:37,520 --> 00:07:43,520
+to be high enough. And that could be
+
+191
+00:07:40,360 --> 00:07:45,400
+slightly below 50K. This also aligns
+
+192
+00:07:43,520 --> 00:07:47,720
+with the average cost basis, the
+
+193
+00:07:45,400 --> 00:07:49,960
+realized price. In the past, we tended
+
+194
+00:07:47,720 --> 00:07:52,080
+to fall below the average cost basis in
+
+195
+00:07:49,960 --> 00:07:54,280
+the market. That's when the bear market
+
+196
+00:07:52,080 --> 00:07:57,880
+stopped. Currently, that average cost
+
+197
+00:07:54,280 --> 00:08:01,240
+basis is at 54K. Now, that's above the
+
+198
+00:07:57,880 --> 00:08:03,440
+48K over here, but that's expected
+
+199
+00:08:01,240 --> 00:08:05,720
+because we fell below the realized
+
+200
+00:08:03,440 --> 00:08:07,880
+price. We didn't directly bounce at the
+
+201
+00:08:05,720 --> 00:08:09,960
+realized price. I also like to show this
+
+202
+00:08:07,880 --> 00:08:11,800
+chart here, the net unrealized profit
+
+203
+00:08:09,960 --> 00:08:14,040
+and loss. How much is the average
+
+204
+00:08:11,800 --> 00:08:15,880
+Bitcoin investor currently in profit
+
+205
+00:08:14,040 --> 00:08:19,720
+versus in loss? And currently, the
+
+206
+00:08:15,880 --> 00:08:23,680
+average investor is still 18% in profit.
+
+207
+00:08:19,720 --> 00:08:26,520
+If we were to fall by 27, 28%, then the
+
+208
+00:08:23,680 --> 00:08:28,840
+average investor would be 10% in losses.
+
+209
+00:08:26,520 --> 00:08:31,840
+And I think that's a pretty good price
+
+210
+00:08:28,840 --> 00:08:34,520
+target. Volatility in Bitcoin over time
+
+211
+00:08:31,840 --> 00:08:36,680
+is declining both on the upside, but
+
+212
+00:08:34,520 --> 00:08:39,120
+also on the downside. So the net
+
+213
+00:08:36,680 --> 00:08:42,240
+unrealized gains tend to decline from
+
+214
+00:08:39,120 --> 00:08:43,840
+cycle to cycle, but so do the losses. So
+
+215
+00:08:42,240 --> 00:08:46,720
+this time we're probably not going to
+
+216
+00:08:43,840 --> 00:08:50,240
+draw down as much as we did in the prior
+
+217
+00:08:46,720 --> 00:08:52,640
+cycle. So a 10% net unrealized loss, I
+
+218
+00:08:50,240 --> 00:08:55,760
+think, is quite reasonable. This here is
+
+219
+00:08:52,640 --> 00:08:58,080
+50%. That's roughly a 10% drop below the
+
+220
+00:08:55,760 --> 00:09:00,240
+zero line. Again, nobody knows where the
+
+221
+00:08:58,080 --> 00:09:02,520
+Bitcoin price is going. We all just try
+
+222
+00:09:00,240 --> 00:09:04,360
+to find patterns. We try to figure out
+
+223
+00:09:02,520 --> 00:09:06,560
+how did the price move in the past and
+
+224
+00:09:04,360 --> 00:09:08,560
+draw conclusions for the future. Will
+
+225
+00:09:06,560 --> 00:09:11,240
+this all hold? Will we actually bottom
+
+226
+00:09:08,560 --> 00:09:13,200
+out at around 50K? I don't know, but I
+
+227
+00:09:11,240 --> 00:09:14,880
+think once we approach that price level,
+
+228
+00:09:13,200 --> 00:09:17,320
+it definitely makes sense to make at
+
+229
+00:09:14,880 --> 00:09:19,080
+least first purchases and start
+
+230
+00:09:17,320 --> 00:09:21,520
+allocating towards Bitcoin. And that's
+
+231
+00:09:19,080 --> 00:09:24,320
+then a purchase against the momentum.
+
+232
+00:09:21,520 --> 00:09:26,160
+Even if we don't have any inflows yet,
+
+233
+00:09:24,320 --> 00:09:28,800
+even if that means that we might fall a
+
+234
+00:09:26,160 --> 00:09:31,440
+bit further due to current momentum, if
+
+235
+00:09:28,800 --> 00:09:33,720
+valuations are low enough, the risk
+
+236
+00:09:31,440 --> 00:09:35,560
+versus the potential reward is
+
+237
+00:09:33,720 --> 00:09:37,000
+definitely worth it. And so that's how I
+
+238
+00:09:35,560 --> 00:09:39,200
+try to navigate this. Even though I
+
+239
+00:09:37,000 --> 00:09:41,680
+don't know what the outcome of this game
+
+240
+00:09:39,200 --> 00:09:43,480
+will be, try to figure out what's my
+
+241
+00:09:41,680 --> 00:09:45,600
+downside risk, what's my upside
+
+242
+00:09:43,480 --> 00:09:47,960
+potential. And if the ratio is good
+
+243
+00:09:45,600 --> 00:09:49,720
+enough, then I'm taking that bet of
+
+244
+00:09:47,960 --> 00:09:50,880
+uncertainty. If you got some value out
+
+245
+00:09:49,720 --> 00:09:52,160
+of this video, feel free to give it a
+
+246
+00:09:50,880 --> 00:09:53,560
+like. It will help the channel grow.
+
+247
+00:09:52,160 --> 00:09:55,080
+Feel free to also forward this to your
+
+248
+00:09:53,560 --> 00:09:56,800
+friend in case your friend's also
+
+249
+00:09:55,080 --> 00:09:58,480
+interested in this topic. You can also
+
+250
+00:09:56,800 --> 00:09:59,920
+subscribe. I publish these regularly on
+
+251
+00:09:58,480 --> 00:10:00,680
+this channel. Okay, very much looking
+
+252
+00:09:59,920 --> 00:10:02,240
+forward to seeing you next time on
+
+253
+00:10:00,680 --> 00:10:03,800
+YouTube. Feel free to also check out the
+
+254
+00:10:02,240 --> 00:10:05,280
+premium membership. This is where I
+
+255
+00:10:03,800 --> 00:10:07,280
+share my own investments and my own
+
+256
+00:10:05,280 --> 00:10:08,680
+trades. Link to premium is over here.
+
+257
+00:10:07,280 --> 00:10:10,040
+Just click on that. You will come to the
+
+258
+00:10:08,680 --> 00:10:13,200
+website. Thanks for watching and see you
+
+259
+00:10:10,040 --> 00:10:13,200
+next time. Cheers.
+

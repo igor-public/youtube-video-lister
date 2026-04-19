@@ -1,0 +1,672 @@
+1
+00:00:00,000 --> 00:00:03,920
+Now I've already talked about this in
+
+2
+00:00:01,400 --> 00:00:06,560
+prior videos. I like to use data to
+
+3
+00:00:03,920 --> 00:00:09,600
+trade assets and crypto, especially
+
+4
+00:00:06,560 --> 00:00:12,080
+Bitcoin, tends to move in trends. And so
+
+5
+00:00:09,600 --> 00:00:14,720
+a nice trend-following strategy is to
+
+6
+00:00:12,080 --> 00:00:17,240
+use golden crosses and death crosses. So
+
+7
+00:00:14,720 --> 00:00:19,280
+that's a cross of two moving averages, a
+
+8
+00:00:17,240 --> 00:00:21,880
+faster one and a slower one. Now most
+
+9
+00:00:19,280 --> 00:00:24,200
+people just randomly pick two moving
+
+10
+00:00:21,880 --> 00:00:26,280
+averages, say the 10-day moving average
+
+11
+00:00:24,200 --> 00:00:27,760
+with the 100-day moving average, and
+
+12
+00:00:26,280 --> 00:00:29,560
+they say, "Okay, now it's a golden
+
+13
+00:00:27,760 --> 00:00:31,920
+cross, now it's a death cross. Let's go
+
+14
+00:00:29,560 --> 00:00:34,120
+long, let's go short." But this channel
+
+15
+00:00:31,920 --> 00:00:35,680
+is about using data. And so what we see
+
+16
+00:00:34,120 --> 00:00:37,880
+here in the background, that's
+
+17
+00:00:35,680 --> 00:00:40,560
+simulations of buying and selling
+
+18
+00:00:37,880 --> 00:00:42,800
+Bitcoin using different durations for
+
+19
+00:00:40,560 --> 00:00:45,800
+the moving averages. Yes, granted, it's
+
+20
+00:00:42,800 --> 00:00:47,280
+a pretty complex chart, but the idea is
+
+21
+00:00:45,800 --> 00:00:50,240
+that we look at all possible
+
+22
+00:00:47,280 --> 00:00:53,560
+combinations of slow moving averages
+
+23
+00:00:50,240 --> 00:00:56,480
+here on the x-axis and fast moving
+
+24
+00:00:53,560 --> 00:00:58,920
+averages here on the y-axis. We look at
+
+25
+00:00:56,480 --> 00:01:01,520
+what kind of moving average crosses
+
+26
+00:00:58,920 --> 00:01:04,600
+should we use and whenever this is
+
+27
+00:01:01,520 --> 00:01:06,560
+green, it means this particular strategy
+
+28
+00:01:04,600 --> 00:01:09,200
+of two moving averages performed pretty
+
+29
+00:01:06,560 --> 00:01:12,040
+well. Whenever this is red, it means it
+
+30
+00:01:09,200 --> 00:01:13,800
+did not perform well at all. This data,
+
+31
+00:01:12,040 --> 00:01:15,840
+by the way, comes from Bitcoin strategy
+
+32
+00:01:13,800 --> 00:01:18,120
+analytics and that's the backtesting
+
+33
+00:01:15,840 --> 00:01:20,600
+platform available to all premium
+
+34
+00:01:18,120 --> 00:01:23,840
+members. And have a look at how well the
+
+35
+00:01:20,600 --> 00:01:25,960
+two-day combined with the 116-day
+
+36
+00:01:23,840 --> 00:01:27,520
+simple moving average works for Bitcoin.
+
+37
+00:01:25,960 --> 00:01:29,760
+Buying and holding through the time
+
+38
+00:01:27,520 --> 00:01:33,680
+period, so we are backtesting since the
+
+39
+00:01:29,760 --> 00:01:35,480
+beginning of 2018 would have given 21%
+
+40
+00:01:33,680 --> 00:01:39,200
+per annum. But the trading strategy
+
+41
+00:01:35,480 --> 00:01:42,360
+gives 76% per annum. And yes, we do have
+
+42
+00:01:39,200 --> 00:01:45,560
+financing fees included, so 11% and we
+
+43
+00:01:42,360 --> 00:01:48,040
+also have a trading fee, 0.05%.
+
+44
+00:01:45,560 --> 00:01:50,400
+Both of those numbers are typical for
+
+45
+00:01:48,040 --> 00:01:51,600
+perpetual futures exchanges. And so I've
+
+46
+00:01:50,400 --> 00:01:53,040
+already talked about this strategy
+
+47
+00:01:51,600 --> 00:01:55,160
+several times on this channel. I don't
+
+48
+00:01:53,040 --> 00:01:58,360
+want to repeat this too much, but there
+
+49
+00:01:55,160 --> 00:02:00,480
+are several buckets of information for
+
+50
+00:01:58,360 --> 00:02:03,360
+that strategy. And this is how the
+
+51
+00:02:00,480 --> 00:02:05,640
+performance looks like over time using
+
+52
+00:02:03,360 --> 00:02:07,600
+those golden and death crosses. And
+
+53
+00:02:05,640 --> 00:02:10,240
+that's without leverage and that's with
+
+54
+00:02:07,600 --> 00:02:12,920
+a fixed betting size. So very nice
+
+55
+00:02:10,240 --> 00:02:15,920
+consistent money maker. And really, the
+
+56
+00:02:12,920 --> 00:02:18,720
+two-day moving average is just a very
+
+57
+00:02:15,920 --> 00:02:21,520
+slightly smoothed version of the price
+
+58
+00:02:18,720 --> 00:02:23,480
+chart. So we just remove a bit of the
+
+59
+00:02:21,520 --> 00:02:25,720
+volatility. Right now, we are still
+
+60
+00:02:23,480 --> 00:02:28,800
+bearish. The two-day moving average is
+
+61
+00:02:25,720 --> 00:02:31,360
+below the 116-day moving average, which
+
+62
+00:02:28,800 --> 00:02:34,360
+by the way, is currently at a bit under
+
+63
+00:02:31,360 --> 00:02:35,760
+$78,000. There's also copy trading for
+
+64
+00:02:34,360 --> 00:02:37,840
+this particular trend-following
+
+65
+00:02:35,760 --> 00:02:40,160
+strategy, so for Bitcoin, but we've also
+
+66
+00:02:37,840 --> 00:02:42,520
+got Ethereum and Solana. The Bitcoin
+
+67
+00:02:40,160 --> 00:02:44,280
+trend follower made roughly half a
+
+68
+00:02:42,520 --> 00:02:45,880
+million so far since October of last
+
+69
+00:02:44,280 --> 00:02:47,880
+year. Then we try to figure out what's
+
+70
+00:02:45,880 --> 00:02:50,600
+the ideal leverage for the long
+
+71
+00:02:47,880 --> 00:02:53,320
+position, that's 2.5x. For the short
+
+72
+00:02:50,600 --> 00:02:54,800
+position, that's 4.5x.
+
+73
+00:02:53,320 --> 00:02:57,400
+But if we are a bit more conservative
+
+74
+00:02:54,800 --> 00:02:59,920
+with our short, we reduce the volatility
+
+75
+00:02:57,400 --> 00:03:02,960
+as well. That's then how the portfolio
+
+76
+00:02:59,920 --> 00:03:04,600
+measured in Bitcoin goes up over time.
+
+77
+00:03:02,960 --> 00:03:06,520
+Now why am I making this video again?
+
+78
+00:03:04,600 --> 00:03:08,440
+Why am I talking again about this
+
+79
+00:03:06,520 --> 00:03:11,720
+strategy? It's because we've got a
+
+80
+00:03:08,440 --> 00:03:15,160
+refinement to this chart now. This looks
+
+81
+00:03:11,720 --> 00:03:17,280
+at the entire history since 2018. What
+
+82
+00:03:15,160 --> 00:03:19,640
+crosses worked the best? But it's hard
+
+83
+00:03:17,280 --> 00:03:22,360
+to say, should we maybe potentially take
+
+84
+00:03:19,640 --> 00:03:24,880
+the crosses over here over the crosses
+
+85
+00:03:22,360 --> 00:03:26,800
+over here because maybe those moving
+
+86
+00:03:24,880 --> 00:03:29,440
+averages worked better in the recent
+
+87
+00:03:26,800 --> 00:03:33,040
+past. And those are just a relict of
+
+88
+00:03:29,440 --> 00:03:35,560
+maybe the price crosses in 2018, 2019,
+
+89
+00:03:33,040 --> 00:03:38,120
+2020. How did actually the
+
+90
+00:03:35,560 --> 00:03:41,480
+best-performing moving average crosses
+
+91
+00:03:38,120 --> 00:03:43,120
+develop over time? How consistent are
+
+92
+00:03:41,480 --> 00:03:45,520
+those results? We know that the
+
+93
+00:03:43,120 --> 00:03:47,280
+particular strategy has quite consistent
+
+94
+00:03:45,520 --> 00:03:49,480
+return, but we don't necessarily know if
+
+95
+00:03:47,280 --> 00:03:51,480
+the particular strategies over here
+
+96
+00:03:49,480 --> 00:03:53,360
+perform better in the recent past. And
+
+97
+00:03:51,480 --> 00:03:56,000
+so that's why there's now a new tool,
+
+98
+00:03:53,360 --> 00:03:58,720
+the rolling window tool. What are we
+
+99
+00:03:56,000 --> 00:04:01,400
+doing here? We again analyzing the best
+
+100
+00:03:58,720 --> 00:04:03,800
+golden and death crosses, but this time
+
+101
+00:04:01,400 --> 00:04:06,200
+we take a particular time window, so in
+
+102
+00:04:03,800 --> 00:04:08,840
+this case four years, and we roll that
+
+103
+00:04:06,200 --> 00:04:11,360
+time window half a year after half a
+
+104
+00:04:08,840 --> 00:04:13,560
+year and check the picture over time. So
+
+105
+00:04:11,360 --> 00:04:15,680
+does the particular strategy work better
+
+106
+00:04:13,560 --> 00:04:17,920
+in the early days or in the later days?
+
+107
+00:04:15,680 --> 00:04:20,160
+We're just rolling that performance over
+
+108
+00:04:17,920 --> 00:04:22,240
+time to see the consistency. And so then
+
+109
+00:04:20,160 --> 00:04:25,280
+we get this chart. This just shows the
+
+110
+00:04:22,240 --> 00:04:28,200
+performance from January 2018 to January
+
+111
+00:04:25,280 --> 00:04:30,960
+2022, so four years. But once we click
+
+112
+00:04:28,200 --> 00:04:33,600
+play, we see how this develops over
+
+113
+00:04:30,960 --> 00:04:36,040
+time. We're jumping half a year every
+
+114
+00:04:33,600 --> 00:04:38,120
+single time and we can see our selection
+
+115
+00:04:36,040 --> 00:04:40,840
+over here, right, the two-day and
+
+116
+00:04:38,120 --> 00:04:44,520
+116-day, and we can see how this
+
+117
+00:04:40,840 --> 00:04:47,120
+compares over time. So is this actually
+
+118
+00:04:44,520 --> 00:04:49,040
+the best selection over time? Now we see
+
+119
+00:04:47,120 --> 00:04:52,160
+here in the early days that this is
+
+120
+00:04:49,040 --> 00:04:55,200
+mainly the green area and we see then in
+
+121
+00:04:52,160 --> 00:04:57,720
+the later years how this area becomes
+
+122
+00:04:55,200 --> 00:04:59,120
+more profitable. It seems like in the
+
+123
+00:04:57,720 --> 00:05:01,280
+early days it was mainly the
+
+124
+00:04:59,120 --> 00:05:03,960
+shorter-term moving averages that did
+
+125
+00:05:01,280 --> 00:05:06,600
+well. And then as time progressed, as we
+
+126
+00:05:03,960 --> 00:05:08,400
+get closer to today, there's more and
+
+127
+00:05:06,600 --> 00:05:11,120
+more green on the right side and more
+
+128
+00:05:08,400 --> 00:05:13,480
+and more green here at the bottom. So I
+
+129
+00:05:11,120 --> 00:05:16,200
+do think, just looking at this analysis
+
+130
+00:05:13,480 --> 00:05:18,480
+over here, that we should rather error
+
+131
+00:05:16,200 --> 00:05:21,440
+on the side of longer-term moving
+
+132
+00:05:18,480 --> 00:05:24,000
+averages between 110
+
+133
+00:05:21,440 --> 00:05:27,000
+and 200 in combination with something
+
+134
+00:05:24,000 --> 00:05:28,800
+between 0 and 30. Again, we use this
+
+135
+00:05:27,000 --> 00:05:31,240
+data point over here because that's the
+
+136
+00:05:28,800 --> 00:05:33,480
+best over the entire time frame. That's
+
+137
+00:05:31,240 --> 00:05:36,080
+again this chart here. But this analysis
+
+138
+00:05:33,480 --> 00:05:38,960
+very nicely shows that the market does
+
+139
+00:05:36,080 --> 00:05:41,000
+mature over time, that things that used
+
+140
+00:05:38,960 --> 00:05:43,000
+to work don't necessarily always
+
+141
+00:05:41,000 --> 00:05:44,840
+continue to work, that as an asset
+
+142
+00:05:43,000 --> 00:05:47,480
+becomes more mature, becomes less
+
+143
+00:05:44,840 --> 00:05:50,440
+volatile, we want to also account for
+
+144
+00:05:47,480 --> 00:05:52,520
+that with longer time horizons. There's
+
+145
+00:05:50,440 --> 00:05:55,240
+also now a consistency score in the
+
+146
+00:05:52,520 --> 00:05:57,400
+backtester. So this strategy has a 70
+
+147
+00:05:55,240 --> 00:06:00,720
+out of 100. And what we see here at the
+
+148
+00:05:57,400 --> 00:06:03,360
+bottom, that's again four-year windows,
+
+149
+00:06:00,720 --> 00:06:06,480
+how was the absolute return? Here we've
+
+150
+00:06:03,360 --> 00:06:09,000
+got the relative alpha again for every
+
+151
+00:06:06,480 --> 00:06:11,680
+four-year period trading Bitcoin
+
+152
+00:06:09,000 --> 00:06:14,440
+according to the two-day plus 116-day
+
+153
+00:06:11,680 --> 00:06:16,280
+simple moving average outperformed just
+
+154
+00:06:14,440 --> 00:06:18,040
+buying and holding. And it outperformed
+
+155
+00:06:16,280 --> 00:06:21,800
+to different degrees. In the last
+
+156
+00:06:18,040 --> 00:06:23,960
+four-year time window, it was by 246%.
+
+157
+00:06:21,800 --> 00:06:26,600
+Again, right now we are still bearish
+
+158
+00:06:23,960 --> 00:06:28,080
+despite the recent price increase. If
+
+159
+00:06:26,600 --> 00:06:29,320
+you enjoy content like this, feel free
+
+160
+00:06:28,080 --> 00:06:30,560
+to subscribe. I publish videos
+
+161
+00:06:29,320 --> 00:06:31,600
+regularly. A like would be very much
+
+162
+00:06:30,560 --> 00:06:32,720
+appreciated as well. It helps the
+
+163
+00:06:31,600 --> 00:06:34,720
+channel grow. See you next time here on
+
+164
+00:06:32,720 --> 00:06:36,440
+YouTube or potentially even in premium
+
+165
+00:06:34,720 --> 00:06:38,040
+if you want to know my trades or if you
+
+166
+00:06:36,440 --> 00:06:39,200
+want to use the backtesting tool. Thanks
+
+167
+00:06:38,040 --> 00:06:41,640
+for watching and see you next time.
+
+168
+00:06:39,200 --> 00:06:41,640
+Cheers.
+

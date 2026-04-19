@@ -1,0 +1,1084 @@
+1
+00:00:00,000 --> 00:00:05,240
+Pepe isn't just a meme coin. Pepe truly
+
+2
+00:00:03,080 --> 00:00:07,280
+shows how the market psychology is
+
+3
+00:00:05,240 --> 00:00:09,240
+behaving. In this video, we're going to
+
+4
+00:00:07,280 --> 00:00:10,760
+look at the data. We skip the hype.
+
+5
+00:00:09,240 --> 00:00:12,720
+We're trying to figure out where the
+
+6
+00:00:10,760 --> 00:00:14,880
+price is headed from here because there
+
+7
+00:00:12,720 --> 00:00:16,640
+are some indications that Pepe might
+
+8
+00:00:14,880 --> 00:00:18,040
+actually see a quite quick rally in the
+
+9
+00:00:16,640 --> 00:00:19,640
+near future. Now, of course, there's a
+
+10
+00:00:18,040 --> 00:00:21,800
+lot of correlation in crypto. When
+
+11
+00:00:19,640 --> 00:00:23,760
+Bitcoin goes up, many altcoins go up.
+
+12
+00:00:21,800 --> 00:00:25,560
+When Bitcoin crashes, most altcoins
+
+13
+00:00:23,760 --> 00:00:27,240
+crash. And that's why I think it's very
+
+14
+00:00:25,560 --> 00:00:30,040
+important to look at relative
+
+15
+00:00:27,240 --> 00:00:31,680
+valuations. How is an altcoin doing
+
+16
+00:00:30,040 --> 00:00:33,280
+relative to all the other altcoins? Is
+
+17
+00:00:31,680 --> 00:00:35,440
+it currently outperforming? Is it
+
+18
+00:00:33,280 --> 00:00:37,720
+underperforming? Is it really worth the
+
+19
+00:00:35,440 --> 00:00:39,960
+risk to get into something like a
+
+20
+00:00:37,720 --> 00:00:42,800
+mid-cap meme coin? What we see over
+
+21
+00:00:39,960 --> 00:00:45,440
+here, and that's the Pepe price relative
+
+22
+00:00:42,800 --> 00:00:48,000
+to the altcoin market cap. So, this is
+
+23
+00:00:45,440 --> 00:00:50,480
+not a US dollar price. This is relative
+
+24
+00:00:48,000 --> 00:00:54,040
+performance. We have seen a very quick
+
+25
+00:00:50,480 --> 00:00:58,160
+rallies of almost 500% but we've also
+
+26
+00:00:54,040 --> 00:01:01,000
+seen devastating crashes lasting almost
+
+27
+00:00:58,160 --> 00:01:04,080
+an entire year and bringing Pepe down
+
+28
+00:01:01,000 --> 00:01:07,160
+relatively speaking 90% Since the middle
+
+29
+00:01:04,080 --> 00:01:08,960
+of 2024, we are in a somewhat constant
+
+30
+00:01:07,160 --> 00:01:11,960
+trading range. Every now and then, we
+
+31
+00:01:08,960 --> 00:01:15,120
+see very quick price appreciations then
+
+32
+00:01:11,960 --> 00:01:16,760
+follow with slower price bleeds. Now,
+
+33
+00:01:15,120 --> 00:01:19,000
+what I think is going on here is that a
+
+34
+00:01:16,760 --> 00:01:21,520
+lot of people bet on falling prices of
+
+35
+00:01:19,000 --> 00:01:23,120
+Pepe or maybe people simply take profit
+
+36
+00:01:21,520 --> 00:01:26,080
+over time. But every now and then, we
+
+37
+00:01:23,120 --> 00:01:28,240
+see those quick rallies. That's maybe to
+
+38
+00:01:26,080 --> 00:01:29,560
+liquidate all the shorts, to liquidate
+
+39
+00:01:28,240 --> 00:01:32,000
+all the people that are betting on
+
+40
+00:01:29,560 --> 00:01:33,880
+falling prices. Market makers just buy
+
+41
+00:01:32,000 --> 00:01:36,560
+up the supply very quickly, move the
+
+42
+00:01:33,880 --> 00:01:38,080
+price so quickly that nobody can react
+
+43
+00:01:36,560 --> 00:01:40,400
+to those movements. Because have a look
+
+44
+00:01:38,080 --> 00:01:42,480
+at this. This is the open interest, the
+
+45
+00:01:40,400 --> 00:01:45,160
+amount of bets that are currently made
+
+46
+00:01:42,480 --> 00:01:47,320
+on the Pepe price. This topped at 1
+
+47
+00:01:45,160 --> 00:01:48,960
+billion dollars in the middle of last
+
+48
+00:01:47,320 --> 00:01:52,200
+year. And currently, it's rather at a
+
+49
+00:01:48,960 --> 00:01:54,000
+low level, below 200 million. Why does
+
+50
+00:01:52,200 --> 00:01:57,000
+this matter? It matters because there's
+
+51
+00:01:54,000 --> 00:01:58,920
+correlation between the price of Pepe
+
+52
+00:01:57,000 --> 00:02:00,840
+and the open interest. When open
+
+53
+00:01:58,920 --> 00:02:03,080
+interest goes down, the price tends to
+
+54
+00:02:00,840 --> 00:02:05,400
+bleed. When open interest goes up,
+
+55
+00:02:03,080 --> 00:02:06,760
+there's a chance for a price rally every
+
+56
+00:02:05,400 --> 00:02:09,880
+now and then. Now, there has been a
+
+57
+00:02:06,760 --> 00:02:12,120
+change in the funding rates for Pepe in
+
+58
+00:02:09,880 --> 00:02:14,080
+the last few weeks. And this does matter
+
+59
+00:02:12,120 --> 00:02:15,560
+because it indicates that now there's
+
+60
+00:02:14,080 --> 00:02:17,880
+potentially more and more retail
+
+61
+00:02:15,560 --> 00:02:20,120
+investors betting on falling prices,
+
+62
+00:02:17,880 --> 00:02:22,080
+which could again induce a short
+
+63
+00:02:20,120 --> 00:02:24,880
+squeeze, a very quick rally in the
+
+64
+00:02:22,080 --> 00:02:27,160
+price. Pepe is among the most viewed
+
+65
+00:02:24,880 --> 00:02:30,080
+cryptocurrencies and it's the fourth
+
+66
+00:02:27,160 --> 00:02:32,440
+largest meme coin in terms of market
+
+67
+00:02:30,080 --> 00:02:35,880
+cap. Still, its market cap is 1.4
+
+68
+00:02:32,440 --> 00:02:38,360
+billion. Number one is Dogecoin with 14
+
+69
+00:02:35,880 --> 00:02:41,640
+billion. So, that's potentially another
+
+70
+00:02:38,360 --> 00:02:43,760
+10x if Pepe was to flip Doge, which
+
+71
+00:02:41,640 --> 00:02:46,520
+isn't very likely but still, it gives a
+
+72
+00:02:43,760 --> 00:02:48,480
+reference point how much maximum upside
+
+73
+00:02:46,520 --> 00:02:50,760
+there might be. Now, I like to use
+
+74
+00:02:48,480 --> 00:02:53,080
+trading rules. I like to determine the
+
+75
+00:02:50,760 --> 00:02:54,880
+best trading rule for an asset because
+
+76
+00:02:53,080 --> 00:02:56,960
+following the narrative of the day,
+
+77
+00:02:54,880 --> 00:02:59,240
+following the news of the day, that's
+
+78
+00:02:56,960 --> 00:03:01,120
+usually not quick enough. Very often
+
+79
+00:02:59,240 --> 00:03:03,520
+when a narrative is out, the price has
+
+80
+00:03:01,120 --> 00:03:05,760
+already adjusted. But using statistical
+
+81
+00:03:03,520 --> 00:03:07,840
+methods to trade an asset removes all
+
+82
+00:03:05,760 --> 00:03:10,000
+the emotional component. It makes
+
+83
+00:03:07,840 --> 00:03:12,320
+performance more consistent. What we see
+
+84
+00:03:10,000 --> 00:03:15,320
+over here, that's the best moving
+
+85
+00:03:12,320 --> 00:03:18,160
+average backtest for Pepe, which is the
+
+86
+00:03:15,320 --> 00:03:20,640
+80-day simple moving average. The idea
+
+87
+00:03:18,160 --> 00:03:22,920
+is that we buy whenever we are above the
+
+88
+00:03:20,640 --> 00:03:25,560
+moving average, we sell or bet on
+
+89
+00:03:22,920 --> 00:03:27,520
+falling prices whenever we are below the
+
+90
+00:03:25,560 --> 00:03:30,520
+moving average. Have a look at the Pepe
+
+91
+00:03:27,520 --> 00:03:34,040
+price at the top and at the performance
+
+92
+00:03:30,520 --> 00:03:36,040
+using that strategy with a fixed betting
+
+93
+00:03:34,040 --> 00:03:38,280
+amount. We can time the market quite
+
+94
+00:03:36,040 --> 00:03:40,880
+well this way and we have included
+
+95
+00:03:38,280 --> 00:03:43,640
+trading fees in this analysis as well.
+
+96
+00:03:40,880 --> 00:03:45,960
+There is 0.05% trading fees. That's the
+
+97
+00:03:43,640 --> 00:03:48,800
+typical perpetual futures swap fees
+
+98
+00:03:45,960 --> 00:03:50,960
+without discount and we've got 11%
+
+99
+00:03:48,800 --> 00:03:54,040
+financing fees. So, that's for the long
+
+100
+00:03:50,960 --> 00:03:56,400
+side, you pay 11% per annum and you get
+
+101
+00:03:54,040 --> 00:03:58,880
+11% per annum if you short, if you bet
+
+102
+00:03:56,400 --> 00:04:01,040
+on falling prices. That's typically what
+
+103
+00:03:58,880 --> 00:04:03,480
+happens with large perpetual futures
+
+104
+00:04:01,040 --> 00:04:06,560
+platforms like hyperliquid, for example,
+
+105
+00:04:03,480 --> 00:04:08,600
+or Binance. Currently, we are above that
+
+106
+00:04:06,560 --> 00:04:10,680
+80-day simple moving average. So, that's
+
+107
+00:04:08,600 --> 00:04:12,160
+our first positive sign. But we can take
+
+108
+00:04:10,680 --> 00:04:14,560
+it a step further. We can look at the
+
+109
+00:04:12,160 --> 00:04:16,519
+best combination of two moving averages
+
+110
+00:04:14,560 --> 00:04:18,920
+and that usually tends to outperform
+
+111
+00:04:16,519 --> 00:04:20,560
+simple price crosses. So, we look for
+
+112
+00:04:18,920 --> 00:04:22,800
+the best golden cross, we look for the
+
+113
+00:04:20,560 --> 00:04:24,600
+best death cross. But we have to figure
+
+114
+00:04:22,800 --> 00:04:26,960
+out what's the best moving average
+
+115
+00:04:24,600 --> 00:04:29,960
+combination for that strategy, again
+
+116
+00:04:26,960 --> 00:04:32,720
+based on data. And here is the result.
+
+117
+00:04:29,960 --> 00:04:35,040
+So, on the x-axis, we've got the slow
+
+118
+00:04:32,720 --> 00:04:36,880
+moving average duration. On the y-axis,
+
+119
+00:04:35,040 --> 00:04:39,120
+we've got the fast moving average
+
+120
+00:04:36,880 --> 00:04:41,920
+duration. And the best combination is
+
+121
+00:04:39,120 --> 00:04:43,720
+over here. That's what has created most
+
+122
+00:04:41,920 --> 00:04:46,360
+return. So, let's have a look at the
+
+123
+00:04:43,720 --> 00:04:48,280
+numbers over time. Buying and holding
+
+124
+00:04:46,360 --> 00:04:51,640
+Pepe over the time period would have
+
+125
+00:04:48,280 --> 00:04:55,040
+given us 140% per annum with a lot of
+
+126
+00:04:51,640 --> 00:04:57,800
+volatility. So, that's 169% volatility
+
+127
+00:04:55,040 --> 00:05:00,000
+and the maximum drawdown of 88% but have
+
+128
+00:04:57,800 --> 00:05:02,840
+a look at the golden and death cross
+
+129
+00:05:00,000 --> 00:05:04,000
+strategy using the 6-day and the 9-day
+
+130
+00:05:02,840 --> 00:05:06,560
+simple moving average, the best
+
+131
+00:05:04,000 --> 00:05:09,760
+combination. It gave a much lower
+
+132
+00:05:06,560 --> 00:05:12,000
+maximum drawdown, only 55%. It gave us
+
+133
+00:05:09,760 --> 00:05:15,760
+less volatility and it gave us an
+
+134
+00:05:12,000 --> 00:05:17,560
+annualized return of almost 500% every
+
+135
+00:05:15,760 --> 00:05:20,160
+single year. And that's then how this
+
+136
+00:05:17,560 --> 00:05:22,600
+looks like over time. Again, that's with
+
+137
+00:05:20,160 --> 00:05:25,480
+fixed bet sizing. So, if you get a buy
+
+138
+00:05:22,600 --> 00:05:27,560
+signal, we bet, say, $10,000. If you get
+
+139
+00:05:25,480 --> 00:05:30,560
+a sell signal, we short with $10,000
+
+140
+00:05:27,560 --> 00:05:30,560
+irrespective
+
+141
+00:05:31,080 --> 00:05:35,680
+of our portfolio size. This tends to
+
+142
+00:05:33,600 --> 00:05:37,520
+reduce volatility quite nicely. The
+
+143
+00:05:35,680 --> 00:05:39,640
+problem, of course, is that our capital
+
+144
+00:05:37,520 --> 00:05:42,280
+doesn't really compound and we are also
+
+145
+00:05:39,640 --> 00:05:44,080
+not using optimal leverage. But let's
+
+146
+00:05:42,280 --> 00:05:46,080
+talk about this in a second. Let's first
+
+147
+00:05:44,080 --> 00:05:47,960
+look at where we currently are. When the
+
+148
+00:05:46,080 --> 00:05:50,240
+shorter-term moving average in orange is
+
+149
+00:05:47,960 --> 00:05:52,720
+above the longer-term moving average,
+
+150
+00:05:50,240 --> 00:05:54,840
+then we are long. And when orange is
+
+151
+00:05:52,720 --> 00:05:57,360
+below blue, then we are short.
+
+152
+00:05:54,840 --> 00:05:59,840
+Currently, orange is above blue. So, we
+
+153
+00:05:57,360 --> 00:06:02,840
+are long and the cross happened on the
+
+154
+00:05:59,840 --> 00:06:05,320
+3rd of April. Let's optimize leverage.
+
+155
+00:06:02,840 --> 00:06:07,720
+So, for the long side, that's 2x. For
+
+156
+00:06:05,320 --> 00:06:09,960
+the short side, that's 1x. The long side
+
+157
+00:06:07,720 --> 00:06:11,920
+gives us much more return than the short
+
+158
+00:06:09,960 --> 00:06:13,680
+side. So, the leverage on short isn't as
+
+159
+00:06:11,920 --> 00:06:16,120
+important. We might as well just go in
+
+160
+00:06:13,680 --> 00:06:18,000
+cash whenever we have seen a death
+
+161
+00:06:16,120 --> 00:06:20,880
+cross. Still, it's good to know that we
+
+162
+00:06:18,000 --> 00:06:22,840
+can go all the way up to 2x for trading
+
+163
+00:06:20,880 --> 00:06:25,160
+Pepe with that approach. When we then
+
+164
+00:06:22,840 --> 00:06:27,400
+include compounding, so we bet our
+
+165
+00:06:25,160 --> 00:06:30,160
+entire portfolio and we do this with a
+
+166
+00:06:27,400 --> 00:06:32,560
+2x leverage, then we get the following
+
+167
+00:06:30,160 --> 00:06:34,120
+return, much more volatile but also much
+
+168
+00:06:32,560 --> 00:06:36,360
+higher. Of course, we don't want to do
+
+169
+00:06:34,120 --> 00:06:39,160
+this with all of our capital but it's
+
+170
+00:06:36,360 --> 00:06:42,040
+one of the riskier positions. The equity
+
+171
+00:06:39,160 --> 00:06:44,880
+is in blue, buying and holding Pepe is
+
+172
+00:06:42,040 --> 00:06:47,320
+in gray. The portfolio measured in Pepe
+
+173
+00:06:44,880 --> 00:06:49,760
+tokens is here in purple. So, pretty
+
+174
+00:06:47,320 --> 00:06:52,400
+much every year, we tend to have more
+
+175
+00:06:49,760 --> 00:06:55,040
+Pepe tokens than the year before. What's
+
+176
+00:06:52,400 --> 00:06:57,560
+the annual alpha? It is massive. But
+
+177
+00:06:55,040 --> 00:07:00,320
+again, this is extremely risky. We are
+
+178
+00:06:57,560 --> 00:07:01,960
+going 2x long with the entire stack.
+
+179
+00:07:00,320 --> 00:07:05,720
+Again, buying and holding gave us a bit
+
+180
+00:07:01,960 --> 00:07:08,720
+under 140% per annum but trading the 6-
+
+181
+00:07:05,720 --> 00:07:12,160
+to 9-day golden and death crosses with a
+
+182
+00:07:08,720 --> 00:07:14,040
+2x long and 1x short gave us more than
+
+183
+00:07:12,160 --> 00:07:16,400
+1,000%
+
+184
+00:07:14,040 --> 00:07:18,920
+every single year. Our maximum drawdown,
+
+185
+00:07:16,400 --> 00:07:20,440
+unfortunately, also becomes very similar
+
+186
+00:07:18,920 --> 00:07:23,120
+to buying and holding. So, this is
+
+187
+00:07:20,440 --> 00:07:25,560
+definitely at least as risky as buying
+
+188
+00:07:23,120 --> 00:07:28,160
+and holding Pepe for the long term. This
+
+189
+00:07:25,560 --> 00:07:31,240
+is not a risk mitigation strategy. This
+
+190
+00:07:28,160 --> 00:07:32,960
+is a return maximization strategy. But
+
+191
+00:07:31,240 --> 00:07:37,280
+the returns can be very nice, right? The
+
+192
+00:07:32,960 --> 00:07:40,320
+best year in 2024 made more than a 40x,
+
+193
+00:07:37,280 --> 00:07:43,320
+4,000% return. Holding Pepe directly
+
+194
+00:07:40,320 --> 00:07:46,120
+only gave a bit over 14x. So, a bit over
+
+195
+00:07:43,320 --> 00:07:47,840
+1,000% return. Now, all of those numbers
+
+196
+00:07:46,120 --> 00:07:49,560
+are extremely impressive and of course,
+
+197
+00:07:47,840 --> 00:07:51,600
+it doesn't look very realistic that
+
+198
+00:07:49,560 --> 00:07:54,120
+those rules will perform just as well in
+
+199
+00:07:51,600 --> 00:07:55,920
+the future. But I still think that if
+
+200
+00:07:54,120 --> 00:07:57,640
+something traded in a particular
+
+201
+00:07:55,920 --> 00:08:00,280
+pattern, in a predictable pattern in the
+
+202
+00:07:57,640 --> 00:08:02,760
+past, that at least this will to degree
+
+203
+00:08:00,280 --> 00:08:04,760
+also reflect in the future. Maybe it
+
+204
+00:08:02,760 --> 00:08:06,920
+won't be thousands of percent every
+
+205
+00:08:04,760 --> 00:08:08,400
+single year but maybe a few hundred
+
+206
+00:08:06,920 --> 00:08:10,560
+percent, that wouldn't be too bad. I
+
+207
+00:08:08,400 --> 00:08:13,160
+don't even think that the 2x leverage is
+
+208
+00:08:10,560 --> 00:08:15,600
+too problematic because Pepe is very
+
+209
+00:08:13,160 --> 00:08:17,240
+likely less volatile today than it was
+
+210
+00:08:15,600 --> 00:08:19,280
+in the early days. And we are looking at
+
+211
+00:08:17,240 --> 00:08:21,520
+the entire price history here. So, let's
+
+212
+00:08:19,280 --> 00:08:23,440
+say we are really bullish. Let's say
+
+213
+00:08:21,520 --> 00:08:25,320
+both the golden cross and the price
+
+214
+00:08:23,440 --> 00:08:27,760
+cross strategy, since they are both
+
+215
+00:08:25,320 --> 00:08:30,080
+optimistic about Pepe, what would be our
+
+216
+00:08:27,760 --> 00:08:32,760
+upside in the very short term if we
+
+217
+00:08:30,080 --> 00:08:35,000
+entered with 2x leverage? Here, I think
+
+218
+00:08:32,760 --> 00:08:37,240
+is the answer. We have seen already a
+
+219
+00:08:35,000 --> 00:08:39,280
+similar short squeeze at the beginning
+
+220
+00:08:37,240 --> 00:08:40,840
+of the year. And we started the video
+
+221
+00:08:39,280 --> 00:08:42,680
+with the negative funding rates. So,
+
+222
+00:08:40,840 --> 00:08:45,120
+many people currently betting on falling
+
+223
+00:08:42,680 --> 00:08:47,600
+prices. If we see another similar short
+
+224
+00:08:45,120 --> 00:08:50,920
+squeeze, the price could very easily
+
+225
+00:08:47,600 --> 00:08:53,080
+increase by 60% and then doing a 2x
+
+226
+00:08:50,920 --> 00:08:54,560
+leverage on that more than doubles the
+
+227
+00:08:53,080 --> 00:08:55,920
+capital. Now, I don't have a crystal
+
+228
+00:08:54,560 --> 00:08:58,080
+ball either but I do think that the
+
+229
+00:08:55,920 --> 00:09:00,560
+setup looks quite interesting, again,
+
+230
+00:08:58,080 --> 00:09:02,560
+for risk-on capital. If you're trading
+
+231
+00:09:00,560 --> 00:09:04,240
+meme coins anyway and you're okay with
+
+232
+00:09:02,560 --> 00:09:07,240
+the volatility, you're okay to see a
+
+233
+00:09:04,240 --> 00:09:10,480
+position go down temporarily by 80 or
+
+234
+00:09:07,240 --> 00:09:12,440
+90% and maybe now is a potentially good
+
+235
+00:09:10,480 --> 00:09:14,320
+entry opportunity because again, the
+
+236
+00:09:12,440 --> 00:09:16,680
+momentum seems to currently be turning
+
+237
+00:09:14,320 --> 00:09:18,080
+around. There are a lot of bad signals
+
+238
+00:09:16,680 --> 00:09:20,640
+with this strategy as well but at least
+
+239
+00:09:18,080 --> 00:09:22,160
+historically, it tended to outperform
+
+240
+00:09:20,640 --> 00:09:24,280
+buying and holding Pepe quite
+
+241
+00:09:22,160 --> 00:09:26,400
+consistently. Again, this year is the
+
+242
+00:09:24,280 --> 00:09:27,720
+portfolio line measured in Pepe. Now,
+
+243
+00:09:26,400 --> 00:09:29,960
+the platform that we are looking at
+
+244
+00:09:27,720 --> 00:09:31,600
+here, that's Bitcoin strategy analytics.
+
+245
+00:09:29,960 --> 00:09:33,880
+So, it's a backtesting platform
+
+246
+00:09:31,600 --> 00:09:36,760
+available to all premium members of this
+
+247
+00:09:33,880 --> 00:09:38,600
+channel. You can also set up alerts. So,
+
+248
+00:09:36,760 --> 00:09:40,680
+let's say you want to get an email
+
+249
+00:09:38,600 --> 00:09:42,480
+whenever a buy or sell signal is
+
+250
+00:09:40,680 --> 00:09:44,080
+triggered with a strategy, you can just
+
+251
+00:09:42,480 --> 00:09:47,040
+click over here. You can also get
+
+252
+00:09:44,080 --> 00:09:49,000
+signals via Telegram. The signals also
+
+253
+00:09:47,040 --> 00:09:50,960
+send the corresponding chart. And I'm
+
+254
+00:09:49,000 --> 00:09:52,840
+using this for several strategies
+
+255
+00:09:50,960 --> 00:09:55,600
+already. Here are some strategies for
+
+256
+00:09:52,840 --> 00:09:58,000
+Bitcoin, Ethereum and Solana and the Bit
+
+257
+00:09:55,600 --> 00:10:00,680
+Tensor. and the community of course has
+
+258
+00:09:58,000 --> 00:10:02,680
+also created quite a lot of interesting
+
+259
+00:10:00,680 --> 00:10:05,640
+results. If that sounds like too much
+
+260
+00:10:02,680 --> 00:10:07,480
+effort, there's also automatic copy
+
+261
+00:10:05,640 --> 00:10:09,600
+trading. So for the Bitcoin trading
+
+262
+00:10:07,480 --> 00:10:11,960
+strategy, we created a copy trading
+
+263
+00:10:09,600 --> 00:10:14,560
+vault half a year ago. It's already up
+
+264
+00:10:11,960 --> 00:10:16,040
+by 600k. So yeah, let's see where Pepe
+
+265
+00:10:14,560 --> 00:10:17,200
+is going from here. If you got some
+
+266
+00:10:16,040 --> 00:10:18,520
+value out of this video, feel free to
+
+267
+00:10:17,200 --> 00:10:20,320
+give it a like. It will help the channel
+
+268
+00:10:18,520 --> 00:10:21,520
+grow. Feel free to also subscribe. I
+
+269
+00:10:20,320 --> 00:10:23,160
+publish here as regularly. See you next
+
+270
+00:10:21,520 --> 00:10:26,680
+time on YouTube or see you potentially
+
+271
+00:10:23,160 --> 00:10:26,680
+also in premium. Cheers.
+

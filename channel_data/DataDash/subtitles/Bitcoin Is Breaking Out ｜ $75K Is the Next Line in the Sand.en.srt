@@ -1,0 +1,664 @@
+1
+00:00:10,000 --> 00:00:13,160
+Welcome back to Data Dash everybody. My
+
+2
+00:00:11,320 --> 00:00:16,160
+name is Paul Sampson and today is
+
+3
+00:00:13,160 --> 00:00:18,360
+Tuesday, April 7th, 2026. We've got some
+
+4
+00:00:16,160 --> 00:00:19,720
+really big tensions going on out there.
+
+5
+00:00:18,360 --> 00:00:21,400
+Everybody's well aware of it. I'm not
+
+6
+00:00:19,720 --> 00:00:23,160
+going to go over it any more than we
+
+7
+00:00:21,400 --> 00:00:24,840
+have to here. I want to start off in our
+
+8
+00:00:23,160 --> 00:00:26,600
+video today with thanking today's
+
+9
+00:00:24,840 --> 00:00:29,200
+sponsor, which is going to be Bit Unix,
+
+10
+00:00:26,600 --> 00:00:30,920
+which is our exclusive exchange partner
+
+11
+00:00:29,200 --> 00:00:32,640
+here at Data Dash. If you're interested
+
+12
+00:00:30,920 --> 00:00:34,400
+in trading whether it's short-term or
+
+13
+00:00:32,640 --> 00:00:36,680
+looking for any kind of areas to pick up
+
+14
+00:00:34,400 --> 00:00:38,360
+your next spot buys, be sure to check
+
+15
+00:00:36,680 --> 00:00:40,360
+out the Bit Unix link down in our
+
+16
+00:00:38,360 --> 00:00:41,800
+description area. Again, they're our
+
+17
+00:00:40,360 --> 00:00:43,440
+exclusive partner here. Thank you guys
+
+18
+00:00:41,800 --> 00:00:45,000
+at Bit Unix for all the support. Now, I
+
+19
+00:00:43,440 --> 00:00:47,040
+wanted to come on and cover a few things
+
+20
+00:00:45,000 --> 00:00:49,400
+here really quickly. A nice brief update
+
+21
+00:00:47,040 --> 00:00:51,640
+for you folks. And basically, what we're
+
+22
+00:00:49,400 --> 00:00:53,680
+having here is one of the biggest setups
+
+23
+00:00:51,640 --> 00:00:55,920
+that I see time and time again. And
+
+24
+00:00:53,680 --> 00:00:57,520
+realistically, when we have something
+
+25
+00:00:55,920 --> 00:00:59,480
+that is so
+
+26
+00:00:57,520 --> 00:01:00,920
+set in stone like what is going on
+
+27
+00:00:59,480 --> 00:01:02,320
+tonight. Right again, we have certain
+
+28
+00:01:00,920 --> 00:01:03,600
+timelines. There's a date on the
+
+29
+00:01:02,320 --> 00:01:05,560
+calendar.
+
+30
+00:01:03,600 --> 00:01:07,320
+When we get the chance to see that type
+
+31
+00:01:05,560 --> 00:01:09,360
+of stuff. Now, I'm pulling this you
+
+32
+00:01:07,320 --> 00:01:10,600
+know, politics and everything aside,
+
+33
+00:01:09,360 --> 00:01:12,320
+just looking at the technicals and
+
+34
+00:01:10,600 --> 00:01:13,240
+fundamentals to completely separate
+
+35
+00:01:12,320 --> 00:01:15,120
+here.
+
+36
+00:01:13,240 --> 00:01:16,720
+Very similar to an FOMC meeting, right?
+
+37
+00:01:15,120 --> 00:01:17,960
+When we have a really big rate cut
+
+38
+00:01:16,720 --> 00:01:19,880
+decision and it's coming down the
+
+39
+00:01:17,960 --> 00:01:21,440
+pipeline and you see everybody really
+
+40
+00:01:19,880 --> 00:01:23,400
+focused in on it. We we get the
+
+41
+00:01:21,440 --> 00:01:24,680
+opportunity to know when that volatility
+
+42
+00:01:23,400 --> 00:01:26,800
+might come.
+
+43
+00:01:24,680 --> 00:01:27,800
+We we tend to see the opposite occur,
+
+44
+00:01:26,800 --> 00:01:29,800
+okay?
+
+45
+00:01:27,800 --> 00:01:32,160
+And right now many many many are really
+
+46
+00:01:29,800 --> 00:01:35,600
+in in anticipating for the markets to to
+
+47
+00:01:32,160 --> 00:01:36,920
+collapse, to crash on the back of some
+
+48
+00:01:35,600 --> 00:01:39,000
+negative news here, right? Depending on
+
+49
+00:01:36,920 --> 00:01:40,440
+how things kind of you know
+
+50
+00:01:39,000 --> 00:01:42,280
+go forward here.
+
+51
+00:01:40,440 --> 00:01:43,440
+I guess at the end of this deadline
+
+52
+00:01:42,280 --> 00:01:45,920
+that's coming in a few hours from the
+
+53
+00:01:43,440 --> 00:01:47,760
+time of this video. And I really want to
+
+54
+00:01:45,920 --> 00:01:50,240
+point out here that again, we're at a
+
+55
+00:01:47,760 --> 00:01:51,640
+place where Bitcoin
+
+56
+00:01:50,240 --> 00:01:52,520
+specifically, I'm not going to cover all
+
+57
+00:01:51,640 --> 00:01:54,040
+the markets. I just want to kind of
+
+58
+00:01:52,520 --> 00:01:55,680
+cover Bitcoin here.
+
+59
+00:01:54,040 --> 00:01:57,720
+And I've been really looking at the same
+
+60
+00:01:55,680 --> 00:01:59,400
+things for the last few weeks. But one
+
+61
+00:01:57,720 --> 00:02:01,480
+of the biggest setups we see almost
+
+62
+00:01:59,400 --> 00:02:03,000
+every time we run into a big event. And
+
+63
+00:02:01,480 --> 00:02:04,720
+I know that this is a very rare event.
+
+64
+00:02:03,000 --> 00:02:07,640
+So I'm not necessarily putting in the
+
+65
+00:02:04,720 --> 00:02:08,759
+same caliber as like an FOMC meeting.
+
+66
+00:02:07,640 --> 00:02:10,840
+That's just one of the biggest ones I
+
+67
+00:02:08,759 --> 00:02:13,880
+can relate it to that we again get a
+
+68
+00:02:10,840 --> 00:02:15,760
+calendar date and time for. But more
+
+69
+00:02:13,880 --> 00:02:17,280
+times than not, you get a very similar
+
+70
+00:02:15,760 --> 00:02:18,960
+thing to this, right? So for me, I look
+
+71
+00:02:17,280 --> 00:02:21,480
+for the very short-term entry triggers
+
+72
+00:02:18,960 --> 00:02:23,320
+and movements of the market where we
+
+73
+00:02:21,480 --> 00:02:25,440
+have especially on the time of the week,
+
+74
+00:02:23,320 --> 00:02:27,080
+okay? So today we had our Monday range.
+
+75
+00:02:25,440 --> 00:02:29,400
+You hear me talk on this time and time
+
+76
+00:02:27,080 --> 00:02:31,960
+again, all right? Context is always key
+
+77
+00:02:29,400 --> 00:02:34,240
+in this sense where when this is
+
+78
+00:02:31,960 --> 00:02:35,920
+established, we look for a sweep of
+
+79
+00:02:34,240 --> 00:02:37,800
+either the low or the high and then
+
+80
+00:02:35,920 --> 00:02:40,520
+generally speaking, we make a run for
+
+81
+00:02:37,800 --> 00:02:42,920
+the opposite end, okay? In this case, we
+
+82
+00:02:40,520 --> 00:02:45,320
+started off Tuesday with taking out
+
+83
+00:02:42,920 --> 00:02:47,240
+Monday's low here. Nice reclaim here so
+
+84
+00:02:45,320 --> 00:02:48,640
+far and realistically by the end of
+
+85
+00:02:47,240 --> 00:02:49,760
+Monday now, it's again it's about 6:00
+
+86
+00:02:48,640 --> 00:02:51,920
+p.m. on
+
+87
+00:02:49,760 --> 00:02:53,680
+Eastern on time of recording and we've
+
+88
+00:02:51,920 --> 00:02:55,800
+now come up to the high.
+
+89
+00:02:53,680 --> 00:02:57,760
+Now generally, if we had not done
+
+90
+00:02:55,800 --> 00:02:59,680
+something like this here, I would look
+
+91
+00:02:57,760 --> 00:03:01,960
+for this sweep of the high right there
+
+92
+00:02:59,680 --> 00:03:03,440
+to be a big short opportunity. And I
+
+93
+00:03:01,960 --> 00:03:05,120
+guess it still could be, right? Cuz
+
+94
+00:03:03,440 --> 00:03:07,360
+realistically speaking, if I was to take
+
+95
+00:03:05,120 --> 00:03:08,720
+off, you know, the the key levels here,
+
+96
+00:03:07,360 --> 00:03:10,640
+what have we done? We've come up and
+
+97
+00:03:08,720 --> 00:03:12,360
+we've taken the liquidity here.
+
+98
+00:03:10,640 --> 00:03:13,760
+Potentially, this news comes out really
+
+99
+00:03:12,360 --> 00:03:17,680
+negative and and things kind of
+
+100
+00:03:13,760 --> 00:03:19,840
+transpire. But if we see this Monday
+
+101
+00:03:17,680 --> 00:03:23,040
+high claimed here very shortly, meaning
+
+102
+00:03:19,840 --> 00:03:24,560
+we start closing up above this 70,300.
+
+103
+00:03:23,040 --> 00:03:26,320
+I think it's a very likely that we
+
+104
+00:03:24,560 --> 00:03:28,320
+actually get a very quick move up to
+
+105
+00:03:26,320 --> 00:03:30,520
+about 75,000. Now this is a high
+
+106
+00:03:28,320 --> 00:03:32,000
+timeframe average. This is a
+
+107
+00:03:30,520 --> 00:03:34,760
+target that is going to be really
+
+108
+00:03:32,000 --> 00:03:36,440
+relevant for this entire quarter. So I
+
+109
+00:03:34,760 --> 00:03:37,960
+really want to point out that it is it
+
+110
+00:03:36,440 --> 00:03:39,520
+is possible to get a move to that level
+
+111
+00:03:37,960 --> 00:03:41,120
+and it's possible to get it very very
+
+112
+00:03:39,520 --> 00:03:43,040
+fast, all right? So it's like a mean
+
+113
+00:03:41,120 --> 00:03:45,320
+reversion play.
+
+114
+00:03:43,040 --> 00:03:47,800
+Again, it's really dependent on getting
+
+115
+00:03:45,320 --> 00:03:49,600
+above this 70,300, which is pretty much
+
+116
+00:03:47,800 --> 00:03:51,480
+where we are right this moment. So
+
+117
+00:03:49,600 --> 00:03:53,920
+looking to flip that and we could see a
+
+118
+00:03:51,480 --> 00:03:56,080
+very quick move up to here. Again, if it
+
+119
+00:03:53,920 --> 00:03:57,120
+could align with the news ending out,
+
+120
+00:03:56,080 --> 00:03:58,600
+you know, coming out a little bit more
+
+121
+00:03:57,120 --> 00:04:01,080
+positively.
+
+122
+00:03:58,600 --> 00:04:02,760
+For me, I've been tracking Bitcoin for
+
+123
+00:04:01,080 --> 00:04:04,160
+ever, but like really heavily recently
+
+124
+00:04:02,760 --> 00:04:05,800
+looking for a move actually to the
+
+125
+00:04:04,160 --> 00:04:07,160
+upside here. So far as like where we are
+
+126
+00:04:05,800 --> 00:04:10,440
+right this moment, some lines in the
+
+127
+00:04:07,160 --> 00:04:11,680
+sand, very locally, 70,300. Get above
+
+128
+00:04:10,440 --> 00:04:14,520
+that, I think we actually make a move
+
+129
+00:04:11,680 --> 00:04:16,320
+for 75. Alternatively, you know, have we
+
+130
+00:04:14,520 --> 00:04:18,519
+swept the highs and could see a move
+
+131
+00:04:16,320 --> 00:04:19,600
+back down? It's always a possibility,
+
+132
+00:04:18,519 --> 00:04:21,680
+right? And then we are right into
+
+133
+00:04:19,600 --> 00:04:23,200
+resistance. So it just really comes down
+
+134
+00:04:21,680 --> 00:04:25,120
+to this nice key level where we're at
+
+135
+00:04:23,200 --> 00:04:26,480
+right now. 70,300.
+
+136
+00:04:25,120 --> 00:04:28,160
+You know, tuning out everything aside,
+
+137
+00:04:26,480 --> 00:04:29,360
+but if we want to pay attention for how
+
+138
+00:04:28,160 --> 00:04:31,520
+things kind of
+
+139
+00:04:29,360 --> 00:04:33,080
+facilitate here. Again, with the context
+
+140
+00:04:31,520 --> 00:04:35,160
+being key, the fact that we've already
+
+141
+00:04:33,080 --> 00:04:37,080
+taken this low and made a move for the
+
+142
+00:04:35,160 --> 00:04:39,680
+high, generally speaking, we do that in
+
+143
+00:04:37,080 --> 00:04:40,960
+the sense of continuation. So for me,
+
+144
+00:04:39,680 --> 00:04:43,240
+I'm actually looking for this to get
+
+145
+00:04:40,960 --> 00:04:45,360
+flipped and a move up to that $75,000.
+
+146
+00:04:43,240 --> 00:04:46,520
+So we'll see how it all unfolds. That's
+
+147
+00:04:45,360 --> 00:04:47,680
+really all I wanted to cover tonight.
+
+148
+00:04:46,520 --> 00:04:48,720
+Nice and brief for you. Just want to
+
+149
+00:04:47,680 --> 00:04:50,120
+kind of give a highlight as we're coming
+
+150
+00:04:48,720 --> 00:04:52,360
+into some of those key areas on Bitcoin.
+
+151
+00:04:50,120 --> 00:04:53,680
+If you would like more updates like this
+
+152
+00:04:52,360 --> 00:04:55,880
+from me, you know where to find me. Go
+
+153
+00:04:53,680 --> 00:04:57,320
+ahead and drop down at datadashpro.com
+
+154
+00:04:55,880 --> 00:04:59,720
+down in our description area and you can
+
+155
+00:04:57,320 --> 00:05:01,400
+join the market intel community where I
+
+156
+00:04:59,720 --> 00:05:02,600
+put up all my updates, educational
+
+157
+00:05:01,400 --> 00:05:04,160
+content, everything like that. You have
+
+158
+00:05:02,600 --> 00:05:04,960
+direct access to me and stuff like that.
+
+159
+00:05:04,160 --> 00:05:06,160
+So
+
+160
+00:05:04,960 --> 00:05:07,480
+if you're interested, be sure to check
+
+161
+00:05:06,160 --> 00:05:09,240
+that out. Otherwise, thank you all so
+
+162
+00:05:07,480 --> 00:05:10,680
+much for tuning in. I hope you all enjoy
+
+163
+00:05:09,240 --> 00:05:11,480
+the rest of your day, evening, morning,
+
+164
+00:05:10,680 --> 00:05:13,040
+wherever you are in this beautiful
+
+165
+00:05:11,480 --> 00:05:15,480
+world. Till the next video everybody.
+
+166
+00:05:13,040 --> 00:05:15,480
+Cheers.
+

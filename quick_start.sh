@@ -62,6 +62,19 @@ echo "========================================"
 echo "Setup Complete!"
 echo "========================================"
 echo ""
+
+# Check for ffmpeg
+if ! command -v ffmpeg &> /dev/null; then
+    echo "⚠️  ffmpeg is not installed (optional but recommended)"
+    echo ""
+    echo "To install ffmpeg, run:"
+    echo "  ./install_ffmpeg.sh"
+    echo ""
+    echo "Or manually:"
+    echo "  sudo apt update && sudo apt install -y ffmpeg"
+    echo ""
+fi
+
 echo "To monitor channels, run:"
 echo "  python monitor_channels.py"
 echo ""

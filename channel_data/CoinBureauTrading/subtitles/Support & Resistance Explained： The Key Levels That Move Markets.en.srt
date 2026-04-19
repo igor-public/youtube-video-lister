@@ -1,0 +1,748 @@
+1
+00:00:00,000 --> 00:00:02,800
+What's up, guys? It's Jordan here from
+
+2
+00:00:01,520 --> 00:00:04,640
+CoinBureau. If you're new to the
+
+3
+00:00:02,800 --> 00:00:06,480
+channel, subscribe and be sure to stay
+
+4
+00:00:04,640 --> 00:00:08,720
+tuned until the end of the video to get
+
+5
+00:00:06,480 --> 00:00:10,480
+all of the important information.
+
+6
+00:00:08,720 --> 00:00:12,520
+I have been getting a lot of requests
+
+7
+00:00:10,480 --> 00:00:15,280
+for more beginner style trading
+
+8
+00:00:12,520 --> 00:00:17,560
+tutorials here. So, if you are wanting
+
+9
+00:00:15,280 --> 00:00:19,680
+to learn how to break down the charts
+
+10
+00:00:17,560 --> 00:00:22,120
+using technical analysis, this video is
+
+11
+00:00:19,680 --> 00:00:24,520
+one of the best places to start. And
+
+12
+00:00:22,120 --> 00:00:28,840
+today, I'm going to show you how to very
+
+13
+00:00:24,520 --> 00:00:31,400
+easily identify support and resistance
+
+14
+00:00:28,840 --> 00:00:34,080
+on your charts. This is absolutely
+
+15
+00:00:31,400 --> 00:00:36,360
+essential to crypto trading, and really
+
+16
+00:00:34,080 --> 00:00:39,000
+a lot of traders lose money because they
+
+17
+00:00:36,360 --> 00:00:41,320
+don't understand this concept properly.
+
+18
+00:00:39,000 --> 00:00:43,480
+It really is quite simple as long as you
+
+19
+00:00:41,320 --> 00:00:45,480
+know the basics and you don't create bad
+
+20
+00:00:43,480 --> 00:00:47,880
+habits. In this video, you're going to
+
+21
+00:00:45,480 --> 00:00:50,440
+learn how to identify and draw in
+
+22
+00:00:47,880 --> 00:00:53,680
+support and resistance like a pro and
+
+23
+00:00:50,440 --> 00:00:55,320
+use it to find better entries and exit
+
+24
+00:00:53,680 --> 00:00:57,040
+points for your trades. If you are
+
+25
+00:00:55,320 --> 00:00:58,400
+trading along with us, use the Bybit
+
+26
+00:00:57,040 --> 00:01:01,040
+link in the description for some
+
+27
+00:00:58,400 --> 00:01:03,040
+benefits. That is my preferred exchange.
+
+28
+00:01:01,040 --> 00:01:05,199
+Please also feel to join my personal
+
+29
+00:01:03,040 --> 00:01:07,840
+trading community and trade along with
+
+30
+00:01:05,199 --> 00:01:10,120
+us in my Discord server. That link is in
+
+31
+00:01:07,840 --> 00:01:12,560
+the description. And as you can see by
+
+32
+00:01:10,120 --> 00:01:14,960
+the P&L share room, our crew is
+
+33
+00:01:12,560 --> 00:01:16,920
+absolutely killing it. There is also a
+
+34
+00:01:14,960 --> 00:01:18,880
+trading setups room here where the
+
+35
+00:01:16,920 --> 00:01:21,040
+traders who are trading a lot are
+
+36
+00:01:18,880 --> 00:01:23,360
+constantly dropping really, really
+
+37
+00:01:21,040 --> 00:01:25,520
+interesting setups and helping all the
+
+38
+00:01:23,360 --> 00:01:27,960
+traders along the way. So, let's take it
+
+39
+00:01:25,520 --> 00:01:30,920
+slow and discuss a little bit about what
+
+40
+00:01:27,960 --> 00:01:34,440
+is support and resistance. Support is
+
+41
+00:01:30,920 --> 00:01:37,600
+simply a level where buyers step in.
+
+42
+00:01:34,440 --> 00:01:40,760
+And resistance is a level where sellers
+
+43
+00:01:37,600 --> 00:01:43,360
+step in. Think of support as a floor and
+
+44
+00:01:40,760 --> 00:01:44,600
+resistance as a ceiling in a room. In
+
+45
+00:01:43,360 --> 00:01:46,360
+this video, we're going to keep it
+
+46
+00:01:44,600 --> 00:01:49,400
+simple and we're going to talk about
+
+47
+00:01:46,360 --> 00:01:50,800
+horizontal support and resistance lines
+
+48
+00:01:49,400 --> 00:01:53,200
+as this is really the best place to
+
+49
+00:01:50,800 --> 00:01:55,360
+start. Once you learn this concept,
+
+50
+00:01:53,200 --> 00:01:59,160
+you'll be finding levels all over your
+
+51
+00:01:55,360 --> 00:02:02,880
+charts where price bounces on support
+
+52
+00:01:59,160 --> 00:02:04,760
+and gets rejected from resistance.
+
+53
+00:02:02,880 --> 00:02:06,840
+Something to keep in mind here is that
+
+54
+00:02:04,760 --> 00:02:09,720
+the more touch points that your support
+
+55
+00:02:06,840 --> 00:02:11,640
+gets, the higher significance it has.
+
+56
+00:02:09,720 --> 00:02:14,840
+And also bear in mind that when a strong
+
+57
+00:02:11,640 --> 00:02:18,080
+resistance level is broken, it will flip
+
+58
+00:02:14,840 --> 00:02:20,640
+into acting as support and vice versa
+
+59
+00:02:18,080 --> 00:02:23,160
+for support flipping into resistance.
+
+60
+00:02:20,640 --> 00:02:26,080
+This is what we call a support and
+
+61
+00:02:23,160 --> 00:02:28,680
+resistance flip. Let's move into now a
+
+62
+00:02:26,080 --> 00:02:31,360
+step-by-step on how to draw these lines
+
+63
+00:02:28,680 --> 00:02:34,000
+in properly on your charts. Number one
+
+64
+00:02:31,360 --> 00:02:36,000
+is to remember to always zoom out and
+
+65
+00:02:34,000 --> 00:02:38,160
+use higher time frames. If you are
+
+66
+00:02:36,000 --> 00:02:40,360
+starting out on this, I would recommend
+
+67
+00:02:38,160 --> 00:02:41,880
+zooming out to the weekly time frame.
+
+68
+00:02:40,360 --> 00:02:43,960
+This is a great place to start and it
+
+69
+00:02:41,880 --> 00:02:45,880
+does take practice, but very quickly
+
+70
+00:02:43,960 --> 00:02:47,720
+you'll be seeing these lines all over
+
+71
+00:02:45,880 --> 00:02:49,920
+the charts because our brains are
+
+72
+00:02:47,720 --> 00:02:51,720
+pattern recognition machines. When
+
+73
+00:02:49,920 --> 00:02:54,680
+starting out in drawing support and
+
+74
+00:02:51,720 --> 00:02:57,680
+resistance, try to mark out areas on the
+
+75
+00:02:54,680 --> 00:03:00,080
+charts that have similar levels of
+
+76
+00:02:57,680 --> 00:03:02,680
+support. These are levels that look like
+
+77
+00:03:00,080 --> 00:03:04,920
+obvious highs and lows. And try to focus
+
+78
+00:03:02,680 --> 00:03:06,840
+on areas with multiple reactions. You
+
+79
+00:03:04,920 --> 00:03:09,000
+can then go draw in your horizontal
+
+80
+00:03:06,840 --> 00:03:11,400
+support and resistance line. And even
+
+81
+00:03:09,000 --> 00:03:14,120
+better is to start early with trying to
+
+82
+00:03:11,400 --> 00:03:16,680
+understand these support and resistance
+
+83
+00:03:14,120 --> 00:03:18,720
+levels as zones. This is where it does
+
+84
+00:03:16,680 --> 00:03:21,280
+start to get slightly more complicated,
+
+85
+00:03:18,720 --> 00:03:23,440
+but it is very useful and effective in
+
+86
+00:03:21,280 --> 00:03:25,640
+terms of finding nice entries and exits
+
+87
+00:03:23,440 --> 00:03:27,840
+to be able to understand these levels as
+
+88
+00:03:25,640 --> 00:03:29,600
+zones. And moving forward in time on
+
+89
+00:03:27,840 --> 00:03:32,200
+this chart, we can see just how
+
+90
+00:03:29,600 --> 00:03:35,000
+important that zone was as it allowed
+
+91
+00:03:32,200 --> 00:03:37,160
+for some beautiful sniper entry longs on
+
+92
+00:03:35,000 --> 00:03:39,200
+recent price action. Don't force the
+
+93
+00:03:37,160 --> 00:03:41,040
+lines, but try to find the lines that
+
+94
+00:03:39,200 --> 00:03:43,320
+are giving you the most touch points.
+
+95
+00:03:41,040 --> 00:03:45,120
+The most useful indicator here to help
+
+96
+00:03:43,320 --> 00:03:47,480
+you find these major support and
+
+97
+00:03:45,120 --> 00:03:50,200
+resistance zones is the fixed range
+
+98
+00:03:47,480 --> 00:03:52,440
+volume profile. There are full tutorials
+
+99
+00:03:50,200 --> 00:03:54,440
+on this on my personal trading channel,
+
+100
+00:03:52,440 --> 00:03:57,280
+so check them out. It's absolutely
+
+101
+00:03:54,440 --> 00:03:59,480
+amazing how the high volume nodes of
+
+102
+00:03:57,280 --> 00:04:03,320
+this volume profile can give you
+
+103
+00:03:59,480 --> 00:04:05,600
+beautiful levels and zones of extreme
+
+104
+00:04:03,320 --> 00:04:07,160
+significance. Many of the traders in my
+
+105
+00:04:05,600 --> 00:04:09,480
+community know that the fixed range
+
+106
+00:04:07,160 --> 00:04:11,240
+volume profile is one of my absolute
+
+107
+00:04:09,480 --> 00:04:12,920
+favorite drawing tools. And it really
+
+108
+00:04:11,240 --> 00:04:15,840
+does help to find these levels in a
+
+109
+00:04:12,920 --> 00:04:18,079
+smart way using volume based on previous
+
+110
+00:04:15,840 --> 00:04:20,519
+price action. Some common mistakes that
+
+111
+00:04:18,079 --> 00:04:23,600
+beginners make here are drawing too many
+
+112
+00:04:20,519 --> 00:04:27,160
+lines, ignoring the higher time frames,
+
+113
+00:04:23,600 --> 00:04:29,600
+treating levels as exact prices instead
+
+114
+00:04:27,160 --> 00:04:32,120
+and trading every touch without waiting
+
+115
+00:04:29,600 --> 00:04:34,040
+for confirmation from other indicators
+
+116
+00:04:32,120 --> 00:04:36,280
+for confluence. So, let's have a look
+
+117
+00:04:34,040 --> 00:04:38,440
+now at a few simple strategies using
+
+118
+00:04:36,280 --> 00:04:41,520
+support and resistance. Number one is
+
+119
+00:04:38,440 --> 00:04:43,520
+the bounce trade. So, identifying a nice
+
+120
+00:04:41,520 --> 00:04:46,040
+support and resistance line and then
+
+121
+00:04:43,520 --> 00:04:49,120
+waiting for price action to move towards
+
+122
+00:04:46,040 --> 00:04:51,680
+these lines for a nice bounce. Remember
+
+123
+00:04:49,120 --> 00:04:54,200
+to always draw in your trades and
+
+124
+00:04:51,680 --> 00:04:55,880
+identify your risk to reward ratio as
+
+125
+00:04:54,200 --> 00:04:58,760
+well as using your other indicators for
+
+126
+00:04:55,880 --> 00:05:02,240
+confluence such as this daily bullish
+
+127
+00:04:58,760 --> 00:05:04,880
+divergence on the RSI, which came in at
+
+128
+00:05:02,240 --> 00:05:06,800
+the exact bounce point on this example.
+
+129
+00:05:04,880 --> 00:05:09,480
+The next strategy example here is a
+
+130
+00:05:06,800 --> 00:05:11,640
+breakout trade. This is a little more
+
+131
+00:05:09,480 --> 00:05:14,040
+risky and does require being patient for
+
+132
+00:05:11,640 --> 00:05:16,800
+a retest. But as we can see here, this
+
+133
+00:05:14,040 --> 00:05:19,960
+zone was acting as very heavy resistance
+
+134
+00:05:16,800 --> 00:05:22,120
+and once price broke out from that heavy
+
+135
+00:05:19,960 --> 00:05:24,240
+resistance, it offered a very nice
+
+136
+00:05:22,120 --> 00:05:26,560
+trading opportunity. Here's another
+
+137
+00:05:24,240 --> 00:05:28,400
+example of a breakout trade that did
+
+138
+00:05:26,560 --> 00:05:30,160
+actually give you the retest, which I
+
+139
+00:05:28,400 --> 00:05:32,480
+would recommend using as a more
+
+140
+00:05:30,160 --> 00:05:35,800
+conservative trader. Here we can see
+
+141
+00:05:32,480 --> 00:05:37,720
+price bouncing on major support, then
+
+142
+00:05:35,800 --> 00:05:40,560
+breaking through, and then coming back
+
+143
+00:05:37,720 --> 00:05:42,840
+to retest that broken support as
+
+144
+00:05:40,560 --> 00:05:44,720
+resistance, and that is where the nice
+
+145
+00:05:42,840 --> 00:05:47,320
+trade came in. Remember to use your
+
+146
+00:05:44,720 --> 00:05:50,520
+other indicators for entry signals at
+
+147
+00:05:47,320 --> 00:05:52,600
+these retests like your RSI, your SMC
+
+148
+00:05:50,520 --> 00:05:54,760
+order blocks, or of course your Market
+
+149
+00:05:52,600 --> 00:05:57,280
+Cipher. Remember to always try and add
+
+150
+00:05:54,760 --> 00:05:59,640
+as much confluence as you can to each
+
+151
+00:05:57,280 --> 00:06:01,400
+entry with at least three to five
+
+152
+00:05:59,640 --> 00:06:03,240
+indicators giving you the same
+
+153
+00:06:01,400 --> 00:06:04,920
+directional signal. You can combine
+
+154
+00:06:03,240 --> 00:06:06,880
+these support and resistance levels with
+
+155
+00:06:04,920 --> 00:06:09,640
+trend lines, moving averages,
+
+156
+00:06:06,880 --> 00:06:11,640
+candlestick patterns, volume, or any
+
+157
+00:06:09,640 --> 00:06:13,600
+other indicators that you enjoy using in
+
+158
+00:06:11,640 --> 00:06:15,680
+your trading plan. Let's have a look at
+
+159
+00:06:13,600 --> 00:06:17,240
+a practical example of a bounce trade
+
+160
+00:06:15,680 --> 00:06:19,240
+and how you would go about executing
+
+161
+00:06:17,240 --> 00:06:21,280
+this. I'll be using my favorite
+
+162
+00:06:19,240 --> 00:06:23,200
+indicator for an entry signal, which is
+
+163
+00:06:21,280 --> 00:06:25,560
+the Market Cipher. Here we can see our
+
+164
+00:06:23,200 --> 00:06:28,120
+support trend line, price moving towards
+
+165
+00:06:25,560 --> 00:06:30,800
+that trend line. We draw in our long
+
+166
+00:06:28,120 --> 00:06:33,440
+trade identifying our risk to reward
+
+167
+00:06:30,800 --> 00:06:36,040
+with at least a one to three. And in
+
+168
+00:06:33,440 --> 00:06:38,400
+this example, we can see a beautiful
+
+169
+00:06:36,040 --> 00:06:40,400
+rifle pattern, which is one of the best
+
+170
+00:06:38,400 --> 00:06:42,200
+patterns that you can get on Market
+
+171
+00:06:40,400 --> 00:06:44,480
+Cipher. And there we see a beautiful
+
+172
+00:06:42,200 --> 00:06:47,080
+trade with very little drawdown,
+
+173
+00:06:44,480 --> 00:06:48,920
+smashing one take profit after another,
+
+174
+00:06:47,080 --> 00:06:51,560
+and actually going on to give us a
+
+175
+00:06:48,920 --> 00:06:54,640
+pretty crazy return of a risk to reward
+
+176
+00:06:51,560 --> 00:06:56,240
+ratio of about one to nine and a half.
+
+177
+00:06:54,640 --> 00:06:58,200
+Very important is to take gradual
+
+178
+00:06:56,240 --> 00:07:00,400
+profits along the way, especially when
+
+179
+00:06:58,200 --> 00:07:02,680
+you do get opposing signs on your
+
+180
+00:07:00,400 --> 00:07:06,040
+indicators. To recap in a quick summary,
+
+181
+00:07:02,680 --> 00:07:08,680
+support equals a buying zone, resistance
+
+182
+00:07:06,040 --> 00:07:10,560
+equals a selling zone. Use zones instead
+
+183
+00:07:08,680 --> 00:07:12,560
+of just lines and wait for
+
+184
+00:07:10,560 --> 00:07:14,600
+confirmations. If you found this
+
+185
+00:07:12,560 --> 00:07:17,280
+helpful, like and subscribe, and let me
+
+186
+00:07:14,600 --> 00:07:20,800
+know, do you prefer breakout or bounce
+
+187
+00:07:17,280 --> 00:07:20,800
+trades using these lines?
+

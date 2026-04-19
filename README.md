@@ -32,6 +32,7 @@ A comprehensive Python toolkit for monitoring YouTube channels, downloading vide
 ### Prerequisites
 - Python 3.8+
 - YouTube Data API key (for channel listing)
+- ffmpeg (optional but recommended) - see [INSTALL_FFMPEG.md](INSTALL_FFMPEG.md)
 
 ### Setup
 
@@ -67,6 +68,13 @@ cp .env.example .env
 4. Create credentials (API key)
 5. Copy the API key to your `.env` file
 
+## Key Features
+
+### 🚀 Smart Processing
+- **Automatic Skip**: Already processed videos are automatically skipped, saving API quota and time
+- **Incremental Updates**: Re-run the monitor anytime - only new videos are processed
+- **Efficient**: Check what's already processed with `python check_processed.py`
+
 ## Quick Start
 
 ### Monitor Channels (Recommended)
@@ -96,6 +104,18 @@ cp channels_config.example.json channels_config.json
 # Edit channels_config.json to add your channels
 # Then run:
 python monitor_with_config.py
+```
+
+**Check what's already processed:**
+```bash
+# View summary
+python check_processed.py
+
+# View detailed list
+python check_processed.py --detailed
+
+# View specific channel
+python check_processed.py --detailed ChannelName
 ```
 
 **Output Structure:**
@@ -290,8 +310,20 @@ crontab -e
 
 ## Troubleshooting
 
+### ffmpeg Warning
+**Warning:** `WARNING: ffmpeg not found. The downloaded format may not be the best available.`
+
+**Solution:** Install ffmpeg for better quality and reliability:
+```bash
+sudo apt update && sudo apt install -y ffmpeg
+```
+
+See [INSTALL_FFMPEG.md](INSTALL_FFMPEG.md) for detailed installation instructions.
+
+**Note:** The tool will still work without ffmpeg, but installing it is strongly recommended.
+
 ### JavaScript Runtime Warning
-If you see warnings about JavaScript runtime, install Node.js or ignore them (functionality still works).
+**Fixed in v0.2.0**: The toolkit now uses Android player client, eliminating the need for a JavaScript runtime. This warning should no longer appear.
 
 ### No Subtitles Available
 Some videos don't have subtitles. The tool will skip these and continue with other videos.

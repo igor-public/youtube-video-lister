@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:04,080
+When Nvidia first started, there were 60
+
+2
+00:00:02,240 --> 00:00:05,440
+3D graphics companies. We are the only
+
+3
+00:00:04,080 --> 00:00:07,200
+one that survived. If you would have
+
+4
+00:00:05,440 --> 00:00:08,559
+taken those 60 graphics companies and
+
+5
+00:00:07,200 --> 00:00:10,800
+asked yourself which one was going to
+
+6
+00:00:08,559 --> 00:00:12,320
+make it, Nvidia would be the top of that
+
+7
+00:00:10,800 --> 00:00:14,240
+list not to make it. You know, this is
+
+8
+00:00:12,320 --> 00:00:16,080
+long before you, but Nvidia's graphics
+
+9
+00:00:14,240 --> 00:00:17,840
+architecture was precisely wrong. And it
+
+10
+00:00:16,080 --> 00:00:19,279
+was an impossible thing for developers
+
+11
+00:00:17,840 --> 00:00:21,199
+to support. It was never going to make
+
+12
+00:00:19,279 --> 00:00:23,359
+it. We reasoned about it for good reason
+
+13
+00:00:21,199 --> 00:00:24,880
+for for from good first principles, but
+
+14
+00:00:23,359 --> 00:00:26,480
+we ended up in the wrong solution and
+
+15
+00:00:24,880 --> 00:00:28,080
+everybody would have counted us out and
+
+16
+00:00:26,480 --> 00:00:29,840
+here we are. And so I have enough
+
+17
+00:00:28,080 --> 00:00:31,840
+humility to recognize that, you know,
+
+18
+00:00:29,840 --> 00:00:33,600
+don't don't pick winners. There are so
+
+19
+00:00:31,840 --> 00:00:35,200
+many great amazing foundation model
+
+20
+00:00:33,600 --> 00:00:36,880
+companies and we try to invest in all of
+
+21
+00:00:35,200 --> 00:00:38,480
+them and it's part of our joy of doing
+
+22
+00:00:36,880 --> 00:00:40,000
+so. It's it's an imperative to our
+
+23
+00:00:38,480 --> 00:00:41,360
+business, but we also go out of our way
+
+24
+00:00:40,000 --> 00:00:42,800
+not to pick winners. And so when I
+
+25
+00:00:41,360 --> 00:00:44,079
+invest in one of them, I invest in all
+
+26
+00:00:42,800 --> 00:00:47,600
+of them. Either let them all take care
+
+27
+00:00:44,079 --> 00:00:47,600
+of themselves or take care of all of
+

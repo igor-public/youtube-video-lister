@@ -1,0 +1,1112 @@
+1
+00:00:00,000 --> 00:00:03,920
+Here is the common narrative that
+
+2
+00:00:01,640 --> 00:00:06,640
+everybody is telling you. Forget about
+
+3
+00:00:03,920 --> 00:00:09,160
+timing the market. Just buy, say, into
+
+4
+00:00:06,640 --> 00:00:12,520
+the S&P 500 every single month
+
+5
+00:00:09,160 --> 00:00:14,480
+irrespective of price. Buy $100 every
+
+6
+00:00:12,520 --> 00:00:16,560
+month and over the long term you will
+
+7
+00:00:14,480 --> 00:00:18,960
+make money. While this is true because
+
+8
+00:00:16,560 --> 00:00:21,040
+the US dollar is devaluing over time,
+
+9
+00:00:18,960 --> 00:00:23,880
+this does generate returns, it's not
+
+10
+00:00:21,040 --> 00:00:26,400
+necessarily ideal. We can tweak this a
+
+11
+00:00:23,880 --> 00:00:29,120
+little bit. We can have a fixed rule how
+
+12
+00:00:26,400 --> 00:00:31,480
+we put some variety into the purchases.
+
+13
+00:00:29,120 --> 00:00:33,320
+We don't buy $100
+
+14
+00:00:31,480 --> 00:00:35,280
+every month, when the market is cheaper,
+
+15
+00:00:33,320 --> 00:00:37,360
+we buy a bit more. Maybe when the market
+
+16
+00:00:35,280 --> 00:00:39,480
+is expensive, we buy a bit less. Now,
+
+17
+00:00:37,360 --> 00:00:41,520
+this rule has to be extremely simple.
+
+18
+00:00:39,480 --> 00:00:43,160
+And in this video, I've run simulations.
+
+19
+00:00:41,520 --> 00:00:45,840
+I've tried to figure out how can we
+
+20
+00:00:43,160 --> 00:00:47,920
+potentially optimize buying into the
+
+21
+00:00:45,840 --> 00:00:50,200
+market regularly. So, here's what I've
+
+22
+00:00:47,920 --> 00:00:52,640
+done. This comes from Bitcoin strategy
+
+23
+00:00:50,200 --> 00:00:54,240
+analytics. That's the platform available
+
+24
+00:00:52,640 --> 00:00:56,600
+to the premium members of this channel
+
+25
+00:00:54,240 --> 00:00:59,120
+and there's a tool called dollar cost
+
+26
+00:00:56,600 --> 00:01:00,760
+average optimization. So, that's a tool
+
+27
+00:00:59,120 --> 00:01:04,440
+trying to figure out how much we can
+
+28
+00:01:00,760 --> 00:01:06,600
+potentially outperform just simple $100
+
+29
+00:01:04,440 --> 00:01:09,000
+purchases, in this case, monthly. And
+
+30
+00:01:06,600 --> 00:01:11,720
+so, we've got a very simple approach. We
+
+31
+00:01:09,000 --> 00:01:14,000
+buy more when we draw down from the
+
+32
+00:01:11,720 --> 00:01:16,160
+all-time high. Now, all-time high is an
+
+33
+00:01:14,000 --> 00:01:18,360
+exaggeration here. We just look back for
+
+34
+00:01:16,160 --> 00:01:20,000
+the last 10 years. If the current price
+
+35
+00:01:18,360 --> 00:01:22,040
+is close to the highest price in the
+
+36
+00:01:20,000 --> 00:01:24,000
+last 10 years, we buy less. If it's
+
+37
+00:01:22,040 --> 00:01:26,480
+close to the lowest price in the last 10
+
+38
+00:01:24,000 --> 00:01:28,280
+years, we buy more. And this is then how
+
+39
+00:01:26,480 --> 00:01:30,800
+that looks like over time. We've got the
+
+40
+00:01:28,280 --> 00:01:33,280
+S&P 500 at this point, white line, and
+
+41
+00:01:30,800 --> 00:01:35,480
+we've got a buying indicator. How much
+
+42
+00:01:33,280 --> 00:01:37,680
+should we buy? We buy more when we have
+
+43
+00:01:35,480 --> 00:01:39,800
+crashed in the last 10 years. We buy
+
+44
+00:01:37,680 --> 00:01:42,720
+less when we have hit a new all-time
+
+45
+00:01:39,800 --> 00:01:45,240
+high. So, when we put a bit of variation
+
+46
+00:01:42,720 --> 00:01:47,520
+into our buying, how does this actually
+
+47
+00:01:45,240 --> 00:01:49,800
+affect performance? So, let's have a
+
+48
+00:01:47,520 --> 00:01:53,120
+look. Constant dollar cost averaging,
+
+49
+00:01:49,800 --> 00:01:55,120
+that's the line in gray. Dynamic dollar
+
+50
+00:01:53,120 --> 00:01:56,920
+cost averaging, so adjusting our
+
+51
+00:01:55,120 --> 00:01:59,080
+purchases based on how much we have
+
+52
+00:01:56,920 --> 00:02:01,640
+drawn down from the highest price in the
+
+53
+00:01:59,080 --> 00:02:05,080
+last 10 years, that's the line in
+
+54
+00:02:01,640 --> 00:02:07,440
+orange. So, how many S&P 500 shares have
+
+55
+00:02:05,080 --> 00:02:09,440
+we accumulated over time? This year is a
+
+56
+00:02:07,440 --> 00:02:12,480
+very long-term simulation. It starts in
+
+57
+00:02:09,440 --> 00:02:13,720
+1950. So, this is 80 years of data and
+
+58
+00:02:12,480 --> 00:02:15,760
+maybe that's not necessarily
+
+59
+00:02:13,720 --> 00:02:17,800
+representative because the market has
+
+60
+00:02:15,760 --> 00:02:19,920
+changed over the decades and also there
+
+61
+00:02:17,800 --> 00:02:22,560
+might be an impact of whether or not we
+
+62
+00:02:19,920 --> 00:02:24,960
+start our simulation at a very high
+
+63
+00:02:22,560 --> 00:02:26,400
+price point or at a very low price
+
+64
+00:02:24,960 --> 00:02:28,240
+point. Now, in this video, I want to be
+
+65
+00:02:26,400 --> 00:02:29,760
+as objective as possible and so let's
+
+66
+00:02:28,240 --> 00:02:31,960
+run through the different scenarios.
+
+67
+00:02:29,760 --> 00:02:34,000
+What happens when we use dynamic dollar
+
+68
+00:02:31,960 --> 00:02:36,560
+cost averaging and we start at the
+
+69
+00:02:34,000 --> 00:02:38,680
+height of a bull market versus, say, at
+
+70
+00:02:36,560 --> 00:02:40,400
+the bottom of a bear market? And how
+
+71
+00:02:38,680 --> 00:02:42,520
+does this develop over time long term?
+
+72
+00:02:40,400 --> 00:02:45,560
+But again, let's go back to the 80-year
+
+73
+00:02:42,520 --> 00:02:47,640
+simulation. If you bought over 80 years
+
+74
+00:02:45,560 --> 00:02:50,480
+$100 every month, you would have
+
+75
+00:02:47,640 --> 00:02:54,120
+invested $91,000
+
+76
+00:02:50,480 --> 00:02:55,320
+and you come out with 5.8 million.
+
+77
+00:02:54,120 --> 00:02:56,880
+That's for dynamic dollar cost
+
+78
+00:02:55,320 --> 00:02:59,600
+averaging. With constant dollar cost
+
+79
+00:02:56,880 --> 00:03:03,320
+averaging, we are at 5.1 million. So, a
+
+80
+00:02:59,600 --> 00:03:05,880
+difference of 700k or 13%.
+
+81
+00:03:03,320 --> 00:03:08,160
+Now, nobody has a time horizon of 80
+
+82
+00:03:05,880 --> 00:03:10,760
+years, but at least it gives us an idea
+
+83
+00:03:08,160 --> 00:03:12,880
+of what the potential difference can be
+
+84
+00:03:10,760 --> 00:03:15,200
+over the market cycles. So, in general,
+
+85
+00:03:12,880 --> 00:03:17,280
+dynamic dollar cost averaging seems to
+
+86
+00:03:15,200 --> 00:03:19,080
+outperform just fixed dollar cost
+
+87
+00:03:17,280 --> 00:03:21,520
+averaging and this is a very simple
+
+88
+00:03:19,080 --> 00:03:23,520
+trading rule. We can get more advanced
+
+89
+00:03:21,520 --> 00:03:25,520
+if we wanted to, but in general, I just
+
+90
+00:03:23,520 --> 00:03:28,160
+want to figure out is it maybe a good
+
+91
+00:03:25,520 --> 00:03:30,440
+idea to not completely blindly buy, but
+
+92
+00:03:28,160 --> 00:03:32,440
+to buy more when we go down. Now, we can
+
+93
+00:03:30,440 --> 00:03:34,400
+change the adjustment. How much do we
+
+94
+00:03:32,440 --> 00:03:36,080
+actually want to buy when we are low
+
+95
+00:03:34,400 --> 00:03:38,680
+versus high? How much do we want to
+
+96
+00:03:36,080 --> 00:03:42,000
+deviate from the $100? I've got here a
+
+97
+00:03:38,680 --> 00:03:44,840
+5x maximum multiplier. So, that means
+
+98
+00:03:42,000 --> 00:03:48,080
+the lowest purchase is $15, the highest
+
+99
+00:03:44,840 --> 00:03:51,160
+purchase is a bit under $400, but it
+
+100
+00:03:48,080 --> 00:03:53,840
+averages out to $100. So, the amount
+
+101
+00:03:51,160 --> 00:03:56,920
+invested is exactly the same for dynamic
+
+102
+00:03:53,840 --> 00:03:58,720
+DCA versus constant DCA. That's the idea
+
+103
+00:03:56,920 --> 00:04:01,000
+of the simulation. But again, this is
+
+104
+00:03:58,720 --> 00:04:02,520
+very long term. What happens actually
+
+105
+00:04:01,000 --> 00:04:05,000
+when we start at different points in
+
+106
+00:04:02,520 --> 00:04:06,640
+time? This year is the Shiller PE ratio,
+
+107
+00:04:05,000 --> 00:04:08,720
+a very long-term chart. So, this shows
+
+108
+00:04:06,640 --> 00:04:10,760
+how expensive currently stocks are
+
+109
+00:04:08,720 --> 00:04:13,440
+relative to their earnings. It starts in
+
+110
+00:04:10,760 --> 00:04:15,560
+1871 and we could make the argument that
+
+111
+00:04:13,440 --> 00:04:17,880
+maybe currently we are rather high in
+
+112
+00:04:15,560 --> 00:04:20,200
+the price. We've got a Shiller PE ratio
+
+113
+00:04:17,880 --> 00:04:22,320
+that's comparable to the height of the
+
+114
+00:04:20,200 --> 00:04:24,200
+dot-com bubble. Then we had the dot-com
+
+115
+00:04:22,320 --> 00:04:27,080
+crash, then we had the global financial
+
+116
+00:04:24,200 --> 00:04:29,360
+crisis and then Bitcoin was born. Now,
+
+117
+00:04:27,080 --> 00:04:31,360
+what happens if we start our dynamic
+
+118
+00:04:29,360 --> 00:04:33,800
+dollar cost averaging at the height of a
+
+119
+00:04:31,360 --> 00:04:36,440
+bull market? So, let's start it, say, in
+
+120
+00:04:33,800 --> 00:04:38,800
+the year 2000, at the beginning of 2000.
+
+121
+00:04:36,440 --> 00:04:41,040
+So, here's the S&P 500. We are buying
+
+122
+00:04:38,800 --> 00:04:43,960
+quite a bit during a bear market. We
+
+123
+00:04:41,040 --> 00:04:46,200
+then buy gradually less as the price
+
+124
+00:04:43,960 --> 00:04:47,920
+goes up. And then we buy much more, in
+
+125
+00:04:46,200 --> 00:04:50,640
+this case, during the global financial
+
+126
+00:04:47,920 --> 00:04:53,000
+crisis and gradually less and less and
+
+127
+00:04:50,640 --> 00:04:55,200
+less. What happens then over time?
+
+128
+00:04:53,000 --> 00:04:57,200
+Here's the result. Constant dollar cost
+
+129
+00:04:55,200 --> 00:04:58,840
+averaging gives us this line in gray.
+
+130
+00:04:57,200 --> 00:05:00,960
+Dynamic dollar cost averaging gives us
+
+131
+00:04:58,840 --> 00:05:04,080
+this line in orange. So, that's the
+
+132
+00:05:00,960 --> 00:05:07,200
+number of S&P 500 that are accumulated.
+
+133
+00:05:04,080 --> 00:05:10,680
+And over the course of those 26 years,
+
+134
+00:05:07,200 --> 00:05:12,920
+we have 31k invested and that turned
+
+135
+00:05:10,680 --> 00:05:14,960
+with constant dollar cost averaging into
+
+136
+00:05:12,920 --> 00:05:17,360
+125k.
+
+137
+00:05:14,960 --> 00:05:19,680
+With dynamic dollar cost averaging, it
+
+138
+00:05:17,360 --> 00:05:22,200
+turned into 169k.
+
+139
+00:05:19,680 --> 00:05:25,520
+So, that's 44k more. That's this is
+
+140
+00:05:22,200 --> 00:05:25,520
+worth noting.
+
+141
+00:05:25,680 --> 00:05:28,880
+Now, the most important thing is to
+
+142
+00:05:27,000 --> 00:05:31,320
+start with investing in the first place,
+
+143
+00:05:28,880 --> 00:05:34,080
+right? Just $100 a month can grow into
+
+144
+00:05:31,320 --> 00:05:36,600
+quite a bit of wealth. 124k
+
+145
+00:05:34,080 --> 00:05:38,960
+for such a small contribution is not bad
+
+146
+00:05:36,600 --> 00:05:41,480
+and we have started at extremely high
+
+147
+00:05:38,960 --> 00:05:44,960
+valuations. But the optimization, I
+
+148
+00:05:41,480 --> 00:05:48,040
+believe, is still worth it. 35% extra or
+
+149
+00:05:44,960 --> 00:05:51,400
+44k, I think is pretty good. Instead of
+
+150
+00:05:48,040 --> 00:05:53,600
+4xing the money, we more than 5x the
+
+151
+00:05:51,400 --> 00:05:55,520
+money. And again, the idea is to simply
+
+152
+00:05:53,600 --> 00:05:58,320
+just look at the all-time high of the
+
+153
+00:05:55,520 --> 00:06:00,640
+S&P 500, check its price in the last 10
+
+154
+00:05:58,320 --> 00:06:02,440
+years and see where we currently are and
+
+155
+00:06:00,640 --> 00:06:05,960
+adjust accordingly. When we are very
+
+156
+00:06:02,440 --> 00:06:07,760
+low, we buy up to four times our $100.
+
+157
+00:06:05,960 --> 00:06:09,560
+If we are very high, we buy only a
+
+158
+00:06:07,760 --> 00:06:11,600
+quarter. So, for example, over here,
+
+159
+00:06:09,560 --> 00:06:13,920
+this is the S&P 500 relative to the
+
+160
+00:06:11,600 --> 00:06:16,360
+money supply. We just look at the last
+
+161
+00:06:13,920 --> 00:06:18,680
+10 years. We see where are we now
+
+162
+00:06:16,360 --> 00:06:21,600
+relative to those 10 years. In the
+
+163
+00:06:18,680 --> 00:06:24,440
+middle, we buy exactly $100. At the
+
+164
+00:06:21,600 --> 00:06:26,000
+bottom, we buy 400. At the top, we buy
+
+165
+00:06:24,440 --> 00:06:28,280
+much less. And of course, I don't know
+
+166
+00:06:26,000 --> 00:06:31,320
+if 10 years is optimal. Maybe we should
+
+167
+00:06:28,280 --> 00:06:33,520
+rather take 20 years. I also don't know
+
+168
+00:06:31,320 --> 00:06:35,920
+if the 5x multiplier is best or if we
+
+169
+00:06:33,520 --> 00:06:38,240
+should just buy, say, $200 instead of
+
+170
+00:06:35,920 --> 00:06:39,800
+400 at the bottom and also have less of
+
+171
+00:06:38,240 --> 00:06:41,560
+a reduction when we are close to the
+
+172
+00:06:39,800 --> 00:06:43,800
+all-time high. So, I have not run the
+
+173
+00:06:41,560 --> 00:06:45,840
+optimization in that regard. But in
+
+174
+00:06:43,800 --> 00:06:48,240
+general, being dynamic with our
+
+175
+00:06:45,840 --> 00:06:49,920
+purchases and buying more when we
+
+176
+00:06:48,240 --> 00:06:52,120
+dropped and buying less when we are
+
+177
+00:06:49,920 --> 00:06:54,120
+closer to the all-time high seems to
+
+178
+00:06:52,120 --> 00:06:56,520
+make a lot of sense. Now, let's play
+
+179
+00:06:54,120 --> 00:06:59,120
+with the opposite scenario. What happens
+
+180
+00:06:56,520 --> 00:07:01,400
+if we start our simulation at the very
+
+181
+00:06:59,120 --> 00:07:03,280
+bottom? So, let's say at the beginning
+
+182
+00:07:01,400 --> 00:07:05,280
+of 2010
+
+183
+00:07:03,280 --> 00:07:07,960
+when we mainly just had a bull market.
+
+184
+00:07:05,280 --> 00:07:10,960
+Then we get this chart over here. This
+
+185
+00:07:07,960 --> 00:07:13,120
+is 2010, goes all the way to today and
+
+186
+00:07:10,960 --> 00:07:16,240
+still dynamic dollar cost averaging it
+
+187
+00:07:13,120 --> 00:07:18,280
+did outperform just constant dollar cost
+
+188
+00:07:16,240 --> 00:07:20,120
+averaging. We are buying much less as we
+
+189
+00:07:18,280 --> 00:07:22,160
+hit our all-time highs, but we take
+
+190
+00:07:20,120 --> 00:07:23,960
+advantage of the drops, like during
+
+191
+00:07:22,160 --> 00:07:25,760
+COVID, and that has quite a bit of an
+
+192
+00:07:23,960 --> 00:07:28,640
+impact. Now, unfortunately, the impact
+
+193
+00:07:25,760 --> 00:07:31,000
+is less if we don't go through any major
+
+194
+00:07:28,640 --> 00:07:33,840
+bear market. Here, the outperformance is
+
+195
+00:07:31,000 --> 00:07:35,440
+only 5% for dynamic dollar cost
+
+196
+00:07:33,840 --> 00:07:37,840
+averaging versus constant dollar cost
+
+197
+00:07:35,440 --> 00:07:41,080
+averaging. Roughly 20k had been invested
+
+198
+00:07:37,840 --> 00:07:42,640
+and instead of having 55k, we have 58k.
+
+199
+00:07:41,080 --> 00:07:45,040
+So, of course, the charm of this
+
+200
+00:07:42,640 --> 00:07:47,120
+strategy is to buy very aggressively in
+
+201
+00:07:45,040 --> 00:07:48,800
+a bear market. If we don't have a real
+
+202
+00:07:47,120 --> 00:07:50,920
+bear market, we never really have
+
+203
+00:07:48,800 --> 00:07:52,840
+depressed prices, we don't really gain
+
+204
+00:07:50,920 --> 00:07:55,720
+that much with dynamic dollar cost
+
+205
+00:07:52,840 --> 00:07:57,440
+averaging, with deviating from our $100
+
+206
+00:07:55,720 --> 00:07:59,600
+per month purchase. But looking at the
+
+207
+00:07:57,440 --> 00:08:01,960
+historical Shiller PE ratio, I wouldn't
+
+208
+00:07:59,600 --> 00:08:04,440
+be surprised that at some point we do
+
+209
+00:08:01,960 --> 00:08:06,400
+get again a bear market. I think this
+
+210
+00:08:04,440 --> 00:08:09,760
+simulation here, starting in the year
+
+211
+00:08:06,400 --> 00:08:12,000
+2000, is probably closer to reality
+
+212
+00:08:09,760 --> 00:08:15,160
+compared to the simulation starting in
+
+213
+00:08:12,000 --> 00:08:16,640
+2010. We are probably rather expensive
+
+214
+00:08:15,160 --> 00:08:19,040
+right now. We are closer to this
+
+215
+00:08:16,640 --> 00:08:21,040
+scenario than we are to this scenario.
+
+216
+00:08:19,040 --> 00:08:23,400
+And that means that the benefit from
+
+217
+00:08:21,040 --> 00:08:27,760
+dynamic dollar cost averaging is quite
+
+218
+00:08:23,400 --> 00:08:29,720
+high. Again, this was 35% more return.
+
+219
+00:08:27,760 --> 00:08:32,960
+We should, thus, if we take those
+
+220
+00:08:29,720 --> 00:08:35,120
+numbers seriously, buy less month over
+
+221
+00:08:32,960 --> 00:08:37,039
+month when we are still close to the
+
+222
+00:08:35,120 --> 00:08:40,680
+all-time high and we should buy more and
+
+223
+00:08:37,039 --> 00:08:42,640
+more aggressively as the S&P 500 drops.
+
+224
+00:08:40,680 --> 00:08:45,440
+And if it doesn't drop, we just continue
+
+225
+00:08:42,640 --> 00:08:47,680
+to just buy a little bit every month. We
+
+226
+00:08:45,440 --> 00:08:49,360
+dollar cost average less aggressively.
+
+227
+00:08:47,680 --> 00:08:51,320
+Now, in this simulation, we just talk
+
+228
+00:08:49,360 --> 00:08:53,040
+about the buying more versus buying
+
+229
+00:08:51,320 --> 00:08:54,960
+less, but we can actually take this a
+
+230
+00:08:53,040 --> 00:08:56,840
+step further and I'm considering to make
+
+231
+00:08:54,960 --> 00:08:59,400
+an analysis, a quantitative analysis on
+
+232
+00:08:56,840 --> 00:09:01,840
+this as well. We could simply look at
+
+233
+00:08:59,400 --> 00:09:04,520
+the asset that has dropped most from the
+
+234
+00:09:01,840 --> 00:09:06,720
+all-time high and buy more into that.
+
+235
+00:09:04,520 --> 00:09:09,760
+So, let's say we invest $100 and we
+
+236
+00:09:06,720 --> 00:09:12,280
+split those $100 between stocks, between
+
+237
+00:09:09,760 --> 00:09:14,160
+gold, between Bitcoin, between all kinds
+
+238
+00:09:12,280 --> 00:09:16,120
+of things and then we just buy more
+
+239
+00:09:14,160 --> 00:09:18,560
+aggressively into the thing that has
+
+240
+00:09:16,120 --> 00:09:20,880
+dropped more. So, we always invest our
+
+241
+00:09:18,560 --> 00:09:22,520
+$100, but we just buy the thing that has
+
+242
+00:09:20,880 --> 00:09:23,960
+come down more. And of course, we have
+
+243
+00:09:22,520 --> 00:09:26,000
+to do this with assets that we want to
+
+244
+00:09:23,960 --> 00:09:27,960
+hold very long term, where we do believe
+
+245
+00:09:26,000 --> 00:09:30,560
+they have an extremely high chance of
+
+246
+00:09:27,960 --> 00:09:32,560
+still being relevant, say, in 20 or 30
+
+247
+00:09:30,560 --> 00:09:35,000
+years. Maybe we should not start dollar
+
+248
+00:09:32,560 --> 00:09:37,840
+cost averaging in more aggressively as
+
+249
+00:09:35,000 --> 00:09:39,480
+prices come down into a random altcoin,
+
+250
+00:09:37,840 --> 00:09:41,160
+for example. We want to be very
+
+251
+00:09:39,480 --> 00:09:43,360
+selective in where we dollar cost
+
+252
+00:09:41,160 --> 00:09:45,320
+average in. But for the assets that we
+
+253
+00:09:43,360 --> 00:09:47,240
+want to hold long term, that suddenly
+
+254
+00:09:45,320 --> 00:09:49,160
+drop from the all-time high, it might
+
+255
+00:09:47,240 --> 00:09:51,000
+make sense to buy more and more. A
+
+256
+00:09:49,160 --> 00:09:53,280
+simple dynamic dollar cost averaging
+
+257
+00:09:51,000 --> 00:09:55,600
+strategy works very well for the S&P
+
+258
+00:09:53,280 --> 00:09:57,800
+500, especially if you are are
+
+259
+00:09:55,600 --> 00:10:00,120
+high in valuations. But it also works
+
+260
+00:09:57,800 --> 00:10:02,440
+over the very long term for 80 years of
+
+261
+00:10:00,120 --> 00:10:04,040
+data, and the harm isn't too bad if
+
+262
+00:10:02,440 --> 00:10:06,320
+you're always just going up, and our
+
+263
+00:10:04,040 --> 00:10:09,360
+price corrections aren't really that
+
+264
+00:10:06,320 --> 00:10:11,240
+significant as happened since 2010. So,
+
+265
+00:10:09,360 --> 00:10:13,200
+I think the risk to reward is worth it.
+
+266
+00:10:11,240 --> 00:10:14,960
+And again, we can just play around with
+
+267
+00:10:13,200 --> 00:10:17,000
+different asset classes, and then buy
+
+268
+00:10:14,960 --> 00:10:18,120
+the thing that drops most. If you got
+
+269
+00:10:17,000 --> 00:10:19,240
+some value out of this video, feel free
+
+270
+00:10:18,120 --> 00:10:20,400
+to give it a like. It will help the
+
+271
+00:10:19,240 --> 00:10:22,280
+channel grow. Feel free to also
+
+272
+00:10:20,400 --> 00:10:23,840
+subscribe. I publish videos regularly.
+
+273
+00:10:22,280 --> 00:10:25,760
+If you want to get access to the
+
+274
+00:10:23,840 --> 00:10:27,800
+backtesting tool, that's available to
+
+275
+00:10:25,760 --> 00:10:28,880
+the premium members, link is over here.
+
+276
+00:10:27,800 --> 00:10:30,440
+Thanks for watching. See you next time
+
+277
+00:10:28,880 --> 00:10:32,840
+on YouTube, or see you in premium.
+
+278
+00:10:30,440 --> 00:10:32,840
+Cheers.
+

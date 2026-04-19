@@ -1,0 +1,568 @@
+1
+00:00:00,000 --> 00:00:02,880
+What's up, guys? It's Jordan here from
+
+2
+00:00:01,600 --> 00:00:04,520
+CoinBureau. If you're new to the
+
+3
+00:00:02,880 --> 00:00:06,360
+channel, subscribe and be sure to stay
+
+4
+00:00:04,520 --> 00:00:08,400
+tuned until the end of the video to get
+
+5
+00:00:06,360 --> 00:00:10,880
+all of the important information.
+
+6
+00:00:08,400 --> 00:00:12,680
+Continuing on in my more beginner
+
+7
+00:00:10,880 --> 00:00:14,720
+trading tutorials on this playlist,
+
+8
+00:00:12,680 --> 00:00:17,640
+we're going to be looking today at trend
+
+9
+00:00:14,720 --> 00:00:19,920
+lines. Many traders do use these wrong
+
+10
+00:00:17,640 --> 00:00:21,520
+and it costs them money. In the next few
+
+11
+00:00:19,920 --> 00:00:24,440
+minutes, you're going to learn how to
+
+12
+00:00:21,520 --> 00:00:27,080
+draw trend lines like a pro and use them
+
+13
+00:00:24,440 --> 00:00:29,160
+to actually trade. Please also feel free
+
+14
+00:00:27,080 --> 00:00:31,320
+to join my personal trading community
+
+15
+00:00:29,160 --> 00:00:33,920
+and trade along with us in my Discord
+
+16
+00:00:31,320 --> 00:00:36,200
+server. That link is in the description
+
+17
+00:00:33,920 --> 00:00:39,320
+and as you can see by the P&L share
+
+18
+00:00:36,200 --> 00:00:41,760
+room, our crew is absolutely killing it.
+
+19
+00:00:39,320 --> 00:00:43,800
+There is also a trading setups room here
+
+20
+00:00:41,760 --> 00:00:46,080
+where the traders who are trading a lot
+
+21
+00:00:43,800 --> 00:00:48,440
+are constantly dropping really, really
+
+22
+00:00:46,080 --> 00:00:50,320
+interesting setups and helping all the
+
+23
+00:00:48,440 --> 00:00:52,240
+traders along the way. Trend lines
+
+24
+00:00:50,320 --> 00:00:54,200
+really are one of the most basic
+
+25
+00:00:52,240 --> 00:00:55,960
+technical analysis principles, but
+
+26
+00:00:54,200 --> 00:00:58,160
+really something that does get used
+
+27
+00:00:55,960 --> 00:00:59,920
+badly with bad habits that are created
+
+28
+00:00:58,160 --> 00:01:01,720
+early. If you can use trend lines
+
+29
+00:00:59,920 --> 00:01:04,720
+properly, they actually allow for some
+
+30
+00:01:01,720 --> 00:01:07,360
+pretty incredible sniper entries. So,
+
+31
+00:01:04,720 --> 00:01:10,000
+let's talk about now what is a trend
+
+32
+00:01:07,360 --> 00:01:13,240
+line? Very simply, a trend line connects
+
+33
+00:01:10,000 --> 00:01:16,240
+higher lows in an uptrend and lower
+
+34
+00:01:13,240 --> 00:01:18,720
+highs in a downtrend. They help identify
+
+35
+00:01:16,240 --> 00:01:21,120
+direction, support and resistance, and
+
+36
+00:01:18,720 --> 00:01:23,240
+momentum. Here we can see a strong
+
+37
+00:01:21,120 --> 00:01:26,400
+downward sloping trend line giving us
+
+38
+00:01:23,240 --> 00:01:28,600
+very nice short entries until that trend
+
+39
+00:01:26,400 --> 00:01:30,560
+does get broken and then we get the
+
+40
+00:01:28,600 --> 00:01:33,040
+beautiful long trade. Important to
+
+41
+00:01:30,560 --> 00:01:35,320
+understand, especially at first, is that
+
+42
+00:01:33,040 --> 00:01:37,480
+upward sloping trend lines are drawn
+
+43
+00:01:35,320 --> 00:01:39,920
+below the trend connecting your higher
+
+44
+00:01:37,480 --> 00:01:41,800
+lows. And the opposite in a downward
+
+45
+00:01:39,920 --> 00:01:44,600
+sloping trend line, you're drawing your
+
+46
+00:01:41,800 --> 00:01:46,600
+line at your lower highs. You can choose
+
+47
+00:01:44,600 --> 00:01:49,480
+whether you like to draw these in at the
+
+48
+00:01:46,600 --> 00:01:51,760
+wicks for extreme trend lines or at the
+
+49
+00:01:49,480 --> 00:01:54,040
+candle bodies, but make sure you are
+
+50
+00:01:51,760 --> 00:01:56,080
+finding your trend lines on the most
+
+51
+00:01:54,040 --> 00:01:57,960
+visible touch points. Let's now talk
+
+52
+00:01:56,080 --> 00:02:00,240
+about how to draw these trend lines
+
+53
+00:01:57,960 --> 00:02:03,000
+correctly. And this is where the most
+
+54
+00:02:00,240 --> 00:02:05,720
+value is. Here are some rules. Number
+
+55
+00:02:03,000 --> 00:02:08,759
+one, minimum two touch points, but
+
+56
+00:02:05,720 --> 00:02:11,320
+really you want three plus touch points
+
+57
+00:02:08,759 --> 00:02:13,360
+to have a stronger trend line. Don't
+
+58
+00:02:11,320 --> 00:02:15,160
+force the line. Make sure you are
+
+59
+00:02:13,360 --> 00:02:17,040
+actually seeing multiple touch points on
+
+60
+00:02:15,160 --> 00:02:19,200
+the charts. Choose whether you are using
+
+61
+00:02:17,040 --> 00:02:21,040
+bodies or wicks and stay consistent with
+
+62
+00:02:19,200 --> 00:02:23,640
+that choice. And always feel free to
+
+63
+00:02:21,040 --> 00:02:26,800
+adjust the trend line slightly to get
+
+64
+00:02:23,640 --> 00:02:29,400
+your best angle and most touch points.
+
+65
+00:02:26,800 --> 00:02:32,120
+Some common mistakes here are forcing
+
+66
+00:02:29,400 --> 00:02:34,120
+the lines to fit your own bias, ignoring
+
+67
+00:02:32,120 --> 00:02:36,960
+the market structure, drawing through
+
+68
+00:02:34,120 --> 00:02:38,800
+random points, and this does take time,
+
+69
+00:02:36,960 --> 00:02:41,000
+but really just play around on the
+
+70
+00:02:38,800 --> 00:02:43,200
+charts and very soon your mind will
+
+71
+00:02:41,000 --> 00:02:45,600
+start identifying where to put in these
+
+72
+00:02:43,200 --> 00:02:47,880
+trend lines very easily. Remember, our
+
+73
+00:02:45,600 --> 00:02:49,760
+brains are pattern recognition machines
+
+74
+00:02:47,880 --> 00:02:51,920
+and they automatically find these kinds
+
+75
+00:02:49,760 --> 00:02:54,200
+of consistencies for us. We just need to
+
+76
+00:02:51,920 --> 00:02:56,560
+learn to look in the right way. Let's
+
+77
+00:02:54,200 --> 00:02:58,440
+now talk about the major ways in which
+
+78
+00:02:56,560 --> 00:03:00,760
+trend lines work in terms of crypto
+
+79
+00:02:58,440 --> 00:03:03,200
+trading. And these form the three major
+
+80
+00:03:00,760 --> 00:03:04,920
+strategies that trend line traders use.
+
+81
+00:03:03,200 --> 00:03:07,520
+Number one, they create support and
+
+82
+00:03:04,920 --> 00:03:09,960
+resistance on your charts and very often
+
+83
+00:03:07,520 --> 00:03:12,160
+price does bounce on these lines as
+
+84
+00:03:09,960 --> 00:03:14,880
+support or resistance. They also offer
+
+85
+00:03:12,160 --> 00:03:17,360
+us breakout opportunities where price
+
+86
+00:03:14,880 --> 00:03:19,960
+does fall below those levels. And then
+
+87
+00:03:17,360 --> 00:03:23,320
+most importantly for conservative sniper
+
+88
+00:03:19,960 --> 00:03:26,440
+traders, they allow retest entries on
+
+89
+00:03:23,320 --> 00:03:29,080
+support and resistance flips. Let's walk
+
+90
+00:03:26,440 --> 00:03:31,640
+through now a few very quick and simple
+
+91
+00:03:29,080 --> 00:03:34,160
+practical examples. Number one is the
+
+92
+00:03:31,640 --> 00:03:35,960
+bounce trade. Here we identified the
+
+93
+00:03:34,160 --> 00:03:38,240
+trend line with at least three touch
+
+94
+00:03:35,960 --> 00:03:40,920
+points. And here was a very volatile
+
+95
+00:03:38,240 --> 00:03:43,280
+candle and try not to trade during times
+
+96
+00:03:40,920 --> 00:03:46,320
+of extreme volatility. But here we can
+
+97
+00:03:43,280 --> 00:03:48,800
+see a very nice opportunity for a bounce
+
+98
+00:03:46,320 --> 00:03:51,600
+trade. Remember to always draw in your
+
+99
+00:03:48,800 --> 00:03:54,640
+trade and set your limits with a risk to
+
+100
+00:03:51,600 --> 00:03:56,760
+reward ratio of at least one to three.
+
+101
+00:03:54,640 --> 00:03:59,000
+Also, always be sure to try and find
+
+102
+00:03:56,760 --> 00:04:00,760
+confluence with your other indicators.
+
+103
+00:03:59,000 --> 00:04:02,760
+My chosen indicator for this is the
+
+104
+00:04:00,760 --> 00:04:05,080
+market cipher. And here we can see a
+
+105
+00:04:02,760 --> 00:04:07,640
+very nice green dot trigger wave coming
+
+106
+00:04:05,080 --> 00:04:09,680
+in for us at the support of the trend
+
+107
+00:04:07,640 --> 00:04:12,920
+line bounce. This is also a decent
+
+108
+00:04:09,680 --> 00:04:15,240
+example of that support line being
+
+109
+00:04:12,920 --> 00:04:17,920
+flipped into resistance and giving us a
+
+110
+00:04:15,240 --> 00:04:20,680
+nice retest trade. Always draw in the
+
+111
+00:04:17,920 --> 00:04:22,640
+trade with your limits clearly defined
+
+112
+00:04:20,680 --> 00:04:25,520
+as well as your targets and your risk to
+
+113
+00:04:22,640 --> 00:04:28,360
+reward ratio and make sure you are using
+
+114
+00:04:25,520 --> 00:04:30,240
+a nice entry signal within your given
+
+115
+00:04:28,360 --> 00:04:33,480
+trading plan. The major thing to be
+
+116
+00:04:30,240 --> 00:04:35,920
+aware of here are fake outs. Make sure
+
+117
+00:04:33,480 --> 00:04:38,240
+that you are getting the correct entry
+
+118
+00:04:35,920 --> 00:04:39,880
+signal on the retest of the support and
+
+119
+00:04:38,240 --> 00:04:42,240
+resistance flip in the correct
+
+120
+00:04:39,880 --> 00:04:44,680
+direction, otherwise you could get
+
+121
+00:04:42,240 --> 00:04:47,480
+wrecked on a fake out trying to catch a
+
+122
+00:04:44,680 --> 00:04:49,440
+breakout without a proper signal coming
+
+123
+00:04:47,480 --> 00:04:51,400
+in. If you need to learn to use market
+
+124
+00:04:49,440 --> 00:04:53,680
+cipher, I will drop that link in the
+
+125
+00:04:51,400 --> 00:04:55,920
+description. Some pro tips from me here
+
+126
+00:04:53,680 --> 00:04:57,880
+are to make sure you are combining these
+
+127
+00:04:55,920 --> 00:05:00,240
+trend lines with support and resistance
+
+128
+00:04:57,880 --> 00:05:02,560
+zones, moving averages, candle stick
+
+129
+00:05:00,240 --> 00:05:04,560
+patterns, using higher time frames for
+
+130
+00:05:02,560 --> 00:05:06,960
+stronger trend lines, and keeping in
+
+131
+00:05:04,560 --> 00:05:08,920
+mind that the more touches means the
+
+132
+00:05:06,960 --> 00:05:11,080
+more reliable trend line. Common
+
+133
+00:05:08,920 --> 00:05:12,680
+mistakes here are over drawing trend
+
+134
+00:05:11,080 --> 00:05:15,080
+lines where you don't see enough touch
+
+135
+00:05:12,680 --> 00:05:16,600
+points, trading every touch blindly
+
+136
+00:05:15,080 --> 00:05:19,360
+without confirmations from other
+
+137
+00:05:16,600 --> 00:05:21,800
+indicators, ignoring the overall trend,
+
+138
+00:05:19,360 --> 00:05:23,560
+and not waiting for enough confluence on
+
+139
+00:05:21,800 --> 00:05:25,320
+your confirmations. If you found this
+
+140
+00:05:23,560 --> 00:05:27,160
+useful, like and subscribe and please
+
+141
+00:05:25,320 --> 00:05:29,840
+let me know any questions you have in
+
+142
+00:05:27,160 --> 00:05:29,840
+the comments.
+

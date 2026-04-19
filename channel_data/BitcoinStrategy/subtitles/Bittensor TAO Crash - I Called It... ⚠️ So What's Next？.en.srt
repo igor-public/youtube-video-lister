@@ -1,0 +1,636 @@
+1
+00:00:00,000 --> 00:00:05,280
+This market is fascinating. In the short
+
+2
+00:00:02,720 --> 00:00:07,440
+term, there's a lot of noise. Some
+
+3
+00:00:05,280 --> 00:00:09,320
+altcoins are going up, others are going
+
+4
+00:00:07,440 --> 00:00:11,480
+down. This is true for the daily, the
+
+5
+00:00:09,320 --> 00:00:13,960
+weekly, and the monthly performance.
+
+6
+00:00:11,480 --> 00:00:16,280
+Once we zoom out for 1 year, there are
+
+7
+00:00:13,960 --> 00:00:19,080
+only very few winners. Check out the
+
+8
+00:00:16,280 --> 00:00:21,560
+performance in the last year uh based on
+
+9
+00:00:19,080 --> 00:00:24,720
+market cap. It was only the largest
+
+10
+00:00:21,560 --> 00:00:27,720
+market caps, 1 to 200, that were able to
+
+11
+00:00:24,720 --> 00:00:29,520
+make money on average. The rest all
+
+12
+00:00:27,720 --> 00:00:31,240
+lost. Now, this video is about
+
+13
+00:00:29,520 --> 00:00:33,640
+Bittensor. Again, there was already a
+
+14
+00:00:31,240 --> 00:00:36,400
+video published 2 weeks ago. And just
+
+15
+00:00:33,640 --> 00:00:39,600
+yesterday, we had another mention of
+
+16
+00:00:36,400 --> 00:00:42,280
+Bittensor Tao by a Jason Calacanis on
+
+17
+00:00:39,600 --> 00:00:44,360
+the All-In podcast. So, he's got an
+
+18
+00:00:42,280 --> 00:00:46,400
+investment in the project and he's
+
+19
+00:00:44,360 --> 00:00:48,160
+trying to push the token. Now, I don't
+
+20
+00:00:46,400 --> 00:00:50,560
+believe in marketing hype, I don't
+
+21
+00:00:48,160 --> 00:00:52,640
+believe in narratives, I believe in
+
+22
+00:00:50,560 --> 00:00:55,040
+numbers. And that prior video on this
+
+23
+00:00:52,640 --> 00:00:57,320
+channel, it discussed a trading approach
+
+24
+00:00:55,040 --> 00:00:59,480
+that historically worked very well for
+
+25
+00:00:57,320 --> 00:01:03,600
+Bittensor. It's the golden and death
+
+26
+00:00:59,480 --> 00:01:05,519
+crosses between the 15-day and the 6-day
+
+27
+00:01:03,600 --> 00:01:07,960
+simple moving average. The takeaway of
+
+28
+00:01:05,519 --> 00:01:10,680
+the video was that I was waiting for the
+
+29
+00:01:07,960 --> 00:01:13,120
+death cross to occur to bet on falling
+
+30
+00:01:10,680 --> 00:01:15,800
+prices. That death cross it did occur.
+
+31
+00:01:13,120 --> 00:01:18,480
+That was on the 4th of April. Since
+
+32
+00:01:15,800 --> 00:01:20,040
+then, we have sold off aggressively.
+
+33
+00:01:18,480 --> 00:01:22,760
+That's the performance, by the way, of
+
+34
+00:01:20,040 --> 00:01:24,800
+that backtest. A very consistent money
+
+35
+00:01:22,760 --> 00:01:26,880
+maker. Buying and holding Bittensor over
+
+36
+00:01:24,800 --> 00:01:30,160
+the time period even gave a negative
+
+37
+00:01:26,880 --> 00:01:34,200
+return of minus 13% but the moving
+
+38
+00:01:30,160 --> 00:01:37,120
+average strategy returned almost 600%
+
+39
+00:01:34,200 --> 00:01:39,080
+at a lower drawdown with a much shorter
+
+40
+00:01:37,120 --> 00:01:41,200
+drawdown duration. One of the major
+
+41
+00:01:39,080 --> 00:01:43,480
+reasons why this strategy works is
+
+42
+00:01:41,200 --> 00:01:46,040
+because even though the win rate isn't
+
+43
+00:01:43,480 --> 00:01:48,720
+necessarily that high, the winners are
+
+44
+00:01:46,040 --> 00:01:50,920
+much, much larger than the losers.
+
+45
+00:01:48,720 --> 00:01:52,960
+Here's another chart from that video.
+
+46
+00:01:50,920 --> 00:01:55,560
+It's the Bittensor token relative to the
+
+47
+00:01:52,960 --> 00:01:57,320
+altcoin market cap. Here is the updated
+
+48
+00:01:55,560 --> 00:02:00,040
+version of that. And so, this gives us
+
+49
+00:01:57,320 --> 00:02:02,560
+an idea of how much more potential
+
+50
+00:02:00,040 --> 00:02:05,680
+downside there might be. History is any
+
+51
+00:02:02,560 --> 00:02:08,920
+indication, Tao could easily drop
+
+52
+00:02:05,680 --> 00:02:10,560
+another 40% from here relative to the
+
+53
+00:02:08,920 --> 00:02:12,120
+rest of the altcoin market. Now, one of
+
+54
+00:02:10,560 --> 00:02:15,040
+the reasons for this long-term
+
+55
+00:02:12,120 --> 00:02:16,840
+underperformance is the token inflation.
+
+56
+00:02:15,040 --> 00:02:18,880
+So, more and more Tao tokens hit the
+
+57
+00:02:16,840 --> 00:02:21,160
+market over time. And if the demand
+
+58
+00:02:18,880 --> 00:02:23,400
+doesn't grow as quickly as supply, then
+
+59
+00:02:21,160 --> 00:02:24,920
+of course the token tends to not do as
+
+60
+00:02:23,400 --> 00:02:27,320
+well. But really, on the short term,
+
+61
+00:02:24,920 --> 00:02:29,240
+it's leverage that moves the price. On
+
+62
+00:02:27,320 --> 00:02:31,640
+the spot market, in the last 24 hours,
+
+63
+00:02:29,240 --> 00:02:33,480
+we only had around 100 million worth of
+
+64
+00:02:31,640 --> 00:02:35,480
+trading volume on the top exchange.
+
+65
+00:02:33,480 --> 00:02:38,920
+Compare this with the perpetual futures
+
+66
+00:02:35,480 --> 00:02:41,040
+market. Here, we had 1.2 billion worth
+
+67
+00:02:38,920 --> 00:02:43,240
+of trading volume. So, 12 times the
+
+68
+00:02:41,040 --> 00:02:45,400
+trading volume. Really, the bets on the
+
+69
+00:02:43,240 --> 00:02:48,320
+price make the price discovery. And so,
+
+70
+00:02:45,400 --> 00:02:50,920
+with that recent dump of Tao, we saw a
+
+71
+00:02:48,320 --> 00:02:53,840
+lot of liquidations of those levered
+
+72
+00:02:50,920 --> 00:02:56,240
+bets on the price. 9 million worth of
+
+73
+00:02:53,840 --> 00:02:59,280
+bets got wiped out. And that happened
+
+74
+00:02:56,240 --> 00:03:01,360
+under record high trading volume. But
+
+75
+00:02:59,280 --> 00:03:03,720
+something is different this time. With
+
+76
+00:03:01,360 --> 00:03:06,320
+prior liquidation events, we tended to
+
+77
+00:03:03,720 --> 00:03:07,880
+see short squeezes. So, the funding rate
+
+78
+00:03:06,320 --> 00:03:09,680
+was very negative, many people were
+
+79
+00:03:07,880 --> 00:03:12,640
+betting on falling prices, and so the
+
+80
+00:03:09,680 --> 00:03:14,800
+price continued to go up. This time, the
+
+81
+00:03:12,640 --> 00:03:17,960
+funding rate gets slightly negative
+
+82
+00:03:14,800 --> 00:03:20,680
+after a price dump. So, that's simply
+
+83
+00:03:17,960 --> 00:03:23,160
+the long holders losing their shirt and
+
+84
+00:03:20,680 --> 00:03:25,080
+only the shorts being left. So, that's
+
+85
+00:03:23,160 --> 00:03:27,360
+the long traders, the people betting on
+
+86
+00:03:25,080 --> 00:03:29,040
+rising prices, losing their shirt. The
+
+87
+00:03:27,360 --> 00:03:31,480
+short traders, the people that bet on
+
+88
+00:03:29,040 --> 00:03:34,440
+falling prices, staying in the market.
+
+89
+00:03:31,480 --> 00:03:36,080
+That's why we see the red financing rate
+
+90
+00:03:34,440 --> 00:03:38,120
+here. There's more shorts than longs.
+
+91
+00:03:36,080 --> 00:03:40,880
+Something that's very uncommon, though,
+
+92
+00:03:38,120 --> 00:03:43,360
+is that the open interest with that
+
+93
+00:03:40,880 --> 00:03:45,600
+decline went up. Usually, there's
+
+94
+00:03:43,360 --> 00:03:48,240
+positive correlation between open
+
+95
+00:03:45,600 --> 00:03:50,080
+interest and the spot price. So, when
+
+96
+00:03:48,240 --> 00:03:51,960
+there's a lot of bets on the price, the
+
+97
+00:03:50,080 --> 00:03:53,920
+spot price tends to go up. When there's
+
+98
+00:03:51,960 --> 00:03:56,440
+less bets on the price, the spot price
+
+99
+00:03:53,920 --> 00:03:58,840
+tends to go down. But this is not what
+
+100
+00:03:56,440 --> 00:04:01,040
+happened with the recent sell-off. With
+
+101
+00:03:58,840 --> 00:04:03,960
+the recent sell-off, the price went down
+
+102
+00:04:01,040 --> 00:04:06,280
+but open interest went up despite all of
+
+103
+00:04:03,960 --> 00:04:08,400
+those liquidations. So, what's happening
+
+104
+00:04:06,280 --> 00:04:10,840
+here? My impression is that the retail
+
+105
+00:04:08,400 --> 00:04:13,160
+investors got liquidated with this price
+
+106
+00:04:10,840 --> 00:04:15,120
+dump and the market makers took the
+
+107
+00:04:13,160 --> 00:04:18,079
+counter position. And that counter
+
+108
+00:04:15,120 --> 00:04:20,040
+position increased open interest. The
+
+109
+00:04:18,079 --> 00:04:22,880
+market is moving in the direction of
+
+110
+00:04:20,040 --> 00:04:24,720
+maximum pain. Maximum pain for who?
+
+111
+00:04:22,880 --> 00:04:26,760
+Maximum pain for the retail investors
+
+112
+00:04:24,720 --> 00:04:28,960
+that take on too much leverage. First,
+
+113
+00:04:26,760 --> 00:04:31,560
+retail investors got excited because
+
+114
+00:04:28,960 --> 00:04:34,360
+billionaires bought the token. Then,
+
+115
+00:04:31,560 --> 00:04:36,960
+they got wiped out. And then, the market
+
+116
+00:04:34,360 --> 00:04:39,200
+makers, they bought the dip. And so, I
+
+117
+00:04:36,960 --> 00:04:42,440
+wouldn't be surprised at all if we see a
+
+118
+00:04:39,200 --> 00:04:44,520
+bit of a relief rally in Tao. This is
+
+119
+00:04:42,440 --> 00:04:47,440
+Tao relative to Bitcoin. Betting on
+
+120
+00:04:44,520 --> 00:04:49,920
+falling prices of Bittensor might now
+
+121
+00:04:47,440 --> 00:04:52,320
+become the popular trade. And that's
+
+122
+00:04:49,920 --> 00:04:53,440
+when market makers push up the price.
+
+123
+00:04:52,320 --> 00:04:55,240
+But then, at some point, the
+
+124
+00:04:53,440 --> 00:04:57,120
+manipulation will stop and attention
+
+125
+00:04:55,240 --> 00:05:00,280
+will decline again. That's probably
+
+126
+00:04:57,120 --> 00:05:02,440
+going to be how history will repeat yet
+
+127
+00:05:00,280 --> 00:05:05,360
+one more time. Now, I'm not a fan of
+
+128
+00:05:02,440 --> 00:05:07,600
+betting on this little rally. I think
+
+129
+00:05:05,360 --> 00:05:09,920
+it's too dangerous. I rather support
+
+130
+00:05:07,600 --> 00:05:12,360
+betting on the macro. My short on
+
+131
+00:05:09,920 --> 00:05:15,160
+Bittensor is still open. I follow the
+
+132
+00:05:12,360 --> 00:05:17,160
+backtest. The backtest is still bearish.
+
+133
+00:05:15,160 --> 00:05:20,720
+And the backtest worked phenomenally
+
+134
+00:05:17,160 --> 00:05:22,520
+well and it created very nice long-term
+
+135
+00:05:20,720 --> 00:05:24,680
+return. And while the very short term
+
+136
+00:05:22,520 --> 00:05:27,000
+might not look that great to bet on
+
+137
+00:05:24,680 --> 00:05:29,680
+falling prices, as market makers own the
+
+138
+00:05:27,000 --> 00:05:32,480
+supply, I think it's always problematic
+
+139
+00:05:29,680 --> 00:05:35,680
+betting on those microtrends. I rather
+
+140
+00:05:32,480 --> 00:05:37,360
+have time on my side. Over time, Tao
+
+141
+00:05:35,680 --> 00:05:40,000
+will very likely sell off again. The
+
+142
+00:05:37,360 --> 00:05:42,000
+expanding supply has to go somewhere. If
+
+143
+00:05:40,000 --> 00:05:43,920
+you're interested in getting access to
+
+144
+00:05:42,000 --> 00:05:45,520
+Bitcoin strategy analytics to run
+
+145
+00:05:43,920 --> 00:05:47,160
+backtests like this yourself, or you
+
+146
+00:05:45,520 --> 00:05:49,800
+want to have a look at my strategies,
+
+147
+00:05:47,160 --> 00:05:51,440
+how I trade Bitcoin, Ethereum, Solana,
+
+148
+00:05:49,800 --> 00:05:53,360
+and various altcoins, or if you want to
+
+149
+00:05:51,440 --> 00:05:55,600
+get the next trading alert like here for
+
+150
+00:05:53,360 --> 00:05:57,400
+Bittensor on April 6th, we bet on
+
+151
+00:05:55,600 --> 00:05:58,880
+falling prices, then feel free to check
+
+152
+00:05:57,400 --> 00:06:00,160
+out the premium membership. The link is
+
+153
+00:05:58,880 --> 00:06:01,960
+down below. It's the
+
+154
+00:06:00,160 --> 00:06:03,840
+bitcoinstrategy.com. Thanks for
+
+155
+00:06:01,960 --> 00:06:05,600
+watching. See you next time on YouTube.
+
+156
+00:06:03,840 --> 00:06:07,040
+I publish videos regularly over here. A
+
+157
+00:06:05,600 --> 00:06:08,680
+like would be very much appreciated as
+
+158
+00:06:07,040 --> 00:06:11,520
+well. It helps the channel grow. Thanks
+
+159
+00:06:08,680 --> 00:06:11,520
+and see you next time.
+

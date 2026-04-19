@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:03,520
+And this is one of the concerns that I
+
+2
+00:00:01,520 --> 00:00:05,839
+have about the doomers describing the
+
+3
+00:00:03,520 --> 00:00:07,279
+end of work and killing of jobs. If we
+
+4
+00:00:05,839 --> 00:00:08,800
+discourage people from being software
+
+5
+00:00:07,279 --> 00:00:10,639
+engineers, we're going to run out of
+
+6
+00:00:08,800 --> 00:00:12,240
+software engineers. And uh the same
+
+7
+00:00:10,639 --> 00:00:13,759
+prediction 10 years ago, some of the
+
+8
+00:00:12,240 --> 00:00:16,000
+doomers were saying that whatever you
+
+9
+00:00:13,759 --> 00:00:17,520
+do, don't be a radiologist. Radiology is
+
+10
+00:00:16,000 --> 00:00:18,720
+is going to be the first career to go.
+
+11
+00:00:17,520 --> 00:00:20,560
+The world's not going to need any more
+
+12
+00:00:18,720 --> 00:00:23,119
+radiologists. Guess what? We're short of
+
+13
+00:00:20,560 --> 00:00:25,439
+radiologists. If we scare this country
+
+14
+00:00:23,119 --> 00:00:27,680
+into thinking that AI is somehow a
+
+15
+00:00:25,439 --> 00:00:29,359
+nuclear bomb so that everybody hates AI,
+
+16
+00:00:27,680 --> 00:00:30,960
+if we scare everybody out of doing
+
+17
+00:00:29,359 --> 00:00:32,239
+software engineering jobs because it's
+
+18
+00:00:30,960 --> 00:00:33,360
+going to kill every software engineer
+
+19
+00:00:32,239 --> 00:00:34,719
+job and we don't have any software
+
+20
+00:00:33,360 --> 00:00:36,480
+engineers as a result of that, we're
+
+21
+00:00:34,719 --> 00:00:38,079
+doing a disservice to United States. We
+
+22
+00:00:36,480 --> 00:00:40,160
+misunderstand the difference between a
+
+23
+00:00:38,079 --> 00:00:42,960
+job and the task the job of a
+
+24
+00:00:40,160 --> 00:00:44,640
+radiologist patient care task to read a
+
+25
+00:00:42,960 --> 00:00:45,840
+scan. If we misunderstand that so
+
+26
+00:00:44,640 --> 00:00:47,440
+profoundly, we're not going to have
+
+27
+00:00:45,840 --> 00:00:49,600
+enough radiologists and good enough
+
+28
+00:00:47,440 --> 00:00:49,600
+healthcare.
+

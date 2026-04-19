@@ -1,0 +1,76 @@
+1
+00:00:00,000 --> 00:00:03,960
+If in 2019, Huawei was not banned from
+
+2
+00:00:02,200 --> 00:00:05,640
+using TSMC, they would have kept gaining
+
+3
+00:00:03,960 --> 00:00:08,240
+share and they'd likely be TSMC's
+
+4
+00:00:05,640 --> 00:00:10,360
+biggest customer. The Huawei Ascend was
+
+5
+00:00:08,240 --> 00:00:12,920
+like 2 months before the TPU and like 4
+
+6
+00:00:10,360 --> 00:00:15,000
+months before Nvidia's A100, I think.
+
+7
+00:00:12,920 --> 00:00:17,160
+It's very arguable that Huawei, if they
+
+8
+00:00:15,000 --> 00:00:19,640
+had [music] TSMC, would be better than
+
+9
+00:00:17,160 --> 00:00:22,040
+Nvidia. Huawei is arguably the only
+
+10
+00:00:19,640 --> 00:00:24,000
+company in the world that has all the
+
+11
+00:00:22,040 --> 00:00:25,880
+legs, right? Huawei has cracked software
+
+12
+00:00:24,000 --> 00:00:27,440
+engineers. Huawei has cracked networking
+
+13
+00:00:25,880 --> 00:00:29,000
+technologies. That's in fact their
+
+14
+00:00:27,440 --> 00:00:30,640
+biggest business historically, right?
+
+15
+00:00:29,000 --> 00:00:32,720
+But furthermore, beyond Nvidia, they
+
+16
+00:00:30,640 --> 00:00:34,080
+actually have better AI researchers. And
+
+17
+00:00:32,720 --> 00:00:35,960
+furthermore, beyond Nvidia, they have
+
+18
+00:00:34,080 --> 00:00:39,720
+their own fabs. They were the first with
+
+19
+00:00:35,960 --> 00:00:39,720
+the 7-nanometer AI chip, as well.
+

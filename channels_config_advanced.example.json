@@ -1,0 +1,27 @@
+{
+  "channels": [
+    {
+      "url": "https://www.youtube.com/@CoinBureauTrading",
+      "days_back": 14,
+      "languages": ["en"],
+      "note": "Trading channel - check monthly"
+    },
+    {
+      "url": "https://www.youtube.com/@DataDash",
+      "days_back": 14,
+      "languages": ["en"],
+      "note": "Daily analysis - check weekly"
+    },
+    {
+      "url": "https://www.youtube.com/@DwarkeshPatel",
+      "days_back": 60,
+      "languages": ["en"],
+      "note": "Dwarkesh Patel"
+    }
+  ],
+  "settings": {
+    "default_days_back": 7,
+    "default_languages": ["en"],
+    "output_directory": "channel_data"
+  }
+}

@@ -1,0 +1,292 @@
+1
+00:00:00,000 --> 00:00:04,400
+Capernicus' theory of of the planets. It
+
+2
+00:00:02,399 --> 00:00:06,560
+was less accurate than Tomy's theory.
+
+3
+00:00:04,400 --> 00:00:08,559
+Capernacus very famously proposed the
+
+4
+00:00:06,560 --> 00:00:10,080
+heliocentric model. Geocentrism had been
+
+5
+00:00:08,559 --> 00:00:11,759
+developed for a millennium by that point
+
+6
+00:00:10,080 --> 00:00:13,759
+and they had made many many tweaks and
+
+7
+00:00:11,759 --> 00:00:15,440
+and and very increasingly complicated ad
+
+8
+00:00:13,759 --> 00:00:16,960
+hoc fixes to to make it more and more
+
+9
+00:00:15,440 --> 00:00:18,800
+accurate. Capernicus proposed that the
+
+10
+00:00:16,960 --> 00:00:20,800
+orbits of the planets were perfect
+
+11
+00:00:18,800 --> 00:00:22,320
+circles and capernicus theory was a lot
+
+12
+00:00:20,800 --> 00:00:23,920
+simpler but much as accurate. It was
+
+13
+00:00:22,320 --> 00:00:25,519
+only Kepler that made it more accurate
+
+14
+00:00:23,920 --> 00:00:27,199
+than Tomley's theory. He started
+
+15
+00:00:25,519 --> 00:00:28,800
+proposing that uh you know if you take
+
+16
+00:00:27,199 --> 00:00:30,400
+say the orbit of say the earth and you
+
+17
+00:00:28,800 --> 00:00:32,320
+enclose it in I think maybe a cube the
+
+18
+00:00:30,400 --> 00:00:34,079
+outer sphere of that that encloses the
+
+19
+00:00:32,320 --> 00:00:35,920
+cube almost match perfectly the orbit of
+
+20
+00:00:34,079 --> 00:00:38,000
+Mars and so forth and there were six
+
+21
+00:00:35,920 --> 00:00:39,760
+planets known at the time five gaps
+
+22
+00:00:38,000 --> 00:00:41,600
+between them and there were five perfect
+
+23
+00:00:39,760 --> 00:00:43,280
+platonic solids and so he had this this
+
+24
+00:00:41,600 --> 00:00:45,120
+this theory which he thought was
+
+25
+00:00:43,280 --> 00:00:47,440
+absolutely beautiful that he could
+
+26
+00:00:45,120 --> 00:00:49,920
+inscribe these platonic solids between
+
+27
+00:00:47,440 --> 00:00:51,520
+the spheres of the planets and it seemed
+
+28
+00:00:49,920 --> 00:00:53,280
+to fit and it seemed to be to him like
+
+29
+00:00:51,520 --> 00:00:54,960
+you know God's design of the planets was
+
+30
+00:00:53,280 --> 00:00:56,960
+was matching this mathematical
+
+31
+00:00:54,960 --> 00:00:59,280
+perfection of the platonic solids. So he
+
+32
+00:00:56,960 --> 00:01:01,039
+needed data to confirm this theory and
+
+33
+00:00:59,280 --> 00:01:03,600
+at the time there was only one really
+
+34
+00:01:01,039 --> 00:01:05,040
+highquality data set. So Takubrai this
+
+35
+00:01:03,600 --> 00:01:06,320
+Danish astronomer had managed to
+
+36
+00:01:05,040 --> 00:01:08,240
+convince the Danish government to fund
+
+37
+00:01:06,320 --> 00:01:10,080
+this extremely expensive observatory
+
+38
+00:01:08,240 --> 00:01:12,640
+this in fact an entire island where he
+
+39
+00:01:10,080 --> 00:01:14,240
+had taken decades of observations of all
+
+40
+00:01:12,640 --> 00:01:15,760
+the planets. And so he had all this data
+
+41
+00:01:14,240 --> 00:01:17,280
+which Kepler could use to confirm his
+
+42
+00:01:15,760 --> 00:01:18,960
+theory. And then he worked out to kind
+
+43
+00:01:17,280 --> 00:01:20,240
+of his disappointment that um his
+
+44
+00:01:18,960 --> 00:01:22,240
+beautiful theory didn't quite work. Like
+
+45
+00:01:20,240 --> 00:01:23,759
+the data was sort of off from his um
+
+46
+00:01:22,240 --> 00:01:25,680
+platonic solid theory by you know about
+
+47
+00:01:23,759 --> 00:01:27,280
+10% or something. And he had all kinds
+
+48
+00:01:25,680 --> 00:01:29,439
+of fudges moving the circles around and
+
+49
+00:01:27,280 --> 00:01:31,040
+things and it it didn't quite work. But
+
+50
+00:01:29,439 --> 00:01:33,360
+he worked on this problem for for for
+
+51
+00:01:31,040 --> 00:01:34,960
+years and years and eventually he
+
+52
+00:01:33,360 --> 00:01:36,560
+figured out how to use the data to to
+
+53
+00:01:34,960 --> 00:01:38,880
+work out the actual orbits of the
+
+54
+00:01:36,560 --> 00:01:41,360
+planets. And that was an incredibly
+
+55
+00:01:38,880 --> 00:01:42,400
+clever genius amount of data analysis.
+
+56
+00:01:41,360 --> 00:01:43,840
+And then he eventually worked out that
+
+57
+00:01:42,400 --> 00:01:45,759
+the orbits were actually ellipses not
+
+58
+00:01:43,840 --> 00:01:46,960
+circles which was shocking to him. So he
+
+59
+00:01:45,759 --> 00:01:48,799
+worked out the two laws of planetary
+
+60
+00:01:46,960 --> 00:01:51,680
+motion. The ellipses also equal areas
+
+61
+00:01:48,799 --> 00:01:54,240
+sweep out equal times. And then 10 years
+
+62
+00:01:51,680 --> 00:01:55,759
+later after collecting a lot of data he
+
+63
+00:01:54,240 --> 00:01:57,600
+finally worked out this third law also
+
+64
+00:01:55,759 --> 00:01:59,040
+that the time it takes for a planet to
+
+65
+00:01:57,600 --> 00:02:00,799
+commit its orbit was proportional to
+
+66
+00:01:59,040 --> 00:02:02,320
+some power of the distance to the sun.
+
+67
+00:02:00,799 --> 00:02:03,920
+And these are the three famous Kepler
+
+68
+00:02:02,320 --> 00:02:05,439
+laws of motion. And he had no
+
+69
+00:02:03,920 --> 00:02:07,360
+explanation for them. It was just all
+
+70
+00:02:05,439 --> 00:02:09,679
+driven by by experiment. And it took
+
+71
+00:02:07,360 --> 00:02:11,200
+Newton a century late later to give a
+
+72
+00:02:09,679 --> 00:02:13,280
+theory that explained all three laws at
+
+73
+00:02:11,200 --> 00:02:13,280
+once.
+

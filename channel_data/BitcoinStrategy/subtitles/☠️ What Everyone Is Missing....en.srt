@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:04,760
+Everybody looks at prices, but the real
+
+2
+00:00:02,600 --> 00:00:06,480
+money is made beyond this. It's made by
+
+3
+00:00:04,760 --> 00:00:08,880
+the people that look at the actual
+
+4
+00:00:06,480 --> 00:00:12,080
+forces of demand and supply. What we see
+
+5
+00:00:08,880 --> 00:00:13,800
+here is the Nasdaq 100 over time. It's a
+
+6
+00:00:12,080 --> 00:00:17,320
+very long-term chart and it tells the
+
+7
+00:00:13,800 --> 00:00:19,560
+story of why stock investments long-term
+
+8
+00:00:17,320 --> 00:00:21,160
+make sense over just holding fiat
+
+9
+00:00:19,560 --> 00:00:23,320
+currency. Now we can make several
+
+10
+00:00:21,160 --> 00:00:25,800
+adjustments to this data to make it more
+
+11
+00:00:23,320 --> 00:00:28,920
+useful. For example, we can look at a
+
+12
+00:00:25,800 --> 00:00:31,320
+logarithmic scale instead of a linear
+
+13
+00:00:28,920 --> 00:00:34,720
+scale. The logarithmic scale tells us
+
+14
+00:00:31,320 --> 00:00:36,960
+how many percent a particular asset is
+
+15
+00:00:34,720 --> 00:00:40,000
+growing over time. So a constant
+
+16
+00:00:36,960 --> 00:00:42,720
+vertical distance equates to a constant
+
+17
+00:00:40,000 --> 00:00:44,960
+percentage gain. That's not true for the
+
+18
+00:00:42,720 --> 00:00:47,360
+linear scale where we just get dollar
+
+19
+00:00:44,960 --> 00:00:49,680
+changes, but really we are interested in
+
+20
+00:00:47,360 --> 00:00:51,640
+how much percent we can actually
+
+21
+00:00:49,680 --> 00:00:55,000
+generate. This gives us the dot-com
+
+22
+00:00:51,640 --> 00:00:55,000
+crash. This gives us
+

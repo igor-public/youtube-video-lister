@@ -1,7 +1,9 @@
 {
   "channels": [
+    "https://www.youtube.com/@DataDash",
+    "https://www.youtube.com/@BitcoinStrategy",
     "https://www.youtube.com/@CoinBureauTrading",
-    "https://www.youtube.com/@DataDash"
+    "https://www.youtube.com/@DwarkeshPatel"
   ],
   "settings": {
     "days_back": 14,

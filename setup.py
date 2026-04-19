@@ -9,7 +9,7 @@ long_description = (this_directory / "README.md").read_text(encoding='utf-8')
 
 setup(
     name="youtube-toolkit",
-    version="0.1.0",
+    version="0.2.0",
     author="Your Name",
     author_email="your.email@example.com",
     description="A comprehensive toolkit for YouTube video analysis, subtitle downloading, and text conversion",

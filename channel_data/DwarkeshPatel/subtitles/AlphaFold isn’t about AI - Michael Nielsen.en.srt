@@ -1,0 +1,72 @@
+1
+00:00:00,080 --> 00:00:04,640
+Alpha really isn't about AI. A massive
+
+2
+00:00:02,800 --> 00:00:06,560
+fraction of the success there is the
+
+3
+00:00:04,640 --> 00:00:08,720
+protein data bank. So it's it's X-ray
+
+4
+00:00:06,560 --> 00:00:10,400
+defraction, it's NMR, it's cryom, and
+
+5
+00:00:08,720 --> 00:00:12,800
+the several billion dollars that was
+
+6
+00:00:10,400 --> 00:00:14,719
+spent obtaining whatever it's 180,000
+
+7
+00:00:12,800 --> 00:00:16,720
+odd struct protein structures. It's
+
+8
+00:00:14,719 --> 00:00:18,960
+basically the story of we spent many
+
+9
+00:00:16,720 --> 00:00:20,640
+many decades obtaining protein structure
+
+10
+00:00:18,960 --> 00:00:22,400
+just by going out and looking very hard
+
+11
+00:00:20,640 --> 00:00:24,000
+at the world experimentally and then we
+
+12
+00:00:22,400 --> 00:00:25,600
+fitted a nice model at the end of it and
+
+13
+00:00:24,000 --> 00:00:27,039
+that was like a tiny fraction of the of
+
+14
+00:00:25,600 --> 00:00:28,800
+the entire investment. But it's
+
+15
+00:00:27,039 --> 00:00:31,199
+definitely not you know that's a story
+
+16
+00:00:28,800 --> 00:00:32,960
+of data acquisition principally. It's
+
+17
+00:00:31,199 --> 00:00:35,280
+not only I mean the AI bit is very very
+
+18
+00:00:32,960 --> 00:00:35,280
+impressive.
+

@@ -1,0 +1,272 @@
+1
+00:00:00,000 --> 00:00:02,920
+I think the United States ought to be
+
+2
+00:00:01,400 --> 00:00:03,840
+ahead. But how is shipping chips to
+
+3
+00:00:02,920 --> 00:00:05,400
+China keeping the US
+
+4
+00:00:03,840 --> 00:00:07,240
+>> no. Am I in the United States? Do you
+
+5
+00:00:05,400 --> 00:00:09,680
+consider me part of the United States?
+
+6
+00:00:07,240 --> 00:00:13,280
+Yes. You consider Nvidia a United States
+
+7
+00:00:09,680 --> 00:00:14,720
+company? Okay. Number one.
+
+8
+00:00:13,280 --> 00:00:16,280
+Why is it
+
+9
+00:00:14,720 --> 00:00:19,160
+that we don't come up with a regulation
+
+10
+00:00:16,280 --> 00:00:22,600
+that's more balanced so that Nvidia can
+
+11
+00:00:19,160 --> 00:00:24,920
+win around the world instead of giving
+
+12
+00:00:22,600 --> 00:00:27,080
+up the world? Why would you want United
+
+13
+00:00:24,920 --> 00:00:28,600
+States to give up the world? Dario had
+
+14
+00:00:27,080 --> 00:00:30,200
+this quote where he said, "It's like
+
+15
+00:00:28,600 --> 00:00:31,640
+Boeing bragging that we're selling North
+
+16
+00:00:30,200 --> 00:00:33,440
+Korean nukes but the missile casings are
+
+17
+00:00:31,640 --> 00:00:35,520
+made by Boeing." And that's somehow
+
+18
+00:00:33,440 --> 00:00:36,920
+enabling the US technology stack. Like
+
+19
+00:00:35,520 --> 00:00:37,440
+fundamentally, you're giving them this
+
+20
+00:00:36,920 --> 00:00:39,240
+capability.
+
+21
+00:00:37,440 --> 00:00:41,560
+>> Comparing AI to anything that you just
+
+22
+00:00:39,240 --> 00:00:43,400
+mentioned is lunacy. But AI is similar
+
+23
+00:00:41,560 --> 00:00:44,840
+to enriched uranium, right? And then it
+
+24
+00:00:43,400 --> 00:00:46,920
+can have positive uses, it can have
+
+25
+00:00:44,840 --> 00:00:48,520
+negative uses. We still don't want to
+
+26
+00:00:46,920 --> 00:00:51,320
+send enriched uranium to other
+
+27
+00:00:48,520 --> 00:00:52,760
+countries. Who's Who's sending enriched
+
+28
+00:00:51,320 --> 00:00:52,920
+>> The analogy of enriched uranium is like
+
+29
+00:00:52,760 --> 00:00:56,240
+this.
+
+30
+00:00:52,920 --> 00:00:58,600
+>> a lousy It's a lousy analogy.
+
+31
+00:00:56,240 --> 00:00:59,800
+It's a illogical analogy.
+
+32
+00:00:58,600 --> 00:01:02,800
+I guess that then the question comes
+
+33
+00:00:59,800 --> 00:01:05,680
+down to how does selling them chips now
+
+34
+00:01:02,800 --> 00:01:07,680
+help us win in the long term? Like Tesla
+
+35
+00:01:05,680 --> 00:01:09,640
+sold extremely good electric vehicles to
+
+36
+00:01:07,680 --> 00:01:11,720
+China for a long time. iPhones are sold
+
+37
+00:01:09,640 --> 00:01:13,880
+in China extremely good. Didn't cause
+
+38
+00:01:11,720 --> 00:01:15,800
+them lock-in. China will still make
+
+39
+00:01:13,880 --> 00:01:16,680
+their version of EVs and they're
+
+40
+00:01:15,800 --> 00:01:17,240
+dominating and smartphones are
+
+41
+00:01:16,680 --> 00:01:19,480
+dominating.
+
+42
+00:01:17,240 --> 00:01:21,600
+>> The premise that
+
+43
+00:01:19,480 --> 00:01:23,400
+even if we competed in China, that we're
+
+44
+00:01:21,600 --> 00:01:24,880
+going to lose that market anyways.
+
+45
+00:01:23,400 --> 00:01:26,480
+You're not talking to somebody who woke
+
+46
+00:01:24,880 --> 00:01:29,480
+up a loser.
+
+47
+00:01:26,480 --> 00:01:32,720
+And that loser attitude, that loser
+
+48
+00:01:29,480 --> 00:01:34,560
+premise makes no sense to me. We are not
+
+49
+00:01:32,720 --> 00:01:36,640
+We're not a car.
+
+50
+00:01:34,560 --> 00:01:39,720
+We are not a car. The fact that I can
+
+51
+00:01:36,640 --> 00:01:42,800
+buy a car this car brand one day and use
+
+52
+00:01:39,720 --> 00:01:45,000
+another car brand another day, easy.
+
+53
+00:01:42,800 --> 00:01:46,680
+Computing is not like that.
+
+54
+00:01:45,000 --> 00:01:48,320
+There's a reason why the x86 still
+
+55
+00:01:46,680 --> 00:01:50,440
+exists. There's a reason why ARM is so
+
+56
+00:01:48,320 --> 00:01:52,680
+sticky. Conceding a marketplace based on
+
+57
+00:01:50,440 --> 00:01:54,280
+the premise you described, I simply
+
+58
+00:01:52,680 --> 00:01:55,360
+can't acknowledge that. It makes no
+
+59
+00:01:54,280 --> 00:01:56,920
+sense.
+
+60
+00:01:55,360 --> 00:01:59,920
+Because I don't think the United States
+
+61
+00:01:56,920 --> 00:02:02,560
+is a loser. You
+
+62
+00:01:59,920 --> 00:02:05,160
+industry is not a loser. And that that
+
+63
+00:02:02,560 --> 00:02:07,280
+losing proposition, that losing mindset
+
+64
+00:02:05,160 --> 00:02:08,920
+makes no sense to me. Okay, I'll move
+
+65
+00:02:07,280 --> 00:02:10,520
+on. I just I just want to make sure that
+
+66
+00:02:08,920 --> 00:02:11,080
+>> have to move on. I'm enjoying it.
+
+67
+00:02:10,520 --> 00:02:13,200
+>> Okay, great.
+
+68
+00:02:11,080 --> 00:02:13,200
+>> Yeah.
+

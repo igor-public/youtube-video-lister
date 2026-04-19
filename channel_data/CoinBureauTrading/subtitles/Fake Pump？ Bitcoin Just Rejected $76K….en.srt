@@ -1,0 +1,3436 @@
+1
+00:00:01,439 --> 00:00:07,600
+Hello team. So sorry we're six minutes
+
+2
+00:00:04,640 --> 00:00:10,639
+late. My OBS system just decided to
+
+3
+00:00:07,600 --> 00:00:12,480
+completely crash. Similar to what I
+
+4
+00:00:10,639 --> 00:00:15,440
+thinking is happening with Bitcoin soon.
+
+5
+00:00:12,480 --> 00:00:18,160
+But um besides besides the fact I do
+
+6
+00:00:15,440 --> 00:00:19,600
+apologize. We're 6 minutes late. I've
+
+7
+00:00:18,160 --> 00:00:20,960
+got to get into it. We've got to wait
+
+8
+00:00:19,600 --> 00:00:23,600
+one or two minutes for everyone to sort
+
+9
+00:00:20,960 --> 00:00:25,359
+of jump in. I do apologize. I don't know
+
+10
+00:00:23,600 --> 00:00:27,439
+what happened. The whole system just
+
+11
+00:00:25,359 --> 00:00:30,400
+decided to malfunction. Wasn't
+
+12
+00:00:27,439 --> 00:00:33,040
+connecting my stream. It was an absolute
+
+13
+00:00:30,400 --> 00:00:35,040
+disaster. So, I do apologize, but thank
+
+14
+00:00:33,040 --> 00:00:36,719
+you guys for the comments. Everyone was
+
+15
+00:00:35,040 --> 00:00:39,040
+getting quite excited. I've got you guys
+
+16
+00:00:36,719 --> 00:00:42,239
+open on my other screen here. So, thank
+
+17
+00:00:39,040 --> 00:00:44,559
+you very much for your patience. I got a
+
+18
+00:00:42,239 --> 00:00:46,160
+lot to share with you today. Um, I'm
+
+19
+00:00:44,559 --> 00:00:48,879
+also building an indicator for everyone
+
+20
+00:00:46,160 --> 00:00:50,719
+as well to sort of help them demonstrate
+
+21
+00:00:48,879 --> 00:00:52,160
+where you can pick up the the fake pumps
+
+22
+00:00:50,719 --> 00:00:54,160
+that are coming in as well because I've
+
+23
+00:00:52,160 --> 00:00:55,280
+been seeing a lot of this and a lot of
+
+24
+00:00:54,160 --> 00:00:58,399
+people would have got caught out
+
+25
+00:00:55,280 --> 00:01:00,000
+yesterday in that 76k push. Um, that was
+
+26
+00:00:58,399 --> 00:01:01,440
+actually when I opened up another short
+
+27
+00:01:00,000 --> 00:01:02,960
+position and then we had that instant
+
+28
+00:01:01,440 --> 00:01:05,119
+rejection. So, I want to show you guys
+
+29
+00:01:02,960 --> 00:01:06,799
+how to start to read a lot of that
+
+30
+00:01:05,119 --> 00:01:08,159
+information, a lot of that data. So, I'm
+
+31
+00:01:06,799 --> 00:01:10,159
+trying to build you guys an indicator
+
+32
+00:01:08,159 --> 00:01:12,400
+that picks up a lot of that information
+
+33
+00:01:10,159 --> 00:01:15,360
+for you and condenses it and makes it
+
+34
+00:01:12,400 --> 00:01:16,880
+really, really easy to see. So, I
+
+35
+00:01:15,360 --> 00:01:18,479
+haven't finished it yet. It is still
+
+36
+00:01:16,880 --> 00:01:20,479
+early days, but it is something I want
+
+37
+00:01:18,479 --> 00:01:22,320
+to bring to you all. So, stay tuned. As
+
+38
+00:01:20,479 --> 00:01:24,080
+soon as it is ready, I will publicize it
+
+39
+00:01:22,320 --> 00:01:25,360
+for everyone. Everyone will have access.
+
+40
+00:01:24,080 --> 00:01:26,799
+Not going to charge for it, nothing like
+
+41
+00:01:25,360 --> 00:01:28,560
+that. It's just a free thing that I want
+
+42
+00:01:26,799 --> 00:01:31,759
+to give away. It's the community for all
+
+43
+00:01:28,560 --> 00:01:33,759
+the support. So besides that, I want to
+
+44
+00:01:31,759 --> 00:01:36,000
+go through Bitcoin because it did make
+
+45
+00:01:33,759 --> 00:01:37,439
+the move that we were looking at off
+
+46
+00:01:36,000 --> 00:01:38,400
+that trend line that I said, you know,
+
+47
+00:01:37,439 --> 00:01:42,159
+we're probably going to have a hit
+
+48
+00:01:38,400 --> 00:01:44,000
+towards 75K. We got 75. Now,
+
+49
+00:01:42,159 --> 00:01:46,320
+realistically, there is still the order
+
+50
+00:01:44,000 --> 00:01:49,040
+zone uh sorry, the CME gap that is still
+
+51
+00:01:46,320 --> 00:01:50,799
+hasn't been filled at 67.5K,
+
+52
+00:01:49,040 --> 00:01:53,680
+which we went through on Monday as well.
+
+53
+00:01:50,799 --> 00:01:56,880
+So that is hence why I did open up a big
+
+54
+00:01:53,680 --> 00:02:00,640
+short bigger shorting position um at
+
+55
+00:01:56,880 --> 00:02:03,680
+that 76k region and I'm I'm t my target
+
+56
+00:02:00,640 --> 00:02:05,040
+is for that towards that 67k zone. So I
+
+57
+00:02:03,680 --> 00:02:07,680
+want to show you guys what that looks
+
+58
+00:02:05,040 --> 00:02:10,160
+like how it's all come together and of
+
+59
+00:02:07,680 --> 00:02:12,000
+course we're doing a giveaway today for
+
+60
+00:02:10,160 --> 00:02:14,480
+everyone that joined us on Monday. We
+
+61
+00:02:12,000 --> 00:02:16,480
+hit over a 100red viewers. So thank you
+
+62
+00:02:14,480 --> 00:02:20,160
+very much. That means we do a giveaway.
+
+63
+00:02:16,480 --> 00:02:22,080
+We're doing 250 USDT giveaways today.
+
+64
+00:02:20,160 --> 00:02:24,080
+So, I'm going to draw those out live,
+
+65
+00:02:22,080 --> 00:02:26,879
+excuse me, at the end of the stream. So,
+
+66
+00:02:24,080 --> 00:02:29,360
+thank you very much for everyone. Let's
+
+67
+00:02:26,879 --> 00:02:32,160
+get into it. So, before we do,
+
+68
+00:02:29,360 --> 00:02:33,519
+housekeeping. First things first is
+
+69
+00:02:32,160 --> 00:02:35,120
+everything I share on here is not
+
+70
+00:02:33,519 --> 00:02:36,800
+financial advice. Obviously, it's all
+
+71
+00:02:35,120 --> 00:02:38,640
+for educational purposes, giving you
+
+72
+00:02:36,800 --> 00:02:40,560
+guys some resources, some tools, some
+
+73
+00:02:38,640 --> 00:02:42,800
+educational learnings that I've also had
+
+74
+00:02:40,560 --> 00:02:46,080
+in my past to help you guys look at the
+
+75
+00:02:42,800 --> 00:02:49,680
+market as well. And the other big one
+
+76
+00:02:46,080 --> 00:02:51,360
+also is please smash the like button,
+
+77
+00:02:49,680 --> 00:02:52,800
+comment, share this out there with your
+
+78
+00:02:51,360 --> 00:02:54,560
+friends because again, every time we hit
+
+79
+00:02:52,800 --> 00:02:56,239
+over 100, if we hit over 100 again
+
+80
+00:02:54,560 --> 00:02:58,400
+today, we're going to do another 100
+
+81
+00:02:56,239 --> 00:03:00,640
+USDT giveaway. So, it's up to you guys.
+
+82
+00:02:58,400 --> 00:03:02,640
+Share this out far and wide. And let's
+
+83
+00:03:00,640 --> 00:03:04,480
+get into it. Comment in below because to
+
+84
+00:03:02,640 --> 00:03:06,959
+be eligible for the giveaways, you need
+
+85
+00:03:04,480 --> 00:03:10,239
+to comment and I post all the winners on
+
+86
+00:03:06,959 --> 00:03:12,400
+my socials, which you can see there in
+
+87
+00:03:10,239 --> 00:03:13,840
+the bottom left. So, let's get into 10.
+
+88
+00:03:12,400 --> 00:03:16,640
+I'm just going to move this over to my
+
+89
+00:03:13,840 --> 00:03:18,640
+other side and then um we'll continue to
+
+90
+00:03:16,640 --> 00:03:20,159
+smash on. Give me one moment. There's
+
+91
+00:03:18,640 --> 00:03:22,879
+always a lot happening on these streams.
+
+92
+00:03:20,159 --> 00:03:26,640
+I love it. Gets me excited.
+
+93
+00:03:22,879 --> 00:03:28,879
+So, first things first, I want to cover
+
+94
+00:03:26,640 --> 00:03:30,319
+off Bitcoin. So, you can see here guys,
+
+95
+00:03:28,879 --> 00:03:32,720
+I'm starting to build out this indicator
+
+96
+00:03:30,319 --> 00:03:34,799
+for you all to to find out when you're
+
+97
+00:03:32,720 --> 00:03:37,040
+getting these large scale pumps. Shows a
+
+98
+00:03:34,799 --> 00:03:38,799
+lot of the volume. also shows you when
+
+99
+00:03:37,040 --> 00:03:40,799
+volume's coming in and validates the
+
+100
+00:03:38,799 --> 00:03:43,440
+move versus the gray volume which
+
+101
+00:03:40,799 --> 00:03:45,680
+showcases that it's low volume moves as
+
+102
+00:03:43,440 --> 00:03:48,560
+well. And then I'm also pulling in spot
+
+103
+00:03:45,680 --> 00:03:50,000
+versus leverage data as well because one
+
+104
+00:03:48,560 --> 00:03:51,920
+of the big things we noticed and I want
+
+105
+00:03:50,000 --> 00:03:53,440
+to show you guys this. I had a friend
+
+106
+00:03:51,920 --> 00:03:55,840
+send this to me. One of my coaches
+
+107
+00:03:53,440 --> 00:03:57,519
+inside Empire shared this with me as we
+
+108
+00:03:55,840 --> 00:03:59,840
+were getting this runup the other day
+
+109
+00:03:57,519 --> 00:04:01,680
+and he's like Matt just an FYI you know
+
+110
+00:03:59,840 --> 00:04:04,480
+we're in a couple of trades. We talk we
+
+111
+00:04:01,680 --> 00:04:06,239
+do some trading together. is like spot
+
+112
+00:04:04,480 --> 00:04:07,680
+is actually selling into the leverage
+
+113
+00:04:06,239 --> 00:04:10,400
+position. So you can see leverage
+
+114
+00:04:07,680 --> 00:04:12,080
+popping up here while spot trading was
+
+115
+00:04:10,400 --> 00:04:14,480
+actually selling into the leverage
+
+116
+00:04:12,080 --> 00:04:16,000
+position. So something to be mindful of
+
+117
+00:04:14,480 --> 00:04:17,359
+there and that's why I wanted to cover a
+
+118
+00:04:16,000 --> 00:04:19,280
+lot of this off. It's why I thought you
+
+119
+00:04:17,359 --> 00:04:20,720
+know what maybe I can build you guys
+
+120
+00:04:19,280 --> 00:04:22,320
+something special where you can actually
+
+121
+00:04:20,720 --> 00:04:24,080
+pick up a lot of this and this is one of
+
+122
+00:04:22,320 --> 00:04:26,320
+the examples here where you're getting
+
+123
+00:04:24,080 --> 00:04:27,919
+these pushes but actually the volume's
+
+124
+00:04:26,320 --> 00:04:30,080
+quite low. You can see it in the gray
+
+125
+00:04:27,919 --> 00:04:32,639
+here. You get the X and then all of a
+
+126
+00:04:30,080 --> 00:04:34,320
+sudden boom price starts crashing. So,
+
+127
+00:04:32,639 --> 00:04:35,919
+one of the big things I'm big on is is
+
+128
+00:04:34,320 --> 00:04:37,840
+finding high conviction, high
+
+129
+00:04:35,919 --> 00:04:39,199
+probability moves. I mean, it doesn't
+
+130
+00:04:37,840 --> 00:04:40,960
+always come to plan. That's just the
+
+131
+00:04:39,199 --> 00:04:42,240
+nature of trading, right? But I want to
+
+132
+00:04:40,960 --> 00:04:43,759
+show you guys what I'm sort of putting
+
+133
+00:04:42,240 --> 00:04:45,600
+together. This is a little bit of a
+
+134
+00:04:43,759 --> 00:04:47,759
+quick overview. Like I said, it's still
+
+135
+00:04:45,600 --> 00:04:49,919
+very fresh, very early days. If you want
+
+136
+00:04:47,759 --> 00:04:51,440
+something like this and you're happy for
+
+137
+00:04:49,919 --> 00:04:52,720
+it, you know, I'll do some back testing
+
+138
+00:04:51,440 --> 00:04:54,560
+on it. We'll share it. We'll give it a
+
+139
+00:04:52,720 --> 00:04:57,280
+play around. Comment in the chat as
+
+140
+00:04:54,560 --> 00:04:58,960
+well. You know, again, guys, I feel this
+
+141
+00:04:57,280 --> 00:05:00,960
+stuff. I build it for you guys. I trade.
+
+142
+00:04:58,960 --> 00:05:02,960
+I'm I'm fine with my trading. It's more
+
+143
+00:05:00,960 --> 00:05:05,680
+so to give you guys some more resources
+
+144
+00:05:02,960 --> 00:05:09,280
+and tools. Now, in saying that, let's
+
+145
+00:05:05,680 --> 00:05:11,199
+get into the analysis piece.
+
+146
+00:05:09,280 --> 00:05:15,440
+So, the big one I want to show you guys
+
+147
+00:05:11,199 --> 00:05:17,280
+here is Bitcoin obviously, right?
+
+148
+00:05:15,440 --> 00:05:18,880
+Bitcoin at the moment, this is where
+
+149
+00:05:17,280 --> 00:05:20,080
+it's starting to get interesting. All
+
+150
+00:05:18,880 --> 00:05:22,639
+right, I want to show you guys. I want
+
+151
+00:05:20,080 --> 00:05:24,639
+to zoom in on this part. So, as you guys
+
+152
+00:05:22,639 --> 00:05:28,000
+are fully aware, the one thing that we
+
+153
+00:05:24,639 --> 00:05:30,639
+were watching for on Monday in
+
+154
+00:05:28,000 --> 00:05:32,320
+particular was this particular move here
+
+155
+00:05:30,639 --> 00:05:35,919
+off the base of the trend line up
+
+156
+00:05:32,320 --> 00:05:38,560
+towards the 75K mark. Now, if you guys
+
+157
+00:05:35,919 --> 00:05:42,080
+are following me on socials, my X is now
+
+158
+00:05:38,560 --> 00:05:44,240
+back alive. Uh, my X did die for a
+
+159
+00:05:42,080 --> 00:05:46,080
+moment, but lucky enough it is uh
+
+160
+00:05:44,240 --> 00:05:49,280
+reactivated, so you guys can hit me up
+
+161
+00:05:46,080 --> 00:05:52,800
+on there. But I put up a post on my
+
+162
+00:05:49,280 --> 00:05:54,800
+Empire account and on on X yesterday
+
+163
+00:05:52,800 --> 00:05:57,919
+talking about the fact, you'll see it
+
+164
+00:05:54,800 --> 00:05:59,600
+here, that the 1618 Fibonacci level was
+
+165
+00:05:57,919 --> 00:06:01,840
+hit and that's where we had the instant
+
+166
+00:05:59,600 --> 00:06:04,160
+reaction, the instant selloff, which
+
+167
+00:06:01,840 --> 00:06:05,280
+also presented another fresh order zone.
+
+168
+00:06:04,160 --> 00:06:09,039
+So, you can see there, that was my
+
+169
+00:06:05,280 --> 00:06:10,960
+position on uh Bitcoin last night. Now,
+
+170
+00:06:09,039 --> 00:06:14,160
+what I'm seeing happen is still
+
+171
+00:06:10,960 --> 00:06:16,319
+relatively um accurate in my opinion
+
+172
+00:06:14,160 --> 00:06:17,840
+because as this move took effect, and
+
+173
+00:06:16,319 --> 00:06:20,720
+this is on the daily time frame, you
+
+174
+00:06:17,840 --> 00:06:22,479
+guys should be able to see this. Now,
+
+175
+00:06:20,720 --> 00:06:24,720
+this liquidity week, you can see
+
+176
+00:06:22,479 --> 00:06:26,479
+highlighted here in yellow, actually
+
+177
+00:06:24,720 --> 00:06:27,919
+started to form. Now, I've had a lot of
+
+178
+00:06:26,479 --> 00:06:31,360
+people message me about what this
+
+179
+00:06:27,919 --> 00:06:34,479
+indicator is. Um guys, this is a paid
+
+180
+00:06:31,360 --> 00:06:36,560
+indicator. It's not cheap. Um it's why
+
+181
+00:06:34,479 --> 00:06:38,639
+I've showcased a lot of it to you guys.
+
+182
+00:06:36,560 --> 00:06:40,080
+I'll put it's in my Empire platform. You
+
+183
+00:06:38,639 --> 00:06:42,080
+guys can go and find it there if you
+
+184
+00:06:40,080 --> 00:06:44,479
+want to. Uh there's a link in the bio
+
+185
+00:06:42,080 --> 00:06:46,000
+for everyone. Um compliments of coin
+
+186
+00:06:44,479 --> 00:06:47,360
+bureau. You guys can get 14 days for
+
+187
+00:06:46,000 --> 00:06:50,479
+free in there. Plus, it's free to sign
+
+188
+00:06:47,360 --> 00:06:52,000
+up to get all this sort of stuff. But
+
+189
+00:06:50,479 --> 00:06:53,199
+this here is a paid indicator. So the
+
+190
+00:06:52,000 --> 00:06:54,479
+data I'm bringing to you, you guys don't
+
+191
+00:06:53,199 --> 00:06:56,080
+actually have access to it. It's not
+
+192
+00:06:54,479 --> 00:06:58,720
+something you can just go and whack on.
+
+193
+00:06:56,080 --> 00:07:00,080
+So just be an FYI for this. Right now,
+
+194
+00:06:58,720 --> 00:07:02,319
+we've got the liquidity wick. This
+
+195
+00:07:00,080 --> 00:07:04,319
+formed pretty much instantly on the
+
+196
+00:07:02,319 --> 00:07:06,479
+daily time frame the moment price hit
+
+197
+00:07:04,319 --> 00:07:07,840
+towards this point. Now, I'm going to
+
+198
+00:07:06,479 --> 00:07:09,680
+break this down for you guys because I
+
+199
+00:07:07,840 --> 00:07:12,319
+want to show you guys this on the 4 hour
+
+200
+00:07:09,680 --> 00:07:13,840
+time frame. Now, sorry, on the half an
+
+201
+00:07:12,319 --> 00:07:16,639
+hour time frame. But first things first,
+
+202
+00:07:13,840 --> 00:07:20,240
+I want to show you guys how I got to the
+
+203
+00:07:16,639 --> 00:07:21,360
+point of the 1618 fib level. Now, for
+
+204
+00:07:20,240 --> 00:07:23,919
+you guys that have been following me for
+
+205
+00:07:21,360 --> 00:07:26,560
+a while, you would know by now that the
+
+206
+00:07:23,919 --> 00:07:29,680
+1618 Fibonacci level, and I love trading
+
+207
+00:07:26,560 --> 00:07:32,000
+fibs, is something I watch religiously.
+
+208
+00:07:29,680 --> 00:07:34,479
+um it is something where market makers
+
+209
+00:07:32,000 --> 00:07:36,240
+love to push price towards and the
+
+210
+00:07:34,479 --> 00:07:38,800
+reason for that is it basically hits a
+
+211
+00:07:36,240 --> 00:07:40,479
+lot of stop- losses and it's an extended
+
+212
+00:07:38,800 --> 00:07:43,120
+move that takes effect within the
+
+213
+00:07:40,479 --> 00:07:45,360
+market. So you can see in this situation
+
+214
+00:07:43,120 --> 00:07:46,960
+here, right, the target would have been
+
+215
+00:07:45,360 --> 00:07:48,880
+75K.
+
+216
+00:07:46,960 --> 00:07:51,199
+And what happens in that sort of respect
+
+217
+00:07:48,880 --> 00:07:53,039
+is a lot of people put their stop losses
+
+218
+00:07:51,199 --> 00:07:55,199
+and their take profits, everything right
+
+219
+00:07:53,039 --> 00:07:57,280
+at that 75K mark, right? If you're
+
+220
+00:07:55,199 --> 00:07:58,720
+entered in here hoping for a short,
+
+221
+00:07:57,280 --> 00:08:00,879
+people start putting their stop losses
+
+222
+00:07:58,720 --> 00:08:03,280
+at at round numbers. Like that's typical
+
+223
+00:08:00,879 --> 00:08:05,759
+retail sort of situation. So what do the
+
+224
+00:08:03,280 --> 00:08:08,400
+market makers do? They pump it past just
+
+225
+00:08:05,759 --> 00:08:11,039
+up to the 1618, take everyone out,
+
+226
+00:08:08,400 --> 00:08:12,319
+reverse the market. So, I wanted to
+
+227
+00:08:11,039 --> 00:08:14,960
+bring this to your attention because
+
+228
+00:08:12,319 --> 00:08:16,800
+what I'm seeing now is very similar,
+
+229
+00:08:14,960 --> 00:08:19,520
+right? Very similar to what's happened
+
+230
+00:08:16,800 --> 00:08:22,479
+in the past. We've had the target of the
+
+231
+00:08:19,520 --> 00:08:23,840
+1618, right? Now, let's put this into
+
+232
+00:08:22,479 --> 00:08:25,599
+reference. Let's whack this into the
+
+233
+00:08:23,840 --> 00:08:27,919
+half an hour time frame because this is
+
+234
+00:08:25,599 --> 00:08:29,759
+the part I really want to show you guys.
+
+235
+00:08:27,919 --> 00:08:31,919
+Now, what's happened in this scenario is
+
+236
+00:08:29,759 --> 00:08:35,519
+you can see we've had a massive selloff
+
+237
+00:08:31,919 --> 00:08:38,000
+at 76K, which is the 1618 fib level.
+
+238
+00:08:35,519 --> 00:08:40,240
+Then we've had another sell off here at
+
+239
+00:08:38,000 --> 00:08:42,479
+74,600
+
+240
+00:08:40,240 --> 00:08:45,040
+as well. And now you can see price
+
+241
+00:08:42,479 --> 00:08:47,200
+trying to react and trying to bounce off
+
+242
+00:08:45,040 --> 00:08:50,160
+um this small level of support. If you
+
+243
+00:08:47,200 --> 00:08:51,519
+look to the left here now reality is
+
+244
+00:08:50,160 --> 00:08:53,360
+this is what the market is trying to
+
+245
+00:08:51,519 --> 00:08:54,640
+price in and this is my two cents on it.
+
+246
+00:08:53,360 --> 00:08:56,800
+You guys can tell me what you think in
+
+247
+00:08:54,640 --> 00:08:58,480
+the comments. You know, go nuts, right?
+
+248
+00:08:56,800 --> 00:09:00,959
+Like the stream, give me all the buzz.
+
+249
+00:08:58,480 --> 00:09:02,640
+give me all the all the as some people
+
+250
+00:09:00,959 --> 00:09:04,000
+commented on my last video, you know,
+
+251
+00:09:02,640 --> 00:09:06,560
+they don't like my thumbnails because
+
+252
+00:09:04,000 --> 00:09:08,399
+they felt a little bit too harsh. Um,
+
+253
+00:09:06,560 --> 00:09:10,320
+but I find it funny. It's all fun and
+
+254
+00:09:08,399 --> 00:09:12,240
+games. The one thing I'm looking at at
+
+255
+00:09:10,320 --> 00:09:14,640
+the moment is what's happened is
+
+256
+00:09:12,240 --> 00:09:16,880
+basically price has come up. It's taken
+
+257
+00:09:14,640 --> 00:09:19,040
+out all this liquidity
+
+258
+00:09:16,880 --> 00:09:20,880
+and it's got all the optimism that's
+
+259
+00:09:19,040 --> 00:09:24,000
+coming, right? I call optimism because
+
+260
+00:09:20,880 --> 00:09:26,000
+we have these large scale moves. People
+
+261
+00:09:24,000 --> 00:09:29,200
+get really excited, right? We've seen
+
+262
+00:09:26,000 --> 00:09:32,240
+it. BTC inflows on the ETFs have
+
+263
+00:09:29,200 --> 00:09:34,560
+skyrocketed over the last few days. Go
+
+264
+00:09:32,240 --> 00:09:36,000
+have a look at it, right? But what
+
+265
+00:09:34,560 --> 00:09:38,880
+happens from that? Then you get the
+
+266
+00:09:36,000 --> 00:09:41,360
+hopeium. Then you get the Bitcoin's
+
+267
+00:09:38,880 --> 00:09:43,519
+going back to 100K scenario. And it's no
+
+268
+00:09:41,360 --> 00:09:45,040
+difference from when Bitcoin was at 100K
+
+269
+00:09:43,519 --> 00:09:47,600
+and then all of a sudden Bitcoin's going
+
+270
+00:09:45,040 --> 00:09:49,360
+to 250K off no credible basis
+
+271
+00:09:47,600 --> 00:09:51,360
+whatsoever. Just people throwing random
+
+272
+00:09:49,360 --> 00:09:53,680
+crazy numbers out there because theium
+
+273
+00:09:51,360 --> 00:09:56,880
+gets real, right? Everyone gets really
+
+274
+00:09:53,680 --> 00:09:58,959
+excited. Now, people are getting excited
+
+275
+00:09:56,880 --> 00:10:00,800
+at the moment because we've also got the
+
+276
+00:09:58,959 --> 00:10:02,240
+war talk set to take place again on
+
+277
+00:10:00,800 --> 00:10:04,640
+Thursday. So, what that means is
+
+278
+00:10:02,240 --> 00:10:06,399
+essentially the the market is trying to
+
+279
+00:10:04,640 --> 00:10:08,480
+price in what they're expecting to be an
+
+280
+00:10:06,399 --> 00:10:10,720
+end of the war. Now, if that doesn't
+
+281
+00:10:08,480 --> 00:10:13,519
+take effect and the reality is we still
+
+282
+00:10:10,720 --> 00:10:15,519
+have that CME gap which is sitting below
+
+283
+00:10:13,519 --> 00:10:17,040
+here, right? You can see what the order
+
+284
+00:10:15,519 --> 00:10:19,600
+zone sitting here. That's where that
+
+285
+00:10:17,040 --> 00:10:21,839
+that other CME gap is. The one that we
+
+286
+00:10:19,600 --> 00:10:23,680
+were talking about on Monday which still
+
+287
+00:10:21,839 --> 00:10:25,200
+hasn't been filled. one that Nick was
+
+288
+00:10:23,680 --> 00:10:28,560
+talking about as well on the Coin Bureau
+
+289
+00:10:25,200 --> 00:10:31,760
+channel. Reality is if this doesn't pop
+
+290
+00:10:28,560 --> 00:10:33,200
+back up, get past this 1618 level, which
+
+291
+00:10:31,760 --> 00:10:35,600
+I personally don't think is going to
+
+292
+00:10:33,200 --> 00:10:38,000
+happen tonight, then I do expect a
+
+293
+00:10:35,600 --> 00:10:39,680
+further downturn within the market. And
+
+294
+00:10:38,000 --> 00:10:43,200
+the reality is with this is this
+
+295
+00:10:39,680 --> 00:10:44,560
+downturn isn't small. It's quite big in
+
+296
+00:10:43,200 --> 00:10:45,920
+the grand scheme of things. Let me just
+
+297
+00:10:44,560 --> 00:10:47,279
+zoom out on this, right? Let me make
+
+298
+00:10:45,920 --> 00:10:50,320
+this a little bit more smaller so we can
+
+299
+00:10:47,279 --> 00:10:53,279
+see this more clearer clear. But the
+
+300
+00:10:50,320 --> 00:10:57,680
+drop from this particular level, it's
+
+301
+00:10:53,279 --> 00:10:59,279
+about 8%. It's not small, right? So you
+
+302
+00:10:57,680 --> 00:11:01,200
+can see here we've had a good scale
+
+303
+00:10:59,279 --> 00:11:02,959
+move. We had the bounce off the order
+
+304
+00:11:01,200 --> 00:11:05,120
+zone and off the 4hour order zone that
+
+305
+00:11:02,959 --> 00:11:06,800
+we were tracking on this trend line. You
+
+306
+00:11:05,120 --> 00:11:09,120
+can see that happen here. So that for me
+
+307
+00:11:06,800 --> 00:11:11,040
+would be the first point in which
+
+308
+00:11:09,120 --> 00:11:14,000
+Bitcoin would have to break through. So
+
+309
+00:11:11,040 --> 00:11:16,640
+again, back down to that $70,000 mark.
+
+310
+00:11:14,000 --> 00:11:19,360
+But ultimately that CME gap at 67,000
+
+311
+00:11:16,640 --> 00:11:22,240
+still hasn't been filled. And we've had
+
+312
+00:11:19,360 --> 00:11:24,959
+a large scale push so far. But when you
+
+313
+00:11:22,240 --> 00:11:26,320
+zoom out, right, let's just zoom out of
+
+314
+00:11:24,959 --> 00:11:29,440
+everything at the moment. Let's limit
+
+315
+00:11:26,320 --> 00:11:31,760
+all the crazy noise, all the jargon, all
+
+316
+00:11:29,440 --> 00:11:33,360
+the crap that's on the charts, right?
+
+317
+00:11:31,760 --> 00:11:35,920
+Really just bring this down a little bit
+
+318
+00:11:33,360 --> 00:11:38,399
+smaller.
+
+319
+00:11:35,920 --> 00:11:40,000
+We're still in a bare flag. We still
+
+320
+00:11:38,399 --> 00:11:43,120
+have not taken out this level of
+
+321
+00:11:40,000 --> 00:11:45,760
+resistance, which is at $75,000,
+
+322
+00:11:43,120 --> 00:11:48,079
+which is the last time we also had a
+
+323
+00:11:45,760 --> 00:11:50,560
+major rejection. And also we've now
+
+324
+00:11:48,079 --> 00:11:52,800
+printed a liquidity wick above and you
+
+325
+00:11:50,560 --> 00:11:55,120
+can see we are also over purchase on the
+
+326
+00:11:52,800 --> 00:11:58,000
+CCI. So basically about to put in
+
+327
+00:11:55,120 --> 00:12:00,800
+bearish divergence as well on the daily
+
+328
+00:11:58,000 --> 00:12:02,800
+time frame. If I was a betting man and
+
+329
+00:12:00,800 --> 00:12:04,880
+sometimes I like I do like to have a
+
+330
+00:12:02,800 --> 00:12:07,440
+punt but on the charts I like to use the
+
+331
+00:12:04,880 --> 00:12:10,240
+data then my suggestion is and my
+
+332
+00:12:07,440 --> 00:12:14,399
+thought process is that we come back and
+
+333
+00:12:10,240 --> 00:12:17,360
+we come and tag that 67,000k mark before
+
+334
+00:12:14,399 --> 00:12:20,160
+punching up any further.
+
+335
+00:12:17,360 --> 00:12:23,279
+Now, if I had to go put my Hopium hat
+
+336
+00:12:20,160 --> 00:12:26,000
+on, whack the Hopium hat on, it would be
+
+337
+00:12:23,279 --> 00:12:27,839
+my next target would be 80,000. But the
+
+338
+00:12:26,000 --> 00:12:29,440
+reality for that is, and if I zoom in
+
+339
+00:12:27,839 --> 00:12:31,120
+here, the reality for that is quite
+
+340
+00:12:29,440 --> 00:12:34,079
+simple. I don't need a FOMO into
+
+341
+00:12:31,120 --> 00:12:37,440
+anything because what I'd be looking at
+
+342
+00:12:34,079 --> 00:12:40,399
+is the break above, the retest, and then
+
+343
+00:12:37,440 --> 00:12:42,240
+the push. Okay? I don't expect this
+
+344
+00:12:40,399 --> 00:12:44,399
+price just to skyrocket straight to
+
+345
+00:12:42,240 --> 00:12:46,880
+$80,000 and I got to run in with all the
+
+346
+00:12:44,399 --> 00:12:47,760
+hopeium known to known to mankind. I
+
+347
+00:12:46,880 --> 00:12:50,560
+look at it from a structured
+
+348
+00:12:47,760 --> 00:12:53,120
+perspective. We got a breakout, retest,
+
+349
+00:12:50,560 --> 00:12:54,959
+then punch it up towards 80. Where we
+
+350
+00:12:53,120 --> 00:12:56,480
+are currently, the market isn't telling
+
+351
+00:12:54,959 --> 00:12:59,120
+me that. What the market is telling me
+
+352
+00:12:56,480 --> 00:13:01,279
+at the moment is we've attempted to
+
+353
+00:12:59,120 --> 00:13:02,639
+break out. We've failed and now we've
+
+354
+00:13:01,279 --> 00:13:04,800
+got the liquidity wick. We've got
+
+355
+00:13:02,639 --> 00:13:06,480
+bearish divergence forming. We get some
+
+356
+00:13:04,800 --> 00:13:08,560
+order zones stacking to the top side
+
+357
+00:13:06,480 --> 00:13:10,720
+here. You can see here starting to form
+
+358
+00:13:08,560 --> 00:13:12,959
+on the half an hour time frame, right?
+
+359
+00:13:10,720 --> 00:13:15,440
+And price is essentially struggling to
+
+360
+00:13:12,959 --> 00:13:18,480
+make its way back towards the $75,000
+
+361
+00:13:15,440 --> 00:13:22,320
+mark. And in reality as well, if you
+
+362
+00:13:18,480 --> 00:13:24,480
+look at the S&P, this thing is heavily
+
+363
+00:13:22,320 --> 00:13:26,240
+heavily overextended. I mean, I put up a
+
+364
+00:13:24,480 --> 00:13:28,639
+post about this last night. I can't
+
+365
+00:13:26,240 --> 00:13:31,200
+believe this is 1.3% a little bit less
+
+366
+00:13:28,639 --> 00:13:33,680
+now towards breaking an all-time high in
+
+367
+00:13:31,200 --> 00:13:35,519
+the current environment. um quite wild
+
+368
+00:13:33,680 --> 00:13:37,440
+but again up against one of the biggest
+
+369
+00:13:35,519 --> 00:13:41,040
+order zones on the weekly time frame as
+
+370
+00:13:37,440 --> 00:13:42,800
+well. So again I the Bitcoin loves to
+
+371
+00:13:41,040 --> 00:13:44,880
+move alongside the S&P. It's why we've
+
+372
+00:13:42,800 --> 00:13:47,519
+seen the same sort of style of move
+
+373
+00:13:44,880 --> 00:13:50,240
+happen on Bitcoin. Um but I am
+
+374
+00:13:47,519 --> 00:13:52,320
+predicting in my eyes right now I'm
+
+375
+00:13:50,240 --> 00:13:55,200
+expecting a bit of a bit of a drop on
+
+376
+00:13:52,320 --> 00:13:58,399
+Bitcoin before any further price action.
+
+377
+00:13:55,200 --> 00:14:01,120
+So that is my two cents on Bitcoin. Um I
+
+378
+00:13:58,399 --> 00:14:02,480
+want to go into the altcoins before
+
+379
+00:14:01,120 --> 00:14:04,959
+anything else. So guys, if you've got
+
+380
+00:14:02,480 --> 00:14:06,399
+any questions, whack them in the chat.
+
+381
+00:14:04,959 --> 00:14:08,000
+Um, I'm going to have a look at the chat
+
+382
+00:14:06,399 --> 00:14:09,680
+in a couple of minutes. We've got the
+
+383
+00:14:08,000 --> 00:14:12,000
+giveaway to do as well. You can see
+
+384
+00:14:09,680 --> 00:14:13,600
+this. This is prepped and ready. Nick
+
+385
+00:14:12,000 --> 00:14:15,199
+and myself spinning around. So, we've
+
+386
+00:14:13,600 --> 00:14:17,760
+got all the usernames plugged in here.
+
+387
+00:14:15,199 --> 00:14:20,000
+So, if you were on Monday, you are in
+
+388
+00:14:17,760 --> 00:14:21,680
+this one. So, team, if we hit over 100
+
+389
+00:14:20,000 --> 00:14:22,959
+today, what I'm going to do is I'm going
+
+390
+00:14:21,680 --> 00:14:25,360
+to actually build this out to go
+
+391
+00:14:22,959 --> 00:14:27,199
+everyone that comments on the video as
+
+392
+00:14:25,360 --> 00:14:28,480
+well. So, if you are watching and you
+
+393
+00:14:27,199 --> 00:14:29,680
+missed it, you can go back and you can
+
+394
+00:14:28,480 --> 00:14:31,760
+comment. But if you haven't done so
+
+395
+00:14:29,680 --> 00:14:33,360
+already, share the screen stream, like
+
+396
+00:14:31,760 --> 00:14:34,560
+it, comment, get it out there for
+
+397
+00:14:33,360 --> 00:14:35,680
+everyone because every time we hit over
+
+398
+00:14:34,560 --> 00:14:37,120
+100, we're going to start doing some
+
+399
+00:14:35,680 --> 00:14:39,839
+giveaways. So, this will be the giveaway
+
+400
+00:14:37,120 --> 00:14:42,800
+from the weekend. Uh, sorry, on Monday.
+
+401
+00:14:39,839 --> 00:14:45,279
+Now, let's jump into this. I want to
+
+402
+00:14:42,800 --> 00:14:47,120
+cover with you guys a couple of my high
+
+403
+00:14:45,279 --> 00:14:49,519
+conviction trades. On Monday, I spoke to
+
+404
+00:14:47,120 --> 00:14:52,240
+you guys about Pepe. I spoke to you guys
+
+405
+00:14:49,519 --> 00:14:54,800
+about Ethereum, um, and a couple others.
+
+406
+00:14:52,240 --> 00:14:56,639
+Now, the high conviction trades in which
+
+407
+00:14:54,800 --> 00:14:57,920
+I was watching have played out. So, if
+
+408
+00:14:56,639 --> 00:14:59,040
+you were on Monday, you were taking your
+
+409
+00:14:57,920 --> 00:15:00,639
+note. We were watching what was
+
+410
+00:14:59,040 --> 00:15:02,720
+happening. Every single one of them
+
+411
+00:15:00,639 --> 00:15:05,199
+played out and Ethereum in particular
+
+412
+00:15:02,720 --> 00:15:06,639
+absolutely pumped. And it's why I said
+
+413
+00:15:05,199 --> 00:15:08,560
+to you guys, I'm not focused on
+
+414
+00:15:06,639 --> 00:15:11,360
+everything and anything. I'm focused on
+
+415
+00:15:08,560 --> 00:15:14,160
+high conviction movements, right? What
+
+416
+00:15:11,360 --> 00:15:16,560
+happened with with Ethereum? Bang.
+
+417
+00:15:14,160 --> 00:15:18,079
+Again, it put in that 9%. You can see
+
+418
+00:15:16,560 --> 00:15:19,279
+this is on Monday. I'm not bullshitting
+
+419
+00:15:18,079 --> 00:15:21,040
+to you. You can go and look at the
+
+420
+00:15:19,279 --> 00:15:23,199
+stream. I said this is one of the plays
+
+421
+00:15:21,040 --> 00:15:25,920
+I'm looking for. Bang. You had Ethereum
+
+422
+00:15:23,199 --> 00:15:27,839
+punch up straight towards the target. It
+
+423
+00:15:25,920 --> 00:15:29,519
+hit the target, rejected, has come back
+
+424
+00:15:27,839 --> 00:15:33,040
+under again. It's why I love to take
+
+425
+00:15:29,519 --> 00:15:35,920
+profits, not just hope and hold. So,
+
+426
+00:15:33,040 --> 00:15:37,839
+it's very obvious, very easy to see this
+
+427
+00:15:35,920 --> 00:15:39,920
+happened. You got the retest. Boom.
+
+428
+00:15:37,839 --> 00:15:42,160
+Punch straight up. So, a good move on
+
+429
+00:15:39,920 --> 00:15:44,560
+Ethereum. Now, am I going to open up a
+
+430
+00:15:42,160 --> 00:15:46,959
+long here on Ethereum? No, I'm not. I'm
+
+431
+00:15:44,560 --> 00:15:49,279
+not going to run along into resistance.
+
+432
+00:15:46,959 --> 00:15:50,959
+If I'm thinking Bitcoin is going to fall
+
+433
+00:15:49,279 --> 00:15:52,079
+reality, I'm also looking at Ethereum
+
+434
+00:15:50,959 --> 00:15:53,680
+starting to put in some bearish
+
+435
+00:15:52,079 --> 00:15:56,639
+divergence as well on a daily time
+
+436
+00:15:53,680 --> 00:16:00,160
+frame. Wouldn't be surprised if this as
+
+437
+00:15:56,639 --> 00:16:03,040
+well rolls over alongside Bitcoin. Okay,
+
+438
+00:16:00,160 --> 00:16:04,800
+so very simple like that. We can break
+
+439
+00:16:03,040 --> 00:16:07,839
+this down for our time frame. You can
+
+440
+00:16:04,800 --> 00:16:11,120
+see this here as the moment could be the
+
+441
+00:16:07,839 --> 00:16:13,600
+early form of the lower high versus the
+
+442
+00:16:11,120 --> 00:16:15,519
+higher high and the early stage signal
+
+443
+00:16:13,600 --> 00:16:17,360
+of a change in market structure. So that
+
+444
+00:16:15,519 --> 00:16:20,959
+is something I'm also watching on
+
+445
+00:16:17,360 --> 00:16:22,880
+Ethereum. Again, 50 EMA is sitting
+
+446
+00:16:20,959 --> 00:16:25,680
+below. The orders only sitting below
+
+447
+00:16:22,880 --> 00:16:27,199
+here, but right now I can't run a long
+
+448
+00:16:25,680 --> 00:16:28,399
+position on that one. So, that one
+
+449
+00:16:27,199 --> 00:16:30,160
+there, I'm just going to watch for the
+
+450
+00:16:28,399 --> 00:16:31,920
+time being. That was a good move on
+
+451
+00:16:30,160 --> 00:16:34,240
+Monday. That was something I liked on
+
+452
+00:16:31,920 --> 00:16:36,880
+Monday. Same sort of thing with Pepe. I
+
+453
+00:16:34,240 --> 00:16:38,639
+want to show you guys here again. Ethan,
+
+454
+00:16:36,880 --> 00:16:42,320
+Pepe like to move in sync with one
+
+455
+00:16:38,639 --> 00:16:46,399
+another. What happened? We had on
+
+456
+00:16:42,320 --> 00:16:48,320
+Monday, boom, big fat green candle on eh
+
+457
+00:16:46,399 --> 00:16:51,360
+on Pepe as well. You can see it put in
+
+458
+00:16:48,320 --> 00:16:53,360
+at a 10% candle, came back down. Now
+
+459
+00:16:51,360 --> 00:16:54,959
+it's holding the support level. This is
+
+460
+00:16:53,360 --> 00:16:57,440
+a more of an interesting one that I'm
+
+461
+00:16:54,959 --> 00:16:58,639
+watching. I'm not in this right now. The
+
+462
+00:16:57,440 --> 00:17:00,320
+reason I'm not in this right now is
+
+463
+00:16:58,639 --> 00:17:02,720
+because I do think Bitcoin may roll
+
+464
+00:17:00,320 --> 00:17:04,640
+over. But if it doesn't, then again,
+
+465
+00:17:02,720 --> 00:17:07,199
+this opens up the gap on Pepe for
+
+466
+00:17:04,640 --> 00:17:08,640
+another 9 to 10% move as well. But
+
+467
+00:17:07,199 --> 00:17:10,720
+again, I haven't got confirmation on
+
+468
+00:17:08,640 --> 00:17:14,079
+this one just yet. So, I'm still waiting
+
+469
+00:17:10,720 --> 00:17:16,079
+on the sidelines. I'll post my charts. I
+
+470
+00:17:14,079 --> 00:17:18,559
+keep people give a rolling update on
+
+471
+00:17:16,079 --> 00:17:21,439
+what positions I am in but I do whack
+
+472
+00:17:18,559 --> 00:17:23,439
+them all on my socials on X Instagram. I
+
+473
+00:17:21,439 --> 00:17:25,919
+just put up stories and I put everything
+
+474
+00:17:23,439 --> 00:17:27,439
+in the Empire platform as well which you
+
+475
+00:17:25,919 --> 00:17:28,880
+guys can check out. You can see this is
+
+476
+00:17:27,439 --> 00:17:31,679
+where we sort of post a lot of our
+
+477
+00:17:28,880 --> 00:17:35,200
+content. So you guys can see all of that
+
+478
+00:17:31,679 --> 00:17:36,799
+on your own terms. But the next few I
+
+479
+00:17:35,200 --> 00:17:38,640
+want to have a look at again is hype
+
+480
+00:17:36,799 --> 00:17:40,960
+because again hype has been positioned
+
+481
+00:17:38,640 --> 00:17:42,240
+itself really really well and I've been
+
+482
+00:17:40,960 --> 00:17:44,559
+monitoring this. So, I wanted to have a
+
+483
+00:17:42,240 --> 00:17:46,799
+look at the target still. This target is
+
+484
+00:17:44,559 --> 00:17:48,880
+still in place. So, if you are in Hype
+
+485
+00:17:46,799 --> 00:17:50,960
+token, I mean, I've got an alert set
+
+486
+00:17:48,880 --> 00:17:53,120
+around $47. I'm going to set another one
+
+487
+00:17:50,960 --> 00:17:54,480
+there just in case. It's the big fat
+
+488
+00:17:53,120 --> 00:17:56,720
+order zone that is sitting there and
+
+489
+00:17:54,480 --> 00:17:58,640
+it's been the overall target for hype as
+
+490
+00:17:56,720 --> 00:18:00,559
+well. So, that's pushing along quite
+
+491
+00:17:58,640 --> 00:18:02,080
+nicely, which is good. Not really much
+
+492
+00:18:00,559 --> 00:18:03,760
+you can do in this current scheme. If
+
+493
+00:18:02,080 --> 00:18:06,320
+you missed out on hype, you've got to
+
+494
+00:18:03,760 --> 00:18:07,919
+sort of wait for it because I mean, as
+
+495
+00:18:06,320 --> 00:18:10,080
+it stands, it's had a really good move.
+
+496
+00:18:07,919 --> 00:18:11,520
+It's probably got another 8%, but it's
+
+497
+00:18:10,080 --> 00:18:13,679
+in the middle of the range. So, the
+
+498
+00:18:11,520 --> 00:18:16,720
+riskto-reward trade on that one is a
+
+499
+00:18:13,679 --> 00:18:18,160
+little bit off. The other one that I was
+
+500
+00:18:16,720 --> 00:18:20,000
+watching on Monday, I said to you guys
+
+501
+00:18:18,160 --> 00:18:22,240
+on Monday, I didn't really have much on
+
+502
+00:18:20,000 --> 00:18:24,799
+XRP, right? I'm very honest, right? I'm
+
+503
+00:18:22,240 --> 00:18:26,720
+not going to [ __ ] you guys. So, as
+
+504
+00:18:24,799 --> 00:18:28,240
+it stands on XRP the other day on
+
+505
+00:18:26,720 --> 00:18:30,160
+Monday, it was actually sitting at this
+
+506
+00:18:28,240 --> 00:18:32,080
+low at the base of this order zone. And
+
+507
+00:18:30,160 --> 00:18:33,440
+I was really cautious on this one. I
+
+508
+00:18:32,080 --> 00:18:35,200
+said, you know what, we're trending
+
+509
+00:18:33,440 --> 00:18:37,440
+below. Haven't really got much
+
+510
+00:18:35,200 --> 00:18:39,520
+conviction in that particular trade. But
+
+511
+00:18:37,440 --> 00:18:41,280
+as from Monday, we've actually started
+
+512
+00:18:39,520 --> 00:18:42,640
+to form this order zone. So it's
+
+513
+00:18:41,280 --> 00:18:45,919
+starting to get a bit of protection to
+
+514
+00:18:42,640 --> 00:18:48,559
+the downside, which is good. So what I'm
+
+515
+00:18:45,919 --> 00:18:51,200
+watching for for XRP for for one of our
+
+516
+00:18:48,559 --> 00:18:53,360
+favorite retail tokens
+
+517
+00:18:51,200 --> 00:18:55,440
+is realistically we've had the breakback
+
+518
+00:18:53,360 --> 00:18:58,400
+above. You can see that here. And we've
+
+519
+00:18:55,440 --> 00:19:01,039
+actually had the retest. So if this can
+
+520
+00:18:58,400 --> 00:19:03,360
+hold and optimistically Bitcoin doesn't
+
+521
+00:19:01,039 --> 00:19:05,520
+roll over, then it will open up a gap
+
+522
+00:19:03,360 --> 00:19:08,240
+for about 8% move. And now this move
+
+523
+00:19:05,520 --> 00:19:09,760
+here has been taking effect since since
+
+524
+00:19:08,240 --> 00:19:12,080
+the start of February. We've been
+
+525
+00:19:09,760 --> 00:19:14,799
+trending within this channel. So again,
+
+526
+00:19:12,080 --> 00:19:16,320
+nothing new, but I'm looking at the
+
+527
+00:19:14,799 --> 00:19:18,240
+probability of what could potentially
+
+528
+00:19:16,320 --> 00:19:20,880
+happen. And in this case, I mean, you've
+
+529
+00:19:18,240 --> 00:19:23,520
+got an 8% gap here. The one thing I'd be
+
+530
+00:19:20,880 --> 00:19:25,840
+watching for is simply a break retest of
+
+531
+00:19:23,520 --> 00:19:27,760
+the 50 EMA, then a push. So you want to
+
+532
+00:19:25,840 --> 00:19:29,679
+get above that 50 EMA to really get the
+
+533
+00:19:27,760 --> 00:19:32,320
+conviction going in the trade. But I
+
+534
+00:19:29,679 --> 00:19:34,480
+don't mind the risk appetite off this
+
+535
+00:19:32,320 --> 00:19:36,240
+particular movement because if you're
+
+536
+00:19:34,480 --> 00:19:38,640
+looking at something here, this is the
+
+537
+00:19:36,240 --> 00:19:41,280
+way I'd be personally positioning myself
+
+538
+00:19:38,640 --> 00:19:43,600
+is a run to the top of the range and
+
+539
+00:19:41,280 --> 00:19:45,039
+obviously a stop loss just below the
+
+540
+00:19:43,600 --> 00:19:46,799
+order zone, which gives me about a two
+
+541
+00:19:45,039 --> 00:19:48,960
+risk-to-reward ratio. Not great. I
+
+542
+00:19:46,799 --> 00:19:51,520
+usually want to get about a three. Um,
+
+543
+00:19:48,960 --> 00:19:53,360
+but again, still not a bad position on
+
+544
+00:19:51,520 --> 00:19:55,679
+that one. But what I would suggest for a
+
+545
+00:19:53,360 --> 00:19:58,880
+lot of people if you aren't doing it at
+
+546
+00:19:55,679 --> 00:20:01,200
+the moment is check the BTC pairings.
+
+547
+00:19:58,880 --> 00:20:03,360
+XRP BTC. You can see it's been falling
+
+548
+00:20:01,200 --> 00:20:04,880
+off a cliff. But look at the difference
+
+549
+00:20:03,360 --> 00:20:08,240
+here. And this is where you get the more
+
+550
+00:20:04,880 --> 00:20:10,080
+high conviction trades. XRP I mean sorry
+
+551
+00:20:08,240 --> 00:20:11,600
+Ethereum going in the exact opposite
+
+552
+00:20:10,080 --> 00:20:13,919
+direction. As I showed you guys on
+
+553
+00:20:11,600 --> 00:20:18,480
+Monday, this was getting its breakout.
+
+554
+00:20:13,919 --> 00:20:21,039
+So, what do you think fueled the USDT
+
+555
+00:20:18,480 --> 00:20:23,280
+price action which went above basically
+
+556
+00:20:21,039 --> 00:20:26,080
+everything else pushed really well? It's
+
+557
+00:20:23,280 --> 00:20:27,919
+because the ETH BTC pairing is gaining
+
+558
+00:20:26,080 --> 00:20:29,919
+value. That means it's gaining value
+
+559
+00:20:27,919 --> 00:20:32,559
+against Bitcoin. So, it's moving at a
+
+560
+00:20:29,919 --> 00:20:35,200
+faster pace.
+
+561
+00:20:32,559 --> 00:20:37,200
+So guys, thank you. I'm going to get
+
+562
+00:20:35,200 --> 00:20:38,320
+into what I want to get into now is I
+
+563
+00:20:37,200 --> 00:20:39,280
+want to have a look at the comments. I
+
+564
+00:20:38,320 --> 00:20:41,840
+want to see if you guys want me to have
+
+565
+00:20:39,280 --> 00:20:43,440
+a look at anything in particular. And
+
+566
+00:20:41,840 --> 00:20:46,559
+then what I want to do is I want to go
+
+567
+00:20:43,440 --> 00:20:47,840
+through the giveaway for you all and um
+
+568
+00:20:46,559 --> 00:20:48,880
+we'll sort of wrap it up there. But
+
+569
+00:20:47,840 --> 00:20:50,559
+still got a little bit more to go
+
+570
+00:20:48,880 --> 00:20:51,760
+through and a few charts that I do want
+
+571
+00:20:50,559 --> 00:20:54,000
+to cover. So let me just check the
+
+572
+00:20:51,760 --> 00:20:58,080
+comments here.
+
+573
+00:20:54,000 --> 00:20:59,919
+Um where are we? Where are we? Kanga,
+
+574
+00:20:58,080 --> 00:21:02,240
+greetings from Ghana. Welcome, welcome,
+
+575
+00:20:59,919 --> 00:21:03,280
+welcome team. So guys, if you haven't if
+
+576
+00:21:02,240 --> 00:21:05,600
+you want me to have a look at anything
+
+577
+00:21:03,280 --> 00:21:07,120
+particular, run it in, put it in the
+
+578
+00:21:05,600 --> 00:21:09,120
+chat. I'll have a look at for you at it
+
+579
+00:21:07,120 --> 00:21:10,799
+for you all shortly. Um, but in the
+
+580
+00:21:09,120 --> 00:21:12,159
+meantime, I'll have a look at a couple
+
+581
+00:21:10,799 --> 00:21:13,760
+of other charts since you guys hadn't
+
+582
+00:21:12,159 --> 00:21:15,280
+put anything in there yet. I'll have a
+
+583
+00:21:13,760 --> 00:21:16,960
+look at a couple other ones that I was
+
+584
+00:21:15,280 --> 00:21:18,640
+watching to see what they're doing
+
+585
+00:21:16,960 --> 00:21:19,679
+because I haven't checked on them in the
+
+586
+00:21:18,640 --> 00:21:22,799
+last couple of days. So, I'll do it
+
+587
+00:21:19,679 --> 00:21:24,880
+while I'm on the call with you all. Um,
+
+588
+00:21:22,799 --> 00:21:26,159
+BNB, if you guys haven't noticed this
+
+589
+00:21:24,880 --> 00:21:27,280
+one, I spoke about this on Monday.
+
+590
+00:21:26,159 --> 00:21:29,600
+Again, I don't like to sort of go
+
+591
+00:21:27,280 --> 00:21:31,280
+through a million one charts, but B&B, I
+
+592
+00:21:29,600 --> 00:21:33,600
+am watching. I'm hoping if Bitcoin does
+
+593
+00:21:31,280 --> 00:21:35,440
+roll over here, and look, I don't want
+
+594
+00:21:33,600 --> 00:21:38,480
+to be that person, but fingers crossed I
+
+595
+00:21:35,440 --> 00:21:40,880
+do. Um, I want to get the the bag on B&B
+
+596
+00:21:38,480 --> 00:21:42,640
+at around $555.
+
+597
+00:21:40,880 --> 00:21:45,200
+It's the monthly order zone. It's the
+
+598
+00:21:42,640 --> 00:21:47,520
+weekly order zone. It's the 200 EMA.
+
+599
+00:21:45,200 --> 00:21:49,360
+It's a complete sell-off point. Likely
+
+600
+00:21:47,520 --> 00:21:51,360
+give us the bullish divergence as well.
+
+601
+00:21:49,360 --> 00:21:53,919
+For me, that's a good value position.
+
+602
+00:21:51,360 --> 00:21:55,120
+So, I am watching B&B very closely. You
+
+603
+00:21:53,919 --> 00:21:57,840
+can see the order zone there on the
+
+604
+00:21:55,120 --> 00:22:01,919
+daily, but I do want the deep, deep
+
+605
+00:21:57,840 --> 00:22:03,440
+retracement around that $550 mark. So,
+
+606
+00:22:01,919 --> 00:22:06,799
+I'll take another snapshot of this for
+
+607
+00:22:03,440 --> 00:22:08,640
+everyone. I'll whack this one up. um on
+
+608
+00:22:06,799 --> 00:22:10,559
+the socials and in Empire and so forth
+
+609
+00:22:08,640 --> 00:22:13,039
+for everyone. But I do really really
+
+610
+00:22:10,559 --> 00:22:14,400
+like this one. So I'm I'm watching this
+
+611
+00:22:13,039 --> 00:22:16,320
+one really closely. The other one I want
+
+612
+00:22:14,400 --> 00:22:17,919
+to have another look at was Ave. I spoke
+
+613
+00:22:16,320 --> 00:22:20,240
+to you guys about this one on Monday as
+
+614
+00:22:17,919 --> 00:22:22,880
+well. Ave is doing really really well at
+
+615
+00:22:20,240 --> 00:22:25,600
+the moment after a massive massive
+
+616
+00:22:22,880 --> 00:22:27,600
+selloff. Um I'm looking for this early
+
+617
+00:22:25,600 --> 00:22:29,919
+early part of the breakout if it does
+
+618
+00:22:27,600 --> 00:22:31,679
+happen. It hasn't happened just yet, but
+
+619
+00:22:29,919 --> 00:22:34,240
+it's starting to make its way.
+
+620
+00:22:31,679 --> 00:22:37,840
+And from Monday, this has also had about
+
+621
+00:22:34,240 --> 00:22:39,360
+a 15% push. So, it's doing quite well. I
+
+622
+00:22:37,840 --> 00:22:41,120
+was still expecting this to pull back
+
+623
+00:22:39,360 --> 00:22:43,200
+slightly. It hasn't just yet. So, I'm
+
+624
+00:22:41,120 --> 00:22:45,600
+just monitoring. I'm not in it right
+
+625
+00:22:43,200 --> 00:22:48,880
+now. But, Ave in itself is bouncing off
+
+626
+00:22:45,600 --> 00:22:50,480
+this large scale weekly order zone. And
+
+627
+00:22:48,880 --> 00:22:52,320
+like I said as well on Monday, it's got
+
+628
+00:22:50,480 --> 00:22:55,120
+about a 40% push from the bottom to the
+
+629
+00:22:52,320 --> 00:22:57,280
+top. So, I've got alerts stacked at
+
+630
+00:22:55,120 --> 00:22:59,600
+around that $90 mark because if it can
+
+631
+00:22:57,280 --> 00:23:02,000
+get in off that $90 mark, it does open a
+
+632
+00:22:59,600 --> 00:23:04,080
+big segue. It is a large order zone and
+
+633
+00:23:02,000 --> 00:23:06,159
+I'm expecting that level of support to
+
+634
+00:23:04,080 --> 00:23:10,000
+hold and you can see we're getting the
+
+635
+00:23:06,159 --> 00:23:11,840
+bounce off the ave BTC pairing as well
+
+636
+00:23:10,000 --> 00:23:14,000
+which again has been holding up since
+
+637
+00:23:11,840 --> 00:23:16,720
+April 2024.
+
+638
+00:23:14,000 --> 00:23:18,559
+So not a bad sign there and some bullish
+
+639
+00:23:16,720 --> 00:23:20,799
+divergence as well there on the weekly
+
+640
+00:23:18,559 --> 00:23:22,400
+time frame. You can see that there. So
+
+641
+00:23:20,799 --> 00:23:25,679
+there's some strong analysis going out
+
+642
+00:23:22,400 --> 00:23:27,120
+there at the moment. Um I'm just very
+
+643
+00:23:25,679 --> 00:23:29,679
+conscious of the pump that we've had on
+
+644
+00:23:27,120 --> 00:23:31,200
+Bitcoin. I'm very very cautious of that.
+
+645
+00:23:29,679 --> 00:23:35,360
+Other people are still trying to scream
+
+646
+00:23:31,200 --> 00:23:37,440
+out, you know, 80k, 80k, but I'm not
+
+647
+00:23:35,360 --> 00:23:39,200
+convinced just there yet on Bitcoin. I'm
+
+648
+00:23:37,440 --> 00:23:40,720
+really not convinced. But I do like the
+
+649
+00:23:39,200 --> 00:23:42,400
+movement on some of the alts as it
+
+650
+00:23:40,720 --> 00:23:44,640
+stands. It's going to be interesting to
+
+651
+00:23:42,400 --> 00:23:46,880
+see how the US market opens today with
+
+652
+00:23:44,640 --> 00:23:49,200
+the US 500 futures haven't really moved
+
+653
+00:23:46,880 --> 00:23:51,679
+all that much. And funnily enough, I
+
+654
+00:23:49,200 --> 00:23:53,120
+want to show you guys this.
+
+655
+00:23:51,679 --> 00:23:55,760
+The level that they're bouncing up
+
+656
+00:23:53,120 --> 00:23:58,480
+against at the moment is the 1618
+
+657
+00:23:55,760 --> 00:24:00,799
+Fibonacci level. So, it's going to be a
+
+658
+00:23:58,480 --> 00:24:03,360
+bit of a battle. Um, it's going to be
+
+659
+00:24:00,799 --> 00:24:05,919
+really interesting to see how this
+
+660
+00:24:03,360 --> 00:24:09,679
+transpires tonight. Uh, we've had a
+
+661
+00:24:05,919 --> 00:24:12,559
+really, really big 3-week push on the US
+
+662
+00:24:09,679 --> 00:24:15,279
+500. So, or the S&P. Really interested
+
+663
+00:24:12,559 --> 00:24:16,960
+to see if we can get above this 618 area
+
+664
+00:24:15,279 --> 00:24:20,000
+because that'll be huge. That'll put
+
+665
+00:24:16,960 --> 00:24:21,600
+like a new all-time high on that. Um,
+
+666
+00:24:20,000 --> 00:24:22,960
+then if that starts to occur, different
+
+667
+00:24:21,600 --> 00:24:24,559
+story. I'll start to get a little bit
+
+668
+00:24:22,960 --> 00:24:27,279
+more little bit more hopeium into
+
+669
+00:24:24,559 --> 00:24:30,960
+Bitcoin, but not right now.
+
+670
+00:24:27,279 --> 00:24:33,600
+Um, all right. So, you guys, B&B, yep,
+
+671
+00:24:30,960 --> 00:24:34,799
+gone through that one. ICP, let's have a
+
+672
+00:24:33,600 --> 00:24:39,799
+look at that. I don't think I've charted
+
+673
+00:24:34,799 --> 00:24:39,799
+up ICP in a very, very long time.
+
+674
+00:24:41,120 --> 00:24:46,320
+Wow. Yep. Haven't charted this in a
+
+675
+00:24:43,039 --> 00:24:48,799
+very, very long time. This thing is very
+
+676
+00:24:46,320 --> 00:24:50,400
+down.
+
+677
+00:24:48,799 --> 00:24:53,039
+See, I don't I don't really trade any of
+
+678
+00:24:50,400 --> 00:24:55,600
+these coins anymore. I stick to the high
+
+679
+00:24:53,039 --> 00:24:58,960
+probability trades. I stick to the the
+
+680
+00:24:55,600 --> 00:25:01,520
+larger time frame trades. I stick to,
+
+681
+00:24:58,960 --> 00:25:05,200
+you know, your big your bigger tokens
+
+682
+00:25:01,520 --> 00:25:07,039
+cuz I mean, look at this.
+
+683
+00:25:05,200 --> 00:25:10,200
+I sure as [ __ ] would not have wanted to
+
+684
+00:25:07,039 --> 00:25:10,200
+buy this.
+
+685
+00:25:12,799 --> 00:25:18,400
+Does this ever end?
+
+686
+00:25:15,919 --> 00:25:20,480
+Oh my god. All right, I'm I'm not even
+
+687
+00:25:18,400 --> 00:25:21,760
+going to bother. Um, let's bring this
+
+688
+00:25:20,480 --> 00:25:25,120
+back down. Let's have a look at this on
+
+689
+00:25:21,760 --> 00:25:27,760
+the smaller time frame as it stands.
+
+690
+00:25:25,120 --> 00:25:29,360
+Um, let me just draw this up. Let me
+
+691
+00:25:27,760 --> 00:25:31,039
+clean this up again. I haven't charted
+
+692
+00:25:29,360 --> 00:25:33,039
+this in a very long time. Remove all the
+
+693
+00:25:31,039 --> 00:25:35,679
+drawings on this one. Let's have a look
+
+694
+00:25:33,039 --> 00:25:37,360
+at this on the weekly first.
+
+695
+00:25:35,679 --> 00:25:39,039
+Very simple. We're going to mark at the
+
+696
+00:25:37,360 --> 00:25:41,919
+mid-range of the order zone. You can see
+
+697
+00:25:39,039 --> 00:25:44,799
+that there. It gives me a very very easy
+
+698
+00:25:41,919 --> 00:25:48,000
+easy level to manage. And I can look at
+
+699
+00:25:44,799 --> 00:25:49,840
+this in its own little formation here
+
+700
+00:25:48,000 --> 00:25:52,080
+because there's literally no historical
+
+701
+00:25:49,840 --> 00:25:55,799
+data on that front. So, I've just got to
+
+702
+00:25:52,080 --> 00:25:55,799
+use what we've got here.
+
+703
+00:25:56,720 --> 00:26:00,159
+So, as it stands at the moment for this
+
+704
+00:25:58,480 --> 00:26:02,000
+one, I mean, you're in the middle of the
+
+705
+00:26:00,159 --> 00:26:03,520
+range. Yes, you've got the breakout. You
+
+706
+00:26:02,000 --> 00:26:05,279
+probably got a bit of a a bull flag
+
+707
+00:26:03,520 --> 00:26:06,640
+forming there, which is good early signs
+
+708
+00:26:05,279 --> 00:26:09,600
+as well. So, maybe I'll have a look at
+
+709
+00:26:06,640 --> 00:26:11,360
+this on the 4hour time frame as well.
+
+710
+00:26:09,600 --> 00:26:12,880
+You've got order zones stacked above.
+
+711
+00:26:11,360 --> 00:26:17,240
+So, it's going to have a bit to a bit of
+
+712
+00:26:12,880 --> 00:26:17,240
+a resistance to break out of here.
+
+713
+00:26:21,840 --> 00:26:26,279
+Let's have a look at something for a
+
+714
+00:26:23,279 --> 00:26:26,279
+moment.
+
+715
+00:26:27,440 --> 00:26:32,880
+So, we've also got here. It's currently
+
+716
+00:26:30,320 --> 00:26:35,840
+bouncing off the the 50 Fibonacci level.
+
+717
+00:26:32,880 --> 00:26:37,360
+So, let me mark out what that support
+
+718
+00:26:35,840 --> 00:26:38,799
+there looks like. Whether or not I'
+
+719
+00:26:37,360 --> 00:26:42,840
+prefer that one or whether or not I
+
+720
+00:26:38,799 --> 00:26:42,840
+prefer prefer the 618.
+
+721
+00:26:43,520 --> 00:26:48,720
+You can see our price candles get
+
+722
+00:26:44,960 --> 00:26:50,559
+trapped within that area. So,
+
+723
+00:26:48,720 --> 00:26:52,880
+I preference my preference with this
+
+724
+00:26:50,559 --> 00:26:54,880
+would be personally I'd be waiting for a
+
+725
+00:26:52,880 --> 00:26:57,679
+deeper drop. I'm going to set an alert
+
+726
+00:26:54,880 --> 00:27:00,240
+here around $234. I don't really like
+
+727
+00:26:57,679 --> 00:27:01,760
+entering off the 38 or the 50. I like
+
+728
+00:27:00,240 --> 00:27:04,320
+getting the deeper entries because then
+
+729
+00:27:01,760 --> 00:27:05,919
+you can have a deeper stop loss. Um,
+
+730
+00:27:04,320 --> 00:27:08,480
+we'll see how this one plays out. I'll
+
+731
+00:27:05,919 --> 00:27:12,440
+take a snapshot of this anyway and I'll
+
+732
+00:27:08,480 --> 00:27:12,440
+sort of run up what I'm thinking.
+
+733
+00:27:13,360 --> 00:27:15,679
+That's sort of how I would be predicting
+
+734
+00:27:14,640 --> 00:27:17,760
+that because you've got just got
+
+735
+00:27:15,679 --> 00:27:20,240
+multiple order zones now that are
+
+736
+00:27:17,760 --> 00:27:23,360
+resistance levels and they formed above.
+
+737
+00:27:20,240 --> 00:27:25,360
+So I'll take a snapshot of this
+
+738
+00:27:23,360 --> 00:27:27,600
+download. All right, what else have we
+
+739
+00:27:25,360 --> 00:27:30,080
+got? Always around the 15th of the month
+
+740
+00:27:27,600 --> 00:27:32,400
+strategy is buying big and price reacts.
+
+741
+00:27:30,080 --> 00:27:34,559
+See, I don't I disagree. I actually
+
+742
+00:27:32,400 --> 00:27:35,840
+disagree with that last comment. I don't
+
+743
+00:27:34,559 --> 00:27:37,600
+know if you guys have noticed, but now
+
+744
+00:27:35,840 --> 00:27:39,919
+when Micro Strategy buys, it doesn't
+
+745
+00:27:37,600 --> 00:27:41,600
+have the same effect anymore. Go back
+
+746
+00:27:39,919 --> 00:27:42,799
+and look at it. Like historically when
+
+747
+00:27:41,600 --> 00:27:44,000
+they used to come out and be like I've
+
+748
+00:27:42,799 --> 00:27:47,039
+brought millions and millions dollars
+
+749
+00:27:44,000 --> 00:27:48,880
+worth of Bitcoin. It used to pump but
+
+750
+00:27:47,039 --> 00:27:51,440
+not so much anymore. I don't really see
+
+751
+00:27:48,880 --> 00:27:53,120
+that. Now I just see like a general, you
+
+752
+00:27:51,440 --> 00:27:57,120
+know, oh cool they've purchased. Thank
+
+753
+00:27:53,120 --> 00:27:58,640
+you very much. But nothing else. Um all
+
+754
+00:27:57,120 --> 00:28:01,039
+right team. What I want to do is I want
+
+755
+00:27:58,640 --> 00:28:03,279
+to get into the giveaway and let's punch
+
+756
+00:28:01,039 --> 00:28:05,360
+this out. This is the exciting part. So
+
+757
+00:28:03,279 --> 00:28:07,200
+before we do the giveaway, I just want
+
+758
+00:28:05,360 --> 00:28:08,720
+to say a special thank you to everyone
+
+759
+00:28:07,200 --> 00:28:10,720
+that has been jumping on these streams
+
+760
+00:28:08,720 --> 00:28:13,200
+and sharing it. Wednesday is always a
+
+761
+00:28:10,720 --> 00:28:14,799
+day we have a lot less followers um and
+
+762
+00:28:13,200 --> 00:28:16,559
+jumping on. So if you can punch it out
+
+763
+00:28:14,799 --> 00:28:18,399
+on Wednesday for me because if we can
+
+764
+00:28:16,559 --> 00:28:20,559
+hit over a hundred people on a Wednesday
+
+765
+00:28:18,399 --> 00:28:23,200
+as well um we again we do some
+
+766
+00:28:20,559 --> 00:28:25,200
+giveaways. So Monday we had about 115
+
+767
+00:28:23,200 --> 00:28:27,840
+113 people on which was awesome. I want
+
+768
+00:28:25,200 --> 00:28:30,320
+to try and crack 200. If we crack 200
+
+769
+00:28:27,840 --> 00:28:32,640
+I'll do a 200 USDT giveaway. I mean it's
+
+770
+00:28:30,320 --> 00:28:34,159
+just more fun. Um but I do want to say
+
+771
+00:28:32,640 --> 00:28:35,360
+thank you for everyone and thank you for
+
+772
+00:28:34,159 --> 00:28:36,799
+everyone that started following me on
+
+773
+00:28:35,360 --> 00:28:38,720
+the socials. It's been really much
+
+774
+00:28:36,799 --> 00:28:40,320
+appreciated. Helps boost the algo. helps
+
+775
+00:28:38,720 --> 00:28:42,080
+get the message out there that, you
+
+776
+00:28:40,320 --> 00:28:44,000
+know, crypto education is a massive
+
+777
+00:28:42,080 --> 00:28:45,600
+piece. Learning how to trade is a
+
+778
+00:28:44,000 --> 00:28:47,200
+massive piece versus just buying and
+
+779
+00:28:45,600 --> 00:28:48,720
+hoping and, you know, following people
+
+780
+00:28:47,200 --> 00:28:51,039
+that are just shilling stuff. So, thank
+
+781
+00:28:48,720 --> 00:28:53,600
+you very much for that. And for the
+
+782
+00:28:51,039 --> 00:28:56,799
+winners that I will pull from the wheels
+
+783
+00:28:53,600 --> 00:28:58,480
+today, you will be posted on my socials.
+
+784
+00:28:56,799 --> 00:29:01,360
+So, make sure you are following because
+
+785
+00:28:58,480 --> 00:29:02,960
+you have seven days to claim it. Okay?
+
+786
+00:29:01,360 --> 00:29:05,520
+So, make sure you are following on the
+
+787
+00:29:02,960 --> 00:29:07,600
+socials. So, without saying that, my
+
+788
+00:29:05,520 --> 00:29:09,360
+socials are down the bottom. You should
+
+789
+00:29:07,600 --> 00:29:11,679
+be able to see them all down there. Hit
+
+790
+00:29:09,360 --> 00:29:13,600
+me up on X, hit me up on Instagram, and
+
+791
+00:29:11,679 --> 00:29:15,600
+there is some special promos in the
+
+792
+00:29:13,600 --> 00:29:17,679
+description for you all as well for some
+
+793
+00:29:15,600 --> 00:29:19,360
+exchanges that give some bonuses away
+
+794
+00:29:17,679 --> 00:29:21,360
+and for Empire where you guys can get
+
+795
+00:29:19,360 --> 00:29:23,120
+some more data, information, offers, and
+
+796
+00:29:21,360 --> 00:29:26,799
+a whole bunch of cool stuff going on.
+
+797
+00:29:23,120 --> 00:29:29,520
+So, thank you to everyone. Let's spin
+
+798
+00:29:26,799 --> 00:29:31,679
+the wheel. Remember, we're doing 250
+
+799
+00:29:29,520 --> 00:29:35,760
+USDT giveaways. So, if your name is in
+
+800
+00:29:31,679 --> 00:29:37,200
+here, happy days. Let's spin it.
+
+801
+00:29:35,760 --> 00:29:41,440
+All right, here we go. So, here we go.
+
+802
+00:29:37,200 --> 00:29:43,440
+Here we go. Who do we have today?
+
+803
+00:29:41,440 --> 00:29:46,480
+We have
+
+804
+00:29:43,440 --> 00:29:48,399
+Daniel Ludon. All right. Congrats,
+
+805
+00:29:46,480 --> 00:29:51,679
+Daniel. Let me save your name so we
+
+806
+00:29:48,399 --> 00:29:53,919
+don't lose it. Happy days. Um, so what
+
+807
+00:29:51,679 --> 00:29:55,279
+we'll do now is we will remove remove
+
+808
+00:29:53,919 --> 00:29:58,880
+Daniel from there because we don't want
+
+809
+00:29:55,279 --> 00:30:01,120
+to double up on the winners. But good
+
+810
+00:29:58,880 --> 00:30:03,520
+luck. We have one more chance. Good luck
+
+811
+00:30:01,120 --> 00:30:07,000
+everyone.
+
+812
+00:30:03,520 --> 00:30:07,000
+Here we go.
+
+813
+00:30:10,559 --> 00:30:18,320
+Marcus G6S,
+
+814
+00:30:14,880 --> 00:30:20,159
+if you guys are on here, hit me up. Make
+
+815
+00:30:18,320 --> 00:30:22,559
+sure you send me a message because that
+
+816
+00:30:20,159 --> 00:30:25,840
+is the only way you guys are going to be
+
+817
+00:30:22,559 --> 00:30:29,760
+able to claim your giveaway, of course.
+
+818
+00:30:25,840 --> 00:30:33,679
+And for everyone else, thank you very
+
+819
+00:30:29,760 --> 00:30:35,200
+much for joining. I will see you guys on
+
+820
+00:30:33,679 --> 00:30:36,720
+um Monday. I'm also going to do some
+
+821
+00:30:35,200 --> 00:30:38,080
+more live streaming as much as possible
+
+822
+00:30:36,720 --> 00:30:39,279
+for you all. I want to get people
+
+823
+00:30:38,080 --> 00:30:41,840
+trading. I want to get the excitement
+
+824
+00:30:39,279 --> 00:30:43,279
+flowing. So, um I might hit up the boys
+
+825
+00:30:41,840 --> 00:30:45,440
+coin bureau, see if we can do some live
+
+826
+00:30:43,279 --> 00:30:47,520
+trading sessions as well versus just a
+
+827
+00:30:45,440 --> 00:30:48,799
+market analysis and do some stuff on the
+
+828
+00:30:47,520 --> 00:30:50,480
+smaller time frames. Usually in these
+
+829
+00:30:48,799 --> 00:30:52,640
+sessions, I'll try and condense as much
+
+830
+00:30:50,480 --> 00:30:53,840
+into this as possible so you guys can go
+
+831
+00:30:52,640 --> 00:30:55,919
+away for the week. You know, you've got
+
+832
+00:30:53,840 --> 00:30:58,080
+a whole bunch of stuff in your arsenal
+
+833
+00:30:55,919 --> 00:31:00,799
+ready to go. We've predicted all the
+
+834
+00:30:58,080 --> 00:31:02,159
+moves on Bitcoin at the moment. And now,
+
+835
+00:31:00,799 --> 00:31:04,159
+like I said, just to sort of wrap things
+
+836
+00:31:02,159 --> 00:31:06,640
+up, I am predicting a move to go more
+
+837
+00:31:04,159 --> 00:31:10,080
+towards the downside versus the upside.
+
+838
+00:31:06,640 --> 00:31:13,200
+I want to see that CME gap close at 67K.
+
+839
+00:31:10,080 --> 00:31:16,000
+The S&P 500 is right up against the top
+
+840
+00:31:13,200 --> 00:31:17,919
+of the order zone as well. Alpha 1618
+
+841
+00:31:16,000 --> 00:31:20,320
+Fibonacci level. I'm expecting a
+
+842
+00:31:17,919 --> 00:31:23,360
+rejection to take there or basically a
+
+843
+00:31:20,320 --> 00:31:25,360
+fake out to a dump. And the big news
+
+844
+00:31:23,360 --> 00:31:27,279
+around the Iran war is going to have a
+
+845
+00:31:25,360 --> 00:31:29,279
+really big effect because the market is
+
+846
+00:31:27,279 --> 00:31:31,919
+trying to position itself for that to
+
+847
+00:31:29,279 --> 00:31:33,760
+end. So if it doesn't end and there is
+
+848
+00:31:31,919 --> 00:31:35,440
+no essentially a nuclear deal, which is
+
+849
+00:31:33,760 --> 00:31:38,159
+the biggest impact that that is going to
+
+850
+00:31:35,440 --> 00:31:40,559
+have, then I expect a massive selloff
+
+851
+00:31:38,159 --> 00:31:43,440
+personally. Right? So guys, I'll leave
+
+852
+00:31:40,559 --> 00:31:45,039
+you with that. Thank you very much. I'll
+
+853
+00:31:43,440 --> 00:31:48,159
+see you guys on Monday for a massive
+
+854
+00:31:45,039 --> 00:31:50,480
+session. Let's pump 100 people in on
+
+855
+00:31:48,159 --> 00:31:52,799
+Monday into the live call. And you know
+
+856
+00:31:50,480 --> 00:31:55,760
+what? If we get a 100 on Monday, I'll do
+
+857
+00:31:52,799 --> 00:31:58,080
+the live pull. I'll spin the wheel live
+
+858
+00:31:55,760 --> 00:32:00,960
+on Monday for everyone that's there. So,
+
+859
+00:31:58,080 --> 00:32:00,960
+thank you very much everyone.
+

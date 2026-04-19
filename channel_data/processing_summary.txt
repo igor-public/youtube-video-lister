@@ -3,20 +3,42 @@
 PROCESSING SUMMARY
 ================================================================================
 
-Channels processed: 1
-Videos found: 14
-Videos processed: 2
-Transcripts created: 2
-Errors: 12
+Channels processed: 3
+Videos found: 73
+Videos skipped (already processed): 11
+Videos processed: 47
+Transcripts created: 47
+Errors: 15
 
 
-✓ TechWithTim
+✓ CoinBureauTrading
   Videos found: 14
-  Videos processed: 2
-  Transcripts: 2
-  Errors: 12
-    - Do you have this DEBT?: No subtitle files were downloaded
-    - AI Testing Just Arrived... | KaneAI Full Tutorial: Failed to download subtitles: [Errno 32] Broken pi
-    - Is AI slowing you down?: Failed to download subtitles: [Errno 32] Broken pi
+  Videos skipped: 8
+  Videos processed: 0
+  Transcripts: 0
+  Errors: 6
+    - Fake Pump? Bitcoin Just Rejected $76K…: No subtitle files were downloaded
+    - Support & Resistance Explained: The Key Levels That Move Markets: No subtitle files were downloaded
+    - Will Trump’s Ceasefire Cause a Bitcoin Pump? (What They Aren’t Telling You): No subtitle files were downloaded
+
+✓ DataDash
+  Videos found: 9
+  Videos skipped: 3
+  Videos processed: 0
+  Transcripts: 0
+  Errors: 6
+    - 🚨Bitcoin Is About to Shock Everyone 🚨 $100K Move Coming?: No subtitle files were downloaded
+    - XRP's Next Move: Price Structure & the Regulatory Catalyst: No subtitle files were downloaded
+    - Bitcoin Rally Fading? This Key Level Decides What Happens Next: No subtitle files were downloaded
+
+✓ DwarkeshPatel
+  Videos found: 50
+  Videos skipped: 0
+  Videos processed: 47
+  Transcripts: 47
+  Errors: 3
+    - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
+    - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
+    - The Truth Behind Machiavelli's "The Prince" - Ada Palmer: No subtitle files were downloaded
 
 ================================================================================

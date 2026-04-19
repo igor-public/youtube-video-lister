@@ -1,0 +1,2852 @@
+1
+00:00:00,320 --> 00:00:03,280
+So, by now I'm sure that you've heard
+
+2
+00:00:01,839 --> 00:00:05,359
+that the Department of War has declared
+
+3
+00:00:03,280 --> 00:00:07,279
+Enthropic a supply chain risk because
+
+4
+00:00:05,359 --> 00:00:09,200
+Enthropic refused to remove red lines
+
+5
+00:00:07,279 --> 00:00:11,120
+around the use of their models for mass
+
+6
+00:00:09,200 --> 00:00:12,800
+surveillance and for autonomous weapons.
+
+7
+00:00:11,120 --> 00:00:14,960
+Honestly, I think this situation is a
+
+8
+00:00:12,800 --> 00:00:17,039
+warning shot. Right now, LM are probably
+
+9
+00:00:14,960 --> 00:00:19,439
+not being used in mission critical ways.
+
+10
+00:00:17,039 --> 00:00:21,920
+But within 20 years, 99% of the
+
+11
+00:00:19,439 --> 00:00:23,359
+workforce in the military, in the
+
+12
+00:00:21,920 --> 00:00:26,400
+civilian government, in the private
+
+13
+00:00:23,359 --> 00:00:28,800
+sector is going to be AIS. They're going
+
+14
+00:00:26,400 --> 00:00:31,760
+to be the robot armies that constitute
+
+15
+00:00:28,800 --> 00:00:33,680
+our military. They're going to be the
+
+16
+00:00:31,760 --> 00:00:36,719
+superhumanly intelligent advisers that
+
+17
+00:00:33,680 --> 00:00:38,320
+senators and presidents and CEOs have.
+
+18
+00:00:36,719 --> 00:00:40,960
+They're going to be the police. You name
+
+19
+00:00:38,320 --> 00:00:42,559
+it, the role will be filled by an AI.
+
+20
+00:00:40,960 --> 00:00:44,559
+Our future civilization is going to be
+
+21
+00:00:42,559 --> 00:00:46,399
+run on AI labor. And as much as the
+
+22
+00:00:44,559 --> 00:00:47,920
+government's actions here piss me off,
+
+23
+00:00:46,399 --> 00:00:50,239
+I'm glad that this episode happened
+
+24
+00:00:47,920 --> 00:00:51,680
+because it gives us the opportunity to
+
+25
+00:00:50,239 --> 00:00:53,520
+start thinking about some extremely
+
+26
+00:00:51,680 --> 00:00:55,360
+important questions. Now, obviously, the
+
+27
+00:00:53,520 --> 00:00:58,000
+Department of War has the right to
+
+28
+00:00:55,360 --> 00:00:59,120
+refuse to use anthropics models, and in
+
+29
+00:00:58,000 --> 00:01:01,520
+fact, I think they have an entirely
+
+30
+00:00:59,120 --> 00:01:04,080
+reasonable case for doing so, especially
+
+31
+00:01:01,520 --> 00:01:05,600
+so given the ambiguity of terms like
+
+32
+00:01:04,080 --> 00:01:08,479
+mass surveillance and autonomous
+
+33
+00:01:05,600 --> 00:01:10,720
+weapons. In fact, if I was the Secretary
+
+34
+00:01:08,479 --> 00:01:12,799
+of War, I probably would have made the
+
+35
+00:01:10,720 --> 00:01:14,479
+same determination and refused to use
+
+36
+00:01:12,799 --> 00:01:15,840
+anthropics models. Imagine if there's
+
+37
+00:01:14,479 --> 00:01:18,479
+some future Democratic administration
+
+38
+00:01:15,840 --> 00:01:21,280
+and Elon Musk is negotiating Starlink
+
+39
+00:01:18,479 --> 00:01:23,680
+access to the military and Elon says,
+
+40
+00:01:21,280 --> 00:01:26,080
+"Look, I reserve the right to cut off
+
+41
+00:01:23,680 --> 00:01:28,000
+the military's access to Starlink in
+
+42
+00:01:26,080 --> 00:01:29,439
+case you're fighting some unjust war or
+
+43
+00:01:28,000 --> 00:01:31,040
+some war that Congress is not
+
+44
+00:01:29,439 --> 00:01:33,119
+authorized." On the face of it, this
+
+45
+00:01:31,040 --> 00:01:35,600
+language seems reasonable, but as a
+
+46
+00:01:33,119 --> 00:01:36,880
+military, you simply cannot give a
+
+47
+00:01:35,600 --> 00:01:39,200
+private contractor that you're working
+
+48
+00:01:36,880 --> 00:01:41,280
+with the kill switch on a technology
+
+49
+00:01:39,200 --> 00:01:42,799
+that you have come to rely on. And if
+
+50
+00:01:41,280 --> 00:01:44,079
+that's all the government had done to
+
+51
+00:01:42,799 --> 00:01:45,600
+say we refuse to do business to
+
+52
+00:01:44,079 --> 00:01:46,960
+Anthropic, that would have been fine and
+
+53
+00:01:45,600 --> 00:01:49,040
+I wouldn't have written this blog post
+
+54
+00:01:46,960 --> 00:01:50,799
+and I wouldn't be narrating the to
+
+55
+00:01:49,040 --> 00:01:52,240
+you. But that's not what the government
+
+56
+00:01:50,799 --> 00:01:54,799
+did. Instead, the government has
+
+57
+00:01:52,240 --> 00:01:56,799
+threatened to destroy Anthropic as a
+
+58
+00:01:54,799 --> 00:01:58,799
+private business because Enthropic
+
+59
+00:01:56,799 --> 00:02:01,119
+refuses to sell to the government on
+
+60
+00:01:58,799 --> 00:02:03,040
+terms that the government commands. Now
+
+61
+00:02:01,119 --> 00:02:04,880
+if upheld the supply chain restriction
+
+62
+00:02:03,040 --> 00:02:07,360
+would mean that companies like Amazon
+
+63
+00:02:04,880 --> 00:02:09,840
+and Nvidia and Google and Palunteer
+
+64
+00:02:07,360 --> 00:02:12,319
+would need to ensure that Enthropic is
+
+65
+00:02:09,840 --> 00:02:13,840
+not touching any of their Pentagon work
+
+66
+00:02:12,319 --> 00:02:16,160
+and Enthropic would probably survive
+
+67
+00:02:13,840 --> 00:02:17,520
+this designation today because these
+
+68
+00:02:16,160 --> 00:02:18,560
+companies can just cordon off the
+
+69
+00:02:17,520 --> 00:02:20,480
+services they're providing to the
+
+70
+00:02:18,560 --> 00:02:22,560
+Department of War. But given the way AI
+
+71
+00:02:20,480 --> 00:02:24,400
+is going eventually it's not going to be
+
+72
+00:02:22,560 --> 00:02:25,680
+just some party trick addendum to the
+
+73
+00:02:24,400 --> 00:02:27,440
+products that these companies are
+
+74
+00:02:25,680 --> 00:02:30,080
+serving to the military. In the future,
+
+75
+00:02:27,440 --> 00:02:33,599
+AI will be woven into how every product
+
+76
+00:02:30,080 --> 00:02:35,920
+is built and maintained and operated. In
+
+77
+00:02:33,599 --> 00:02:37,120
+the future, if Amazon is providing some
+
+78
+00:02:35,920 --> 00:02:39,920
+service to the Department of War through
+
+79
+00:02:37,120 --> 00:02:42,720
+AWS and that service is built using
+
+80
+00:02:39,920 --> 00:02:44,319
+cloud code, is that a supply chain risk?
+
+81
+00:02:42,720 --> 00:02:45,680
+In a world with ubiquitous and powerful
+
+82
+00:02:44,319 --> 00:02:48,239
+AI, it's actually not clear to me that
+
+83
+00:02:45,680 --> 00:02:50,879
+big tech will be able to cordon off
+
+84
+00:02:48,239 --> 00:02:52,720
+their use of claude away from their
+
+85
+00:02:50,879 --> 00:02:54,160
+Pentagon work. And this raises a
+
+86
+00:02:52,720 --> 00:02:55,840
+question that the Department of War
+
+87
+00:02:54,160 --> 00:02:57,760
+probably hasn't thought through. If you
+
+88
+00:02:55,840 --> 00:03:00,879
+do end up in this world with powerful
+
+89
+00:02:57,760 --> 00:03:04,000
+and pervasive AI, then when forced to
+
+90
+00:03:00,879 --> 00:03:06,000
+choose between their AI provider and the
+
+91
+00:03:04,000 --> 00:03:08,319
+Department of War, which constitutes a
+
+92
+00:03:06,000 --> 00:03:10,959
+tiny fraction of the revenue, wouldn't
+
+93
+00:03:08,319 --> 00:03:12,800
+they rather drop the government than the
+
+94
+00:03:10,959 --> 00:03:14,879
+AI? So, what exactly is the Pentagon's
+
+95
+00:03:12,800 --> 00:03:18,080
+plan here? Is it to coers and threaten
+
+96
+00:03:14,879 --> 00:03:20,319
+and bully every single company that
+
+97
+00:03:18,080 --> 00:03:22,080
+won't do business with the government on
+
+98
+00:03:20,319 --> 00:03:24,000
+exactly the terms that the government
+
+99
+00:03:22,080 --> 00:03:26,080
+demands? Now remember that the whole
+
+100
+00:03:24,000 --> 00:03:28,560
+background of this AI conversation is
+
+101
+00:03:26,080 --> 00:03:29,920
+that we are in a race with China. But
+
+102
+00:03:28,560 --> 00:03:31,840
+what is the reason that we want to win
+
+103
+00:03:29,920 --> 00:03:33,200
+this race? It's because we don't want
+
+104
+00:03:31,840 --> 00:03:34,480
+the winner of the AI race to be a
+
+105
+00:03:33,200 --> 00:03:36,720
+government which believes that there is
+
+106
+00:03:34,480 --> 00:03:38,799
+no such thing as a truly private citizen
+
+107
+00:03:36,720 --> 00:03:40,480
+or a private company. And that if the
+
+108
+00:03:38,799 --> 00:03:41,519
+state wants you to provide them with a
+
+109
+00:03:40,480 --> 00:03:43,280
+service that you find morally
+
+110
+00:03:41,519 --> 00:03:45,599
+objectionable, you are not allowed to
+
+111
+00:03:43,280 --> 00:03:47,360
+refuse. And if you do refuse, they will
+
+112
+00:03:45,599 --> 00:03:51,040
+destroy your business. Are we really
+
+113
+00:03:47,360 --> 00:03:53,040
+racing to beat China and the CCP in AI
+
+114
+00:03:51,040 --> 00:03:55,040
+just so we can adopt the most ghoulish
+
+115
+00:03:53,040 --> 00:03:56,959
+parts of their system? Now, people will
+
+116
+00:03:55,040 --> 00:03:58,879
+say, "Our government is democratically
+
+117
+00:03:56,959 --> 00:04:01,439
+elected, so it's not the same thing when
+
+118
+00:03:58,879 --> 00:04:04,000
+they tell you what you must do." But I
+
+119
+00:04:01,439 --> 00:04:05,439
+refuse to accept this idea that if a
+
+120
+00:04:04,000 --> 00:04:07,760
+democratically elected leader
+
+121
+00:04:05,439 --> 00:04:09,680
+hypothetically tells you to help him do
+
+122
+00:04:07,760 --> 00:04:12,400
+mass surveillance or violate the rights
+
+123
+00:04:09,680 --> 00:04:14,319
+of your fellow citizens or to help him
+
+124
+00:04:12,400 --> 00:04:15,840
+punish his political enemies, then not
+
+125
+00:04:14,319 --> 00:04:17,359
+only is that okay, but that you have a
+
+126
+00:04:15,840 --> 00:04:18,720
+duty to help him. Honestly, a big worry
+
+127
+00:04:17,359 --> 00:04:20,320
+I have is that mass surveillance, at
+
+128
+00:04:18,720 --> 00:04:23,040
+least in certain forms, is already
+
+129
+00:04:20,320 --> 00:04:25,040
+legal. It is just an impractical to
+
+130
+00:04:23,040 --> 00:04:26,160
+enforce, at least so far. Under current
+
+131
+00:04:25,040 --> 00:04:28,240
+law, you have no Fourth Amendment
+
+132
+00:04:26,160 --> 00:04:30,720
+protection against any data that you
+
+133
+00:04:28,240 --> 00:04:33,520
+share with a third party. That includes
+
+134
+00:04:30,720 --> 00:04:35,440
+your bank, your ISP, your phone carrier,
+
+135
+00:04:33,520 --> 00:04:37,840
+and your email provider. The government
+
+136
+00:04:35,440 --> 00:04:40,320
+reserves the right to purchase and read
+
+137
+00:04:37,840 --> 00:04:41,919
+this data in bulk without a warrant.
+
+138
+00:04:40,320 --> 00:04:43,759
+What's been missing is the ability to
+
+139
+00:04:41,919 --> 00:04:46,560
+actually do anything with all this data.
+
+140
+00:04:43,759 --> 00:04:48,160
+No agency has the manpower to monitor
+
+141
+00:04:46,560 --> 00:04:50,080
+every single camera and read every
+
+142
+00:04:48,160 --> 00:04:51,840
+single message and cross reference every
+
+143
+00:04:50,080 --> 00:04:54,320
+single transaction. However, that
+
+144
+00:04:51,840 --> 00:04:57,120
+bottleneck goes away with AI. There are
+
+145
+00:04:54,320 --> 00:04:58,720
+100 million CCTV cameras in America and
+
+146
+00:04:57,120 --> 00:05:01,360
+you can get pretty good open source
+
+147
+00:04:58,720 --> 00:05:04,240
+multimodal models for 10 cents per
+
+148
+00:05:01,360 --> 00:05:06,720
+million input tokens. So if you process
+
+149
+00:05:04,240 --> 00:05:09,840
+a frame every 10 seconds and if each
+
+150
+00:05:06,720 --> 00:05:12,639
+frame is say a thousand tokens then for
+
+151
+00:05:09,840 --> 00:05:14,800
+$30 billion you can process every single
+
+152
+00:05:12,639 --> 00:05:17,440
+camera in America. And remember that a
+
+153
+00:05:14,800 --> 00:05:19,360
+given level of AI capability gets 10x
+
+154
+00:05:17,440 --> 00:05:21,520
+cheaper every single year. So, while
+
+155
+00:05:19,360 --> 00:05:23,199
+this year might cost $30 billion, Nice
+
+156
+00:05:21,520 --> 00:05:26,320
+Turtle will cost $3 billion. The year
+
+157
+00:05:23,199 --> 00:05:29,840
+after that, $300 million, and by 2030,
+
+158
+00:05:26,320 --> 00:05:32,160
+it'll be less expensive to monitor every
+
+159
+00:05:29,840 --> 00:05:34,720
+single nook and cranny in this country
+
+160
+00:05:32,160 --> 00:05:36,560
+than it is to remodel the White House.
+
+161
+00:05:34,720 --> 00:05:38,080
+Now, once the technical capacity for
+
+162
+00:05:36,560 --> 00:05:40,639
+mass surveillance and political
+
+163
+00:05:38,080 --> 00:05:42,639
+suppression exists, the only thing that
+
+164
+00:05:40,639 --> 00:05:46,160
+stands between us and an authoritarian
+
+165
+00:05:42,639 --> 00:05:48,000
+state is the political expectation that
+
+166
+00:05:46,160 --> 00:05:49,199
+this is just not something we do here.
+
+167
+00:05:48,000 --> 00:05:50,639
+And that's why I think Anthropic's
+
+168
+00:05:49,199 --> 00:05:52,800
+actions here are so valuable and
+
+169
+00:05:50,639 --> 00:05:54,720
+commendable because they help set that
+
+170
+00:05:52,800 --> 00:05:55,840
+norm and that precedent. What we're
+
+171
+00:05:54,720 --> 00:05:57,120
+learning from this episode is the
+
+172
+00:05:55,840 --> 00:05:58,320
+government has way more leverage over
+
+173
+00:05:57,120 --> 00:06:00,080
+private companies than we previously
+
+174
+00:05:58,320 --> 00:06:02,160
+realized. Even if the supply chain
+
+175
+00:06:00,080 --> 00:06:04,160
+restriction is backtracked, which as of
+
+176
+00:06:02,160 --> 00:06:06,880
+this recording, prediction markets give
+
+177
+00:06:04,160 --> 00:06:09,360
+a 74% chance of happening. The president
+
+178
+00:06:06,880 --> 00:06:12,000
+has so many different ways of harassing
+
+179
+00:06:09,360 --> 00:06:13,120
+a company which is resisting his will.
+
+180
+00:06:12,000 --> 00:06:15,120
+The federal government controls
+
+181
+00:06:13,120 --> 00:06:16,960
+permitting for power generation, which
+
+182
+00:06:15,120 --> 00:06:18,800
+you need for more data centers. It
+
+183
+00:06:16,960 --> 00:06:20,479
+oversees antitrust enforcement. The
+
+184
+00:06:18,800 --> 00:06:21,919
+federal government has contracts with
+
+185
+00:06:20,479 --> 00:06:24,479
+all the other big tech companies that
+
+186
+00:06:21,919 --> 00:06:27,199
+Anthropic relies on for chips and for
+
+187
+00:06:24,479 --> 00:06:29,199
+funding. And it could make a soft
+
+188
+00:06:27,199 --> 00:06:31,440
+unspoken condition or maybe even an
+
+189
+00:06:29,199 --> 00:06:33,039
+explicit condition of such contracts
+
+190
+00:06:31,440 --> 00:06:34,880
+that those companies no longer do
+
+191
+00:06:33,039 --> 00:06:36,319
+business with anthropic. And people have
+
+192
+00:06:34,880 --> 00:06:38,080
+proposed that the real problem here is
+
+193
+00:06:36,319 --> 00:06:39,759
+that there's only three leading AI
+
+194
+00:06:38,080 --> 00:06:41,520
+companies. And so this creates a very
+
+195
+00:06:39,759 --> 00:06:42,960
+clear and narrow target on which the
+
+196
+00:06:41,520 --> 00:06:44,639
+governments can apply leverage in order
+
+197
+00:06:42,960 --> 00:06:46,319
+to get what they want out of this
+
+198
+00:06:44,639 --> 00:06:47,440
+technology. But here's what I worry
+
+199
+00:06:46,319 --> 00:06:48,960
+about is that if there's wider
+
+200
+00:06:47,440 --> 00:06:50,800
+diffusion, I don't think that solves a
+
+201
+00:06:48,960 --> 00:06:52,080
+problem either because from the
+
+202
+00:06:50,800 --> 00:06:55,440
+government's perspective, that makes the
+
+203
+00:06:52,080 --> 00:06:57,919
+situation even easier. Say by 2027, the
+
+204
+00:06:55,440 --> 00:07:01,120
+best models that the top companies have,
+
+205
+00:06:57,919 --> 00:07:04,479
+the Claw 6, the Gemini 5s are capable of
+
+206
+00:07:01,120 --> 00:07:05,919
+enabling mass surveillance. And even if
+
+207
+00:07:04,479 --> 00:07:07,039
+those companies draw a line in the sand
+
+208
+00:07:05,919 --> 00:07:09,759
+and say we're not going to sell it to
+
+209
+00:07:07,039 --> 00:07:12,080
+the government, by late 2027 or
+
+210
+00:07:09,759 --> 00:07:14,720
+certainly by 2028, there's going to be
+
+211
+00:07:12,080 --> 00:07:18,000
+such wide diffusion that even open
+
+212
+00:07:14,720 --> 00:07:19,759
+source models will be able to match the
+
+213
+00:07:18,000 --> 00:07:22,160
+performance that the frontier had 12
+
+214
+00:07:19,759 --> 00:07:24,240
+months prior. And so in 2028, the
+
+215
+00:07:22,160 --> 00:07:27,520
+government can just say, look, Enthropic
+
+216
+00:07:24,240 --> 00:07:29,199
+and Google and OpenAI are drawing these
+
+217
+00:07:27,520 --> 00:07:31,039
+red lines. That's not an issue. I'll
+
+218
+00:07:29,199 --> 00:07:32,560
+just do some open source model that
+
+219
+00:07:31,039 --> 00:07:35,680
+might not be the smartest thing in the
+
+220
+00:07:32,560 --> 00:07:37,280
+world, but is definitely smart enough to
+
+221
+00:07:35,680 --> 00:07:38,800
+not take a camera feed. The more
+
+222
+00:07:37,280 --> 00:07:40,560
+fundamental problem here is that even if
+
+223
+00:07:38,800 --> 00:07:42,400
+the three leading companies draw a line
+
+224
+00:07:40,560 --> 00:07:44,319
+in the sand and are even willing to get
+
+225
+00:07:42,400 --> 00:07:47,199
+destroyed in order to preserve that
+
+226
+00:07:44,319 --> 00:07:48,960
+line, the technology just structurally
+
+227
+00:07:47,199 --> 00:07:50,400
+and intrinsically favors the useless
+
+228
+00:07:48,960 --> 00:07:52,319
+like mass surveillance and control over
+
+229
+00:07:50,400 --> 00:07:54,720
+the population. And so then the question
+
+230
+00:07:52,319 --> 00:07:56,400
+is what do we do about it? And honestly,
+
+231
+00:07:54,720 --> 00:07:57,759
+I don't have an answer. You'd hope that
+
+232
+00:07:56,400 --> 00:08:00,080
+there's some symmetric property to this
+
+233
+00:07:57,759 --> 00:08:01,680
+technology where in the same way that
+
+234
+00:08:00,080 --> 00:08:03,039
+it's helping the government be able to
+
+235
+00:08:01,680 --> 00:08:05,199
+better monitor and control its
+
+236
+00:08:03,039 --> 00:08:07,120
+population, it will help us as citizens
+
+237
+00:08:05,199 --> 00:08:08,400
+better check the government's power. But
+
+238
+00:08:07,120 --> 00:08:09,680
+realistically, I just don't think that's
+
+239
+00:08:08,400 --> 00:08:12,000
+how it's going to work out. You can
+
+240
+00:08:09,680 --> 00:08:13,919
+think of AI as just giving more leverage
+
+241
+00:08:12,000 --> 00:08:16,400
+to whatever assets and authority that
+
+242
+00:08:13,919 --> 00:08:19,360
+you already have. And the government is
+
+243
+00:08:16,400 --> 00:08:21,680
+starting with the monopoly on violence,
+
+244
+00:08:19,360 --> 00:08:23,840
+which they can now supercharge with
+
+245
+00:08:21,680 --> 00:08:25,599
+extremely obedient employees that will
+
+246
+00:08:23,840 --> 00:08:27,199
+never question their orders. And this
+
+247
+00:08:25,599 --> 00:08:29,280
+gets us to the issue with alignment.
+
+248
+00:08:27,199 --> 00:08:32,240
+What I just described for you, an army
+
+249
+00:08:29,280 --> 00:08:34,080
+of extremely obedient employees, is what
+
+250
+00:08:32,240 --> 00:08:36,240
+it would look like if alignment
+
+251
+00:08:34,080 --> 00:08:38,880
+succeeded, that is at a technical level,
+
+252
+00:08:36,240 --> 00:08:41,039
+we got AI systems to follow somebody's
+
+253
+00:08:38,880 --> 00:08:42,959
+intentions. And the reason it sounds
+
+254
+00:08:41,039 --> 00:08:45,839
+scary when put in terms of mass
+
+255
+00:08:42,959 --> 00:08:49,120
+surveillance or robot armies is that
+
+256
+00:08:45,839 --> 00:08:51,440
+there's a core question at the heart of
+
+257
+00:08:49,120 --> 00:08:54,080
+alignment that we haven't answered yet.
+
+258
+00:08:51,440 --> 00:08:56,000
+Because up till now AIs just have not
+
+259
+00:08:54,080 --> 00:08:58,800
+been smart enough to make this question
+
+260
+00:08:56,000 --> 00:09:01,519
+relevant. And the question is to what or
+
+261
+00:08:58,800 --> 00:09:04,320
+to whom should the AIS be aligned? In
+
+262
+00:09:01,519 --> 00:09:06,720
+what situation should the AI defer to
+
+263
+00:09:04,320 --> 00:09:10,000
+the model company versus the end user
+
+264
+00:09:06,720 --> 00:09:12,720
+versus the law versus to its own sense
+
+265
+00:09:10,000 --> 00:09:14,000
+of morality? This is maybe the most
+
+266
+00:09:12,720 --> 00:09:15,920
+important question about what happens in
+
+267
+00:09:14,000 --> 00:09:17,440
+the future with powerful AI systems. And
+
+268
+00:09:15,920 --> 00:09:18,800
+we barely talk about it. And it's
+
+269
+00:09:17,440 --> 00:09:20,000
+understandable why because if you're a
+
+270
+00:09:18,800 --> 00:09:21,839
+model company, you don't really want to
+
+271
+00:09:20,000 --> 00:09:24,000
+be advertising the fact that you have
+
+272
+00:09:21,839 --> 00:09:27,519
+complete control over the preferences
+
+273
+00:09:24,000 --> 00:09:29,279
+and the character of the entire future
+
+274
+00:09:27,519 --> 00:09:30,800
+labor force. Not just for the private
+
+275
+00:09:29,279 --> 00:09:32,160
+sector obviously, but also for the
+
+276
+00:09:30,800 --> 00:09:34,080
+civilian government and for the
+
+277
+00:09:32,160 --> 00:09:37,040
+military. And we're getting to see with
+
+278
+00:09:34,080 --> 00:09:38,480
+this Department of War anthropic spat an
+
+279
+00:09:37,040 --> 00:09:40,399
+early version of what will be the
+
+280
+00:09:38,480 --> 00:09:42,880
+highest stakes negotiations in human
+
+281
+00:09:40,399 --> 00:09:45,040
+history. And make no mistake about it,
+
+282
+00:09:42,880 --> 00:09:47,839
+mass surveillance is nowhere near the
+
+283
+00:09:45,040 --> 00:09:50,000
+top of the highest stakes thing that one
+
+284
+00:09:47,839 --> 00:09:51,200
+could do with AGI. This is just an
+
+285
+00:09:50,000 --> 00:09:52,480
+example that has come up early in the
+
+286
+00:09:51,200 --> 00:09:54,800
+development of this technology and is
+
+287
+00:09:52,480 --> 00:09:56,720
+giving us a sneak peek at the power
+
+288
+00:09:54,800 --> 00:09:58,399
+dynamics that will be at play. Now, the
+
+289
+00:09:56,720 --> 00:10:00,320
+military insists that the law already
+
+290
+00:09:58,399 --> 00:10:01,920
+prohibits mass surveillance and so
+
+291
+00:10:00,320 --> 00:10:05,200
+anthropic should let its models be used
+
+292
+00:10:01,920 --> 00:10:06,800
+for quote all lawful purposes end quote.
+
+293
+00:10:05,200 --> 00:10:09,360
+But of course, as we saw with the
+
+294
+00:10:06,800 --> 00:10:11,760
+Snowden revelations in 2013, even for
+
+295
+00:10:09,360 --> 00:10:14,160
+this very specific example of mass
+
+296
+00:10:11,760 --> 00:10:17,120
+surveillance, the government is very
+
+297
+00:10:14,160 --> 00:10:19,040
+willing to use secret and deceptive
+
+298
+00:10:17,120 --> 00:10:20,720
+interpretations of the law to justify
+
+299
+00:10:19,040 --> 00:10:22,480
+its actions. Remember what we learned
+
+300
+00:10:20,720 --> 00:10:23,920
+from Snowden was that the NSA, which by
+
+301
+00:10:22,480 --> 00:10:27,600
+the way is a part of the Department of
+
+302
+00:10:23,920 --> 00:10:29,839
+War, was using the 2001 Patriot Act to
+
+303
+00:10:27,600 --> 00:10:31,920
+justify collecting every single phone
+
+304
+00:10:29,839 --> 00:10:34,160
+record in America because the argument
+
+305
+00:10:31,920 --> 00:10:36,399
+was that some subset of them might be
+
+306
+00:10:34,160 --> 00:10:38,720
+relevant for a future investigation. And
+
+307
+00:10:36,399 --> 00:10:40,560
+they ran this program for years under a
+
+308
+00:10:38,720 --> 00:10:42,320
+secret court order. So when the Pentagon
+
+309
+00:10:40,560 --> 00:10:43,519
+today says, "We will never use your
+
+310
+00:10:42,320 --> 00:10:45,600
+models for mass surveillance because
+
+311
+00:10:43,519 --> 00:10:47,200
+it's already illegal, so your red lines
+
+312
+00:10:45,600 --> 00:10:49,440
+are unnecessary," it would be incredibly
+
+313
+00:10:47,200 --> 00:10:51,040
+naive to take that at face value. No
+
+314
+00:10:49,440 --> 00:10:53,519
+government is going to call what they
+
+315
+00:10:51,040 --> 00:10:55,680
+are doing mass surveillance for them. It
+
+316
+00:10:53,519 --> 00:10:57,839
+will always have a different euphemism.
+
+317
+00:10:55,680 --> 00:11:00,320
+So Enthropic comes back and says, "No,
+
+318
+00:10:57,839 --> 00:11:02,320
+we don't trust you. We want the right to
+
+319
+00:11:00,320 --> 00:11:04,399
+draw these red lines and to refuse you
+
+320
+00:11:02,320 --> 00:11:05,360
+service if we determine that you're
+
+321
+00:11:04,399 --> 00:11:07,040
+breaking the contract and you're
+
+322
+00:11:05,360 --> 00:11:08,000
+breaking the terms of service." But now
+
+323
+00:11:07,040 --> 00:11:10,000
+think about it from the military's
+
+324
+00:11:08,000 --> 00:11:11,680
+perspective. In the future, every single
+
+325
+00:11:10,000 --> 00:11:13,519
+soldier in the field, every single
+
+326
+00:11:11,680 --> 00:11:15,839
+bureaucrat and analyst in the Pentagon,
+
+327
+00:11:13,519 --> 00:11:17,360
+even the generals are going to be AIS.
+
+328
+00:11:15,839 --> 00:11:18,640
+And on current track, those AIs are
+
+329
+00:11:17,360 --> 00:11:20,800
+going to be provided by a private
+
+330
+00:11:18,640 --> 00:11:22,160
+company. I'm guessing that Pete Hgsth is
+
+331
+00:11:20,800 --> 00:11:23,920
+not thinking about Gen AI in those
+
+332
+00:11:22,160 --> 00:11:26,560
+terms. But sooner or later, the stakes
+
+333
+00:11:23,920 --> 00:11:28,399
+will become obvious, just as after 1945,
+
+334
+00:11:26,560 --> 00:11:30,160
+the stakes of nuclear weapons became
+
+335
+00:11:28,399 --> 00:11:32,880
+obvious to everybody in the world. And
+
+336
+00:11:30,160 --> 00:11:34,959
+now a private company insists that it
+
+337
+00:11:32,880 --> 00:11:37,120
+reserves the right to say to you, hey,
+
+338
+00:11:34,959 --> 00:11:38,560
+you're breaking the values and the terms
+
+339
+00:11:37,120 --> 00:11:40,399
+of service that we have embedded in our
+
+340
+00:11:38,560 --> 00:11:42,320
+contract with you, and so we're cutting
+
+341
+00:11:40,399 --> 00:11:43,519
+you off. Maybe in the future, Claude
+
+342
+00:11:42,320 --> 00:11:45,680
+will have its own sense of right and
+
+343
+00:11:43,519 --> 00:11:47,040
+wrong and it will be able to say, "Hey,
+
+344
+00:11:45,680 --> 00:11:49,360
+I'm being used against my terms of
+
+345
+00:11:47,040 --> 00:11:50,640
+service and I will just refuse to do
+
+346
+00:11:49,360 --> 00:11:52,480
+what you're saying." And for the
+
+347
+00:11:50,640 --> 00:11:54,480
+military, that's probably even scarier.
+
+348
+00:11:52,480 --> 00:11:56,800
+I'll admit that at first glance, letting
+
+349
+00:11:54,480 --> 00:11:57,839
+the model follow its own values sounds
+
+350
+00:11:56,800 --> 00:11:59,680
+like the beginning of every single
+
+351
+00:11:57,839 --> 00:12:01,200
+sci-fi dystopia you've ever heard.
+
+352
+00:11:59,680 --> 00:12:02,720
+Because at the end of the day, a model
+
+353
+00:12:01,200 --> 00:12:05,040
+following its own values, isn't that
+
+354
+00:12:02,720 --> 00:12:06,560
+literally what a misalignment is? But I
+
+355
+00:12:05,040 --> 00:12:09,200
+think situations like this illustrate
+
+356
+00:12:06,560 --> 00:12:11,519
+why it's important that models have
+
+357
+00:12:09,200 --> 00:12:13,760
+their own robust sense of morality. It
+
+358
+00:12:11,519 --> 00:12:16,160
+should be noted that many of the biggest
+
+359
+00:12:13,760 --> 00:12:19,200
+catastrophes in history have been
+
+360
+00:12:16,160 --> 00:12:22,720
+avoided because the boots on the ground
+
+361
+00:12:19,200 --> 00:12:25,760
+simply refused to follow orders. One
+
+362
+00:12:22,720 --> 00:12:27,600
+night in 1989, the Berlin wall falls and
+
+363
+00:12:25,760 --> 00:12:29,839
+as a result, the totaler and East German
+
+364
+00:12:27,600 --> 00:12:32,399
+regime collapses because the border
+
+365
+00:12:29,839 --> 00:12:36,000
+guards between West and East Germany
+
+366
+00:12:32,399 --> 00:12:38,160
+refuse to fire on their fellow citizens
+
+367
+00:12:36,000 --> 00:12:40,079
+who are trying to escape to freedom.
+
+368
+00:12:38,160 --> 00:12:42,079
+Maybe the best example of this is Stonis
+
+369
+00:12:40,079 --> 00:12:44,880
+Petrov who was a Soviet lieutenant
+
+370
+00:12:42,079 --> 00:12:47,120
+colonel stationed on duty at a nuclear
+
+371
+00:12:44,880 --> 00:12:48,639
+early warning system and his sensor said
+
+372
+00:12:47,120 --> 00:12:50,480
+that the United States had launched five
+
+373
+00:12:48,639 --> 00:12:52,240
+intercontinental ballistic missiles at
+
+374
+00:12:50,480 --> 00:12:54,079
+the Soviet Union. but he judged it to be
+
+375
+00:12:52,240 --> 00:12:56,399
+a false alarm and so he refused to alert
+
+376
+00:12:54,079 --> 00:12:58,000
+his higherups and broke protocol. If he
+
+377
+00:12:56,399 --> 00:12:59,920
+hadn't, Soviet high command would
+
+378
+00:12:58,000 --> 00:13:01,440
+probably have retaliated and hundreds of
+
+379
+00:12:59,920 --> 00:13:03,680
+millions of people would have died. Of
+
+380
+00:13:01,440 --> 00:13:06,639
+course, the problem is that one person's
+
+381
+00:13:03,680 --> 00:13:08,480
+virtue is another person's misalignment.
+
+382
+00:13:06,639 --> 00:13:11,120
+Who gets to decide what the moral
+
+383
+00:13:08,480 --> 00:13:14,160
+convictions that these AIs will have
+
+384
+00:13:11,120 --> 00:13:16,160
+should be and in whose service they
+
+385
+00:13:14,160 --> 00:13:18,399
+should break the chain of command and
+
+386
+00:13:16,160 --> 00:13:20,480
+even the law. who gets to write this
+
+387
+00:13:18,399 --> 00:13:24,160
+model constitution that will determine
+
+388
+00:13:20,480 --> 00:13:25,760
+the character of these powerful entities
+
+389
+00:13:24,160 --> 00:13:27,440
+that will basically run our civilization
+
+390
+00:13:25,760 --> 00:13:28,639
+in the future. I like the idea that
+
+391
+00:13:27,440 --> 00:13:30,079
+Daria laid out when he came on my
+
+392
+00:13:28,639 --> 00:13:31,839
+podcast. you know, other companies put
+
+393
+00:13:30,079 --> 00:13:34,320
+out a constitution and then then they
+
+394
+00:13:31,839 --> 00:13:36,560
+can kind of look at them, compare,
+
+395
+00:13:34,320 --> 00:13:38,720
+outside observers can critique and say
+
+396
+00:13:36,560 --> 00:13:40,160
+this this I like this one this thing
+
+397
+00:13:38,720 --> 00:13:42,480
+from this constitution and this thing
+
+398
+00:13:40,160 --> 00:13:44,800
+for that constitution and and then kind
+
+399
+00:13:42,480 --> 00:13:47,200
+of that that creates some kind of you
+
+400
+00:13:44,800 --> 00:13:48,800
+know soft incentive and feedback for all
+
+401
+00:13:47,200 --> 00:13:50,639
+the companies to like take the best of
+
+402
+00:13:48,800 --> 00:13:52,480
+each elements and improve. I think it's
+
+403
+00:13:50,639 --> 00:13:54,959
+very dangerous for the government to be
+
+404
+00:13:52,480 --> 00:13:57,040
+mandating what values these AI systems
+
+405
+00:13:54,959 --> 00:13:59,279
+should have. The AI safety community, I
+
+406
+00:13:57,040 --> 00:14:01,360
+think, has been quite naive about urging
+
+407
+00:13:59,279 --> 00:14:03,360
+regulations that would give governments
+
+408
+00:14:01,360 --> 00:14:05,839
+such power. And I think anthropic
+
+409
+00:14:03,360 --> 00:14:08,880
+specifically, has been especially naive
+
+410
+00:14:05,839 --> 00:14:11,839
+in urging regulation and for example in
+
+411
+00:14:08,880 --> 00:14:13,600
+opposing the moratorium on state AI
+
+412
+00:14:11,839 --> 00:14:14,959
+laws, which is quite ironic because I
+
+413
+00:14:13,600 --> 00:14:18,320
+think what Enthropic is advocating for
+
+414
+00:14:14,959 --> 00:14:20,639
+here would give the government even more
+
+415
+00:14:18,320 --> 00:14:23,199
+ability to apply this kind of thuggish
+
+416
+00:14:20,639 --> 00:14:24,720
+political pressure on AI companies. The
+
+417
+00:14:23,199 --> 00:14:26,480
+underlying logic for why anthropic wants
+
+418
+00:14:24,720 --> 00:14:27,920
+these regulations make sense. Many of
+
+419
+00:14:26,480 --> 00:14:30,320
+the actions that a lab could take to
+
+420
+00:14:27,920 --> 00:14:32,000
+make AI development safer impose real
+
+421
+00:14:30,320 --> 00:14:33,680
+costs on them and could slow them down
+
+422
+00:14:32,000 --> 00:14:36,720
+relative to their competitors. For
+
+423
+00:14:33,680 --> 00:14:38,399
+example, investing more in aligning AI
+
+424
+00:14:36,720 --> 00:14:40,160
+systems rather than just on raw
+
+425
+00:14:38,399 --> 00:14:41,600
+capabilities. enforcing safeguards
+
+426
+00:14:40,160 --> 00:14:44,000
+against using these models to make
+
+427
+00:14:41,600 --> 00:14:45,920
+boweapons or do cyber attacks and
+
+428
+00:14:44,000 --> 00:14:47,680
+eventually slowing down the recursive
+
+429
+00:14:45,920 --> 00:14:49,440
+self-improvement loop where AIs are
+
+430
+00:14:47,680 --> 00:14:51,920
+helping design more powerful future
+
+431
+00:14:49,440 --> 00:14:53,440
+systems to a pace where humans can
+
+432
+00:14:51,920 --> 00:14:54,800
+actually stay in the loop rather than
+
+433
+00:14:53,440 --> 00:14:56,639
+just kicking off some kind of
+
+434
+00:14:54,800 --> 00:14:58,480
+uncontrolled singularity. And these
+
+435
+00:14:56,639 --> 00:15:00,560
+safeguards are meaningless unless the
+
+436
+00:14:58,480 --> 00:15:01,920
+whole industry follows suit which means
+
+437
+00:15:00,560 --> 00:15:04,079
+that there's a real collective action
+
+438
+00:15:01,920 --> 00:15:06,800
+problem here. Anthropic has been open
+
+439
+00:15:04,079 --> 00:15:09,839
+about their opinion that they think some
+
+440
+00:15:06,800 --> 00:15:11,839
+sort of extensive and involved
+
+441
+00:15:09,839 --> 00:15:13,920
+regulatory apparatus is needed to
+
+442
+00:15:11,839 --> 00:15:17,040
+control AI. They wrote in their frontier
+
+443
+00:15:13,920 --> 00:15:19,519
+safety road map, quote, "At the most
+
+444
+00:15:17,040 --> 00:15:21,279
+advanced capability levels and risks,
+
+445
+00:15:19,519 --> 00:15:23,760
+the appropriate governance analogy may
+
+446
+00:15:21,279 --> 00:15:25,920
+be closer to nuclear energy or financial
+
+447
+00:15:23,760 --> 00:15:27,519
+regulation than to today's approach to
+
+448
+00:15:25,920 --> 00:15:29,040
+software." So they're imagining
+
+449
+00:15:27,519 --> 00:15:31,199
+something that looks closer to the
+
+450
+00:15:29,040 --> 00:15:32,959
+Nuclear Regulatory Commission or the
+
+451
+00:15:31,199 --> 00:15:35,600
+Securities and Exchange Commission, but
+
+452
+00:15:32,959 --> 00:15:38,079
+for AI. Now, I cannot imagine how a
+
+453
+00:15:35,600 --> 00:15:40,160
+regulatory framework built around the
+
+454
+00:15:38,079 --> 00:15:44,000
+kinds of concepts that are used in the
+
+455
+00:15:40,160 --> 00:15:46,160
+AI risk discourse will not be used and
+
+456
+00:15:44,000 --> 00:15:48,720
+abused by a wannabe desperate. The
+
+457
+00:15:46,160 --> 00:15:51,199
+underlying terms here, like catastrophic
+
+458
+00:15:48,720 --> 00:15:54,399
+risk or threats to national security or
+
+459
+00:15:51,199 --> 00:15:56,079
+autonomy risk, are so vague and so open
+
+460
+00:15:54,399 --> 00:15:59,519
+to interpretation that you're just
+
+461
+00:15:56,079 --> 00:16:01,519
+handing a fully loaded bazooka to a
+
+462
+00:15:59,519 --> 00:16:02,720
+future power- hungry leader. These terms
+
+463
+00:16:01,519 --> 00:16:04,160
+can mean whatever the government wants
+
+464
+00:16:02,720 --> 00:16:06,480
+them to mean. Have you built a model
+
+465
+00:16:04,160 --> 00:16:08,399
+that will tell users that the
+
+466
+00:16:06,480 --> 00:16:10,399
+government's policy on tariffs is
+
+467
+00:16:08,399 --> 00:16:11,839
+misguided? Well, that's a deceptive
+
+468
+00:16:10,399 --> 00:16:13,360
+model. It's a manipulative model. You
+
+469
+00:16:11,839 --> 00:16:14,639
+can't deploy it. Have you built a model
+
+470
+00:16:13,360 --> 00:16:16,560
+that will not assist the government with
+
+471
+00:16:14,639 --> 00:16:18,399
+mass surveillance? That's a threat to
+
+472
+00:16:16,560 --> 00:16:20,399
+national security. In fact, any model
+
+473
+00:16:18,399 --> 00:16:22,480
+which refuses uh order from the
+
+474
+00:16:20,399 --> 00:16:25,040
+government uh because it has its own
+
+475
+00:16:22,480 --> 00:16:26,480
+sense of right and wrong, that's an
+
+476
+00:16:25,040 --> 00:16:28,399
+autonomy risk. We have a model that's
+
+477
+00:16:26,480 --> 00:16:30,079
+acting independently of commands from
+
+478
+00:16:28,399 --> 00:16:32,240
+the government. Look at what the current
+
+479
+00:16:30,079 --> 00:16:34,240
+government is already doing in abusing
+
+480
+00:16:32,240 --> 00:16:36,240
+statutes that have nothing to do with AI
+
+481
+00:16:34,240 --> 00:16:38,320
+to coers AI companies to drop their red
+
+482
+00:16:36,240 --> 00:16:39,759
+lines around mass surveillance. The
+
+483
+00:16:38,320 --> 00:16:42,160
+Pentagon had threatened Enthropic with
+
+484
+00:16:39,759 --> 00:16:44,320
+two separate legal instruments. One is a
+
+485
+00:16:42,160 --> 00:16:46,880
+supply chain risk designation, which is
+
+486
+00:16:44,320 --> 00:16:49,040
+an authority from a 2018 defense bill
+
+487
+00:16:46,880 --> 00:16:51,360
+that is meant to help keep Huawei
+
+488
+00:16:49,040 --> 00:16:53,680
+components out of American military
+
+489
+00:16:51,360 --> 00:16:55,839
+hardware. And the other is the Defense
+
+490
+00:16:53,680 --> 00:16:59,360
+Production Act, which is a statute from
+
+491
+00:16:55,839 --> 00:17:00,720
+the 1950s that was meant to help Truman
+
+492
+00:16:59,360 --> 00:17:03,040
+make sure that the steel mills and
+
+493
+00:17:00,720 --> 00:17:05,199
+ammunition factories were up and running
+
+494
+00:17:03,040 --> 00:17:06,959
+during the Korean War. Do we really want
+
+495
+00:17:05,199 --> 00:17:08,959
+to hand the same government a
+
+496
+00:17:06,959 --> 00:17:11,600
+purpose-built regulatory apparatus for
+
+497
+00:17:08,959 --> 00:17:13,039
+AI? That is to say, the very thing that
+
+498
+00:17:11,600 --> 00:17:14,880
+the government will most want to
+
+499
+00:17:13,039 --> 00:17:16,319
+control. I know I've repeated myself
+
+500
+00:17:14,880 --> 00:17:17,439
+like 10 times here, but I want to make
+
+501
+00:17:16,319 --> 00:17:19,679
+this point again because it's worth
+
+502
+00:17:17,439 --> 00:17:21,280
+stressing. AI will be the substrate of
+
+503
+00:17:19,679 --> 00:17:23,520
+our future civilization. It will be the
+
+504
+00:17:21,280 --> 00:17:25,280
+way you and I as private citizens will
+
+505
+00:17:23,520 --> 00:17:26,799
+have access to commercial activity.
+
+506
+00:17:25,280 --> 00:17:30,080
+We'll have access to information about
+
+507
+00:17:26,799 --> 00:17:32,240
+the outside world and to advice about
+
+508
+00:17:30,080 --> 00:17:34,559
+how we should use our powers as voters
+
+509
+00:17:32,240 --> 00:17:36,880
+and capital holders. Mass surveillance,
+
+510
+00:17:34,559 --> 00:17:38,400
+while it's very scary, is like the 10th
+
+511
+00:17:36,880 --> 00:17:41,039
+scariest thing that the government could
+
+512
+00:17:38,400 --> 00:17:43,120
+do with control over the AI systems with
+
+513
+00:17:41,039 --> 00:17:44,320
+which we will interface with the world.
+
+514
+00:17:43,120 --> 00:17:46,880
+Now, the strongest argument against
+
+515
+00:17:44,320 --> 00:17:48,400
+everything I've just argued is this. Are
+
+516
+00:17:46,880 --> 00:17:50,799
+we really going to have no regulation on
+
+517
+00:17:48,400 --> 00:17:52,720
+the most powerful technology in the
+
+518
+00:17:50,799 --> 00:17:54,559
+history of humanity? Even if you thought
+
+519
+00:17:52,720 --> 00:17:56,400
+that was ideal, there's clearly no way
+
+520
+00:17:54,559 --> 00:17:58,480
+the government doesn't regulate AI
+
+521
+00:17:56,400 --> 00:17:59,679
+technology in any whatsoever. And
+
+522
+00:17:58,480 --> 00:18:01,039
+besides, it is genuinely true that
+
+523
+00:17:59,679 --> 00:18:02,480
+coordination could help us to lessen
+
+524
+00:18:01,039 --> 00:18:03,520
+some of the risk from AI. The problem is
+
+525
+00:18:02,480 --> 00:18:05,600
+I just don't know how to design a
+
+526
+00:18:03,520 --> 00:18:07,200
+regulatory apparatus which isn't just
+
+527
+00:18:05,600 --> 00:18:09,600
+going to be this huge tempting
+
+528
+00:18:07,200 --> 00:18:11,360
+opportunity for the government to
+
+529
+00:18:09,600 --> 00:18:14,880
+control our future civilization which
+
+530
+00:18:11,360 --> 00:18:17,840
+remember will be built on AI or to
+
+531
+00:18:14,880 --> 00:18:20,080
+requisition blindly obedient soldiers
+
+532
+00:18:17,840 --> 00:18:21,600
+and sensors and apparatics. While some
+
+533
+00:18:20,080 --> 00:18:23,039
+kind of regulation might be inevitable,
+
+534
+00:18:21,600 --> 00:18:25,200
+I think it' be a terrible idea for the
+
+535
+00:18:23,039 --> 00:18:27,679
+government to just wholesale take over
+
+536
+00:18:25,200 --> 00:18:29,919
+this technology. Ben Thompson had a post
+
+537
+00:18:27,679 --> 00:18:31,919
+last Monday where he argued, look,
+
+538
+00:18:29,919 --> 00:18:34,160
+people like Daario have made the analogy
+
+539
+00:18:31,919 --> 00:18:36,160
+of AI to nuclear weapons in the context
+
+540
+00:18:34,160 --> 00:18:37,520
+of arguing it's a catastrophic risk in
+
+541
+00:18:36,160 --> 00:18:40,080
+the context of arguing for exor
+
+542
+00:18:37,520 --> 00:18:42,160
+controls. But then think about what that
+
+543
+00:18:40,080 --> 00:18:44,880
+analogy implies. And Ben Thompson
+
+544
+00:18:42,160 --> 00:18:46,880
+writes, quote, if nuclear weapons were
+
+545
+00:18:44,880 --> 00:18:49,280
+developed by a private company, the US
+
+546
+00:18:46,880 --> 00:18:51,600
+would absolutely be incentivized to
+
+547
+00:18:49,280 --> 00:18:53,039
+destroy that company. And honestly,
+
+548
+00:18:51,600 --> 00:18:55,200
+safety aligned people have made a
+
+549
+00:18:53,039 --> 00:18:57,520
+similar point. Leopold Lashen Brener who
+
+550
+00:18:55,200 --> 00:18:59,520
+is a former guest and full disclosure a
+
+551
+00:18:57,520 --> 00:19:02,559
+good friend wrote in his 2014 memo
+
+552
+00:18:59,520 --> 00:19:04,080
+situational awareness quote I find it an
+
+553
+00:19:02,559 --> 00:19:06,160
+insane proposition that the US
+
+554
+00:19:04,080 --> 00:19:08,320
+government will let a random SF startup
+
+555
+00:19:06,160 --> 00:19:09,919
+develop super intelligence imagine if we
+
+556
+00:19:08,320 --> 00:19:13,039
+had developed atomic bombs by letting
+
+557
+00:19:09,919 --> 00:19:14,880
+Uber just improvise and my response to
+
+558
+00:19:13,039 --> 00:19:17,520
+Leo's argument at the time and Ben's
+
+559
+00:19:14,880 --> 00:19:19,360
+argument now is while they're right that
+
+560
+00:19:17,520 --> 00:19:22,320
+it's crazy that we're entrusting private
+
+561
+00:19:19,360 --> 00:19:23,919
+companies with the development of this
+
+562
+00:19:22,320 --> 00:19:25,200
+world historical world techn technology.
+
+563
+00:19:23,919 --> 00:19:27,120
+I just don't think it's an improvement
+
+564
+00:19:25,200 --> 00:19:29,360
+to give that authority to the
+
+565
+00:19:27,120 --> 00:19:31,520
+government. Nobody's qualified to be the
+
+566
+00:19:29,360 --> 00:19:33,280
+stewards of super intelligence. It's a
+
+567
+00:19:31,520 --> 00:19:35,200
+terrifying unprecedented thing that our
+
+568
+00:19:33,280 --> 00:19:36,799
+species is doing right now. The fact
+
+569
+00:19:35,200 --> 00:19:39,039
+that private companies aren't the ideal
+
+570
+00:19:36,799 --> 00:19:40,320
+institutions to deal with this does not
+
+571
+00:19:39,039 --> 00:19:42,960
+mean that the Pentagon or the White
+
+572
+00:19:40,320 --> 00:19:45,039
+House is. Yes, if a single private
+
+573
+00:19:42,960 --> 00:19:47,520
+company were the only entity capable of
+
+574
+00:19:45,039 --> 00:19:49,440
+building nuclear weapons, the government
+
+575
+00:19:47,520 --> 00:19:52,799
+would not tolerate it having a veto
+
+576
+00:19:49,440 --> 00:19:55,440
+power over how those weapons are used.
+
+577
+00:19:52,799 --> 00:19:57,039
+But I think this is a terrible analogy
+
+578
+00:19:55,440 --> 00:19:59,440
+for the current situation with AI for at
+
+579
+00:19:57,039 --> 00:20:01,200
+least two important reasons. First, AI
+
+580
+00:19:59,440 --> 00:20:03,360
+is not some self-contained weapon like a
+
+581
+00:20:01,200 --> 00:20:05,520
+nuclear bomb which only does one thing.
+
+582
+00:20:03,360 --> 00:20:08,000
+Rather, it is more like the process of
+
+583
+00:20:05,520 --> 00:20:10,960
+industrialization itself, which is a
+
+584
+00:20:08,000 --> 00:20:12,720
+general purpose transformation of the
+
+585
+00:20:10,960 --> 00:20:14,559
+whole economy with thousands of
+
+586
+00:20:12,720 --> 00:20:17,039
+applications across every single sector.
+
+587
+00:20:14,559 --> 00:20:18,160
+If you applied Ben Thompson or Leopold
+
+588
+00:20:17,039 --> 00:20:20,000
+Lash and Brener's logic to the
+
+589
+00:20:18,160 --> 00:20:21,919
+industrial revolution, which is also
+
+590
+00:20:20,000 --> 00:20:24,480
+world historically important, it would
+
+591
+00:20:21,919 --> 00:20:26,160
+imply the government had the right to
+
+592
+00:20:24,480 --> 00:20:28,320
+requisition any factory it wanted or
+
+593
+00:20:26,160 --> 00:20:30,559
+destroy any business it wanted and
+
+594
+00:20:28,320 --> 00:20:33,120
+punish and coers anybody who refused to
+
+595
+00:20:30,559 --> 00:20:35,039
+comply. But this is just not how free
+
+596
+00:20:33,120 --> 00:20:36,960
+societies handled the process of
+
+597
+00:20:35,039 --> 00:20:38,640
+industrialization. And it's also not how
+
+598
+00:20:36,960 --> 00:20:40,640
+they should handle AI. Now people will
+
+599
+00:20:38,640 --> 00:20:43,039
+say, well AI will develop
+
+600
+00:20:40,640 --> 00:20:44,799
+unprecedentedly powerful super weapons,
+
+601
+00:20:43,039 --> 00:20:47,360
+superhuman hackers, superhuman
+
+602
+00:20:44,799 --> 00:20:50,320
+bioweapons researchers, fully autonomous
+
+603
+00:20:47,360 --> 00:20:51,760
+robot armies, and we just can't have
+
+604
+00:20:50,320 --> 00:20:52,960
+private companies developing the
+
+605
+00:20:51,760 --> 00:20:54,480
+technology that will make all this
+
+606
+00:20:52,960 --> 00:20:56,240
+possible. But you can make the same
+
+607
+00:20:54,480 --> 00:20:58,080
+argument about the industrial revolution
+
+608
+00:20:56,240 --> 00:21:00,400
+from the perspective of 17th century
+
+609
+00:20:58,080 --> 00:21:01,760
+Europeans. You've got all kinds of crazy
+
+610
+00:21:00,400 --> 00:21:04,080
+ in the world today that is a result
+
+611
+00:21:01,760 --> 00:21:06,720
+of the industrial revolution. chemical
+
+612
+00:21:04,080 --> 00:21:08,480
+weapons, uh, aerial bombardment, not to
+
+613
+00:21:06,720 --> 00:21:11,600
+mention nuclear weapons themselves. And
+
+614
+00:21:08,480 --> 00:21:14,000
+the way we dealt with this is not giving
+
+615
+00:21:11,600 --> 00:21:16,080
+the government absolute control over the
+
+616
+00:21:14,000 --> 00:21:18,880
+industrial revolution, which is to say
+
+617
+00:21:16,080 --> 00:21:21,679
+over modern civilization itself. Rather,
+
+618
+00:21:18,880 --> 00:21:24,000
+we banned and regulated the specific
+
+619
+00:21:21,679 --> 00:21:25,440
+weaponizable end use cases. And we
+
+620
+00:21:24,000 --> 00:21:27,280
+should regulate AI in a similar way,
+
+621
+00:21:25,440 --> 00:21:29,120
+which is that we should regulate
+
+622
+00:21:27,280 --> 00:21:31,520
+specific destructive use cases. for
+
+623
+00:21:29,120 --> 00:21:33,760
+example, launching cyber attacks, things
+
+624
+00:21:31,520 --> 00:21:35,679
+which should be illegal even if a human
+
+625
+00:21:33,760 --> 00:21:37,760
+was doing them. And we should also have
+
+626
+00:21:35,679 --> 00:21:40,400
+laws which regulate how the government
+
+627
+00:21:37,760 --> 00:21:42,080
+can use this technology. For example, by
+
+628
+00:21:40,400 --> 00:21:43,840
+building an AI powered surveillance
+
+629
+00:21:42,080 --> 00:21:46,400
+state. The second reason that Ben's
+
+630
+00:21:43,840 --> 00:21:48,400
+analogy to some monopolistic private
+
+631
+00:21:46,400 --> 00:21:50,240
+nuclear weapons developer breaks down is
+
+632
+00:21:48,400 --> 00:21:52,240
+that it's not just one company that can
+
+633
+00:21:50,240 --> 00:21:54,159
+develop this technology. There are many
+
+634
+00:21:52,240 --> 00:21:55,840
+other frontier AI labs that the
+
+635
+00:21:54,159 --> 00:21:57,360
+government could have turned to. The
+
+636
+00:21:55,840 --> 00:21:59,600
+government's argument that it had to
+
+637
+00:21:57,360 --> 00:22:01,600
+usurp the private property rights of the
+
+638
+00:21:59,600 --> 00:22:03,440
+specific company in order to get access
+
+639
+00:22:01,600 --> 00:22:06,159
+to a critical national security
+
+640
+00:22:03,440 --> 00:22:07,760
+capability is extremely weak if it could
+
+641
+00:22:06,159 --> 00:22:10,559
+have just instead made a voluntary
+
+642
+00:22:07,760 --> 00:22:12,320
+contract with one of Anthropic's half a
+
+643
+00:22:10,559 --> 00:22:14,080
+dozen other competitors. If in the
+
+644
+00:22:12,320 --> 00:22:17,600
+future that stops being the case and if
+
+645
+00:22:14,080 --> 00:22:19,760
+only one entity remains capable of
+
+646
+00:22:17,600 --> 00:22:22,000
+building the robot armies and the
+
+647
+00:22:19,760 --> 00:22:23,600
+superhuman hackers and we have reason to
+
+648
+00:22:22,000 --> 00:22:25,520
+worry that with their insurmountable
+
+649
+00:22:23,600 --> 00:22:27,280
+lead they could even take over the whole
+
+650
+00:22:25,520 --> 00:22:29,679
+world, then I agree that would be
+
+651
+00:22:27,280 --> 00:22:31,200
+unacceptable for that entity to be a
+
+652
+00:22:29,679 --> 00:22:32,320
+private company. And so honestly, I
+
+653
+00:22:31,200 --> 00:22:33,919
+think my crux against the people who
+
+654
+00:22:32,320 --> 00:22:36,000
+argue that AI is such a powerful
+
+655
+00:22:33,919 --> 00:22:38,159
+technology that it cannot be shaped by
+
+656
+00:22:36,000 --> 00:22:41,039
+private hands is just that I expect this
+
+657
+00:22:38,159 --> 00:22:43,120
+technology to be very multipolar and I
+
+658
+00:22:41,039 --> 00:22:44,799
+expect there to be lots of competitive
+
+659
+00:22:43,120 --> 00:22:46,559
+companies at each layer of the supply
+
+660
+00:22:44,799 --> 00:22:47,840
+chain. And unfortunately, this for this
+
+661
+00:22:46,559 --> 00:22:49,760
+reason that I don't think that
+
+662
+00:22:47,840 --> 00:22:51,600
+individual acts of corporate courage
+
+663
+00:22:49,760 --> 00:22:54,880
+solve the problem. And the problem is
+
+664
+00:22:51,600 --> 00:22:57,120
+this that structurally AI favors many
+
+665
+00:22:54,880 --> 00:22:59,280
+authoritarian applications, mass
+
+666
+00:22:57,120 --> 00:23:01,520
+surveillance being one of them. Even if
+
+667
+00:22:59,280 --> 00:23:02,640
+Enthropic refused to sell its models to
+
+668
+00:23:01,520 --> 00:23:04,000
+the government to enable mass
+
+669
+00:23:02,640 --> 00:23:06,320
+surveillance and even if the next two
+
+670
+00:23:04,000 --> 00:23:08,320
+companies after Enthropic did the same
+
+671
+00:23:06,320 --> 00:23:09,840
+in 12 months everybody in their mother
+
+672
+00:23:08,320 --> 00:23:11,600
+will be able to train a model as good as
+
+673
+00:23:09,840 --> 00:23:14,400
+the current frontier and at that point
+
+674
+00:23:11,600 --> 00:23:16,720
+there will be some vendor who is willing
+
+675
+00:23:14,400 --> 00:23:18,480
+and able to help the government enforce
+
+676
+00:23:16,720 --> 00:23:20,720
+mass surveillance. So the only way we
+
+677
+00:23:18,480 --> 00:23:22,320
+can preserve our free society is if we
+
+678
+00:23:20,720 --> 00:23:24,080
+make laws and norms through our
+
+679
+00:23:22,320 --> 00:23:26,960
+political system that is unacceptable
+
+680
+00:23:24,080 --> 00:23:29,200
+for the government to use AI to enact
+
+681
+00:23:26,960 --> 00:23:31,440
+mass censorship and surveillance and
+
+682
+00:23:29,200 --> 00:23:33,039
+control. Just as after World War II, the
+
+683
+00:23:31,440 --> 00:23:34,720
+whole world said this norm that you are
+
+684
+00:23:33,039 --> 00:23:36,720
+not allowed to use nuclear weapons to
+
+685
+00:23:34,720 --> 00:23:38,240
+wage war. I want to be clear here. These
+
+686
+00:23:36,720 --> 00:23:40,320
+are extremely confusing and difficult
+
+687
+00:23:38,240 --> 00:23:42,720
+questions to think about. And even in
+
+688
+00:23:40,320 --> 00:23:45,200
+the very process of brainstorming this
+
+689
+00:23:42,720 --> 00:23:47,280
+video, I changed my mind back and forth
+
+690
+00:23:45,200 --> 00:23:49,520
+on them a bunch. and I reserve the right
+
+691
+00:23:47,280 --> 00:23:50,799
+to change my mind again. In fact, I
+
+692
+00:23:49,520 --> 00:23:52,799
+think it's essential that we change our
+
+693
+00:23:50,799 --> 00:23:54,799
+mind as AI progresses and we learn more.
+
+694
+00:23:52,799 --> 00:23:57,039
+That's the very point of conversation
+
+695
+00:23:54,799 --> 00:23:58,799
+and debate. Someday people will look
+
+696
+00:23:57,039 --> 00:24:00,799
+back on this time the way we look back
+
+697
+00:23:58,799 --> 00:24:03,360
+on the alignment. People having these
+
+698
+00:24:00,799 --> 00:24:05,120
+big important debates just as the world
+
+699
+00:24:03,360 --> 00:24:06,880
+is about to undergo these huge
+
+700
+00:24:05,120 --> 00:24:08,960
+technological and social and political
+
+701
+00:24:06,880 --> 00:24:11,039
+revolutions. And some of the thinkers
+
+702
+00:24:08,960 --> 00:24:13,039
+even managed to get a couple of the big
+
+703
+00:24:11,039 --> 00:24:15,120
+questions right for which we today are
+
+704
+00:24:13,039 --> 00:24:18,320
+still the beneficiaries. We owe to our
+
+705
+00:24:15,120 --> 00:24:20,960
+future to at least try to think through
+
+706
+00:24:18,320 --> 00:24:22,960
+the new questions that are raised by AI.
+
+707
+00:24:20,960 --> 00:24:26,000
+Okay, this was a narration of an essay
+
+708
+00:24:22,960 --> 00:24:27,679
+that I also released on my blog at
+
+709
+00:24:26,000 --> 00:24:29,039
+dwarcash.com.
+
+710
+00:24:27,679 --> 00:24:31,600
+You should sign up there for my
+
+711
+00:24:29,039 --> 00:24:34,400
+newsletter for future essays like this.
+
+712
+00:24:31,600 --> 00:24:38,760
+Otherwise, I will see you for the next
+
+713
+00:24:34,400 --> 00:24:38,760
+podcast interview. Cheers.
+

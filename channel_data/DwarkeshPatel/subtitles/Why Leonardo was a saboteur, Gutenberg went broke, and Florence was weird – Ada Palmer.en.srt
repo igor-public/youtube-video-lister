@@ -1,0 +1,9664 @@
+1
+00:00:00,190 --> 00:00:03,150
+Today I'm chatting with Ada Palmer,
+who's a Renaissance historian,
+
+2
+00:00:03,220 --> 00:00:06,569
+novelist, and composer based
+at the University of Chicago.
+
+3
+00:00:06,880 --> 00:00:09,490
+Today we're discussing your
+book, Inventing the Renaissance.
+
+4
+00:00:09,870 --> 00:00:11,110
+Ada, thanks for coming on the podcast.
+
+5
+00:00:11,210 --> 00:00:12,120
+Been looking forward.
+
+6
+00:00:12,490 --> 00:00:13,170
+First question.
+
+7
+00:00:14,340 --> 00:00:18,349
+You've got in this period—late
+15th century, early 16th century—in
+
+8
+00:00:18,370 --> 00:00:23,740
+Italy all these different
+republics: Venice, Florence, Genoa.
+
+9
+00:00:24,990 --> 00:00:29,940
+That seems unusual both for the
+time period and for the place.
+
+10
+00:00:31,160 --> 00:00:34,759
+One of the big reasons that the
+Italian city republics are clustered
+
+11
+00:00:34,760 --> 00:00:40,990
+in Italy is that when the Roman Empire
+dissolved in the West, individual
+
+12
+00:00:41,000 --> 00:00:43,490
+cities then needed to self-govern.
+
+13
+00:00:43,640 --> 00:00:45,240
+This is true all across Europe.
+
+14
+00:00:47,030 --> 00:00:50,260
+Those individual cities could no
+longer get the centralized Roman
+
+15
+00:00:50,260 --> 00:00:55,200
+government to oversee supply routes
+or keep the roads free of bandits.
+
+16
+00:00:55,830 --> 00:00:58,300
+You could no longer import
+and export goods at scale.
+
+17
+00:00:58,300 --> 00:01:00,199
+You could no longer rely
+on central infrastructure.
+
+18
+00:01:00,360 --> 00:01:01,670
+You had to support things yourself.
+
+19
+00:01:02,080 --> 00:01:05,919
+Larger, wealthier towns were able
+to make this transition because they
+
+20
+00:01:05,920 --> 00:01:10,419
+could support themselves from the local
+resources and the farms attached to them.
+
+21
+00:01:10,830 --> 00:01:15,410
+The larger, wealthier towns surrounded
+by good agricultural land were
+
+22
+00:01:15,410 --> 00:01:16,929
+more successful at converting over.
+
+23
+00:01:17,210 --> 00:01:20,410
+Okay, let’s have a senate
+like the old Roman Senate.
+
+24
+00:01:20,460 --> 00:01:22,979
+Let's have our top
+families form a council.
+
+25
+00:01:23,190 --> 00:01:23,880
+They will rule.
+
+26
+00:01:23,880 --> 00:01:24,970
+We'll set up a republic.
+
+27
+00:01:25,349 --> 00:01:30,679
+A weaker town that can't support
+itself as well is much more prone to
+
+28
+00:01:30,940 --> 00:01:35,630
+one wealthy family realizing that they
+can get goons and take over, declaring
+
+29
+00:01:35,870 --> 00:01:37,380
+themselves the monarch of the area.
+
+30
+00:01:37,630 --> 00:01:41,390
+Or worse, this town cannot
+self-sustain, it doesn’t have enough.
+
+31
+00:01:41,679 --> 00:01:43,610
+People there can't get food.
+
+32
+00:01:43,870 --> 00:01:48,050
+They are scared and afraid of being
+robbed by people who are desperate.
+
+33
+00:01:48,410 --> 00:01:53,810
+But outside of town, there is a
+wealthy villa that belongs to a noble
+
+34
+00:01:53,810 --> 00:01:55,570
+family, and they have bodyguards.
+
+35
+00:01:55,770 --> 00:02:00,410
+"Hey, noble family, if I move next
+to your villa and work for you, will
+
+36
+00:02:00,410 --> 00:02:02,450
+you protect me with your bodyguards?"
+
+37
+00:02:02,480 --> 00:02:07,910
+So towns emptied out, and
+villages—as in a villa and its
+
+38
+00:02:08,039 --> 00:02:10,729
+environs—developed as a result.
+
+39
+00:02:10,860 --> 00:02:14,140
+A village was a monarchal
+structure in this sense.
+
+40
+00:02:14,140 --> 00:02:19,080
+It was the migration of people
+out of a town into the protection
+
+41
+00:02:19,080 --> 00:02:21,529
+zone of a local lordling.
+
+42
+00:02:22,529 --> 00:02:26,910
+Then those villages grew to different
+scales, some of them cities, some not.
+
+43
+00:02:27,549 --> 00:02:32,200
+Italy had great agriculture and
+great agricultural land, so more of
+
+44
+00:02:32,210 --> 00:02:38,860
+Italy's cities were able to sustain
+themselves as towns and be republics.
+
+45
+00:02:39,089 --> 00:02:43,549
+I feel like the big take of
+your book is they were trying
+
+46
+00:02:43,850 --> 00:02:46,350
+to resuscitate Roman virtues.
+
+47
+00:02:46,350 --> 00:02:52,960
+What were the virtues that the Roman
+emperors had which allowed this safety,
+
+48
+00:02:53,550 --> 00:02:55,590
+good government, et cetera, to work?
+
+49
+00:02:55,910 --> 00:02:56,000
+Stability.
+
+50
+00:02:56,000 --> 00:03:00,970
+And I don't understand the
+connection between reading Cicero and
+
+51
+00:03:01,250 --> 00:03:07,150
+contemplating the virtues of a great
+emperor to… science and technology.
+
+52
+00:03:08,550 --> 00:03:11,199
+Maybe there isn't one, but
+do you think there is one?
+
+53
+00:03:11,199 --> 00:03:11,789
+What exactly is that connection?
+
+54
+00:03:11,910 --> 00:03:16,160
+As with many processes, the answer
+is that there are multiple steps,
+
+55
+00:03:16,190 --> 00:03:18,640
+and it's complicated, and some
+of the steps are realizing that
+
+56
+00:03:18,670 --> 00:03:20,070
+the earlier steps didn't work.
+
+57
+00:03:23,060 --> 00:03:27,940
+Petrarch, who lived through the Black
+Death, and lives in a moment when Italy is
+
+58
+00:03:27,940 --> 00:03:34,560
+wracked by civil war and foreign mercenary
+troops are raiding and pillaging.
+
+59
+00:03:34,930 --> 00:03:36,699
+Italy is wracked by bandits.
+
+60
+00:03:37,020 --> 00:03:40,530
+When Petrarch survives the
+Black Death after losing so
+
+61
+00:03:40,530 --> 00:03:42,370
+many friends, he gets a letter.
+
+62
+00:03:42,980 --> 00:03:44,580
+Two of his friends are alive.
+
+63
+00:03:44,790 --> 00:03:48,089
+He had given up hope that anyone he
+knew would survive, but two of his
+
+64
+00:03:48,090 --> 00:03:49,640
+younger scholar friends are alive.
+
+65
+00:03:49,929 --> 00:03:51,200
+They're going to come visit him.
+
+66
+00:03:51,770 --> 00:03:53,500
+On the way, they were attacked by bandits.
+
+67
+00:03:53,680 --> 00:03:56,519
+One of them was killed, and the other
+was lost in the mountains and wounded,
+
+68
+00:03:56,540 --> 00:03:59,066
+and he didn't know that his friend
+was alive for another year and a half.
+
+69
+00:03:59,250 --> 00:04:01,929
+The bandits are very real in this period.
+
+70
+00:04:02,820 --> 00:04:05,810
+Petrarch looks around him and says,
+"This is an age of ash and shadow.
+
+71
+00:04:06,870 --> 00:04:10,100
+What we need is to imitate
+the arts of the ancients.
+
+72
+00:04:10,350 --> 00:04:13,260
+Let's try to figure out
+how the Romans did it."
+
+73
+00:04:13,870 --> 00:04:16,910
+And specifically, the
+problem is our leaders.
+
+74
+00:04:16,950 --> 00:04:18,450
+Our leaders are selfish.
+
+75
+00:04:18,760 --> 00:04:22,099
+Our leaders care more about their
+wealth and their family honor and their
+
+76
+00:04:22,099 --> 00:04:24,070
+power than they do about the people.
+
+77
+00:04:24,679 --> 00:04:27,650
+This is where Romeo and Juliet is
+really helpful for us to understand.
+
+78
+00:04:28,049 --> 00:04:31,209
+Lord Montague and Lord Capulet,
+as their goons are knifing each
+
+79
+00:04:31,210 --> 00:04:33,860
+other in the street, they care
+about defeating each other.
+
+80
+00:04:34,480 --> 00:04:37,110
+Do they care about the good of Italy?
+
+81
+00:04:37,660 --> 00:04:39,940
+Do they care about the
+good of the city of Verona?
+
+82
+00:04:39,960 --> 00:04:40,460
+No.
+
+83
+00:04:40,599 --> 00:04:43,719
+Their feud is harming the city
+of Verona, and they don't care.
+
+84
+00:04:44,650 --> 00:04:48,559
+They demand that Romeo get away
+with murder because he is their son.
+
+85
+00:04:49,780 --> 00:04:51,610
+That is not service to the state.
+
+86
+00:04:52,660 --> 00:04:56,599
+Petrarch reads about the ancient
+Roman Brutus—not the one who killed
+
+87
+00:04:56,599 --> 00:05:00,240
+Caesar, but the ancestor to whom
+that one was trying to live up.
+
+88
+00:05:00,650 --> 00:05:04,540
+Brutus was one of the first consuls of
+Rome, and he learned while in office
+
+89
+00:05:04,540 --> 00:05:07,950
+that his sons were plotting to take
+over the state and make him king.
+
+90
+00:05:08,510 --> 00:05:12,270
+So he executed his own sons
+for treason against the state.
+
+91
+00:05:12,450 --> 00:05:18,110
+Can you imagine Lord Montague wanting to
+execute Romeo for treason against Verona?
+
+92
+00:05:18,110 --> 00:05:19,329
+He would never do that.
+
+93
+00:05:20,059 --> 00:05:23,289
+When you're living in the plot of Romeo
+and Juliet and you read about these
+
+94
+00:05:23,289 --> 00:05:28,229
+ancient Roman figures, as described
+in the lofty biographies of someone
+
+95
+00:05:28,230 --> 00:05:33,710
+like Livy, you read them and you say,
+"Wow, if only our leaders would act
+
+96
+00:05:33,710 --> 00:05:36,029
+like that." Well, how were they raised?
+
+97
+00:05:36,050 --> 00:05:37,539
+Can we raise our leaders the same way?
+
+98
+00:05:37,540 --> 00:05:41,219
+Can we make libraries filled
+with what young Cicero read
+
+99
+00:05:41,230 --> 00:05:42,980
+and what young Brutus read?
+
+100
+00:05:43,260 --> 00:05:43,969
+What did they read?
+
+101
+00:05:44,230 --> 00:05:46,039
+They read Plato, and they read Homer.
+
+102
+00:05:46,040 --> 00:05:47,260
+So we need these things.
+
+103
+00:05:47,260 --> 00:05:50,969
+Can we recreate the educational
+environment that produced them?
+
+104
+00:05:52,469 --> 00:05:54,049
+Petrarch suggests this.
+
+105
+00:05:54,070 --> 00:05:59,349
+His students and successors embrace
+this idea and pour money into traveling
+
+106
+00:05:59,350 --> 00:06:03,540
+across the Alps to look for manuscripts,
+traveling to Constantinople to purchase
+
+107
+00:06:03,540 --> 00:06:07,290
+manuscripts from the wealthier East
+where books are common, and bringing
+
+108
+00:06:07,290 --> 00:06:09,050
+them back to assemble these libraries.
+
+109
+00:06:09,260 --> 00:06:14,950
+Then they raise tutors like Marsilio
+Ficino, who can know Greek and Latin
+
+110
+00:06:14,950 --> 00:06:20,440
+and surround the young princes and
+princesses of Europe with these
+
+111
+00:06:20,440 --> 00:06:23,610
+values in the hopes that they will
+act like Brutus and not like Lord Montague.
+
+112
+00:06:24,140 --> 00:06:27,329
+This is based on an assumption
+that education is very much like
+
+113
+00:06:27,330 --> 00:06:30,940
+osmosis, that if you're exposed
+to something, you'll imitate it.
+
+114
+00:06:31,360 --> 00:06:35,479
+And the uptake of this is strong
+because Italy is also full of upstart
+
+115
+00:06:36,799 --> 00:06:41,190
+rulers who just seized power five
+minutes ago by having a coup in their
+
+116
+00:06:41,190 --> 00:06:45,440
+state and have no legitimacy and no
+right to be ruling what they're ruling
+
+117
+00:06:45,440 --> 00:06:46,820
+and are resented by their people.
+
+118
+00:06:46,820 --> 00:06:50,400
+But they can dress up
+like a Roman emperor.
+
+119
+00:06:50,400 --> 00:06:53,179
+And they can have a parade
+with allegorical figures of
+
+120
+00:06:53,180 --> 00:06:54,349
+the virtues next to them.
+
+121
+00:06:54,580 --> 00:06:58,030
+And they can invest in an impressive
+palace that has a pediment on the front
+
+122
+00:06:58,030 --> 00:07:04,900
+and looks like a Roman building to the
+eyes of the period, and cover themselves
+
+123
+00:07:04,900 --> 00:07:06,289
+with the trappings of antiquity.
+
+124
+00:07:06,340 --> 00:07:08,780
+Then people might look at
+them and say, "This guy is
+
+125
+00:07:08,839 --> 00:07:10,060
+different from what we've had.
+
+126
+00:07:10,060 --> 00:07:11,500
+This guy is like the Caesars.
+
+127
+00:07:11,940 --> 00:07:13,540
+The days of the Caesars were pretty good.
+
+128
+00:07:13,540 --> 00:07:14,630
+Maybe we want this guy.
+
+129
+00:07:14,650 --> 00:07:15,930
+Maybe he's not going to be a tyrant.
+
+130
+00:07:15,940 --> 00:07:19,490
+Maybe he's going to be a good prince,
+and he's going to make a golden age."
+
+131
+00:07:19,490 --> 00:07:23,669
+And so the first dream is
+idealistic: let's make better rulers.
+
+132
+00:07:24,030 --> 00:07:27,750
+The adoption is self-serving
+and propagandistic: "Hey, I'm
+
+133
+00:07:27,750 --> 00:07:31,080
+a tyrant, but I can seem like
+something better than just a tyrant.
+
+134
+00:07:31,090 --> 00:07:35,239
+If I make myself look like Julius Caesar,
+then people will like and respect me."
+
+135
+00:07:35,510 --> 00:07:39,980
+Or in the case of Florence with
+the Medici, "We are merchant scum.
+
+136
+00:07:40,160 --> 00:07:42,460
+We are dirt compared
+to everybody around us.
+
+137
+00:07:42,639 --> 00:07:45,109
+We're not even one of the
+important families of Florence.
+
+138
+00:07:45,130 --> 00:07:46,670
+We're three ranks down.
+
+139
+00:07:46,879 --> 00:07:50,160
+Even on the standards of merchant
+scum, we're extra scummy merchant scum.
+
+140
+00:07:50,560 --> 00:07:56,479
+But if we can have Latin and Greek and
+quote Cicero and seem like the ancients,
+
+141
+00:07:56,740 --> 00:08:02,350
+people will take us seriously and
+respect us and talk to us even if we
+
+142
+00:08:02,350 --> 00:08:05,109
+don't have it." Let me give an example.
+
+143
+00:08:05,570 --> 00:08:10,700
+Imagine that you are an ambassador from
+France, and you're on your way to Rome,
+
+144
+00:08:11,099 --> 00:08:13,020
+because a new pope has just been elected.
+
+145
+00:08:14,020 --> 00:08:17,260
+Whenever a new pope is elected, every
+country in Europe has to send a special
+
+146
+00:08:17,260 --> 00:08:23,179
+ambassador whose job it is to deliver
+a long-winded oration that says, "I
+
+147
+00:08:23,180 --> 00:08:27,720
+am the ambassador from a very wealthy
+country and a very powerful prince."
+
+148
+00:08:27,940 --> 00:08:29,340
+And he's so glad you're the pope.
+
+149
+00:08:29,360 --> 00:08:30,070
+Congratulations.
+
+150
+00:08:30,270 --> 00:08:31,600
+Only you have to do that for an hour.
+
+151
+00:08:32,539 --> 00:08:34,919
+You have to give a gift to the pope, and
+it has to be very impressive, and you
+
+152
+00:08:34,919 --> 00:08:36,009
+have to be a really important person.
+
+153
+00:08:36,009 --> 00:08:38,819
+You're the most important person
+who can leave your country without
+
+154
+00:08:38,820 --> 00:08:40,259
+causing a political crisis.
+
+155
+00:08:40,549 --> 00:08:42,430
+You might be the heir to
+the throne, for example.
+
+156
+00:08:44,150 --> 00:08:48,489
+Or you might be a more minor ambassador,
+but you're at least the son of a count.
+
+157
+00:08:48,900 --> 00:08:51,780
+You're on your way to Rome, you're heading
+along the length of Italy, you're going
+
+158
+00:08:51,780 --> 00:08:53,450
+to go through Florence, it's on the way.
+
+159
+00:08:53,520 --> 00:08:54,020
+Ugh.
+
+160
+00:08:54,309 --> 00:08:58,859
+There's nobody there worth
+talking to because it's just
+
+161
+00:08:58,869 --> 00:09:00,274
+a pit of scum and villainy.
+
+162
+00:09:00,610 --> 00:09:04,819
+In fact, also filth and depravity
+because, of course, Florence is
+
+163
+00:09:04,890 --> 00:09:06,770
+the sodomy capital of Europe.
+
+164
+00:09:07,819 --> 00:09:12,180
+To Florentine is the verb for anal sex
+in several different European languages.
+
+165
+00:09:12,460 --> 00:09:15,139
+In the laws of France, you can
+be indicted for sodomy on the
+
+166
+00:09:15,139 --> 00:09:18,330
+grounds that you have ever once in
+your life even visited Florence.
+
+167
+00:09:18,380 --> 00:09:19,699
+That's considered evidence enough.
+
+168
+00:09:20,060 --> 00:09:24,240
+So you're on your way to this matchlessly
+filthy dive of scum and villainy.
+
+169
+00:09:24,600 --> 00:09:28,600
+And then you approach the city,
+and there are these statues.
+
+170
+00:09:29,490 --> 00:09:34,569
+They look like ancient statues, the
+kind that are so lifelike that it's as
+
+171
+00:09:34,580 --> 00:09:37,030
+if they're about to breathe and move.
+
+172
+00:09:37,340 --> 00:09:41,170
+You've never seen an intact
+new statue like that.
+
+173
+00:09:41,180 --> 00:09:43,199
+That isn't something we know how to do.
+
+174
+00:09:45,900 --> 00:09:51,380
+You ride through the city a bit, and it's
+a large, impressive city, and you get to
+
+175
+00:09:51,389 --> 00:09:55,480
+the cathedral, and it has this massive
+dome, way bigger than anything you've
+
+176
+00:09:55,480 --> 00:09:57,800
+ever seen except for old Roman ruins.
+
+177
+00:09:57,810 --> 00:10:02,460
+You come to the banker's house, and
+your servant knocks at the door.
+
+178
+00:10:02,620 --> 00:10:07,280
+The banker greets you humbly at the door
+and apologizes that his humble palace
+
+179
+00:10:07,290 --> 00:10:10,669
+is not worthy to host Your Excellency,
+and you're like, "Yeah, it's not.
+
+180
+00:10:10,680 --> 00:10:15,590
+You're correct." He invites you in, and
+the instant you step inside, you're in
+
+181
+00:10:15,590 --> 00:10:19,970
+a space like nothing you've ever seen
+before with white light streaming in
+
+182
+00:10:19,970 --> 00:10:25,119
+through this airy, rounded windowed
+courtyard that feels cleaner and more
+
+183
+00:10:25,829 --> 00:10:32,090
+outdoors than the outdoors did, because
+something about the air is cool and fresh.
+
+184
+00:10:32,090 --> 00:10:34,040
+It's like nothing you've— Wait, wait.
+
+185
+00:10:34,530 --> 00:10:35,030
+It is.
+
+186
+00:10:35,030 --> 00:10:38,729
+It's like the Roman ruins in the
+backyard of the castle where you grew up.
+
+187
+00:10:39,480 --> 00:10:41,560
+But we don't have the
+ability to do that anymore.
+
+188
+00:10:41,599 --> 00:10:42,669
+All that's lost.
+
+189
+00:10:43,380 --> 00:10:47,130
+In the middle of the square is another
+one of these bronze statues that
+
+190
+00:10:47,160 --> 00:10:50,940
+looks like it's about to come to
+life, except it's shining and new.
+
+191
+00:10:50,940 --> 00:10:52,460
+It hasn't even turned green yet.
+
+192
+00:10:53,550 --> 00:10:57,570
+Around the courtyard are busts of
+all the Roman emperors in order,
+
+193
+00:10:57,750 --> 00:11:01,130
+and above them are portraits of this
+guy and the members of his family.
+
+194
+00:11:01,910 --> 00:11:05,480
+Off in the corner are some men
+wearing robes that look like
+
+195
+00:11:05,480 --> 00:11:06,849
+the robes the ancients wear.
+
+196
+00:11:07,489 --> 00:11:10,020
+You say, "Who are those guys?"
+He says, "Oh, they're Platonists.
+
+197
+00:11:10,050 --> 00:11:14,769
+They're speaking ancient Greek." You
+say, "I thought I didn't understand that
+
+198
+00:11:14,770 --> 00:11:16,459
+language, but ancient Greek is lost.
+
+199
+00:11:16,460 --> 00:11:21,369
+We don't have ancient Greek." He says,
+"We have lots of ancient Greek here."
+
+200
+00:11:22,180 --> 00:11:24,469
+You say, "And also, we don't
+have the works of Plato.
+
+201
+00:11:24,480 --> 00:11:26,189
+They're also lost." "Oh,
+we have lots of Plato here.
+
+202
+00:11:26,190 --> 00:11:27,630
+Look, here's my grandson, Lorenzo.
+
+203
+00:11:27,630 --> 00:11:31,120
+He's just written a poem in ancient
+Greek about the three parts of the soul.
+
+204
+00:11:31,120 --> 00:11:32,250
+Would you like to hear him recite it?"
+
+205
+00:11:32,770 --> 00:11:35,270
+Now there's a ten-year-old boy
+reciting a poem at you in ancient
+
+206
+00:11:35,290 --> 00:11:39,460
+Greek about the three parts of the
+soul, and you're like, "Where am I?
+
+207
+00:11:39,500 --> 00:11:44,570
+None of this is possible. None of this
+has existed for a thousand years."
+
+208
+00:11:45,480 --> 00:11:49,960
+That's the moment that Cosimo de'
+Medici turns to you and says, "Would
+
+209
+00:11:49,960 --> 00:11:55,039
+you like to make an alliance with
+Florence?" And you can say no.
+
+210
+00:11:55,039 --> 00:11:56,319
+You can say, "No.
+
+211
+00:11:56,509 --> 00:12:01,499
+My king is going to come over the
+Alps with his enormous army, and we're
+
+212
+00:12:01,499 --> 00:12:05,339
+going to descend upon this city, and
+we're going to sack it, and everyone's
+
+213
+00:12:05,340 --> 00:12:08,199
+going to let us because it has no
+friends because it doesn't have any
+
+214
+00:12:08,220 --> 00:12:10,850
+nobility, so it can't marry anybody,
+so it has no meaningful allies.
+
+215
+00:12:11,130 --> 00:12:13,610
+And also, it's in the middle of
+this Guelph-Ghibelline feud, so
+
+216
+00:12:13,610 --> 00:12:15,730
+all of its neighbors hate it and
+they're just going to let it burn.
+
+217
+00:12:16,520 --> 00:12:19,360
+We're going to take the enormous
+piles of gold that are in your
+
+218
+00:12:19,370 --> 00:12:25,390
+basements and go home rich, and all
+of this will be gone like a dream."
+
+219
+00:12:25,390 --> 00:12:25,890
+Or
+
+220
+00:12:27,770 --> 00:12:31,100
+you could say, "Yes,
+let's make an alliance.
+
+221
+00:12:31,110 --> 00:12:37,719
+Give me a bronzesmith and an
+architect and a Greek teacher and a
+
+222
+00:12:37,729 --> 00:12:40,930
+Platonist, and we're going to take
+all of these things, and we're going
+
+223
+00:12:40,940 --> 00:12:43,280
+to do the French court like this.
+
+224
+00:12:43,890 --> 00:12:48,450
+Then when the ambassador from
+Portugal comes, he's going to
+
+225
+00:12:48,450 --> 00:12:52,469
+feel like an uncultured fool,
+just like I feel right now."
+
+226
+00:12:53,930 --> 00:12:56,070
+The power dynamic just
+flipped upside down.
+
+227
+00:12:57,150 --> 00:13:02,069
+Suddenly, the condescending nobleman
+is in awe of the merchant scum.
+
+228
+00:13:02,720 --> 00:13:06,670
+That's what the art and the culture
+does as a propagandistic tool.
+
+229
+00:13:07,210 --> 00:13:11,189
+The next stage of it then is, "Okay,
+we've raised these princes like this, and
+
+230
+00:13:11,190 --> 00:13:13,979
+they have the Latin, and they have the
+Greek, and they can impress everybody."
+
+231
+00:13:14,200 --> 00:13:19,470
+Then they fight a bigger, nastier,
+worse war than any of the earlier big,
+
+232
+00:13:19,480 --> 00:13:24,620
+nasty wars, with more deaths and more
+betrayals and bigger cannons knocking
+
+233
+00:13:24,620 --> 00:13:27,910
+down cities and burning whole areas.
+
+234
+00:13:28,039 --> 00:13:32,790
+The wealth is centralized, so
+the mercenaries are more numerous
+
+235
+00:13:32,790 --> 00:13:35,050
+because people can produce more.
+
+236
+00:13:35,240 --> 00:13:39,019
+The first generations raised by this
+are supposed to be philosopher princes,
+
+237
+00:13:39,020 --> 00:13:43,240
+and instead we get Cesare and Lucrezia
+Borgia, both of whom had Latin and Greek
+
+238
+00:13:43,240 --> 00:13:45,459
+and Cicero and Plato when they were kids.
+
+239
+00:13:46,000 --> 00:13:46,809
+Then they grow up,
+
+240
+00:13:49,109 --> 00:13:51,410
+and Cesare sets fire to half the world.
+
+241
+00:13:52,130 --> 00:13:54,440
+That is the war Machiavelli watched.
+
+242
+00:13:55,520 --> 00:13:59,610
+Machiavelli was raised on
+all of the Cicero and Livy.
+
+243
+00:13:59,620 --> 00:14:01,315
+He was raised on the Petrarchan project.
+
+244
+00:14:01,320 --> 00:14:05,010
+He has this famous, beautiful letter
+that he wrote in exile, where he's
+
+245
+00:14:05,010 --> 00:14:06,730
+describing his day to his friend.
+
+246
+00:14:07,450 --> 00:14:12,440
+Most of the day is wasted, and he
+mucks around hunting for larks.
+
+247
+00:14:12,450 --> 00:14:17,160
+Then he goes to a pub and gets drunk in
+the company of uncultured countrymen.
+
+248
+00:14:18,550 --> 00:14:23,549
+Then he goes home, and he gets dressed
+in the court robes, the court finery
+
+249
+00:14:24,119 --> 00:14:28,330
+that he would wear back when he was
+an ambassador to popes and kings.
+
+250
+00:14:28,340 --> 00:14:34,059
+Attired thus, he enters his library
+to hold commerce with the ancients.
+
+251
+00:14:34,940 --> 00:14:38,189
+He loves this the way Petrarch
+wanted him to love it.
+
+252
+00:14:38,480 --> 00:14:43,346
+But he observes these wars, and he
+observes virtuous princes like Guidobaldo
+
+253
+00:14:43,346 --> 00:14:48,660
+da Montefeltro, who does every single
+thing you're supposed to do virtuously.
+
+254
+00:14:48,670 --> 00:14:51,540
+He has all the Plato, and he has all
+the libraries, and he has all the art.
+
+255
+00:14:51,990 --> 00:14:56,310
+And he gets betrayed and his city taken
+away from him and loses everything.
+
+256
+00:14:57,719 --> 00:15:01,709
+And he watches terrible people
+like Cesare Borgia and Julius II
+
+257
+00:15:01,920 --> 00:15:03,690
+make terrible choices and succeed.
+
+258
+00:15:04,050 --> 00:15:09,490
+He says, "Okay, clearly Petrarch was
+wrong that just reading Cicero would
+
+259
+00:15:09,500 --> 00:15:12,790
+make successful rulers like the Caesars.
+
+260
+00:15:13,240 --> 00:15:18,019
+But I still feel in my heart
+a deep power in the classics."
+
+261
+00:15:18,270 --> 00:15:23,030
+So he says, "What if the libraries
+are what we need, but we need
+
+262
+00:15:23,030 --> 00:15:24,060
+to use them differently?"
+
+263
+00:15:24,590 --> 00:15:27,650
+He proposes what we would
+think of as political science.
+
+264
+00:15:27,650 --> 00:15:31,020
+We observe historical examples.
+
+265
+00:15:31,080 --> 00:15:34,929
+We say, "Okay, here are five examples
+of battles that happened next to rivers.
+
+266
+00:15:35,260 --> 00:15:37,810
+We'll put those examples side by
+side and see what decisions the
+
+267
+00:15:37,810 --> 00:15:40,300
+commanders made to try to figure
+out which one worked better."
+
+268
+00:15:40,520 --> 00:15:44,890
+We use history as a casebook of
+examples of what worked and what didn't.
+
+269
+00:15:45,500 --> 00:15:48,580
+We imitate what worked, and
+we avoid doing what didn't.
+
+270
+00:15:48,740 --> 00:15:55,059
+Instead of feeling that reading about good
+men will make us good, we read about wise
+
+271
+00:15:55,059 --> 00:15:57,730
+choices, and we imitate those choices.
+
+272
+00:15:58,030 --> 00:16:00,380
+This is one of the reasons
+Machiavelli is described by his
+
+273
+00:16:00,380 --> 00:16:02,500
+contemporaries as a historian.
+
+274
+00:16:03,300 --> 00:16:06,430
+He says we need to use history
+and use the classics differently.
+
+275
+00:16:06,599 --> 00:16:07,790
+He proposes that.
+
+276
+00:16:08,200 --> 00:16:10,010
+He isn't very popular in his own day.
+
+277
+00:16:10,020 --> 00:16:11,719
+It takes a long time for that to catch on.
+
+278
+00:16:11,730 --> 00:16:16,710
+Many people for decades after him are
+still trying to use absorption by osmosis.
+
+279
+00:16:17,040 --> 00:16:21,300
+But he's writing that in the early
+1500s, so it's been a little over
+
+280
+00:16:21,300 --> 00:16:22,800
+a century since this started.
+
+281
+00:16:22,800 --> 00:16:25,740
+We have to remember how
+long this process is.
+
+282
+00:16:25,770 --> 00:16:31,570
+From Petrarch's first call to Machiavelli
+writing that is as long as from Yuri
+
+283
+00:16:31,670 --> 00:16:34,939
+Gagarin's space flight back to Napoleon.
+
+284
+00:16:36,100 --> 00:16:40,870
+The childhood of Napoleon to the space
+race, that's Petrarch to Machiavelli.
+
+285
+00:16:40,880 --> 00:16:43,739
+We think of it as one time
+period, but a lot changed.
+
+286
+00:16:44,599 --> 00:16:45,599
+They had a plan.
+
+287
+00:16:45,610 --> 00:16:46,810
+They tried the plan.
+
+288
+00:16:47,240 --> 00:16:49,359
+They brought the plan to its maximum.
+
+289
+00:16:49,360 --> 00:16:51,210
+They raised all the
+princes in this new way.
+
+290
+00:16:51,520 --> 00:16:52,380
+The wars happened.
+
+291
+00:16:52,380 --> 00:16:53,470
+It clearly failed.
+
+292
+00:16:53,670 --> 00:16:56,160
+Machiavelli then thinks
+about why it failed.
+
+293
+00:16:56,290 --> 00:16:58,090
+We're still only halfway
+through the Renaissance.
+
+294
+00:16:58,679 --> 00:17:01,340
+Shakespeare's grandparents
+have barely been born.
+
+295
+00:17:01,840 --> 00:17:03,199
+We have a lot more time to go.
+
+296
+00:17:03,200 --> 00:17:04,499
+So what do we need?
+
+297
+00:17:05,549 --> 00:17:07,050
+We need new ways of thinking about it.
+
+298
+00:17:07,329 --> 00:17:09,690
+We're reading the ancients,
+and we have bigger libraries.
+
+299
+00:17:09,690 --> 00:17:11,679
+We have the printing press now.
+
+300
+00:17:11,680 --> 00:17:13,520
+We're having libraries in smaller towns.
+
+301
+00:17:13,520 --> 00:17:15,030
+More and more people can read.
+
+302
+00:17:15,250 --> 00:17:17,129
+It's easier and easier
+to get an education.
+
+303
+00:17:17,139 --> 00:17:19,989
+More people are starting
+to learn about science.
+
+304
+00:17:20,679 --> 00:17:24,589
+It also is important that they're
+inventing micro technologies of
+
+305
+00:17:24,609 --> 00:17:29,220
+book production like footnotes
+and glossaries in the margin
+
+306
+00:17:29,220 --> 00:17:31,010
+that explain the hard vocabulary.
+
+307
+00:17:31,900 --> 00:17:39,250
+When Petrarch's successors like Ficino
+were young, you had to be a masterful
+
+308
+00:17:39,360 --> 00:17:41,490
+Latinist to read these ancients.
+
+309
+00:17:41,699 --> 00:17:43,050
+You had to have an enormous vocabulary.
+
+310
+00:17:43,050 --> 00:17:44,140
+There are no dictionaries.
+
+311
+00:17:44,140 --> 00:17:44,650
+There are no glosses.
+
+312
+00:17:44,650 --> 00:17:45,990
+There's nothing to help you.
+
+313
+00:17:46,270 --> 00:17:50,169
+Only a tiny slice of expert classicists
+could actually read this stuff.
+
+314
+00:17:50,740 --> 00:17:53,155
+A hundred years later, there are
+translations into the vernacular.
+
+315
+00:17:53,420 --> 00:17:55,380
+There are footnotes that
+tell you the hard vocabulary.
+
+316
+00:17:55,700 --> 00:18:02,129
+Any med student can read Lucretius'
+discussions of materialist information.
+
+317
+00:18:02,130 --> 00:18:05,930
+When Poggio found it, there were two dozen
+people in the world who could read it.
+
+318
+00:18:07,130 --> 00:18:12,809
+A hundred years later, 30,000 people
+can read it in the 30 print editions
+
+319
+00:18:12,870 --> 00:18:14,080
+that are printed before 1600.
+
+320
+00:18:15,450 --> 00:18:21,690
+When all different kinds of people read
+it—med students, law students, people
+
+321
+00:18:21,690 --> 00:18:24,629
+in different countries, people in
+different places—they ask new questions.
+
+322
+00:18:25,560 --> 00:18:28,770
+They wonder whether they
+can test the hypotheses.
+
+323
+00:18:28,780 --> 00:18:29,590
+They do test the hypotheses.
+
+324
+00:18:30,230 --> 00:18:33,269
+They're the generation that
+discovers that the heart is a pump.
+
+325
+00:18:34,119 --> 00:18:38,030
+They're the generation that takes
+seriously the question, "Maybe
+
+326
+00:18:38,030 --> 00:18:41,790
+there are atoms, and maybe that's
+how diseases work, and maybe we can
+
+327
+00:18:41,790 --> 00:18:43,350
+develop the germ theory of disease."
+
+328
+00:18:43,380 --> 00:18:44,419
+That's the 1560s, 1580s, 160
+
+329
+00:18:50,349 --> 00:18:55,019
+years after Lucretius comes back,
+because it takes generations of work
+
+330
+00:18:55,020 --> 00:18:59,910
+to build the libraries, to have the
+libraries, to use the libraries.
+
+331
+00:19:00,260 --> 00:19:05,340
+So when we get to 1600, which is almost
+exactly 200 years after this begins, a
+
+332
+00:19:05,340 --> 00:19:11,850
+little bit more, we've had time to say,
+"Let's build the libraries, have the
+
+333
+00:19:11,850 --> 00:19:15,870
+libraries, use the libraries, or realize
+we failed in how we use the libraries,
+
+334
+00:19:15,870 --> 00:19:17,470
+and use the libraries differently."
+
+335
+00:19:18,170 --> 00:19:22,389
+That's the generation of Francis
+Bacon and Galileo who say, "Hey,
+
+336
+00:19:22,389 --> 00:19:24,050
+let's use the information differently.
+
+337
+00:19:24,080 --> 00:19:28,229
+Let's use nature as a casebook
+of examples the way Machiavelli
+
+338
+00:19:28,240 --> 00:19:29,500
+said we should use history.
+
+339
+00:19:29,869 --> 00:19:34,090
+Let's examine, let's doubt, let's
+rethink, let's do stuff in new ways."
+
+340
+00:19:36,380 --> 00:19:38,660
+Just to make sure I understood,
+the chain of causation here.
+
+341
+00:19:40,910 --> 00:19:44,559
+We've got to resuscitate the virtues of
+the Romans, therefore read what they read.
+
+342
+00:19:45,989 --> 00:19:47,659
+To do that, you need
+to build the libraries.
+
+343
+00:19:48,930 --> 00:19:51,060
+You build the libraries, you
+resuscitate all those arts.
+
+344
+00:19:52,060 --> 00:19:55,190
+Then you just need to have people
+be literate, have people think about
+
+345
+00:19:56,420 --> 00:19:58,640
+information in a new way to analyze it.
+
+346
+00:19:58,910 --> 00:20:03,570
+And that analysis lends itself not
+just to the history of leaders, but
+
+347
+00:20:03,580 --> 00:20:05,810
+also to the nature of the world.
+
+348
+00:20:07,590 --> 00:20:12,650
+Whenever I hear a story about how
+this is why the scientific revolution
+
+349
+00:20:12,650 --> 00:20:15,790
+happened, why the Industrial Revolution
+happened, I'm like, but there are so
+
+350
+00:20:15,790 --> 00:20:21,840
+many stories and it's just hard to figure
+out why this one over the other ones.
+
+351
+00:20:22,160 --> 00:20:24,382
+There's a dozen other
+stories you could tell.
+
+352
+00:20:24,382 --> 00:20:26,770
+I had a previous guest, Joseph
+Henrich, who has this theory that
+
+353
+00:20:27,090 --> 00:20:31,060
+the Catholic Church was breaking
+down these old kinship-based networks
+
+354
+00:20:31,060 --> 00:20:35,030
+that the rest of the world had.
+
+355
+00:20:35,030 --> 00:20:38,080
+It was encouraging guilds, encouraging
+these kinds of centers where people
+
+356
+00:20:38,080 --> 00:20:39,410
+could get together and discuss ideas.
+
+357
+00:20:41,200 --> 00:20:43,689
+There are probably twenty
+other stories you could tell.
+
+358
+00:20:44,209 --> 00:20:45,040
+Why this story?
+
+359
+00:20:45,310 --> 00:20:47,050
+Two different reasons.
+
+360
+00:20:47,280 --> 00:20:51,580
+One, I think it's useful to think
+about how for new ideas to flourish
+
+361
+00:20:51,580 --> 00:20:55,199
+and new ways of running the world to
+happen, you need a fertile environment.
+
+362
+00:20:55,210 --> 00:20:58,500
+In the same way that for forests
+to grow, you need enough topsoil.
+
+363
+00:20:58,510 --> 00:21:01,210
+It takes a while to get that topsoil.
+
+364
+00:21:01,870 --> 00:21:03,760
+It takes a while to get enough books.
+
+365
+00:21:05,130 --> 00:21:08,480
+You need to have enough books for a bunch
+of people to be reading and thinking.
+
+366
+00:21:08,490 --> 00:21:11,440
+You also need to have networks of
+information moving this stuff back
+
+367
+00:21:11,440 --> 00:21:13,899
+and forth so that they can have
+discourses of ideas with each other.
+
+368
+00:21:14,179 --> 00:21:16,690
+You can't publish a scientific
+journal until there are journals.
+
+369
+00:21:18,500 --> 00:21:23,010
+You need to have developed this
+ecosystem of information and knowledge.
+
+370
+00:21:24,250 --> 00:21:27,889
+People talk about it sometimes in
+terms of increasing literacy rates as
+
+371
+00:21:27,900 --> 00:21:32,019
+if higher literacy makes there be more
+books instead of the other way around.
+
+372
+00:21:33,069 --> 00:21:39,160
+In fact, there's a lot more literacy than
+people imagine in even medieval Italy.
+
+373
+00:21:40,970 --> 00:21:45,220
+Florence had a male literacy
+rate of ninety percent.
+
+374
+00:21:45,440 --> 00:21:46,840
+As of the sixteenth century?
+
+375
+00:21:46,870 --> 00:21:48,439
+As of the twelfth century.
+
+376
+00:21:49,599 --> 00:21:53,509
+Because everybody's in the merchant world,
+so you have to be able to send letters.
+
+377
+00:21:53,510 --> 00:21:55,300
+You have to be able to read account books.
+
+378
+00:21:55,500 --> 00:21:58,300
+You have to be able to calculate
+your tab at a restaurant.
+
+379
+00:21:58,680 --> 00:22:00,979
+But of those people, how
+many have read a book?
+
+380
+00:22:01,000 --> 00:22:01,580
+Very few.
+
+381
+00:22:02,250 --> 00:22:04,710
+They've read letters, they've
+read tallies, they've read
+
+382
+00:22:04,719 --> 00:22:06,540
+indexes, they've made notes.
+
+383
+00:22:06,820 --> 00:22:11,949
+The difference between being literate
+and being book-literate is different.
+
+384
+00:22:12,820 --> 00:22:15,010
+In the same way that some people
+watch television but don't watch
+
+385
+00:22:15,060 --> 00:22:17,260
+very many films, while other
+people watch lots of films.
+
+386
+00:22:17,700 --> 00:22:22,020
+You can be literate and have never
+read a book because there might be
+
+387
+00:22:22,030 --> 00:22:27,979
+almost no books in the entire city in
+which you grew up if it's 1200 or 1500.
+
+388
+00:22:28,590 --> 00:22:33,120
+But if it's 1600, there are definitely
+books in any medium-sized town.
+
+389
+00:22:34,060 --> 00:22:41,170
+So literacy transforms into access to
+scientific, intellectual, legal, all
+
+390
+00:22:41,170 --> 00:22:43,520
+sorts of different worlds of ideas.
+
+391
+00:22:44,660 --> 00:22:47,710
+The other person you quoted who's
+talking about transformations in
+
+392
+00:22:49,850 --> 00:22:53,660
+networks of power from being less
+family and clan-centered to being
+
+393
+00:22:53,870 --> 00:22:58,410
+more guild-centered… The guilds are
+major generators of ideas as well.
+
+394
+00:22:58,639 --> 00:23:00,670
+The guilds can own libraries by 1600.
+
+395
+00:23:01,940 --> 00:23:05,160
+If you went to a guild hall, it will have
+a bunch of books about its own trade.
+
+396
+00:23:05,389 --> 00:23:07,250
+That would not have been true in 1100.
+
+397
+00:23:08,380 --> 00:23:11,005
+Those changes are all real,
+they're all intermixing, and
+
+398
+00:23:11,040 --> 00:23:12,510
+they're all parallel to each other.
+
+399
+00:23:13,090 --> 00:23:14,850
+You need all of these things together.
+
+400
+00:23:15,740 --> 00:23:21,059
+One of the focuses I have is
+sometimes there are more steps
+
+401
+00:23:21,059 --> 00:23:22,999
+to something than you think.
+
+402
+00:23:23,139 --> 00:23:26,300
+We tell this story of the Renaissance,
+of how they rediscovered these ancient
+
+403
+00:23:26,350 --> 00:23:28,060
+texts, and then we got science.
+
+404
+00:23:28,200 --> 00:23:34,730
+That's true, but it is an
+oversimplification and too wide a zoom.
+
+405
+00:23:35,469 --> 00:23:41,269
+If I said that in the French
+Revolution, Napoleon rose to power
+
+406
+00:23:41,270 --> 00:23:45,780
+and spread nationalized warfare
+across Europe, and then we landed on
+
+407
+00:23:45,780 --> 00:23:48,350
+the moon, I've skipped some steps.
+
+408
+00:23:50,750 --> 00:23:55,039
+We know that about modernity, but we
+don't remember that about earlier periods.
+
+409
+00:23:56,659 --> 00:24:01,830
+Obviously all the stories are somewhat
+true, but to the extent that this is a
+
+410
+00:24:01,840 --> 00:24:07,149
+part of the story, you're building up
+libraries of classics and … setting up
+
+411
+00:24:07,150 --> 00:24:10,560
+a network of information exchange that
+leads to the Scientific Revolution…
+
+412
+00:24:11,700 --> 00:24:16,770
+The reason this feels salient right
+now is that a lot of people have
+
+413
+00:24:16,770 --> 00:24:20,760
+this idea that they're going to
+make AI go well by doing X thing.
+
+414
+00:24:22,040 --> 00:24:24,170
+Maybe some of those things work, but
+
+415
+00:24:26,610 --> 00:24:31,839
+it's at the same time frustrating
+but also funny and interesting that
+
+416
+00:24:31,860 --> 00:24:35,280
+historically nobody has a good track
+record of being able to say, "I
+
+417
+00:24:35,280 --> 00:24:41,389
+will do this thing so that this huge
+unanticipated change in history will
+
+418
+00:24:41,450 --> 00:24:43,360
+go my way, or according to my values."
+
+419
+00:24:44,330 --> 00:24:44,830
+Right.
+
+420
+00:24:44,929 --> 00:24:49,690
+I think "go my way" as opposed to "go
+well" is a really important distinction.
+
+421
+00:24:49,780 --> 00:24:50,280
+Petrarch
+
+422
+00:24:54,020 --> 00:24:56,830
+wanted a world with these values.
+
+423
+00:24:58,000 --> 00:25:01,130
+He thought, for example, that this
+would be a triumph for Christianity
+
+424
+00:25:01,130 --> 00:25:04,180
+and what we would call Catholicism,
+though there's only one Christianity
+
+425
+00:25:04,180 --> 00:25:07,090
+from his point of view at the time,
+except for the East, which is different.
+
+426
+00:25:09,330 --> 00:25:13,220
+He was sure that when we found the
+ancients, fundamentally all of their
+
+427
+00:25:13,220 --> 00:25:14,810
+philosophy would agree with Christianity.
+
+428
+00:25:15,390 --> 00:25:20,250
+The ancients were wise, therefore
+they will be correct, and Plato will
+
+429
+00:25:20,250 --> 00:25:22,180
+ninety percent agree with Christianity.
+
+430
+00:25:22,180 --> 00:25:26,349
+It just needs a little shaker of the
+Trinity on top to be Christianity.
+
+431
+00:25:27,330 --> 00:25:30,639
+When he says, "Go find these
+ancients," he is in a world that
+
+432
+00:25:30,640 --> 00:25:31,699
+doesn't have the ancients yet.
+
+433
+00:25:37,830 --> 00:25:40,029
+He's just guessing what's
+going to be in these books.
+
+434
+00:25:40,550 --> 00:25:44,279
+But he says, "If we find them,
+they will uphold good values,"
+
+435
+00:25:44,280 --> 00:25:45,489
+and everyone believes him.
+
+436
+00:25:46,389 --> 00:25:48,870
+Then they go find them, and
+they squabble with each other.
+
+437
+00:25:48,890 --> 00:25:52,540
+There are Hedonists and Epicureans and
+Stoics and all sorts of chaotic things,
+
+438
+00:25:52,540 --> 00:25:54,120
+much more plural than he anticipated.
+
+439
+00:25:54,550 --> 00:25:58,810
+It makes a world that in turn has giant
+wars, which he would not like, and a
+
+440
+00:25:58,880 --> 00:26:03,739
+crisis, and Machiavelli's critique of the
+ancients, and then the new science and the
+
+441
+00:26:03,740 --> 00:26:07,340
+new philosophy, and eventually Galileo,
+none of which resembles what Petrarch
+
+442
+00:26:07,400 --> 00:26:10,450
+imagined if he had specifically described
+the future he was trying to make.
+
+443
+00:26:11,250 --> 00:26:17,530
+But then we get to the propagators
+of Bacon's scientific method,
+
+444
+00:26:17,540 --> 00:26:21,089
+meaning Voltaire and Montesquieu,
+who are also big campaigners for
+
+445
+00:26:21,089 --> 00:26:23,039
+inoculation against smallpox.
+
+446
+00:26:23,049 --> 00:26:28,620
+The first major disease eradications start
+to begin under that immediate influence.
+
+447
+00:26:29,220 --> 00:26:32,139
+Science gets us to the germ theory
+of disease gets us to modern
+
+448
+00:26:32,139 --> 00:26:35,350
+hygiene, which gets us to vaccines,
+which gets us to penicillin and
+
+449
+00:26:35,910 --> 00:26:37,440
+the treatment for the Black Death.
+
+450
+00:26:37,920 --> 00:26:41,190
+Petrarch thought he would make
+a world which shared his values.
+
+451
+00:26:41,219 --> 00:26:44,720
+Instead, he made a world that
+doesn't share his values but is
+
+452
+00:26:44,720 --> 00:26:48,340
+capable of curing a disease he
+never imagined would be curable.
+
+453
+00:26:49,230 --> 00:26:51,720
+If you showed him this
+future, it would be scary.
+
+454
+00:26:52,170 --> 00:26:54,790
+It would be weird to him because
+it does not embrace his values.
+
+455
+00:26:54,790 --> 00:26:55,780
+Our values are different.
+
+456
+00:26:55,790 --> 00:26:57,539
+He would be horrified by democracy.
+
+457
+00:26:57,540 --> 00:27:00,820
+He believed that only a tiny
+elite has the capacity to rule.
+
+458
+00:27:00,830 --> 00:27:02,429
+If we had a time-traveling Petrarch,
+he would really wrestle for a
+
+459
+00:27:02,430 --> 00:27:07,150
+long time to wrap his head around
+democracy as a functional system.
+
+460
+00:27:07,260 --> 00:27:09,370
+He really thought in oligarchic terms.
+
+461
+00:27:10,340 --> 00:27:14,820
+But he would see the wonders we've
+created, especially the fact that
+
+462
+00:27:14,820 --> 00:27:18,980
+we can treat the Black Death, and
+he would weep for joy seeing that.
+
+463
+00:27:19,310 --> 00:27:23,962
+He did not create a world
+that went as he wanted, but he
+
+464
+00:27:23,962 --> 00:27:25,590
+created a world that went well.
+
+465
+00:27:26,559 --> 00:27:28,069
+We have many examples of that.
+
+466
+00:27:28,499 --> 00:27:34,460
+Trains and bicycles come in, and
+we get feminism because it's easier
+
+467
+00:27:34,460 --> 00:27:37,370
+for people, especially women, to
+move freely and independently.
+
+468
+00:27:37,370 --> 00:27:38,200
+They can organize.
+
+469
+00:27:38,200 --> 00:27:39,050
+They can mobilize.
+
+470
+00:27:39,050 --> 00:27:40,610
+We get suffragettes.
+
+471
+00:27:40,620 --> 00:27:44,510
+Did the inventor of the train intend
+for there to be women's liberation?
+
+472
+00:27:45,309 --> 00:27:45,809
+No.
+
+473
+00:27:46,000 --> 00:27:47,389
+Did it go the way he imagined?
+
+474
+00:27:47,440 --> 00:27:47,820
+No.
+
+475
+00:27:47,820 --> 00:27:49,009
+Did it go well?
+
+476
+00:27:49,349 --> 00:27:49,849
+Yes.
+
+477
+00:27:50,400 --> 00:27:50,900
+It's
+
+478
+00:28:49,580 --> 00:28:53,730
+important here to zoom in a little
+bit on Florence's own government
+
+479
+00:28:53,730 --> 00:28:57,450
+system and how and why it's weird,
+in order to understand what rank
+
+480
+00:28:57,469 --> 00:28:59,019
+Machiavelli actually holds in it.
+
+481
+00:29:01,000 --> 00:29:05,540
+All of these republics, except
+Florence, are modeled on ancient Rome.
+
+482
+00:29:05,779 --> 00:29:09,889
+The ancient Roman model was an
+oligarchic republic in which within
+
+483
+00:29:09,890 --> 00:29:13,950
+the city there are certain noble
+families, usually founding families
+
+484
+00:29:13,950 --> 00:29:18,760
+who made the city in the first place,
+who are the senatorial families.
+
+485
+00:29:19,139 --> 00:29:20,770
+Hereditarily, when they come of
+age, the men of the family are
+
+486
+00:29:20,770 --> 00:29:23,279
+automatically in the senate.
+
+487
+00:29:24,000 --> 00:29:29,240
+From among them are elected
+the consuls, high senators,
+
+488
+00:29:29,240 --> 00:29:30,159
+or the head of state if there
+
+489
+00:29:32,649 --> 00:29:32,720
+is one.
+
+490
+00:29:32,720 --> 00:29:36,639
+You have a small slice of the
+population that are fully enfranchised
+
+491
+00:29:36,639 --> 00:29:40,689
+members of the republic who
+rule over the commoner majority.
+
+492
+00:29:41,010 --> 00:29:42,660
+That is how Venice works.
+
+493
+00:29:42,910 --> 00:29:44,280
+That is how Genoa works.
+
+494
+00:29:44,290 --> 00:29:46,650
+That is how Bologna and
+Siena for the most part work.
+
+495
+00:29:46,660 --> 00:29:48,200
+That's how the Swiss Republic works.
+
+496
+00:29:48,210 --> 00:29:50,180
+That's how all of these republics work.
+
+497
+00:29:51,620 --> 00:29:59,300
+Florence was like that for quite a while,
+but when republics fell, they usually fell
+
+498
+00:29:59,300 --> 00:30:05,040
+to noble families who are the foremost,
+the strongest, the military class.
+
+499
+00:30:05,050 --> 00:30:08,120
+If you're a military leader in this
+period, you have to have noble blood.
+
+500
+00:30:08,120 --> 00:30:10,879
+No soldier is going to follow a
+commander who doesn't have noble blood.
+
+501
+00:30:11,139 --> 00:30:12,299
+That would be weird.
+
+502
+00:30:16,039 --> 00:30:19,890
+Those threats to the independence
+of the republic almost always
+
+503
+00:30:19,890 --> 00:30:20,970
+came from the nobility.
+
+504
+00:30:21,360 --> 00:30:26,050
+After one particular near miss
+in which the city was nearly
+
+505
+00:30:26,050 --> 00:30:30,829
+taken over, they decided to get
+rid of the nobility of Florence.
+
+506
+00:30:31,049 --> 00:30:34,690
+They massacred most of them, cut their
+heads off, put them on pikes, burned
+
+507
+00:30:34,699 --> 00:30:37,820
+their houses down, raked salt into the
+earth, and had a party on their graves,
+
+508
+00:30:38,140 --> 00:30:41,070
+the way you do in the period when
+you're getting rid of a class of people.
+
+509
+00:30:41,340 --> 00:30:44,050
+There were a few noble families
+that they really liked who had
+
+510
+00:30:44,050 --> 00:30:45,460
+not been part of negative stuff.
+
+511
+00:30:45,740 --> 00:30:49,120
+They allowed them to officially
+renounce their nobility.
+
+512
+00:30:49,160 --> 00:30:51,750
+They renounced their nobility,
+changed their names, and
+
+513
+00:30:51,750 --> 00:30:53,069
+declared themselves commoners.
+
+514
+00:30:53,699 --> 00:30:55,500
+They set up a commoner republic.
+
+515
+00:30:56,100 --> 00:30:59,770
+What that meant was the senate
+consisted of members of merchant guilds.
+
+516
+00:31:00,220 --> 00:31:04,929
+A member of a merchant guild here
+means the owners of workshops.
+
+517
+00:31:04,940 --> 00:31:08,180
+It’s not the guy who sits at the
+loom weaving, but the guy who
+
+518
+00:31:08,210 --> 00:31:11,139
+owns the warehouse full of looms
+where the workers are working.
+
+519
+00:31:11,559 --> 00:31:15,990
+The head of the sculpture works,
+the head of the architectural
+
+520
+00:31:15,990 --> 00:31:18,380
+firm, not the bricklayers who
+are actually laying the bricks.
+
+521
+00:31:18,390 --> 00:31:18,890
+Bourgeoisie
+
+522
+00:31:21,570 --> 00:31:24,800
+is an anachronistic word, but we're
+talking about the owners of the means of
+
+523
+00:31:24,800 --> 00:31:28,360
+production who are themselves commoners.
+
+524
+00:31:28,400 --> 00:31:32,330
+They are very wealthy, but from
+the point of view of the diplomatic
+
+525
+00:31:32,440 --> 00:31:38,140
+corps of any other society, all of
+the ruling people and all of their
+
+526
+00:31:38,140 --> 00:31:39,800
+ambassadors are noble-blooded.
+
+527
+00:31:40,040 --> 00:31:42,399
+If you're an ambassador, you're
+automatically noble-blooded.
+
+528
+00:31:42,400 --> 00:31:44,750
+Nobody's going to take an
+ambassador seriously who isn't.
+
+529
+00:31:47,510 --> 00:31:51,389
+From the perspective of every other
+polity in the world, the rulers of
+
+530
+00:31:51,390 --> 00:31:53,070
+Florence are the rank of their valet.
+
+531
+00:31:54,120 --> 00:31:56,260
+There is no nobility left in the city.
+
+532
+00:31:56,260 --> 00:32:02,919
+In fact, Florence can't run its own
+armies or head its own police, because
+
+533
+00:32:03,150 --> 00:32:06,290
+you're not going to surrender if you're
+told to surrender in the name of some
+
+534
+00:32:06,290 --> 00:32:07,590
+guy who doesn't have a coat of arms.
+
+535
+00:32:07,900 --> 00:32:08,930
+That would be weird.
+
+536
+00:32:09,240 --> 00:32:13,760
+So they actually have to hire a
+nobleman to come to the city and be
+
+537
+00:32:13,760 --> 00:32:17,109
+their chief of police to arrest people
+in the name of the Holy Roman Emperor.
+
+538
+00:32:18,849 --> 00:32:22,700
+One at a time, they'll invite
+a skilled military commander
+
+539
+00:32:22,700 --> 00:32:24,020
+nobleman who will come to the city.
+
+540
+00:32:24,020 --> 00:32:24,520
+He'll be podestà.
+
+541
+00:32:25,020 --> 00:32:28,110
+He'll live in the palace,
+which is also the prison.
+
+542
+00:32:28,240 --> 00:32:29,190
+He'll arrest people.
+
+543
+00:32:29,190 --> 00:32:30,430
+He'll enforce the law.
+
+544
+00:32:31,180 --> 00:32:34,550
+They will pay him handsomely at the end
+of the year, escort him to the gates,
+
+545
+00:32:34,550 --> 00:32:38,129
+and then banish him from the city for
+life on pain of death so that he cannot
+
+546
+00:32:38,129 --> 00:32:42,760
+return and make use of the power that
+he had in the city to try to take over.
+
+547
+00:32:42,760 --> 00:32:45,949
+They're very wary of any nobleman.
+
+548
+00:32:45,950 --> 00:32:49,910
+They've set up a really weird
+republic—weird from the perspective of
+
+549
+00:32:49,910 --> 00:32:54,359
+everyone around them—in which a bunch
+of merchants are trying to share power
+
+550
+00:32:54,650 --> 00:32:56,689
+by being lotteried into the senate.
+
+551
+00:32:57,139 --> 00:32:58,889
+You put names in a bag.
+
+552
+00:32:59,129 --> 00:33:01,669
+You examine all of the
+merchant members of guilds.
+
+553
+00:33:01,830 --> 00:33:07,040
+You choose which ones are fit to
+serve, meaning not ill and dying,
+
+554
+00:33:07,040 --> 00:33:10,979
+not insane, not so deeply in debt
+that they could be manipulated by
+
+555
+00:33:10,980 --> 00:33:12,800
+the people whom they owe money to.
+
+556
+00:33:13,340 --> 00:33:14,320
+Their names go in a bag.
+
+557
+00:33:14,320 --> 00:33:15,940
+You choose nine guys at random.
+
+558
+00:33:16,219 --> 00:33:17,309
+They rule the city.
+
+559
+00:33:18,089 --> 00:33:21,360
+They are put in a palace where
+they rule the city from that tower.
+
+560
+00:33:21,560 --> 00:33:24,760
+They're actually locked in the tower
+for the duration of their time in
+
+561
+00:33:24,760 --> 00:33:27,350
+office because if they left the tower,
+they could be bribed or kidnapped.
+
+562
+00:33:27,790 --> 00:33:30,590
+They rule the city for
+two or three months.
+
+563
+00:33:31,530 --> 00:33:34,174
+At the end, they are thanked for
+their service and escorted out, and
+
+564
+00:33:34,174 --> 00:33:37,909
+then a different nine guys share
+power for the next three months.
+
+565
+00:33:38,679 --> 00:33:41,810
+It's a power sharing that is designed
+to be tyrant-proof because you need
+
+566
+00:33:41,810 --> 00:33:48,169
+consensus of nine randomly selected
+guys to decide to do anything.
+
+567
+00:33:48,370 --> 00:33:49,690
+Oh, it's not even a majority
+vote, it's consensus?
+
+568
+00:33:49,719 --> 00:33:50,250
+It's consensus.
+
+569
+00:33:53,350 --> 00:33:57,360
+Previously you were describing
+"kill the nobles, salt the earth".
+
+570
+00:33:57,710 --> 00:34:00,870
+I'm almost thinking early communists.
+
+571
+00:34:00,870 --> 00:34:05,439
+But then you say it's the heads of
+the merchant guilds who are in charge.
+
+572
+00:34:05,440 --> 00:34:11,023
+I want to understand why
+merchants and entrepreneurs
+
+573
+00:34:11,250 --> 00:34:15,239
+have notable status in Florence.
+
+574
+00:34:15,239 --> 00:34:17,550
+What is it about the
+culture that makes it so?
+
+575
+00:34:17,800 --> 00:34:21,279
+Also, the Medici, the most powerful
+people, their job is usury.
+
+576
+00:34:21,279 --> 00:34:21,366
+It's like the church—
+
+577
+00:34:21,366 --> 00:34:23,990
+It's important to remember they
+were nobody when this set up.
+
+578
+00:34:26,000 --> 00:34:27,689
+They were a minor important family.
+
+579
+00:34:27,689 --> 00:34:30,210
+But the culture is getting started where
+somebody like that could be respected.
+
+580
+00:34:30,489 --> 00:34:31,319
+How does that happen?
+
+581
+00:34:32,199 --> 00:34:37,030
+An important part of it is when you
+have a merchant capital, everybody
+
+582
+00:34:37,040 --> 00:34:40,170
+works for somebody who works for
+somebody who works for the boss.
+
+583
+00:34:40,179 --> 00:34:46,829
+If you are a major merchant in
+Florence, you're importing and exporting
+
+584
+00:34:46,989 --> 00:34:48,799
+wool to and from all across Europe.
+
+585
+00:34:49,029 --> 00:34:50,820
+You have employees all across Europe.
+
+586
+00:34:50,820 --> 00:34:56,920
+You're buying mass bulk wool from England,
+importing it to Florence to use olive oil
+
+587
+00:34:57,179 --> 00:35:02,180
+that you've bought from Naples to process
+into high-quality wool, which you're
+
+588
+00:35:02,180 --> 00:35:04,020
+then exporting to Germany and France.
+
+589
+00:35:04,320 --> 00:35:07,509
+You are a very interconnected businessman.
+
+590
+00:35:07,510 --> 00:35:12,510
+You have a lot of contacts, you have a lot
+of clout, and the employees who work for
+
+591
+00:35:12,510 --> 00:35:18,170
+you look to you for their safety net as
+well as their political representation.
+
+592
+00:35:18,570 --> 00:35:22,779
+We're very accustomed in the modern
+period to thinking of the government
+
+593
+00:35:22,799 --> 00:35:24,359
+as being our big safety net.
+
+594
+00:35:24,549 --> 00:35:28,803
+If we wonder who is going to fund
+the hospitals, whose job is it to
+
+595
+00:35:28,900 --> 00:35:32,980
+take care of orphans, we think of
+the government, or maybe the church.
+
+596
+00:35:33,290 --> 00:35:36,550
+But in this period, if you're
+killed and you leave orphans
+
+597
+00:35:36,550 --> 00:35:40,450
+behind, it is your employer whose
+duty it is to take care of them.
+
+598
+00:35:41,369 --> 00:35:45,440
+If you are injured and can no longer
+work, it is your employer who will
+
+599
+00:35:45,440 --> 00:35:48,900
+support you for the rest of your life
+while you are disabled and find you work
+
+600
+00:35:48,900 --> 00:35:50,610
+that you can do with that disability.
+
+601
+00:35:50,950 --> 00:35:53,550
+A huge portion of the
+safety net is your employer.
+
+602
+00:35:53,770 --> 00:35:55,030
+Are you in trouble with the law?
+
+603
+00:35:55,270 --> 00:35:57,979
+Your employer will supply
+your defense attorney.
+
+604
+00:35:58,670 --> 00:36:03,960
+Your employer will supply the persuasive
+note to the judge that they would very
+
+605
+00:36:04,010 --> 00:36:06,710
+much appreciate if their person got off.
+
+606
+00:36:06,950 --> 00:36:10,510
+This is the system known as the patronage
+system, and it existed in ancient Rome.
+
+607
+00:36:10,510 --> 00:36:14,770
+It exists and saturates the medieval and
+the Renaissance worlds in which everyone
+
+608
+00:36:14,770 --> 00:36:17,050
+is in a very interconnected hierarchy.
+
+609
+00:36:17,350 --> 00:36:23,460
+So if you're a brewer and your son
+gets in a barroom brawl and punches
+
+610
+00:36:23,460 --> 00:36:27,420
+somebody out and the person's nose
+breaks and they die in the brawl and
+
+611
+00:36:27,420 --> 00:36:30,199
+your son is suddenly in trouble and you
+say, "Oh no, I don't want my son to be
+
+612
+00:36:30,200 --> 00:36:33,600
+executed," you turn to your landlord.
+
+613
+00:36:33,600 --> 00:36:35,810
+Your landlord turns to his landlord.
+
+614
+00:36:37,070 --> 00:36:39,129
+They turn to one of these major families.
+
+615
+00:36:39,230 --> 00:36:42,440
+These major families are massive
+landowners that own dozens of
+
+616
+00:36:42,480 --> 00:36:43,770
+apartments within the city.
+
+617
+00:36:44,059 --> 00:36:46,230
+Hundreds or thousands
+of people work for them.
+
+618
+00:36:46,960 --> 00:36:51,340
+So it makes sense to everyone to be
+represented that way, like having
+
+619
+00:36:51,340 --> 00:36:54,970
+a council of the CEOs of all of the
+organizations that employees work
+
+620
+00:36:54,970 --> 00:36:59,610
+for, when your corporation also
+supplies your social safety net and
+
+621
+00:36:59,610 --> 00:37:01,110
+you see your representation there.
+
+622
+00:37:01,880 --> 00:37:05,490
+It's also a world that's used to thinking
+in terms of hierarchy and very unused
+
+623
+00:37:05,509 --> 00:37:07,230
+to thinking about real democracy.
+
+624
+00:37:07,389 --> 00:37:11,089
+It really doesn't have any confidence
+in what we would recognize as democracy.
+
+625
+00:37:11,359 --> 00:37:15,220
+We talk about these republics, and
+we're very excited by the fact that
+
+626
+00:37:15,220 --> 00:37:18,350
+they give more power to the people
+than a monarchy does, but they're still
+
+627
+00:37:18,350 --> 00:37:20,679
+incredibly narrow oligarchic republics.
+
+628
+00:37:22,050 --> 00:37:25,300
+When we read Machiavelli, he talks
+a lot about the popolo, which
+
+629
+00:37:25,300 --> 00:37:26,530
+we translate as "the people."
+
+630
+00:37:26,799 --> 00:37:31,920
+He talks about how important it is that
+the popolo are respected and have a
+
+631
+00:37:31,930 --> 00:37:36,529
+voice, that the popolo are armed, and
+the government shows respect for the
+
+632
+00:37:36,530 --> 00:37:38,230
+people by allowing them to be armed.
+
+633
+00:37:38,530 --> 00:37:41,050
+We read this and we're like,
+"This feels really familiar.
+
+634
+00:37:41,050 --> 00:37:44,290
+This feels like documents of the
+founding of the US where we're respecting
+
+635
+00:37:44,290 --> 00:37:45,880
+and arming and trusting the people."
+
+636
+00:37:46,190 --> 00:37:51,380
+Popolo meant the top 4%
+economically of the population,
+
+637
+00:37:51,390 --> 00:37:53,040
+the members of the merchant guilds.
+
+638
+00:37:53,040 --> 00:37:54,100
+That's the popolo.
+
+639
+00:37:54,510 --> 00:37:58,430
+He's talking about a narrow-slice
+oligarchy being heard, a narrow-slice
+
+640
+00:37:58,440 --> 00:37:59,879
+oligarchy being respected.
+
+641
+00:38:00,290 --> 00:38:02,850
+We didn't realize that in the
+nineteenth century when we were
+
+642
+00:38:02,850 --> 00:38:07,049
+excitedly translating The Prince
+and reading it as quasi-democratic.
+
+643
+00:38:08,300 --> 00:38:11,190
+We now have read more documents
+of the period and realize
+
+644
+00:38:11,190 --> 00:38:12,440
+how people use these words.
+
+645
+00:38:13,880 --> 00:38:18,210
+Florence in this period goes through
+five different forms of government.
+
+646
+00:38:18,860 --> 00:38:20,970
+It's this republic of nine
+dudes in a tower, as you were
+
+647
+00:38:20,970 --> 00:38:23,050
+saying, before 1434, and then—
+
+648
+00:38:23,199 --> 00:38:25,209
+There's a gradual takeover.
+
+649
+00:38:25,279 --> 00:38:28,299
+There's a gradual, what we
+could call regulatory capture.
+
+650
+00:38:28,470 --> 00:38:34,640
+But an interesting detail about Florence,
+even as the Medici take over, is that the
+
+651
+00:38:34,640 --> 00:38:38,720
+Medici know the people of Florence are
+very deeply invested in this republic and
+
+652
+00:38:38,780 --> 00:38:40,660
+very deeply invested in its institutions.
+
+653
+00:38:40,660 --> 00:38:45,130
+Therefore, they have to respect
+those institutions and proclaim
+
+654
+00:38:45,130 --> 00:38:46,720
+respect for those institutions.
+
+655
+00:38:47,160 --> 00:38:51,090
+So they're going to sustain people in
+the named offices that there used to be.
+
+656
+00:38:51,500 --> 00:38:55,490
+They're going to continue to
+let the guilds be important
+
+657
+00:38:55,530 --> 00:38:56,780
+and have important offices.
+
+658
+00:38:56,799 --> 00:38:57,299
+There
+
+659
+00:38:59,270 --> 00:39:04,549
+was a mandatory outfit that people
+wore who worked in the republic.
+
+660
+00:39:04,740 --> 00:39:09,820
+The garment over there in the
+corner is a lucco fiorentino.
+
+661
+00:39:09,860 --> 00:39:12,870
+This was the garment you were
+mandated by law to wear if you held
+
+662
+00:39:12,870 --> 00:39:14,149
+office in the Florentine Republic.
+
+663
+00:39:14,549 --> 00:39:17,419
+To us, we look at it and say, "It's
+a long red robe. It looks very
+
+664
+00:39:17,420 --> 00:39:22,330
+Renaissance." To them, it looked like a
+toga because of the way it was draped.
+
+665
+00:39:22,340 --> 00:39:23,710
+They thought of this as a toga.
+
+666
+00:39:24,000 --> 00:39:27,140
+They're cosplaying the Roman Republic.
+
+667
+00:39:27,400 --> 00:39:32,229
+Wearing a Florentine toga while
+in office was something that you
+
+668
+00:39:32,230 --> 00:39:36,610
+did to represent your fealty to
+Cicero and republican values.
+
+669
+00:39:37,200 --> 00:39:40,370
+The dukes made their men
+continue to wear these.
+
+670
+00:39:40,390 --> 00:39:47,210
+In fact, the first Duke, Cosimo I, would
+wear one to costume balls as if in his
+
+671
+00:39:47,210 --> 00:39:52,470
+heart he longed not to dress like a duke,
+but to dress in a toga like a republican.
+
+672
+00:39:52,590 --> 00:39:57,760
+It's doubly ironic because when the
+Roman Republic turns to the Roman
+
+673
+00:39:57,760 --> 00:39:59,470
+Empire, they still have the senate.
+
+674
+00:39:59,510 --> 00:40:02,350
+They still have all these
+old institutions, even though
+
+675
+00:40:02,350 --> 00:40:03,279
+it's no longer a republic.
+
+676
+00:40:03,500 --> 00:40:07,049
+The Roman Senate keeps
+meeting until 1200 AD.
+
+677
+00:40:07,059 --> 00:40:12,549
+It's sort of doubly ironic that they are
+doing the same thing, but in the 1500s.
+
+678
+00:40:12,949 --> 00:40:17,640
+And it means that more rights are
+granted to the people of Florence
+
+679
+00:40:17,830 --> 00:40:21,379
+than to other cities that fell
+to monarchies at similar points.
+
+680
+00:40:22,120 --> 00:40:26,790
+The monarchs of Florence know they
+have to be careful, they have to
+
+681
+00:40:26,790 --> 00:40:30,420
+respect rights to a certain amount,
+and they can't run roughshod over them.
+
+682
+00:40:30,940 --> 00:40:34,810
+There's a really cool building
+that I love in Florence.
+
+683
+00:40:35,150 --> 00:40:38,450
+If you've been there, there's the famous
+bridge, the Ponte Vecchio, which has
+
+684
+00:40:38,470 --> 00:40:40,310
+little jeweler shops all along it.
+
+685
+00:40:40,630 --> 00:40:46,180
+When you get to the end of it, there's
+this funny overhead corridor, the Vasari
+
+686
+00:40:46,180 --> 00:40:51,120
+Corridor, which was built by the dukes of
+Florence to connect the old city palace
+
+687
+00:40:51,120 --> 00:40:53,700
+where the senate used to meet—where they
+had to have their seat of power—to their
+
+688
+00:40:53,710 --> 00:40:57,120
+new palace across the river, which was
+much bigger, where they could have grand
+
+689
+00:40:57,130 --> 00:40:59,150
+balls and things that dukes need to have.
+
+690
+00:40:59,750 --> 00:41:02,799
+Because they're so terrified of being
+assassinated by their own people,
+
+691
+00:41:03,059 --> 00:41:07,260
+they built this overhead walkway
+that goes from one end of the city
+
+692
+00:41:07,260 --> 00:41:10,640
+to the other so that they could walk
+in safety without being assassinated.
+
+693
+00:41:11,710 --> 00:41:14,210
+This is a sign of a weak duke.
+
+694
+00:41:14,570 --> 00:41:18,870
+But also, when he was building it,
+it's going across the roofs and
+
+695
+00:41:18,870 --> 00:41:22,560
+sometimes blasting off the second
+stories of different people's houses.
+
+696
+00:41:23,100 --> 00:41:26,910
+Most people, when His Grace the
+Duke says, "I'm gonna blast the top
+
+697
+00:41:26,910 --> 00:41:29,960
+story off your house," would say,
+"Yes, Your Grace, please continue."
+
+698
+00:41:30,350 --> 00:41:34,280
+There are literally severed heads of
+people who resisted still rotting on
+
+699
+00:41:34,320 --> 00:41:36,539
+spikes in front of the Palazzo Vecchio.
+
+700
+00:41:36,559 --> 00:41:40,060
+But they get to this one
+point where there's a very old
+
+701
+00:41:40,070 --> 00:41:41,970
+tower, a 500-year-old tower.
+
+702
+00:41:42,430 --> 00:41:48,799
+This belongs to the Mannelli family,
+who are descended from peers of Julius
+
+703
+00:41:48,800 --> 00:41:53,959
+Caesar and can trace their genealogy
+all the way back to an old Roman gens.
+
+704
+00:41:54,429 --> 00:41:57,100
+When the duke says, "We want to
+knock the top off your tower,"
+
+705
+00:41:57,100 --> 00:41:58,879
+they say, "No, this is our tower.
+
+706
+00:41:58,879 --> 00:42:02,810
+This tower has been ours since before
+the Medici existed as a named family.
+
+707
+00:42:02,990 --> 00:42:04,799
+You may not knock the top off."
+
+708
+00:42:05,150 --> 00:42:08,060
+And the duke does not knock the top off.
+
+709
+00:42:08,179 --> 00:42:12,800
+The corridor goes around in this
+awkward square around that tower,
+
+710
+00:42:12,800 --> 00:42:17,729
+because he knows that if he violates
+something as traditional and core to
+
+711
+00:42:17,730 --> 00:42:22,240
+the civilization as the property rights
+of somebody who has owned something for
+
+712
+00:42:22,240 --> 00:42:28,090
+a long time, there will be rebellion,
+civil war, dissent, and resistance.
+
+713
+00:42:28,650 --> 00:42:32,150
+These are monarchs who know that
+they are weak and are therefore
+
+714
+00:42:32,150 --> 00:42:35,669
+careful, and therefore more rights,
+like property rights, exist.
+
+715
+00:42:35,680 --> 00:42:41,060
+Meanwhile, across the river in Ferrara,
+Duke Alfonso I d'Este of Ferrara used
+
+716
+00:42:41,060 --> 00:42:46,009
+to wander around Ferrara buck naked with
+a sword in one hand and his dick in the
+
+717
+00:42:46,010 --> 00:42:50,259
+other, to show off that nobody would
+ever possibly try to harm a Duke d'Este.
+
+718
+00:42:50,679 --> 00:42:54,549
+He and his siblings used to do things
+like, if they liked a musician, kidnap
+
+719
+00:42:54,550 --> 00:42:57,480
+them and lock them in a tower so that
+nobody else could hear them, or if
+
+720
+00:42:57,480 --> 00:43:01,390
+they wanted each other's musician, send
+goons to kidnap each other's musicians.
+
+721
+00:43:01,390 --> 00:43:04,039
+They also used to recreationally
+murder each other's servants when the
+
+722
+00:43:04,260 --> 00:43:06,060
+siblings were tiffing with each other.
+
+723
+00:43:06,790 --> 00:43:10,440
+That is what you do when you
+don't fear your people and when
+
+724
+00:43:10,440 --> 00:43:12,060
+you feel confident in power.
+
+725
+00:43:13,020 --> 00:43:18,029
+They are much closer to tyrants
+than the Medici are ever able to
+
+726
+00:43:18,060 --> 00:43:20,680
+be, even after the republic falls.
+
+727
+00:43:21,120 --> 00:43:22,170
+That's what's so neat.
+
+728
+00:43:22,450 --> 00:43:26,559
+Because the resistance failed, if
+we're looking at it in black and white.
+
+729
+00:43:26,570 --> 00:43:27,889
+The republic fell.
+
+730
+00:43:28,869 --> 00:43:30,459
+There wasn't a republic anymore.
+
+731
+00:43:31,430 --> 00:43:32,350
+There was a duke.
+
+732
+00:43:32,360 --> 00:43:35,690
+He took over, and the old system was gone.
+
+733
+00:43:36,490 --> 00:43:41,390
+But because the republic fought so hard
+and because the people really believed
+
+734
+00:43:41,390 --> 00:43:47,169
+in it, the people had a lot more rights,
+and the tyrant was a lot less tyrannical
+
+735
+00:43:47,170 --> 00:43:48,600
+because there had been that fight.
+
+736
+00:43:48,830 --> 00:43:52,980
+It's a great example of how even when
+resistance loses, resistance wins.
+
+737
+00:43:53,340 --> 00:43:58,200
+I think there's an interesting parallel
+to today, not to be too on the nose,
+
+738
+00:43:58,230 --> 00:44:03,700
+but sometimes people debate the odds
+that America becomes a Putinist kind
+
+739
+00:44:03,700 --> 00:44:05,560
+of country within a couple of decades.
+
+740
+00:44:05,650 --> 00:44:06,980
+I think the odds are actually quite low.
+
+741
+00:44:07,340 --> 00:44:11,590
+Just because even though constitutionally,
+or at least in precedent, the
+
+742
+00:44:11,590 --> 00:44:15,279
+president is very powerful, the
+republican expectation is so strong.
+
+743
+00:44:15,550 --> 00:44:18,470
+The amount of resistance faced, even
+when you successfully do something,
+
+744
+00:44:18,520 --> 00:44:20,939
+demotivates the next escalation.
+
+745
+00:44:21,139 --> 00:44:25,300
+The only thing that makes resistance
+weak in the US is when people feel
+
+746
+00:44:25,330 --> 00:44:28,299
+as if partial victory is failure.
+
+747
+00:44:29,760 --> 00:44:34,200
+Remembering moments like how Florence's
+resistance all the way to the end meant
+
+748
+00:44:34,210 --> 00:44:38,180
+that there was more liberty for the next
+several centuries, even under the tyrant,
+
+749
+00:44:38,620 --> 00:44:42,959
+is what we need to remind ourselves, that
+partial victory is an important thing.
+
+750
+00:44:43,080 --> 00:44:47,130
+Even if the worst were to happen and
+there were to be tyranny, that tyranny
+
+751
+00:44:47,130 --> 00:44:51,560
+would be so much weaker because there
+was a lot of resistance, and traditions
+
+752
+00:44:51,560 --> 00:44:55,370
+of resistance and structures would
+develop that would continue to exist.
+
+753
+00:44:55,590 --> 00:45:04,330
+I think you should discuss the fact that
+the Medici are the bankers for the papacy.
+
+754
+00:45:04,640 --> 00:45:05,340
+What does that mean?
+
+755
+00:45:05,340 --> 00:45:06,200
+Why is that necessary?
+
+756
+00:45:06,210 --> 00:45:09,910
+How are they able to make money off of
+that from the interest on the float?
+
+757
+00:45:10,120 --> 00:45:13,790
+When Cosimo de' Medici swings the
+contract as banker for the pope,
+
+758
+00:45:13,790 --> 00:45:18,119
+it's important to remember that when
+you can't wire transfer money in the
+
+759
+00:45:18,119 --> 00:45:23,009
+pre-modern world, collecting taxes is a
+very difficult and complicated system.
+
+760
+00:45:23,310 --> 00:45:27,340
+It is generally done by the
+centralizing power that has the right
+
+761
+00:45:27,349 --> 00:45:30,080
+to tax delegating somebody local.
+
+762
+00:45:31,580 --> 00:45:34,729
+If you're in a town, there'll
+be a local tax collector.
+
+763
+00:45:34,930 --> 00:45:39,880
+It's his job to go around to everybody
+and collect taxes, send a portion of
+
+764
+00:45:39,880 --> 00:45:43,959
+those taxes home to the central power,
+and keep a remainder to pay himself.
+
+765
+00:45:44,599 --> 00:45:48,320
+The central power will say, "We expect
+X amount of taxes from this area."
+
+766
+00:45:48,580 --> 00:45:53,119
+When you hear about wicked tax
+collectors, it's because if you are
+
+767
+00:45:53,119 --> 00:45:58,060
+told, "We want 10,000 florins worth of
+tax from this town," but you extract
+
+768
+00:45:58,070 --> 00:45:59,630
+15,000, you can keep the other 5,000.
+
+769
+00:45:59,630 --> 00:46:02,050
+The 10,000 is what you need to send
+to the central power, so the more
+
+770
+00:46:02,050 --> 00:46:03,560
+you extract, the more you get paid.
+
+771
+00:46:04,590 --> 00:46:09,130
+This delegate system, in which there's a
+local tax collector and even a more local
+
+772
+00:46:09,130 --> 00:46:13,990
+tax collector below him who might collect
+tax from a particular village, means
+
+773
+00:46:13,990 --> 00:46:17,040
+that you depend a lot upon the person
+whose job it is to collect your taxes.
+
+774
+00:46:17,690 --> 00:46:22,390
+When Cosimo is papal banker, he is the
+person collecting and channeling the money
+
+775
+00:46:22,630 --> 00:46:27,630
+from every church in Christendom when
+everybody puts a coin into a collection
+
+776
+00:46:27,630 --> 00:46:30,010
+box or pilgrims come and put money.
+
+777
+00:46:30,320 --> 00:46:33,220
+All of the wealth that's supposed
+to flow back to the papacy is
+
+778
+00:46:33,220 --> 00:46:34,370
+actually flowing to Cosimo.
+
+779
+00:46:34,370 --> 00:46:37,350
+Cosimo is passing it on to
+the papacy after taking a cut.
+
+780
+00:46:38,570 --> 00:46:40,890
+That is a lot of money moving quickly.
+
+781
+00:46:40,890 --> 00:46:44,190
+There is also a lot of ability
+to make contracts and contacts.
+
+782
+00:46:44,190 --> 00:46:46,520
+We all know how important networking is.
+
+783
+00:46:47,170 --> 00:46:51,360
+He rises in prominence from a banker
+to somebody who has enough money to
+
+784
+00:46:51,360 --> 00:46:56,530
+effectively take over his state via
+manipulating the guys-out-of-a-bag system.
+
+785
+00:46:56,889 --> 00:47:01,589
+To discuss that again briefly, if you
+have a system where you lottery people,
+
+786
+00:47:02,099 --> 00:47:04,000
+sortition is the technical term for it.
+
+787
+00:47:04,010 --> 00:47:05,830
+This is a very old form of government.
+
+788
+00:47:06,240 --> 00:47:07,740
+Ancient Athens used it.
+
+789
+00:47:08,130 --> 00:47:09,589
+It actually works really well.
+
+790
+00:47:10,280 --> 00:47:13,350
+But like any institution,
+it is corruptible.
+
+791
+00:47:14,059 --> 00:47:18,380
+In the same way that you can corrupt
+voting by bribing people or manipulating
+
+792
+00:47:18,380 --> 00:47:24,270
+the machines or manipulating voters, you
+can also corrupt sortition by bribing
+
+793
+00:47:24,270 --> 00:47:25,740
+the people who pull names out of the bag.
+
+794
+00:47:25,760 --> 00:47:28,650
+Or you can use the simpler
+mechanism which Cosimo uses first.
+
+795
+00:47:29,350 --> 00:47:33,940
+If you're a giant bigwig in the city
+and you employ a third of the people in
+
+796
+00:47:33,940 --> 00:47:38,520
+the city and they’re on your payroll,
+and nine guys at random are chosen
+
+797
+00:47:38,520 --> 00:47:41,749
+out of a bag, three of them are going
+to be your guys, just statistically.
+
+798
+00:47:42,590 --> 00:47:45,390
+If you tell all your guys, "I want
+this policy, this policy, and this
+
+799
+00:47:45,390 --> 00:47:47,810
+policy, and if you have questions,
+send for me and I'll tell you what to
+
+800
+00:47:47,810 --> 00:47:53,700
+do," when the plurality on a random
+council all have a plan and it's your
+
+801
+00:47:53,700 --> 00:47:55,550
+plan, you effectively control the city.
+
+802
+00:47:56,110 --> 00:48:01,669
+In that way, the Medici effectively
+controlled this lotteried system,
+
+803
+00:48:01,670 --> 00:48:05,540
+because they guaranteed that the
+plurality, in a situation that doesn't
+
+804
+00:48:05,550 --> 00:48:07,290
+have a majority, will always be them.
+
+805
+00:48:08,110 --> 00:48:09,570
+But of course, there's a chance to that.
+
+806
+00:48:09,620 --> 00:48:11,019
+In 1430 and 1432, Cosimo
+
+807
+00:48:16,670 --> 00:48:20,420
+has bad luck, and the lottery draws
+a lot of people who dislike him
+
+808
+00:48:20,420 --> 00:48:21,700
+and doesn't draw any of his guys.
+
+809
+00:48:22,070 --> 00:48:24,609
+They immediately declare him
+a traitor to the state, arrest
+
+810
+00:48:24,610 --> 00:48:25,740
+him, and lock him in a tower.
+
+811
+00:48:26,770 --> 00:48:27,859
+And he bribes his way out.
+
+812
+00:48:28,420 --> 00:48:33,870
+He offers the equivalent of about
+$300,000 to the guard outside the cell
+
+813
+00:48:33,870 --> 00:48:39,600
+and $700,000 to the captain of the
+guard to smuggle him out of the tower.
+
+814
+00:48:39,710 --> 00:48:42,740
+He wrote in a letter later that they
+were the two most foolish men he'd ever
+
+815
+00:48:42,740 --> 00:48:44,555
+met because he was Cosimo de' Medici.
+
+816
+00:48:44,555 --> 00:48:48,019
+He would happily have paid them
+tens of millions of dollars to let
+
+817
+00:48:48,020 --> 00:48:50,890
+him out of there, but they weren't
+ambitious enough to think to ask for
+
+818
+00:48:50,890 --> 00:48:52,010
+more than a few hundred thousand.
+
+819
+00:48:53,109 --> 00:48:57,940
+So he escapes, and then the next
+election they happened to elect
+
+820
+00:48:57,940 --> 00:49:01,040
+entirely people who just loved Cosimo.
+
+821
+00:49:01,330 --> 00:49:04,760
+They invited him back to the city
+in triumph, declared him father
+
+822
+00:49:04,760 --> 00:49:08,679
+of the fatherland, and arrested
+and persecuted all of his enemies,
+
+823
+00:49:08,679 --> 00:49:11,949
+who turned out to be guilty of tax
+evasion and all sorts of other things.
+
+824
+00:49:12,510 --> 00:49:14,040
+That was the moment
+that his grip tightened.
+
+825
+00:49:14,040 --> 00:49:17,440
+And he's like, "I'm going to stop
+simply controlling a plurality, and
+
+826
+00:49:17,440 --> 00:49:20,370
+I'm going to start bribing the people
+who actually run the elections."
+
+827
+00:49:21,580 --> 00:49:26,669
+His famous quote about this is, "It is
+dangerous to be rich and not powerful."
+
+828
+00:49:27,599 --> 00:49:28,099
+You
+
+829
+00:49:30,039 --> 00:49:33,930
+need the power to defend yourself
+in a situation like King of the
+
+830
+00:49:33,930 --> 00:49:36,709
+Mountain, where when you're on top,
+everyone will try to knock you down.
+
+831
+00:49:37,520 --> 00:49:40,670
+This is the system into
+which Machiavelli is born.
+
+832
+00:49:42,610 --> 00:49:44,820
+His family has worked for the
+Medici family for generations.
+
+833
+00:49:44,820 --> 00:49:47,239
+He grows up expecting to
+work for the Medici family.
+
+834
+00:49:48,289 --> 00:49:53,070
+But the problem with heredity is
+that sometimes you get a weak link.
+
+835
+00:49:53,650 --> 00:49:57,990
+And in the moment that Machiavelli is
+in his early twenties, he is coming of
+
+836
+00:49:57,990 --> 00:50:03,250
+age, about to work in government for the
+first time, a government in which he is
+
+837
+00:50:03,250 --> 00:50:04,459
+not, in fact, even fully enfranchised.
+
+838
+00:50:05,449 --> 00:50:08,470
+That's one of the fascinating things
+about the degree of his patriotism.
+
+839
+00:50:09,170 --> 00:50:13,850
+You weren't allowed to serve in
+government office fully—the lotteried
+
+840
+00:50:13,850 --> 00:50:16,009
+offices—if your family was deep in debt.
+
+841
+00:50:16,590 --> 00:50:19,450
+His grandfather had a
+lot of unpaid tax debt.
+
+842
+00:50:19,880 --> 00:50:22,380
+So he worked his whole life for
+a government of which he was
+
+843
+00:50:22,380 --> 00:50:23,749
+not even quite a full citizen.
+
+844
+00:50:24,260 --> 00:50:29,110
+That shows a deep love of country, but it
+also shows that even people who could not
+
+845
+00:50:29,120 --> 00:50:34,980
+be in office deeply loved and cared about
+this republic and the important liberty
+
+846
+00:50:35,139 --> 00:50:42,009
+they felt they had being ruled by the 5%
+instead of being ruled by one dictator.
+
+847
+00:50:43,210 --> 00:50:44,770
+To us, that isn't a very big difference.
+
+848
+00:50:45,010 --> 00:50:47,140
+They’re still both not democracy.
+
+849
+00:50:47,520 --> 00:50:51,200
+We would say they’re both not liberty
+in the sense that we want liberty.
+
+850
+00:50:51,469 --> 00:50:54,189
+But it's an inch more
+liberty than monarchy.
+
+851
+00:50:54,710 --> 00:50:57,279
+Even that small amount of
+liberty, people loved it.
+
+852
+00:50:57,389 --> 00:50:58,739
+People were willing to fight for it.
+
+853
+00:50:58,789 --> 00:51:01,670
+People were willing to go to the
+streets, wave their banners, and
+
+854
+00:51:01,670 --> 00:51:04,270
+say "libertas" for the republic.
+
+855
+00:51:04,840 --> 00:51:08,860
+Because they were invested in it,
+Machiavelli observes, they sustained it.
+
+856
+00:51:09,870 --> 00:51:13,570
+But eventually, one particular
+Medici—I'm not saying names because
+
+857
+00:51:13,570 --> 00:51:16,209
+they all have the same names over and
+over, and it's really confusing—comes
+
+858
+00:51:20,320 --> 00:51:23,170
+to power quite young and weak.
+
+859
+00:51:23,170 --> 00:51:28,880
+He's basically 20 when he's suddenly in
+charge of a very precarious republic.
+
+860
+00:51:28,880 --> 00:51:32,489
+Right then, the French are
+invading Italy, and he's scared.
+
+861
+00:51:32,580 --> 00:51:36,790
+He botches the diplomacy with France
+and falls into disrepute, and the city
+
+862
+00:51:36,790 --> 00:51:38,250
+takes the opportunity to kick him out.
+
+863
+00:51:38,500 --> 00:51:43,440
+The subsequent regimes, which are an
+independent republic again, are the
+
+864
+00:51:43,440 --> 00:51:45,129
+ones for which Machiavelli works.
+
+865
+00:51:45,309 --> 00:51:48,380
+He was part of the regime that
+ruled while they were in exile.
+
+866
+00:51:48,599 --> 00:51:51,250
+When they returned, they
+viewed him as an enemy.
+
+867
+00:51:52,199 --> 00:51:56,049
+He didn't actively organize to
+resist them, but his name was
+
+868
+00:51:56,050 --> 00:52:00,750
+found on a list of potential people
+that an anti-Medicean resistance
+
+869
+00:52:00,750 --> 00:52:02,770
+movement had intended to recruit.
+
+870
+00:52:03,580 --> 00:52:08,690
+He is arrested, tortured, exiled,
+and in exile writes The Prince.
+
+871
+00:52:09,030 --> 00:52:12,700
+He dedicates it to the very
+family that exiled him because
+
+872
+00:52:12,710 --> 00:52:16,850
+they now control Florence, and
+he will only work for Florence.
+
+873
+00:52:16,850 --> 00:52:21,350
+He doesn't want his manual of the
+great secrets of statecraft to be in
+
+874
+00:52:21,350 --> 00:52:25,320
+the hands of anybody but his homeland,
+so that it will defend his homeland.
+
+875
+00:52:25,849 --> 00:52:30,300
+When Florence exiles you, they tell
+you, "Go to this place and wait, and
+
+876
+00:52:30,310 --> 00:52:32,350
+if you're good, we'll invite you back."
+
+877
+00:52:32,820 --> 00:52:36,320
+Florence has been doing this for ages
+because Florence actually used this
+
+878
+00:52:36,320 --> 00:52:38,290
+as the core of its diplomatic corps.
+
+879
+00:52:38,760 --> 00:52:42,520
+When you have no nobility, you
+can't have ambassadors in the
+
+880
+00:52:42,520 --> 00:52:44,850
+full-on noble ambassador sense.
+
+881
+00:52:45,139 --> 00:52:49,350
+There's nobody in the city of
+sufficient rank to go talk to the
+
+882
+00:52:49,350 --> 00:52:54,140
+kings, to play chess with the sultan,
+and do all the things you have
+
+883
+00:52:54,150 --> 00:52:55,990
+to do to be a proper ambassador.
+
+884
+00:52:57,330 --> 00:53:01,000
+What Florence did instead is exile
+people and say, "Okay, we're exiling you.
+
+885
+00:53:01,030 --> 00:53:03,319
+You go to Bruges.
+
+886
+00:53:03,330 --> 00:53:04,739
+Be our contact in Bruges.
+
+887
+00:53:04,750 --> 00:53:05,669
+You go to London.
+
+888
+00:53:05,680 --> 00:53:06,530
+Be our contact in London.
+
+889
+00:53:06,560 --> 00:53:07,120
+Be good.
+
+890
+00:53:07,310 --> 00:53:09,089
+Send us letters informing
+us what's going on.
+
+891
+00:53:09,090 --> 00:53:11,850
+When we have diplomatic needs to talk to
+the king, we're going to send letters to
+
+892
+00:53:11,850 --> 00:53:12,830
+you, and you're going to forward them.
+
+893
+00:53:12,940 --> 00:53:14,660
+If you're good, you get to come back."
+
+894
+00:53:15,440 --> 00:53:19,820
+So being in exile is sort of
+being on probation, but also being
+
+895
+00:53:20,000 --> 00:53:22,499
+entrusted with state matters.
+
+896
+00:53:23,650 --> 00:53:25,509
+That's not quite what
+they did with Machiavelli.
+
+897
+00:53:25,820 --> 00:53:30,180
+With Machiavelli, they banished him to
+a hamlet in the middle of the Tuscan
+
+898
+00:53:30,180 --> 00:53:34,180
+countryside near nothing important and
+said, "Go sit in the country and rot, and
+
+899
+00:53:34,180 --> 00:53:36,249
+if you're good, we'll invite you back."
+
+900
+00:53:36,509 --> 00:53:41,980
+What everyone expects is that Machiavelli
+will break that promise and leave.
+
+901
+00:53:42,490 --> 00:53:46,650
+Because he's a well-known statesman,
+a scholar, a playwright, and a
+
+902
+00:53:46,650 --> 00:53:51,430
+historian, and there are dozens of
+cardinals in Rome and other cities
+
+903
+00:53:51,430 --> 00:53:52,629
+that would love to employ him.
+
+904
+00:53:54,340 --> 00:53:56,840
+Kings of England love
+employing Florentines to
+
+905
+00:53:56,840 --> 00:53:58,129
+work for them as secretaries.
+
+906
+00:53:58,299 --> 00:54:01,860
+Kings of Naples love employing Florentines
+to work for them as secretaries.
+
+907
+00:54:01,930 --> 00:54:07,230
+He might go get a job tutoring the
+daughters of the Duke of Milan, the way
+
+908
+00:54:07,230 --> 00:54:10,630
+Francesco Filelfo did when he was kicked
+out of Florence for opposing the Medici.
+
+909
+00:54:10,630 --> 00:54:15,640
+There are lots of places it's expected
+an exiled Florentine intellectual
+
+910
+00:54:15,640 --> 00:54:19,560
+will go where he will have the ear of
+power and be able to exert influence.
+
+911
+00:54:19,560 --> 00:54:25,070
+He will be a mover and shaker at the
+court of Milan or Naples or England.
+
+912
+00:54:25,640 --> 00:54:29,589
+Instead, when they say to Machiavelli,
+"Sit in the country and rot, this is
+
+913
+00:54:29,590 --> 00:54:32,950
+a test," he passes the test and sits
+in the country faithfully and rots.
+
+914
+00:54:34,090 --> 00:54:37,330
+If he had wanted to go be an intellectual
+power broker, the correct move is to
+
+915
+00:54:37,330 --> 00:54:41,420
+run off to Rome and say, "I will give
+up the chance to go home the way Dante
+
+916
+00:54:41,420 --> 00:54:45,470
+did, but I will be a Florentine in
+exile, and I will write important things.
+
+917
+00:54:45,580 --> 00:54:50,189
+I will live at the house of wealthy men
+who will support me and give me the ear
+
+918
+00:54:50,190 --> 00:54:53,310
+of power, and I will exert my influence
+in that way." He does not do that.
+
+919
+00:54:53,320 --> 00:54:56,570
+He stays in the country and he rots,
+and he continues writing letters home
+
+920
+00:54:56,570 --> 00:54:58,060
+saying, "I will serve you or nothing.
+
+921
+00:54:58,430 --> 00:54:59,820
+Bring me home to serve my country."
+
+922
+00:55:00,010 --> 00:55:05,150
+That is a weird thing to do, and not
+normal for the many other Florentine
+
+923
+00:55:05,250 --> 00:55:09,629
+intellectuals who experienced similar
+banishments in the same period.
+
+924
+00:55:10,059 --> 00:55:13,189
+How do we know that he wasn't just
+trying to get back into power?
+
+925
+00:55:13,500 --> 00:55:15,700
+The answer is you read
+his personal letters.
+
+926
+00:55:15,800 --> 00:55:18,549
+You read the way he talks about
+love of his country, and you read
+
+927
+00:55:18,550 --> 00:55:19,860
+the way he talks to his friends.
+
+928
+00:55:20,190 --> 00:55:23,830
+You read the letters he wrote when he
+discusses writing The Prince, and you
+
+929
+00:55:23,830 --> 00:55:28,740
+read the comments he exchanges with the
+other friends that he shared it with.
+
+930
+00:55:29,840 --> 00:55:33,279
+His other works—his comic play,
+which was a big hit, his history of
+
+931
+00:55:33,280 --> 00:55:36,600
+Florence, which was well known at the
+time—those he published and circulated.
+
+932
+00:55:36,610 --> 00:55:40,919
+The Prince he kept in very close private
+circles, circulating it only with
+
+933
+00:55:41,219 --> 00:55:45,529
+trusted, intimate friends, and then
+the copy that he sends in to Florence.
+
+934
+00:55:45,630 --> 00:55:48,029
+Yes, it's a job application:
+"Please bring me back.
+
+935
+00:55:48,029 --> 00:55:48,790
+I will work for you.
+
+936
+00:55:48,790 --> 00:55:49,560
+I will be loyal.
+
+937
+00:55:49,560 --> 00:55:53,420
+I support my city more than any
+particular iteration of my city.
+
+938
+00:55:53,790 --> 00:55:57,920
+I support my country more
+than any particular regime or
+
+939
+00:55:59,250 --> 00:56:00,579
+group that might be in power.
+
+940
+00:56:00,580 --> 00:56:03,339
+Whatever is in power in my
+city, I will be faithful to it."
+
+941
+00:56:04,150 --> 00:56:06,810
+You see him expressing that
+in lots of different ways.
+
+942
+00:56:07,560 --> 00:56:12,380
+When in The Prince he says you can and
+should do all of these ruthless things
+
+943
+00:56:12,380 --> 00:56:17,209
+to keep power, we have to remember that
+the end justifies the means when the
+
+944
+00:56:17,219 --> 00:56:19,889
+end is the survival of your country.
+
+945
+00:56:21,080 --> 00:56:23,829
+It's not that the end, in
+general, justifies the means.
+
+946
+00:56:23,859 --> 00:56:28,980
+Machiavelli feels very strongly that
+regime changes bring civil violence,
+
+947
+00:56:28,990 --> 00:56:30,720
+and civil violence sheds blood.
+
+948
+00:56:30,960 --> 00:56:33,779
+He has seen the streets of his
+city run with blood before.
+
+949
+00:56:34,630 --> 00:56:43,670
+He thinks that even life under a tyrant
+is better than life in a civil war,
+
+950
+00:56:43,680 --> 00:56:48,850
+which is usually not life at all,
+given the massacre of the people and
+
+951
+00:56:48,850 --> 00:56:52,730
+external conquest that are likely as
+a result of another regime change.
+
+952
+00:56:52,740 --> 00:56:55,519
+So he says, "Don't push for regime change.
+
+953
+00:56:55,530 --> 00:56:59,989
+Even if the regime is tyrannical, more
+people will survive by sticking with
+
+954
+00:56:59,990 --> 00:57:02,670
+the tyrant than by changing the regime."
+
+955
+00:57:04,640 --> 00:57:59,416
+I want to talk about
+
+956
+00:58:13,020 --> 00:58:14,040
+the printing press.
+
+957
+00:58:14,040 --> 00:58:17,700
+One thing I didn't realize before
+reading your book is that not only does
+
+958
+00:58:17,700 --> 00:58:22,400
+Gutenberg go bankrupt after making the
+most significant invention of a millennia,
+
+959
+00:58:22,570 --> 00:58:24,119
+but his apprentices also go bankrupt.
+
+960
+00:58:25,790 --> 00:58:30,409
+This is at a time when people like
+Cosimo are willing to pay on the order of
+
+961
+00:58:30,410 --> 00:58:32,090
+hundreds of thousands of dollars per book.
+
+962
+00:58:32,090 --> 00:58:36,200
+So with the guy who invents a way to make
+this way cheaper, how is this possible?
+
+963
+00:58:36,730 --> 00:58:41,650
+The problem is printed books are a
+mass-produced commodity in a world
+
+964
+00:58:41,650 --> 00:58:44,500
+that does not have distribution
+networks for mass-produced commodities.
+
+965
+00:58:44,700 --> 00:58:46,769
+Mass production is incredibly
+rare in this period.
+
+966
+00:58:46,809 --> 00:58:50,030
+Coins are mass-produced,
+but that's really about it.
+
+967
+00:58:50,070 --> 00:58:51,980
+Almost everything is artisanally produced.
+
+968
+00:58:52,520 --> 00:58:56,160
+When you have a mass-produced
+product, you need a distribution
+
+969
+00:58:56,160 --> 00:58:57,559
+mechanism before you can sell it.
+
+970
+00:58:58,010 --> 00:59:01,180
+The great example is that technically
+e-books existed the first time
+
+971
+00:59:01,180 --> 00:59:02,759
+anyone typed a book on a computer.
+
+972
+00:59:04,350 --> 00:59:07,240
+Certainly in the 1970s there
+was such a thing as an e-book.
+
+973
+00:59:07,590 --> 00:59:13,170
+But there was no market for e-books until
+the Kindle came out and made a commodity
+
+974
+00:59:13,170 --> 00:59:17,620
+way to buy and sell e-books, then the
+e-book industry came into existence.
+
+975
+00:59:17,860 --> 00:59:21,269
+So the e-book as a commodity
+is several decades younger than
+
+976
+00:59:21,270 --> 00:59:23,330
+the e-book technically existing.
+
+977
+00:59:24,190 --> 00:59:27,590
+In the same way, you're Gutenberg.
+
+978
+00:59:27,600 --> 00:59:29,980
+You have figured out how to
+produce 300 copies of a book for
+
+979
+00:59:29,980 --> 00:59:31,480
+the cost of one copy of a book.
+
+980
+00:59:31,660 --> 00:59:32,590
+You do so.
+
+981
+00:59:32,599 --> 00:59:33,960
+You print your Bible.
+
+982
+00:59:33,960 --> 00:59:34,930
+You have 300 Bibles.
+
+983
+00:59:34,930 --> 00:59:38,630
+You sell seven of them to the seven
+people in your small landlocked German
+
+984
+00:59:38,630 --> 00:59:41,479
+town who are legally allowed to read
+the Bible in a period in which only
+
+985
+00:59:41,480 --> 00:59:42,720
+priests are allowed to read the Bible.
+
+986
+00:59:43,030 --> 00:59:48,360
+Congratulations, Mr. Gutenberg,
+you have 293 Bibles, and you can't
+
+987
+00:59:48,360 --> 00:59:49,720
+sell them, and you go bankrupt.
+
+988
+00:59:50,050 --> 00:59:54,350
+There has to be a distribution
+mechanism for books to find their
+
+989
+00:59:54,350 --> 00:59:57,930
+market because there are certainly
+300 people in Europe that want this,
+
+990
+00:59:58,260 --> 01:00:01,520
+but there are not 300 people in one
+location where it's being produced.
+
+991
+01:00:01,880 --> 01:00:03,319
+So Gutenberg goes bankrupt.
+
+992
+01:00:03,340 --> 01:00:05,210
+The bank seizes his press.
+
+993
+01:00:05,420 --> 01:00:06,580
+They try to go into the business.
+
+994
+01:00:06,590 --> 01:00:07,890
+The bank goes bankrupt.
+
+995
+01:00:07,890 --> 01:00:09,310
+There is so much overhead.
+
+996
+01:00:10,000 --> 01:00:13,270
+You spend hundreds of thousands of
+dollars on the production cost of the
+
+997
+01:00:13,270 --> 01:00:14,710
+books, and then you get nothing back.
+
+998
+01:00:15,740 --> 01:00:17,580
+Gutenberg's apprentices build presses.
+
+999
+01:00:17,670 --> 01:00:18,420
+They go bankrupt.
+
+1000
+01:00:18,430 --> 01:00:22,320
+They flee their debts, flee the country,
+leave Germany, and go to Venice.
+
+1001
+01:00:23,440 --> 01:00:28,179
+Venice is the airport
+hub of the Mediterranean.
+
+1002
+01:00:28,179 --> 01:00:29,759
+Venice is where you change boats.
+
+1003
+01:00:30,050 --> 01:00:32,990
+If you're sailing from A to B,
+you go to Venice, you change
+
+1004
+01:00:32,990 --> 01:00:34,349
+boats, you get to the next place.
+
+1005
+01:00:34,350 --> 01:00:35,929
+The hub system has always worked well.
+
+1006
+01:00:36,150 --> 01:00:41,020
+So if you're printing in Venice, you
+print 300 Bibles, you give ten Bibles
+
+1007
+01:00:41,030 --> 01:00:44,700
+to each of thirty ships' captains
+going to thirty different cities.
+
+1008
+01:00:45,370 --> 01:00:46,310
+They can sell them.
+
+1009
+01:00:46,490 --> 01:00:50,630
+The first economically
+sustainable circulation of print
+
+1010
+01:00:50,920 --> 01:00:52,500
+is enabled by the hub system.
+
+1011
+01:00:52,510 --> 01:00:55,650
+Then book fairs come into
+existence in which printers will
+
+1012
+01:00:55,650 --> 01:00:57,220
+spend all year printing a book.
+
+1013
+01:00:57,240 --> 01:00:59,970
+They go with a thousand copies of
+their book to a book fair where
+
+1014
+01:00:59,970 --> 01:01:01,970
+there are a thousand other printers.
+
+1015
+01:01:01,970 --> 01:01:06,129
+They all trade, and then they go
+home to their town with five copies
+
+1016
+01:01:06,150 --> 01:01:10,569
+each of 200 books instead of a
+thousand copies of one book, and
+
+1017
+01:01:10,570 --> 01:01:12,010
+then they sell them in bookshops.
+
+1018
+01:01:12,840 --> 01:01:16,670
+Things like the Frankfurt Book Fair,
+which still exists today, developed
+
+1019
+01:01:16,670 --> 01:01:18,150
+as the distribution mechanism.
+
+1020
+01:01:18,530 --> 01:01:21,170
+There's a slow growth
+and a slow saturation.
+
+1021
+01:01:21,210 --> 01:01:25,960
+That's really cool because one of the
+things people think is unique about
+
+1022
+01:01:25,960 --> 01:01:30,190
+our present information revolution is
+that we're living in this sequence of
+
+1023
+01:01:30,190 --> 01:01:31,890
+successive information revolutions.
+
+1024
+01:01:32,000 --> 01:01:33,770
+We had the computer, the
+computer was exciting.
+
+1025
+01:01:34,000 --> 01:01:38,430
+Then we had the personal computer, then we
+had the internet, the cell phone, social
+
+1026
+01:01:38,430 --> 01:01:44,530
+media, and now we have different social
+media networks coming in successively
+
+1027
+01:01:44,530 --> 01:01:46,140
+causing crises one after the other.
+
+1028
+01:01:46,410 --> 01:01:49,460
+And then we have LLMs and
+other applications of machine
+
+1029
+01:01:49,460 --> 01:01:50,640
+learning and generative AI.
+
+1030
+01:01:52,050 --> 01:01:56,730
+It's easy to think of each of these as
+different tech revolutions, as if we've
+
+1031
+01:01:56,730 --> 01:01:58,860
+just had ten tech revolutions in a row.
+
+1032
+01:01:59,099 --> 01:02:02,960
+But really, they are all deeper
+penetration of one tech revolution:
+
+1033
+01:02:02,960 --> 01:02:05,259
+the development of the computer.
+
+1034
+01:02:05,260 --> 01:02:06,880
+These are all applications of computers.
+
+1035
+01:02:07,380 --> 01:02:11,680
+In the same way, the printing press
+comes in in 1450, and it isn't
+
+1036
+01:02:11,860 --> 01:02:14,260
+done shaping the world instantly.
+
+1037
+01:02:14,270 --> 01:02:14,770
+It
+
+1038
+01:02:16,690 --> 01:02:19,220
+takes forty years to even
+be economically sustainable.
+
+1039
+01:02:19,230 --> 01:02:21,610
+It's not until the 1490s that
+printers are making money.
+
+1040
+01:02:22,020 --> 01:02:26,750
+And then in the 1510s, it's time for
+pamphlets and pamphlet distribution.
+
+1041
+01:02:27,000 --> 01:02:32,870
+Now there's news, and news is suddenly
+done by print, and that's a revolution
+
+1042
+01:02:32,870 --> 01:02:35,730
+on the same scale as the difference
+between computers and cell phones.
+
+1043
+01:02:37,650 --> 01:02:42,580
+We get the Reformation, which is enabled
+by pamphlets in exactly the same way that
+
+1044
+01:02:42,580 --> 01:02:44,500
+the Arab Spring is enabled by cell phones.
+
+1045
+01:02:44,870 --> 01:02:50,049
+Then we get the newspaper, another
+new application of the same technology
+
+1046
+01:02:50,270 --> 01:02:52,060
+that follows, like social media.
+
+1047
+01:02:53,540 --> 01:02:57,830
+It's one information revolution
+having multiple successive
+
+1048
+01:02:57,839 --> 01:03:02,650
+revolutionary applications as it
+disseminates and eventually saturates.
+
+1049
+01:03:03,280 --> 01:03:06,740
+It moves on a timescale quite similar
+to the timescale in which the digital
+
+1050
+01:03:06,740 --> 01:03:10,120
+one is happening as well, so that
+print keeps hitting Europe with
+
+1051
+01:03:10,120 --> 01:03:13,530
+successive revolutions for 150 years.
+
+1052
+01:03:14,160 --> 01:03:19,560
+And every couple of decades, or
+every decade, there'll be a new bang.
+
+1053
+01:03:19,580 --> 01:03:23,830
+Suddenly it's possible to get a
+printed pamphlet from Wittenberg
+
+1054
+01:03:24,070 --> 01:03:25,970
+to London in seventeen days.
+
+1055
+01:03:26,010 --> 01:03:29,220
+Oh my God, we can coordinate our
+resistance movement against the Catholics.
+
+1056
+01:03:29,250 --> 01:03:29,750
+Boom.
+
+1057
+01:03:30,320 --> 01:03:31,330
+The Reformation happens.
+
+1058
+01:03:31,480 --> 01:03:35,619
+That wasn't possible even a decade earlier
+when it took months to get a pamphlet
+
+1059
+01:03:35,850 --> 01:03:37,440
+from one end of Europe to the other.
+
+1060
+01:03:37,830 --> 01:03:42,460
+So it's best to think of these very
+much in parallel, the print revolution
+
+1061
+01:03:42,460 --> 01:03:47,100
+and the digital revolution, as one big
+technological change in information
+
+1062
+01:03:47,380 --> 01:03:52,239
+that then has successive applications
+as that one technology finds new forms
+
+1063
+01:03:52,240 --> 01:03:57,280
+and disseminates more deeply and keeps
+having consequences over decades.
+
+1064
+01:03:57,610 --> 01:03:59,840
+It's not multiple separate revolutions.
+
+1065
+01:03:59,840 --> 01:04:02,020
+It's one ongoing information revolution.
+
+1066
+01:04:04,840 --> 01:04:08,460
+Maybe other eras also have this and I just
+haven't read the books about them, but
+
+1067
+01:04:08,460 --> 01:04:13,110
+from your book, I thought, "Oh, history
+just seems to be happening really fast,
+
+1068
+01:04:13,200 --> 01:04:16,299
+and seems to have sped up, especially
+religious and political history."
+
+1069
+01:04:17,660 --> 01:04:20,029
+Obviously, the things happening in
+Italy, but even aside from that, you
+
+1070
+01:04:20,029 --> 01:04:24,669
+have Martin Luther and the Reformation,
+and then just twenty years later England
+
+1071
+01:04:24,670 --> 01:04:29,090
+splits off from the Catholic Church,
+which is unprecedented in two millennia.
+
+1072
+01:04:29,090 --> 01:04:32,549
+Then it has a bunch of tumults
+that flop, flop, flop so that
+
+1073
+01:04:32,550 --> 01:04:33,799
+every decade feels different.
+
+1074
+01:04:34,509 --> 01:04:39,390
+Here you are in 1506 being
+nostalgic for how the world was
+
+1075
+01:04:39,390 --> 01:04:40,650
+completely different in 1490.
+
+1076
+01:04:41,570 --> 01:04:43,169
+And you're like, "That's pretty fast."
+
+1077
+01:04:43,309 --> 01:04:46,410
+Here we are in 2026 often
+feeling nostalgic for how
+
+1078
+01:04:46,430 --> 01:04:48,740
+things were in the year 2000.
+
+1079
+01:04:48,780 --> 01:04:52,730
+Is it fair to trace that back
+to the printing press or its
+
+1080
+01:04:52,730 --> 01:04:54,280
+offshoots, or is it just embedded?
+
+1081
+01:04:54,430 --> 01:04:57,010
+It's more that history
+has always moved fast.
+
+1082
+01:04:57,690 --> 01:05:01,060
+But when we teach it in high school,
+we're trying to move over large
+
+1083
+01:05:01,060 --> 01:05:04,469
+chunks of time quickly, and so
+we pretend that it moved slowly.
+
+1084
+01:05:04,469 --> 01:05:07,840
+We have this lie that there
+were long periods of stagnation.
+
+1085
+01:05:07,840 --> 01:05:12,320
+But you can zoom in anywhere, and
+you're going to find every decade feels
+
+1086
+01:05:12,320 --> 01:05:15,520
+different, and people in the 1320s
+are nostalgic for people in the 1300s.
+
+1087
+01:05:18,040 --> 01:05:20,980
+It's always felt like history
+was moving very quickly, and
+
+1088
+01:05:20,980 --> 01:05:22,479
+things rose and things fell.
+
+1089
+01:05:22,740 --> 01:05:26,200
+It's the lies we tell ourselves in
+history books written in the 19th century
+
+1090
+01:05:26,200 --> 01:05:28,830
+that are trying to group all of these
+things together and make modernity
+
+1091
+01:05:28,830 --> 01:05:31,209
+special that confuse us about this.
+
+1092
+01:05:31,980 --> 01:05:34,970
+I'm working on a paper right
+now about the video game Civ.
+
+1093
+01:05:35,300 --> 01:05:38,810
+Civ is the number one teacher
+of history in the world.
+
+1094
+01:05:39,550 --> 01:05:45,000
+It has shipped 70 million copies,
+and 65 percent of people on Earth
+
+1095
+01:05:45,440 --> 01:05:47,590
+who have technology play video games.
+
+1096
+01:05:47,650 --> 01:05:52,190
+Civ is the number one teacher of
+history, bar none, since 1991.
+
+1097
+01:05:53,469 --> 01:05:54,490
+What does Civ tell you?
+
+1098
+01:05:54,500 --> 01:05:59,140
+Civ tells you that in antiquity, a turn
+is fifty years, and then in the Middle
+
+1099
+01:05:59,140 --> 01:06:00,930
+Ages, a turn is twenty-five years.
+
+1100
+01:06:00,930 --> 01:06:04,810
+Once you get into the Industrial
+Revolution, a turn is ten years, and
+
+1101
+01:06:04,810 --> 01:06:08,569
+then five years, and in modernity,
+a turn is just one year because in
+
+1102
+01:06:08,570 --> 01:06:12,470
+one year, as much happens now as
+happened in fifty years in antiquity.
+
+1103
+01:06:12,860 --> 01:06:15,079
+That lie is also what
+our textbooks tell us.
+
+1104
+01:06:15,420 --> 01:06:17,640
+But it doesn't matter where we zoom in.
+
+1105
+01:06:17,980 --> 01:06:21,230
+Any time I go to a talk where any
+historian is zooming in on any
+
+1106
+01:06:21,230 --> 01:06:23,990
+decade in any time and place, it
+always feels like it's moving as
+
+1107
+01:06:23,990 --> 01:06:25,290
+fast as our present is moving.
+
+1108
+01:06:25,560 --> 01:06:29,245
+I guess the difference is that
+technologically, we know that
+
+1109
+01:06:29,320 --> 01:06:30,260
+they weren't moving as fast.
+
+1110
+01:06:30,280 --> 01:06:31,770
+Technologically, they were moving fast.
+
+1111
+01:06:31,770 --> 01:06:33,950
+We just don't care about
+those technologies anymore.
+
+1112
+01:06:34,379 --> 01:06:35,189
+That’s interesting.
+
+1113
+01:06:36,730 --> 01:06:39,210
+They were constantly
+inventing all sorts of things.
+
+1114
+01:06:39,210 --> 01:06:40,300
+We just take them for granted.
+
+1115
+01:06:40,310 --> 01:06:43,830
+The invention of chairs with backs, the
+invention of scissors, the invention of
+
+1116
+01:06:44,040 --> 01:06:47,180
+improved metallurgy so that steel could
+do things steel couldn't do before.
+
+1117
+01:06:47,410 --> 01:06:49,349
+There was always technological
+change happening.
+
+1118
+01:06:49,559 --> 01:06:52,880
+I'm in the middle of reading an
+amazing book about how, when you
+
+1119
+01:06:52,880 --> 01:06:56,319
+look at the paintings of Raphael
+and the few paintings we have by
+
+1120
+01:06:56,320 --> 01:07:01,400
+Michelangelo, the colors look like
+they're really glowing, like gemstones.
+
+1121
+01:07:01,410 --> 01:07:03,669
+How did that happen?
+
+1122
+01:07:03,670 --> 01:07:07,610
+When you compare them to paintings
+from just a hundred years earlier
+
+1123
+01:07:07,610 --> 01:07:09,240
+somehow the colors are flatter.
+
+1124
+01:07:09,240 --> 01:07:11,409
+I'm not talking about the
+anatomy being more realistic.
+
+1125
+01:07:11,410 --> 01:07:12,980
+That's separate, but
+the colors are flatter.
+
+1126
+01:07:13,540 --> 01:07:17,400
+The answer is there was a sequence of
+revolutionary adaptations in how to
+
+1127
+01:07:17,410 --> 01:07:22,180
+process oil and how to process colors
+and mix them together, and then those
+
+1128
+01:07:22,180 --> 01:07:26,170
+were used to create fake gemstones,
+and there was a major industrial leap
+
+1129
+01:07:26,170 --> 01:07:28,269
+forward in the fake gemstone industry.
+
+1130
+01:07:28,740 --> 01:07:31,440
+Then people who were making picture
+frames realized they could use
+
+1131
+01:07:31,440 --> 01:07:36,270
+the same techniques from the fake
+gemstones to make fake gold by painting
+
+1132
+01:07:36,660 --> 01:07:38,870
+yellow over the surface of tinfoil.
+
+1133
+01:07:39,130 --> 01:07:41,560
+And then those were used by
+artists who were like, "Wait, I
+
+1134
+01:07:41,560 --> 01:07:43,789
+want to make things that look like
+they glow like fake gemstones."
+
+1135
+01:07:44,509 --> 01:07:48,420
+There were eleven major technical
+revolutions over the course of 120
+
+1136
+01:07:48,810 --> 01:07:51,779
+years that led to those colors changing.
+
+1137
+01:07:54,569 --> 01:07:58,500
+Obviously progress has been happening
+in individual fields over time.
+
+1138
+01:07:58,500 --> 01:08:00,709
+But in this macroscopic view, and
+
+1139
+01:08:03,610 --> 01:08:04,919
+this is a big part of your book,
+there's a reason that people living
+
+1140
+01:08:04,920 --> 01:08:09,450
+in the fourteenth century would say,
+"Look, the best time to be alive was
+
+1141
+01:08:09,450 --> 01:08:12,030
+when the Romans were around, and since
+then it's just been the Dark Ages."
+
+1142
+01:08:13,280 --> 01:08:17,989
+If they stood in relation to the Roman
+Empire as we stand to them, we would
+
+1143
+01:08:18,020 --> 01:08:22,649
+obviously notice that the world has
+seen so much progress since then.
+
+1144
+01:08:25,119 --> 01:08:26,470
+It clearly seems like the pace...
+
+1145
+01:08:26,880 --> 01:08:31,540
+It's hard to figure out when we
+are lying and when we are right
+
+1146
+01:08:31,540 --> 01:08:33,029
+where we say the pace picked up.
+
+1147
+01:08:34,609 --> 01:08:37,809
+One thing that makes the pace
+pick up in modern day is simply
+
+1148
+01:08:37,809 --> 01:08:41,249
+the population grew and grew and
+grew and is now much, much larger.
+
+1149
+01:08:41,750 --> 01:08:45,519
+The majority of people who ever lived
+in the entire history, since humans
+
+1150
+01:08:45,569 --> 01:08:49,479
+have been humans and not hominids,
+have lived in the last 200 years
+
+1151
+01:08:49,510 --> 01:08:51,729
+because the population became massive.
+
+1152
+01:08:51,729 --> 01:08:53,070
+How did the population become massive?
+
+1153
+01:08:53,070 --> 01:08:55,890
+Our agriculture and
+our hygiene enabled it.
+
+1154
+01:08:55,930 --> 01:08:57,769
+How did our agriculture
+and our hygiene improve?
+
+1155
+01:08:58,219 --> 01:09:02,089
+Half of that is continuing on
+the artisanal level to invent new
+
+1156
+01:09:02,120 --> 01:09:04,850
+things in the same way that the
+artists invented better colors.
+
+1157
+01:09:05,180 --> 01:09:08,109
+Agricultural workers invented
+better technologies, and agriculture
+
+1158
+01:09:08,109 --> 01:09:09,200
+was constantly improving.
+
+1159
+01:09:09,540 --> 01:09:14,660
+You're correct that with the
+arrival of the systematic scientific
+
+1160
+01:09:14,700 --> 01:09:22,050
+method just after 1600, there is a
+deliberate societal desire to create
+
+1161
+01:09:22,120 --> 01:09:24,629
+intentional anthropogenic progress.
+
+1162
+01:09:25,270 --> 01:09:30,319
+I'll zoom in on the arguments made in
+1600, then I'll zoom out and unpack them.
+
+1163
+01:09:31,929 --> 01:09:36,479
+In 1600, the idea is that history
+up until now has been unsystematic.
+
+1164
+01:09:37,410 --> 01:09:43,390
+People have discovered things at
+random, but we can create a method
+
+1165
+01:09:43,410 --> 01:09:49,939
+in which we observe the world and use
+inductive reasoning to figure things
+
+1166
+01:09:49,969 --> 01:09:54,519
+out from those observations to create
+systematic descriptions of the secret
+
+1167
+01:09:54,520 --> 01:09:58,200
+motions that underlie nature, and
+from that work out technologies that
+
+1168
+01:09:58,200 --> 01:10:00,120
+are good and useful for humankind.
+
+1169
+01:10:00,690 --> 01:10:04,829
+If, as we make our observations of nature,
+we publish them and share them with
+
+1170
+01:10:04,830 --> 01:10:09,909
+each other, we can create a community
+of scientists that will share all of
+
+1171
+01:10:09,910 --> 01:10:13,790
+these discoveries with each other and
+with the world and therefore benefit it.
+
+1172
+01:10:14,340 --> 01:10:17,750
+This is where, when I'm doing this in
+the classroom, I deliberately provoke and
+
+1173
+01:10:17,750 --> 01:10:22,179
+shock my students with the fun claim that
+Leonardo da Vinci was not a scientist.
+
+1174
+01:10:23,020 --> 01:10:28,129
+What I mean by that is that to be a
+scientist is to publish your results
+
+1175
+01:10:28,139 --> 01:10:30,880
+and share them with a community of
+other scientists so that they can
+
+1176
+01:10:30,880 --> 01:10:35,130
+test them, so that the whole human
+civilization progresses a little bit.
+
+1177
+01:10:35,790 --> 01:10:38,860
+When my friends who are chemists or
+my friends who are particle physicists
+
+1178
+01:10:38,860 --> 01:10:43,230
+discover something, the next goal is
+to share that discovery with everyone
+
+1179
+01:10:43,230 --> 01:10:44,899
+so everyone's knowledge advances.
+
+1180
+01:10:45,210 --> 01:10:46,460
+What does Leonardo do?
+
+1181
+01:10:46,469 --> 01:10:49,700
+He writes everything he discovers
+down in coded mirror writing so that
+
+1182
+01:10:49,700 --> 01:10:51,410
+nobody but him can possibly use it.
+
+1183
+01:10:51,860 --> 01:10:55,470
+He refuses to share even with his
+students and assistants the secrets of
+
+1184
+01:10:55,470 --> 01:10:59,210
+what he's doing because Leonardo does
+not want to contribute to human progress.
+
+1185
+01:10:59,740 --> 01:11:03,779
+Leonardo wants to make unique
+masterpieces so that hundreds of
+
+1186
+01:11:03,780 --> 01:11:07,200
+years later, people will see them and
+marvel and say, "How did he do it?
+
+1187
+01:11:07,219 --> 01:11:10,480
+No one else has ever been able
+to replicate that method."
+
+1188
+01:11:11,080 --> 01:11:14,870
+He wanted to be marveled at by the
+future exactly the way he and his peers
+
+1189
+01:11:14,870 --> 01:11:16,540
+marveled at the works of the ancients.
+
+1190
+01:11:17,120 --> 01:11:22,980
+They look at something like the Colosseum
+or the Pantheon in Rome with its enormous
+
+1191
+01:11:23,000 --> 01:11:25,290
+dome, and they say, "How did they do it?
+
+1192
+01:11:25,300 --> 01:11:28,790
+If only we could work that
+out, we could make one and then
+
+1193
+01:11:28,790 --> 01:11:29,960
+make sure no one else could."
+
+1194
+01:11:29,970 --> 01:11:35,559
+Brunelleschi, who built Florence's famous
+beautiful dome, deliberately burned all
+
+1195
+01:11:35,559 --> 01:11:40,320
+of his notes and schematics so that nobody
+else would be able to replicate his work.
+
+1196
+01:11:40,650 --> 01:11:46,900
+That is an inventor, and an engineer, but
+in the sense of a community of scientists,
+
+1197
+01:11:46,910 --> 01:11:49,230
+this is not a servant of human progress.
+
+1198
+01:11:49,700 --> 01:11:52,750
+This is actually a saboteur of
+human progress, if anything, who
+
+1199
+01:11:52,750 --> 01:11:56,339
+deliberately makes progress and then
+tries to cut it off at that point
+
+1200
+01:11:56,340 --> 01:11:57,909
+so that no one else can be his peer.
+
+1201
+01:11:58,469 --> 01:12:04,440
+That is what you did as a learned
+inventor in the 1400s and in the 1500s.
+
+1202
+01:12:04,440 --> 01:12:07,790
+But as you get to 1600, the
+suggestion is different, and here
+
+1203
+01:12:07,790 --> 01:12:12,139
+I'm going to use Francis Bacon's
+gorgeous simile of the three insects.
+
+1204
+01:12:12,710 --> 01:12:16,290
+There are three types of
+knowledge wielders, says Bacon.
+
+1205
+01:12:16,869 --> 01:12:21,220
+First, there is the ant, who is
+the encyclopedist, who gathers
+
+1206
+01:12:21,220 --> 01:12:23,390
+information from all around the world.
+
+1207
+01:12:23,390 --> 01:12:26,480
+He learns everything he can, and he
+piles it up into a great big pile.
+
+1208
+01:12:26,620 --> 01:12:28,300
+He makes an anthill, and he sits on top.
+
+1209
+01:12:28,800 --> 01:12:32,269
+If he has the biggest anthill,
+the biggest pile of knowledge,
+
+1210
+01:12:32,270 --> 01:12:34,369
+then he's proud of having made it.
+
+1211
+01:12:34,369 --> 01:12:37,650
+But all he does is
+assemble it and possess it.
+
+1212
+01:12:37,960 --> 01:12:41,200
+It's a beautiful library,
+but nothing comes from it.
+
+1213
+01:12:41,940 --> 01:12:48,710
+The second type is the system weaver,
+the spider who spins elaborate webs of
+
+1214
+01:12:48,710 --> 01:12:51,650
+beautiful, intricate, logical theory.
+
+1215
+01:12:51,990 --> 01:12:56,910
+You admire them, and you can get
+entranced and ensnared in them
+
+1216
+01:12:56,910 --> 01:12:58,620
+easily because they're so beautiful.
+
+1217
+01:12:58,620 --> 01:12:59,740
+They're almost hypnotic.
+
+1218
+01:13:00,280 --> 01:13:01,830
+But there's nothing real in them.
+
+1219
+01:13:01,830 --> 01:13:06,240
+They're all just spun out of the
+body of the spider himself, the
+
+1220
+01:13:06,240 --> 01:13:09,559
+theorist theorizing from his own mind.
+
+1221
+01:13:10,279 --> 01:13:15,570
+The third kind, says Bacon, is the
+honeybee, who, gathering from among
+
+1222
+01:13:15,570 --> 01:13:20,019
+the fruits of nature, processes what
+he gathers through the organ of his
+
+1223
+01:13:20,020 --> 01:13:24,559
+own being to produce something which
+is sweet and useful for humankind.
+
+1224
+01:13:25,340 --> 01:13:30,019
+That is the scientist who gathers
+from nature to produce something
+
+1225
+01:13:30,020 --> 01:13:32,470
+sweet and useful for humankind.
+
+1226
+01:13:32,630 --> 01:13:37,440
+With this rhetorical call, and with
+Francis Bacon's portrait on the title
+
+1227
+01:13:37,440 --> 01:13:42,440
+page, the English Academy of Sciences
+is founded and starts publishing.
+
+1228
+01:13:42,830 --> 01:13:46,659
+The standard switches over from "You
+are not a great achiever because you
+
+1229
+01:13:46,660 --> 01:13:49,720
+built the dome" to "You are a great
+achiever because you worked out how it
+
+1230
+01:13:49,720 --> 01:13:54,570
+can be done, and you shared that sweet
+and useful thing with all of humankind."
+
+1231
+01:13:54,940 --> 01:14:00,369
+Bacon says if we do this, if we make
+academies of sciences, we can make
+
+1232
+01:14:00,370 --> 01:14:04,890
+sure that every human generation lives
+in a better condition than the past.
+
+1233
+01:14:05,170 --> 01:14:08,120
+We'll have better
+agriculture, fewer famines.
+
+1234
+01:14:08,470 --> 01:14:09,880
+We will have refrigeration.
+
+1235
+01:14:09,880 --> 01:14:11,370
+We'll have chicken in winter.
+
+1236
+01:14:11,650 --> 01:14:14,540
+We will have all of these
+things that we aspire to.
+
+1237
+01:14:15,370 --> 01:14:19,590
+If we collaborate, each generation's
+experience will be better than the last.
+
+1238
+01:14:20,170 --> 01:14:25,690
+He says that to be a scientist is
+the ultimate act of charity because
+
+1239
+01:14:25,690 --> 01:14:29,100
+there is no greater act of charity
+than to give a gift to every human
+
+1240
+01:14:29,100 --> 01:14:30,910
+who will ever live after you.
+
+1241
+01:14:31,850 --> 01:14:35,909
+That is the rhetoric of what you
+would feel was happening if you're
+
+1242
+01:14:35,910 --> 01:14:38,920
+alive in the 1620s and 1630s.
+
+1243
+01:14:39,050 --> 01:14:43,380
+Galileo is publishing his observations,
+and Descartes is publishing his systems.
+
+1244
+01:14:43,780 --> 01:14:47,950
+They've just discovered that the heart
+is a pump and that they were totally
+
+1245
+01:14:47,950 --> 01:14:49,700
+wrong about the four humors theory.
+
+1246
+01:14:49,770 --> 01:14:52,039
+The blood circulates, and they're
+trying to figure out what it does.
+
+1247
+01:14:52,290 --> 01:14:56,250
+They have magnification, and
+they can see worlds of complex
+
+1248
+01:14:56,280 --> 01:14:57,869
+patterns on the wing of a flea.
+
+1249
+01:14:57,990 --> 01:15:01,580
+It sounds like the whole world
+is suddenly coming into view, and
+
+1250
+01:15:01,580 --> 01:15:03,400
+we're at the beginning of progress.
+
+1251
+01:15:03,400 --> 01:15:07,099
+If we zoom out, we would say there'd
+been progress the whole time.
+
+1252
+01:15:07,110 --> 01:15:08,890
+People had always been inventing things.
+
+1253
+01:15:09,170 --> 01:15:13,569
+Agriculture in France was better
+in 1300 than it was in 1000.
+
+1254
+01:15:13,610 --> 01:15:18,070
+Plows got better, seed got better,
+cabbages were bred to be bigger.
+
+1255
+01:15:18,279 --> 01:15:19,530
+People worked out better pots.
+
+1256
+01:15:19,540 --> 01:15:21,960
+There were always artisanal inventors.
+
+1257
+01:15:22,200 --> 01:15:24,370
+In fact, that's a lot of
+what Bacon is observing.
+
+1258
+01:15:24,370 --> 01:15:28,189
+He worked in the patent office as
+a young man, and he would see a
+
+1259
+01:15:28,190 --> 01:15:32,759
+carpenter come in to patent: "I
+have invented a better chisel.
+
+1260
+01:15:32,790 --> 01:15:35,099
+I've invented a thing that goes like this.
+
+1261
+01:15:35,879 --> 01:15:38,750
+I'm going to patent it." He would
+realize that it was workers and
+
+1262
+01:15:38,750 --> 01:15:42,330
+workmen and handicraftsmen who were
+inventing the really useful tools.
+
+1263
+01:15:42,590 --> 01:15:44,540
+He wanted to make this systematic.
+
+1264
+01:15:45,960 --> 01:15:49,069
+We would say there was always
+anthropogenic progress.
+
+1265
+01:15:49,490 --> 01:15:53,159
+In 1630, they realize there
+is anthropogenic progress.
+
+1266
+01:15:53,449 --> 01:15:54,830
+They think there hasn't been.
+
+1267
+01:15:54,850 --> 01:15:57,880
+They think they're beginning, and
+that history up until this point has
+
+1268
+01:15:57,880 --> 01:16:04,490
+been stagnant, but now it's going
+to suddenly be full of invention as,
+
+1269
+01:16:04,490 --> 01:16:08,179
+for the first time, there will be
+deliberate anthropogenic progress.
+
+1270
+01:16:08,380 --> 01:16:11,390
+Really, we would say there always
+was and that it's accelerating,
+
+1271
+01:16:11,390 --> 01:16:14,820
+and at this point, we realize it
+and articulate and describe it.
+
+1272
+01:16:15,470 --> 01:16:19,310
+You've probably seen lots of graphs
+of history with the hockey stick
+
+1273
+01:16:19,320 --> 01:16:23,109
+graph structure, where it's flat
+for a long time and then zhoops up.
+
+1274
+01:16:24,039 --> 01:16:27,170
+They'll put that zhoop after the
+invention of the scientific method.
+
+1275
+01:16:27,849 --> 01:16:32,340
+It depends on what we're graphing,
+whether that zhoop is appropriate.
+
+1276
+01:16:32,340 --> 01:16:35,120
+It also depends on how much
+you zoom in or zoom out.
+
+1277
+01:16:35,450 --> 01:16:36,863
+It's true, we do get to inventions
+that result in enormous increases
+
+1278
+01:16:36,863 --> 01:16:38,680
+in population 150 years after Bacon.
+
+1279
+01:16:43,240 --> 01:16:46,280
+Would we have anyway, even if
+it hadn't been systematized?
+
+1280
+01:16:46,580 --> 01:16:51,099
+Probably a bit later, and we would
+have a slightly flatter hockey stick.
+
+1281
+01:16:51,390 --> 01:16:53,990
+But we would still have hockey sticked.
+
+1282
+01:16:54,000 --> 01:16:57,440
+In the same way that when you put
+mice on an island without mice, they
+
+1283
+01:16:57,450 --> 01:16:59,920
+breed and they breed and they breed
+and they breed and they hockey stick.
+
+1284
+01:17:00,580 --> 01:17:01,994
+Humans would also have hockey sticked.
+
+1285
+01:17:02,170 --> 01:17:04,550
+But would we have hockey sticked later?
+
+1286
+01:17:04,570 --> 01:17:06,230
+Would we have hockey
+sticked with more pain?
+
+1287
+01:17:06,730 --> 01:17:09,490
+When mice hockey stick, they also
+starve to death and eat each other.
+
+1288
+01:17:09,780 --> 01:17:10,709
+We haven't done that yet.
+
+1289
+01:17:10,960 --> 01:17:11,500
+Go us.
+
+1290
+01:17:12,160 --> 01:17:13,360
+Was that science?
+
+1291
+01:17:13,840 --> 01:17:14,450
+Probably.
+
+1292
+01:17:16,639 --> 01:17:18,520
+There are a lot of factors to it.
+
+1293
+01:17:18,820 --> 01:17:22,199
+So is it true that everything
+accelerated after 1620?
+
+1294
+01:17:22,199 --> 01:17:22,699
+In
+
+1295
+01:17:24,379 --> 01:17:25,370
+one sense, yes.
+
+1296
+01:17:25,630 --> 01:17:29,480
+In another sense, it's a continuation
+of a curve that was already curving.
+
+1297
+01:17:30,130 --> 01:17:31,840
+I think you might have answered
+a question I was about to ask.
+
+1298
+01:17:34,370 --> 01:17:37,026
+The book you recommend on your website,
+The Renaissance in Italy, I keep
+
+1299
+01:17:37,026 --> 01:17:38,080
+forgetting the name of the author.
+
+1300
+01:17:38,080 --> 01:17:39,740
+Italian names are tough.
+Guido Ruggiero.
+
+1301
+01:17:41,170 --> 01:17:45,980
+In some part, he has this question: Look,
+in Italy, as you mentioned, in Venice,
+
+1302
+01:17:46,250 --> 01:17:48,190
+they've really scaled the printing press.
+
+1303
+01:17:48,190 --> 01:17:52,050
+As a result, you have the
+metalworking for fine typesetting.
+
+1304
+01:17:52,880 --> 01:17:58,460
+Separately, milling technology for
+water mills and windmills is advanced,
+
+1305
+01:17:58,740 --> 01:18:01,580
+along with gears for watches.
+
+1306
+01:18:01,980 --> 01:18:07,230
+So he asks, why didn't Italy
+have the Industrial Revolution?
+
+1307
+01:18:07,710 --> 01:18:08,210
+I
+
+1308
+01:18:10,420 --> 01:18:13,395
+wonder, do you stand by the answer you
+just gave, or is it a different theory?
+
+1309
+01:18:13,395 --> 01:18:13,679
+Part of it.
+
+1310
+01:18:13,679 --> 01:18:18,920
+But another is, we cannot underestimate
+how much richer per square meter
+
+1311
+01:18:19,540 --> 01:18:20,940
+Italy is than everywhere else.
+
+1312
+01:18:20,950 --> 01:18:25,720
+Italy is the breadbasket, and it's also
+the center of Big Oil, which is to say
+
+1313
+01:18:25,740 --> 01:18:30,690
+Big Olive Oil, which was both fuel oil for
+light and industrial oil for production,
+
+1314
+01:18:30,690 --> 01:18:32,109
+as well as cooking and eating oil.
+
+1315
+01:18:32,509 --> 01:18:35,889
+And the other major major industry
+of the period, which is Big Wool.
+
+1316
+01:18:36,199 --> 01:18:41,650
+If you're already the center of Big
+Finance, Big Wool, and Big Oil, do
+
+1317
+01:18:41,650 --> 01:18:43,309
+you need an industrial revolution?
+
+1318
+01:18:44,020 --> 01:18:47,020
+You're already economically on top
+through the power of agriculture.
+
+1319
+01:18:47,679 --> 01:18:51,990
+It makes sense for it to have been
+a sort of industrial backwater area.
+
+1320
+01:18:53,330 --> 01:18:54,780
+What was England producing?
+
+1321
+01:18:54,809 --> 01:18:56,059
+Crappy quality wool?
+
+1322
+01:18:57,670 --> 01:19:02,080
+England was so aware that it couldn't
+process wool into high quality without
+
+1323
+01:19:02,090 --> 01:19:05,670
+masses of olive oil, which it couldn't
+produce, that England just exported
+
+1324
+01:19:05,670 --> 01:19:09,679
+its crude wool to Florence in order
+to have Florence, with its olive oil
+
+1325
+01:19:09,679 --> 01:19:11,930
+reserves, produce the fine quality.
+
+1326
+01:19:12,250 --> 01:19:15,809
+Think about how a wool suit isn't
+itchy, but a wool blanket often is.
+
+1327
+01:19:16,210 --> 01:19:18,934
+That wool suit isn't itchy because
+lots of olive oil went into
+
+1328
+01:19:19,010 --> 01:19:21,430
+the process of producing it, at
+least at pre-modern tech levels.
+
+1329
+01:19:21,770 --> 01:19:25,566
+So do you want England to produce
+your itchy wool that people will
+
+1330
+01:19:25,566 --> 01:19:28,050
+only pay a small amount for,
+or do you want to export it?
+
+1331
+01:19:28,740 --> 01:19:31,960
+It makes sense for it to have
+been somewhere industrially
+
+1332
+01:19:31,960 --> 01:19:36,000
+ambitious that wasn't already
+economically on top to have done it.
+
+1333
+01:19:36,470 --> 01:19:39,830
+That's one reason that industrialization
+doesn't kindle in Italy.
+
+1334
+01:19:39,830 --> 01:19:42,630
+Italy is agricultural
+land and a finance world.
+
+1335
+01:19:42,849 --> 01:19:45,220
+It doesn't feel like it
+needs a new industry.
+
+1336
+01:19:45,790 --> 01:19:47,729
+Another factor is mining.
+
+1337
+01:19:47,740 --> 01:19:52,280
+This land is more valuable as
+a farm than it is as a mine.
+
+1338
+01:19:52,520 --> 01:19:53,730
+You don't want to rip it up.
+
+1339
+01:19:54,700 --> 01:19:58,129
+Another is it's so subdivided
+because those rich cities are
+
+1340
+01:19:58,130 --> 01:20:03,300
+still mostly independent, whereas
+a centralized crown in England is
+
+1341
+01:20:03,460 --> 01:20:07,730
+more able to pass legislation to
+facilitate a massive transformation.
+
+1342
+01:20:08,420 --> 01:20:11,970
+No city really wants to be the one where
+the giant industrialization is happening.
+
+1343
+01:20:11,970 --> 01:20:13,110
+It's awful for the city.
+
+1344
+01:20:14,340 --> 01:20:18,189
+Note that the industrialization of
+the Industrial Revolution was mostly
+
+1345
+01:20:18,200 --> 01:20:23,049
+outside of the wealthier centers of
+England in the second-tier towns.
+
+1346
+01:20:23,820 --> 01:20:27,980
+They grow massively into huge
+industrial areas like Lancaster.
+
+1347
+01:20:28,510 --> 01:20:32,160
+So those are a plural bunch of reasons.
+
+1348
+01:20:32,160 --> 01:20:35,589
+But I would have also thought that the
+competitiveness between different Italian
+
+1349
+01:20:37,290 --> 01:20:43,039
+city-states would have made it so that
+if they get better textile machines
+
+1350
+01:20:43,489 --> 01:20:45,540
+before you, it's a disaster because
+
+1351
+01:20:47,760 --> 01:20:48,090
+they're right there.
+
+1352
+01:20:48,090 --> 01:20:50,670
+This is not going to sound
+plausible to anybody, but it's true.
+
+1353
+01:20:51,059 --> 01:20:54,170
+We've been looking at some documents
+recently which pretty much confirm
+
+1354
+01:20:54,179 --> 01:20:58,760
+that they did figure out how
+to make industrial looms in the
+
+1355
+01:20:58,760 --> 01:21:00,800
+1400s, and they didn't want to.
+
+1356
+01:21:00,800 --> 01:21:05,070
+They wanted to make
+luxuriant artisanal fabrics.
+
+1357
+01:21:05,280 --> 01:21:07,780
+This, by the way, was another
+interesting thing from the book.
+
+1358
+01:21:09,090 --> 01:21:11,170
+With the first printed books,
+
+1359
+01:21:13,900 --> 01:21:20,450
+there's not this market of commodity
+things that are produced cheaply
+
+1360
+01:21:20,470 --> 01:21:23,000
+that the average person is going
+to be like, "Oh, if I can get
+
+1361
+01:21:23,000 --> 01:21:23,710
+this for $10.99, I'll go buy it."
+
+1362
+01:21:24,230 --> 01:21:26,700
+So they're trying to make this
+thing look like it was produced
+
+1363
+01:21:27,019 --> 01:21:28,359
+as artisanal luxury grade.
+
+1364
+01:21:28,380 --> 01:21:28,429
+Right.
+
+1365
+01:21:28,429 --> 01:21:32,890
+The first printed fonts look like
+handwritten scripts, and often have a
+
+1366
+01:21:32,969 --> 01:21:38,600
+blank space to illuminate it so that
+it looks just as fancy as manuscripts.
+
+1367
+01:21:44,840 --> 01:22:21,825
+One thing I wanted
+
+1368
+01:22:58,610 --> 01:23:00,990
+to ask you, back to the printing press.
+
+1369
+01:23:02,280 --> 01:23:03,889
+Not only does printing get
+cheaper, but around this time,
+
+1370
+01:23:03,889 --> 01:23:05,229
+paper itself also gets cheaper.
+
+1371
+01:23:05,270 --> 01:23:07,530
+So not just reading, but
+writing gets cheaper.
+
+1372
+01:23:07,560 --> 01:23:12,420
+Do you as historians see a marked
+change in this period in the amount
+
+1373
+01:23:12,420 --> 01:23:14,480
+of records that are taken and,
+as a result, our understanding?
+
+1374
+01:23:14,480 --> 01:23:20,250
+A huge amount rests on whether
+you have a cheap writing surface.
+
+1375
+01:23:21,030 --> 01:23:24,740
+Rather than looking first at the
+Renaissance, let's look at what
+
+1376
+01:23:24,740 --> 01:23:25,930
+we think of as the fall of Rome.
+
+1377
+01:23:26,590 --> 01:23:31,150
+One of the biggest things that happens
+there is that Western and Northern
+
+1378
+01:23:31,150 --> 01:23:33,290
+Europe lose access to papyrus.
+
+1379
+01:23:34,210 --> 01:23:36,859
+Papyrus is the cheap writing
+surface of antiquity.
+
+1380
+01:23:36,870 --> 01:23:39,790
+It is an easy plant-based writing surface.
+
+1381
+01:23:39,790 --> 01:23:44,300
+You take this tall, thin water reed
+that is fibrous like asparagus.
+
+1382
+01:23:44,300 --> 01:23:45,620
+You slice it into ribbons.
+
+1383
+01:23:45,850 --> 01:23:49,250
+You set them out in the sun, a
+bunch of them parallel to each other
+
+1384
+01:23:49,250 --> 01:23:51,120
+sitting on a stone like noodles.
+
+1385
+01:23:51,320 --> 01:23:54,350
+You put a second row of noodles
+perpendicular to that on top,
+
+1386
+01:23:54,360 --> 01:23:57,410
+and then they dry in the sun,
+and they are naturally sticky.
+
+1387
+01:23:57,410 --> 01:23:58,140
+They stick to each other.
+
+1388
+01:23:58,140 --> 01:23:58,950
+They produce a sheet.
+
+1389
+01:23:59,350 --> 01:24:01,400
+Practically no labor has gone into this.
+
+1390
+01:24:01,410 --> 01:24:03,590
+You've sliced, you've laid out, boom.
+
+1391
+01:24:04,480 --> 01:24:08,639
+Papyrus is a very inexpensive writing
+surface, and this is what enables
+
+1392
+01:24:08,639 --> 01:24:14,059
+Rome to have a bureaucracy and to
+have libraries in any mid-sized city.
+
+1393
+01:24:15,309 --> 01:24:17,269
+People can send letters back and forth.
+
+1394
+01:24:17,500 --> 01:24:19,440
+There can be enormous tax records.
+
+1395
+01:24:19,920 --> 01:24:23,290
+Sometimes when Egypt and Rome are
+at war, Egypt will be like, "No,
+
+1396
+01:24:23,300 --> 01:24:26,492
+we are angry. We'll stop exporting
+papyrus." No papyrus to Rome, and
+
+1397
+01:24:26,492 --> 01:24:29,650
+then Rome's infrastructure will fall
+apart overnight because you can't do
+
+1398
+01:24:29,650 --> 01:24:31,069
+anything if you can't write stuff down.
+
+1399
+01:24:31,450 --> 01:24:34,950
+Papyrus is a warm weather plant.
+
+1400
+01:24:34,969 --> 01:24:35,950
+It is killed by frost.
+
+1401
+01:24:36,049 --> 01:24:38,080
+You cannot grow it
+north of the frost line.
+
+1402
+01:24:39,140 --> 01:24:43,540
+So France, Spain, even most of
+Italy, you can only grow papyrus
+
+1403
+01:24:43,540 --> 01:24:45,870
+down in the very tip down in Sicily.
+
+1404
+01:24:45,880 --> 01:24:46,380
+Without papyrus,
+
+1405
+01:24:50,389 --> 01:24:52,339
+what you're writing on is a dead sheep.
+
+1406
+01:24:52,910 --> 01:24:57,440
+If you think of the price of a
+head of lettuce and the price of a
+
+1407
+01:24:57,440 --> 01:25:01,880
+leather jacket, you're understanding
+the difference between a sheet of
+
+1408
+01:25:01,880 --> 01:25:04,950
+papyrus and writing on a dead sheep.
+
+1409
+01:25:05,220 --> 01:25:10,410
+Every page of a medieval
+book is as expensive as that
+
+1410
+01:25:10,410 --> 01:25:11,940
+much of a leather jacket.
+
+1411
+01:25:11,940 --> 01:25:17,650
+A handwritten medieval book handwritten
+on parchment costs as much as a house,
+
+1412
+01:25:18,160 --> 01:25:24,110
+so that a small pocket copy of a
+book costs as much as a studio condo.
+
+1413
+01:25:24,550 --> 01:25:28,089
+A big illuminated fancy Bible, you're
+spending on that what you would
+
+1414
+01:25:28,090 --> 01:25:30,069
+spend on a villa in the countryside.
+
+1415
+01:25:31,060 --> 01:25:32,690
+This is an enormous expense.
+
+1416
+01:25:32,920 --> 01:25:36,679
+To have a library is to be
+not just rich, but mega-rich.
+
+1417
+01:25:37,280 --> 01:25:41,529
+Only the wealthiest cities
+contain anybody who has a library.
+
+1418
+01:25:41,929 --> 01:25:46,110
+The great library of the University
+of Paris—the library from Europe's
+
+1419
+01:25:46,119 --> 01:25:48,950
+perspective—has six hundred books.
+
+1420
+01:25:49,890 --> 01:25:52,080
+There's definitely more than
+six hundred books in this room.
+
+1421
+01:25:53,000 --> 01:25:56,820
+Every kiosk at an airport
+selling Dan Brown novels has
+
+1422
+01:25:56,860 --> 01:25:58,189
+more than six hundred books.
+
+1423
+01:25:58,610 --> 01:25:59,619
+This is nothing.
+
+1424
+01:25:59,780 --> 01:26:06,860
+At the same time as that, in the Middle
+East, sultans have libraries of over a
+
+1425
+01:26:06,860 --> 01:26:09,160
+thousand books or five thousand books.
+
+1426
+01:26:09,230 --> 01:26:12,850
+There are libraries in Sub-Saharan
+Africa with thousands of books.
+
+1427
+01:26:12,850 --> 01:26:17,200
+There are libraries in China with
+thousands of books because they
+
+1428
+01:26:17,870 --> 01:26:19,599
+have cheap paper, rice paper.
+
+1429
+01:26:19,929 --> 01:26:21,349
+The Middle East has papyrus.
+
+1430
+01:26:21,370 --> 01:26:23,649
+Europe, and only Europe, is
+writing on a leather jacket.
+
+1431
+01:26:24,029 --> 01:26:25,010
+What changes around this time?
+
+1432
+01:26:25,010 --> 01:26:27,080
+How is Europe able to get paper?
+
+1433
+01:26:28,750 --> 01:26:30,110
+Still zooming in on the fall of Rome.
+
+1434
+01:26:31,500 --> 01:26:33,510
+Rome had lots and lots
+of books on papyrus.
+
+1435
+01:26:33,530 --> 01:26:35,740
+They start falling apart
+because papyrus is brittle.
+
+1436
+01:26:36,250 --> 01:26:39,350
+Most of our knowledge from
+antiquity is not lost at the burning
+
+1437
+01:26:39,350 --> 01:26:40,660
+of the Library of Alexandria.
+
+1438
+01:26:40,930 --> 01:26:45,340
+It's lost between 400 and 600 A.D.
+when the papyri are falling apart.
+
+1439
+01:26:46,470 --> 01:26:50,740
+Here you are with a library of a
+thousand books, and you can only
+
+1440
+01:26:50,740 --> 01:26:53,699
+afford to make a hundred new books.
+
+1441
+01:26:54,269 --> 01:26:58,200
+You have to choose which hundred of
+these thousand to save because there
+
+1442
+01:26:58,200 --> 01:27:02,809
+literally is not enough industry
+on your continent to make enough
+
+1443
+01:27:02,810 --> 01:27:04,380
+leather to copy down all this text.
+
+1444
+01:27:04,380 --> 01:27:05,150
+You have to pick.
+
+1445
+01:27:05,800 --> 01:27:08,540
+The majority of what we lost
+from antiquity, we lost then.
+
+1446
+01:27:08,830 --> 01:27:10,900
+We lost it when the
+papyri were falling apart.
+
+1447
+01:27:11,200 --> 01:27:17,290
+This also distorted what survived because
+most of the copying out was done by monks.
+
+1448
+01:27:17,820 --> 01:27:20,230
+When you have a thousand books and you
+can only save a hundred of them and you're
+
+1449
+01:27:20,230 --> 01:27:23,309
+a monk, you're like, "What will I save?
+I know, Saint Augustine. I love Saint
+
+1450
+01:27:23,310 --> 01:27:26,379
+Augustine." This is why we have more
+surviving work by Saint Augustine than
+
+1451
+01:27:26,420 --> 01:27:28,700
+the entirety of all pagan classical Latin.
+
+1452
+01:27:30,509 --> 01:27:34,006
+The subjective tastes of the people
+in power at the moment the papyri
+
+1453
+01:27:34,190 --> 01:27:39,160
+were falling apart ended up being an
+unintentional moment of censorship that
+
+1454
+01:27:39,170 --> 01:27:40,870
+biased what survives from antiquity.
+
+1455
+01:27:41,840 --> 01:27:47,539
+Paper technology hits Europe in 800 A.D.,
+so we're talking about a four-hundred-year
+
+1456
+01:27:47,540 --> 01:27:49,450
+famine of a cheap writing surface.
+
+1457
+01:27:49,900 --> 01:27:55,760
+Paper is nowhere near as cheap
+as papyrus because you need to
+
+1458
+01:27:55,760 --> 01:27:58,700
+gather rags from used clothing.
+
+1459
+01:27:59,090 --> 01:28:03,740
+You immerse them in water, and you beat
+them violently using a mill for a very
+
+1460
+01:28:03,740 --> 01:28:06,090
+long time until they become a pulp.
+
+1461
+01:28:06,520 --> 01:28:12,380
+You then scoop that pulp up on a
+screen, and the fibers lock together.
+
+1462
+01:28:12,380 --> 01:28:14,620
+It's sort of a slurry
+that looks like grits.
+
+1463
+01:28:14,630 --> 01:28:18,950
+You lift up the slurry, and it locks
+together into a sheet of paper.
+
+1464
+01:28:19,480 --> 01:28:22,380
+It's not as cheap as just growing
+papyrus, and it's much more labor.
+
+1465
+01:28:22,380 --> 01:28:23,880
+You have to build a paper mill.
+
+1466
+01:28:24,170 --> 01:28:29,930
+If parchment is a leather jacket
+and papyrus is buying a head of
+
+1467
+01:28:29,930 --> 01:28:32,170
+lettuce, this is somewhere in between.
+
+1468
+01:28:34,760 --> 01:28:37,150
+What's in between a
+leather jacket and a...
+
+1469
+01:28:37,150 --> 01:28:39,690
+This feels like a trick question.
+
+1470
+01:28:40,340 --> 01:28:44,249
+This is somewhere in between,
+getting yourself a dozen frozen
+
+1471
+01:28:44,259 --> 01:28:48,070
+prepackaged meals, which are
+complex and have many ingredients.
+
+1472
+01:28:48,190 --> 01:28:50,920
+A lot of industry went into
+producing the actual packaging,
+
+1473
+01:28:50,930 --> 01:28:52,540
+more so than a head of lettuce.
+
+1474
+01:28:52,960 --> 01:28:55,150
+So it's ten times as expensive,
+but it's still a tenth as
+
+1475
+01:28:55,150 --> 01:28:56,080
+much as the leather jacket.
+
+1476
+01:28:57,670 --> 01:29:00,104
+Paper comes in, and people
+are very wary of it.
+
+1477
+01:29:00,429 --> 01:29:02,180
+Paper is clearly not
+as strong as parchment.
+
+1478
+01:29:02,180 --> 01:29:04,719
+Parchment is really tough stuff.
+
+1479
+01:29:05,900 --> 01:29:13,480
+People start using paper for rough
+drafts, letters, sketchbooks.
+
+1480
+01:29:13,520 --> 01:29:18,360
+When you're doing the sketch before doing
+a painting, you might do that on paper.
+
+1481
+01:29:19,110 --> 01:29:22,849
+But Europe has paper for four hundred
+years before the earliest state document
+
+1482
+01:29:22,859 --> 01:29:26,160
+is ever written on paper, to give you
+a sense of how people are wary of it.
+
+1483
+01:29:26,830 --> 01:29:28,640
+It disseminates slowly.
+
+1484
+01:29:29,690 --> 01:29:30,600
+It's still expensive.
+
+1485
+01:29:30,600 --> 01:29:35,120
+It requires industry and production, but
+it is a tenth as expensive as leather.
+
+1486
+01:29:36,300 --> 01:29:38,659
+Paper disseminates slowly through Europe.
+
+1487
+01:29:38,750 --> 01:29:41,140
+Again, this is one of these things where
+there was always technological change,
+
+1488
+01:29:41,480 --> 01:29:43,260
+and all technological changes are gradual.
+
+1489
+01:29:43,520 --> 01:29:45,110
+Paper comes in in 800.
+
+1490
+01:29:45,530 --> 01:29:48,250
+It's being trusted by 1200.
+
+1491
+01:29:48,980 --> 01:29:52,550
+When printing begins, they're printing
+on paper, but they even print on vellum.
+
+1492
+01:29:53,730 --> 01:29:57,240
+If you're a really rich person,
+you would be like, "Please print
+
+1493
+01:29:57,679 --> 01:29:59,469
+two copies on vellum for me."
+
+1494
+01:30:00,409 --> 01:30:05,440
+Dukes like the Dukes d'Este, Isabella
+d'Este—the sister of the duke who walked
+
+1495
+01:30:05,440 --> 01:30:10,160
+around buck naked to show off that he
+could—specially ordered all of her books
+
+1496
+01:30:10,170 --> 01:30:13,959
+to be printed on vellum even when the
+rest of the print run was on paper.
+
+1497
+01:30:14,340 --> 01:30:18,820
+These are the very books being
+produced in Venice by the apprentices
+
+1498
+01:30:18,820 --> 01:30:20,100
+of Gutenberg who ran away.
+
+1499
+01:30:20,770 --> 01:30:25,839
+At that moment in the 1490s, if you're
+really rich, you might be invested
+
+1500
+01:30:25,840 --> 01:30:28,849
+in these newfangled printed books,
+but you're still not trusting paper,
+
+1501
+01:30:29,040 --> 01:30:32,349
+even though paper has been there
+for six hundred years at that point.
+
+1502
+01:30:32,490 --> 01:30:37,139
+So again, gradual adoption of
+technologies and gradual trust in paper.
+
+1503
+01:30:37,620 --> 01:30:43,840
+They're still using parchment for things,
+gradually less and less, but substantially
+
+1504
+01:30:43,840 --> 01:30:45,379
+over the course of the 1600s.
+
+1505
+01:30:45,389 --> 01:30:49,410
+You can even find things written on
+parchment in the 1700s and 1800s.
+
+1506
+01:30:49,420 --> 01:30:52,630
+British Parliament still did its
+records on parchment up until ten
+
+1507
+01:30:52,630 --> 01:30:55,890
+years ago, and the Vatican still does
+its official records on parchment now.
+
+1508
+01:30:59,000 --> 01:31:04,669
+This is a digression, but the
+numbers of how expensive a book is
+
+1509
+01:31:04,710 --> 01:31:07,460
+didn't make sense to me just based
+on how much scribe time it took.
+
+1510
+01:31:07,500 --> 01:31:13,090
+You say it's $600,000 per
+book, and then separately, it's
+
+1511
+01:31:13,100 --> 01:31:14,290
+five months of scribe time.
+
+1512
+01:31:14,470 --> 01:31:16,470
+I'm like, how much are
+the scribes getting paid?
+
+1513
+01:31:16,700 --> 01:31:20,026
+But if it's the paper...
+What changes with Gutenberg?
+
+1514
+01:31:20,026 --> 01:31:21,059
+The paper and the ink.
+
+1515
+01:31:21,070 --> 01:31:24,157
+But a lot of it is scribe time.
+
+1516
+01:31:24,250 --> 01:31:27,950
+But Gutenberg still needs paper, right?
+
+1517
+01:31:28,100 --> 01:31:29,060
+Yeah, Gutenberg needs paper.
+
+1518
+01:31:29,060 --> 01:31:29,870
+That's why he goes bankrupt.
+
+1519
+01:31:29,870 --> 01:31:36,260
+He borrows the equivalent of about
+$1.5 million to buy paper, and
+
+1520
+01:31:36,260 --> 01:31:41,010
+then doesn't make back $1.5 million
+worth of material when printing it.
+
+1521
+01:31:41,509 --> 01:31:43,830
+This is what makes printing a risk.
+
+1522
+01:31:43,840 --> 01:31:46,460
+You have to start buying
+the paper up front.
+
+1523
+01:31:46,460 --> 01:31:49,490
+You need to buy it in a big lot
+so that it matches, because people
+
+1524
+01:31:49,490 --> 01:31:52,139
+don't want the paper to suddenly be
+a different color within their book.
+
+1525
+01:31:52,660 --> 01:31:55,660
+You're investing a lot up front, and
+you're not getting anything back until
+
+1526
+01:31:55,660 --> 01:31:59,509
+you produce this slow print run, which
+is why printers start printing pamphlets.
+
+1527
+01:31:59,719 --> 01:32:03,130
+They can have one press that's
+slowly printing a valuable book
+
+1528
+01:32:03,130 --> 01:32:04,359
+that will take six months to print.
+
+1529
+01:32:04,909 --> 01:32:08,099
+Next to it they have another press
+that's printing pamphlets where in two
+
+1530
+01:32:08,100 --> 01:32:12,560
+days they've printed a fashion report on
+what everyone was wearing at the royal
+
+1531
+01:32:12,560 --> 01:32:14,720
+wedding, which they can sell right away.
+
+1532
+01:32:14,860 --> 01:32:17,799
+It's much cheaper, but it means
+they have something they can
+
+1533
+01:32:17,800 --> 01:32:19,410
+sell two or three times a week.
+
+1534
+01:32:20,200 --> 01:32:24,840
+So you have the pamphlet
+following the book, printing
+
+1535
+01:32:24,840 --> 01:32:26,640
+cheap news, printing scandal rags.
+
+1536
+01:32:27,120 --> 01:32:28,130
+Why is it cheaper?
+Because the material is cheaper?
+
+1537
+01:32:28,370 --> 01:32:29,940
+Just because it's only five pages long.
+
+1538
+01:32:30,060 --> 01:32:30,420
+Oh, I see.
+
+1539
+01:32:30,420 --> 01:32:30,920
+Got it.
+
+1540
+01:32:31,230 --> 01:32:34,733
+I could grab one if you want to see one.
+
+1541
+01:32:35,780 --> 01:32:38,189
+So if we look at some examples.
+
+1542
+01:32:45,280 --> 01:32:47,180
+I'll show you these one by one.
+
+1543
+01:32:50,099 --> 01:32:51,560
+For example, this is a pamphlet.
+
+1544
+01:32:52,950 --> 01:32:56,909
+Naked pages, short text,
+hand-stitched together.
+
+1545
+01:32:56,950 --> 01:32:59,651
+It would take two or four days
+because you print the front
+
+1546
+01:32:59,651 --> 01:33:00,530
+side and then the back side.
+It's cheap.
+
+1547
+01:33:00,550 --> 01:33:01,589
+It's ephemeral.
+
+1548
+01:33:01,800 --> 01:33:03,340
+You print a thousand of them.
+
+1549
+01:33:03,350 --> 01:33:05,050
+You sell a bunch around the town.
+
+1550
+01:33:05,060 --> 01:33:11,010
+You sell a bunch to news writers who are
+going to and from other cities, who will
+
+1551
+01:33:11,030 --> 01:33:12,370
+buy them and bring them to the next town.
+
+1552
+01:33:12,540 --> 01:33:16,720
+If you've printed news in Milan,
+people who are going to Florence will
+
+1553
+01:33:16,720 --> 01:33:18,490
+want to buy your news to go there.
+
+1554
+01:33:18,980 --> 01:33:21,450
+It might be a report of a siege.
+
+1555
+01:33:21,450 --> 01:33:22,380
+It might be
+
+1556
+01:33:24,480 --> 01:33:26,490
+what people were wearing
+at the royal wedding.
+
+1557
+01:33:27,000 --> 01:33:31,560
+My favorite title of a pamphlet was
+"The Scandalous Tale of a Doctor from
+
+1558
+01:33:31,560 --> 01:33:35,909
+Padua and How He Seduced His Maid,
+Murdered His Wife, Murdered the Maid,
+
+1559
+01:33:35,910 --> 01:33:39,080
+Cut Out Her Heart and Ate It, and
+How He Was Justly Punished by God."
+
+1560
+01:33:39,430 --> 01:33:40,860
+That was the title of the pamphlet.
+
+1561
+01:33:42,210 --> 01:33:43,760
+These things circulated around.
+
+1562
+01:33:44,000 --> 01:33:47,640
+Some of them were nonsense,
+some of them were real news.
+
+1563
+01:33:47,640 --> 01:33:49,370
+Most were combinations.
+
+1564
+01:33:49,610 --> 01:33:52,439
+But you can sell something like
+this cheaply in a couple of days.
+
+1565
+01:33:52,850 --> 01:33:54,769
+Often they would have a cheap blue cover.
+
+1566
+01:33:55,150 --> 01:33:56,940
+You have seen this color before.
+
+1567
+01:33:56,940 --> 01:33:59,980
+This is the color of laundry
+lint, because fundamentally
+
+1568
+01:33:59,980 --> 01:34:01,470
+laundry lint is what paper is.
+
+1569
+01:34:01,640 --> 01:34:06,009
+You take rags of old clothes, you put them
+in water, you beat them until they become
+
+1570
+01:34:06,009 --> 01:34:08,650
+a pulp, and you skim it out with a sieve.
+
+1571
+01:34:09,429 --> 01:34:11,569
+Laundry lint is what rag paper is.
+
+1572
+01:34:11,779 --> 01:34:15,000
+If you don't bleach it, it's this generic
+blue-gray color, which is sort of the
+
+1573
+01:34:15,000 --> 01:34:17,740
+average color of what human beings wear.
+
+1574
+01:34:17,780 --> 01:34:22,360
+That's a copy of The Gentleman's Magazine,
+another example of technology taking
+
+1575
+01:34:22,360 --> 01:34:23,689
+a leap forward in the 18th century.
+
+1576
+01:34:24,290 --> 01:34:27,719
+When they invented the newspaper, they
+immediately had the problem of, "Oh, no.
+
+1577
+01:34:27,940 --> 01:34:29,349
+Newspapers contradict each other.
+
+1578
+01:34:29,350 --> 01:34:30,449
+We don't know what's true.
+
+1579
+01:34:30,720 --> 01:34:33,549
+We have to fact-check stuff."
+That one has a great fold-out.
+
+1580
+01:34:33,550 --> 01:34:35,350
+I think there's a procession or something.
+
+1581
+01:34:35,350 --> 01:34:35,907
+That is what everybody
+wore at the state funeral.
+
+1582
+01:34:35,970 --> 01:34:39,400
+Instead of photographs, we have this
+fancy, "Here is what everyone was wearing
+
+1583
+01:34:39,400 --> 01:34:41,019
+at the state funeral." Very exciting.
+
+1584
+01:34:45,750 --> 01:34:50,090
+Your laundry lint, if you don't bleach it,
+remains the color that it on average was.
+
+1585
+01:34:50,090 --> 01:34:51,940
+In the 18th century, they have newspapers.
+
+1586
+01:34:52,260 --> 01:34:55,250
+The newspapers are reporting
+news, but they don't quite say
+
+1587
+01:34:55,250 --> 01:34:56,479
+the same thing as each other.
+
+1588
+01:34:57,440 --> 01:34:59,360
+The problem becomes, how
+do we know who to trust?
+
+1589
+01:34:59,580 --> 01:35:03,780
+The Gentleman's Magazine was developed,
+and every week they would publish a
+
+1590
+01:35:04,230 --> 01:35:08,740
+roundup of that week's news saying
+what each newspaper said about it,
+
+1591
+01:35:08,740 --> 01:35:12,010
+where they contradicted each other,
+analyzing who's right and wrong.
+
+1592
+01:35:12,270 --> 01:35:13,410
+It was the fact-checking.
+
+1593
+01:35:13,410 --> 01:35:14,680
+This is the first magazine.
+
+1594
+01:35:14,680 --> 01:35:17,640
+It invented the word "magazine"
+being used in this context.
+
+1595
+01:35:17,980 --> 01:35:22,360
+It was an intellectual response
+to the fake news problem of how we
+
+1596
+01:35:22,360 --> 01:35:24,360
+reconcile what happens with newspapers.
+
+1597
+01:35:25,390 --> 01:35:29,610
+You see these many iterations: they
+invent the printing press, then they
+
+1598
+01:35:29,610 --> 01:35:32,680
+invent the pamphlet, then they invent
+the newspaper, then they invent the
+
+1599
+01:35:32,680 --> 01:35:34,939
+magazine to cope with the newspaper.
+
+1600
+01:35:35,139 --> 01:35:38,540
+The newspaper is invented to cope with the
+pamphlet because you don't know whether
+
+1601
+01:35:38,540 --> 01:35:42,099
+to trust the scandalous tale of the doctor
+from Padua and how he murdered his wife.
+
+1602
+01:35:42,230 --> 01:35:43,000
+Is he real?
+
+1603
+01:35:43,000 --> 01:35:43,540
+We don't know.
+
+1604
+01:35:43,820 --> 01:35:48,010
+But if somebody publishes a newspaper
+that serially prints news every
+
+1605
+01:35:48,010 --> 01:35:52,230
+week, they have a reputation.
+
+1606
+01:35:52,380 --> 01:35:54,410
+They have to be respectable.
+
+1607
+01:35:54,429 --> 01:35:58,030
+You're not going to subscribe to them
+if you catch them printing nonsense.
+
+1608
+01:35:58,350 --> 01:36:03,390
+The serial nature of a newspaper was
+a form of accountability that made
+
+1609
+01:36:03,390 --> 01:36:05,120
+people willing to trust it over time.
+
+1610
+01:36:05,610 --> 01:36:08,510
+The newspaper is a way of
+fact-checking the pamphlet.
+
+1611
+01:36:08,849 --> 01:36:12,380
+The pamphlet is a way of making money
+while you're printing your longer book.
+
+1612
+01:36:12,380 --> 01:36:14,809
+I will also let you
+have a look at papyrus.
+
+1613
+01:36:14,969 --> 01:36:15,469
+Thank you.
+
+1614
+01:36:15,690 --> 01:36:22,950
+You can see the plaid pattern
+of the papyrus because it is
+
+1615
+01:36:22,950 --> 01:36:25,130
+made of two layers of strips.
+
+1616
+01:36:25,760 --> 01:36:27,259
+And there's a papyrus scroll.
+
+1617
+01:36:27,260 --> 01:36:28,300
+That's modern papyrus.
+
+1618
+01:36:29,000 --> 01:36:30,939
+The thing about papyrus is
+that in addition to being
+
+1619
+01:36:30,940 --> 01:36:31,949
+cheap, it's very brittle.
+
+1620
+01:36:32,950 --> 01:36:36,060
+It works better in a scroll than
+it does folded over because the
+
+1621
+01:36:36,150 --> 01:36:38,960
+folded edge cracks really easily.
+
+1622
+01:36:39,070 --> 01:36:43,130
+If you try to make this into a codex
+book, it's going to be very fragile.
+
+1623
+01:36:43,140 --> 01:36:45,319
+Here you go.
+
+1624
+01:36:45,320 --> 01:36:49,520
+This is a real 17th-century letter in
+absolutely indecipherable handwriting.
+
+1625
+01:36:49,520 --> 01:36:50,710
+On parchment?
+
+1626
+01:36:50,710 --> 01:36:51,510
+On parchment.
+
+1627
+01:36:51,599 --> 01:36:55,620
+You can even tell, because that's cheap
+parchment, which side was the outside of
+
+1628
+01:36:55,620 --> 01:36:57,830
+the animal and which side was the inside.
+
+1629
+01:36:59,250 --> 01:37:03,469
+The handwriting is in some sense
+bad, but it's also very well aligned.
+
+1630
+01:37:04,620 --> 01:37:05,760
+Tiny and precise.
+
+1631
+01:37:06,780 --> 01:37:08,980
+But here is good parchment.
+
+1632
+01:37:11,160 --> 01:37:13,750
+It is hard to believe
+that it's animal skin.
+
+1633
+01:37:14,330 --> 01:37:18,720
+These are pages from a book
+of hours from about 1480,
+
+1634
+01:37:20,720 --> 01:37:22,310
+individually hand-calligraphed.
+
+1635
+01:37:22,310 --> 01:37:23,669
+You can see that one
+has a hole through it.
+
+1636
+01:37:24,880 --> 01:37:30,930
+They wrote around the hole because it's
+too valuable to not use that sheet.
+
+1637
+01:37:31,140 --> 01:37:32,350
+These are paper thin.
+
+1638
+01:37:33,510 --> 01:37:36,440
+You can barely tell, if you look
+carefully, which side was the
+
+1639
+01:37:36,440 --> 01:37:38,519
+outside of the animal and which
+was the inside because one side
+
+1640
+01:37:38,520 --> 01:37:42,200
+has tiny little speckles of pores.
+
+1641
+01:37:42,770 --> 01:37:43,889
+Where is this from?
+
+1642
+01:37:44,509 --> 01:37:45,470
+A book of hours.
+
+1643
+01:37:45,470 --> 01:37:46,979
+This is probably a French book of hours.
+
+1644
+01:37:46,980 --> 01:37:48,940
+A book of hours is a personal prayer book.
+
+1645
+01:37:49,490 --> 01:37:53,560
+Bible quotes, objects of meditation.
+
+1646
+01:37:54,160 --> 01:37:55,800
+The book would be fat and small.
+
+1647
+01:37:55,800 --> 01:37:58,309
+This was the most common
+manuscript in the Middle Ages.
+
+1648
+01:37:59,650 --> 01:38:02,000
+You would carry it around in your
+pocket, and you'd pull it out different
+
+1649
+01:38:02,009 --> 01:38:05,019
+times of day for personal prayer.
+
+1650
+01:38:05,240 --> 01:38:09,730
+But it also has big margins so that
+you can take notes in it, write down
+
+1651
+01:38:09,730 --> 01:38:11,620
+addresses, have friends write notes in it.
+
+1652
+01:38:13,130 --> 01:38:14,690
+You use it almost like a day planner.
+
+1653
+01:38:15,160 --> 01:38:19,300
+It's the smartphone of the period
+in which you make all your notes
+
+1654
+01:38:20,240 --> 01:38:21,599
+or write down people's names.
+
+1655
+01:38:21,809 --> 01:38:25,009
+You might have celebrities you
+meet sign your book of hours.
+
+1656
+01:38:25,600 --> 01:38:28,050
+All sorts of neat things go
+into the margins as you use
+
+1657
+01:38:28,050 --> 01:38:30,320
+this to organize the day.
+
+1658
+01:38:32,000 --> 01:38:32,500
+That would
+
+1659
+01:38:34,630 --> 01:38:40,056
+be extremely interesting as a collector's
+item, random people's book of hours
+
+1660
+01:38:40,056 --> 01:38:41,533
+and what kinds of things they recorded.
+
+1661
+01:38:41,533 --> 01:38:42,033
+Oh yeah.
+
+1662
+01:38:44,380 --> 01:38:48,200
+Think of a leather jacket, but how much
+more industrial effort went into making
+
+1663
+01:38:48,410 --> 01:38:52,390
+leather literally paper-thin like this.
+
+1664
+01:38:53,010 --> 01:38:58,099
+Huge amounts of industrial effort go
+into making the pages of such a book.
+
+1665
+01:38:58,839 --> 01:39:04,690
+My favorite example of this kind of
+distribution and diffusion taking
+
+1666
+01:39:04,690 --> 01:39:07,300
+longer than you would think for a
+very fundamental technology—well,
+
+1667
+01:39:07,450 --> 01:39:11,260
+this is now my favorite example, so
+my second favorite example—is oil.
+
+1668
+01:39:11,700 --> 01:39:14,209
+I interviewed Daniel Yergin, who wrote
+this big book about the history of oil.
+
+1669
+01:39:15,629 --> 01:39:19,340
+In the 1860s, Drake strikes
+oil in Pennsylvania.
+
+1670
+01:39:19,440 --> 01:39:19,940
+It's
+
+1671
+01:39:22,389 --> 01:39:27,000
+in the 1910s that the car is
+invented, the internal combustion
+
+1672
+01:39:27,000 --> 01:39:30,619
+engine is put into a thing which
+you sell millions of copies of.
+
+1673
+01:39:31,159 --> 01:39:35,609
+Until then, oil is just used for
+kerosene, which is just for lighting.
+
+1674
+01:39:35,840 --> 01:39:37,260
+The actual gas is just thrown away.
+
+1675
+01:39:38,460 --> 01:39:40,720
+In fact, when the light bulb was
+invented, people were wondering whether
+
+1676
+01:39:40,720 --> 01:39:45,329
+Standard Oil was going to go bankrupt
+because the main use case had gone away.
+
+1677
+01:39:45,700 --> 01:39:46,170
+Oh, neat.
+
+1678
+01:39:46,170 --> 01:39:52,470
+I always think of Julius Caesar's
+description of Britain when
+
+1679
+01:39:52,500 --> 01:39:53,699
+the Romans first get there.
+
+1680
+01:39:54,020 --> 01:39:58,150
+He says, "The people of Britain
+are so poor, they can't afford to
+
+1681
+01:39:58,150 --> 01:40:00,030
+burn wood, so they burn rocks."
+
+1682
+01:40:02,190 --> 01:40:03,790
+We know he's talking about coal.
+
+1683
+01:40:04,300 --> 01:40:07,070
+Oh, I thought it was satire.
+
+1684
+01:40:07,090 --> 01:40:09,269
+No, he's talking about coal.
+
+1685
+01:40:10,330 --> 01:40:13,960
+They had coal in the days of Julius
+Caesar, but they didn't figure
+
+1686
+01:40:13,960 --> 01:40:19,160
+out its massive industrial utility
+until many, many years later.
+
+1687
+01:40:21,389 --> 01:40:23,578
+There is this interesting question
+of why the Romans didn't have the
+
+1688
+01:40:23,578 --> 01:40:25,320
+Industrial Revolution because they
+had these huge silver mines in
+
+1689
+01:40:25,320 --> 01:40:27,679
+Spain and elsewhere, but no coal.
+
+1690
+01:40:27,940 --> 01:40:30,969
+You have the Industrial Revolution
+when you feel you need to.
+
+1691
+01:40:31,810 --> 01:40:34,890
+That's the thing about Gutenberg as well
+that a lot of people don't think about.
+
+1692
+01:40:35,200 --> 01:40:38,129
+People are like, "Gutenberg was
+an inventor and invented a thing,
+
+1693
+01:40:38,130 --> 01:40:39,470
+and then it had an impact." No.
+
+1694
+01:40:39,770 --> 01:40:43,199
+He was living in the middle of a library
+building boom in which there was a
+
+1695
+01:40:43,200 --> 01:40:45,549
+huge demand for books that spiked.
+
+1696
+01:40:45,990 --> 01:40:49,480
+He invented the invention in
+response to that cultural change.
+
+1697
+01:40:49,890 --> 01:40:52,980
+It isn't by chance that we got
+the printing press in 1450.
+
+1698
+01:40:53,730 --> 01:40:57,569
+There was a huge boom of library
+buildings starting in the 1410s,
+
+1699
+01:40:58,110 --> 01:41:02,189
+and inventors were trying to figure
+out ways to make books cheaper.
+
+1700
+01:41:02,540 --> 01:41:03,970
+They were making smaller books.
+
+1701
+01:41:03,970 --> 01:41:05,899
+They were using paper more.
+
+1702
+01:41:07,450 --> 01:41:11,400
+Paper surges before the Gutenberg
+movable type printing press.
+
+1703
+01:41:11,690 --> 01:41:14,490
+So Gutenberg isn't a random
+genius out of nowhere.
+
+1704
+01:41:15,880 --> 01:41:18,329
+It was the moment that
+people needed more books.
+
+1705
+01:41:18,670 --> 01:41:20,429
+We were going to get the invention.
+
+1706
+01:41:21,040 --> 01:41:25,519
+One thing you say in passing in
+the book is Martin Luther comes up
+
+1707
+01:41:25,519 --> 01:41:29,830
+at the exact right time, because
+you've got Savonarola in the 1490s,
+
+1708
+01:41:31,600 --> 01:41:33,400
+and he's another prophet type.
+
+1709
+01:41:33,400 --> 01:41:37,470
+I guess he's the modern analog of somebody
+like Khomeini in Iran, setting up a
+
+1710
+01:41:37,470 --> 01:41:39,489
+theocratic government, but too early.
+
+1711
+01:41:39,730 --> 01:41:43,429
+Machiavelli you say is too late because
+the censorship is already in place.
+
+1712
+01:41:45,090 --> 01:41:47,252
+What is the censorship that is in
+place by the time of Machiavelli?
+
+1713
+01:41:47,380 --> 01:41:48,550
+What is the alternative world?
+
+1714
+01:41:49,320 --> 01:41:52,480
+Machiavelli, remember, is
+contemporary with Luther.
+
+1715
+01:41:53,050 --> 01:41:57,749
+It's just that he circulates his
+stuff very briefly and very privately.
+
+1716
+01:41:57,750 --> 01:42:01,929
+He doesn't want a pamphlet version
+of his ideas out there because he
+
+1717
+01:42:01,930 --> 01:42:03,400
+only wants Florence to have it.
+
+1718
+01:42:05,379 --> 01:42:10,879
+Luther hits the sweet spot
+when the pamphlet distribution
+
+1719
+01:42:10,880 --> 01:42:12,220
+network had just developed.
+
+1720
+01:42:14,000 --> 01:42:18,799
+When Savonarola printed pamphlets,
+they only circulated around Florence
+
+1721
+01:42:18,800 --> 01:42:20,830
+and its neighbors, Siena and Pisa.
+
+1722
+01:42:21,130 --> 01:42:22,879
+It took months for them to get farther.
+
+1723
+01:42:22,890 --> 01:42:24,340
+His movement was quickly crushed.
+
+1724
+01:42:24,570 --> 01:42:28,280
+When Luther makes the Ninety-five
+Theses public, they're in print
+
+1725
+01:42:28,290 --> 01:42:32,180
+in London seventeen days after
+he releases them in Wittenberg.
+
+1726
+01:42:32,509 --> 01:42:37,060
+The pamphlet runners go foom, foom, foom,
+and get the news there, and things are
+
+1727
+01:42:37,060 --> 01:42:39,836
+printed overnight and come out that fast.
+
+1728
+01:42:39,836 --> 01:42:42,790
+But it seems like you're hinting that
+within the next two decades, there's
+
+1729
+01:42:43,240 --> 01:42:44,592
+a new censorship regime across Europe.
+
+1730
+01:42:44,592 --> 01:42:47,109
+A new censorship regime responds.
+
+1731
+01:42:47,840 --> 01:42:52,320
+The censorship regime is very effective
+at shaping what is printed in books,
+
+1732
+01:42:52,900 --> 01:42:54,420
+but can never keep up with pamphlets.
+
+1733
+01:42:54,420 --> 01:42:55,730
+In the same way that
+
+1734
+01:42:57,900 --> 01:43:02,270
+the government can pressure CNN,
+the government can't pressure random
+
+1735
+01:43:02,270 --> 01:43:04,129
+people on a social media network.
+
+1736
+01:43:04,130 --> 01:43:06,000
+You're not going to be able
+to keep up with that speed.
+
+1737
+01:43:06,009 --> 01:43:09,979
+One of the funny problems that the
+Inquisition always had when trying to
+
+1738
+01:43:11,499 --> 01:43:17,230
+persecute printers is that printers worked
+in the information distribution industry.
+
+1739
+01:43:17,840 --> 01:43:21,230
+They were the people who paid the news
+writers, whose job it is to move as
+
+1740
+01:43:21,230 --> 01:43:23,349
+fast as humanly possible between cities.
+
+1741
+01:43:24,150 --> 01:43:27,879
+Which meant that news
+always reached them first.
+
+1742
+01:43:28,639 --> 01:43:31,920
+If a printer was ever convicted by
+the Inquisition, they would find
+
+1743
+01:43:31,920 --> 01:43:34,420
+out before the Inquisition could
+possibly get there to arrest them.
+
+1744
+01:43:35,430 --> 01:43:37,860
+The Inquisition never succeeded
+at arresting printers.
+
+1745
+01:43:37,860 --> 01:43:41,549
+They'd always skipped town by the time
+the Inquisition got there, because
+
+1746
+01:43:41,559 --> 01:43:45,779
+if you employ the news writers,
+you find out first what's going on.
+
+1747
+01:43:45,790 --> 01:43:46,980
+The Inquisition can't keep up.
+
+1748
+01:43:48,279 --> 01:43:53,420
+When we look at censorship, there's
+an intersection of four factors as
+
+1749
+01:43:53,420 --> 01:43:54,910
+to whether censorship is possible.
+
+1750
+01:43:54,920 --> 01:43:57,920
+One of them is law: Is it legal
+for the censorship to happen?
+
+1751
+01:43:58,349 --> 01:43:59,490
+Another one is the technology.
+
+1752
+01:43:59,490 --> 01:44:01,449
+Is it actually possible
+to censor this thing?
+
+1753
+01:44:02,099 --> 01:44:06,890
+You cannot censor whatever moves the
+information fastest because it will move
+
+1754
+01:44:06,940 --> 01:44:08,710
+the information faster than you can move.
+
+1755
+01:44:09,390 --> 01:44:14,100
+Even if that one printer had to skip
+town, he will set up shop somewhere else,
+
+1756
+01:44:14,100 --> 01:44:17,910
+a new person will take over his shop,
+and the information will still move.
+
+1757
+01:44:18,290 --> 01:44:21,390
+So pamphlets become unpoliceable.
+
+1758
+01:44:21,950 --> 01:44:26,290
+You can try to police them, you can
+partially police them, but keeping
+
+1759
+01:44:26,290 --> 01:44:29,290
+pamphlets from moving around… They're
+anonymous, they're quick, they're
+
+1760
+01:44:29,290 --> 01:44:31,130
+produced overnight, they move quickly.
+
+1761
+01:44:31,470 --> 01:44:32,980
+You just can't keep up with them.
+
+1762
+01:44:33,559 --> 01:44:37,059
+Couldn't they just punish print
+shops for publishing things?
+
+1763
+01:44:37,059 --> 01:44:40,490
+Just say, "This is what we like,
+and if you do something we don't
+
+1764
+01:44:40,490 --> 01:44:42,990
+like, we'll punish you," which is
+how censorship in China works, for
+
+1765
+01:44:45,780 --> 01:44:45,893
+example.
+They did.
+
+1766
+01:44:45,893 --> 01:44:46,990
+So the printer skips town.
+
+1767
+01:44:46,990 --> 01:44:48,450
+The printer moves to the next town.
+
+1768
+01:44:49,820 --> 01:44:50,930
+There is a cost to that.
+
+1769
+01:44:51,080 --> 01:44:53,559
+There's a human cost to evading that.
+
+1770
+01:44:53,980 --> 01:44:56,349
+You've had to leave your home and
+friends behind and move to a new
+
+1771
+01:44:56,349 --> 01:44:58,149
+place, but they don't get you.
+
+1772
+01:44:59,629 --> 01:45:02,490
+It's also very easy to deny that
+the pamphlet came from you at all.
+
+1773
+01:45:03,730 --> 01:45:07,530
+The print industry proves very difficult
+to censor, and we're experiencing
+
+1774
+01:45:07,530 --> 01:45:08,610
+the same thing with social media.
+
+1775
+01:45:08,910 --> 01:45:12,419
+Everyone is like, "Censor the pornography
+on this social media channel,"
+
+1776
+01:45:12,419 --> 01:45:13,740
+and they're like, "We just can't.
+
+1777
+01:45:13,780 --> 01:45:14,710
+It's too fast.
+
+1778
+01:45:14,710 --> 01:45:17,519
+There's too much." Or, "Censor
+the hate speech." "We just can't.
+
+1779
+01:45:17,519 --> 01:45:19,180
+It's too fast, there's too much."
+
+1780
+01:45:19,720 --> 01:45:21,969
+There are too many pamphlets,
+and they could crack down on
+
+1781
+01:45:21,970 --> 01:45:23,839
+one particular pamphlet shop.
+
+1782
+01:45:24,620 --> 01:45:25,620
+We have records of this.
+
+1783
+01:45:25,620 --> 01:45:31,039
+There's a brilliant analysis in
+Anton Matytsin's book, The Specter of
+
+1784
+01:45:31,040 --> 01:45:33,049
+Skepticism in the Age of Enlightenment.
+
+1785
+01:45:34,619 --> 01:45:38,500
+He has a great description from the notes
+of a raid on a clandestine bookshop.
+
+1786
+01:45:38,510 --> 01:45:41,090
+This wasn't the printer, this was the
+underground bookshop that was selling
+
+1787
+01:45:41,170 --> 01:45:43,130
+illegal books, and they're raided.
+
+1788
+01:45:43,130 --> 01:45:46,480
+It has all the details of how
+angry the people were about
+
+1789
+01:45:46,480 --> 01:45:48,280
+different things that the shop had.
+
+1790
+01:45:48,620 --> 01:45:51,710
+So there was censorship and there were
+crackdowns, but it was a censorship that
+
+1791
+01:45:51,710 --> 01:45:54,829
+could not actually prevent circulation.
+
+1792
+01:45:54,830 --> 01:45:57,150
+It could restrict it, it could
+make it harder, it could make it
+
+1793
+01:45:57,150 --> 01:45:59,270
+scary, but it couldn't prevent it.
+
+1794
+01:46:01,040 --> 01:46:03,430
+Before books become cheap,
+
+1795
+01:46:06,490 --> 01:46:09,949
+unless you're fantastically wealthy,
+you're reading the same couple of
+
+1796
+01:46:09,950 --> 01:46:12,769
+books—if you've ever read a book—again
+and again throughout your life.
+
+1797
+01:46:14,040 --> 01:46:17,519
+Cosimo de' Medici's father owned,
+I think it was twelve books.
+
+1798
+01:46:17,930 --> 01:46:22,670
+I want to understand the intellectual
+significance of rereading the
+
+1799
+01:46:22,790 --> 01:46:24,309
+exact same book again and again.
+
+1800
+01:46:25,289 --> 01:46:29,540
+Maybe the reason Petrarch loved Cicero
+so much is, imagine reading the same book
+
+1801
+01:46:29,660 --> 01:46:34,459
+twenty times, hitting the same joke again
+and just meditating on every single point.
+
+1802
+01:46:34,620 --> 01:46:36,670
+There's got to be a difference
+in intellectual culture as a
+
+1803
+01:46:36,670 --> 01:46:40,639
+result of treating these things
+as the equivalent of the Bible.
+
+1804
+01:46:41,429 --> 01:46:45,509
+You really feel like you get
+to know the person intimately.
+
+1805
+01:46:45,509 --> 01:46:48,510
+You develop a personal relationship
+with the ancient author.
+
+1806
+01:46:48,529 --> 01:46:52,320
+You are participating in a conversation
+across the diaspora of time.
+
+1807
+01:46:53,620 --> 01:46:55,080
+It's a one-way conversation.
+
+1808
+01:46:55,090 --> 01:46:58,010
+You're responding to them, the
+future will respond to you.
+
+1809
+01:46:59,010 --> 01:47:01,009
+But there is a great deal of intimacy.
+
+1810
+01:47:01,030 --> 01:47:06,540
+Petrarch talks about his friend Cicero
+and being betrayed by his friend Cicero.
+
+1811
+01:47:06,650 --> 01:47:11,140
+He finds new works of Cicero that he
+hadn't read including some of Cicero's
+
+1812
+01:47:11,160 --> 01:47:16,450
+letters in which Cicero is not following
+his own stoic philosophical precepts
+
+1813
+01:47:16,450 --> 01:47:22,050
+and is being petty, yelling at people
+about real estate, and getting all
+
+1814
+01:47:22,050 --> 01:47:23,720
+upset after his daughter's death.
+
+1815
+01:47:24,219 --> 01:47:27,540
+You know how people get manic when
+there's been a death in the family
+
+1816
+01:47:27,540 --> 01:47:29,380
+and start quarreling about everything?
+
+1817
+01:47:29,610 --> 01:47:32,320
+Cicero gets like that, and
+Petrarch is heartbroken.
+
+1818
+01:47:32,800 --> 01:47:36,429
+To him it means even the wisest
+man in history could not conquer
+
+1819
+01:47:36,429 --> 01:47:41,210
+that urge to become irrational
+and petty in the face of grief.
+
+1820
+01:47:42,350 --> 01:47:46,849
+If even Cicero became irrational and
+petty in the face of grief, does that
+
+1821
+01:47:46,850 --> 01:47:52,089
+mean humanity is doomed to forever be
+irrational and petty in the face of grief?
+
+1822
+01:47:53,150 --> 01:47:56,059
+He talks about Cicero breaking his
+heart and his foot, because the
+
+1823
+01:47:56,150 --> 01:47:59,389
+book fell on his foot and broke
+it, and he got a bad infection,
+
+1824
+01:47:59,389 --> 01:48:00,780
+and he was bedridden for months.
+
+1825
+01:48:03,460 --> 01:48:04,490
+Totally different topic, but
+
+1826
+01:48:07,860 --> 01:48:08,360
+in
+
+1827
+01:48:13,790 --> 01:48:16,080
+1492, Columbus comes to the New World.
+
+1828
+01:48:16,119 --> 01:48:17,080
+They discover the New World.
+
+1829
+01:48:17,400 --> 01:48:19,746
+What is the reception of this news?
+
+1830
+01:48:19,860 --> 01:48:24,190
+I was just at a conference a week
+ago in which we confirmed that
+
+1831
+01:48:24,190 --> 01:48:25,970
+there's a Vatican document from 1100
+
+1832
+01:48:28,190 --> 01:48:32,990
+or maybe 1200—I forget the exact year—that
+recognizes the existence of Vinland, i.e.
+
+1833
+01:48:33,020 --> 01:48:36,000
+Canada, where they got the
+information from the Vikings.
+
+1834
+01:48:36,010 --> 01:48:36,580
+Oh, interesting.
+
+1835
+01:48:37,890 --> 01:48:39,960
+They thought it was just
+a little thing, but yeah.
+
+1836
+01:48:39,960 --> 01:48:41,380
+So they're rediscovering the New World.
+
+1837
+01:48:43,580 --> 01:48:45,240
+Would it be the equivalent of
+finding out there are aliens today?
+
+1838
+01:48:49,660 --> 01:48:52,489
+Why wasn't it considered more significant?
+
+1839
+01:48:52,490 --> 01:48:53,880
+Why wasn't the consensus, "This is
+the main thing happening right now,
+
+1840
+01:48:53,889 --> 01:48:54,970
+we've discovered the New World"?
+
+1841
+01:48:58,630 --> 01:49:02,330
+When I teach my class on the 1490s,
+the students, many of whom are
+
+1842
+01:49:02,330 --> 01:49:05,529
+American, always have trouble wrapping
+their heads around people thinking
+
+1843
+01:49:05,540 --> 01:49:07,170
+that the New World isn't a big deal.
+
+1844
+01:49:07,990 --> 01:49:12,170
+A big part of it is that they find the
+Caribbean islands, and they find the
+
+1845
+01:49:12,170 --> 01:49:13,740
+coast, and they think this is small.
+
+1846
+01:49:14,600 --> 01:49:19,270
+The way I put it to my students is,
+the news comes back, we've found
+
+1847
+01:49:19,270 --> 01:49:21,330
+something across the water to the west.
+
+1848
+01:49:21,340 --> 01:49:24,530
+It might be even as big
+as the Canary Islands.
+
+1849
+01:49:25,480 --> 01:49:28,980
+They've found something, but they
+don't realize they've found something
+
+1850
+01:49:28,990 --> 01:49:30,890
+the scale of Europe and Africa.
+
+1851
+01:49:31,190 --> 01:49:33,130
+Actually, it's not as big as
+Europe and Africa, but they
+
+1852
+01:49:33,490 --> 01:49:34,650
+found something humongous.
+
+1853
+01:49:35,810 --> 01:49:36,560
+That's part of it.
+
+1854
+01:49:36,850 --> 01:49:42,000
+Another part of it is no matter how
+big and important something far away
+
+1855
+01:49:42,009 --> 01:49:45,250
+is, it's hard to bring your mind
+out of the petty squabbles that are
+
+1856
+01:49:45,250 --> 01:49:47,859
+happening right around you, especially
+when they feel like life or death.
+
+1857
+01:49:49,290 --> 01:49:51,370
+If it's 1492, what is happening?
+
+1858
+01:49:51,380 --> 01:49:53,320
+France is about to invade Italy.
+
+1859
+01:49:54,230 --> 01:49:57,930
+Europe might be embroiled in the
+largest war it's seen in fifty years.
+
+1860
+01:49:58,179 --> 01:50:00,539
+The papacy has just been
+taken over by Spain.
+
+1861
+01:50:00,820 --> 01:50:03,519
+Spain is suddenly trying to
+throw its weight around in Europe
+
+1862
+01:50:03,520 --> 01:50:04,920
+in a way that's unprecedented.
+
+1863
+01:50:05,129 --> 01:50:09,710
+The Ottomans have just invaded Italy
+and Hungary and might be coming again.
+
+1864
+01:50:09,950 --> 01:50:11,570
+Also over there, there's a new thing.
+
+1865
+01:50:11,590 --> 01:50:12,170
+Okay, great.
+
+1866
+01:50:12,170 --> 01:50:14,899
+We'll worry about that when we're not
+having three wars at the same time.
+
+1867
+01:50:14,910 --> 01:50:16,990
+But guys, we're having
+three wars at the same time.
+
+1868
+01:50:17,280 --> 01:50:17,969
+Oh my God.
+
+1869
+01:50:17,980 --> 01:50:21,740
+And then Martin Luther hits Europe
+like a ton of bricks when they still
+
+1870
+01:50:21,740 --> 01:50:24,590
+haven't even figured out that this
+is a continent and not an island.
+
+1871
+01:50:26,120 --> 01:50:30,570
+In the same way, if you're in a country
+and it's having a tumult, you worry a
+
+1872
+01:50:30,570 --> 01:50:34,540
+lot about its tumult, even if a larger
+tumult is happening in a faraway country.
+
+1873
+01:50:35,389 --> 01:50:38,290
+It's hard to bring your mind
+out of Europe at crisis to be
+
+1874
+01:50:38,290 --> 01:50:40,230
+like, "Hey, this is a thing."
+
+1875
+01:50:40,570 --> 01:50:43,099
+The other is they're inventing
+lots of new things, and it falls
+
+1876
+01:50:43,109 --> 01:50:44,600
+into the sphere along the rest.
+
+1877
+01:50:44,750 --> 01:50:48,780
+They're discovering the existence
+of sub-Saharan Africa, where they
+
+1878
+01:50:48,910 --> 01:50:53,419
+thought there was basically one
+country's worth of stuff, south of
+
+1879
+01:50:53,420 --> 01:50:55,470
+the Sahara, Ethiopia and nothing else.
+
+1880
+01:50:55,559 --> 01:50:58,460
+Then they're like, "Oh my God, there's
+a whole big thing that sticks out."
+
+1881
+01:50:59,070 --> 01:51:01,099
+They're also discovering
+that the heart is a pump.
+
+1882
+01:51:01,280 --> 01:51:03,360
+That's a bit later, but
+they're discovering all sorts
+
+1883
+01:51:03,360 --> 01:51:05,549
+of stuff at the same time.
+
+1884
+01:51:06,180 --> 01:51:08,610
+The discovery of the New World,
+especially when they realize how big it
+
+1885
+01:51:08,610 --> 01:51:12,440
+is, becomes an intellectual challenge
+where they say, "Wait, does this mean
+
+1886
+01:51:12,440 --> 01:51:14,120
+all the maps we've had are wrong?
+
+1887
+01:51:14,429 --> 01:51:16,830
+Does this mean the ancients
+were wrong about geography?
+
+1888
+01:51:16,830 --> 01:51:20,130
+Does it mean the world is a lot bigger
+than we used to think the world is?
+
+1889
+01:51:20,490 --> 01:51:23,730
+Let's worry about that the same way
+we worry about revolutionizing our
+
+1890
+01:51:23,730 --> 01:51:29,240
+mathematics and figuring out that
+the sun doesn't go around the Earth."
+
+1891
+01:51:29,639 --> 01:51:32,210
+These are things that
+are paradigm shifting.
+
+1892
+01:51:32,490 --> 01:51:35,879
+But on the other hand, does it matter
+whether the sun goes around the Earth
+
+1893
+01:51:35,879 --> 01:51:38,957
+or the Earth around the sun when the
+French are invading right now and we
+
+1894
+01:51:38,957 --> 01:51:43,040
+need to get the defenses going, and
+there's a giant civil war happening,
+
+1895
+01:51:43,040 --> 01:51:44,250
+and we're about to be betrayed?
+
+1896
+01:51:44,580 --> 01:51:46,750
+It does matter, but it
+also doesn't matter.
+
+1897
+01:51:48,290 --> 01:51:53,580
+Any decade is concerned by its
+tumults and often fails to recognize
+
+1898
+01:51:53,580 --> 01:51:55,049
+the importance of what's around it.
+
+1899
+01:51:57,000 --> 01:51:58,349
+That’s true of every decade.
+
+1900
+01:51:58,910 --> 01:52:03,330
+One fun game when I study the history
+of censorship, which I work a lot
+
+1901
+01:52:03,330 --> 01:52:06,289
+on—my next non-fiction book is
+gonna be a book on the history of
+
+1902
+01:52:06,290 --> 01:52:12,030
+censorship—whatever they're looking at,
+
+1903
+01:52:15,270 --> 01:52:18,580
+they're always wrong, from our
+perspective, about what they
+
+1904
+01:52:18,580 --> 01:52:20,139
+should be worried about censoring.
+
+1905
+01:52:20,590 --> 01:52:24,990
+If we had a time machine and our goal is
+to go give them advice… Here we are in
+
+1906
+01:52:24,990 --> 01:52:29,630
+the French Enlightenment, Voltaire and
+Rousseau and the Marquis de Sade and La
+
+1907
+01:52:29,630 --> 01:52:34,860
+Mettrie's articulations of materialist
+atheism are flying around Europe.
+
+1908
+01:52:36,630 --> 01:52:38,260
+What is the Inquisition worried about?
+
+1909
+01:52:38,280 --> 01:52:42,099
+It's worried about Jansenist treatises
+about the nature of the Trinity.
+
+1910
+01:52:42,709 --> 01:52:47,849
+Jansenism is sort of like a
+Calvinist version of Catholicism.
+
+1911
+01:52:48,100 --> 01:52:54,960
+Do you want to have an incredibly
+terrifying authoritarian God who hates
+
+1912
+01:52:54,960 --> 01:52:58,420
+you and tells you that your soul is
+a worthless spider that deserves to
+
+1913
+01:52:58,450 --> 01:53:03,269
+be hurled into fire, but also have
+to obey the arbitrary pope in Rome?
+
+1914
+01:53:03,280 --> 01:53:05,200
+Then Jansenism is for you.
+
+1915
+01:53:05,200 --> 01:53:09,350
+It has all the grimness of Calvinism
+and all of the authoritarian
+
+1916
+01:53:09,350 --> 01:53:11,460
+centrality of the Roman Catholics.
+
+1917
+01:53:12,250 --> 01:53:15,910
+This was a heresy that was abroad
+in the Enlightenment, and they are
+
+1918
+01:53:15,920 --> 01:53:19,650
+so much more worried about Jansenism
+than they are about Voltaire.
+
+1919
+01:53:19,650 --> 01:53:23,650
+Remember that very chapter in Matytsin's
+book I mentioned where they are
+
+1920
+01:53:23,650 --> 01:53:25,580
+raiding the clandestine bookshop.
+
+1921
+01:53:25,850 --> 01:53:27,530
+They're like, "Voltaire, fine.
+
+1922
+01:53:27,590 --> 01:53:31,880
+The banned Encyclopédie, which is gonna
+revolutionize all thought in Europe, fine.
+
+1923
+01:53:32,559 --> 01:53:35,070
+letters of Diderot, Rousseau, fine, fine.
+
+1924
+01:53:35,520 --> 01:53:38,190
+Jansenist treatises about
+the nature of the Trinity!
+
+1925
+01:53:38,219 --> 01:53:39,700
+Throw the book at these guys!
+
+1926
+01:53:39,700 --> 01:53:43,900
+This is the worst thing!" They really
+are obsessed with this incredibly petty
+
+1927
+01:53:43,900 --> 01:53:48,480
+minor heresy to the degree that when
+the Encyclopédie is banned by Rome…
+
+1928
+01:53:48,950 --> 01:53:50,390
+France likes the Encyclopedia.
+
+1929
+01:53:50,860 --> 01:53:54,790
+This is Diderot and d’Holbach’s
+big project of universal education,
+
+1930
+01:53:54,790 --> 01:53:58,009
+to print an encyclopedia that
+will collect all world knowledge.
+
+1931
+01:53:58,570 --> 01:54:02,760
+They articulate it as, "Should a
+new dark age come upon humankind and
+
+1932
+01:54:02,760 --> 01:54:06,759
+even one copy of the encyclopedia
+survive, it will be sufficient to
+
+1933
+01:54:06,760 --> 01:54:08,930
+reconstruct all human progress."
+
+1934
+01:54:09,110 --> 01:54:10,240
+That's the goal of this thing.
+
+1935
+01:54:10,670 --> 01:54:16,379
+It's advancing incredibly radical ideas
+about biology, about statecraft, about
+
+1936
+01:54:16,389 --> 01:54:19,860
+reforming the law to be rational instead
+of traditional, all sorts of stuff.
+
+1937
+01:54:21,650 --> 01:54:27,219
+When that is banned by Rome, Paris is
+commanded... Paris loves this book.
+
+1938
+01:54:27,220 --> 01:54:28,530
+The king likes this book.
+
+1939
+01:54:28,530 --> 01:54:29,919
+The queen likes this book.
+
+1940
+01:54:30,080 --> 01:54:33,339
+She's on record saying it was so cool
+being able to look up the technology
+
+1941
+01:54:33,339 --> 01:54:35,080
+that was used to make her silk pantyhose.
+
+1942
+01:54:35,600 --> 01:54:36,369
+She just loves it.
+
+1943
+01:54:36,390 --> 01:54:37,110
+Everybody loves it.
+
+1944
+01:54:37,679 --> 01:54:40,820
+France allows it to circulate
+despite its controversial content.
+
+1945
+01:54:41,050 --> 01:54:43,030
+But Rome says, "No, you
+must ban this book."
+
+1946
+01:54:43,510 --> 01:54:47,830
+So they agree they're gonna have the
+ceremonial burning, and they march
+
+1947
+01:54:47,870 --> 01:54:50,460
+the Encyclopédie up to the fire.
+
+1948
+01:54:51,450 --> 01:54:54,320
+Then they get some Jansenist treatise
+about the nature of the Trinity and
+
+1949
+01:54:54,360 --> 01:54:57,755
+burn those instead, because they
+don't want to burn the Encyclopédie.
+
+1950
+01:54:58,100 --> 01:54:58,420
+They love it.
+
+1951
+01:54:58,420 --> 01:54:59,349
+They want to burn this other thing.
+
+1952
+01:54:59,840 --> 01:55:00,660
+This is always true.
+
+1953
+01:55:00,660 --> 01:55:07,189
+If we had a time machine for the
+Inquisition in the 1540s, we would
+
+1954
+01:55:07,190 --> 01:55:10,530
+say, "Guys, Machiavelli, he's really
+important. He's really revolutionary.
+
+1955
+01:55:10,530 --> 01:55:11,509
+You gotta be looking at this."
+
+1956
+01:55:11,529 --> 01:55:15,440
+Or we would say Lucretius's De rerum
+natura, which I did my dissertation
+
+1957
+01:55:15,440 --> 01:55:18,799
+on… Many people are familiar with
+Greenblatt's book, The Swerve, which
+
+1958
+01:55:18,799 --> 01:55:23,740
+credits a lot of change to the materialist
+science that this poem articulates.
+
+1959
+01:55:24,030 --> 01:55:26,730
+There's a much more complex story,
+which you know is told in my book,
+
+1960
+01:55:27,250 --> 01:55:28,119
+which refers to Greenblatt's.
+
+1961
+01:55:28,930 --> 01:55:32,650
+If anyone enjoyed The Swerve, you would
+really enjoy the more detailed zoom-in
+
+1962
+01:55:32,650 --> 01:55:35,140
+that Inventing the Renaissance has.
+
+1963
+01:55:35,500 --> 01:55:38,499
+But we would say, "Guys,
+you should censor this."
+
+1964
+01:55:38,500 --> 01:55:42,139
+We literally have letters of inquisitors
+writing to each other saying, "We don't
+
+1965
+01:55:42,139 --> 01:55:44,960
+need to bother censoring Lucretius.
+
+1966
+01:55:44,960 --> 01:55:47,909
+Only learned people can read it,
+and they know perfectly well that
+
+1967
+01:55:47,959 --> 01:55:50,530
+the false stuff is false, so it'll
+just circulate and it's fine.
+
+1968
+01:55:50,750 --> 01:55:53,420
+What we need to worry about
+censoring is all of these fine
+
+1969
+01:55:53,690 --> 01:55:56,080
+minutiae of Protestantism."
+
+1970
+01:55:56,090 --> 01:55:56,590
+The 1545
+
+1971
+01:55:58,410 --> 01:56:02,920
+edition of the Index of Banned Books
+says in its introduction, "We shall put
+
+1972
+01:56:02,920 --> 01:56:05,460
+the names of arch-heretics in all caps."
+
+1973
+01:56:05,549 --> 01:56:08,160
+When I first read that, I was like,
+"Ooh, I want to see all my favorite
+
+1974
+01:56:08,170 --> 01:56:09,730
+arch-heretics be in all caps."
+
+1975
+01:56:10,240 --> 01:56:14,800
+I eagerly flip to M, and
+Machiavelli is not in all caps.
+
+1976
+01:56:14,849 --> 01:56:17,529
+He was not important
+enough from their position.
+
+1977
+01:56:17,920 --> 01:56:22,479
+The all caps authors are all
+minor Protestant theologians.
+
+1978
+01:56:22,510 --> 01:56:26,510
+They're all people like Calvin and
+Zwingli and Luther and Melanchthon.
+
+1979
+01:56:26,920 --> 01:56:30,430
+They're all doing stuff that
+we would say does not matter.
+
+1980
+01:56:31,350 --> 01:56:36,380
+But an era is always wrong about what
+ideas and what circulation and what
+
+1981
+01:56:36,380 --> 01:56:40,309
+changes are the really big ones and
+are always much, much more worried
+
+1982
+01:56:40,309 --> 01:56:44,953
+about, "Oh my God, the Prince of Spain,
+which princess is he gonna marry?
+
+1983
+01:56:45,160 --> 01:56:48,349
+This is going to determine whether
+Spain is or isn't annexed by Germany.
+
+1984
+01:56:48,350 --> 01:56:50,260
+This is the most important
+thing that has ever happened
+
+1985
+01:56:50,260 --> 01:56:51,320
+in the entire stream of time."
+
+1986
+01:56:51,420 --> 01:56:53,140
+People are like, "We've
+discovered another continent,"
+
+1987
+01:56:53,140 --> 01:56:54,269
+and they're like, "We don't care.
+
+1988
+01:56:54,270 --> 01:56:56,039
+We just wanna know who's
+gonna marry Charles."
+
+1989
+01:56:56,490 --> 01:56:57,999
+That's a very profound observation.
+
+1990
+01:56:59,840 --> 01:57:02,690
+It was really interesting to learn from
+your book that of all the thousands of
+
+1991
+01:57:02,720 --> 01:57:06,959
+people killed during the Inquisition,
+one guy was executed for atheism.
+
+1992
+01:57:06,980 --> 01:57:07,830
+Science-related stuff.
+
+1993
+01:57:08,420 --> 01:57:10,670
+And even he had these ideas
+of reincarnation or...
+
+1994
+01:57:11,469 --> 01:57:15,660
+I think probably the number executed
+for atheism would be about 100.
+
+1995
+01:57:15,660 --> 01:57:18,890
+There are 12 total trials
+of scientists about science.
+
+1996
+01:57:18,910 --> 01:57:20,320
+Galileo is one.
+
+1997
+01:57:20,330 --> 01:57:21,045
+Giordano Bruno is one.
+
+1998
+01:57:21,045 --> 01:57:22,810
+Giordano Bruno is the only one executed.
+
+1999
+01:57:23,060 --> 01:57:25,090
+Of those 12 trials, only
+three were convicted.
+
+2000
+01:57:25,690 --> 01:57:30,579
+Hundreds of thousands of trials for
+Judaizing, which is theoretically
+
+2001
+01:57:30,580 --> 01:57:33,739
+contaminating Christianity with
+Jewish thought, and all of these
+
+2002
+01:57:33,740 --> 01:57:39,380
+other minutiae of oppression and
+segregation of populations, executions
+
+2003
+01:57:39,380 --> 01:57:43,430
+for paganism, meaning practicing your
+indigenous religion in a colonized
+
+2004
+01:57:43,430 --> 01:57:47,700
+space… Hundreds of thousands of
+executions for that, one for science.
+
+2005
+01:57:48,550 --> 01:57:51,429
+I recently got interested in
+the story of Kepler just because
+
+2006
+01:57:51,440 --> 01:57:54,420
+the way he discovers the laws of
+planetary motion is so whimsical
+
+2007
+01:57:54,629 --> 01:57:56,010
+with the theory of Platonic objects.
+
+2008
+01:58:00,710 --> 01:58:02,790
+While he's going through Brahe's
+data and coming up with the laws of
+
+2009
+01:58:02,790 --> 01:58:07,790
+planetary motion, he is the imperial
+mathematician for the Habsburg
+
+2010
+01:58:08,270 --> 01:58:14,660
+emperor, which basically means that
+he's doing astrology for a general.
+
+2011
+01:58:15,450 --> 01:58:16,660
+Will we win the battle or whatever.
+
+2012
+01:58:17,380 --> 01:58:20,350
+Then he gets excommunicated, not
+for the laws of planetary motion,
+
+2013
+01:58:20,630 --> 01:58:21,739
+but because he's a Lutheran.
+
+2014
+01:58:21,740 --> 01:58:22,240
+In
+
+2015
+01:58:24,040 --> 01:58:25,500
+fact, his mother is tried for witchcraft.
+
+2016
+01:58:25,509 --> 01:58:28,730
+Again, has nothing to do with science,
+it’s just because she's also a Lutheran.
+
+2017
+01:58:29,020 --> 01:58:36,180
+Milton of Paradise Lost fame wrote our
+first big defense of the free press.
+
+2018
+01:58:36,960 --> 01:58:40,790
+This is in the moment in the early
+1600s when England doesn't yet
+
+2019
+01:58:40,830 --> 01:58:42,429
+have systematic censorship law.
+
+2020
+01:58:42,429 --> 01:58:46,110
+It has ad hoc, "Hey, this book is bad,"
+but it doesn't have systematic, "You must
+
+2021
+01:58:46,250 --> 01:58:49,720
+submit all books to a censor," the way
+the Catholic world does by that point.
+
+2022
+01:58:49,750 --> 01:58:52,800
+The Catholic world developed it
+in order to fight Protestantism.
+
+2023
+01:58:54,480 --> 01:58:59,199
+There's a lot of support for creating
+censorship in England at the time
+
+2024
+01:58:59,210 --> 01:59:04,340
+because there's anxiety about Papists
+plotting against our nice non-Catholic
+
+2025
+01:59:04,969 --> 01:59:06,230
+country, trying to undermine it.
+
+2026
+01:59:06,930 --> 01:59:07,255
+There's a general feeling of anxiety.
+
+2027
+01:59:07,255 --> 01:59:07,755
+There's
+
+2028
+01:59:09,580 --> 01:59:15,689
+also deliberate moral panic whipped up
+by politicians and power-seeking people
+
+2029
+01:59:15,880 --> 01:59:21,500
+who whip up a deliberate moral panic
+about books, the same way in 1954 there
+
+2030
+01:59:21,500 --> 01:59:24,409
+was a moral panic about comic books or
+the same way there was a moral panic
+
+2031
+01:59:24,420 --> 01:59:27,160
+about Dungeons & Dragons in the '90s.
+
+2032
+01:59:27,160 --> 01:59:30,120
+There's a moral panic about scary
+and dangerous books and pamphlets.
+
+2033
+01:59:30,820 --> 01:59:33,550
+So there's a movement to create
+state censorship for the first
+
+2034
+01:59:33,770 --> 01:59:36,120
+systematic time in England.
+
+2035
+01:59:36,680 --> 01:59:40,610
+Milton writes this big treatise
+about why freedom of the press
+
+2036
+01:59:40,610 --> 01:59:42,210
+is important, the Areopagitica.
+
+2037
+01:59:42,210 --> 01:59:45,360
+It’s a beautifully written
+rhetorical piece that presents the
+
+2038
+01:59:45,360 --> 01:59:51,310
+importance of how we must trust
+truth to rise purely to the top.
+
+2039
+01:59:51,320 --> 01:59:55,870
+We must let free voices move, otherwise
+you're gonna create a situation where
+
+2040
+01:59:55,870 --> 01:59:58,849
+people are writing for the censor
+first and for the public second.
+
+2041
+01:59:58,850 --> 02:00:02,269
+It will constrain people's
+thoughts in the way that we know
+
+2042
+02:00:02,290 --> 02:00:04,200
+chilling effects and fear do.
+
+2043
+02:00:04,200 --> 02:00:06,370
+It's a beautiful treatise.
+
+2044
+02:00:06,380 --> 02:00:07,139
+He fails.
+
+2045
+02:00:07,190 --> 02:00:09,129
+The censorship regime passes.
+
+2046
+02:00:09,700 --> 02:00:12,159
+Paradise Lost is published
+under the censorious regime.
+
+2047
+02:00:12,159 --> 02:00:13,240
+It goes through the censorship.
+
+2048
+02:00:13,540 --> 02:00:16,859
+The one line they tell him
+to change is about astrology.
+
+2049
+02:00:17,109 --> 02:00:20,150
+They're like, "It's perfectly fine
+having Satan be your charismatic
+
+2050
+02:00:20,160 --> 02:00:25,540
+protagonist and God be kind of a
+jackass, and also having Satan spout
+
+2051
+02:00:25,550 --> 02:00:32,639
+ferocious anti-monarchical rhetoric
+copied from revolutionary pamphlets
+
+2052
+02:00:32,639 --> 02:00:36,170
+that are circulating in the British
+colonies so that he's actually parroting
+
+2053
+02:00:36,400 --> 02:00:40,839
+republican, anti-monarchical rhetoric,
+very dangerous stuff in the treatise.
+
+2054
+02:00:40,880 --> 02:00:41,630
+That's fine.
+
+2055
+02:00:41,810 --> 02:00:44,959
+But this one line about a comet
+causing a thing to happen, no, no, no.
+
+2056
+02:00:45,730 --> 02:00:48,009
+Astrology is gonna
+confuse people's souls."
+
+2057
+02:00:48,020 --> 02:00:54,470
+You're like, "Guys, speaking as a time
+traveler, you're so wrong about what
+
+2058
+02:00:54,480 --> 02:00:56,740
+you're censoring." They always are.
+
+2059
+02:00:57,150 --> 02:01:00,620
+You have one sentence which
+I couldn't trace down, which
+
+2060
+02:01:00,950 --> 02:01:02,200
+I found very interesting.
+
+2061
+02:01:02,230 --> 02:01:08,129
+You said, "In the late 17th century,
+the most extensive library in
+
+2062
+02:01:08,139 --> 02:01:12,210
+all of Europe is the one in the
+Vatican run by the inquisitors."
+
+2063
+02:01:12,230 --> 02:01:16,440
+Not the library, the most
+extensive experimental laboratory.
+
+2064
+02:01:16,440 --> 02:01:16,940
+Daniele
+
+2065
+02:01:19,380 --> 02:01:20,959
+Macuglia is the scholar there.
+
+2066
+02:01:20,960 --> 02:01:22,559
+That's from his dissertation.
+
+2067
+02:01:23,150 --> 02:01:24,999
+I think it's been published
+now, but I don't know if
+
+2068
+02:01:25,000 --> 02:01:26,349
+it's actually out in English.
+
+2069
+02:01:26,360 --> 02:01:27,439
+It's out in Italian.
+
+2070
+02:01:27,450 --> 02:01:32,250
+He works on the Inquisition and
+the immediate aftermath of Galileo.
+
+2071
+02:01:32,780 --> 02:01:38,559
+They saw themselves as guarantors of
+truth and of accuracy in information.
+
+2072
+02:01:38,590 --> 02:01:44,179
+So they decided after Galileo that they
+had a duty to verify the truth of the
+
+2073
+02:01:44,179 --> 02:01:46,049
+books that they were sent to censor.
+
+2074
+02:01:46,799 --> 02:01:49,599
+If people were going to be doing
+mechanical experiments, they needed
+
+2075
+02:01:49,600 --> 02:01:52,870
+to repeat the mechanical experiments
+to see whether they were true.
+
+2076
+02:01:52,870 --> 02:01:59,880
+So they effectively invented peer
+review, which is to say they invented
+
+2077
+02:01:59,990 --> 02:02:03,160
+a second laboratory trying to
+recreate the results of the first.
+
+2078
+02:02:03,639 --> 02:02:07,560
+There are these amazing people who by
+day are inquisitors and by night are
+
+2079
+02:02:07,560 --> 02:02:10,480
+going home to write their own scientific
+treatises as they do these experiments.
+
+2080
+02:02:10,490 --> 02:02:15,070
+It's not what we expect, but
+history is never what we expect.
+
+2081
+02:02:15,760 --> 02:02:16,950
+Seems like a good place to close.
+
+2082
+02:02:17,520 --> 02:02:18,469
+Ada, thank you very much.
+
+2083
+02:02:18,559 --> 02:02:19,059
+Thank you.
+

@@ -1,0 +1,548 @@
+1
+00:00:00,000 --> 00:00:05,320
+Zcash is one of the top performers this
+
+2
+00:00:02,880 --> 00:00:07,000
+week. The question is why? Who is buying
+
+3
+00:00:05,320 --> 00:00:09,000
+here? Who's selling here? Let's have a
+
+4
+00:00:07,000 --> 00:00:10,920
+look at the on-chain data, the data most
+
+5
+00:00:09,000 --> 00:00:12,880
+people are not considering to try to
+
+6
+00:00:10,920 --> 00:00:15,080
+figure out how much longer this rally
+
+7
+00:00:12,880 --> 00:00:17,840
+might last. Now, the main reason for the
+
+8
+00:00:15,080 --> 00:00:20,760
+price rally in the last 24 hours is
+
+9
+00:00:17,840 --> 00:00:23,560
+derivatives pressure. So, that's buying
+
+10
+00:00:20,760 --> 00:00:26,520
+and selling of the asset via bets on the
+
+11
+00:00:23,560 --> 00:00:30,280
+price, via perpetual futures. If you
+
+12
+00:00:26,520 --> 00:00:33,800
+bet, say, $100 with 10x via the perps,
+
+13
+00:00:30,280 --> 00:00:35,920
+we move $1,000. If we say buy for those
+
+14
+00:00:33,800 --> 00:00:38,520
+$1,000, the market cap goes even up by
+
+15
+00:00:35,920 --> 00:00:40,640
+more than $1,000. So, there are two
+
+16
+00:00:38,520 --> 00:00:42,520
+types of leverages here, the leverage
+
+17
+00:00:40,640 --> 00:00:44,480
+through the perpetual futures and the
+
+18
+00:00:42,520 --> 00:00:46,160
+leverage through liquidity that pushes
+
+19
+00:00:44,480 --> 00:00:48,200
+up market cap even more. Have a look at
+
+20
+00:00:46,160 --> 00:00:51,360
+the trading volume. On the spot market,
+
+21
+00:00:48,200 --> 00:00:53,240
+we had 192 million worth of trading
+
+22
+00:00:51,360 --> 00:00:56,640
+volume on Binance. On the perpetual
+
+23
+00:00:53,240 --> 00:00:59,360
+futures market, we had 1.3 billion,
+
+24
+00:00:56,640 --> 00:01:01,480
+almost 10 times of what happens on the
+
+25
+00:00:59,360 --> 00:01:03,960
+spot market. So, really, the perps are
+
+26
+00:01:01,480 --> 00:01:06,720
+driving the price, and what do we see
+
+27
+00:01:03,960 --> 00:01:08,520
+recently? We're seeing a short squeeze.
+
+28
+00:01:06,720 --> 00:01:11,360
+There are more people betting on falling
+
+29
+00:01:08,520 --> 00:01:13,000
+prices than on rising prices. That's why
+
+30
+00:01:11,360 --> 00:01:15,520
+the funding rates are currently
+
+31
+00:01:13,000 --> 00:01:18,080
+negative. It's very popular to bet on
+
+32
+00:01:15,520 --> 00:01:20,640
+falling prices of Zcash. And at the same
+
+33
+00:01:18,080 --> 00:01:22,520
+time, the number of bets on the price
+
+34
+00:01:20,640 --> 00:01:25,400
+went up. So, have a look at this. This
+
+35
+00:01:22,520 --> 00:01:28,000
+is open interest in green. How many bets
+
+36
+00:01:25,400 --> 00:01:30,600
+are currently made on Zcash? It's close
+
+37
+00:01:28,000 --> 00:01:32,880
+to 600 million now. But, check how much
+
+38
+00:01:30,600 --> 00:01:35,320
+this correlates with the price as well.
+
+39
+00:01:32,880 --> 00:01:37,080
+When there are more bets on Zcash, then
+
+40
+00:01:35,320 --> 00:01:39,240
+the price tends to go up. When there are
+
+41
+00:01:37,080 --> 00:01:41,200
+less bets on Zcash, the price tends to
+
+42
+00:01:39,240 --> 00:01:43,600
+go down. So, really, the derivatives
+
+43
+00:01:41,200 --> 00:01:45,920
+market is driving the price. That's not
+
+44
+00:01:43,600 --> 00:01:48,480
+necessarily true for every asset. For
+
+45
+00:01:45,920 --> 00:01:50,880
+Bitcoin, for example, the perpetuals are
+
+46
+00:01:48,480 --> 00:01:52,800
+not the primary driver, but for many
+
+47
+00:01:50,880 --> 00:01:54,920
+altcoins, they are. This is another
+
+48
+00:01:52,800 --> 00:01:57,560
+confirmation that we are looking at a
+
+49
+00:01:54,920 --> 00:02:00,240
+short squeeze. There have been a lot of
+
+50
+00:01:57,560 --> 00:02:02,560
+short liquidations in the last 24 hours,
+
+51
+00:02:00,240 --> 00:02:05,240
+more than 12 million. And on a typical
+
+52
+00:02:02,560 --> 00:02:07,040
+day, we tend to have less than 1
+
+53
+00:02:05,240 --> 00:02:09,000
+million. So, what's happening here is
+
+54
+00:02:07,040 --> 00:02:11,520
+that the market makers have a lot of
+
+55
+00:02:09,000 --> 00:02:13,080
+supply of Zcash. They are watching how
+
+56
+00:02:11,520 --> 00:02:15,120
+many people are currently betting on
+
+57
+00:02:13,080 --> 00:02:16,880
+falling prices of Zcash. And if there
+
+58
+00:02:15,120 --> 00:02:18,800
+are enough people, they could
+
+59
+00:02:16,880 --> 00:02:21,840
+potentially get squeezed out of the
+
+60
+00:02:18,800 --> 00:02:23,760
+market. Then, the market makers buy up
+
+61
+00:02:21,840 --> 00:02:26,160
+on the spot market and squeeze all of
+
+62
+00:02:23,760 --> 00:02:27,920
+those perps out, make liquidation fees
+
+63
+00:02:26,160 --> 00:02:30,480
+in the process. Now, there are many ways
+
+64
+00:02:27,920 --> 00:02:32,680
+to look at the data of an asset. This is
+
+65
+00:02:30,480 --> 00:02:35,400
+what most people do. It's just a linear
+
+66
+00:02:32,680 --> 00:02:37,760
+scale. It's the asset measured in US
+
+67
+00:02:35,400 --> 00:02:40,080
+dollars. But, at least, we should change
+
+68
+00:02:37,760 --> 00:02:42,480
+to a logarithmic scale, so that then we
+
+69
+00:02:40,080 --> 00:02:45,200
+get an impression of how percentage
+
+70
+00:02:42,480 --> 00:02:47,320
+changes move over time. In the end, we
+
+71
+00:02:45,200 --> 00:02:49,800
+are interested in percent gains, not
+
+72
+00:02:47,320 --> 00:02:51,840
+necessarily in US dollar prices. On a
+
+73
+00:02:49,800 --> 00:02:54,200
+linear scale, we really have no idea
+
+74
+00:02:51,840 --> 00:02:57,440
+about percent changes. This here is a
+
+75
+00:02:54,200 --> 00:03:00,480
+300% change, while the same delta higher
+
+76
+00:02:57,440 --> 00:03:02,440
+on the chart is only a 15% change.
+
+77
+00:03:00,480 --> 00:03:04,600
+Really, at least, we should change to a
+
+78
+00:03:02,440 --> 00:03:06,480
+logarithmic scale. But, the better way
+
+79
+00:03:04,600 --> 00:03:09,200
+is to not just change to logarithmic,
+
+80
+00:03:06,480 --> 00:03:11,920
+but also to compare Zcash to a
+
+81
+00:03:09,200 --> 00:03:13,960
+benchmark. Now, that benchmark can be
+
+82
+00:03:11,920 --> 00:03:15,680
+the others market cap, so the entire
+
+83
+00:03:13,960 --> 00:03:18,240
+altcoin market cap. It could also be
+
+84
+00:03:15,680 --> 00:03:20,160
+Bitcoin, as long as we know how one
+
+85
+00:03:18,240 --> 00:03:22,160
+asset is performing relative to the
+
+86
+00:03:20,160 --> 00:03:24,480
+rest, we get a much better idea of
+
+87
+00:03:22,160 --> 00:03:26,400
+what's specifically going on with that
+
+88
+00:03:24,480 --> 00:03:27,760
+asset because of all the correlation,
+
+89
+00:03:26,400 --> 00:03:29,600
+right? When Bitcoin goes up, all the
+
+90
+00:03:27,760 --> 00:03:31,080
+altcoins go up. When Bitcoin goes down,
+
+91
+00:03:29,600 --> 00:03:32,640
+all the altcoins go down. But, the
+
+92
+00:03:31,080 --> 00:03:34,520
+relative performance is what matters.
+
+93
+00:03:32,640 --> 00:03:36,800
+So, here's Zcash relative to the others
+
+94
+00:03:34,520 --> 00:03:39,400
+market cap. It shows us that up until
+
+95
+00:03:36,800 --> 00:03:41,280
+the middle of 2024, it tended to
+
+96
+00:03:39,400 --> 00:03:43,600
+underperform very consistently. And
+
+97
+00:03:41,280 --> 00:03:47,600
+then, things turned around, and then we
+
+98
+00:03:43,600 --> 00:03:49,680
+got the massive rally starting in Q3 of
+
+99
+00:03:47,600 --> 00:03:51,760
+last year. Now, let's zoom into that
+
+100
+00:03:49,680 --> 00:03:54,480
+rally. Let's switch from a daily chart
+
+101
+00:03:51,760 --> 00:03:56,600
+to a 4-hour chart. And we can see that
+
+102
+00:03:54,480 --> 00:03:59,280
+the recent short squeeze is still within
+
+103
+00:03:56,600 --> 00:04:02,080
+regular volatility. The momentum has
+
+104
+00:03:59,280 --> 00:04:04,160
+clearly slowed down. The peak relative
+
+105
+00:04:02,080 --> 00:04:07,920
+to other altcoins was reached on the
+
+106
+00:04:04,160 --> 00:04:10,200
+21st of November, 2025. Since then,
+
+107
+00:04:07,920 --> 00:04:12,800
+Zcash, even with that rally,
+
+108
+00:04:10,200 --> 00:04:15,200
+underperformed by 45%. But, there's a
+
+109
+00:04:12,800 --> 00:04:18,160
+good chance Zcash still continues to
+
+110
+00:04:15,200 --> 00:04:20,680
+outperform until we hit the resistance.
+
+111
+00:04:18,160 --> 00:04:23,240
+That's another 23% from here. And that's
+
+112
+00:04:20,680 --> 00:04:24,840
+personally my plan. I don't want to bet
+
+113
+00:04:23,240 --> 00:04:27,120
+on the current rally. I think it's
+
+114
+00:04:24,840 --> 00:04:29,320
+better to just wait until we are very
+
+115
+00:04:27,120 --> 00:04:31,480
+high on the trading range, and then
+
+116
+00:04:29,320 --> 00:04:34,480
+trade with the general momentum. And the
+
+117
+00:04:31,480 --> 00:04:37,600
+general momentum is negative. Zcash has
+
+118
+00:04:34,480 --> 00:04:40,080
+a very hard time going beyond that level
+
+119
+00:04:37,600 --> 00:04:42,040
+of November of last year. Can Zcash
+
+120
+00:04:40,080 --> 00:04:44,240
+outperform in the very near future?
+
+121
+00:04:42,040 --> 00:04:46,440
+Definitely. Will it outperform in the
+
+122
+00:04:44,240 --> 00:04:48,920
+next months? Probably not. This year was
+
+123
+00:04:46,440 --> 00:04:50,600
+already a short squeeze-driven rally,
+
+124
+00:04:48,920 --> 00:04:53,080
+and that might continue for a bit
+
+125
+00:04:50,600 --> 00:04:55,680
+longer. But, short squeezes deflate
+
+126
+00:04:53,080 --> 00:04:57,400
+after a while. The market makers do have
+
+127
+00:04:55,680 --> 00:05:00,360
+to sell the spot holdings that they
+
+128
+00:04:57,400 --> 00:05:01,760
+acquired in order to initiate the short
+
+129
+00:05:00,360 --> 00:05:02,800
+squeeze in the first place. If it's your
+
+130
+00:05:01,760 --> 00:05:04,280
+very first time here, feel free to
+
+131
+00:05:02,800 --> 00:05:05,560
+subscribe. I publish news regularly. A
+
+132
+00:05:04,280 --> 00:05:06,800
+like would be very much appreciated as
+
+133
+00:05:05,560 --> 00:05:08,560
+well. It helps the channel grow. See you
+
+134
+00:05:06,800 --> 00:05:10,280
+next time on YouTube, or potentially see
+
+135
+00:05:08,560 --> 00:05:11,720
+you also in premium. This is where I
+
+136
+00:05:10,280 --> 00:05:15,160
+share my own trades. Thanks for
+
+137
+00:05:11,720 --> 00:05:15,160
+watching. See you next time. Cheers.
+

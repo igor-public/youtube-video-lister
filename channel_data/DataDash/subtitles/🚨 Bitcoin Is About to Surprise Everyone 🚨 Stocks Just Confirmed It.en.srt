@@ -1,0 +1,1248 @@
+1
+00:00:00,000 --> 00:00:02,879
+Most people are absolutely confused on
+
+2
+00:00:01,760 --> 00:00:05,440
+what's going on in the markets right
+
+3
+00:00:02,879 --> 00:00:07,839
+now. The S&P 500 just hit yet again
+
+4
+00:00:05,440 --> 00:00:09,519
+another new all-time high above $7,000
+
+5
+00:00:07,839 --> 00:00:11,360
+and the Nasdaq is pushing higher as
+
+6
+00:00:09,519 --> 00:00:13,360
+well. And the Dow Jones is right behind
+
+7
+00:00:11,360 --> 00:00:15,519
+it. And that's all happening right now
+
+8
+00:00:13,360 --> 00:00:17,119
+with geopolitical tensions, recession
+
+9
+00:00:15,519 --> 00:00:19,039
+fears, and everything we've been hearing
+
+10
+00:00:17,119 --> 00:00:20,640
+for months. Now, that doesn't happen by
+
+11
+00:00:19,039 --> 00:00:23,840
+accident. And at the same time, we just
+
+12
+00:00:20,640 --> 00:00:25,279
+saw Bitcoin push up to about $76,000 and
+
+13
+00:00:23,840 --> 00:00:26,800
+get a small pullback so far. And
+
+14
+00:00:25,279 --> 00:00:28,400
+everyone's reading this as extreme
+
+15
+00:00:26,800 --> 00:00:30,080
+weakness. I don't necessarily think it
+
+16
+00:00:28,400 --> 00:00:31,679
+is because when you zoom out and look at
+
+17
+00:00:30,080 --> 00:00:33,280
+what's happening across the markets,
+
+18
+00:00:31,679 --> 00:00:34,800
+Bitcoin, equities, and even micro
+
+19
+00:00:33,280 --> 00:00:36,320
+strategy, they're all aligning in a way
+
+20
+00:00:34,800 --> 00:00:38,079
+that we don't see very often. And if
+
+21
+00:00:36,320 --> 00:00:39,760
+these current structures hold, there's a
+
+22
+00:00:38,079 --> 00:00:41,520
+very specific move on the table that
+
+23
+00:00:39,760 --> 00:00:42,960
+most people are just, I still think, not
+
+24
+00:00:41,520 --> 00:00:44,160
+really prepared for. Let's break it all
+
+25
+00:00:42,960 --> 00:00:47,719
+down. My name is Paul Samson. Welcome
+
+26
+00:00:44,160 --> 00:00:47,719
+back to Data Dash.
+
+27
+00:00:54,960 --> 00:00:57,680
+All right, before we dive into the
+
+28
+00:00:56,239 --> 00:00:59,520
+charts, I do want to take a quick moment
+
+29
+00:00:57,680 --> 00:01:01,600
+and talk about something that I
+
+30
+00:00:59,520 --> 00:01:03,520
+personally use, and that is I trust
+
+31
+00:01:01,600 --> 00:01:05,280
+capital. As the markets start moving
+
+32
+00:01:03,520 --> 00:01:06,880
+like this, especially when we start to
+
+33
+00:01:05,280 --> 00:01:08,240
+see strength in both equities and
+
+34
+00:01:06,880 --> 00:01:09,920
+crypto, I'm always thinking about how
+
+35
+00:01:08,240 --> 00:01:11,600
+I'm positioned long-term and not just
+
+36
+00:01:09,920 --> 00:01:13,200
+short-term trades. And that's where I
+
+37
+00:01:11,600 --> 00:01:15,280
+trust Capital comes in. It's a platform
+
+38
+00:01:13,200 --> 00:01:17,280
+that lets you build a crypto IRA so you
+
+39
+00:01:15,280 --> 00:01:19,520
+can hold assets like Bitcoin, XRP,
+
+40
+00:01:17,280 --> 00:01:21,119
+Ethereum in a tax advantaged account.
+
+41
+00:01:19,520 --> 00:01:23,040
+Something I've used for years and which
+
+42
+00:01:21,119 --> 00:01:24,640
+is now a part of my long-term strategy.
+
+43
+00:01:23,040 --> 00:01:26,400
+So, if you've been watching this channel
+
+44
+00:01:24,640 --> 00:01:28,080
+for a while, you know that I'm not just
+
+45
+00:01:26,400 --> 00:01:30,080
+focused on catching moves. We're focused
+
+46
+00:01:28,080 --> 00:01:31,360
+on building positions over time. And if
+
+47
+00:01:30,080 --> 00:01:32,880
+you want to take the time to check it
+
+48
+00:01:31,360 --> 00:01:34,000
+out, you can use the link down in our
+
+49
+00:01:32,880 --> 00:01:36,240
+description area below. And they're
+
+50
+00:01:34,000 --> 00:01:37,759
+currently offering a $100 funding bonus
+
+51
+00:01:36,240 --> 00:01:39,040
+when you sign up. The link is down in
+
+52
+00:01:37,759 --> 00:01:40,560
+the description below. Now, let's jump
+
+53
+00:01:39,040 --> 00:01:42,479
+in to see what's going on with Bitcoin.
+
+54
+00:01:40,560 --> 00:01:45,360
+So, again, we're really just hovering at
+
+55
+00:01:42,479 --> 00:01:48,320
+this key area here, this $75,000,
+
+56
+00:01:45,360 --> 00:01:50,000
+$74,000 mark. Again, this was a uh major
+
+57
+00:01:48,320 --> 00:01:52,320
+high time frame average that was likely
+
+58
+00:01:50,000 --> 00:01:53,759
+to be met in quarter 2. alone with that.
+
+59
+00:01:52,320 --> 00:01:55,040
+It's our high side of the range that
+
+60
+00:01:53,759 --> 00:01:57,200
+many people could look at it, you know,
+
+61
+00:01:55,040 --> 00:01:59,680
+if that's the case as well. And one
+
+62
+00:01:57,200 --> 00:02:01,759
+thing I want to point out that I see a
+
+63
+00:01:59,680 --> 00:02:02,960
+lot of, right? And and again, nobody
+
+64
+00:02:01,759 --> 00:02:04,560
+knows which way the market's going to
+
+65
+00:02:02,960 --> 00:02:07,280
+go. Still waiting. We still need to see
+
+66
+00:02:04,560 --> 00:02:09,440
+that break above $75,000 to get any type
+
+67
+00:02:07,280 --> 00:02:10,959
+of upside here. But what I like to do is
+
+68
+00:02:09,440 --> 00:02:12,800
+when we're trading around these low
+
+69
+00:02:10,959 --> 00:02:14,560
+areas is be prepared for what's, you
+
+70
+00:02:12,800 --> 00:02:16,480
+know, the next most likely move because
+
+71
+00:02:14,560 --> 00:02:18,800
+I I do see that many people are trying
+
+72
+00:02:16,480 --> 00:02:20,239
+to just kind of blindly short this,
+
+73
+00:02:18,800 --> 00:02:21,520
+right? We get the rejection right there
+
+74
+00:02:20,239 --> 00:02:22,959
+and you got the big pullback. You get
+
+75
+00:02:21,520 --> 00:02:24,640
+the rejection here. We got a pullback.
+
+76
+00:02:22,959 --> 00:02:26,640
+We're trading up here and consolidating
+
+77
+00:02:24,640 --> 00:02:28,319
+which most people are looking at as a
+
+78
+00:02:26,640 --> 00:02:30,160
+bit of weakness because it doesn't seem
+
+79
+00:02:28,319 --> 00:02:33,280
+like price can break through that
+
+80
+00:02:30,160 --> 00:02:34,879
+$75,000 mark. And on the flip side,
+
+81
+00:02:33,280 --> 00:02:36,319
+unlike what we saw right here where we
+
+82
+00:02:34,879 --> 00:02:38,239
+saw this pretty quick, you know, one
+
+83
+00:02:36,319 --> 00:02:39,760
+move up straight down from there, we've
+
+84
+00:02:38,239 --> 00:02:42,080
+been kind of holding this area for the
+
+85
+00:02:39,760 --> 00:02:44,640
+last couple days now. So, a lot of times
+
+86
+00:02:42,080 --> 00:02:46,000
+that's actually consolidation before we,
+
+87
+00:02:44,640 --> 00:02:48,160
+you know, continuation essentially
+
+88
+00:02:46,000 --> 00:02:49,760
+before we break through it. again, need
+
+89
+00:02:48,160 --> 00:02:52,239
+to get above it, you know, for that to
+
+90
+00:02:49,760 --> 00:02:53,280
+confirm. And uh if that's the case, I
+
+91
+00:02:52,239 --> 00:02:54,800
+just think that we're in a position
+
+92
+00:02:53,280 --> 00:02:57,200
+where, you know, we could actually get a
+
+93
+00:02:54,800 --> 00:02:59,280
+really sizable move on our hands uh to
+
+94
+00:02:57,200 --> 00:03:00,800
+the upside. Now, one thing I see many
+
+95
+00:02:59,280 --> 00:03:03,599
+many doing right now is that they're
+
+96
+00:03:00,800 --> 00:03:05,440
+really looking at this as a similar
+
+97
+00:03:03,599 --> 00:03:09,120
+fractal, right? Like they're looking at
+
+98
+00:03:05,440 --> 00:03:11,440
+what happened in 2022 and just truly
+
+99
+00:03:09,120 --> 00:03:13,599
+believing that Bitcoin is just so simple
+
+100
+00:03:11,440 --> 00:03:15,440
+that it had done this in the past and it
+
+101
+00:03:13,599 --> 00:03:17,680
+has to do it again or it's most likely
+
+102
+00:03:15,440 --> 00:03:20,800
+that it'll happen. And it's it's just
+
+103
+00:03:17,680 --> 00:03:22,400
+something that yeah, I guess any time,
+
+104
+00:03:20,800 --> 00:03:23,760
+you know, we could take fractals and we
+
+105
+00:03:22,400 --> 00:03:25,280
+could take the probabilities of things
+
+106
+00:03:23,760 --> 00:03:27,440
+that have happened in the past and see
+
+107
+00:03:25,280 --> 00:03:28,879
+how they, you know, react again. And and
+
+108
+00:03:27,440 --> 00:03:30,640
+realistically, I guess that's really all
+
+109
+00:03:28,879 --> 00:03:32,239
+we're doing most times when we are
+
+110
+00:03:30,640 --> 00:03:34,000
+looking at technical analysis. We're
+
+111
+00:03:32,239 --> 00:03:35,519
+identifying patterns that we see time
+
+112
+00:03:34,000 --> 00:03:39,040
+and time again and the probabilities of
+
+113
+00:03:35,519 --> 00:03:40,159
+how they react. The thing I just see a
+
+114
+00:03:39,040 --> 00:03:41,760
+lot of right now, and again, I don't
+
+115
+00:03:40,159 --> 00:03:43,599
+watch a lot of social media. I don't
+
+116
+00:03:41,760 --> 00:03:45,760
+listen to many other voices in the
+
+117
+00:03:43,599 --> 00:03:47,120
+space, and not not negatively. I just I
+
+118
+00:03:45,760 --> 00:03:49,599
+just don't make the time for it, you
+
+119
+00:03:47,120 --> 00:03:51,360
+know, personally. And but the few things
+
+120
+00:03:49,599 --> 00:03:52,879
+that I do pick up on usually is like,
+
+121
+00:03:51,360 --> 00:03:54,319
+you know, what the majority are probably
+
+122
+00:03:52,879 --> 00:03:56,480
+seeing. Um because it's like the
+
+123
+00:03:54,319 --> 00:03:58,319
+occasional uh you know, post I'll come
+
+124
+00:03:56,480 --> 00:04:00,080
+across. And and again, X is a big one
+
+125
+00:03:58,319 --> 00:04:01,599
+because you can easily just kind of
+
+126
+00:04:00,080 --> 00:04:04,640
+consume a lot of content there just by
+
+127
+00:04:01,599 --> 00:04:06,560
+reading it. And many many many people
+
+128
+00:04:04,640 --> 00:04:08,720
+are pointing out that that fractal or
+
+129
+00:04:06,560 --> 00:04:10,400
+that situation there, the bare flag, you
+
+130
+00:04:08,720 --> 00:04:13,599
+know, where they're anticipating more
+
+131
+00:04:10,400 --> 00:04:15,760
+downside, right? So, as always, I'm open
+
+132
+00:04:13,599 --> 00:04:17,919
+to anything and everything. Uh, but when
+
+133
+00:04:15,760 --> 00:04:19,840
+looking at other factors currently, uh,
+
+134
+00:04:17,919 --> 00:04:21,600
+I just see a world where we actually,
+
+135
+00:04:19,840 --> 00:04:23,199
+uh, make a move to the upside, right?
+
+136
+00:04:21,600 --> 00:04:26,800
+So, the key is really breaking through
+
+137
+00:04:23,199 --> 00:04:29,040
+75K. Uh, for that, I would see a pretty
+
+138
+00:04:26,800 --> 00:04:30,240
+decent move back up towards about 93. As
+
+139
+00:04:29,040 --> 00:04:33,120
+we all know, I've covered that many
+
+140
+00:04:30,240 --> 00:04:34,880
+times already. And another big factor
+
+141
+00:04:33,120 --> 00:04:36,639
+that I like to, you know, the other
+
+142
+00:04:34,880 --> 00:04:38,800
+major factors that I like to take into
+
+143
+00:04:36,639 --> 00:04:40,240
+account are, let's just look at the
+
+144
+00:04:38,800 --> 00:04:42,560
+other, you know, the markets now, right?
+
+145
+00:04:40,240 --> 00:04:46,080
+So, we've got the stock market, the S&P,
+
+146
+00:04:42,560 --> 00:04:49,600
+you know, totally front ran. Again, uh
+
+147
+00:04:46,080 --> 00:04:51,040
+something that I'm kind of I'm not happy
+
+148
+00:04:49,600 --> 00:04:52,880
+in the sense of like for anybody that's,
+
+149
+00:04:51,040 --> 00:04:54,560
+you know, taking shorts and getting, you
+
+150
+00:04:52,880 --> 00:04:57,120
+know, wrecked or anything like that, but
+
+151
+00:04:54,560 --> 00:04:59,680
+it just it it very well was too easy,
+
+152
+00:04:57,120 --> 00:05:00,880
+right? Because again, including myself,
+
+153
+00:04:59,680 --> 00:05:02,560
+you know, when we're getting this little
+
+154
+00:05:00,880 --> 00:05:04,080
+roll over here, it was going to be most
+
+155
+00:05:02,560 --> 00:05:06,639
+likely that we would come back to the
+
+156
+00:05:04,080 --> 00:05:08,720
+previous consolidation here, our 24
+
+157
+00:05:06,639 --> 00:05:10,240
+highs, our 382 level, and we have an
+
+158
+00:05:08,720 --> 00:05:12,479
+untapped high time frame average that
+
+159
+00:05:10,240 --> 00:05:14,240
+all kind of stacked right here. Um, for
+
+160
+00:05:12,479 --> 00:05:16,000
+me, I just didn't love that it was also
+
+161
+00:05:14,240 --> 00:05:18,000
+right next to that. And again, if you
+
+162
+00:05:16,000 --> 00:05:19,919
+looked around, pretty much everybody uh
+
+163
+00:05:18,000 --> 00:05:21,280
+and their mother was happily shorting or
+
+164
+00:05:19,919 --> 00:05:22,800
+selling out of the stock market,
+
+165
+00:05:21,280 --> 00:05:25,120
+thinking that we would just really see a
+
+166
+00:05:22,800 --> 00:05:26,639
+a sizable crash. Then the global
+
+167
+00:05:25,120 --> 00:05:29,039
+conflicts occurred and kind of added
+
+168
+00:05:26,639 --> 00:05:30,720
+fuel to that fire and only to see us
+
+169
+00:05:29,039 --> 00:05:33,039
+just rip back and on Monday I just
+
+170
+00:05:30,720 --> 00:05:34,639
+described how you know what we did here
+
+171
+00:05:33,039 --> 00:05:36,320
+was extremely bullish, right? Because
+
+172
+00:05:34,639 --> 00:05:38,240
+what did we do? This is our most notable
+
+173
+00:05:36,320 --> 00:05:41,120
+low. We came down, you took that out. So
+
+174
+00:05:38,240 --> 00:05:43,680
+again, what that incites is it initiates
+
+175
+00:05:41,120 --> 00:05:45,680
+the the FOMO for people that are uh
+
+176
+00:05:43,680 --> 00:05:46,960
+wanting to short or you know getting
+
+177
+00:05:45,680 --> 00:05:47,919
+afraid and they want to sell out of
+
+178
+00:05:46,960 --> 00:05:49,520
+their positions before the market
+
+179
+00:05:47,919 --> 00:05:50,800
+crashes even lower or people enter new
+
+180
+00:05:49,520 --> 00:05:52,479
+short positions because they're thinking
+
+181
+00:05:50,800 --> 00:05:54,720
+that it will accelerate to the downside.
+
+182
+00:05:52,479 --> 00:05:56,400
+breakout traders I will look at this as
+
+183
+00:05:54,720 --> 00:05:58,080
+you know oh we broke a low it's got to
+
+184
+00:05:56,400 --> 00:05:59,520
+head lower
+
+185
+00:05:58,080 --> 00:06:01,680
+um and then if you don't have an
+
+186
+00:05:59,520 --> 00:06:03,840
+invalidation meaning that where is that
+
+187
+00:06:01,680 --> 00:06:05,680
+wrong well it's when we go back above
+
+188
+00:06:03,840 --> 00:06:07,919
+that previous low because at that point
+
+189
+00:06:05,680 --> 00:06:09,440
+now that's a trap essentially uh
+
+190
+00:06:07,919 --> 00:06:12,479
+liquidity sweep however you want to call
+
+191
+00:06:09,440 --> 00:06:13,759
+it and we tend to get a big quick I mean
+
+192
+00:06:12,479 --> 00:06:15,520
+it's a short squeeze at the end of the
+
+193
+00:06:13,759 --> 00:06:17,039
+day right it's a hard and fast move to
+
+194
+00:06:15,520 --> 00:06:19,280
+the upside in the stock market this is
+
+195
+00:06:17,039 --> 00:06:21,039
+no simple move this is you know
+
+196
+00:06:19,280 --> 00:06:24,240
+trillions of dollars I'm sure coming
+
+197
+00:06:21,039 --> 00:06:26,000
+into this market for a almost 8% rally
+
+198
+00:06:24,240 --> 00:06:28,560
+straight up from there and obviously uh
+
+199
+00:06:26,000 --> 00:06:30,319
+over 10% from the actual low. Now NASDAQ
+
+200
+00:06:28,560 --> 00:06:32,160
+is just now basically just you know
+
+201
+00:06:30,319 --> 00:06:33,840
+inching into the new all-time high as
+
+202
+00:06:32,160 --> 00:06:35,840
+well. Slightly front ran a couple of the
+
+203
+00:06:33,840 --> 00:06:38,000
+key levels also but again what did we
+
+204
+00:06:35,840 --> 00:06:39,600
+do? We reclaim that low right here and
+
+205
+00:06:38,000 --> 00:06:42,000
+just away we go, right? I call it the
+
+206
+00:06:39,600 --> 00:06:43,600
+sweeping low and go. Dow Jones uh is the
+
+207
+00:06:42,000 --> 00:06:45,280
+one of the three at least of the bigger
+
+208
+00:06:43,600 --> 00:06:47,199
+indices that has not yet made that new
+
+209
+00:06:45,280 --> 00:06:48,319
+alltime high. You know, could we see it?
+
+210
+00:06:47,199 --> 00:06:51,039
+You know, we' be looking for that
+
+211
+00:06:48,319 --> 00:06:53,680
+$50,000 mark. And the next notable area
+
+212
+00:06:51,039 --> 00:06:55,280
+again is that 53,000 that we've uh that
+
+213
+00:06:53,680 --> 00:06:57,199
+I've had my eyes on for quite some time.
+
+214
+00:06:55,280 --> 00:06:58,319
+We kind of front ran it over here. Uh so
+
+215
+00:06:57,199 --> 00:07:01,520
+we'll be looking to see if we get that
+
+216
+00:06:58,319 --> 00:07:04,080
+out of the Dow. But so far uh both the
+
+217
+00:07:01,520 --> 00:07:06,080
+uh S&P and the NASDAQ have made that
+
+218
+00:07:04,080 --> 00:07:08,800
+move up. And as far as Bitcoin goes,
+
+219
+00:07:06,080 --> 00:07:11,280
+again, 75,000 is a huge huge, you know,
+
+220
+00:07:08,800 --> 00:07:13,759
+area that I want to see uh just flipped
+
+221
+00:07:11,280 --> 00:07:15,280
+on a one daily candle above 75K. And
+
+222
+00:07:13,759 --> 00:07:18,880
+honestly, the fireworks can really get
+
+223
+00:07:15,280 --> 00:07:20,639
+going there. And as far as coinciding
+
+224
+00:07:18,880 --> 00:07:22,639
+with micro strategy because a lot of
+
+225
+00:07:20,639 --> 00:07:24,720
+times what we see out of micro strategy
+
+226
+00:07:22,639 --> 00:07:27,199
+does correlate sometimes it's it's not
+
+227
+00:07:24,720 --> 00:07:30,400
+like a guarant it's it's not a 100%
+
+228
+00:07:27,199 --> 00:07:32,880
+correlation I guess but um usually when
+
+229
+00:07:30,400 --> 00:07:34,160
+Bitcoin is doing well Micro or I guess
+
+230
+00:07:32,880 --> 00:07:35,680
+usually when Micro Strategy is doing
+
+231
+00:07:34,160 --> 00:07:40,319
+well Bitcoin is doing well and vice
+
+232
+00:07:35,680 --> 00:07:42,880
+versa and Micro Strategy also has a
+
+233
+00:07:40,319 --> 00:07:45,360
+major bullish setup here I mean that is
+
+234
+00:07:42,880 --> 00:07:47,759
+again been printing since February or
+
+235
+00:07:45,360 --> 00:07:49,680
+January of 2024
+
+236
+00:07:47,759 --> 00:07:53,199
+uh with our current low here around that
+
+237
+00:07:49,680 --> 00:07:54,960
+$100 zone. So, two years a two-year uh
+
+238
+00:07:53,199 --> 00:07:57,360
+setup that has been, you know, basically
+
+239
+00:07:54,960 --> 00:07:59,360
+in the cards here uh with a couple of
+
+240
+00:07:57,360 --> 00:08:02,400
+major targets. One of which is back up
+
+241
+00:07:59,360 --> 00:08:03,680
+here about 223 to 250. All right. And
+
+242
+00:08:02,400 --> 00:08:05,599
+again, I want to highlight that this is
+
+243
+00:08:03,680 --> 00:08:08,160
+a 2-year, you know, setup. I don't
+
+244
+00:08:05,599 --> 00:08:09,919
+expect this overnight. Fun fact, last
+
+245
+00:08:08,160 --> 00:08:11,360
+time I said that uh about something, we
+
+246
+00:08:09,919 --> 00:08:13,199
+actually got it overnight. So, we'll
+
+247
+00:08:11,360 --> 00:08:14,560
+see. But that aside, but truly, like,
+
+248
+00:08:13,199 --> 00:08:17,840
+let's look at this, you know, neutally
+
+249
+00:08:14,560 --> 00:08:19,599
+here. 140. What is it? 141 is truly that
+
+250
+00:08:17,840 --> 00:08:22,319
+level. We've been flirting with it for
+
+251
+00:08:19,599 --> 00:08:24,639
+for what feels like weeks down here. Uh
+
+252
+00:08:22,319 --> 00:08:26,879
+a true blue close, a decisive close
+
+253
+00:08:24,639 --> 00:08:29,759
+above 141. And I think that the marched
+
+254
+00:08:26,879 --> 00:08:32,399
+back towards 220 to 250 on Micro
+
+255
+00:08:29,759 --> 00:08:33,680
+Strategy begins. Uh which is a sizable
+
+256
+00:08:32,399 --> 00:08:36,479
+move, right? And again, I don't expect
+
+257
+00:08:33,680 --> 00:08:38,399
+this overnight about 70% there. And uh
+
+258
+00:08:36,479 --> 00:08:40,159
+I'm I'm assuming that that'll correlate
+
+259
+00:08:38,399 --> 00:08:42,800
+into Bitcoin as well, which leads into
+
+260
+00:08:40,159 --> 00:08:46,000
+my $93,000 target on on Bitcoin if we
+
+261
+00:08:42,800 --> 00:08:47,600
+get above 75K. So yeah, I think that uh
+
+262
+00:08:46,000 --> 00:08:50,480
+things are just aligning here really
+
+263
+00:08:47,600 --> 00:08:52,399
+well. Um do want to kind of state, you
+
+264
+00:08:50,480 --> 00:08:54,480
+know, not to get overly bullish at this
+
+265
+00:08:52,399 --> 00:08:55,920
+exact moment because that is we are at
+
+266
+00:08:54,480 --> 00:08:58,880
+places where we could see sharp
+
+267
+00:08:55,920 --> 00:09:00,320
+pullbacks shortterm. Um you know, we
+
+268
+00:08:58,880 --> 00:09:02,560
+don't want to get really bullish into
+
+269
+00:09:00,320 --> 00:09:04,880
+major resistance on Bitcoin as we are
+
+270
+00:09:02,560 --> 00:09:06,720
+trading at 75,000 that key level. So we
+
+271
+00:09:04,880 --> 00:09:09,360
+could still see small pullbacks back to
+
+272
+00:09:06,720 --> 00:09:10,399
+70,000 again uh before we you know fully
+
+273
+00:09:09,360 --> 00:09:13,440
+get through there if we're going to
+
+274
+00:09:10,399 --> 00:09:17,040
+push. So, it's it's just a time to again
+
+275
+00:09:13,440 --> 00:09:18,560
+not not secede to any type of uh FOMO or
+
+276
+00:09:17,040 --> 00:09:20,240
+anything like that. Just kind of take a
+
+277
+00:09:18,560 --> 00:09:23,600
+step back, you know, view the market as
+
+278
+00:09:20,240 --> 00:09:24,959
+it is. Uh and then interesting times uh
+
+279
+00:09:23,600 --> 00:09:26,880
+nonetheless here, right? So, we'll see
+
+280
+00:09:24,959 --> 00:09:28,399
+how everything kind of plays out uh as
+
+281
+00:09:26,880 --> 00:09:29,920
+we enter into the weekend. So, overall,
+
+282
+00:09:28,399 --> 00:09:31,519
+when I step back and look at everything
+
+283
+00:09:29,920 --> 00:09:33,279
+right now, Bitcoin, equities, and the
+
+284
+00:09:31,519 --> 00:09:35,040
+broader market structure, this just
+
+285
+00:09:33,279 --> 00:09:37,519
+doesn't look like weakness like really
+
+286
+00:09:35,040 --> 00:09:39,600
+anywhere to me. So, uh it looks like
+
+287
+00:09:37,519 --> 00:09:41,600
+positioning. And if it continues to
+
+288
+00:09:39,600 --> 00:09:43,440
+hold, I do think that there's a real
+
+289
+00:09:41,600 --> 00:09:45,279
+case for further upside that most people
+
+290
+00:09:43,440 --> 00:09:46,959
+just really aren't prepared for. But as
+
+291
+00:09:45,279 --> 00:09:48,959
+always, I'm not trying to predict the
+
+292
+00:09:46,959 --> 00:09:51,120
+market. I'm trying to be prepared to
+
+293
+00:09:48,959 --> 00:09:52,399
+react to what the market gives us. So,
+
+294
+00:09:51,120 --> 00:09:53,920
+uh, that's what I'll be watching. This
+
+295
+00:09:52,399 --> 00:09:55,120
+is how I'll be viewing the market in in
+
+296
+00:09:53,920 --> 00:09:56,720
+the coming days, and I'll keep you
+
+297
+00:09:55,120 --> 00:09:58,560
+updated here on the channel if anything
+
+298
+00:09:56,720 --> 00:10:00,080
+does change. If you found this helpful,
+
+299
+00:09:58,560 --> 00:10:01,440
+be sure to subscribe to the channel if
+
+300
+00:10:00,080 --> 00:10:03,040
+you haven't done so already. Please give
+
+301
+00:10:01,440 --> 00:10:04,880
+us a like on the video. It helps us to
+
+302
+00:10:03,040 --> 00:10:06,640
+distribute uh this information to other
+
+303
+00:10:04,880 --> 00:10:08,399
+traders and investors such as ourselves.
+
+304
+00:10:06,640 --> 00:10:10,240
+And if you would like to go deeper, I do
+
+305
+00:10:08,399 --> 00:10:12,240
+post daily setups and market breakdowns
+
+306
+00:10:10,240 --> 00:10:14,160
+inside the market intel community. And
+
+307
+00:10:12,240 --> 00:10:16,399
+that you can find that available at our
+
+308
+00:10:14,160 --> 00:10:17,680
+website data-pro.com.
+
+309
+00:10:16,399 --> 00:10:18,880
+I appreciate you all for watching. As
+
+310
+00:10:17,680 --> 00:10:19,920
+always, thank you all so much for tuning
+
+311
+00:10:18,880 --> 00:10:24,200
+in. I'll see you all on the next video.
+
+312
+00:10:19,920 --> 00:10:24,200
+And until then, everybody, cheers.
+

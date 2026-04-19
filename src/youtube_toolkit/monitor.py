@@ -120,6 +120,26 @@ class ChannelMonitor:
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(annotation)
 
+    def check_transcript_exists(
+        self,
+        video: Dict,
+        transcripts_dir: str
+    ) -> bool:
+        """
+        Check if transcript already exists for a video.
+
+        Args:
+            video: Video metadata dictionary
+            transcripts_dir: Directory containing transcripts
+
+        Returns:
+            True if transcript exists, False otherwise
+        """
+        safe_title = self.sanitize_filename(video['title'])
+        transcript_filename = f"{video['published_date'][:10]}_{safe_title}.md"
+        transcript_path = os.path.join(transcripts_dir, transcript_filename)
+        return os.path.exists(transcript_path)
+
     def process_channel(
         self,
         channel_url: str,
@@ -146,6 +166,7 @@ class ChannelMonitor:
             'channel_name': None,
             'videos_found': 0,
             'videos_processed': 0,
+            'videos_skipped': 0,
             'transcripts_created': [],
             'errors': []
         }
@@ -188,6 +209,12 @@ class ChannelMonitor:
             for i, video in enumerate(recent_videos, 1):
                 print(f"\n[{i}/{len(recent_videos)}] Processing: {video['title']}")
                 print(f"Published: {video['published_date']}")
+
+                # Check if transcript already exists
+                if self.check_transcript_exists(video, transcripts_dir):
+                    print(f"  ⏭  Transcript already exists, skipping...")
+                    result['videos_skipped'] += 1
+                    continue
 
                 try:
                     # Download subtitles
@@ -308,9 +335,12 @@ class ChannelMonitor:
         total_transcripts = sum(len(r['transcripts_created']) for r in results)
         total_errors = sum(len(r['errors']) for r in results)
 
+        total_videos_skipped = sum(r.get('videos_skipped', 0) for r in results)
+
         report_lines.extend([
             f"Channels processed: {len(results)}",
             f"Videos found: {total_videos_found}",
+            f"Videos skipped (already processed): {total_videos_skipped}",
             f"Videos processed: {total_videos_processed}",
             f"Transcripts created: {total_transcripts}",
             f"Errors: {total_errors}",
@@ -322,6 +352,7 @@ class ChannelMonitor:
                 report_lines.extend([
                     f"\n✓ {result['channel_name']}",
                     f"  Videos found: {result['videos_found']}",
+                    f"  Videos skipped: {result.get('videos_skipped', 0)}",
                     f"  Videos processed: {result['videos_processed']}",
                     f"  Transcripts: {len(result['transcripts_created'])}"
                 ])
