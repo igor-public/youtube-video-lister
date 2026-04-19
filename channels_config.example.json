@@ -1,0 +1,11 @@
+{
+  "channels": [
+    "https://www.youtube.com/@CoinBureauTrading",
+    "https://www.youtube.com/@DataDash"
+  ],
+  "settings": {
+    "days_back": 14,
+    "languages": ["en"],
+    "output_directory": "channel_data"
+  }
+}

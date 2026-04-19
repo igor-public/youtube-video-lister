@@ -1,0 +1,22 @@
+
+================================================================================
+PROCESSING SUMMARY
+================================================================================
+
+Channels processed: 1
+Videos found: 14
+Videos processed: 2
+Transcripts created: 2
+Errors: 12
+
+
+✓ TechWithTim
+  Videos found: 14
+  Videos processed: 2
+  Transcripts: 2
+  Errors: 12
+    - Do you have this DEBT?: No subtitle files were downloaded
+    - AI Testing Just Arrived... | KaneAI Full Tutorial: Failed to download subtitles: [Errno 32] Broken pi
+    - Is AI slowing you down?: Failed to download subtitles: [Errno 32] Broken pi
+
+================================================================================

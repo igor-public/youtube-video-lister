@@ -1,0 +1,2244 @@
+1
+00:00:00,080 --> 00:00:03,679
+Perplexity just released their new
+
+2
+00:00:01,760 --> 00:00:06,480
+computer feature, and honestly, this is
+
+3
+00:00:03,679 --> 00:00:08,240
+the best AI tool that I've used in 2026
+
+4
+00:00:06,480 --> 00:00:10,320
+this far. Now, in this video, I want to
+
+5
+00:00:08,240 --> 00:00:12,240
+break down what it is, explain how it
+
+6
+00:00:10,320 --> 00:00:14,320
+compares to something like OpenClaw, and
+
+7
+00:00:12,240 --> 00:00:16,560
+why I'm personally switching to it right
+
+8
+00:00:14,320 --> 00:00:18,560
+now for certain tasks compared to
+
+9
+00:00:16,560 --> 00:00:20,080
+OpenClaw. Let's get into it. Okay, so
+
+10
+00:00:18,560 --> 00:00:21,760
+you can see the computer is running on
+
+11
+00:00:20,080 --> 00:00:23,600
+my machine right now. All I did is just
+
+12
+00:00:21,760 --> 00:00:25,279
+go to the website and then I just gave
+
+13
+00:00:23,600 --> 00:00:26,880
+it a prompt. Now, the important thing
+
+14
+00:00:25,279 --> 00:00:29,039
+here is that this computer from
+
+15
+00:00:26,880 --> 00:00:31,439
+Perplexity can effectively do everything
+
+16
+00:00:29,039 --> 00:00:33,760
+that Open Caw can do, except it doesn't
+
+17
+00:00:31,439 --> 00:00:34,960
+require any configuration on your end.
+
+18
+00:00:33,760 --> 00:00:37,200
+You just make sure you have the Max
+
+19
+00:00:34,960 --> 00:00:38,640
+plan, which yes, is $200 per month, but
+
+20
+00:00:37,200 --> 00:00:40,640
+I do believe that they're bringing it to
+
+21
+00:00:38,640 --> 00:00:42,559
+the pro plan soon, and you can start
+
+22
+00:00:40,640 --> 00:00:44,320
+using it. It has skills, it can go to
+
+23
+00:00:42,559 --> 00:00:46,079
+the web, it can write code, it can do
+
+24
+00:00:44,320 --> 00:00:48,800
+all of the things that you would want an
+
+25
+00:00:46,079 --> 00:00:50,800
+AI agent to do, except you don't have to
+
+26
+00:00:48,800 --> 00:00:52,160
+manually configure it or worry about the
+
+27
+00:00:50,800 --> 00:00:53,760
+security. So, I'll go through a bunch of
+
+28
+00:00:52,160 --> 00:00:55,199
+demos here so you can see what this is
+
+29
+00:00:53,760 --> 00:00:56,960
+capable of. But I really do want to
+
+30
+00:00:55,199 --> 00:00:59,039
+explain what it is and how it compares
+
+31
+00:00:56,960 --> 00:01:00,480
+to OpenClaw because I know a lot of you
+
+32
+00:00:59,039 --> 00:01:02,399
+watching this channel have watched my
+
+33
+00:01:00,480 --> 00:01:04,559
+OpenClaw videos and you've seen that
+
+34
+00:01:02,399 --> 00:01:06,400
+even me as an experienced developer can
+
+35
+00:01:04,559 --> 00:01:08,479
+take hours to configure the instance
+
+36
+00:01:06,400 --> 00:01:10,799
+properly. And while it's super powerful,
+
+37
+00:01:08,479 --> 00:01:12,720
+it's definitely not beginnerfriendly and
+
+38
+00:01:10,799 --> 00:01:14,720
+it eats a massive amount of time and can
+
+39
+00:01:12,720 --> 00:01:16,640
+also be configured incorrectly and lead
+
+40
+00:01:14,720 --> 00:01:18,560
+to a bunch of security issues. So, this
+
+41
+00:01:16,640 --> 00:01:20,400
+effectively fixes all of that, but there
+
+42
+00:01:18,560 --> 00:01:21,680
+are some pros and cons. Let's get into
+
+43
+00:01:20,400 --> 00:01:23,200
+it. Okay, so there's kind of two
+
+44
+00:01:21,680 --> 00:01:25,439
+approaches that I want to talk about in
+
+45
+00:01:23,200 --> 00:01:27,200
+this video. First is OpenClaw. Second is
+
+46
+00:01:25,439 --> 00:01:29,119
+the Perplexity computer. Now, you can
+
+47
+00:01:27,200 --> 00:01:31,680
+see that with OpenClaw, you effectively
+
+48
+00:01:29,119 --> 00:01:33,439
+have full local control, which means you
+
+49
+00:01:31,680 --> 00:01:35,439
+configure everything. You set it up
+
+50
+00:01:33,439 --> 00:01:36,880
+exactly how you want, and it makes it
+
+51
+00:01:35,439 --> 00:01:38,640
+extremely powerful because you can
+
+52
+00:01:36,880 --> 00:01:40,720
+effectively do anything, right? It's
+
+53
+00:01:38,640 --> 00:01:42,720
+infinitely configurable. That also means
+
+54
+00:01:40,720 --> 00:01:44,720
+you own everything and you own the
+
+55
+00:01:42,720 --> 00:01:46,320
+complexity and the responsibility of
+
+56
+00:01:44,720 --> 00:01:48,320
+setting up an instance like that.
+
+57
+00:01:46,320 --> 00:01:49,759
+Whereas with Perplexity computer, it's
+
+58
+00:01:48,320 --> 00:01:51,920
+cloudnative, so it just runs on
+
+59
+00:01:49,759 --> 00:01:53,680
+Perplexity's infrastructure. There is
+
+60
+00:01:51,920 --> 00:01:55,360
+actually zero setup. You literally just
+
+61
+00:01:53,680 --> 00:01:56,880
+sign up, you pay the 200 bucks per
+
+62
+00:01:55,360 --> 00:01:58,640
+month, and then you can start using it.
+
+63
+00:01:56,880 --> 00:02:00,159
+And then it has model agnostic
+
+64
+00:01:58,640 --> 00:02:02,399
+orchestration, which means that it
+
+65
+00:02:00,159 --> 00:02:04,560
+automatically routes to different models
+
+66
+00:02:02,399 --> 00:02:06,640
+based on what needs to be used. You
+
+67
+00:02:04,560 --> 00:02:08,640
+don't pay for API keys. You just pay for
+
+68
+00:02:06,640 --> 00:02:10,239
+credits for the computer. And this means
+
+69
+00:02:08,640 --> 00:02:11,520
+that you don't need to fine-tune your
+
+70
+00:02:10,239 --> 00:02:14,080
+cost, where I know some people are
+
+71
+00:02:11,520 --> 00:02:16,239
+literally spending $200 per day using
+
+72
+00:02:14,080 --> 00:02:18,080
+OpenCloud, right? And then in general,
+
+73
+00:02:16,239 --> 00:02:19,280
+you just describe what you want and you
+
+74
+00:02:18,080 --> 00:02:20,800
+get the result. You might need to
+
+75
+00:02:19,280 --> 00:02:22,160
+connect your Google Drive or something,
+
+76
+00:02:20,800 --> 00:02:23,840
+but that's about it. And just to give
+
+77
+00:02:22,160 --> 00:02:25,520
+you kind of an analogy here, the
+
+78
+00:02:23,840 --> 00:02:27,440
+computer is like hiring a general
+
+79
+00:02:25,520 --> 00:02:28,720
+contractor. You just describe what you
+
+80
+00:02:27,440 --> 00:02:30,160
+want the finished product to be, in this
+
+81
+00:02:28,720 --> 00:02:32,080
+case, the kitchen, and then they pick
+
+82
+00:02:30,160 --> 00:02:34,239
+the plumber, the electrician, you know,
+
+83
+00:02:32,080 --> 00:02:35,920
+the tile guy, whatever, and spin up a
+
+84
+00:02:34,239 --> 00:02:37,680
+bunch of sub aents to accomplish the
+
+85
+00:02:35,920 --> 00:02:39,200
+task without you really needing to do
+
+86
+00:02:37,680 --> 00:02:40,959
+anything. So, let's talk about what the
+
+87
+00:02:39,200 --> 00:02:42,800
+computer actually is. Now, if you
+
+88
+00:02:40,959 --> 00:02:44,480
+remember Perplexity a few years ago,
+
+89
+00:02:42,800 --> 00:02:46,480
+they were really just doing search with
+
+90
+00:02:44,480 --> 00:02:48,560
+AI. They then released the Comet
+
+91
+00:02:46,480 --> 00:02:50,480
+browser, the Comet Assistant, and now
+
+92
+00:02:48,560 --> 00:02:51,920
+they have the computer feature, which is
+
+93
+00:02:50,480 --> 00:02:53,840
+really the most capable one that they've
+
+94
+00:02:51,920 --> 00:02:55,599
+had to date. Now, effectively what this
+
+95
+00:02:53,840 --> 00:02:57,920
+allows you to do is have model agnostic
+
+96
+00:02:55,599 --> 00:02:59,440
+orchestration, like I said, parallel sub
+
+97
+00:02:57,920 --> 00:03:00,800
+aents just like you would have inside of
+
+98
+00:02:59,440 --> 00:03:02,959
+something like claw code if you were
+
+99
+00:03:00,800 --> 00:03:05,040
+triggering them yourself. Self-healing
+
+100
+00:03:02,959 --> 00:03:06,400
+problem solving, and then an isolated
+
+101
+00:03:05,040 --> 00:03:08,159
+compute environment, which I think is
+
+102
+00:03:06,400 --> 00:03:09,760
+the important part here, where when you
+
+103
+00:03:08,159 --> 00:03:11,680
+use this computer, it's essentially
+
+104
+00:03:09,760 --> 00:03:13,440
+using a virtual private server that's
+
+105
+00:03:11,680 --> 00:03:15,120
+already configured where you can't
+
+106
+00:03:13,440 --> 00:03:16,640
+configure it incorrectly because you
+
+107
+00:03:15,120 --> 00:03:18,560
+don't have the ability to configure it
+
+108
+00:03:16,640 --> 00:03:20,239
+and Perplexity has set it up for you.
+
+109
+00:03:18,560 --> 00:03:21,760
+Now, the model orchestration is super
+
+110
+00:03:20,239 --> 00:03:23,280
+interesting because that means that
+
+111
+00:03:21,760 --> 00:03:24,879
+you're able to access all of the
+
+112
+00:03:23,280 --> 00:03:27,120
+Frontier models and even the new ones
+
+113
+00:03:24,879 --> 00:03:28,800
+when they come out without you having to
+
+114
+00:03:27,120 --> 00:03:30,239
+actually select them and set all of them
+
+115
+00:03:28,800 --> 00:03:31,840
+up. So, if you want to use Grock, if you
+
+116
+00:03:30,239 --> 00:03:33,440
+want to use Gemini, in fact, you don't
+
+117
+00:03:31,840 --> 00:03:35,360
+even have to pick. It will just
+
+118
+00:03:33,440 --> 00:03:37,360
+automatically route it to all of the
+
+119
+00:03:35,360 --> 00:03:39,040
+different models based on what the task
+
+120
+00:03:37,360 --> 00:03:40,560
+requires rather than you having to
+
+121
+00:03:39,040 --> 00:03:42,400
+configure that yourself. And you may
+
+122
+00:03:40,560 --> 00:03:44,159
+have seen that recently I had an hourong
+
+123
+00:03:42,400 --> 00:03:46,000
+video explaining to you how to configure
+
+124
+00:03:44,159 --> 00:03:47,440
+this to save money. In this case, it's
+
+125
+00:03:46,000 --> 00:03:49,040
+already done. So, what I want to do now
+
+126
+00:03:47,440 --> 00:03:50,879
+is show you exactly how this works so
+
+127
+00:03:49,040 --> 00:03:52,400
+you can see what I mean. And by the way,
+
+128
+00:03:50,879 --> 00:03:54,080
+this presentation that I'm going through
+
+129
+00:03:52,400 --> 00:03:55,920
+here was actually generated with
+
+130
+00:03:54,080 --> 00:03:57,360
+Perplexity Computer. And the entire
+
+131
+00:03:55,920 --> 00:03:59,120
+script that you're hearing was also
+
+132
+00:03:57,360 --> 00:04:00,560
+generated with Perplexity Computer.
+
+133
+00:03:59,120 --> 00:04:02,000
+Anyways, let me go over and show you
+
+134
+00:04:00,560 --> 00:04:03,599
+what's possible. All right, so I'm in
+
+135
+00:04:02,000 --> 00:04:05,280
+the app now and I do want to remind you
+
+136
+00:04:03,599 --> 00:04:07,599
+that in order to use this feature, you
+
+137
+00:04:05,280 --> 00:04:08,879
+do need the Max plan. And I believe it's
+
+138
+00:04:07,599 --> 00:04:10,879
+going to be available for the enterprise
+
+139
+00:04:08,879 --> 00:04:13,040
+plans if it's not already as well as the
+
+140
+00:04:10,879 --> 00:04:15,439
+Pro plans later. But for now, you do
+
+141
+00:04:13,040 --> 00:04:17,680
+need that $200 per month subscription,
+
+142
+00:04:15,439 --> 00:04:20,000
+which will give you 10,000 credits by
+
+143
+00:04:17,680 --> 00:04:21,280
+default for the computer. And then I
+
+144
+00:04:20,000 --> 00:04:23,120
+believe that you can get some bonus
+
+145
+00:04:21,280 --> 00:04:24,080
+credits when you sign up. In my case, I
+
+146
+00:04:23,120 --> 00:04:25,600
+was able to actually partner with
+
+147
+00:04:24,080 --> 00:04:27,360
+Perplexity for this video, and they gave
+
+148
+00:04:25,600 --> 00:04:28,880
+me a bunch of additional credits. So, I
+
+149
+00:04:27,360 --> 00:04:30,800
+haven't had any issues running into
+
+150
+00:04:28,880 --> 00:04:32,720
+limits. And to be honest, it hasn't used
+
+151
+00:04:30,800 --> 00:04:34,160
+as many credits as I would have expected
+
+152
+00:04:32,720 --> 00:04:35,360
+it to. Regardless, I'm going to start
+
+153
+00:04:34,160 --> 00:04:36,560
+running you through a few demos. So,
+
+154
+00:04:35,360 --> 00:04:38,720
+what I'm going to do is just switch over
+
+155
+00:04:36,560 --> 00:04:40,639
+to the computer tab here where you can
+
+156
+00:04:38,720 --> 00:04:41,680
+see a bunch of different tasks. I had
+
+157
+00:04:40,639 --> 00:04:42,880
+another account where I was messing
+
+158
+00:04:41,680 --> 00:04:44,560
+around with this. I just made a fresh
+
+159
+00:04:42,880 --> 00:04:46,800
+one for this video. And what I'm going
+
+160
+00:04:44,560 --> 00:04:48,639
+to do is just give it a prompt and let's
+
+161
+00:04:46,800 --> 00:04:49,919
+see what it does. Okay. So, I'm just
+
+162
+00:04:48,639 --> 00:04:51,440
+going to go here. I'm going to paste in
+
+163
+00:04:49,919 --> 00:04:53,520
+a prompt where I'm asking this to
+
+164
+00:04:51,440 --> 00:04:55,520
+research the top five AI agent tools
+
+165
+00:04:53,520 --> 00:04:57,600
+right now. So, OpenClaw, man, Claude,
+
+166
+00:04:55,520 --> 00:04:58,880
+Co-work, Perplex, the etc. And then give
+
+167
+00:04:57,600 --> 00:05:00,400
+me one of your choice. Give me the
+
+168
+00:04:58,880 --> 00:05:01,759
+pricing, positioning, key strengths,
+
+169
+00:05:00,400 --> 00:05:03,680
+weaknesses. And then I wanted to put it
+
+170
+00:05:01,759 --> 00:05:05,120
+into an interactive report as a web
+
+171
+00:05:03,680 --> 00:05:06,800
+application. So, we could actually send
+
+172
+00:05:05,120 --> 00:05:08,800
+this to, for example, like an executive
+
+173
+00:05:06,800 --> 00:05:10,639
+team. So let's go ahead and press enter
+
+174
+00:05:08,800 --> 00:05:12,400
+here and see the result that we get. All
+
+175
+00:05:10,639 --> 00:05:14,000
+right, so this is the resulting web page
+
+176
+00:05:12,400 --> 00:05:15,759
+that it created. You can see it gave us
+
+177
+00:05:14,000 --> 00:05:17,600
+a bunch of information. It created a
+
+178
+00:05:15,759 --> 00:05:19,120
+full comparison report and we can
+
+179
+00:05:17,600 --> 00:05:21,280
+actually see all of the files that were
+
+180
+00:05:19,120 --> 00:05:23,039
+generated up here in this kind of little
+
+181
+00:05:21,280 --> 00:05:25,280
+window here as well as the usage of the
+
+182
+00:05:23,039 --> 00:05:26,880
+computer during this particular task and
+
+183
+00:05:25,280 --> 00:05:29,120
+how long it worked for. In this case, it
+
+184
+00:05:26,880 --> 00:05:30,720
+was 8 minutes 25 seconds. And if we
+
+185
+00:05:29,120 --> 00:05:32,720
+scroll down, let's have a look at this
+
+186
+00:05:30,720 --> 00:05:34,240
+by just making it full screen. Okay, so
+
+187
+00:05:32,720 --> 00:05:36,880
+you can see this is actually deployed to
+
+188
+00:05:34,240 --> 00:05:38,560
+like a full website, I guess. Uh and
+
+189
+00:05:36,880 --> 00:05:39,840
+from here let's start scrolling through
+
+190
+00:05:38,560 --> 00:05:42,160
+and see what we got. So we get a
+
+191
+00:05:39,840 --> 00:05:44,800
+comparison for developers, knowledge
+
+192
+00:05:42,160 --> 00:05:48,080
+workers, power users, makes sense.
+
+193
+00:05:44,800 --> 00:05:49,759
+Engineering teams, all okay head-to-head
+
+194
+00:05:48,080 --> 00:05:51,199
+analysis where we can kind of click
+
+195
+00:05:49,759 --> 00:05:53,280
+through and you know toggle these
+
+196
+00:05:51,199 --> 00:05:55,600
+various things and see this cool kind of
+
+197
+00:05:53,280 --> 00:05:57,919
+like skill graph of what each is good
+
+198
+00:05:55,600 --> 00:06:00,479
+at. Overall pricing breakdown in terms
+
+199
+00:05:57,919 --> 00:06:03,840
+of how much it costs uh and kind of nice
+
+200
+00:06:00,479 --> 00:06:05,680
+tables. And overall this is quite good.
+
+201
+00:06:03,840 --> 00:06:08,000
+I mean, I'm pretty impressed that's able
+
+202
+00:06:05,680 --> 00:06:09,360
+to whip this up in literally 8 minutes
+
+203
+00:06:08,000 --> 00:06:10,880
+without me having to do anything. And
+
+204
+00:06:09,360 --> 00:06:12,800
+it's even given me this kind of light
+
+205
+00:06:10,880 --> 00:06:14,400
+and dark mode, uh, which I didn't even
+
+206
+00:06:12,800 --> 00:06:17,360
+ask for. Now, just to draw a comparison
+
+207
+00:06:14,400 --> 00:06:19,440
+here to Open Claw, obviously, I could do
+
+208
+00:06:17,360 --> 00:06:21,199
+this as well with OpenClaw and create a
+
+209
+00:06:19,440 --> 00:06:22,800
+website like this. But when I've done
+
+210
+00:06:21,199 --> 00:06:24,240
+that in the past, it requires, first of
+
+211
+00:06:22,800 --> 00:06:25,840
+all, that I'm going to set up all of the
+
+212
+00:06:24,240 --> 00:06:27,520
+different routing for the models. So, we
+
+213
+00:06:25,840 --> 00:06:29,039
+could use like Gemini for research, you
+
+214
+00:06:27,520 --> 00:06:30,880
+know, Opus for planning, all of that
+
+215
+00:06:29,039 --> 00:06:32,720
+kind of stuff. It also requires that I
+
+216
+00:06:30,880 --> 00:06:35,120
+have everything preconfigured and that I
+
+217
+00:06:32,720 --> 00:06:36,800
+have a coding task, I have a git task, I
+
+218
+00:06:35,120 --> 00:06:39,039
+have or sorry skill, I have all these
+
+219
+00:06:36,800 --> 00:06:40,800
+other skills already added. And then in
+
+220
+00:06:39,039 --> 00:06:42,560
+terms of actually running and viewing
+
+221
+00:06:40,800 --> 00:06:44,720
+the site, it's a lot more difficult to
+
+222
+00:06:42,560 --> 00:06:46,240
+have open claw automatically deploy this
+
+223
+00:06:44,720 --> 00:06:48,080
+and put in a format where I could
+
+224
+00:06:46,240 --> 00:06:50,000
+actually instantly share it with someone
+
+225
+00:06:48,080 --> 00:06:51,759
+because if you uh configure the instance
+
+226
+00:06:50,000 --> 00:06:54,000
+properly, usually you're shutting down
+
+227
+00:06:51,759 --> 00:06:55,680
+all external traffic, meaning you can
+
+228
+00:06:54,000 --> 00:06:57,440
+only run it through something like tail
+
+229
+00:06:55,680 --> 00:06:58,960
+scale, right? or you're going to expose
+
+230
+00:06:57,440 --> 00:07:00,639
+a site publicly, which you probably
+
+231
+00:06:58,960 --> 00:07:02,479
+don't want to do directly on the virtual
+
+232
+00:07:00,639 --> 00:07:04,880
+private server that's hosting your
+
+233
+00:07:02,479 --> 00:07:06,560
+OpenClaw instance. So, at minimum, just
+
+234
+00:07:04,880 --> 00:07:08,319
+being able to have the site deployed
+
+235
+00:07:06,560 --> 00:07:10,560
+instantly so I can actually start using
+
+236
+00:07:08,319 --> 00:07:12,319
+it right away is a massive benefit. And
+
+237
+00:07:10,560 --> 00:07:13,840
+again, like I said, I can do this in
+
+238
+00:07:12,319 --> 00:07:15,919
+OpenClaw, but it's just going to take me
+
+239
+00:07:13,840 --> 00:07:17,199
+a lot longer to set up. And for any
+
+240
+00:07:15,919 --> 00:07:18,400
+beginners, I don't know if that's
+
+241
+00:07:17,199 --> 00:07:20,400
+actually even going to be possible for
+
+242
+00:07:18,400 --> 00:07:21,759
+you get a result like this unless you
+
+243
+00:07:20,400 --> 00:07:23,759
+really know what you're doing in terms
+
+244
+00:07:21,759 --> 00:07:24,880
+of the config, setup, deployment, all of
+
+245
+00:07:23,759 --> 00:07:26,400
+that kind of stuff. Okay, so I've got
+
+246
+00:07:24,880 --> 00:07:28,240
+another prompt here. research Nvidia,
+
+247
+00:07:26,400 --> 00:07:30,319
+Microsoft Anthropic, pull the latest
+
+248
+00:07:28,240 --> 00:07:32,240
+news, do the analyst sentiment, and then
+
+249
+00:07:30,319 --> 00:07:34,000
+give me any financial developments and
+
+250
+00:07:32,240 --> 00:07:36,319
+build a comprehensive dashboard that I
+
+251
+00:07:34,000 --> 00:07:37,759
+can actually use. Let's see what this
+
+252
+00:07:36,319 --> 00:07:39,759
+can do. All right, so we've got the
+
+253
+00:07:37,759 --> 00:07:41,199
+finished result here. Let's pop it open
+
+254
+00:07:39,759 --> 00:07:42,639
+and then we can go through and see how
+
+255
+00:07:41,199 --> 00:07:44,479
+it built this. All right, so we've got
+
+256
+00:07:42,639 --> 00:07:46,720
+AI Titans comparison dashboard. We have
+
+257
+00:07:44,479 --> 00:07:48,800
+Nvidia, Microsoft, and Enthropic and
+
+258
+00:07:46,720 --> 00:07:50,319
+their stock price. Okay, we can see kind
+
+259
+00:07:48,800 --> 00:07:52,080
+of a financial comparison here of the
+
+260
+00:07:50,319 --> 00:07:53,680
+latest reported quarter. We have
+
+261
+00:07:52,080 --> 00:07:55,280
+quarterly revenue trends showing us
+
+262
+00:07:53,680 --> 00:07:56,879
+Nvidia versus Microsoft. And then
+
+263
+00:07:55,280 --> 00:07:59,039
+Enthropic, it's giving us a trajectory
+
+264
+00:07:56,879 --> 00:08:00,560
+because this is a private company. So it
+
+265
+00:07:59,039 --> 00:08:02,240
+actually separated those two out where
+
+266
+00:08:00,560 --> 00:08:04,639
+we have the publicly traded ones, then
+
+267
+00:08:02,240 --> 00:08:07,120
+the privately traded. Keep going forward
+
+268
+00:08:04,639 --> 00:08:10,319
+estimates. Okay. Analyst sentiment,
+
+269
+00:08:07,120 --> 00:08:12,879
+bullcase, barecase. We can have a look
+
+270
+00:08:10,319 --> 00:08:14,240
+at this here and see. And then it gives
+
+271
+00:08:12,879 --> 00:08:16,000
+us the latest news from all of them. And
+
+272
+00:08:14,240 --> 00:08:20,319
+we can see Microsoft. Okay. Frontier
+
+273
+00:08:16,000 --> 00:08:22,160
+suite March 9th. GTC 2026. March 14th.
+
+274
+00:08:20,319 --> 00:08:23,680
+Pretty cool. All right. So again, single
+
+275
+00:08:22,160 --> 00:08:25,120
+prompt. I don't know why it always gives
+
+276
+00:08:23,680 --> 00:08:27,360
+us light and dark mode, but we've got
+
+277
+00:08:25,120 --> 00:08:28,960
+that here. And if we go back to the
+
+278
+00:08:27,360 --> 00:08:31,199
+task, let's have a look at some of the
+
+279
+00:08:28,960 --> 00:08:32,719
+things it actually did here because
+
+280
+00:08:31,199 --> 00:08:34,000
+again, I'm trying to make the comparison
+
+281
+00:08:32,719 --> 00:08:36,159
+of like if I was going to do this in
+
+282
+00:08:34,000 --> 00:08:37,760
+OpenClaw, what would be required to have
+
+283
+00:08:36,159 --> 00:08:39,200
+this work? So, first of all, you can see
+
+284
+00:08:37,760 --> 00:08:41,440
+we had four sub agents running in
+
+285
+00:08:39,200 --> 00:08:43,279
+parallel or three I guess where we're
+
+286
+00:08:41,440 --> 00:08:45,120
+loading the skills here. So, research
+
+287
+00:08:43,279 --> 00:08:46,959
+assistant, finance, markets, website
+
+288
+00:08:45,120 --> 00:08:48,560
+building, which are already made for us.
+
+289
+00:08:46,959 --> 00:08:49,920
+We also can add our own skills. In fact,
+
+290
+00:08:48,560 --> 00:08:51,279
+if I go here, like I don't have any
+
+291
+00:08:49,920 --> 00:08:53,440
+right now, but I can make my own skill
+
+292
+00:08:51,279 --> 00:08:55,839
+if I want. It actually has the create
+
+293
+00:08:53,440 --> 00:08:57,680
+skill skill and then you can view the
+
+294
+00:08:55,839 --> 00:08:59,519
+markdown file and actually just copy
+
+295
+00:08:57,680 --> 00:09:01,760
+this or use it how you want. Anyways,
+
+296
+00:08:59,519 --> 00:09:03,440
+we'll go back here. So point is it ran a
+
+297
+00:09:01,760 --> 00:09:04,720
+bunch of these tasks in parallel. It's
+
+298
+00:09:03,440 --> 00:09:06,399
+then going to start setting up the
+
+299
+00:09:04,720 --> 00:09:08,399
+research. So it's researching this,
+
+300
+00:09:06,399 --> 00:09:09,680
+doing the financial data collection, and
+
+301
+00:09:08,399 --> 00:09:11,680
+then we can see it's running all of
+
+302
+00:09:09,680 --> 00:09:13,680
+these in parallel, fetching the tool
+
+303
+00:09:11,680 --> 00:09:15,519
+details. Same thing, running all of
+
+304
+00:09:13,680 --> 00:09:16,880
+these in parallel, running the tasks in
+
+305
+00:09:15,519 --> 00:09:18,800
+parallel. You can see here this used
+
+306
+00:09:16,880 --> 00:09:20,560
+opus 4.6, so it's telling us the
+
+307
+00:09:18,800 --> 00:09:22,320
+specific model. And then again, it goes
+
+308
+00:09:20,560 --> 00:09:23,760
+and completes everything else. So if we
+
+309
+00:09:22,320 --> 00:09:25,760
+were just to look at all of the things
+
+310
+00:09:23,760 --> 00:09:27,600
+that were ran here, again, we can
+
+311
+00:09:25,760 --> 00:09:29,120
+emulate this in OpenClaw, but most
+
+312
+00:09:27,600 --> 00:09:30,480
+people are probably never going to get
+
+313
+00:09:29,120 --> 00:09:32,880
+to a point where their open claw is
+
+314
+00:09:30,480 --> 00:09:34,720
+configured with all of these things and
+
+315
+00:09:32,880 --> 00:09:36,399
+have it functioning properly. In this
+
+316
+00:09:34,720 --> 00:09:37,600
+case, I just used it and it worked right
+
+317
+00:09:36,399 --> 00:09:39,120
+away. And I think that's the massive
+
+318
+00:09:37,600 --> 00:09:41,360
+benefit of this tool is that if you just
+
+319
+00:09:39,120 --> 00:09:43,600
+want something done instantly right away
+
+320
+00:09:41,360 --> 00:09:45,279
+without any config, you open it up and
+
+321
+00:09:43,600 --> 00:09:46,959
+it works. If I was to try to build this
+
+322
+00:09:45,279 --> 00:09:48,000
+in OpenClaw, again, like I mentioned, I
+
+323
+00:09:46,959 --> 00:09:49,760
+would have to have some way of
+
+324
+00:09:48,000 --> 00:09:52,080
+previewing the site, which is not easy.
+
+325
+00:09:49,760 --> 00:09:53,279
+I'm probably sshing into the instance.
+
+326
+00:09:52,080 --> 00:09:54,720
+I'm going to have to set up all of the
+
+327
+00:09:53,279 --> 00:09:56,080
+model config. I'm going to have to be a
+
+328
+00:09:54,720 --> 00:09:57,440
+little bit more explicit in terms of
+
+329
+00:09:56,080 --> 00:09:59,440
+what I want it to do. I'm going to have
+
+330
+00:09:57,440 --> 00:10:01,680
+to configure all of the skills. And even
+
+331
+00:09:59,440 --> 00:10:03,920
+me, probably one of the top 1% users of
+
+332
+00:10:01,680 --> 00:10:05,760
+OpenClaw right now in terms of tokens is
+
+333
+00:10:03,920 --> 00:10:07,120
+going to spend, you know, 45 minutes, 60
+
+334
+00:10:05,760 --> 00:10:09,600
+minutes getting this site up. We're
+
+335
+00:10:07,120 --> 00:10:11,200
+here. Let's check. This ran in 12
+
+336
+00:10:09,600 --> 00:10:12,720
+minutes, right? And spun everything up.
+
+337
+00:10:11,200 --> 00:10:15,200
+And to be honest, it's probably cheaper
+
+338
+00:10:12,720 --> 00:10:17,279
+if I do the math on the token usage pro
+
+339
+00:10:15,200 --> 00:10:19,279
+rata than it would be if I just used,
+
+340
+00:10:17,279 --> 00:10:21,519
+you know, my own API key with Enthropic
+
+341
+00:10:19,279 --> 00:10:23,600
+or something from OpenClaw. Okay. Now,
+
+342
+00:10:21,519 --> 00:10:24,959
+the next thing that I want to run here,
+
+343
+00:10:23,600 --> 00:10:26,640
+and this is the one that I was thinking
+
+344
+00:10:24,959 --> 00:10:28,480
+about the most when I heard Perplexi
+
+345
+00:10:26,640 --> 00:10:30,480
+Computer coming out, is something that's
+
+346
+00:10:28,480 --> 00:10:32,720
+going to run on some kind of schedule or
+
+347
+00:10:30,480 --> 00:10:34,880
+respond to some kind of events. So, what
+
+348
+00:10:32,720 --> 00:10:37,279
+I like about OpenClaw is that because
+
+349
+00:10:34,880 --> 00:10:39,200
+it's so configurable, it can actually be
+
+350
+00:10:37,279 --> 00:10:41,440
+proactive. It can like send you a daily
+
+351
+00:10:39,200 --> 00:10:43,200
+report. It can run cron jobs. It can
+
+352
+00:10:41,440 --> 00:10:44,640
+react to like a message coming in or
+
+353
+00:10:43,200 --> 00:10:46,320
+something. Right? So, what I want to try
+
+354
+00:10:44,640 --> 00:10:48,320
+to do first of all is make it so that I
+
+355
+00:10:46,320 --> 00:10:50,480
+can message with this in Slack, which I
+
+356
+00:10:48,320 --> 00:10:52,079
+believe is possible. And then I want to
+
+357
+00:10:50,480 --> 00:10:54,240
+see, okay, if I'm not actually telling
+
+358
+00:10:52,079 --> 00:10:56,959
+it to do something directly, can it go
+
+359
+00:10:54,240 --> 00:10:58,480
+ahead and do that proactively based on
+
+360
+00:10:56,959 --> 00:11:00,000
+some instruction I gave it previously.
+
+361
+00:10:58,480 --> 00:11:01,839
+So, like send me a daily report or
+
+362
+00:11:00,000 --> 00:11:03,839
+something, analyze my business, you
+
+363
+00:11:01,839 --> 00:11:05,680
+know, complete something, right? And the
+
+364
+00:11:03,839 --> 00:11:07,279
+advantage of the computer is that it's
+
+365
+00:11:05,680 --> 00:11:09,440
+always on and just running in the
+
+366
+00:11:07,279 --> 00:11:10,720
+background. So unlike even open call if
+
+367
+00:11:09,440 --> 00:11:12,320
+you're running it on like a Mac mini or
+
+368
+00:11:10,720 --> 00:11:14,160
+something if the power goes out or you
+
+369
+00:11:12,320 --> 00:11:15,920
+turn your Mac mini off it just stops
+
+370
+00:11:14,160 --> 00:11:17,360
+working right it can also very easily
+
+371
+00:11:15,920 --> 00:11:19,440
+crash as I'm sure many of you have
+
+372
+00:11:17,360 --> 00:11:21,360
+probably seen even on a VPS okay yeah
+
+373
+00:11:19,440 --> 00:11:23,279
+it's always running as long as the VPS
+
+374
+00:11:21,360 --> 00:11:24,880
+is running kind of same thing here right
+
+375
+00:11:23,279 --> 00:11:26,880
+it's just always on in the background
+
+376
+00:11:24,880 --> 00:11:29,519
+which I think is a massive benefit so
+
+377
+00:11:26,880 --> 00:11:31,120
+let's try let's go back here to the
+
+378
+00:11:29,519 --> 00:11:32,880
+computer and let's give this like a
+
+379
+00:11:31,120 --> 00:11:34,399
+business automation task okay so the
+
+380
+00:11:32,880 --> 00:11:36,800
+next task I'm going to give it is to
+
+381
+00:11:34,399 --> 00:11:39,040
+monitor my inbox every morning summarize
+
+382
+00:11:36,800 --> 00:11:41,360
+what's important flag anything urgent,
+
+383
+00:11:39,040 --> 00:11:42,800
+draft responses for my approval, and
+
+384
+00:11:41,360 --> 00:11:44,880
+then format the whole briefing to look
+
+385
+00:11:42,800 --> 00:11:46,079
+like a clean notion dashboard. Run this
+
+386
+00:11:44,880 --> 00:11:49,360
+daily and just because I think it's
+
+387
+00:11:46,079 --> 00:11:51,200
+going to be funny, speak like Mario. And
+
+388
+00:11:49,360 --> 00:11:53,440
+let's see if it can do that. Now, by the
+
+389
+00:11:51,200 --> 00:11:54,720
+way, I did have a few connectors on
+
+390
+00:11:53,440 --> 00:11:56,480
+before I'm running this, so I just want
+
+391
+00:11:54,720 --> 00:11:59,120
+to show you for the connectors. I did
+
+392
+00:11:56,480 --> 00:12:00,720
+connect Google Drive, Gmail, and Slack.
+
+393
+00:11:59,120 --> 00:12:02,079
+And with Slack, it was actually very
+
+394
+00:12:00,720 --> 00:12:04,399
+simple. All I had to do was just
+
+395
+00:12:02,079 --> 00:12:06,399
+authenticate my Slack and add the bot.
+
+396
+00:12:04,399 --> 00:12:08,399
+And now if I go here, I was just testing
+
+397
+00:12:06,399 --> 00:12:10,079
+this earlier. You can see that I have
+
+398
+00:12:08,399 --> 00:12:12,000
+computer and I can actually just tell it
+
+399
+00:12:10,079 --> 00:12:13,760
+to do something directly from Slack. So
+
+400
+00:12:12,000 --> 00:12:16,240
+if we take that same prompt, I can just
+
+401
+00:12:13,760 --> 00:12:17,920
+put it here. I'm going to say speak like
+
+402
+00:12:16,240 --> 00:12:19,760
+Mario. And I'm just going to send it to
+
+403
+00:12:17,920 --> 00:12:21,680
+the computer from Slack. And you can see
+
+404
+00:12:19,760 --> 00:12:23,760
+now the computer is working, replying to
+
+405
+00:12:21,680 --> 00:12:25,200
+my message. And hopefully that will be
+
+406
+00:12:23,760 --> 00:12:27,519
+done in a second. And then we can see it
+
+407
+00:12:25,200 --> 00:12:29,120
+give us kind of these daily briefs by
+
+408
+00:12:27,519 --> 00:12:30,880
+reading through my email. Okay, so it
+
+409
+00:12:29,120 --> 00:12:32,959
+just gave me a reply here. It says our
+
+410
+00:12:30,880 --> 00:12:34,480
+daily Mario inbox briefing is set up and
+
+411
+00:12:32,959 --> 00:12:36,639
+ready to go. Here's what's going to
+
+412
+00:12:34,480 --> 00:12:38,079
+happen at 9:00 a.m. Bangkok time. So, I
+
+413
+00:12:36,639 --> 00:12:40,079
+guess I just decided that is going to be
+
+414
+00:12:38,079 --> 00:12:42,639
+the time. Says the first briefing drops
+
+415
+00:12:40,079 --> 00:12:43,839
+tomorrow, Monday, March 16th. If you
+
+416
+00:12:42,639 --> 00:12:45,519
+want to test it right now, just the
+
+417
+00:12:43,839 --> 00:12:46,560
+timer, tell Mario to take a day off,
+
+418
+00:12:45,519 --> 00:12:50,480
+just let me know. Okay, so I'm just
+
+419
+00:12:46,560 --> 00:12:52,240
+going to say test it now and let's see
+
+420
+00:12:50,480 --> 00:12:53,440
+what it's going to give me here. Um, and
+
+421
+00:12:52,240 --> 00:12:55,360
+if it's able to actually go to the
+
+422
+00:12:53,440 --> 00:12:57,040
+inbox, pull the emails, etc. And
+
+423
+00:12:55,360 --> 00:12:58,880
+interestingly, here you can actually see
+
+424
+00:12:57,040 --> 00:13:01,440
+what was sent from Slack. You can see I
+
+425
+00:12:58,880 --> 00:13:03,519
+just said test it now right inside of
+
+426
+00:13:01,440 --> 00:13:05,040
+the interface for Perplexity. So you can
+
+427
+00:13:03,519 --> 00:13:07,279
+see it says like let me run the briefing
+
+428
+00:13:05,040 --> 00:13:09,760
+now as a test and it's running Sonnet
+
+429
+00:13:07,279 --> 00:13:11,360
+4.6 and generating it. So if you want to
+
+430
+00:13:09,760 --> 00:13:14,399
+see what it's doing, you can still see
+
+431
+00:13:11,360 --> 00:13:15,839
+that directly in the UI as opposed to
+
+432
+00:13:14,399 --> 00:13:16,959
+obviously in Slack here where it's just
+
+433
+00:13:15,839 --> 00:13:18,639
+going to give me the response. All
+
+434
+00:13:16,959 --> 00:13:20,399
+right, so it just sent me the DM. Notice
+
+435
+00:13:18,639 --> 00:13:21,839
+it actually sent it to myself. So it's
+
+436
+00:13:20,399 --> 00:13:23,120
+like me sending it to myself which is
+
+437
+00:13:21,839 --> 00:13:25,120
+kind of weird, but anyways that's how I
+
+438
+00:13:23,120 --> 00:13:27,360
+got it. And you can see it's a me your
+
+439
+00:13:25,120 --> 00:13:28,800
+morning briefing. Okay, Sunday. So, it's
+
+440
+00:13:27,360 --> 00:13:30,240
+talking like Mario. Obviously, I'm going
+
+441
+00:13:28,800 --> 00:13:32,399
+to have to blur a few things out here
+
+442
+00:13:30,240 --> 00:13:34,639
+because it is my actual real email that
+
+443
+00:13:32,399 --> 00:13:36,000
+I got this to go to. And obviously, we
+
+444
+00:13:34,639 --> 00:13:37,680
+need to blur out some of the names and
+
+445
+00:13:36,000 --> 00:13:39,120
+the details, but you can see it's giving
+
+446
+00:13:37,680 --> 00:13:41,040
+us some urgent stuff on like new
+
+447
+00:13:39,120 --> 00:13:44,399
+sponsorship deals or opportunities on my
+
+448
+00:13:41,040 --> 00:13:46,240
+inbox. 51 new emails, okay, sponsorship
+
+449
+00:13:44,399 --> 00:13:48,320
+and coins, going over like different
+
+450
+00:13:46,240 --> 00:13:50,160
+deals, whatever that we've been signing,
+
+451
+00:13:48,320 --> 00:13:52,480
+uh videos being live, all of this kind
+
+452
+00:13:50,160 --> 00:13:53,920
+of stuff, collaboration and crew. Now
+
+453
+00:13:52,480 --> 00:13:56,240
+again, most of this I'm going to blur
+
+454
+00:13:53,920 --> 00:13:59,120
+because I can't um you know show it all
+
+455
+00:13:56,240 --> 00:14:01,040
+to you, but looks like it is working and
+
+456
+00:13:59,120 --> 00:14:03,120
+it is pretty accurate. And if we go
+
+457
+00:14:01,040 --> 00:14:05,680
+here, it's also giving us another uh
+
+458
+00:14:03,120 --> 00:14:08,160
+kind of what is it message here with
+
+459
+00:14:05,680 --> 00:14:10,000
+replies that we could send to people. So
+
+460
+00:14:08,160 --> 00:14:12,000
+let me read one of them here like sorry
+
+461
+00:14:10,000 --> 00:14:13,920
+for the slow reply. I watched the trial
+
+462
+00:14:12,000 --> 00:14:15,839
+edit. Really appreciate the effort. Blah
+
+463
+00:14:13,920 --> 00:14:18,720
+blah blah. Hey Abby, thanks for the
+
+464
+00:14:15,839 --> 00:14:20,639
+note, etc., etc., etc. You get the idea.
+
+465
+00:14:18,720 --> 00:14:21,760
+Uh and we have all of that here. Cool.
+
+466
+00:14:20,639 --> 00:14:23,279
+All right. All right, so it works inside
+
+467
+00:14:21,760 --> 00:14:24,959
+of Slack giving me the daily briefing
+
+468
+00:14:23,279 --> 00:14:26,160
+and hopefully it will trigger again at
+
+469
+00:14:24,959 --> 00:14:27,600
+9:00 a.m. tomorrow because that's
+
+470
+00:14:26,160 --> 00:14:29,040
+actually going to be pretty useful and I
+
+471
+00:14:27,600 --> 00:14:30,959
+will just leave that on. All right, so
+
+472
+00:14:29,040 --> 00:14:33,519
+at this point guys, let me talk about
+
+473
+00:14:30,959 --> 00:14:36,160
+who this is actually for and when I
+
+474
+00:14:33,519 --> 00:14:37,519
+would use this over using OpenClaw
+
+475
+00:14:36,160 --> 00:14:39,040
+because the truth is I'm not just
+
+476
+00:14:37,519 --> 00:14:40,560
+completely ditching OpenClaw. I've been
+
+477
+00:14:39,040 --> 00:14:42,399
+using it since it came out. I have a
+
+478
+00:14:40,560 --> 00:14:44,480
+bunch of instances configured. They work
+
+479
+00:14:42,399 --> 00:14:46,399
+extremely well and while they were very
+
+480
+00:14:44,480 --> 00:14:48,720
+timeconuming to get up and running
+
+481
+00:14:46,399 --> 00:14:50,399
+because of how flexible it is, it's open
+
+482
+00:14:48,720 --> 00:14:52,560
+source. It is really up to you to
+
+483
+00:14:50,399 --> 00:14:54,480
+configure it and make it better. You can
+
+484
+00:14:52,560 --> 00:14:56,399
+do a lot more with it in my opinion than
+
+485
+00:14:54,480 --> 00:14:58,480
+you can with something purely like this
+
+486
+00:14:56,399 --> 00:14:59,839
+because of that infinite customization.
+
+487
+00:14:58,480 --> 00:15:02,079
+So I think for those of you that are,
+
+488
+00:14:59,839 --> 00:15:03,199
+you know, the top 5% of Open Claw users,
+
+489
+00:15:02,079 --> 00:15:04,800
+you're probably not getting rid of that
+
+490
+00:15:03,199 --> 00:15:06,160
+tomorrow and switching over to a tool
+
+491
+00:15:04,800 --> 00:15:07,600
+like this. You're probably going to keep
+
+492
+00:15:06,160 --> 00:15:09,600
+using that because you're okay with the
+
+493
+00:15:07,600 --> 00:15:11,519
+complexity, the setup, and you're you're
+
+494
+00:15:09,600 --> 00:15:13,920
+confident in what you're doing like I
+
+495
+00:15:11,519 --> 00:15:15,760
+am, right? However, what I have noticed
+
+496
+00:15:13,920 --> 00:15:17,360
+is that when you just want to do
+
+497
+00:15:15,760 --> 00:15:19,440
+something, when you have like a task
+
+498
+00:15:17,360 --> 00:15:20,880
+that you want to get done quickly,
+
+499
+00:15:19,440 --> 00:15:23,199
+that's not something that's like a
+
+500
+00:15:20,880 --> 00:15:25,519
+repeatable workflow in your business,
+
+501
+00:15:23,199 --> 00:15:27,199
+this works a lot better. So, building a
+
+502
+00:15:25,519 --> 00:15:28,800
+quick dashboard, spinning up, you know,
+
+503
+00:15:27,199 --> 00:15:30,880
+a quick, you know, research report,
+
+504
+00:15:28,800 --> 00:15:32,800
+whatever. In my experience, I get better
+
+505
+00:15:30,880 --> 00:15:34,800
+results from Perplexity Computer than I
+
+506
+00:15:32,800 --> 00:15:37,279
+do from my open claw because my open
+
+507
+00:15:34,800 --> 00:15:39,760
+claw is not designed to do that. But for
+
+508
+00:15:37,279 --> 00:15:41,920
+like analyzing sales calls data or doing
+
+509
+00:15:39,760 --> 00:15:44,320
+an automation or operation that I do all
+
+510
+00:15:41,920 --> 00:15:46,079
+the time in my business, OpenClaw works
+
+511
+00:15:44,320 --> 00:15:48,639
+better for that because I've set it up
+
+512
+00:15:46,079 --> 00:15:50,399
+specifically to do that. So the agent is
+
+513
+00:15:48,639 --> 00:15:52,560
+designed just for that and it's not like
+
+514
+00:15:50,399 --> 00:15:54,880
+a general purpose agent like we have
+
+515
+00:15:52,560 --> 00:15:56,800
+here. So that's kind of my take for all
+
+516
+00:15:54,880 --> 00:15:58,240
+my business automation stuff. You know,
+
+517
+00:15:56,800 --> 00:16:00,079
+repeatable tasks, things that I'm going
+
+518
+00:15:58,240 --> 00:16:01,440
+to do over and over and over again. I'm
+
+519
+00:16:00,079 --> 00:16:03,360
+going to stick with Open Claw because I
+
+520
+00:16:01,440 --> 00:16:05,040
+know I can configure it properly and the
+
+521
+00:16:03,360 --> 00:16:07,360
+time is worth it to have that just
+
+522
+00:16:05,040 --> 00:16:09,600
+running exactly as I want with all of
+
+523
+00:16:07,360 --> 00:16:11,600
+the config that I'm responsible for.
+
+524
+00:16:09,600 --> 00:16:13,360
+Whereas with this, if I just want to get
+
+525
+00:16:11,600 --> 00:16:15,440
+something done quickly, I want a
+
+526
+00:16:13,360 --> 00:16:17,519
+relatively complex task that I need an
+
+527
+00:16:15,440 --> 00:16:19,120
+agent for and I need computer use, I'm
+
+528
+00:16:17,519 --> 00:16:20,560
+going to go to Perplexity Computer. And
+
+529
+00:16:19,120 --> 00:16:22,399
+I think for those of you watching, you
+
+530
+00:16:20,560 --> 00:16:24,160
+have to ask yourself the question, do I
+
+531
+00:16:22,399 --> 00:16:25,680
+want to deal with the complexity? Do I
+
+532
+00:16:24,160 --> 00:16:27,920
+want to deal with the security concerns?
+
+533
+00:16:25,680 --> 00:16:30,480
+Am I confident setting this up uh on my
+
+534
+00:16:27,920 --> 00:16:31,680
+own with OpenClaw? If so, go ahead and
+
+535
+00:16:30,480 --> 00:16:33,360
+you have the advantage of the open
+
+536
+00:16:31,680 --> 00:16:35,920
+source software and also the cost is in
+
+537
+00:16:33,360 --> 00:16:38,240
+your control. Whereas this, it is $200
+
+538
+00:16:35,920 --> 00:16:39,839
+per month. If you're barely using AI, if
+
+539
+00:16:38,240 --> 00:16:41,600
+you need a few tasks, this probably
+
+540
+00:16:39,839 --> 00:16:43,759
+doesn't make sense. And having a quick
+
+541
+00:16:41,600 --> 00:16:46,560
+open cloth spun up on a $10 per month
+
+542
+00:16:43,759 --> 00:16:48,399
+VPS where you spend $5 in tokens, maybe
+
+543
+00:16:46,560 --> 00:16:50,079
+that's worth it for you over something
+
+544
+00:16:48,399 --> 00:16:51,759
+like this. So, really, you guys have to
+
+545
+00:16:50,079 --> 00:16:53,120
+use your own judgment. In my case, like
+
+546
+00:16:51,759 --> 00:16:54,639
+I said, I'm going to keep using Open
+
+547
+00:16:53,120 --> 00:16:56,880
+Claw. I'm going to use this more for
+
+548
+00:16:54,639 --> 00:16:59,600
+those one-off tasks and things that just
+
+549
+00:16:56,880 --> 00:17:00,880
+don't require as much configuration. And
+
+550
+00:16:59,600 --> 00:17:02,399
+I'm really interested to hear what you
+
+551
+00:17:00,880 --> 00:17:03,920
+guys think about this because genuinely,
+
+552
+00:17:02,399 --> 00:17:06,319
+yes, I know they reached out to Partner,
+
+553
+00:17:03,920 --> 00:17:08,559
+but this is a very cool tool. It works
+
+554
+00:17:06,319 --> 00:17:09,919
+better than I was expecting and I'm just
+
+555
+00:17:08,559 --> 00:17:11,919
+going to be using it a lot now because
+
+556
+00:17:09,919 --> 00:17:13,600
+of how effective it is. Anyways guys,
+
+557
+00:17:11,919 --> 00:17:14,959
+that's my take. Let me know what you
+
+558
+00:17:13,600 --> 00:17:16,480
+think about it in the comments down
+
+559
+00:17:14,959 --> 00:17:17,919
+below. I'm genuinely curious to hear
+
+560
+00:17:16,480 --> 00:17:22,120
+your opinion and I look forward to
+
+561
+00:17:17,919 --> 00:17:22,120
+seeing you in another video.
+

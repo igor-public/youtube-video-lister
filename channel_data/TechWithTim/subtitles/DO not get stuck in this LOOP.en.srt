@@ -1,0 +1,84 @@
+1
+00:00:00,160 --> 00:00:05,120
+AI has made coding a lot worse. Just fix
+
+2
+00:00:03,600 --> 00:00:06,480
+it loop. Now, I'm sure you guys have
+
+3
+00:00:05,120 --> 00:00:08,240
+been in this and this again is
+
+4
+00:00:06,480 --> 00:00:09,519
+self-inflicted. It's easy to say, "Oh,
+
+5
+00:00:08,240 --> 00:00:10,960
+yeah. Just don't do that. Go manually
+
+6
+00:00:09,519 --> 00:00:13,440
+fix the code yourself." But what I'm
+
+7
+00:00:10,960 --> 00:00:15,040
+talking about here is when the AI makes
+
+8
+00:00:13,440 --> 00:00:16,880
+a mistake, you tell it to fix the
+
+9
+00:00:15,040 --> 00:00:19,279
+mistake. It doesn't fix it. And you just
+
+10
+00:00:16,880 --> 00:00:20,800
+keep going back and forth. Starts at 10
+
+11
+00:00:19,279 --> 00:00:22,240
+minutes and then 20 and then 30 and then
+
+12
+00:00:20,800 --> 00:00:24,320
+hour, then 2 hours where you're just
+
+13
+00:00:22,240 --> 00:00:25,840
+trying to fix bugs all day. And your
+
+14
+00:00:24,320 --> 00:00:27,039
+prompts are literally just fix this.
+
+15
+00:00:25,840 --> 00:00:28,560
+Here's the error message. Here's what
+
+16
+00:00:27,039 --> 00:00:29,760
+went wrong. Let's try this solution.
+
+17
+00:00:28,560 --> 00:00:31,119
+Let's fix this. Where if you had just
+
+18
+00:00:29,760 --> 00:00:32,640
+coded it correctly the first time, which
+
+19
+00:00:31,119 --> 00:00:34,239
+maybe took you 10 minutes of manual
+
+20
+00:00:32,640 --> 00:00:36,399
+work, you never would have been in this
+
+21
+00:00:34,239 --> 00:00:36,399
+situation.
+

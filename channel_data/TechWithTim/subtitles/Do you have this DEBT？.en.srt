@@ -1,0 +1,112 @@
+1
+00:00:00,000 --> 00:00:04,360
+AI has made coding a lot worse. Now
+
+2
+00:00:02,840 --> 00:00:06,840
+look, everybody talks about technical
+
+3
+00:00:04,360 --> 00:00:09,200
+debt, but AI introduces this new kind of
+
+4
+00:00:06,840 --> 00:00:11,320
+debt where you have thousands of lines,
+
+5
+00:00:09,200 --> 00:00:13,480
+maybe hundreds thousands of files that
+
+6
+00:00:11,320 --> 00:00:16,160
+nobody on your team truly really
+
+7
+00:00:13,480 --> 00:00:17,880
+understands. Now, I created a fully AI
+
+8
+00:00:16,160 --> 00:00:19,680
+coded app, three of us coding this app,
+
+9
+00:00:17,880 --> 00:00:21,120
+and we were all just like in cursor and
+
+10
+00:00:19,680 --> 00:00:22,360
+Claude code whipping up all this stuff,
+
+11
+00:00:21,120 --> 00:00:23,680
+and we got something out really quickly,
+
+12
+00:00:22,360 --> 00:00:25,000
+and it was cool, and it was working. But
+
+13
+00:00:23,680 --> 00:00:26,040
+then we actually got to a point where
+
+14
+00:00:25,000 --> 00:00:27,400
+we're like, "Okay, maybe we're going to
+
+15
+00:00:26,040 --> 00:00:28,880
+sell this. Okay, maybe we're going to
+
+16
+00:00:27,400 --> 00:00:30,120
+release it to more users." And when we
+
+17
+00:00:28,880 --> 00:00:32,279
+started going through and actually
+
+18
+00:00:30,120 --> 00:00:33,920
+trying to do some real on this, none of
+
+19
+00:00:32,279 --> 00:00:35,480
+us had any clue how this thing was
+
+20
+00:00:33,920 --> 00:00:36,920
+actually built. Like we knew the general
+
+21
+00:00:35,480 --> 00:00:38,560
+stack and some of the languages, but
+
+22
+00:00:36,920 --> 00:00:40,520
+like the whole architecture was just
+
+23
+00:00:38,560 --> 00:00:42,760
+blind. We just had all of this massive
+
+24
+00:00:40,520 --> 00:00:44,640
+amount of like AI unknown debt, where we
+
+25
+00:00:42,760 --> 00:00:45,920
+didn't even know how bad it was. And
+
+26
+00:00:44,640 --> 00:00:47,520
+what we ended up doing was literally
+
+27
+00:00:45,920 --> 00:00:50,440
+just refactoring and rebuilding the
+
+28
+00:00:47,520 --> 00:00:50,440
+entire thing.
+
