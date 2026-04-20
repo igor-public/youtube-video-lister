@@ -4,41 +4,41 @@ PROCESSING SUMMARY
 ================================================================================
 
 Channels processed: 3
-Videos found: 73
-Videos skipped (already processed): 11
-Videos processed: 47
-Transcripts created: 47
-Errors: 15
+Videos found: 72
+Videos skipped (already processed): 58
+Videos processed: 0
+Transcripts created: 0
+Errors: 14
 
 
 ✓ CoinBureauTrading
-  Videos found: 14
-  Videos skipped: 8
+  Videos found: 13
+  Videos skipped: 7
   Videos processed: 0
   Transcripts: 0
   Errors: 6
-    - Fake Pump? Bitcoin Just Rejected $76K…: No subtitle files were downloaded
-    - Support & Resistance Explained: The Key Levels That Move Markets: No subtitle files were downloaded
-    - Will Trump’s Ceasefire Cause a Bitcoin Pump? (What They Aren’t Telling You): No subtitle files were downloaded
+    - Bitcoin Crash Incoming? The Warning Signs Are Here: Failed to download subtitles: ERROR: [youtube] 2JO
+    - Fake Pump? Bitcoin Just Rejected $76K…: Failed to download subtitles: ERROR: [youtube] fVw
+    - Support & Resistance Explained: The Key Levels That Move Markets: Failed to download subtitles: ERROR: [youtube] On0
 
 ✓ DataDash
   Videos found: 9
-  Videos skipped: 3
+  Videos skipped: 4
   Videos processed: 0
   Transcripts: 0
-  Errors: 6
-    - 🚨Bitcoin Is About to Shock Everyone 🚨 $100K Move Coming?: No subtitle files were downloaded
-    - XRP's Next Move: Price Structure & the Regulatory Catalyst: No subtitle files were downloaded
-    - Bitcoin Rally Fading? This Key Level Decides What Happens Next: No subtitle files were downloaded
+  Errors: 5
+    - 🚨Bitcoin Is About to Shock Everyone 🚨 $100K Move Coming?: Failed to download subtitles: ERROR: [youtube] rEr
+    - XRP's Next Move: Price Structure & the Regulatory Catalyst: Failed to download subtitles: ERROR: [youtube] nSq
+    - Bitcoin Rally Fading? This Key Level Decides What Happens Next: Failed to download subtitles: ERROR: [youtube] vME
 
 ✓ DwarkeshPatel
   Videos found: 50
-  Videos skipped: 0
-  Videos processed: 47
-  Transcripts: 47
+  Videos skipped: 47
+  Videos processed: 0
+  Transcripts: 0
   Errors: 3
-    - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
-    - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
-    - The Truth Behind Machiavelli's "The Prince" - Ada Palmer: No subtitle files were downloaded
+    - Jensen Huang – Will Nvidia’s moat persist?: Failed to download subtitles: ERROR: [youtube] Hrb
+    - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: Failed to download subtitles: ERROR: [youtube] T0-
+    - The Truth Behind Machiavelli's "The Prince" - Ada Palmer: Failed to download subtitles: ERROR: [youtube] mbT
 
 ================================================================================

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test HTML Output</title>
+</head>
+<body>
+    <h1>Testing onclick with apostrophe</h1>
+    <div id="test"></div>
+
+    <script>
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function loadTranscript(channel, filename) {
+            alert(`Loading: ${channel} / ${filename}`);
+        }
+
+        // Simulate the data
+        const channel = { channel: "DwarkeshPatel" };
+        const t = {
+            filename: "2026-04-19_Francis_Bacon's_3_Types_of_Thinkers_-_Ada_Palmer.md",
+            title: "Francis Bacon's 3 Types of Thinkers - Ada Palmer",
+            date: "2026-04-19",
+            size: 1490
+        };
+
+        const escapedFilename = escapeHtml(t.filename);
+        const escapedTitle = escapeHtml(t.title);
+
+        const html = `
+            <div class="tree-transcript" onclick='loadTranscript(${JSON.stringify(channel.channel)}, ${JSON.stringify(t.filename)})'>
+                <div class="transcript-title">${escapedTitle}</div>
+                <div class="transcript-meta">${t.date} • ${(t.size / 1024).toFixed(1)} KB</div>
+            </div>
+        `;
+
+        document.getElementById('test').innerHTML = html;
+
+        console.log('Generated HTML:');
+        console.log(html);
+    </script>
+</body>
+</html>

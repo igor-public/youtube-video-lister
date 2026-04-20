@@ -1,0 +1,45 @@
+#!/bin/bash
+# Start the YouTube Toolkit Web UI
+
+echo "========================================="
+echo "YouTube Toolkit - Web UI"
+echo "========================================="
+echo ""
+
+# Check if in correct directory
+if [ ! -f "web_ui.py" ]; then
+    echo "Error: Please run this script from the project root directory"
+    exit 1
+fi
+
+# Activate virtual environment
+if [ -d "venv" ]; then
+    echo "Activating virtual environment..."
+    source venv/bin/activate
+else
+    echo "Error: Virtual environment not found. Run ./quick_start.sh first"
+    exit 1
+fi
+
+# Check dependencies
+echo "Checking dependencies..."
+python -c "import flask" 2>/dev/null
+if [ $? -ne 0 ]; then
+    echo "Installing web dependencies..."
+    pip install flask flask-cors
+fi
+
+echo ""
+echo "========================================="
+echo "Starting Web UI..."
+echo "========================================="
+echo ""
+echo "Open your browser and navigate to:"
+echo ""
+echo "  http://localhost:5000"
+echo ""
+echo "Press Ctrl+C to stop the server"
+echo ""
+
+# Start the web UI
+python web_ui.py

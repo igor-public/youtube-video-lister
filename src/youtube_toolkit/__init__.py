@@ -13,7 +13,7 @@ from .downloader import SubtitleDownloader
 from .converter import SubtitleToText
 from .monitor import ChannelMonitor
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __author__ = "Your Name"
 __all__ = [
     "YouTubeChannelLister",

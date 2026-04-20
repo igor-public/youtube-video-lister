@@ -1,364 +1,385 @@
 # YouTube Toolkit
 
-A comprehensive Python toolkit for monitoring YouTube channels, downloading video subtitles, and extracting clean video transcripts.
+A modern web application for monitoring YouTube channels, downloading transcripts, and generating AI-powered summaries.
 
-## Features
+## Architecture
 
-### 🔍 Channel Monitoring
-- Monitor multiple YouTube channels automatically
-- Filter videos from the last N days (default: 7 days)
-- Organize output by channel in separate folders
-- Create annotated transcripts with metadata
+This project uses a **separated backend-frontend architecture**:
 
-### 📺 Video Listing
-- List all videos from any YouTube channel
-- Support for multiple channel URL formats (@handle, /channel/, /c/, /user/)
-- Get video titles, publication dates, URLs, and descriptions
+- **Backend**: FastAPI (Python) REST API
+- **Frontend**: React (JavaScript) Single Page Application
 
-### 📥 Subtitle Downloading
-- Download subtitles from any YouTube video
-- Support for multiple languages
-- Both manual and auto-generated subtitles
-- Multiple formats (SRT, VTT, JSON3)
-
-### 📄 Text Conversion
-- Convert SRT subtitles to clean, readable text
-- Smart paragraph detection based on timing
-- Remove overlapping and duplicate content
-- Perfect for video scripts, interviews, and monologues
-
-## Installation
-
-### Prerequisites
-- Python 3.8+
-- YouTube Data API key (for channel listing)
-- ffmpeg (optional but recommended) - see [INSTALL_FFMPEG.md](INSTALL_FFMPEG.md)
-
-### Setup
-
-1. Clone the repository:
-```bash
-cd /home/ia52897/git-code
-git clone <your-repo-url> youtube-video-lister
-cd youtube-video-lister
 ```
-
-2. Create virtual environment:
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+youtube-video-lister/
+├── backend/           # FastAPI backend
+│   ├── main.py       # API server
+│   ├── requirements.txt
+│   └── run.sh        # Startup script
+├── frontend/         # React frontend
+│   ├── src/          # React components
+│   ├── public/       # Static assets
+│   ├── package.json
+│   └── run.sh        # Startup script
+├── venv/             # Python virtual environment
+└── channels_config.json  # Configuration
 ```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Configure API key:
-```bash
-cp .env.example .env
-# Edit .env and add your YouTube API key
-```
-
-### Getting a YouTube API Key
-
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project
-3. Enable YouTube Data API v3
-4. Create credentials (API key)
-5. Copy the API key to your `.env` file
-
-## Key Features
-
-### 🚀 Smart Processing
-- **Automatic Skip**: Already processed videos are automatically skipped, saving API quota and time
-- **Incremental Updates**: Re-run the monitor anytime - only new videos are processed
-- **Efficient**: Check what's already processed with `python check_processed.py`
 
 ## Quick Start
 
-### Monitor Channels (Recommended)
+### Prerequisites
 
-The easiest way to use this toolkit is with the channel monitor:
+- Python 3.8+
+- Node.js 14+ (only for React UI)
+- ffmpeg (for video processing)
 
-```bash
-# Monitor a single channel
-python monitor_channels.py
-```
-
-Edit `monitor_channels.py` to add your channels:
-
-```python
-channels = [
-    "https://www.youtube.com/@TechWithTim",
-    "https://www.youtube.com/@yourchannel",
-]
-```
-
-Or use a configuration file:
+### Option 1: Start Everything at Once (Recommended)
 
 ```bash
-# Create config from example
-cp channels_config.example.json channels_config.json
+# Create virtual environment (first time only)
+python3 -m venv venv
+source venv/bin/activate
 
-# Edit channels_config.json to add your channels
-# Then run:
-python monitor_with_config.py
+# Install Python dependencies (first time only)
+pip install -r requirements.txt
+cd backend && pip install -r requirements.txt && cd ..
+
+# Start all services
+./start_all.sh
 ```
 
-**Check what's already processed:**
+This will start:
+- **FastAPI Backend**: http://localhost:5000
+- **Vanilla JS UI**: http://localhost:5000 (served by backend)
+- **React UI**: http://localhost:3000
+- **API Docs**: http://localhost:5000/api/docs
+
+To stop everything:
 ```bash
-# View summary
-python check_processed.py
-
-# View detailed list
-python check_processed.py --detailed
-
-# View specific channel
-python check_processed.py --detailed ChannelName
+./stop_all.sh
 ```
 
-**Output Structure:**
-```
-channel_data/
-├── ChannelName1/
-│   ├── subtitles/
-│   │   └── video_title.en.srt
-│   └── transcripts/
-│       └── 2026-04-19_Video_Title.md
-├── ChannelName2/
-│   ├── subtitles/
-│   └── transcripts/
-└── processing_summary.txt
-```
+### Option 2: Start Services Individually
 
-### Individual Tools
+**1. Install Backend Dependencies**
 
-**List Channel Videos:**
 ```bash
-python src/youtube_toolkit/channel_lister.py "https://www.youtube.com/@channelname" 10
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install Python packages
+pip install -r requirements.txt
+cd backend
+pip install -r requirements.txt
+cd ..
 ```
 
-**Download Subtitles:**
+**2. Start Backend Server**
+
 ```bash
-# List available subtitles
-python src/youtube_toolkit/downloader.py "VIDEO_URL" --list
-
-# Download English subtitles
-python src/youtube_toolkit/downloader.py "VIDEO_URL" en
-
-# Download multiple languages
-python src/youtube_toolkit/downloader.py "VIDEO_URL" en,es,fr
+cd backend
+./run.sh
+# Or manually:
+# uvicorn main:app --host 0.0.0.0 --port 5000 --reload
 ```
 
-**Convert to Text:**
+The backend will start at **http://localhost:5000**
+
+API Documentation available at:
+- Swagger UI: **http://localhost:5000/api/docs**
+- ReDoc: **http://localhost:5000/api/redoc**
+
+**3. Use Vanilla JS UI (No Extra Setup)**
+
+Simply open **http://localhost:5000** in your browser.
+
+The vanilla JS UI is served directly by the FastAPI backend.
+
+**4. OR Use React UI (New Terminal)**
+
 ```bash
-# Convert single file
-python src/youtube_toolkit/converter.py "subtitles/video.en.srt"
+# Install frontend dependencies (first time only)
+cd frontend
+npm install
 
-# Convert entire directory
-python src/youtube_toolkit/converter.py "subtitles/" "transcripts/"
-
-# Try to detect speakers (for interviews)
-python src/youtube_toolkit/converter.py "subtitles/video.en.srt" --speakers
+# Start React dev server
+./run.sh
+# Or manually:
+# npm start
 ```
 
-## Python API Usage
+The React UI will start at **http://localhost:3000**
 
-```python
-from youtube_toolkit import ChannelMonitor
+## Choose Your Frontend
 
-# Initialize monitor
-monitor = ChannelMonitor(output_base_dir="channel_data")
+Both frontends connect to the same FastAPI backend and offer identical functionality:
 
-# Process a single channel
-result = monitor.process_channel(
-    channel_url="https://www.youtube.com/@channelname",
-    days_back=7,
-    languages=['en']
-)
+| Feature | Vanilla JS (Port 5000) | React (Port 3000) |
+|---------|------------------------|-------------------|
+| Setup | ✅ None (pre-installed) | npm install required |
+| Dependencies | ✅ Zero | Node.js + React |
+| Load Time | ✅ Instant | ~2-3 seconds |
+| Hot Reload | ❌ Manual refresh | ✅ Automatic |
+| Modern UI | ✅ Material Design | ✅ Material Design |
+| Features | ✅ All features | ✅ All features |
+| API Calls | ✅ Same backend | ✅ Same backend |
 
-# Process multiple channels
-channels = [
-    "https://www.youtube.com/@channel1",
-    "https://www.youtube.com/@channel2",
-]
-results = monitor.process_multiple_channels(channels, days_back=7)
+**Recommendation**: Use **Vanilla JS** for quick access, **React** for development.
 
-# Generate summary report
-summary = monitor.generate_summary_report(results)
-print(summary)
-```
+## API Documentation
 
-### Individual Components
+### Interactive API Docs (Swagger)
 
-```python
-from youtube_toolkit import YouTubeChannelLister, SubtitleDownloader, SubtitleToText
+Visit **http://localhost:5000/api/docs** for full interactive API documentation with:
+- ✅ Try-it-out feature for all endpoints
+- ✅ Request/response schemas
+- ✅ Authentication details
+- ✅ Example payloads
+- ✅ Response codes and error handling
 
-# List videos
-lister = YouTubeChannelLister()
-videos = lister.get_channel_videos("https://www.youtube.com/@channelname")
+### Main API Endpoints
 
-# Download subtitles
-downloader = SubtitleDownloader(output_dir="subtitles")
-result = downloader.download_subtitles("VIDEO_ID", languages=['en'])
+#### Configuration
+- `GET /api/config` - Get configuration
+- `POST /api/config` - Update configuration
 
-# Convert to text
-converter = SubtitleToText()
-text = converter.convert_file("subtitles/video.en.srt", "output.txt")
-```
+#### Channels
+- `GET /api/tree` - Get channel tree structure
+- `POST /api/channels` - Add new channel
+- `PUT /api/channels/{index}` - Update channel
+- `DELETE /api/channels/{index}` - Delete channel
+- `GET /api/channels/{index}/keywords` - Get channel keywords
+- `PUT /api/channels/{index}/keywords` - Update keywords
+
+#### Transcripts
+- `GET /api/transcript/{channel}/{filename}` - Get transcript content
+
+#### Monitoring
+- `POST /api/monitor/start` - Start monitoring
+- `GET /api/monitor/status` - Get monitoring status
+
+#### LLM Configuration
+- `GET /api/llm/config` - Get LLM config
+- `POST /api/llm/config` - Update LLM config
+
+#### Statistics
+- `GET /api/stats` - Get system statistics
+- `GET /health` - Health check
+
+## Features
+
+### Channel Management
+- Add/edit/delete YouTube channels
+- Configure monitoring settings per channel
+- Set days to look back
+- Specify subtitle languages
+- Add filter keywords
+
+### Transcript Monitoring
+- Automatic transcript downloading
+- Progress tracking
+- Error handling
+- Background processing
+
+### AI Summarization
+- Multi-provider LLM support:
+  - OpenAI (GPT-4, GPT-3.5)
+  - Anthropic (Claude)
+  - AWS Bedrock
+  - Local models
+- Keyword-focused summaries
+- Batch processing
+
+### UI Features
+- Material Design interface
+- Expandable channel tree
+- Unread transcript badges
+- Sort by date (newest/oldest)
+- Real-time status notifications
+- Responsive layout
 
 ## Configuration
 
-### channels_config.json
+### Channel Configuration
+
+Edit `channels_config.json`:
 
 ```json
 {
   "channels": [
-    "https://www.youtube.com/@TechWithTim",
-    "https://www.youtube.com/@channelname2"
+    {
+      "url": "https://www.youtube.com/@ChannelName",
+      "days_back": 14,
+      "languages": ["en"],
+      "keywords": ["AI", "machine learning"],
+      "note": "Weekly review"
+    }
   ],
   "settings": {
-    "days_back": 7,
-    "languages": ["en"],
+    "default_days_back": 7,
+    "default_languages": ["en"],
     "output_directory": "channel_data"
+  },
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4",
+    "apiKey": "your-api-key"
   }
 }
 ```
 
-### Environment Variables (.env)
+### LLM Configuration
+
+Configure via UI or directly in `channels_config.json`:
+
+**OpenAI:**
+```json
+{
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4",
+    "apiKey": "sk-..."
+  }
+}
+```
+
+**Anthropic:**
+```json
+{
+  "llm": {
+    "provider": "anthropic",
+    "model": "claude-3-opus-20240229",
+    "apiKey": "sk-ant-..."
+  }
+}
+```
+
+**AWS Bedrock:**
+```json
+{
+  "llm": {
+    "provider": "bedrock",
+    "model": "anthropic.claude-opus-4-7",
+    "awsAccessKeyId": "AKIA...",
+    "awsSecretAccessKey": "...",
+    "awsRegion": "us-east-1"
+  }
+}
+```
+
+## Development
+
+### Backend Development
 
 ```bash
-YOUTUBE_API_KEY=your_api_key_here
+cd backend
+# Install dev dependencies
+pip install fastapi uvicorn[standard]
+
+# Run with hot reload
+uvicorn main:app --reload --host 0.0.0.0 --port 5000
 ```
 
-## Output Format
+### Frontend Development
 
-### Annotated Transcript (.md)
-
-Each transcript is saved as a Markdown file with metadata:
-
-```markdown
-# Video Title
-
-**Video URL:** https://www.youtube.com/watch?v=VIDEO_ID
-**Video ID:** VIDEO_ID
-**Published:** 2026-04-19 12:36:24
-**Channel:** Channel Name
-
----
-
-## Transcript
-
-[Clean, readable transcript text with proper paragraphs...]
-
----
-
-*Generated by YouTube Toolkit on 2026-04-19 17:03:42*
+```bash
+cd frontend
+# The React dev server proxies API calls to localhost:5000
+npm start
 ```
 
-## Use Cases
+### Project Structure
 
-1. **Content Research**: Monitor competitor or inspiration channels
-2. **Content Repurposing**: Extract transcripts for blog posts or articles
-3. **SEO Analysis**: Analyze video content and keywords
-4. **Accessibility**: Create text versions of video content
-5. **Translation**: Extract transcripts for translation workflows
-6. **Archive**: Build a searchable archive of video content
-
-## Project Structure
-
+**Backend:**
 ```
-youtube-video-lister/
+backend/
+├── main.py           # FastAPI application
+├── requirements.txt  # Python dependencies
+└── run.sh           # Startup script
+```
+
+**Frontend:**
+```
+frontend/
+├── public/
+│   └── index.html
 ├── src/
-│   └── youtube_toolkit/
-│       ├── __init__.py
-│       ├── channel_lister.py    # List channel videos
-│       ├── downloader.py         # Download subtitles
-│       ├── converter.py          # Convert to text
-│       ├── monitor.py            # Monitor channels
-│       └── cli.py                # CLI commands
-├── tests/
-│   ├── test_channel_lister.py
-│   ├── test_downloader.py
-│   └── test_converter.py
-├── examples/
-│   └── example_workflow.py
-├── channel_data/                 # Output directory
-├── monitor_channels.py           # Main monitoring script
-├── monitor_with_config.py        # Config-based monitoring
-├── channels_config.example.json  # Config template
-├── requirements.txt
-├── setup.py
-├── pyproject.toml
-└── README.md
+│   ├── components/   # React components
+│   │   ├── Header.js
+│   │   ├── Sidebar.js
+│   │   ├── ContentPanel.js
+│   │   ├── ControlsPanel.js
+│   │   └── ...
+│   ├── hooks/        # Custom hooks
+│   │   └── useLocalStorage.js
+│   ├── App.js        # Main app component
+│   ├── index.js      # Entry point
+│   └── index.css     # Styles
+├── package.json
+└── run.sh
 ```
 
-## Automation
+## Deployment
 
-### Scheduled Monitoring with Cron
+### Production Build
 
-Monitor channels daily:
+**Backend:**
+```bash
+cd backend
+pip install -r requirements.txt
+gunicorn main:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:5000
+```
+
+**Frontend:**
+```bash
+cd frontend
+npm run build
+# Serve the build/ directory with nginx or similar
+```
+
+### Environment Variables
 
 ```bash
-# Edit crontab
-crontab -e
-
-# Add line to run daily at 9 AM
-0 9 * * * cd /home/ia52897/git-code/youtube-video-lister && source venv/bin/activate && python monitor_with_config.py
+export CONFIG_FILE=channels_config.json
+export OUTPUT_DIR=channel_data
+export PORT=5000
 ```
 
 ## Troubleshooting
 
-### ffmpeg Warning
-**Warning:** `WARNING: ffmpeg not found. The downloaded format may not be the best available.`
+### Backend won't start
+- Check Python version: `python3 --version` (needs 3.8+)
+- Activate venv: `source venv/bin/activate`
+- Install dependencies: `pip install -r backend/requirements.txt`
 
-**Solution:** Install ffmpeg for better quality and reliability:
-```bash
-sudo apt update && sudo apt install -y ffmpeg
-```
+### Frontend won't connect to backend
+- Ensure backend is running on port 5000
+- Check `proxy` setting in `frontend/package.json`
+- Clear browser cache
 
-See [INSTALL_FFMPEG.md](INSTALL_FFMPEG.md) for detailed installation instructions.
+### Transcripts not downloading
+- Install ffmpeg: `sudo apt install ffmpeg` (Linux) or `brew install ffmpeg` (Mac)
+- Check YouTube URL is valid
+- Verify days_back setting
 
-**Note:** The tool will still work without ffmpeg, but installing it is strongly recommended.
-
-### JavaScript Runtime Warning
-**Fixed in v0.2.0**: The toolkit now uses Android player client, eliminating the need for a JavaScript runtime. This warning should no longer appear.
-
-### No Subtitles Available
-Some videos don't have subtitles. The tool will skip these and continue with other videos.
-
-### API Quota Limits
-YouTube Data API has daily quotas. Each video listing request costs units. Monitor your usage in Google Cloud Console.
-
-### Rate Limiting
-If processing many videos, consider adding delays between requests to avoid rate limits.
-
-## Contributing
-
-Contributions welcome! Areas for improvement:
-- Better speaker detection for interviews
-- Support for more subtitle formats
-- Parallel processing for faster downloads
-- Better error handling and retry logic
+### API Documentation
+- Swagger UI: http://localhost:5000/api/docs
+- Try endpoints directly from the docs
+- Check request/response formats
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License
 
-## Acknowledgments
+## Contributing
 
-- Built with [yt-dlp](https://github.com/yt-dlp/yt-dlp) for subtitle downloading
-- Uses YouTube Data API v3 for channel data
-- Inspired by the need for automated content monitoring
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test both backend and frontend
+5. Submit a pull request
 
 ## Support
 
-For issues or questions:
-1. Check the troubleshooting section
-2. Review example scripts in `examples/`
-3. Open an issue on GitHub
-
----
-
-**Made with ❤️ for content creators and researchers**
+- API Documentation: http://localhost:5000/api/docs
+- GitHub Issues: [Report bugs or request features]
