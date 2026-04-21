@@ -197,8 +197,12 @@ async def save_config(config: Dict[str, Any]) -> None:
         raise HTTPException(status_code=500, detail=f"Failed to save config: {str(e)}")
 
 
-async def get_channel_tree() -> List[Dict[str, Any]]:
-    """Build hierarchical tree of channels and transcripts"""
+async def get_channel_tree(sort_order: str = "desc") -> List[Dict[str, Any]]:
+    """Build hierarchical tree of channels and transcripts
+
+    Args:
+        sort_order: Sort order for transcripts ('asc' or 'desc')
+    """
     try:
         config = await load_config()
         output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
@@ -221,7 +225,9 @@ async def get_channel_tree() -> List[Dict[str, Any]]:
                 continue
 
             transcripts = []
-            for file_path in sorted(transcripts_dir.glob("*.md"), reverse=True):
+            # Sort files by date (extracted from filename)
+            reverse_sort = sort_order.lower() == "desc"
+            for file_path in sorted(transcripts_dir.glob("*.md"), reverse=reverse_sort):
                 parts = file_path.stem.split('_')
                 date = parts[0] if len(parts) >= 2 else "unknown"
                 title = ' '.join(parts[1:]) if len(parts) >= 2 else file_path.stem
@@ -379,9 +385,13 @@ async def update_config(config: Dict[str, Any]):
 
 
 @app.get("/api/tree", tags=["Channels"], response_model=List[Dict[str, Any]])
-async def get_tree():
-    """Get channel tree structure with all transcripts"""
-    return await get_channel_tree()
+async def get_tree(sort: str = "desc"):
+    """Get channel tree structure with all transcripts
+
+    Args:
+        sort: Sort order for transcripts ('asc' or 'desc', default 'desc')
+    """
+    return await get_channel_tree(sort_order=sort)
 
 
 @app.get("/api/transcript/{channel}/{filename}", tags=["Transcripts"], response_model=TranscriptResponse)
@@ -723,7 +733,15 @@ async def summarize_transcript_stream(channel: str, filename: str):
         except Exception as e:
             yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
 
-    return StreamingResponse(generate(), media_type="text/event-stream")
+    return StreamingResponse(
+        generate(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",  # Disable nginx buffering
+            "Connection": "keep-alive",
+        }
+    )
 
 
 @app.post("/api/transcript/{channel}/{filename}/summarize", tags=["AI"])

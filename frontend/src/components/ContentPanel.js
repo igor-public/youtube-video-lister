@@ -14,8 +14,11 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
     // Bold
     html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
 
-    // Links
+    // Markdown links
     html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+
+    // Plain URLs (not already in <a> tags)
+    html = html.replace(/(?<!href="|href='|">)(https?:\/\/[^\s<]+)/gim, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
 
     // Paragraphs
     html = html.split('\n\n').map(para => {

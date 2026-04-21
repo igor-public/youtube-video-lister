@@ -28,7 +28,7 @@ function ResizeHandle({ targetRef, direction, onResize }) {
         ? e.clientX - startX.current
         : startX.current - e.clientX;
 
-      const newWidth = Math.max(180, Math.min(600, startWidth.current + delta));
+      const newWidth = Math.max(180, Math.min(800, startWidth.current + delta));
 
       if (targetRef.current) {
         targetRef.current.style.width = `${newWidth}px`;

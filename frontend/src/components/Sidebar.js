@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import KeywordsModal from './KeywordsModal';
 
 const API_BASE = '/api';
@@ -111,15 +111,18 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
 
       eventSource.onmessage = (event) => {
         const data = JSON.parse(event.data);
+        console.log('[Streaming]', data.type, data.text ? `"${data.text}"` : '');
 
         if (data.type === 'start') {
           keywords = data.keywords || [];
+          console.log('[Streaming] Starting with keywords:', keywords);
           // Initialize streaming summary
           if (window.startStreamingSummary) {
             window.startStreamingSummary(keywords);
           }
         } else if (data.type === 'chunk') {
           // Append chunk to summary
+          console.log('[Streaming] Chunk received:', data.text);
           if (window.appendSummaryChunk) {
             window.appendSummaryChunk(data.text);
           }
@@ -156,18 +159,8 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
     }
   };
 
-  const sortedTree = useMemo(() => {
-    return tree.map(channel => ({
-      ...channel,
-      transcripts: [...channel.transcripts].sort((a, b) => {
-        if (sortOrder === 'desc') {
-          return b.date.localeCompare(a.date);
-        } else {
-          return a.date.localeCompare(b.date);
-        }
-      })
-    }));
-  }, [tree, sortOrder]);
+  // Tree is already sorted by backend based on sortOrder
+  const sortedTree = tree;
 
   if (!tree || tree.length === 0) {
     return (

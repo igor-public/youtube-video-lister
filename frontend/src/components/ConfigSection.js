@@ -111,16 +111,11 @@ function ConfigSection({ config, loadConfig, showStatus }) {
                         ? channel.languages.join(', ')
                         : channel.languages || 'en'}
                     </span>
-                    {channel.keywords && channel.keywords.length > 0 && (
-                      <span className="keywords-badge" title={channel.keywords.join(', ')}>
-                        {channel.keywords.length} keyword{channel.keywords.length > 1 ? 's' : ''}: {channel.keywords.slice(0, 2).join(', ')}{channel.keywords.length > 2 ? '...' : ''}
-                      </span>
-                    )}
                   </div>
 
                   <div className="channel-details">
                     <div className="channel-detail-item">
-                      <strong>URL:</strong> {channel.url}
+                      <strong>URL:</strong> <a href={channel.url} target="_blank" rel="noopener noreferrer">{channel.url}</a>
                     </div>
                   </div>
 

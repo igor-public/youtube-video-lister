@@ -33,6 +33,13 @@ function App() {
     loadConfig();
   }, []);
 
+  // Reload tree when sort order changes
+  useEffect(() => {
+    if (tree.length > 0) {
+      loadTree(sortOrder);
+    }
+  }, [sortOrder]);
+
   const loadStats = async () => {
     try {
       const response = await fetch(`${API_BASE}/stats`);
@@ -43,9 +50,10 @@ function App() {
     }
   };
 
-  const loadTree = async () => {
+  const loadTree = async (sort = null) => {
     try {
-      const response = await fetch(`${API_BASE}/tree`);
+      const sortParam = sort || sortOrder;
+      const response = await fetch(`${API_BASE}/tree?sort=${sortParam}`);
       const data = await response.json();
       setTree(data);
     } catch (error) {
