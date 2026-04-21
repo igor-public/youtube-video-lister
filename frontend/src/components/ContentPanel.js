@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContentPanel({ transcriptContent, selectedTranscript }) {
+function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryKeywords, isStreamingSummary }) {
   const markdownToHtml = (markdown) => {
     if (!markdown) return '';
 
@@ -41,14 +41,66 @@ function ContentPanel({ transcriptContent, selectedTranscript }) {
     );
   }
 
+  const hasSummary = summary && summary.length > 0;
+  const showSplitView = hasSummary || isStreamingSummary;
+
   return (
     <main className="content-panel">
-      <div className="transcript-view">
-        <div
-          className="transcript-content"
-          dangerouslySetInnerHTML={{ __html: markdownToHtml(transcriptContent) }}
-        />
-      </div>
+      {showSplitView ? (
+        <div className="split-view">
+          {/* Top: Transcript */}
+          <div className="split-section split-transcript">
+            <div className="split-header">
+              <h3>Transcript</h3>
+            </div>
+            <div className="transcript-view">
+              <div
+                className="transcript-content"
+                dangerouslySetInnerHTML={{ __html: markdownToHtml(transcriptContent) }}
+              />
+            </div>
+          </div>
+
+          {/* Bottom: Summary */}
+          <div className="split-section split-summary">
+            <div className="split-header">
+              <h3>AI Summary</h3>
+              {summaryKeywords && summaryKeywords.length > 0 && (
+                <span className="summary-keywords-tag">
+                  Focused on: {summaryKeywords.join(', ')}
+                </span>
+              )}
+              {isStreamingSummary && (
+                <span className="streaming-indicator">Generating...</span>
+              )}
+            </div>
+            <div className="summary-view">
+              {summary ? (
+                <div
+                  className="summary-content"
+                  dangerouslySetInnerHTML={{ __html: markdownToHtml(summary) }}
+                />
+              ) : (
+                <div className="summary-placeholder">
+                  <div className="streaming-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p>Generating summary...</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className="transcript-view">
+          <div
+            className="transcript-content"
+            dangerouslySetInnerHTML={{ __html: markdownToHtml(transcriptContent) }}
+          />
+        </div>
+      )}
     </main>
   );
 }

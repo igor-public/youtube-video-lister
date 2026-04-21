@@ -5,7 +5,7 @@ import AISection from './AISection';
 
 function ControlsPanel({ config, loadConfig, loadStats, loadTree, showStatus }) {
   return (
-    <aside className="controls-panel">
+    <>
       <MonitorSection
         loadStats={loadStats}
         loadTree={loadTree}
@@ -21,7 +21,7 @@ function ControlsPanel({ config, loadConfig, loadStats, loadTree, showStatus }) 
       <AISection
         showStatus={showStatus}
       />
-    </aside>
+    </>
   );
 }
 

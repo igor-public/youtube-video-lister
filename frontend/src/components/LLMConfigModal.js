@@ -12,6 +12,7 @@ function LLMConfigModal({ onClose, showStatus }) {
   const [showApiKey, setShowApiKey] = useState(false);
   const [showAwsAccess, setShowAwsAccess] = useState(false);
   const [showAwsSecret, setShowAwsSecret] = useState(false);
+  const [existingConfig, setExistingConfig] = useState(false);
 
   useEffect(() => {
     loadLLMConfig();
@@ -25,6 +26,9 @@ function LLMConfigModal({ onClose, showStatus }) {
       setModel(data.model || '');
       if (data.provider === 'bedrock') {
         setAwsRegion(data.awsRegion || 'us-east-1');
+        setExistingConfig(data.hasAwsCredentials);
+      } else {
+        setExistingConfig(data.hasApiKey);
       }
     } catch (error) {
       console.error('Error loading LLM config:', error);
@@ -43,13 +47,13 @@ function LLMConfigModal({ onClose, showStatus }) {
       awsRegion: provider === 'bedrock' ? awsRegion : undefined
     };
 
-    // Validation
+    // Validation (only if updating or no existing config)
     if (provider === 'bedrock') {
-      if (!awsAccessKey || !awsSecretKey) {
+      if (!existingConfig && (!awsAccessKey || !awsSecretKey)) {
         showStatus('Please enter both AWS Access Key ID and AWS Secret Access Key', 'warning');
         return;
       }
-    } else if (provider !== 'local' && !apiKey) {
+    } else if (provider !== 'local' && !existingConfig && !apiKey) {
       showStatus(`Please enter an API key for ${provider}`, 'warning');
       return;
     }
@@ -101,6 +105,15 @@ function LLMConfigModal({ onClose, showStatus }) {
         <span className="close" onClick={onClose}>&times;</span>
         <h2>LLM Configuration</h2>
 
+        {existingConfig && (
+          <div className="status-box" style={{ marginBottom: '16px', background: '#e8f5e9', borderLeftColor: '#1e8e3e' }}>
+            <strong>✓ Configuration exists</strong>
+            <div style={{ fontSize: '12px', marginTop: '4px' }}>
+              API keys are saved. Leave fields empty to keep existing credentials, or enter new ones to update.
+            </div>
+          </div>
+        )}
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="llm-provider">Provider:</label>
@@ -124,9 +137,19 @@ function LLMConfigModal({ onClose, showStatus }) {
               id="llm-model"
               value={model}
               onChange={(e) => setModel(e.target.value)}
-              placeholder="e.g., gpt-4-turbo-preview"
+              placeholder={
+                provider === 'bedrock' ? 'e.g., anthropic.claude-3-5-sonnet-20240620-v1:0' :
+                provider === 'openai' ? 'e.g., gpt-4-turbo-preview' :
+                provider === 'anthropic' ? 'e.g., claude-3-5-sonnet-20241022' :
+                'e.g., llama2'
+              }
             />
-            <small>Leave empty for default model</small>
+            <small>
+              {provider === 'bedrock' && 'AWS Bedrock model ID (see AWS_BEDROCK_MODELS.md for valid IDs)'}
+              {provider === 'openai' && 'OpenAI model name (leave empty for default)'}
+              {provider === 'anthropic' && 'Anthropic model name (leave empty for default)'}
+              {provider === 'local' && 'Model name from your Ollama installation'}
+            </small>
           </div>
 
           {provider !== 'bedrock' && (
@@ -138,11 +161,15 @@ function LLMConfigModal({ onClose, showStatus }) {
                   id="llm-api-key"
                   value={apiKey}
                   onChange={(e) => setApiKey(e.target.value)}
-                  placeholder="Enter your API key"
+                  placeholder={existingConfig ? "Leave empty to keep existing key" : "Enter your API key"}
                 />
                 <EyeIcon show={showApiKey} onClick={() => setShowApiKey(!showApiKey)} />
               </div>
-              <small>Your API key is stored locally and never shared</small>
+              <small>
+                {existingConfig
+                  ? "Saved API key will be used if this field is left empty"
+                  : "Your API key is stored locally and never shared"}
+              </small>
             </div>
           )}
 

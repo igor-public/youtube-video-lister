@@ -71,51 +71,50 @@ document.addEventListener('DOMContentLoaded', () => {
 // Make columns resizable
 function initResizable() {
     const sidebar = document.querySelector('.sidebar');
-    const contentPanel = document.querySelector('.content-panel');
+    const controlsPanel = document.querySelector('.controls-panel');
+    const sidebarHandle = sidebar.querySelector('.resize-handle-right');
+    const controlsHandle = controlsPanel.querySelector('.resize-handle-left');
 
-    let isResizingSidebar = false;
-    let isResizingContent = false;
+    let isResizing = false;
+    let startX = 0;
+    let startWidth = 0;
+    let targetElement = null;
+    let direction = null;
 
-    // Sidebar resizer
-    sidebar.addEventListener('mousedown', (e) => {
-        const rect = sidebar.getBoundingClientRect();
-        if (e.clientX > rect.right - 4 && e.clientX < rect.right + 4) {
-            isResizingSidebar = true;
-            e.preventDefault();
-        }
+    const startResize = (e, element, dir) => {
+        isResizing = true;
+        startX = e.clientX;
+        startWidth = element.offsetWidth;
+        targetElement = element;
+        direction = dir;
+        document.body.style.cursor = 'col-resize';
+        document.body.style.userSelect = 'none';
+        e.preventDefault();
+    };
+
+    sidebarHandle.addEventListener('mousedown', (e) => {
+        startResize(e, sidebar, 'right');
     });
 
-    // Content panel resizer
-    contentPanel.addEventListener('mousedown', (e) => {
-        const rect = contentPanel.getBoundingClientRect();
-        if (e.clientX > rect.right - 4 && e.clientX < rect.right + 4) {
-            isResizingContent = true;
-            e.preventDefault();
-        }
+    controlsHandle.addEventListener('mousedown', (e) => {
+        startResize(e, controlsPanel, 'left');
     });
 
     document.addEventListener('mousemove', (e) => {
-        if (isResizingSidebar) {
-            const newWidth = e.clientX;
-            if (newWidth >= 180 && newWidth <= 400) {
-                sidebar.style.width = newWidth + 'px';
-            }
-        } else if (isResizingContent) {
-            const mainContent = document.querySelector('.main-content');
-            const sidebarWidth = sidebar.offsetWidth;
-            const newContentWidth = e.clientX - sidebarWidth;
-            const totalWidth = mainContent.offsetWidth;
-            const controlsMinWidth = 280;
+        if (!isResizing) return;
 
-            if (newContentWidth >= 400 && (totalWidth - sidebarWidth - newContentWidth) >= controlsMinWidth) {
-                contentPanel.style.flex = '0 0 ' + newContentWidth + 'px';
-            }
-        }
+        const delta = direction === 'right'
+            ? e.clientX - startX
+            : startX - e.clientX;
+
+        const newWidth = Math.max(180, Math.min(600, startWidth + delta));
+        targetElement.style.width = newWidth + 'px';
     });
 
     document.addEventListener('mouseup', () => {
-        isResizingSidebar = false;
-        isResizingContent = false;
+        isResizing = false;
+        document.body.style.cursor = '';
+        document.body.style.userSelect = '';
     });
 }
 
@@ -321,6 +320,14 @@ async function loadConfig() {
 }
 
 // Render configuration
+// Track expanded channels
+let expandedConfigChannels = {};
+
+function toggleConfigChannel(index) {
+    expandedConfigChannels[index] = !expandedConfigChannels[index];
+    renderConfig();
+}
+
 function renderConfig() {
     const configChannels = document.getElementById('config-channels');
 
@@ -346,37 +353,44 @@ function renderConfig() {
         const channelName = url.split('/').pop();
         const keywords = channel.keywords || [];
         const keywordsCount = keywords.length;
+        const isExpanded = expandedConfigChannels[index];
 
         html += `
             <div class="channel-item">
-                <div class="channel-item-header">
-                    <div class="channel-title">${channelName}</div>
+                <div class="channel-item-header ${isExpanded ? 'expanded' : ''}" onclick="toggleConfigChannel(${index})">
+                    <span class="expand-icon">${isExpanded ? '▼' : '▶'}</span>
+                    <div class="channel-url">${channelName}</div>
+                </div>
+                ${isExpanded ? `
+                    <div class="channel-meta">
+                        <span class="channel-meta-item">
+                            📅 ${daysBack} days
+                        </span>
+                        <span class="channel-meta-item">
+                            🌐 ${Array.isArray(languages) ? languages.join(', ') : languages}
+                        </span>
+                        ${keywordsCount > 0 ? `
+                            <span class="keywords-badge" title="${keywords.join(', ')}">
+                                ${keywordsCount} keyword${keywordsCount > 1 ? 's' : ''}: ${keywords.slice(0, 2).join(', ')}${keywordsCount > 2 ? '...' : ''}
+                            </span>
+                        ` : ''}
+                    </div>
+                    <div class="channel-details">
+                        <div class="channel-detail-item">
+                            <strong>URL:</strong> ${url}
+                        </div>
+                    </div>
                     <div class="channel-actions">
-                        <button class="btn btn-keywords" onclick="showKeywordsModal(${index})" title="Configure keywords">
+                        <button class="btn btn-keywords" onclick="event.stopPropagation(); showKeywordsModal(${index})" title="Configure keywords">
                             ${keywordsCount > 0 ? `Keywords (${keywordsCount})` : 'Keywords'}
                         </button>
-                        <button class="btn btn-summarize" onclick="startSummarization('${escapeHtml(channelName)}')" title="Summarize transcripts">
+                        <button class="btn btn-summarize" onclick="event.stopPropagation(); startSummarization('${escapeHtml(channelName)}')" title="Summarize transcripts">
                             Summarize
                         </button>
-                        <button class="btn btn-edit" onclick="showEditChannelModal(${index})" title="Edit channel">Edit</button>
-                        <button class="btn btn-danger" onclick="deleteChannel(${index})" title="Delete channel">Delete</button>
+                        <button class="btn btn-edit" onclick="event.stopPropagation(); showEditChannelModal(${index})" title="Edit channel">Edit</button>
+                        <button class="btn btn-danger" onclick="event.stopPropagation(); deleteChannel(${index})" title="Delete channel">Delete</button>
                     </div>
-                </div>
-                <div class="channel-meta">
-                    <span class="channel-meta-item">
-                        <span class="meta-icon">📅</span>
-                        <span>${daysBack} days back</span>
-                    </span>
-                    <span class="channel-meta-item">
-                        <span class="meta-icon">🌐</span>
-                        <span>${Array.isArray(languages) ? languages.join(', ') : languages}</span>
-                    </span>
-                    ${keywordsCount > 0 ? `
-                        <span class="keywords-badge" title="${keywords.join(', ')}">
-                            ${keywordsCount} keyword${keywordsCount > 1 ? 's' : ''}: ${keywords.slice(0, 2).join(', ')}${keywordsCount > 2 ? '...' : ''}
-                        </span>
-                    ` : ''}
-                </div>
+                ` : ''}
             </div>
         `;
     });
@@ -432,8 +446,39 @@ async function checkMonitoringStatus() {
         const btn = document.getElementById('monitor-btn');
         const statusBox = document.getElementById('monitor-status');
         const progressText = document.getElementById('monitor-progress');
+        const logsContainer = document.getElementById('monitoring-logs');
+        const logsContent = document.getElementById('logs-content');
+        const logsCount = document.getElementById('logs-count');
+        const logsStatus = document.getElementById('logs-status');
+        const logsStatusText = document.getElementById('logs-status-text');
 
         progressText.textContent = status.progress;
+
+        // Update logs if available
+        if (status.logs && Array.isArray(status.logs) && status.logs.length > 0) {
+            logsContainer.style.display = 'block';
+            logsCount.textContent = `(${status.logs.length} lines)`;
+
+            // Clear and populate logs
+            logsContent.innerHTML = '';
+            status.logs.forEach(log => {
+                const logLine = document.createElement('div');
+                logLine.className = 'log-line';
+                logLine.textContent = log;
+                logsContent.appendChild(logLine);
+            });
+
+            // Auto-scroll to bottom
+            logsContent.scrollTop = logsContent.scrollHeight;
+        }
+
+        // Update status indicator
+        if (status.running) {
+            logsStatus.style.display = 'flex';
+            logsStatusText.textContent = status.progress || 'Running...';
+        } else {
+            logsStatus.style.display = 'none';
+        }
 
         if (!status.running) {
             clearInterval(monitoringInterval);
@@ -449,8 +494,8 @@ async function checkMonitoringStatus() {
                 progressText.textContent = 'Completed! Refreshing data...';
 
                 // Update last run time
-                if (status.last_run) {
-                    updateLastRunDisplay(status.last_run);
+                if (status.lastRun) {
+                    updateLastRunDisplay(status.lastRun);
                 }
 
                 // Refresh UI

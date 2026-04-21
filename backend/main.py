@@ -6,7 +6,7 @@ Modern REST API for YouTube channel monitoring and transcript management
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import JSONResponse, FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, validator
 from typing import List, Optional, Dict, Any
@@ -17,6 +17,8 @@ from datetime import datetime
 import subprocess
 import asyncio
 from enum import Enum
+from transcript_metadata import MetadataStore, TranscriptMetadata
+from llm_client import create_llm_client
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -46,8 +48,27 @@ if static_path.exists():
     app.mount("/js", StaticFiles(directory=str(static_path / "js")), name="js")
 
 # Configuration
-CONFIG_FILE = os.getenv("CONFIG_FILE", "channels_config.json")
-OUTPUT_DIR = os.getenv("OUTPUT_DIR", "channel_data")
+# Get the project root directory (parent of backend/)
+PROJECT_ROOT = Path(__file__).parent.parent
+CONFIG_FILE = os.getenv("CONFIG_FILE", str(PROJECT_ROOT / "channels_config.json"))
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", str(PROJECT_ROOT / "channel_data"))
+METADATA_DB = os.getenv("METADATA_DB", str(PROJECT_ROOT / "transcript_metadata.json"))
+
+# Initialize metadata store
+metadata_store = MetadataStore(Path(METADATA_DB))
+
+
+# ============================================================================
+# Startup Event
+# ============================================================================
+
+@app.on_event("startup")
+async def startup_event():
+    """Initialize metadata on startup"""
+    print("Initializing transcript metadata from filesystem...")
+    metadata_store.initialize_from_filesystem(Path(OUTPUT_DIR))
+    print(f"Metadata initialized. Total entries: {len(metadata_store.get_all())}")
+
 
 # Global state
 monitoring_status = {
@@ -106,24 +127,11 @@ class ChannelUpdate(BaseModel):
 class LLMConfig(BaseModel):
     """LLM configuration"""
     provider: LLMProvider
-    model: str = Field(..., description="Model identifier")
+    model: str = Field("", description="Model identifier")
     apiKey: Optional[str] = Field(None, description="API key for OpenAI/Anthropic")
     awsAccessKeyId: Optional[str] = Field(None, description="AWS Access Key for Bedrock")
     awsSecretAccessKey: Optional[str] = Field(None, description="AWS Secret Key for Bedrock")
-    awsRegion: Optional[str] = Field(None, description="AWS Region for Bedrock")
-
-    @validator('apiKey')
-    def validate_api_key(cls, v, values):
-        provider = values.get('provider')
-        if provider in [LLMProvider.openai, LLMProvider.anthropic] and not v:
-            raise ValueError(f"API key required for {provider}")
-        return v
-
-    @validator('awsAccessKeyId')
-    def validate_aws_keys(cls, v, values):
-        if values.get('provider') == LLMProvider.bedrock and not v:
-            raise ValueError("AWS credentials required for Bedrock")
-        return v
+    awsRegion: Optional[str] = Field("us-east-1", description="AWS Region for Bedrock")
 
 
 class KeywordsUpdate(BaseModel):
@@ -195,6 +203,10 @@ async def get_channel_tree() -> List[Dict[str, Any]]:
         config = await load_config()
         output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
 
+        # Convert relative path to absolute (relative to project root)
+        if not os.path.isabs(output_dir):
+            output_dir = str(PROJECT_ROOT / output_dir)
+
         if not os.path.exists(output_dir):
             return []
 
@@ -214,13 +226,28 @@ async def get_channel_tree() -> List[Dict[str, Any]]:
                 date = parts[0] if len(parts) >= 2 else "unknown"
                 title = ' '.join(parts[1:]) if len(parts) >= 2 else file_path.stem
 
-                transcripts.append({
+                # Get metadata if available
+                metadata = metadata_store.get(channel_name, file_path.name)
+
+                transcript_data = {
                     "filename": file_path.name,
                     "title": title,
                     "date": date,
                     "size": file_path.stat().st_size,
                     "path": str(file_path)
-                })
+                }
+
+                # Add metadata fields if available
+                if metadata:
+                    transcript_data["keywords"] = metadata.keywords
+                    transcript_data["has_summary"] = metadata.summary is not None
+                    transcript_data["summary_model"] = metadata.summary_model
+                else:
+                    transcript_data["keywords"] = None
+                    transcript_data["has_summary"] = False
+                    transcript_data["summary_model"] = None
+
+                transcripts.append(transcript_data)
 
             if transcripts:
                 tree.append({
@@ -236,12 +263,13 @@ async def get_channel_tree() -> List[Dict[str, Any]]:
 
 
 def run_monitoring_background(channels: List[Dict], output_dir: str):
-    """Run monitoring in background"""
+    """Run monitoring in background with real-time output capture"""
     global monitoring_status
 
     monitoring_status["running"] = True
     monitoring_status["progress"] = "Initializing..."
     monitoring_status["error"] = None
+    monitoring_status["logs"] = []
 
     try:
         # Use venv python if available
@@ -250,28 +278,64 @@ def run_monitoring_background(channels: List[Dict], output_dir: str):
 
         script_path = Path(__file__).parent.parent / "monitor_with_config.py"
 
-        result = subprocess.run(
+        # Use Popen for real-time output
+        process = subprocess.Popen(
             [python_cmd, str(script_path)],
             cwd=Path(__file__).parent.parent,
-            capture_output=True,
-            text=True
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            bufsize=1,
+            universal_newlines=True
         )
+
+        # Read output line by line
+        stdout_lines = []
+        stderr_lines = []
+
+        while True:
+            stdout_line = process.stdout.readline()
+            if stdout_line:
+                stdout_line = stdout_line.strip()
+                stdout_lines.append(stdout_line)
+                monitoring_status["logs"].append(stdout_line)
+                monitoring_status["progress"] = stdout_line
+                # Keep only last 50 log lines
+                if len(monitoring_status["logs"]) > 50:
+                    monitoring_status["logs"].pop(0)
+
+            # Check if process finished
+            if process.poll() is not None:
+                # Read any remaining output
+                remaining_stdout = process.stdout.read()
+                if remaining_stdout:
+                    for line in remaining_stdout.strip().split('\n'):
+                        if line:
+                            stdout_lines.append(line)
+                            monitoring_status["logs"].append(line)
+                break
+
+        # Get any stderr
+        stderr_output = process.stderr.read()
+        if stderr_output:
+            stderr_lines = stderr_output.strip().split('\n')
 
         monitoring_status["running"] = False
         monitoring_status["lastRun"] = datetime.now().isoformat()
 
-        if result.returncode == 0:
-            monitoring_status["progress"] = "Completed"
-            monitoring_status["results"] = result.stdout
+        if process.returncode == 0:
+            monitoring_status["progress"] = "Completed successfully"
+            monitoring_status["results"] = '\n'.join(stdout_lines)
         else:
-            monitoring_status["progress"] = "Error"
-            monitoring_status["error"] = result.stderr or f"Exit code: {result.returncode}"
+            monitoring_status["progress"] = "Completed with errors"
+            monitoring_status["error"] = '\n'.join(stderr_lines) if stderr_lines else f"Exit code: {process.returncode}"
 
     except Exception as e:
         monitoring_status["running"] = False
         monitoring_status["progress"] = "Error"
         monitoring_status["error"] = str(e)
         monitoring_status["lastRun"] = datetime.now().isoformat()
+        monitoring_status["logs"].append(f"ERROR: {str(e)}")
 
 
 # ============================================================================
@@ -325,6 +389,10 @@ async def get_transcript(channel: str, filename: str):
     """Get transcript content"""
     config = await load_config()
     output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
+
+    # Convert relative path to absolute (relative to project root)
+    if not os.path.isabs(output_dir):
+        output_dir = str(PROJECT_ROOT / output_dir)
 
     file_path = Path(output_dir) / channel / "transcripts" / filename
 
@@ -477,12 +545,17 @@ async def update_llm_config(llm_config: LLMConfig):
     config["llm"]["model"] = llm_config.model
 
     if llm_config.provider == LLMProvider.bedrock:
-        config["llm"]["awsAccessKeyId"] = llm_config.awsAccessKeyId
-        config["llm"]["awsSecretAccessKey"] = llm_config.awsSecretAccessKey
+        # Update AWS credentials only if provided (non-empty)
+        if llm_config.awsAccessKeyId:
+            config["llm"]["awsAccessKeyId"] = llm_config.awsAccessKeyId
+        if llm_config.awsSecretAccessKey:
+            config["llm"]["awsSecretAccessKey"] = llm_config.awsSecretAccessKey
         config["llm"]["awsRegion"] = llm_config.awsRegion
         config["llm"].pop("apiKey", None)
     else:
-        config["llm"]["apiKey"] = llm_config.apiKey
+        # Update API key only if provided (non-empty)
+        if llm_config.apiKey:
+            config["llm"]["apiKey"] = llm_config.apiKey
         config["llm"].pop("awsAccessKeyId", None)
         config["llm"].pop("awsSecretAccessKey", None)
         config["llm"].pop("awsRegion", None)
@@ -518,6 +591,253 @@ async def get_summarize_status():
         **summarization_status,
         "timestamp": datetime.now().isoformat()
     }
+
+
+# ============================================================================
+# Transcript Metadata Endpoints
+# ============================================================================
+
+@app.get("/api/metadata/transcript/{channel}/{filename}", tags=["Metadata"])
+async def get_transcript_metadata(channel: str, filename: str):
+    """Get metadata for a specific transcript"""
+    metadata = metadata_store.get(channel, filename)
+    if not metadata:
+        raise HTTPException(status_code=404, detail="Metadata not found")
+    return metadata.model_dump()
+
+
+@app.post("/api/metadata/transcript/{channel}/{filename}/keywords", tags=["Metadata"])
+async def update_transcript_keywords(
+    channel: str,
+    filename: str,
+    keywords: List[str]
+):
+    """Update keywords for a transcript"""
+    metadata = metadata_store.get(channel, filename)
+    if not metadata:
+        raise HTTPException(status_code=404, detail="Transcript not found")
+
+    metadata_store.update_keywords(channel, filename, keywords)
+    return {"success": True, "keywords": keywords}
+
+
+@app.post("/api/metadata/transcript/{channel}/{filename}/summary", tags=["Metadata"])
+async def update_transcript_summary(
+    channel: str,
+    filename: str,
+    summary: str,
+    model: str = "unknown"
+):
+    """Update summary for a transcript"""
+    metadata = metadata_store.get(channel, filename)
+    if not metadata:
+        raise HTTPException(status_code=404, detail="Transcript not found")
+
+    metadata_store.update_summary(channel, filename, summary, model)
+    return {"success": True, "summary": summary}
+
+
+@app.post("/api/metadata/initialize", tags=["Metadata"])
+async def initialize_metadata():
+    """Scan filesystem and initialize metadata for all transcripts"""
+    metadata_store.initialize_from_filesystem(Path(OUTPUT_DIR))
+    return {"success": True, "message": "Metadata initialized from filesystem"}
+
+
+@app.get("/api/metadata/all", tags=["Metadata"])
+async def get_all_metadata():
+    """Get all transcript metadata"""
+    all_metadata = metadata_store.get_all()
+    return [m.model_dump() for m in all_metadata]
+
+
+@app.get("/api/transcript/{channel}/{filename}/summarize/stream", tags=["AI"])
+async def summarize_transcript_stream(channel: str, filename: str):
+    """Stream AI summary generation for real-time display"""
+    async def generate():
+        try:
+            # Load config to get LLM settings
+            config = await load_config()
+            llm_config = config.get("llm")
+
+            if not llm_config or not llm_config.get("provider"):
+                yield f"data: {json.dumps({'error': 'LLM not configured'})}\n\n"
+                return
+
+            # Load transcript content
+            output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
+            if not os.path.isabs(output_dir):
+                output_dir = str(PROJECT_ROOT / output_dir)
+
+            transcript_path = Path(output_dir) / channel / "transcripts" / filename
+            if not transcript_path.exists():
+                yield f"data: {json.dumps({'error': 'Transcript not found'})}\n\n"
+                return
+
+            with open(transcript_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # Extract title from filename
+            parts = filename.replace('.md', '').split('_', 1)
+            title = parts[1].replace('_', ' ') if len(parts) == 2 else filename
+
+            # Get or create metadata
+            metadata = metadata_store.get(channel, filename)
+            if not metadata:
+                metadata = TranscriptMetadata(
+                    channel=channel,
+                    filename=filename,
+                    title=title,
+                    date=parts[0] if len(parts) == 2 else "unknown",
+                    size_bytes=transcript_path.stat().st_size
+                )
+                metadata_store.set(metadata)
+
+            # Get keywords
+            transcript_keywords = metadata.keywords if metadata.keywords else []
+            if not transcript_keywords:
+                for ch in config.get("channels", []):
+                    ch_name = ch.get("url", "").split("/")[-1]
+                    if ch_name == channel or ch.get("url", "").endswith(f"/{channel}"):
+                        transcript_keywords = ch.get("keywords", [])
+                        break
+
+            # Send initial metadata
+            yield f"data: {json.dumps({'type': 'start', 'keywords': transcript_keywords})}\n\n"
+
+            # Generate summary with streaming
+            llm_client = create_llm_client(llm_config)
+            summary_chunks = []
+
+            for chunk in llm_client.generate_summary_stream(content, transcript_keywords, title):
+                summary_chunks.append(chunk)
+                yield f"data: {json.dumps({'type': 'chunk', 'text': chunk})}\n\n"
+
+            # Complete - store summary
+            full_summary = ''.join(summary_chunks)
+            model_name = f"{llm_config.get('provider')}:{llm_config.get('model', 'default')}"
+            metadata_store.update_summary(channel, filename, full_summary, model_name)
+
+            yield f"data: {json.dumps({'type': 'done', 'model': model_name})}\n\n"
+
+        except Exception as e:
+            yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
+
+    return StreamingResponse(generate(), media_type="text/event-stream")
+
+
+@app.post("/api/transcript/{channel}/{filename}/summarize", tags=["AI"])
+async def summarize_transcript(channel: str, filename: str, background_tasks: BackgroundTasks):
+    """Generate AI summary for a transcript focusing on transcript-specific keywords (non-streaming fallback)"""
+    try:
+        # Load config to get LLM settings
+        config = await load_config()
+        llm_config = config.get("llm")
+
+        if not llm_config or not llm_config.get("provider"):
+            raise HTTPException(status_code=400, detail="LLM not configured. Please configure LLM settings first.")
+
+        # Load transcript content
+        output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
+        if not os.path.isabs(output_dir):
+            output_dir = str(PROJECT_ROOT / output_dir)
+
+        transcript_path = Path(output_dir) / channel / "transcripts" / filename
+        if not transcript_path.exists():
+            raise HTTPException(status_code=404, detail="Transcript file not found")
+
+        with open(transcript_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Extract title from filename
+        parts = filename.replace('.md', '').split('_', 1)
+        title = parts[1].replace('_', ' ') if len(parts) == 2 else filename
+
+        # Get or create metadata
+        metadata = metadata_store.get(channel, filename)
+        if not metadata:
+            # Initialize metadata if it doesn't exist
+            metadata = TranscriptMetadata(
+                channel=channel,
+                filename=filename,
+                title=title,
+                date=parts[0] if len(parts) == 2 else "unknown",
+                size_bytes=transcript_path.stat().st_size
+            )
+            metadata_store.set(metadata)
+
+        # Use transcript-specific keywords (preferred) or fall back to channel keywords
+        transcript_keywords = metadata.keywords if metadata.keywords else []
+
+        # If no transcript keywords, try channel keywords as fallback
+        if not transcript_keywords:
+            for ch in config.get("channels", []):
+                ch_name = ch.get("url", "").split("/")[-1]
+                if ch_name == channel or ch.get("url", "").endswith(f"/{channel}"):
+                    transcript_keywords = ch.get("keywords", [])
+                    break
+
+        # Create LLM client and generate summary
+        llm_client = create_llm_client(llm_config)
+        summary = llm_client.generate_summary(content, transcript_keywords, title)
+
+        # Store summary
+        model_name = f"{llm_config.get('provider')}:{llm_config.get('model', 'default')}"
+        metadata_store.update_summary(channel, filename, summary, model_name)
+
+        return {
+            "success": True,
+            "summary": summary,
+            "keywords_focused": transcript_keywords,
+            "model": model_name
+        }
+
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to generate summary: {str(e)}")
+
+
+@app.post("/api/transcript/{channel}/{filename}/extract-keywords", tags=["AI"])
+async def extract_keywords_from_transcript(channel: str, filename: str):
+    """Extract keywords from a transcript using AI"""
+    try:
+        # Load config to get LLM settings
+        config = await load_config()
+        llm_config = config.get("llm")
+
+        if not llm_config or not llm_config.get("provider"):
+            raise HTTPException(status_code=400, detail="LLM not configured. Please configure LLM settings first.")
+
+        # Load transcript content
+        output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
+        if not os.path.isabs(output_dir):
+            output_dir = str(PROJECT_ROOT / output_dir)
+
+        transcript_path = Path(output_dir) / channel / "transcripts" / filename
+        if not transcript_path.exists():
+            raise HTTPException(status_code=404, detail="Transcript file not found")
+
+        with open(transcript_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Create LLM client and extract keywords
+        llm_client = create_llm_client(llm_config)
+        keywords = llm_client.extract_keywords(content, max_keywords=10)
+
+        # Store keywords
+        metadata_store.update_keywords(channel, filename, keywords)
+
+        return {
+            "success": True,
+            "keywords": keywords,
+            "model": f"{llm_config.get('provider')}:{llm_config.get('model', 'default')}"
+        }
+
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to extract keywords: {str(e)}")
 
 
 if __name__ == "__main__":

@@ -33,6 +33,7 @@
         <div class="main-content">
             <!-- Left Sidebar - Tree View -->
             <aside class="sidebar">
+                <div class="resize-handle resize-handle-right"></div>
                 <div class="sidebar-header">
                     <h2>Channels & Transcripts</h2>
                     <div class="sidebar-controls">
@@ -59,6 +60,7 @@
 
             <!-- Right Sidebar - Controls -->
             <aside class="controls-panel">
+                <div class="resize-handle resize-handle-left"></div>
                 <!-- Monitor Section -->
                 <section class="control-section">
                     <h3>Monitor Channels</h3>
@@ -71,6 +73,21 @@
                     </div>
                     <div id="monitor-status" class="status-box" style="display: none;">
                         <p id="monitor-progress">Idle</p>
+                    </div>
+
+                    <!-- Monitoring Logs -->
+                    <div id="monitoring-logs" class="monitoring-logs" style="display: none;">
+                        <div class="logs-header">
+                            <strong>Monitoring Log</strong>
+                            <span class="logs-count" id="logs-count"></span>
+                        </div>
+                        <div class="logs-content" id="logs-content">
+                            <p class="logs-empty">Waiting for output...</p>
+                        </div>
+                        <div class="logs-status" id="logs-status" style="display: none;">
+                            <span class="status-indicator"></span>
+                            <span id="logs-status-text">Running...</span>
+                        </div>
                     </div>
                 </section>
 

@@ -6,6 +6,7 @@ function MonitorSection({ loadStats, loadTree, showStatus }) {
   const [isMonitoring, setIsMonitoring] = useState(false);
   const [progress, setProgress] = useState('Idle');
   const [lastRun, setLastRun] = useState(null);
+  const [logs, setLogs] = useState([]);
 
   useEffect(() => {
     checkLastRun();
@@ -40,6 +41,9 @@ function MonitorSection({ loadStats, loadTree, showStatus }) {
 
       if (status.running) {
         setProgress(status.progress || 'Running...');
+        if (status.logs && Array.isArray(status.logs)) {
+          setLogs(status.logs);
+        }
       } else {
         setIsMonitoring(false);
         if (status.error) {
@@ -47,11 +51,15 @@ function MonitorSection({ loadStats, loadTree, showStatus }) {
           showStatus(status.error, 'error');
         } else {
           setProgress('Completed!');
-          if (status.last_run) {
-            setLastRun(status.last_run);
+          if (status.lastRun) {
+            setLastRun(status.lastRun);
           }
           loadStats();
           loadTree();
+        }
+        // Keep final logs visible
+        if (status.logs && Array.isArray(status.logs)) {
+          setLogs(status.logs);
         }
       }
     } catch (error) {
@@ -75,6 +83,7 @@ function MonitorSection({ loadStats, loadTree, showStatus }) {
 
       setIsMonitoring(true);
       setProgress('Starting...');
+      setLogs([]); // Clear previous logs
     } catch (error) {
       console.error('Error starting monitoring:', error);
       showStatus('Error starting monitoring', 'error');
@@ -118,9 +127,31 @@ function MonitorSection({ loadStats, loadTree, showStatus }) {
         </div>
       )}
 
-      {isMonitoring && (
-        <div className="status-box running">
-          <p>{progress}</p>
+      {(isMonitoring || logs.length > 0) && (
+        <div className="monitoring-logs">
+          <div className="logs-header">
+            <strong>Monitoring Log</strong>
+            {logs.length > 0 && (
+              <span className="logs-count">({logs.length} lines)</span>
+            )}
+          </div>
+          <div className="logs-content">
+            {logs.length === 0 ? (
+              <p className="logs-empty">Waiting for output...</p>
+            ) : (
+              logs.map((log, index) => (
+                <div key={index} className="log-line">
+                  {log}
+                </div>
+              ))
+            )}
+          </div>
+          {isMonitoring && (
+            <div className="logs-status">
+              <span className="status-indicator"></span>
+              {progress}
+            </div>
+          )}
         </div>
       )}
     </section>
