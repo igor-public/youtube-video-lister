@@ -45,40 +45,40 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
   }
 
   const hasSummary = summary && summary.length > 0;
-  const showSplitView = hasSummary || isStreamingSummary;
 
   return (
     <main className="content-panel">
-      {showSplitView ? (
-        <div className="split-view">
-          {/* Top: Transcript */}
-          <div className="split-section split-transcript">
-            <div className="split-header">
-              <h3>Transcript</h3>
-            </div>
-            <div className="transcript-view">
-              <div
-                className="transcript-content"
-                dangerouslySetInnerHTML={{ __html: markdownToHtml(transcriptContent) }}
-              />
-            </div>
+      <div className="split-view">
+        {/* Top: Transcript */}
+        <div className="split-section split-transcript">
+          <div className="split-header">
+            <h3>Transcript</h3>
           </div>
+          <div className="transcript-view">
+            <div
+              className="transcript-content"
+              dangerouslySetInnerHTML={{ __html: markdownToHtml(transcriptContent) }}
+            />
+          </div>
+        </div>
 
-          {/* Bottom: Summary */}
-          <div className="split-section split-summary">
-            <div className="split-header">
-              <h3>AI Summary</h3>
-              {summaryKeywords && summaryKeywords.length > 0 && (
-                <span className="summary-keywords-tag">
-                  Focused on: {summaryKeywords.join(', ')}
-                </span>
-              )}
-              {isStreamingSummary && (
-                <span className="streaming-indicator">Generating...</span>
-              )}
-            </div>
-            <div className="summary-view">
-              {summary ? (
+        {/* Bottom: Summary - Always visible */}
+        <div className="split-section split-summary">
+          <div className="split-header">
+            <h3>AI Summary</h3>
+            {summaryKeywords && summaryKeywords.length > 0 && (
+              <span className="summary-keywords-tag">
+                Focused on: {summaryKeywords.join(', ')}
+              </span>
+            )}
+            {isStreamingSummary && (
+              <span className="streaming-indicator">Generating...</span>
+            )}
+          </div>
+          <div className="summary-view">
+            {isStreamingSummary ? (
+              // Streaming in progress
+              summary ? (
                 <div
                   className="summary-content"
                   dangerouslySetInnerHTML={{ __html: markdownToHtml(summary) }}
@@ -92,18 +92,24 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
                   </div>
                   <p>Generating summary...</p>
                 </div>
-              )}
-            </div>
+              )
+            ) : hasSummary ? (
+              // Summary exists
+              <div
+                className="summary-content"
+                dangerouslySetInnerHTML={{ __html: markdownToHtml(summary) }}
+              />
+            ) : (
+              // No summary yet
+              <div className="summary-placeholder">
+                <p style={{ color: '#5f6368', fontStyle: 'italic' }}>
+                  Click "Summarize" to generate an AI summary for this transcript
+                </p>
+              </div>
+            )}
           </div>
         </div>
-      ) : (
-        <div className="transcript-view">
-          <div
-            className="transcript-content"
-            dangerouslySetInnerHTML={{ __html: markdownToHtml(transcriptContent) }}
-          />
-        </div>
-      )}
+      </div>
     </main>
   );
 }

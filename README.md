@@ -41,6 +41,8 @@ A comprehensive tool for monitoring YouTube channels, downloading transcripts, a
 
 ## 📚 Documentation
 
+**📖 [Complete Documentation Index](docs/INDEX.md)** - All guides, changes, and references organized by category
+
 ### Guides
 
 **Getting Started:**
