@@ -5,10 +5,10 @@ PROCESSING SUMMARY
 
 Channels processed: 4
 Videos found: 85
-Videos skipped (already processed): 62
+Videos skipped (already processed): 61
 Videos processed: 0
 Transcripts created: 0
-Errors: 23
+Errors: 24
 
 
 ✓ CoinBureauTrading
@@ -43,12 +43,12 @@ Errors: 23
 
 ✓ CoinBureau
   Videos found: 14
-  Videos skipped: 4
+  Videos skipped: 3
   Videos processed: 0
   Transcripts: 0
-  Errors: 10
+  Errors: 11
+    - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
+    - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
     - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
-    - If Hyperliquid Fails, Does Crypto Survive?: No subtitle files were downloaded
-    - CME Goes 24/7: TradFi Just Hijacked Crypto’s Soul: No subtitle files were downloaded
 
 ================================================================================

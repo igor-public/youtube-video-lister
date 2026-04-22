@@ -37,23 +37,13 @@ function showStatus(message, type = 'info', duration = 5000) {
     // Set message
     statusMessage.textContent = message;
 
-    // Show status bar
-    statusBar.style.display = 'flex';
-
-    // Auto-hide after duration
+    // Status bar is always visible, clear message after duration
     if (duration > 0) {
         statusTimeout = setTimeout(() => {
-            hideStatus();
+            statusMessage.textContent = 'Ready';
+            statusBar.classList.remove('success', 'error', 'warning');
+            statusBar.classList.add('info');
         }, duration);
-    }
-}
-
-function hideStatus() {
-    const statusBar = document.getElementById('status-bar');
-    statusBar.style.display = 'none';
-    if (statusTimeout) {
-        clearTimeout(statusTimeout);
-        statusTimeout = null;
     }
 }
 
@@ -738,7 +728,7 @@ function toggleProviderFields() {
         apiKeyGroup.style.display = 'none';
         bedrockFields.style.display = 'block';
         modelInput.placeholder = 'e.g., anthropic.claude-3-5-sonnet-20241022-v2:0';
-        modelHint.textContent = 'Default: anthropic.claude-3-5-sonnet-20241022-v2:0 (Claude 3.5 Sonnet)';
+        modelHint.textContent = 'Example: anthropic.claude-3-5-sonnet-20241022-v2:0 (Claude 3.5 Sonnet)';
     } else {
         // Show API key, hide Bedrock fields
         apiKeyGroup.style.display = 'block';
@@ -746,13 +736,13 @@ function toggleProviderFields() {
 
         if (provider === 'openai') {
             modelInput.placeholder = 'e.g., gpt-4-turbo-preview';
-            modelHint.textContent = 'Default: gpt-4-turbo-preview';
+            modelHint.textContent = 'Example: gpt-4-turbo-preview';
         } else if (provider === 'anthropic') {
             modelInput.placeholder = 'e.g., claude-3-5-sonnet-20241022';
-            modelHint.textContent = 'Default: claude-3-5-sonnet-20241022';
+            modelHint.textContent = 'Example: claude-3-5-sonnet-20241022';
         } else if (provider === 'local') {
             modelInput.placeholder = 'e.g., llama2';
-            modelHint.textContent = 'Default: llama2';
+            modelHint.textContent = 'Example: llama2';
         }
     }
 }

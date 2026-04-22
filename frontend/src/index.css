@@ -73,7 +73,7 @@ header h1 {
 .main-content {
     display: flex;
     gap: 0;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 64px - 28px);
     overflow: hidden;
     position: relative;
 }
@@ -783,6 +783,21 @@ header h1 {
     background: #bbdefb;
 }
 
+.btn-regenerate {
+    background: #fff3e0;
+    color: #e65100;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ffcc80;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.btn-regenerate:hover {
+    background: #ffe0b2;
+}
+
 .btn-refresh {
     padding: 6px 12px;
     font-size: 13px;
@@ -983,25 +998,17 @@ header h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 12px 24px;
-    background: #1a73e8;
+    padding: 6px 16px;
+    background: #5f6368;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
     z-index: 2000;
-    animation: slideUp 0.3s ease-out;
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
+    height: 28px;
+    transition: background 0.3s ease;
 }
 
 .status-bar.success {
@@ -1018,36 +1025,15 @@ header h1 {
 }
 
 .status-bar.info {
-    background: #1a73e8;
+    background: #5f6368;
 }
 
 .status-message {
-    flex: 1;
-    margin-right: 16px;
-}
-
-.status-close {
-    background: transparent;
-    border: none;
-    color: inherit;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: background 0.2s;
-}
-
-.status-close:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.status-bar.warning .status-close:hover {
-    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 /* Loading */

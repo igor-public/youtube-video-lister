@@ -5,8 +5,15 @@ LLM Client - Unified interface for multiple LLM providers
 
 import os
 import json
+import logging
+import asyncio
 from typing import Optional, Dict, Any
 from abc import ABC, abstractmethod
+from prompts import PromptTemplates
+
+# Set up logging
+logger = logging.getLogger("uvicorn.error")
+logger.setLevel(logging.INFO)
 
 
 class LLMClient(ABC):
@@ -39,7 +46,7 @@ class LLMClient(ABC):
 class OpenAIClient(LLMClient):
     """OpenAI API client"""
 
-    def __init__(self, api_key: str, model: str = "gpt-4"):
+    def __init__(self, api_key: str, model: str):
         self.api_key = api_key
         self.model = model
 
@@ -51,43 +58,13 @@ class OpenAIClient(LLMClient):
                 raise Exception("openai package not installed. Install with: pip install openai")
             openai.api_key = self.api_key
 
-            if keywords and len(keywords) > 0:
-                # Keyword-focused summary
-                keywords_str = ", ".join(keywords)
-                prompt = f"""Please provide a comprehensive summary of the following video transcript titled "{title}".
-
-Focus particularly on these topics: {keywords_str}
-
-Transcript:
-{content[:8000]}  # Limit content length
-
-Provide a summary in 3-4 paragraphs that:
-1. Highlights key points related to: {keywords_str}
-2. Captures main arguments and insights
-3. Notes any actionable takeaways or predictions"""
-            else:
-                # Bullet point summary (no keywords)
-                prompt = f"""Please provide a concise summary of the following video transcript titled "{title}".
-
-Transcript:
-{content[:8000]}  # Limit content length
-
-Provide a summary with:
-1. A brief 1-2 sentence overview
-2. Maximum 10 bullet points covering the key topics and main points discussed
-
-Format as:
-Overview: [1-2 sentences]
-
-Key Points:
-• [point 1]
-• [point 2]
-..."""
+            prompt = PromptTemplates.get_summary_prompt(title, content, keywords)
+            system_message = PromptTemplates.get_system_message("openai")
 
             response = openai.ChatCompletion.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": "You are a helpful assistant that summarizes video transcripts clearly and concisely."},
+                    {"role": "system", "content": system_message},
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.7,
@@ -107,12 +84,7 @@ Key Points:
                 raise Exception("openai package not installed. Install with: pip install openai")
             openai.api_key = self.api_key
 
-            prompt = f"""Extract {max_keywords} key topics/keywords from this transcript. Return only a comma-separated list.
-
-Transcript:
-{content[:4000]}
-
-Keywords:"""
+            prompt = PromptTemplates.get_keyword_extraction_prompt(content, max_keywords)
 
             response = openai.ChatCompletion.create(
                 model=self.model,
@@ -134,7 +106,7 @@ Keywords:"""
 class AnthropicClient(LLMClient):
     """Anthropic (Claude) API client"""
 
-    def __init__(self, api_key: str, model: str = "claude-3-sonnet-20240229"):
+    def __init__(self, api_key: str, model: str):
         self.api_key = api_key
         self.model = model
 
@@ -147,38 +119,7 @@ class AnthropicClient(LLMClient):
 
             client = anthropic.Anthropic(api_key=self.api_key)
 
-            if keywords and len(keywords) > 0:
-                # Keyword-focused summary
-                keywords_str = ", ".join(keywords)
-                prompt = f"""Please provide a comprehensive summary of the following video transcript titled "{title}".
-
-Focus particularly on these topics: {keywords_str}
-
-Transcript:
-{content[:100000]}  # Claude has larger context window
-
-Provide a summary in 3-4 paragraphs that:
-1. Highlights key points related to: {keywords_str}
-2. Captures main arguments and insights
-3. Notes any actionable takeaways or predictions"""
-            else:
-                # Bullet point summary (no keywords)
-                prompt = f"""Please provide a concise summary of the following video transcript titled "{title}".
-
-Transcript:
-{content[:100000]}  # Claude has larger context window
-
-Provide a summary with:
-1. A brief 1-2 sentence overview
-2. Maximum 10 bullet points covering the key topics and main points discussed
-
-Format as:
-Overview: [1-2 sentences]
-
-Key Points:
-• [point 1]
-• [point 2]
-..."""
+            prompt = PromptTemplates.get_summary_prompt(title, content, keywords)
 
             message = client.messages.create(
                 model=self.model,
@@ -202,12 +143,7 @@ Key Points:
 
             client = anthropic.Anthropic(api_key=self.api_key)
 
-            prompt = f"""Extract {max_keywords} key topics/keywords from this transcript. Return only a comma-separated list, nothing else.
-
-Transcript:
-{content[:50000]}
-
-Keywords:"""
+            prompt = PromptTemplates.get_keyword_extraction_prompt(content, max_keywords)
 
             message = client.messages.create(
                 model=self.model,
@@ -228,11 +164,81 @@ class BedrockClient(LLMClient):
     """AWS Bedrock API client"""
 
     def __init__(self, aws_access_key_id: str, aws_secret_access_key: str,
-                 aws_region: str = "us-east-1", model: str = "anthropic.claude-3-5-sonnet-20241022-v2:0"):
+                 aws_region: str, model: str):
         self.aws_access_key_id = aws_access_key_id
         self.aws_secret_access_key = aws_secret_access_key
         self.aws_region = aws_region
         self.model = model
+
+    async def generate_summary_stream_async(self, content: str, keywords: list[str], title: str):
+        """Generate summary with TRUE async streaming using aioboto3"""
+        try:
+            try:
+                import aioboto3
+            except ImportError:
+                raise Exception("aioboto3 package not installed. Install with: pip install aioboto3")
+
+            import time
+
+            session = aioboto3.Session()
+            prompt = PromptTemplates.get_summary_prompt(title, content, keywords)
+
+            # Determine model type
+            is_anthropic = self.model.startswith('anthropic.') or self.model.startswith('us.anthropic.') or self.model.startswith('eu.anthropic.')
+
+            if is_anthropic:
+                async with session.client(
+                    service_name='bedrock-runtime',
+                    region_name=self.aws_region,
+                    aws_access_key_id=self.aws_access_key_id,
+                    aws_secret_access_key=self.aws_secret_access_key
+                ) as bedrock:
+
+                    body = json.dumps({
+                        "anthropic_version": "bedrock-2023-05-31",
+                        "max_tokens": 1024,
+                        "messages": [
+                            {"role": "user", "content": prompt}
+                        ]
+                    })
+
+                    response = await bedrock.invoke_model_with_response_stream(
+                        modelId=self.model,
+                        body=body
+                    )
+
+                    # TRUE async streaming
+                    chunk_count = 0
+                    start_time = time.time()
+                    last_chunk_time = start_time
+
+                    async for event in response['body']:
+                        now = time.time()
+                        time_since_start = (now - start_time) * 1000  # ms
+                        time_since_last = (now - last_chunk_time) * 1000  # ms
+                        last_chunk_time = now
+
+                        chunk = json.loads(event['chunk']['bytes'].decode())
+                        chunk_count += 1
+                        logger.info(f"[Bedrock-Async] Event #{chunk_count} at {time_since_start:.0f}ms (+{time_since_last:.0f}ms)")
+
+                        if chunk['type'] == 'content_block_delta':
+                            if 'delta' in chunk and 'text' in chunk['delta']:
+                                text = chunk['delta']['text']
+                                logger.info(f"[Bedrock-Async] Yielding at {time_since_start:.0f}ms: {repr(text[:30])}")
+                                yield text
+                        elif chunk['type'] == 'message_stop':
+                            logger.info(f"[Bedrock-Async] Complete at {time_since_start:.0f}ms. Total: {chunk_count}")
+                            break
+            else:
+                # Fallback for non-Anthropic models
+                summary = self.generate_summary(content, keywords, title)
+                for char in summary:
+                    yield char
+                    await asyncio.sleep(0.01)
+
+        except Exception as e:
+            raise Exception(f"AWS Bedrock async streaming error: {str(e)}")
 
     def generate_summary(self, content: str, keywords: list[str], title: str) -> str:
         try:
@@ -248,38 +254,7 @@ class BedrockClient(LLMClient):
                 aws_secret_access_key=self.aws_secret_access_key
             )
 
-            if keywords and len(keywords) > 0:
-                # Keyword-focused summary
-                keywords_str = ", ".join(keywords)
-                prompt = f"""Please provide a comprehensive summary of the following video transcript titled "{title}".
-
-Focus particularly on these topics: {keywords_str}
-
-Transcript:
-{content[:100000]}
-
-Provide a summary in 3-4 paragraphs that:
-1. Highlights key points related to: {keywords_str}
-2. Captures main arguments and insights
-3. Notes any actionable takeaways or predictions"""
-            else:
-                # Bullet point summary (no keywords)
-                prompt = f"""Please provide a concise summary of the following video transcript titled "{title}".
-
-Transcript:
-{content[:100000]}
-
-Provide a summary with:
-1. A brief 1-2 sentence overview
-2. Maximum 10 bullet points covering the key topics and main points discussed
-
-Format as:
-Overview: [1-2 sentences]
-
-Key Points:
-• [point 1]
-• [point 2]
-..."""
+            prompt = PromptTemplates.get_summary_prompt(title, content, keywords)
 
             # Determine model type and format request accordingly
             is_openai = self.model.startswith('openai.')
@@ -338,38 +313,7 @@ Key Points:
                 aws_secret_access_key=self.aws_secret_access_key
             )
 
-            if keywords and len(keywords) > 0:
-                # Keyword-focused summary
-                keywords_str = ", ".join(keywords)
-                prompt = f"""Please provide a comprehensive summary of the following video transcript titled "{title}".
-
-Focus particularly on these topics: {keywords_str}
-
-Transcript:
-{content[:100000]}
-
-Provide a summary in 3-4 paragraphs that:
-1. Highlights key points related to: {keywords_str}
-2. Captures main arguments and insights
-3. Notes any actionable takeaways or predictions"""
-            else:
-                # Bullet point summary (no keywords)
-                prompt = f"""Please provide a concise summary of the following video transcript titled "{title}".
-
-Transcript:
-{content[:100000]}
-
-Provide a summary with:
-1. A brief 1-2 sentence overview
-2. Maximum 10 bullet points covering the key topics and main points discussed
-
-Format as:
-Overview: [1-2 sentences]
-
-Key Points:
-• [point 1]
-• [point 2]
-..."""
+            prompt = PromptTemplates.get_summary_prompt(title, content, keywords)
 
             # Determine model type and format request accordingly
             is_openai = self.model.startswith('openai.')
@@ -391,13 +335,28 @@ Key Points:
                 )
 
                 # Stream the response
+                import time
+                chunk_count = 0
+                start_time = time.time()
+                last_chunk_time = start_time
+
                 for event in response['body']:
+                    now = time.time()
+                    time_since_start = (now - start_time) * 1000  # ms
+                    time_since_last = (now - last_chunk_time) * 1000  # ms
+                    last_chunk_time = now
+
                     chunk = json.loads(event['chunk']['bytes'].decode())
+                    chunk_count += 1
+                    logger.info(f"[Bedrock] Event #{chunk_count} at {time_since_start:.0f}ms (+{time_since_last:.0f}ms), type: {chunk.get('type')}")
 
                     if chunk['type'] == 'content_block_delta':
                         if 'delta' in chunk and 'text' in chunk['delta']:
-                            yield chunk['delta']['text']
+                            text = chunk['delta']['text']
+                            logger.info(f"[Bedrock] Yielding text ({len(text)} chars) at {time_since_start:.0f}ms: {repr(text[:30])}")
+                            yield text
                     elif chunk['type'] == 'message_stop':
+                        logger.info(f"[Bedrock] Stream complete at {time_since_start:.0f}ms. Total chunks: {chunk_count}")
                         break
 
             elif is_openai:
@@ -450,12 +409,7 @@ Key Points:
                 aws_secret_access_key=self.aws_secret_access_key
             )
 
-            prompt = f"""Extract {max_keywords} key topics/keywords from this transcript. Return only a comma-separated list.
-
-Transcript:
-{content[:50000]}
-
-Keywords:"""
+            prompt = PromptTemplates.get_keyword_extraction_prompt(content, max_keywords)
 
             # Determine model type and format request accordingly
             is_openai = self.model.startswith('openai.')
@@ -506,22 +460,51 @@ def create_llm_client(llm_config: Dict[str, Any]) -> LLMClient:
     """Factory function to create appropriate LLM client"""
     provider = llm_config.get("provider", "").lower()
 
+    if not provider:
+        raise ValueError("LLM provider not configured")
+
     if provider == "openai":
-        return OpenAIClient(
-            api_key=llm_config.get("apiKey", ""),
-            model=llm_config.get("model", "gpt-4")
-        )
+        api_key = llm_config.get("apiKey", "")
+        model = llm_config.get("model", "")
+
+        if not api_key:
+            raise ValueError("OpenAI API key not configured")
+        if not model:
+            raise ValueError("OpenAI model not configured")
+
+        return OpenAIClient(api_key=api_key, model=model)
+
     elif provider == "anthropic":
-        return AnthropicClient(
-            api_key=llm_config.get("apiKey", ""),
-            model=llm_config.get("model", "claude-3-sonnet-20240229")
-        )
+        api_key = llm_config.get("apiKey", "")
+        model = llm_config.get("model", "")
+
+        if not api_key:
+            raise ValueError("Anthropic API key not configured")
+        if not model:
+            raise ValueError("Anthropic model not configured")
+
+        return AnthropicClient(api_key=api_key, model=model)
+
     elif provider == "bedrock":
+        aws_access_key_id = llm_config.get("awsAccessKeyId", "")
+        aws_secret_access_key = llm_config.get("awsSecretAccessKey", "")
+        aws_region = llm_config.get("awsRegion", "")
+        model = llm_config.get("model", "")
+
+        if not aws_access_key_id:
+            raise ValueError("AWS Access Key ID not configured")
+        if not aws_secret_access_key:
+            raise ValueError("AWS Secret Access Key not configured")
+        if not aws_region:
+            raise ValueError("AWS region not configured")
+        if not model:
+            raise ValueError("Bedrock model not configured")
+
         return BedrockClient(
-            aws_access_key_id=llm_config.get("awsAccessKeyId", ""),
-            aws_secret_access_key=llm_config.get("awsSecretAccessKey", ""),
-            aws_region=llm_config.get("awsRegion", "us-east-1"),
-            model=llm_config.get("model", "anthropic.claude-3-sonnet-20240229-v1:0")
+            aws_access_key_id=aws_access_key_id,
+            aws_secret_access_key=aws_secret_access_key,
+            aws_region=aws_region,
+            model=model
         )
     else:
         raise ValueError(f"Unsupported LLM provider: {provider}")

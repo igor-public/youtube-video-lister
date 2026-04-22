@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import KeywordsModal from './KeywordsModal';
+import SummaryModal from './SummaryModal';
 
 const API_BASE = '/api';
 
 function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTranscript, refreshTree, readTranscripts, showStatus, loadSummary }) {
   const [expandedChannels, setExpandedChannels] = useState({});
   const [keywordsModal, setKeywordsModal] = useState(null);
+  const [summaryModal, setSummaryModal] = useState({
+    isOpen: false,
+    summary: '',
+    keywords: [],
+    isStreaming: false,
+    title: ''
+  });
 
   // Count unread transcripts for a channel
   const getUnreadCount = (channel) => {
@@ -67,6 +75,12 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
     }
   };
 
+  const handleRegenerate = async (channel, filename, transcript, e) => {
+    e.stopPropagation();
+    // Force regeneration regardless of existing summary
+    await generateSummary(channel, filename, transcript, true);
+  };
+
   const handleSummarize = async (channel, filename, transcript, e) => {
     e.stopPropagation();
 
@@ -84,6 +98,11 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
       return;
     }
 
+    await generateSummary(channel, filename, transcript, false);
+  };
+
+  const generateSummary = async (channel, filename, transcript, isRegenerate) => {
+
     // Check if keywords exist for this transcript
     const hasKeywords = transcript.keywords && transcript.keywords.length > 0;
 
@@ -92,69 +111,110 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
       await loadTranscript(channel, filename);
     }
 
+    const action = isRegenerate ? 'Regenerating' : 'Generating';
+    const keywords = transcript.keywords || [];
+
+    // Open modal immediately
+    setSummaryModal({
+      isOpen: true,
+      summary: '',
+      keywords: keywords,
+      isStreaming: true,
+      title: transcript.title
+    });
+
     if (hasKeywords) {
-      showStatus(`Generating summary focused on: ${transcript.keywords.join(', ')}`, 'info', 0);
+      showStatus(`${action} summary focused on: ${transcript.keywords.join(', ')}`, 'info', 0);
     } else {
-      showStatus('Generating summary with key points...', 'info', 0);
+      showStatus(`${action} summary with key points...`, 'info', 0);
     }
 
     try {
       const encodedChannel = encodeURIComponent(channel);
       const encodedFilename = encodeURIComponent(filename);
 
-      // Use EventSource for streaming
-      const eventSource = new EventSource(
-        `${API_BASE}/transcript/${encodedChannel}/${encodedFilename}/summarize/stream`
-      );
+      // Use WebSocket for true streaming (bypasses gunicorn buffering)
+      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+      const wsUrl = `${protocol}//${window.location.host}/api/transcript/${encodedChannel}/${encodedFilename}/summarize/ws`;
 
-      let keywords = [];
+      console.log('[WebSocket] Connecting to:', wsUrl);
+      const ws = new WebSocket(wsUrl);
 
-      eventSource.onmessage = (event) => {
+      let chunkCount = 0;
+      let lastChunkTime = Date.now();
+      let startTime = Date.now();
+
+      ws.onopen = () => {
+        console.log('[WebSocket] Connected');
+        startTime = Date.now();
+      };
+
+      ws.onmessage = (event) => {
+        const now = Date.now();
+        const timeSinceLastChunk = now - lastChunkTime;
+        const timeSinceStart = now - startTime;
+        lastChunkTime = now;
+
+        const timestamp = new Date().toISOString().substr(11, 12);
         const data = JSON.parse(event.data);
-        console.log('[Streaming]', data.type, data.text ? `"${data.text}"` : '');
 
         if (data.type === 'start') {
-          keywords = data.keywords || [];
-          console.log('[Streaming] Starting with keywords:', keywords);
-          // Initialize streaming summary
-          if (window.startStreamingSummary) {
-            window.startStreamingSummary(keywords);
-          }
+          console.log(`[${timestamp}] [WebSocket] START - Keywords:`, data.keywords);
         } else if (data.type === 'chunk') {
-          // Append chunk to summary
-          console.log('[Streaming] Chunk received:', data.text);
-          if (window.appendSummaryChunk) {
-            window.appendSummaryChunk(data.text);
-          }
+          chunkCount++;
+          console.log(`[${timestamp}] [WebSocket] CHUNK #${chunkCount} (${timeSinceStart}ms total, +${timeSinceLastChunk}ms, ${data.text.length} chars): "${data.text.substring(0, 50)}"`);
+
+          // Update modal immediately
+          setSummaryModal(prev => ({
+            ...prev,
+            summary: prev.summary + data.text
+          }));
         } else if (data.type === 'done') {
-          eventSource.close();
+          console.log(`[${timestamp}] [WebSocket] DONE - Total: ${data.total_chunks} chunks in ${data.total_time}ms`);
+          ws.close();
+          setSummaryModal(prev => ({
+            ...prev,
+            isStreaming: false
+          }));
           const focusedKeywords = keywords.length > 0
             ? ` (focused on: ${keywords.join(', ')})`
             : '';
           showStatus(`Summary generated${focusedKeywords}`, 'success');
           refreshTree(); // Refresh to show summary badge
-          if (window.finishStreamingSummary) {
-            window.finishStreamingSummary();
-          }
         } else if (data.type === 'error') {
-          eventSource.close();
+          console.error(`[${timestamp}] [WebSocket] ERROR:`, data.message);
+          ws.close();
+          setSummaryModal(prev => ({
+            ...prev,
+            isStreaming: false,
+            summary: prev.summary || ('Error: ' + (data.message || 'Failed to generate summary'))
+          }));
           showStatus(data.message || 'Failed to generate summary', 'error');
-          if (window.finishStreamingSummary) {
-            window.finishStreamingSummary();
-          }
         }
       };
 
-      eventSource.onerror = () => {
-        eventSource.close();
+      ws.onerror = (error) => {
+        console.error(`[${new Date().toISOString().substr(11, 12)}] [WebSocket] CONNECTION ERROR`, error);
+        ws.close();
+        setSummaryModal(prev => ({
+          ...prev,
+          isStreaming: false,
+          summary: prev.summary || 'Error: WebSocket connection failed'
+        }));
         showStatus('Error generating summary', 'error');
-        if (window.finishStreamingSummary) {
-          window.finishStreamingSummary();
-        }
+      };
+
+      ws.onclose = () => {
+        console.log('[WebSocket] Connection closed');
       };
 
     } catch (error) {
-      console.error('Error generating summary:', error);
+      console.error('[WebSocket] Error:', error);
+      setSummaryModal(prev => ({
+        ...prev,
+        isStreaming: false,
+        summary: 'Error: ' + error.message
+      }));
       showStatus('Error generating summary', 'error');
     }
   };
@@ -273,6 +333,15 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
                         >
                           {transcript.has_summary ? '✓ Summary' : 'Summarize'}
                         </button>
+                        {transcript.has_summary && (
+                          <button
+                            className="btn btn-regenerate btn-small"
+                            onClick={(e) => handleRegenerate(channel.channel, transcript.filename, transcript, e)}
+                            title="Regenerate summary with current keywords"
+                          >
+                            ↻
+                          </button>
+                        )}
                       </div>
                     </div>
                   );
@@ -293,6 +362,15 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
           onSave={handleSaveKeywords}
         />
       )}
+
+      <SummaryModal
+        isOpen={summaryModal.isOpen}
+        onClose={() => setSummaryModal({ isOpen: false, summary: '', keywords: [], isStreaming: false, title: '' })}
+        summary={summaryModal.summary}
+        keywords={summaryModal.keywords}
+        isStreaming={summaryModal.isStreaming}
+        title={summaryModal.title}
+      />
     </>
   );
 }

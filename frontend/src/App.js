@@ -140,39 +140,15 @@ function App() {
   const showStatus = (message, type = 'info', duration = 5000) => {
     setStatusMessage({ message, type, visible: true });
 
+    // Clear message after duration (status bar remains visible)
     if (duration > 0) {
       setTimeout(() => {
-        setStatusMessage(prev => ({ ...prev, visible: false }));
+        setStatusMessage({ message: '', type: 'info', visible: true });
       }, duration);
     }
   };
 
-  const hideStatus = () => {
-    setStatusMessage(prev => ({ ...prev, visible: false }));
-  };
-
-  // Streaming summary handlers
-  useEffect(() => {
-    window.startStreamingSummary = (keywords) => {
-      setIsStreamingSummary(true);
-      setSummary('');
-      setSummaryKeywords(keywords || []);
-    };
-
-    window.appendSummaryChunk = (chunk) => {
-      setSummary(prev => prev + chunk);
-    };
-
-    window.finishStreamingSummary = () => {
-      setIsStreamingSummary(false);
-    };
-
-    return () => {
-      delete window.startStreamingSummary;
-      delete window.appendSummaryChunk;
-      delete window.finishStreamingSummary;
-    };
-  }, []);
+  // Streaming summary handlers removed - now using SummaryModal
 
   return (
     <div className="container">
@@ -217,8 +193,6 @@ function App() {
       <StatusBar
         message={statusMessage.message}
         type={statusMessage.type}
-        visible={statusMessage.visible}
-        onClose={hideStatus}
       />
     </div>
   );

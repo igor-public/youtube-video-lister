@@ -4,7 +4,7 @@ YouTube Toolkit - FastAPI Backend
 Modern REST API for YouTube channel monitoring and transcript management
 """
 
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException, BackgroundTasks, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
@@ -12,12 +12,17 @@ from pydantic import BaseModel, Field, validator
 from typing import List, Optional, Dict, Any
 import json
 import os
+import logging
 from pathlib import Path
 from datetime import datetime
 import subprocess
 import asyncio
 from enum import Enum
 from transcript_metadata import MetadataStore, TranscriptMetadata
+
+# Set up logging
+logger = logging.getLogger("uvicorn.error")
+logger.setLevel(logging.INFO)
 from llm_client import create_llm_client
 
 # Initialize FastAPI app
@@ -715,13 +720,37 @@ async def summarize_transcript_stream(channel: str, filename: str):
             # Send initial metadata
             yield f"data: {json.dumps({'type': 'start', 'keywords': transcript_keywords})}\n\n"
 
-            # Generate summary with streaming
+            # Generate summary with TRUE async streaming
             llm_client = create_llm_client(llm_config)
             summary_chunks = []
 
-            for chunk in llm_client.generate_summary_stream(content, transcript_keywords, title):
-                summary_chunks.append(chunk)
-                yield f"data: {json.dumps({'type': 'chunk', 'text': chunk})}\n\n"
+            import time
+            start_time = time.time()
+            chunk_num = 0
+
+            # Check if client supports async streaming
+            if hasattr(llm_client, 'generate_summary_stream_async'):
+                logger.info(f"[Backend] Using async streaming")
+                # Use native async streaming (for BedrockClient with aioboto3)
+                async for chunk in llm_client.generate_summary_stream_async(content, transcript_keywords, title):
+                    chunk_num += 1
+                    elapsed = (time.time() - start_time) * 1000
+                    summary_chunks.append(chunk)
+                    logger.info(f"[Backend] Yielding chunk #{chunk_num} at {elapsed:.0f}ms ({len(chunk)} chars)")
+                    yield f"data: {json.dumps({'type': 'chunk', 'text': chunk})}\n\n"
+            else:
+                logger.info(f"[Backend] Falling back to sync streaming")
+                # Fallback to synchronous generator
+                for chunk in llm_client.generate_summary_stream(content, transcript_keywords, title):
+                    chunk_num += 1
+                    elapsed = (time.time() - start_time) * 1000
+                    summary_chunks.append(chunk)
+                    logger.info(f"[Backend] Yielding chunk #{chunk_num} at {elapsed:.0f}ms ({len(chunk)} chars)")
+                    yield f"data: {json.dumps({'type': 'chunk', 'text': chunk})}\n\n"
+                    await asyncio.sleep(0)  # Yield to event loop
+
+            elapsed = (time.time() - start_time) * 1000
+            logger.info(f"[Backend] All chunks yielded at {elapsed:.0f}ms. Total: {chunk_num}")
 
             # Complete - store summary
             full_summary = ''.join(summary_chunks)
@@ -742,6 +771,138 @@ async def summarize_transcript_stream(channel: str, filename: str):
             "Connection": "keep-alive",
         }
     )
+
+
+@app.websocket("/api/transcript/{channel}/{filename}/summarize/ws")
+async def summarize_transcript_websocket(websocket: WebSocket, channel: str, filename: str):
+    """WebSocket endpoint for streaming summaries - bypasses gunicorn buffering"""
+    await websocket.accept()
+
+    try:
+        import time
+
+        # Load config
+        config = await load_config()
+        llm_config = config.get("llm")
+
+        if not llm_config or not llm_config.get("provider"):
+            await websocket.send_json({'type': 'error', 'message': 'LLM not configured'})
+            await websocket.close()
+            return
+
+        # Load transcript
+        output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
+        if not os.path.isabs(output_dir):
+            output_dir = str(PROJECT_ROOT / output_dir)
+
+        transcript_path = Path(output_dir) / channel / "transcripts" / filename
+        if not transcript_path.exists():
+            await websocket.send_json({'type': 'error', 'message': 'Transcript not found'})
+            await websocket.close()
+            return
+
+        with open(transcript_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Extract title
+        parts = filename.replace('.md', '').split('_', 1)
+        title = parts[1].replace('_', ' ') if len(parts) == 2 else filename
+
+        # Get metadata and keywords
+        metadata = metadata_store.get(channel, filename)
+        if not metadata:
+            metadata = TranscriptMetadata(
+                channel=channel,
+                filename=filename,
+                title=title,
+                date=parts[0] if len(parts) == 2 else "unknown",
+                size_bytes=transcript_path.stat().st_size
+            )
+            metadata_store.set(metadata)
+
+        transcript_keywords = metadata.keywords if metadata.keywords else []
+        if not transcript_keywords:
+            for ch in config.get("channels", []):
+                ch_name = ch.get("url", "").split("/")[-1]
+                if ch_name == channel or ch.get("url", "").endswith(f"/{channel}"):
+                    transcript_keywords = ch.get("keywords", [])
+                    break
+
+        # Send start message
+        await websocket.send_json({
+            'type': 'start',
+            'keywords': transcript_keywords,
+            'title': title
+        })
+
+        # Stream summary
+        llm_client = create_llm_client(llm_config)
+        summary_chunks = []
+
+        start_time = time.time()
+        chunk_num = 0
+
+        if hasattr(llm_client, 'generate_summary_stream_async'):
+            logger.info(f"[WebSocket] Using async streaming")
+            async for chunk in llm_client.generate_summary_stream_async(content, transcript_keywords, title):
+                chunk_num += 1
+                elapsed = (time.time() - start_time) * 1000
+                summary_chunks.append(chunk)
+
+                # Send chunk immediately via WebSocket
+                await websocket.send_json({
+                    'type': 'chunk',
+                    'text': chunk,
+                    'num': chunk_num,
+                    'elapsed': int(elapsed)
+                })
+                logger.info(f"[WebSocket] Sent chunk #{chunk_num} at {elapsed:.0f}ms")
+
+                # Small delay to ensure message is sent
+                await asyncio.sleep(0.001)
+        else:
+            logger.info(f"[WebSocket] Using sync streaming")
+            for chunk in llm_client.generate_summary_stream(content, transcript_keywords, title):
+                chunk_num += 1
+                elapsed = (time.time() - start_time) * 1000
+                summary_chunks.append(chunk)
+
+                await websocket.send_json({
+                    'type': 'chunk',
+                    'text': chunk,
+                    'num': chunk_num,
+                    'elapsed': int(elapsed)
+                })
+                await asyncio.sleep(0)
+
+        # Store summary
+        full_summary = ''.join(summary_chunks)
+        model_name = f"{llm_config.get('provider')}:{llm_config.get('model', 'default')}"
+        metadata_store.update_summary(channel, filename, full_summary, model_name)
+
+        # Send completion
+        await websocket.send_json({
+            'type': 'done',
+            'model': model_name,
+            'total_chunks': chunk_num,
+            'total_time': int((time.time() - start_time) * 1000)
+        })
+
+        logger.info(f"[WebSocket] Completed: {chunk_num} chunks in {(time.time() - start_time)*1000:.0f}ms")
+
+    except WebSocketDisconnect:
+        logger.info("[WebSocket] Client disconnected")
+    except Exception as e:
+        logger.error(f"[WebSocket] Error: {str(e)}")
+        try:
+            await websocket.send_json({'type': 'error', 'message': str(e)})
+        except:
+            pass
+    finally:
+        try:
+            await websocket.close()
+        except:
+            pass
 
 
 @app.post("/api/transcript/{channel}/{filename}/summarize", tags=["AI"])

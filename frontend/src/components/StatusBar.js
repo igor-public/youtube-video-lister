@@ -1,12 +1,13 @@
 import React from 'react';
 
-function StatusBar({ message, type, visible, onClose }) {
-  if (!visible) return null;
+function StatusBar({ message, type }) {
+  // Always show, even if empty message
+  const displayMessage = message || 'Ready';
+  const displayType = message ? type : 'info';
 
   return (
-    <div className={`status-bar ${type}`}>
-      <span className="status-message">{message}</span>
-      <button className="status-close" onClick={onClose}>×</button>
+    <div className={`status-bar ${displayType}`}>
+      <span className="status-message">{displayMessage}</span>
     </div>
   );
 }
