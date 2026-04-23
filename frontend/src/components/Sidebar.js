@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
 import KeywordsModal from './KeywordsModal';
-import SummaryModal from './SummaryModal';
 
 const API_BASE = '/api';
 
-function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTranscript, refreshTree, readTranscripts, showStatus, loadSummary }) {
+function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTranscript, refreshTree, readTranscripts, showStatus, loadSummary, onStartSummary }) {
   const [expandedChannels, setExpandedChannels] = useState({});
   const [keywordsModal, setKeywordsModal] = useState(null);
-  const [summaryModal, setSummaryModal] = useState({
-    isOpen: false,
-    summary: '',
-    keywords: [],
-    isStreaming: false,
-    title: ''
-  });
 
   // Count unread transcripts for a channel
   const getUnreadCount = (channel) => {
@@ -77,146 +69,29 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
 
   const handleRegenerate = async (channel, filename, transcript, e) => {
     e.stopPropagation();
-    // Force regeneration regardless of existing summary
-    await generateSummary(channel, filename, transcript, true);
+    // Ensure transcript is loaded
+    if (!selectedTranscript || selectedTranscript.channel !== channel || selectedTranscript.filename !== filename) {
+      await loadTranscript(channel, filename);
+    }
+    // Trigger summary generation with regenerate flag
+    onStartSummary(channel, filename, transcript, true);
   };
 
   const handleSummarize = async (channel, filename, transcript, e) => {
     e.stopPropagation();
 
-    if (transcript.has_summary) {
-      // Summary already exists, just load it
-      if (selectedTranscript && selectedTranscript.channel === channel && selectedTranscript.filename === filename) {
-        // Already viewing this transcript, just load the summary
-        loadSummary(channel, filename);
-        showStatus('Summary loaded', 'success');
-      } else {
-        // Switch to this transcript and load summary
-        await loadTranscript(channel, filename);
-        showStatus('Summary loaded', 'success');
-      }
-      return;
-    }
-
-    await generateSummary(channel, filename, transcript, false);
-  };
-
-  const generateSummary = async (channel, filename, transcript, isRegenerate) => {
-
-    // Check if keywords exist for this transcript
-    const hasKeywords = transcript.keywords && transcript.keywords.length > 0;
-
-    // Ensure this transcript is loaded first
+    // Ensure transcript is loaded
     if (!selectedTranscript || selectedTranscript.channel !== channel || selectedTranscript.filename !== filename) {
       await loadTranscript(channel, filename);
     }
 
-    const action = isRegenerate ? 'Regenerating' : 'Generating';
-    const keywords = transcript.keywords || [];
-
-    // Open modal immediately
-    setSummaryModal({
-      isOpen: true,
-      summary: '',
-      keywords: keywords,
-      isStreaming: true,
-      title: transcript.title
-    });
-
-    if (hasKeywords) {
-      showStatus(`${action} summary focused on: ${transcript.keywords.join(', ')}`, 'info', 0);
-    } else {
-      showStatus(`${action} summary with key points...`, 'info', 0);
+    // If summary exists, just switch to summary tab and load it
+    if (transcript.has_summary) {
+      await loadSummary(channel, filename);
     }
 
-    try {
-      const encodedChannel = encodeURIComponent(channel);
-      const encodedFilename = encodeURIComponent(filename);
-
-      // Use WebSocket for true streaming (bypasses gunicorn buffering)
-      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-      const wsUrl = `${protocol}//${window.location.host}/api/transcript/${encodedChannel}/${encodedFilename}/summarize/ws`;
-
-      console.log('[WebSocket] Connecting to:', wsUrl);
-      const ws = new WebSocket(wsUrl);
-
-      let chunkCount = 0;
-      let lastChunkTime = Date.now();
-      let startTime = Date.now();
-
-      ws.onopen = () => {
-        console.log('[WebSocket] Connected');
-        startTime = Date.now();
-      };
-
-      ws.onmessage = (event) => {
-        const now = Date.now();
-        const timeSinceLastChunk = now - lastChunkTime;
-        const timeSinceStart = now - startTime;
-        lastChunkTime = now;
-
-        const timestamp = new Date().toISOString().substr(11, 12);
-        const data = JSON.parse(event.data);
-
-        if (data.type === 'start') {
-          console.log(`[${timestamp}] [WebSocket] START - Keywords:`, data.keywords);
-        } else if (data.type === 'chunk') {
-          chunkCount++;
-          console.log(`[${timestamp}] [WebSocket] CHUNK #${chunkCount} (${timeSinceStart}ms total, +${timeSinceLastChunk}ms, ${data.text.length} chars): "${data.text.substring(0, 50)}"`);
-
-          // Update modal immediately
-          setSummaryModal(prev => ({
-            ...prev,
-            summary: prev.summary + data.text
-          }));
-        } else if (data.type === 'done') {
-          console.log(`[${timestamp}] [WebSocket] DONE - Total: ${data.total_chunks} chunks in ${data.total_time}ms`);
-          ws.close();
-          setSummaryModal(prev => ({
-            ...prev,
-            isStreaming: false
-          }));
-          const focusedKeywords = keywords.length > 0
-            ? ` (focused on: ${keywords.join(', ')})`
-            : '';
-          showStatus(`Summary generated${focusedKeywords}`, 'success');
-          refreshTree(); // Refresh to show summary badge
-        } else if (data.type === 'error') {
-          console.error(`[${timestamp}] [WebSocket] ERROR:`, data.message);
-          ws.close();
-          setSummaryModal(prev => ({
-            ...prev,
-            isStreaming: false,
-            summary: prev.summary || ('Error: ' + (data.message || 'Failed to generate summary'))
-          }));
-          showStatus(data.message || 'Failed to generate summary', 'error');
-        }
-      };
-
-      ws.onerror = (error) => {
-        console.error(`[${new Date().toISOString().substr(11, 12)}] [WebSocket] CONNECTION ERROR`, error);
-        ws.close();
-        setSummaryModal(prev => ({
-          ...prev,
-          isStreaming: false,
-          summary: prev.summary || 'Error: WebSocket connection failed'
-        }));
-        showStatus('Error generating summary', 'error');
-      };
-
-      ws.onclose = () => {
-        console.log('[WebSocket] Connection closed');
-      };
-
-    } catch (error) {
-      console.error('[WebSocket] Error:', error);
-      setSummaryModal(prev => ({
-        ...prev,
-        isStreaming: false,
-        summary: 'Error: ' + error.message
-      }));
-      showStatus('Error generating summary', 'error');
-    }
+    // Trigger summary generation/display
+    onStartSummary(channel, filename, transcript, false);
   };
 
   // Tree is already sorted by backend based on sortOrder
@@ -273,7 +148,7 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
                 <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                   <span className="tree-channel-count">{channel.transcript_count}</span>
                   {unreadCount > 0 && (
-                    <span className="unread-badge" title={`${unreadCount} unread`}>!</span>
+                    <span className="unread-badge" title={`${unreadCount} unread`}>{unreadCount}</span>
                   )}
                 </div>
               </div>
@@ -296,16 +171,6 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
                         <div className="transcript-title">{transcript.title}</div>
                         <div className="transcript-meta">
                           {transcript.date} • {(transcript.size / 1024).toFixed(1)} KB
-                          {transcript.keywords && transcript.keywords.length > 0 && (
-                            <span className="meta-badge" title={transcript.keywords.join(', ')}>
-                              {transcript.keywords.length} keyword{transcript.keywords.length > 1 ? 's' : ''}
-                            </span>
-                          )}
-                          {transcript.has_summary && (
-                            <span className="meta-badge meta-summary" title={`Summary available (${transcript.summary_model || 'AI'})`}>
-                              ✓ Summary
-                            </span>
-                          )}
                         </div>
                       </div>
                       <div className="transcript-actions">
@@ -362,15 +227,6 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
           onSave={handleSaveKeywords}
         />
       )}
-
-      <SummaryModal
-        isOpen={summaryModal.isOpen}
-        onClose={() => setSummaryModal({ isOpen: false, summary: '', keywords: [], isStreaming: false, title: '' })}
-        summary={summaryModal.summary}
-        keywords={summaryModal.keywords}
-        isStreaming={summaryModal.isStreaming}
-        title={summaryModal.title}
-      />
     </>
   );
 }

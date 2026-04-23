@@ -1,748 +1,92 @@
 1
-00:00:00,000 --> 00:00:05,480
+00:00:00,000 --> 00:00:05,520
 This seems to have been a quite obvious
 
 2
-00:00:02,520 --> 00:00:07,320
-omission. Rave DAO has rallied massively
+00:00:02,480 --> 00:00:07,400
+omission. RAVE DAO has rallied massively
 
 3
-00:00:05,480 --> 00:00:09,600
+00:00:05,520 --> 00:00:09,640
 in the last week and the question is how
 
 4
-00:00:07,320 --> 00:00:11,560
+00:00:07,400 --> 00:00:11,600
 much longer can this rally last? Who is
 
 5
-00:00:09,600 --> 00:00:13,320
+00:00:09,640 --> 00:00:13,360
 buying here? Who is selling here? Let's
 
 6
-00:00:11,560 --> 00:00:15,640
+00:00:11,600 --> 00:00:15,680
 have a look at the on-chain data, the
 
 7
-00:00:13,320 --> 00:00:17,800
-data most people are not considering
+00:00:13,360 --> 00:00:17,840
+data most people are not considering.
 
 8
-00:00:15,640 --> 00:00:21,160
-right to figure out how we can time Rave
+00:00:15,680 --> 00:00:21,240
+Try to figure out how we can time RAVE
 
 9
-00:00:17,800 --> 00:00:23,360
+00:00:17,840 --> 00:00:23,400
 DAO. The token climbed into the top 100
 
 10
-00:00:21,160 --> 00:00:26,240
+00:00:21,240 --> 00:00:26,280
 cryptocurrencies in terms of market cap.
 
 11
-00:00:23,360 --> 00:00:28,120
+00:00:23,400 --> 00:00:28,160
 It appreciated by almost 6,000%
 
 12
-00:00:26,240 --> 00:00:30,480
-in a week and that's then the resulting
+00:00:26,280 --> 00:00:30,520
+in a week. And that's then the resulting
 
 13
-00:00:28,120 --> 00:00:33,560
+00:00:28,160 --> 00:00:33,600
 chart. It's pretty much a hockey stick.
 
 14
-00:00:30,480 --> 00:00:36,880
+00:00:30,520 --> 00:00:36,920
 We are now close to $16.
 
 15
-00:00:33,560 --> 00:00:39,800
-And 2 weeks ago, we were at $0.25.
+00:00:33,600 --> 00:00:38,880
+And 2 weeks ago, we were at 25
 
 16
-00:00:36,880 --> 00:00:41,560
-Now on Ethereum, there are 11,000
+00:00:36,920 --> 00:00:41,480
+cents. Now, on Ethereum, there are
 
 17
-00:00:39,800 --> 00:00:43,680
-holders. On the base chain, there are
+00:00:38,880 --> 00:00:43,440
+11,000 holders. On the base chain, there
 
 18
-00:00:41,560 --> 00:00:46,680
-12,000 holders and on the Binance Smart
+00:00:41,480 --> 00:00:46,360
+are 12,000 holders. And on the Binance
 
 19
-00:00:43,680 --> 00:00:48,280
-Chain, there are 27,000 holders. It is
+00:00:43,440 --> 00:00:48,160
+Smart Chain, there are 27,000 holders.
 
 20
-00:00:46,680 --> 00:00:50,680
-interesting to look at the number of
+00:00:46,360 --> 00:00:50,040
+It is interesting to look at the number
 
 21
-00:00:48,280 --> 00:00:52,320
-holders over time. Now this is Ethereum
+00:00:48,160 --> 00:00:52,080
+of holders over time. Now, this is
 
 22
-00:00:50,680 --> 00:00:54,920
-on the left side, we've got the number
+00:00:50,040 --> 00:00:55,040
+Ethereum on the left side. We've got the
 
 23
-00:00:52,320 --> 00:00:57,480
-of wallets with at least 60 Rave DAO
-
-24
-00:00:54,920 --> 00:01:00,040
-tokens. That's roughly $1,000 worth of
-
-25
-00:00:57,480 --> 00:01:02,360
-the token. In the middle, that's $10,000
-
-26
-00:01:00,040 --> 00:01:04,239
-right, that's $100,000. Isn't it
-
-27
-00:01:02,360 --> 00:01:06,240
-interesting that with the recent rally,
-
-28
-00:01:04,239 --> 00:01:08,120
-the number of holders on the Ethereum
-
-29
-00:01:06,240 --> 00:01:10,000
-chain went down and that's across the
-
-30
-00:01:08,120 --> 00:01:11,800
-board. That's true for small retail,
-
-31
-00:01:10,000 --> 00:01:13,640
-that's true for the whale wallets. Now
-
-32
-00:01:11,800 --> 00:01:15,400
-that's on Ethereum, here is the base
-
-33
-00:01:13,640 --> 00:01:17,480
-chain, the same picture and here is the
-
-34
-00:01:15,400 --> 00:01:19,960
-Binance Smart Chain. Again, the same
-
-35
-00:01:17,480 --> 00:01:21,880
-picture at least for the whales. Yes, a
-
-36
-00:01:19,960 --> 00:01:23,760
-few small retail investors might be
-
-37
-00:01:21,880 --> 00:01:26,000
-buying. Now how does this make sense
-
-38
-00:01:23,760 --> 00:01:28,360
-when the price goes parabolic but at the
-
-39
-00:01:26,000 --> 00:01:30,240
-same time, the number of investors is
-
-40
-00:01:28,360 --> 00:01:31,720
-going down? Shouldn't it be the other
-
-41
-00:01:30,240 --> 00:01:33,840
-way around that when there's more more
-
-42
-00:01:31,720 --> 00:01:36,440
-investors into an asset that then the
-
-43
-00:01:33,840 --> 00:01:39,560
-price rises? What I think happened here
-
-44
-00:01:36,440 --> 00:01:41,760
-is that a central player bought up all
-
-45
-00:01:39,560 --> 00:01:44,840
-of the supply. Have a look at the Genie
-
-46
-00:01:41,760 --> 00:01:46,760
-distribution score on Etherscan. It's
-
-47
-00:01:44,840 --> 00:01:50,160
-very close to one. The whale
-
-48
-00:01:46,760 --> 00:01:51,920
-concentration is 99.99%
-
-49
-00:01:50,160 --> 00:01:53,880
-so 0.22%
-
-50
-00:01:51,920 --> 00:01:57,400
-of holders own pretty much all of the
-
-51
-00:01:53,880 --> 00:02:00,520
-supply. The top five holders hold 96,
-
-52
-00:01:57,400 --> 00:02:03,000
-the top 10 holders hold 99% of the
-
-53
-00:02:00,520 --> 00:02:04,640
-supply. It's really the on-chain metrics
-
-54
-00:02:03,000 --> 00:02:06,440
-don't matter that much anymore. Have a
-
-55
-00:02:04,640 --> 00:02:08,640
-look at the trading volume on the spot
-
-56
-00:02:06,440 --> 00:02:11,080
-market in the last 24 hours. We've got
-
-57
-00:02:08,640 --> 00:02:13,240
-93 million worth of trading volume on
-
-58
-00:02:11,080 --> 00:02:15,880
-Coinbase but compare this with the
-
-59
-00:02:13,240 --> 00:02:18,200
-perpetual futures market. Here we had 4
-
-60
-00:02:15,880 --> 00:02:21,080
-billion and that's both on Binance and
-
-61
-00:02:18,200 --> 00:02:23,000
-on OKX. The trading volume on the perps
-
-62
-00:02:21,080 --> 00:02:25,560
-is much much higher so the trading
-
-63
-00:02:23,000 --> 00:02:27,480
-volume for the bets on the price. So
-
-64
-00:02:25,560 --> 00:02:29,120
-those two markets work fundamentally
-
-65
-00:02:27,480 --> 00:02:31,040
-different. There's a spot market, just
-
-66
-00:02:29,120 --> 00:02:32,680
-demand and supply people are buying and
-
-67
-00:02:31,040 --> 00:02:34,960
-selling the asset and then there's the
-
-68
-00:02:32,680 --> 00:02:37,760
-perpetual futures, so that's the bets on
-
-69
-00:02:34,960 --> 00:02:40,160
-the price. If there are much more bets
-
-70
-00:02:37,760 --> 00:02:42,960
-on the price than there's actual spot
-
-71
-00:02:40,160 --> 00:02:44,680
-trading volume, that means that the bets
-
-72
-00:02:42,960 --> 00:02:46,440
-can get manipulated. Now I'd like to
-
-73
-00:02:44,680 --> 00:02:47,960
-make this example. Let's say there's a
-
-74
-00:02:46,440 --> 00:02:50,120
-soccer game and you're the sports
-
-75
-00:02:47,960 --> 00:02:53,120
-betting house and you allow people to
-
-76
-00:02:50,120 --> 00:02:55,840
-bet on either team A or team B winning.
-
-77
-00:02:53,120 --> 00:02:57,520
-Now this seems all harmless unless you
-
-78
-00:02:55,840 --> 00:02:59,520
-as a sports betting house have now a
-
-79
-00:02:57,520 --> 00:03:01,840
-vested interest on the outcome of the
-
-80
-00:02:59,520 --> 00:03:03,600
-game. So let's say everybody, all the
-
-81
-00:03:01,840 --> 00:03:06,000
-retail investors, all the people, they
-
-82
-00:03:03,600 --> 00:03:08,440
-are betting on team A winning. And in
-
-83
-00:03:06,000 --> 00:03:10,480
-order to balance out the odds somewhat,
-
-84
-00:03:08,440 --> 00:03:13,400
-you as a sports betting house bet on
-
-85
-00:03:10,480 --> 00:03:15,400
-team B winning. Now you might get some
-
-86
-00:03:13,400 --> 00:03:17,960
-risk exposure as a sports betting house
-
-87
-00:03:15,400 --> 00:03:20,880
-but it becomes problematic if you now
-
-88
-00:03:17,960 --> 00:03:23,280
-can also impact the outcome of the game.
-
-89
-00:03:20,880 --> 00:03:25,240
-If you bribe the referee, that's
-
-90
-00:03:23,280 --> 00:03:27,800
-essentially what's going on here. The
-
-91
-00:03:25,240 --> 00:03:30,840
-referee is very easily bought with just
-
-92
-00:03:27,800 --> 00:03:33,800
-with 93 million worth of trading volume
-
-93
-00:03:30,840 --> 00:03:36,800
-while billions over billions get moved
-
-94
-00:03:33,800 --> 00:03:38,560
-and potentially liquidated via the bets
-
-95
-00:03:36,800 --> 00:03:40,280
-on the price. And this isn't just
-
-96
-00:03:38,560 --> 00:03:42,080
-theory, this is actually practically
-
-97
-00:03:40,280 --> 00:03:44,760
-what's going on here. Have a look at the
-
-98
-00:03:42,080 --> 00:03:47,360
-funding rate of Rave DAO over time.
-
-99
-00:03:44,760 --> 00:03:49,760
-Funding rate is extremely negative and
-
-100
-00:03:47,360 --> 00:03:51,200
-the price went up. In other words, there
-
-101
-00:03:49,760 --> 00:03:53,880
-were more people that were betting on
-
-102
-00:03:51,200 --> 00:03:56,440
-falling prices than on rising prices and
-
-103
-00:03:53,880 --> 00:03:59,320
-then the sports betting house buys up
-
-104
-00:03:56,440 --> 00:04:01,840
-the token on the spot market pushing the
-
-105
-00:03:59,320 --> 00:04:04,560
-price higher. And so the trading volume
-
-106
-00:04:01,840 --> 00:04:07,360
-goes bonkers on the perpetual futures
-
-107
-00:04:04,560 --> 00:04:09,160
-and the short liquidations go rampant.
-
-108
-00:04:07,360 --> 00:04:11,600
-It started with 6 million of
-
-109
-00:04:09,160 --> 00:04:14,880
-liquidations, then it became nine, then
-
-110
-00:04:11,600 --> 00:04:17,640
-again nine, then 30 and again 30 and
-
-111
-00:04:14,880 --> 00:04:19,720
-yesterday it was 20 million worth of
-
-112
-00:04:17,640 --> 00:04:21,640
-short liquidations. So this is a very
-
-113
-00:04:19,720 --> 00:04:23,600
-profitable game. The retail investors
-
-114
-00:04:21,640 --> 00:04:25,560
-are all betting on falling prices and
-
-115
-00:04:23,600 --> 00:04:28,000
-then a few people that bought up all the
-
-116
-00:04:25,560 --> 00:04:30,200
-supply, they can move the market
-
-117
-00:04:28,000 --> 00:04:32,720
-massively. So really, what matters is
-
-118
-00:04:30,200 --> 00:04:35,280
-the liquid supply and if 99% of the
-
-119
-00:04:32,720 --> 00:04:37,560
-supply is just held by a few wallets,
-
-120
-00:04:35,280 --> 00:04:39,320
-doesn't take much money in order to move
-
-121
-00:04:37,560 --> 00:04:42,280
-the market cap. But why am I making a
-
-122
-00:04:39,320 --> 00:04:44,880
-video now about Rave DAO? Why didn't I
-
-123
-00:04:42,280 --> 00:04:47,680
-talk about this earlier? The reason is
-
-124
-00:04:44,880 --> 00:04:50,360
-that something has changed. Check out
-
-125
-00:04:47,680 --> 00:04:53,000
-the open interest. The price of Rave DAO
-
-126
-00:04:50,360 --> 00:04:55,840
-continued to rise but the open interest
-
-127
-00:04:53,000 --> 00:04:59,080
-now gradually is coming down. So it
-
-128
-00:04:55,840 --> 00:05:01,080
-becomes less and less profitable to push
-
-129
-00:04:59,080 --> 00:05:03,480
-the price higher. A lot of people
-
-130
-00:05:01,080 --> 00:05:05,480
-already got wrecked and they don't touch
-
-131
-00:05:03,480 --> 00:05:07,960
-Rave DAO anymore. Now there is positive
-
-132
-00:05:05,480 --> 00:05:10,840
-correlation between the price and open
-
-133
-00:05:07,960 --> 00:05:12,840
-interest. If there is continued less
-
-134
-00:05:10,840 --> 00:05:15,160
-interest in Rave DAO over time, then the
-
-135
-00:05:12,840 --> 00:05:17,080
-market makers will manipulate it less
-
-136
-00:05:15,160 --> 00:05:18,640
-and less and then the price will come
-
-137
-00:05:17,080 --> 00:05:21,640
-down again. We had a very similar
-
-138
-00:05:18,640 --> 00:05:25,240
-situation with Siren recently. Siren
-
-139
-00:05:21,640 --> 00:05:27,080
-reached a market cap of 1.75 billion and
-
-140
-00:05:25,240 --> 00:05:29,200
-I've covered that token throughout its
-
-141
-00:05:27,080 --> 00:05:31,760
-volatility. Feel free to check out those
-
-142
-00:05:29,200 --> 00:05:34,680
-older videos. Rave DAO has already
-
-143
-00:05:31,760 --> 00:05:37,520
-reached 4 billion dollars. The question
-
-144
-00:05:34,680 --> 00:05:39,600
-is how high do those market caps usually
-
-145
-00:05:37,520 --> 00:05:41,680
-go when manipulation like this happens?
-
-146
-00:05:39,600 --> 00:05:43,880
-Let's have a look at Bonk. Bonk peaked
-
-147
-00:05:41,680 --> 00:05:46,600
-at 4 billion. Let's have a look at Pudgy
-
-148
-00:05:43,880 --> 00:05:48,920
-Penguins. That peaked at around 2.7
-
-149
-00:05:46,600 --> 00:05:51,160
-billion. Here is Dog with Hat. That
-
-150
-00:05:48,920 --> 00:05:53,000
-peaked also close to 4 billion. Here is
-
-151
-00:05:51,160 --> 00:05:54,480
-Fart Coin. That peaked at around 2
-
-152
-00:05:53,000 --> 00:05:57,680
-billion. And here is Peanut the
-
-153
-00:05:54,480 --> 00:06:00,560
-Squirrel. That peaked at around 1.75
-
-154
-00:05:57,680 --> 00:06:02,840
-billion. So it seems like most of those
-
-155
-00:06:00,560 --> 00:06:05,120
-short squeezes, they tend to turn around
-
-156
-00:06:02,840 --> 00:06:07,520
-somewhere between 2 and 4 billion and
-
-157
-00:06:05,120 --> 00:06:09,160
-that's the reason why Rave DAO is now
-
-158
-00:06:07,520 --> 00:06:11,600
-interesting. That's the reason why it
-
-159
-00:06:09,160 --> 00:06:14,040
-finally might make sense to actually
-
-160
-00:06:11,600 --> 00:06:15,800
-jump into the action as well. The open
-
-161
-00:06:14,040 --> 00:06:17,600
-interest is coming down, there's less
-
-162
-00:06:15,800 --> 00:06:19,560
-and less manipulation happening and we
-
-163
-00:06:17,600 --> 00:06:21,240
-have pretty much reached the ceiling in
-
-164
-00:06:19,560 --> 00:06:23,240
-terms of how much manipulation can
-
-165
-00:06:21,240 --> 00:06:25,840
-happen on a token like this. Rave DAO is
-
-166
-00:06:23,240 --> 00:06:27,880
-not going to hit 10 billion or 20
-
-167
-00:06:25,840 --> 00:06:29,640
-billion in market cap. It will turn
-
-168
-00:06:27,880 --> 00:06:31,080
-around earlier than that. Now I don't
-
-169
-00:06:29,640 --> 00:06:33,200
-have a crystal ball either but it's
-
-170
-00:06:31,080 --> 00:06:35,080
-simply what historically happened in
-
-171
-00:06:33,200 --> 00:06:37,520
-similar situations. The spot holders
-
-172
-00:06:35,080 --> 00:06:39,400
-have already exited the token and the
-
-173
-00:06:37,520 --> 00:06:41,920
-manipulation is very likely going to
-
-174
-00:06:39,400 --> 00:06:43,680
-move to another token very soon.
-
-175
-00:06:41,920 --> 00:06:45,480
-Otherwise, open interest wouldn't be
-
-176
-00:06:43,680 --> 00:06:47,880
-shrinking and that's just the way how
-
-177
-00:06:45,480 --> 00:06:50,600
-crypto goes. At some point, things turn
-
-178
-00:06:47,880 --> 00:06:52,280
-around and 4 billion is a very likely
-
-179
-00:06:50,600 --> 00:06:53,320
-turn around point. If you got some value
-
-180
-00:06:52,280 --> 00:06:54,520
-out of this video, feel free to give it
-
-181
-00:06:53,320 --> 00:06:56,120
-a like, it helps the channel grow. Feel
-
-182
-00:06:54,520 --> 00:06:58,320
-free to also subscribe. I publish videos
-
-183
-00:06:56,120 --> 00:07:00,160
-regularly. If you want to know my trades
-
-184
-00:06:58,320 --> 00:07:02,000
-in real time, then feel free to also
-
-185
-00:07:00,160 --> 00:07:03,920
-check out the premium membership that
-
-186
-00:07:02,000 --> 00:07:07,280
-pops up over here. Thanks for watching.
-
-187
-00:07:03,920 --> 00:07:07,280
-See you next time. Cheers.
+00:00:52,080 --> 00:00:55,040
+number of wallets here.
 

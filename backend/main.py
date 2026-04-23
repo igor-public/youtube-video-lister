@@ -720,7 +720,7 @@ async def summarize_transcript_stream(channel: str, filename: str):
             # Send initial metadata
             yield f"data: {json.dumps({'type': 'start', 'keywords': transcript_keywords})}\n\n"
 
-            # Generate summary with TRUE async streaming
+            # Generate summary with TRUE async streaming + word-by-word splitting
             llm_client = create_llm_client(llm_config)
             summary_chunks = []
 
@@ -730,27 +730,45 @@ async def summarize_transcript_stream(channel: str, filename: str):
 
             # Check if client supports async streaming
             if hasattr(llm_client, 'generate_summary_stream_async'):
-                logger.info(f"[Backend] Using async streaming")
+                logger.info(f"[Backend] Using async streaming with word-by-word output")
                 # Use native async streaming (for BedrockClient with aioboto3)
                 async for chunk in llm_client.generate_summary_stream_async(content, transcript_keywords, title):
-                    chunk_num += 1
-                    elapsed = (time.time() - start_time) * 1000
                     summary_chunks.append(chunk)
-                    logger.info(f"[Backend] Yielding chunk #{chunk_num} at {elapsed:.0f}ms ({len(chunk)} chars)")
-                    yield f"data: {json.dumps({'type': 'chunk', 'text': chunk})}\n\n"
+
+                    # Split chunk into words and send each word separately
+                    # This creates more granular updates that bypass buffering
+                    words = chunk.split(' ')
+                    for i, word in enumerate(words):
+                        chunk_num += 1
+                        elapsed = (time.time() - start_time) * 1000
+
+                        # Add space back except for last word in chunk
+                        text_to_send = word if i == len(words) - 1 else word + ' '
+
+                        logger.info(f"[Backend] Word #{chunk_num} at {elapsed:.0f}ms: {repr(text_to_send[:20])}")
+                        yield f"data: {json.dumps({'type': 'chunk', 'text': text_to_send})}\n\n"
+
+                        # Small delay between words for smoother appearance
+                        await asyncio.sleep(0.05)  # 50ms between words
             else:
                 logger.info(f"[Backend] Falling back to sync streaming")
                 # Fallback to synchronous generator
                 for chunk in llm_client.generate_summary_stream(content, transcript_keywords, title):
-                    chunk_num += 1
-                    elapsed = (time.time() - start_time) * 1000
                     summary_chunks.append(chunk)
-                    logger.info(f"[Backend] Yielding chunk #{chunk_num} at {elapsed:.0f}ms ({len(chunk)} chars)")
-                    yield f"data: {json.dumps({'type': 'chunk', 'text': chunk})}\n\n"
-                    await asyncio.sleep(0)  # Yield to event loop
+
+                    # Split into words for gradual display
+                    words = chunk.split(' ')
+                    for i, word in enumerate(words):
+                        chunk_num += 1
+                        elapsed = (time.time() - start_time) * 1000
+
+                        text_to_send = word if i == len(words) - 1 else word + ' '
+
+                        yield f"data: {json.dumps({'type': 'chunk', 'text': text_to_send})}\n\n"
+                        await asyncio.sleep(0.05)  # 50ms between words
 
             elapsed = (time.time() - start_time) * 1000
-            logger.info(f"[Backend] All chunks yielded at {elapsed:.0f}ms. Total: {chunk_num}")
+            logger.info(f"[Backend] All words yielded at {elapsed:.0f}ms. Total: {chunk_num}")
 
             # Complete - store summary
             full_summary = ''.join(summary_chunks)

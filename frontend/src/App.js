@@ -18,9 +18,11 @@ function App() {
   const [summary, setSummary] = useState('');
   const [summaryKeywords, setSummaryKeywords] = useState([]);
   const [isStreamingSummary, setIsStreamingSummary] = useState(false);
+  const [activeTab, setActiveTab] = useState('transcript');
   const [config, setConfig] = useState(null);
   const [statusMessage, setStatusMessage] = useState({ message: '', type: 'info', visible: false });
   const [readTranscripts, setReadTranscripts] = useLocalStorage('readTranscripts', {});
+  const eventSourceRef = useRef(null);
 
   // Refs for resizable panels
   const sidebarRef = useRef(null);
@@ -148,7 +150,114 @@ function App() {
     }
   };
 
-  // Streaming summary handlers removed - now using SummaryModal
+  const handleStartSummary = async (channel, filename, transcript, isRegenerate) => {
+    // Switch to summary tab
+    setActiveTab('summary');
+
+    // If summary exists and not regenerating, just load it
+    if (transcript.has_summary && !isRegenerate) {
+      await loadSummary(channel, filename);
+      showStatus('Summary loaded', 'success');
+      return;
+    }
+
+    // Start streaming
+    const hasKeywords = transcript.keywords && transcript.keywords.length > 0;
+    const action = isRegenerate ? 'Regenerating' : 'Generating';
+    const keywords = transcript.keywords || [];
+
+    setSummary('');
+    setSummaryKeywords(keywords);
+    setIsStreamingSummary(true);
+
+    if (hasKeywords) {
+      showStatus(`${action} summary focused on: ${keywords.join(', ')}`, 'info', 0);
+    } else {
+      showStatus(`${action} summary with key points...`, 'info', 0);
+    }
+
+    try {
+      const encodedChannel = encodeURIComponent(channel);
+      const encodedFilename = encodeURIComponent(filename);
+
+      // Close any existing EventSource
+      if (eventSourceRef.current) {
+        eventSourceRef.current.close();
+      }
+
+      // Use EventSource with word-by-word splitting on backend
+      const eventSource = new EventSource(
+        `${API_BASE}/transcript/${encodedChannel}/${encodedFilename}/summarize/stream`
+      );
+      eventSourceRef.current = eventSource;
+
+      let wordCount = 0;
+      let lastWordTime = Date.now();
+      let startTime = Date.now();
+
+      eventSource.onmessage = (event) => {
+        const now = Date.now();
+        const timeSinceLastWord = now - lastWordTime;
+        const timeSinceStart = now - startTime;
+        lastWordTime = now;
+
+        const timestamp = new Date().toISOString().substr(11, 12);
+        const data = JSON.parse(event.data);
+
+        if (data.type === 'start') {
+          console.log(`[${timestamp}] [Streaming] START - Keywords:`, data.keywords);
+          startTime = now;
+        } else if (data.type === 'chunk') {
+          wordCount++;
+          console.log(`[${timestamp}] [Streaming] Word #${wordCount} (${timeSinceStart}ms total, +${timeSinceLastWord}ms): "${data.text}"`);
+
+          // Update summary immediately
+          setSummary(prev => prev + data.text);
+        } else if (data.type === 'done') {
+          console.log(`[${timestamp}] [Streaming] DONE - Total words: ${wordCount}`);
+          eventSource.close();
+          eventSourceRef.current = null;
+          setIsStreamingSummary(false);
+          const focusedKeywords = keywords.length > 0
+            ? ` (focused on: ${keywords.join(', ')})`
+            : '';
+          showStatus(`Summary generated${focusedKeywords}`, 'success');
+          loadTree(); // Refresh to show summary badge
+        } else if (data.type === 'error') {
+          console.error(`[${timestamp}] [Streaming] ERROR:`, data.message);
+          eventSource.close();
+          eventSourceRef.current = null;
+          setIsStreamingSummary(false);
+          setSummary(prev => prev || ('Error: ' + (data.message || 'Failed to generate summary')));
+          showStatus(data.message || 'Failed to generate summary', 'error');
+        }
+      };
+
+      eventSource.onerror = (error) => {
+        console.error(`[${new Date().toISOString().substr(11, 12)}] [Streaming] CONNECTION ERROR`, error);
+        eventSource.close();
+        eventSourceRef.current = null;
+        setIsStreamingSummary(false);
+        setSummary(prev => prev || 'Error: Connection failed');
+        showStatus('Error generating summary', 'error');
+      };
+
+    } catch (error) {
+      console.error('[Streaming] Error:', error);
+      setIsStreamingSummary(false);
+      setSummary('Error: ' + error.message);
+      showStatus('Error generating summary', 'error');
+    }
+  };
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (eventSourceRef.current) {
+        eventSourceRef.current.close();
+      }
+    };
+  }, []);
 
   return (
     <div className="container">
@@ -166,6 +275,7 @@ function App() {
             readTranscripts={readTranscripts}
             showStatus={showStatus}
             loadSummary={loadSummary}
+            onStartSummary={handleStartSummary}
           />
           <ResizeHandle targetRef={sidebarRef} direction="right" />
         </aside>
@@ -176,6 +286,8 @@ function App() {
           summary={summary}
           summaryKeywords={summaryKeywords}
           isStreamingSummary={isStreamingSummary}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
         />
 
         <aside ref={controlsRef} className="controls-panel">

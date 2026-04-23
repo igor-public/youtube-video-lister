@@ -57,8 +57,8 @@
   align-items: center;
   padding: 20px 24px;
   border-bottom: 1px solid #e0e0e0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #b3d9ff;
+  color: #333;
   border-radius: 8px 8px 0 0;
 }
 
@@ -71,7 +71,7 @@
 .modal-close {
   background: transparent;
   border: none;
-  color: white;
+  color: #333;
   font-size: 32px;
   cursor: pointer;
   padding: 0;
@@ -85,7 +85,7 @@
 }
 
 .modal-close:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Modal Title & Keywords */
@@ -161,24 +161,23 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
+  background: #b3d9ff;
+  color: #333;
+  border: 1px solid #99ccff;
   padding: 10px 24px;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: background 0.2s;
 }
 
 .btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  background: #99ccff;
 }
 
 .btn-primary:active {
-  transform: translateY(0);
+  background: #80bfff;
 }
 
 /* Scrollbar Styling */

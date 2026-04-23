@@ -88,10 +88,19 @@ def main():
 
     # Process each channel with its own settings
     results = []
+    total_videos_found = 0
+    total_videos_processed = 0
+    total_videos_skipped = 0
+    total_transcripts = 0
+
     for i, channel in enumerate(channels, 1):
-        print(f"\n{'#'*80}")
-        print(f"Channel {i}/{len(channels)}")
-        print(f"{'#'*80}")
+        channel_name = channel['url'].split('/')[-1].replace('@', '')
+        progress_pct = int((i - 1) / len(channels) * 100)
+
+        print(f"\n{'='*80}")
+        print(f"[{progress_pct}%] Channel {i}/{len(channels)}: {channel_name}")
+        print(f"Days back: {channel['days_back']} | Languages: {', '.join(channel['languages'])}")
+        print(f"{'='*80}")
 
         result = monitor.process_channel(
             channel_url=channel['url'],
@@ -99,6 +108,28 @@ def main():
             languages=channel['languages']
         )
         results.append(result)
+
+        # Update cumulative statistics
+        total_videos_found += result.get('videos_found', 0)
+        total_videos_processed += result.get('videos_processed', 0)
+        total_videos_skipped += result.get('videos_skipped', 0)
+        total_transcripts += len(result.get('transcripts_created', []))
+
+        # Show progress statistics
+        completion_pct = int(i / len(channels) * 100)
+        print(f"\n{'─'*80}")
+        print(f"[{completion_pct}%] Progress Summary:")
+        print(f"  Channels completed: {i}/{len(channels)}")
+        print(f"  Videos found: {total_videos_found}")
+        print(f"  Videos skipped: {total_videos_skipped}")
+        print(f"  Videos processed: {total_videos_processed}")
+        print(f"  Transcripts created: {total_transcripts}")
+        print(f"{'─'*80}")
+
+    # Final completion
+    print(f"\n{'='*80}")
+    print(f"[100%] ✓ Completed all {len(channels)} channels")
+    print(f"{'='*80}")
 
     # Display and save summary
     summary = monitor.generate_summary_report(results)

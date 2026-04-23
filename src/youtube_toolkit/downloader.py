@@ -6,6 +6,8 @@ Downloads subtitles from YouTube videos in various formats.
 
 import os
 import sys
+import io
+from contextlib import redirect_stdout, redirect_stderr
 from typing import Optional, List
 import yt_dlp
 
@@ -43,7 +45,10 @@ class SubtitleDownloader:
             'writeautomaticsub': auto_generated,
             'subtitlesformat': format,
             'outtmpl': os.path.join(self.output_dir, '%(title)s.%(ext)s'),
-            'no_warnings': True,  # Suppress warnings (PO token warnings don't affect subtitles)
+            'no_warnings': True,
+            'quiet': True,  # Suppress all output
+            'no_progress': True,  # Disable progress bar
+            'noprogress': True,  # Alternative flag
         }
 
         if languages:
@@ -59,19 +64,21 @@ class SubtitleDownloader:
         }
 
         try:
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                info = ydl.extract_info(video_url, download=False)
-                result['video_title'] = info.get('title', 'Unknown')
-                result['video_id'] = info.get('id', 'Unknown')
+            # Suppress all yt-dlp output by redirecting stdout and stderr
+            with redirect_stdout(io.StringIO()), redirect_stderr(io.StringIO()):
+                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                    info = ydl.extract_info(video_url, download=False)
+                    result['video_title'] = info.get('title', 'Unknown')
+                    result['video_id'] = info.get('id', 'Unknown')
 
-                available_subs = info.get('subtitles', {})
-                available_auto_subs = info.get('automatic_captions', {})
+                    available_subs = info.get('subtitles', {})
+                    available_auto_subs = info.get('automatic_captions', {})
 
-                if not available_subs and not available_auto_subs:
-                    result['error'] = "No subtitles available for this video"
-                    return result
+                    if not available_subs and not available_auto_subs:
+                        result['error'] = "No subtitles available for this video"
+                        return result
 
-                ydl.download([video_url])
+                    ydl.download([video_url])
 
                 for lang in list(available_subs.keys()) + list(available_auto_subs.keys()):
                     subtitle_file = os.path.join(

@@ -115,7 +115,7 @@ function MonitorSection({ loadStats, loadTree, showStatus }) {
         onClick={startMonitoring}
         disabled={isMonitoring}
       >
-        {isMonitoring ? 'Monitoring...' : 'Start Monitoring'}
+        {isMonitoring ? 'Updating...' : 'Update'}
       </button>
 
       {lastRun && !isMonitoring && (

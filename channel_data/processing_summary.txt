@@ -3,52 +3,34 @@
 PROCESSING SUMMARY
 ================================================================================
 
-Channels processed: 4
-Videos found: 85
-Videos skipped (already processed): 61
-Videos processed: 0
-Transcripts created: 0
-Errors: 24
+Channels processed: 5
+Videos found: 28
+Videos skipped (already processed): 15
+Videos processed: 6
+Transcripts created: 6
+Errors: 11
 
 
-✓ CoinBureauTrading
-  Videos found: 13
-  Videos skipped: 7
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 6
-    - Bitcoin Crash Incoming? The Warning Signs Are Here: No subtitle files were downloaded
-    - Fake Pump? Bitcoin Just Rejected $76K…: No subtitle files were downloaded
-    - Support & Resistance Explained: The Key Levels That Move Markets: No subtitle files were downloaded
+✗ CoinBureauTrading
+  Failed: Unable to find the server at youtube.googleapis.com
 
-✓ DataDash
-  Videos found: 8
-  Videos skipped: 4
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 4
-    - 🚨Bitcoin Is About to Shock Everyone 🚨 $100K Move Coming?: No subtitle files were downloaded
-    - XRP's Next Move: Price Structure & the Regulatory Catalyst: No subtitle files were downloaded
-    - Bitcoin Rally Fading? This Key Level Decides What Happens Next: No subtitle files were downloaded
+✗ DataDash
+  Failed: Unable to find the server at youtube.googleapis.com
 
-✓ DwarkeshPatel
-  Videos found: 50
-  Videos skipped: 47
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 3
-    - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
-    - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
-    - The Truth Behind Machiavelli's "The Prince" - Ada Palmer: No subtitle files were downloaded
+✗ DwarkeshPatel
+  Failed: Unable to find the server at youtube.googleapis.com
 
-✓ CoinBureau
-  Videos found: 14
-  Videos skipped: 3
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 11
-    - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
-    - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
-    - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
+✗ CoinBureau
+  Failed: Unable to find the server at youtube.googleapis.com
+
+✓ BitcoinStrategy
+  Videos found: 28
+  Videos skipped: 15
+  Videos processed: 6
+  Transcripts: 6
+  Errors: 7
+    - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded
+    - Will Crypto Freak Out? ☢️The Next Few Hours Are Critical: No subtitle files were downloaded
+    - ⚠️ "This Market Is Easy"...: No subtitle files were downloaded
 
 ================================================================================

@@ -183,38 +183,33 @@ class ChannelMonitor:
             os.makedirs(subtitles_dir, exist_ok=True)
             os.makedirs(transcripts_dir, exist_ok=True)
 
-            print(f"\n{'='*80}")
-            print(f"Processing Channel: {channel_name}")
-            print(f"URL: {channel_url}")
-            print(f"Looking back: {days_back} days")
-            print(f"{'='*80}\n")
-
             # Step 1: Get all videos from channel
-            print("Step 1: Fetching videos from channel...")
+            print(f"  → Fetching video list...")
             all_videos = self.lister.get_channel_videos(channel_url, max_results=50)
 
             # Step 2: Filter for recent videos
-            print(f"Step 2: Filtering for videos from last {days_back} days...")
             recent_videos = self.filter_recent_videos(all_videos, days_back)
             result['videos_found'] = len(recent_videos)
 
             if not recent_videos:
-                print(f"No videos found in the last {days_back} days.")
+                print(f"  ✓ No new videos in last {days_back} days")
                 result['success'] = True
                 return result
 
-            print(f"Found {len(recent_videos)} recent video(s)\n")
+            print(f"  → Found {len(recent_videos)} video(s) to process")
 
             # Step 3: Process each video
             for i, video in enumerate(recent_videos, 1):
-                print(f"\n[{i}/{len(recent_videos)}] Processing: {video['title']}")
-                print(f"Published: {video['published_date']}")
+                video_pct = int(i / len(recent_videos) * 100)
+                video_title = video['title'][:50] + ('...' if len(video['title']) > 50 else '')
 
                 # Check if transcript already exists
                 if self.check_transcript_exists(video, transcripts_dir):
-                    print(f"  ⏭  Transcript already exists, skipping...")
+                    print(f"  [{video_pct:3d}%] {i}/{len(recent_videos)} ⊘ Skipped: {video_title}")
                     result['videos_skipped'] += 1
                     continue
+
+                print(f"  [{video_pct:3d}%] {i}/{len(recent_videos)} ⟳ Processing: {video_title}")
 
                 try:
                     # Download subtitles
@@ -227,7 +222,7 @@ class ChannelMonitor:
 
                     if not download_result['success']:
                         error_msg = f"Failed to download subtitles: {download_result.get('error', 'Unknown error')}"
-                        print(f"  ✗ {error_msg}")
+                        print(f"       ✗ Error: {error_msg[:60]}")
                         result['errors'].append({
                             'video': video['title'],
                             'error': error_msg
@@ -236,14 +231,12 @@ class ChannelMonitor:
 
                     if not download_result['files']:
                         error_msg = "No subtitle files were downloaded"
-                        print(f"  ✗ {error_msg}")
+                        print(f"       ✗ Error: {error_msg}")
                         result['errors'].append({
                             'video': video['title'],
                             'error': error_msg
                         })
                         continue
-
-                    print(f"  ✓ Downloaded subtitles")
 
                     # Convert subtitle to text
                     subtitle_file = download_result['files'][0]
@@ -253,22 +246,20 @@ class ChannelMonitor:
                         detect_speakers=False
                     )
 
-                    print(f"  ✓ Converted to text ({len(transcript_text)} characters)")
-
                     # Create annotated transcript
                     safe_title = self.sanitize_filename(video['title'])
                     transcript_filename = f"{video['published_date'][:10]}_{safe_title}.md"
                     transcript_path = os.path.join(transcripts_dir, transcript_filename)
 
                     self.create_annotated_transcript(video, transcript_text, transcript_path)
-                    print(f"  ✓ Created transcript: {transcript_filename}")
 
                     result['transcripts_created'].append(transcript_path)
                     result['videos_processed'] += 1
+                    print(f"       ✓ Transcript created")
 
                 except Exception as e:
                     error_msg = str(e)
-                    print(f"  ✗ Error: {error_msg}")
+                    print(f"       ✗ Error: {error_msg[:60]}")
                     result['errors'].append({
                         'video': video['title'],
                         'error': error_msg
@@ -276,11 +267,21 @@ class ChannelMonitor:
 
             result['success'] = True
 
+            # Channel completion summary
+            print(f"\n  ✓ Channel complete:")
+            print(f"    Videos found: {result['videos_found']}")
+            print(f"    Videos skipped: {result['videos_skipped']}")
+            print(f"    Videos processed: {result['videos_processed']}")
+            print(f"    Transcripts created: {len(result['transcripts_created'])}")
+            if result['errors']:
+                print(f"    Errors: {len(result['errors'])}")
+
         except Exception as e:
             result['errors'].append({
                 'video': 'channel_processing',
                 'error': str(e)
             })
+            print(f"\n  ✗ Channel failed: {str(e)}")
 
         return result
 
