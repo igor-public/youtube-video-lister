@@ -94,6 +94,41 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
     onStartSummary(channel, filename, transcript, false);
   };
 
+  const handleDelete = async (channel, filename, title, e) => {
+    e.stopPropagation();
+
+    if (!window.confirm(`Delete transcript: "${title}"?\n\nThis will remove the transcript file, associated subtitles, and metadata. This action cannot be undone.`)) {
+      return;
+    }
+
+    try {
+      const encodedChannel = encodeURIComponent(channel);
+      const encodedFilename = encodeURIComponent(filename);
+
+      const response = await fetch(
+        `${API_BASE}/transcript/${encodedChannel}/${encodedFilename}`,
+        { method: 'DELETE' }
+      );
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        showStatus(`Transcript deleted: ${title}`, 'success');
+        refreshTree(); // Refresh tree to remove deleted item
+
+        // If this was the selected transcript, clear the view
+        if (selectedTranscript && selectedTranscript.channel === channel && selectedTranscript.filename === filename) {
+          // Clear by loading an empty state - you might need to add a clearTranscript function in App.js
+        }
+      } else {
+        showStatus(data.detail || 'Failed to delete transcript', 'error');
+      }
+    } catch (error) {
+      console.error('Error deleting transcript:', error);
+      showStatus('Error deleting transcript', 'error');
+    }
+  };
+
   // Tree is already sorted by backend based on sortOrder
   const sortedTree = tree;
 
@@ -207,6 +242,13 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
                             ↻
                           </button>
                         )}
+                        <button
+                          className="btn btn-delete btn-small"
+                          onClick={(e) => handleDelete(channel.channel, transcript.filename, transcript.title, e)}
+                          title="Delete transcript"
+                        >
+                          ✕
+                        </button>
                       </div>
                     </div>
                   );

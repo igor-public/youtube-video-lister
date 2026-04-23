@@ -4,30 +4,58 @@ PROCESSING SUMMARY
 ================================================================================
 
 Channels processed: 5
-Videos found: 28
-Videos skipped (already processed): 15
-Videos processed: 6
-Transcripts created: 6
-Errors: 11
+Videos found: 113
+Videos skipped (already processed): 81
+Videos processed: 3
+Transcripts created: 3
+Errors: 29
 
 
-✗ CoinBureauTrading
-  Failed: Unable to find the server at youtube.googleapis.com
+✓ CoinBureauTrading
+  Videos found: 13
+  Videos skipped: 7
+  Videos processed: 1
+  Transcripts: 1
+  Errors: 5
+    - Episode 3: The Master Indicator Just Flashed THIS… (Don’t Ignore It): Failed to download subtitles: ERROR: [youtube] BQY
+    - Bitcoin Keeps Pumping…But Something Doesn't Add Up | LIVE: No subtitle files were downloaded
+    - Bitcoin Crash Incoming? The Warning Signs Are Here: No subtitle files were downloaded
 
-✗ DataDash
-  Failed: Unable to find the server at youtube.googleapis.com
+✓ DataDash
+  Videos found: 8
+  Videos skipped: 4
+  Videos processed: 1
+  Transcripts: 1
+  Errors: 3
+    - 🚨Bitcoin Is About to Shock Everyone 🚨 $100K Move Coming?: No subtitle files were downloaded
+    - XRP's Next Move: Price Structure & the Regulatory Catalyst: No subtitle files were downloaded
+    - Bitcoin Rally Fading? This Key Level Decides What Happens Next: No subtitle files were downloaded
 
-✗ DwarkeshPatel
-  Failed: Unable to find the server at youtube.googleapis.com
+✓ DwarkeshPatel
+  Videos found: 50
+  Videos skipped: 46
+  Videos processed: 1
+  Transcripts: 1
+  Errors: 3
+    - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
+    - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
+    - The Truth Behind Machiavelli's "The Prince" - Ada Palmer: No subtitle files were downloaded
 
-✗ CoinBureau
-  Failed: Unable to find the server at youtube.googleapis.com
+✓ CoinBureau
+  Videos found: 14
+  Videos skipped: 3
+  Videos processed: 0
+  Transcripts: 0
+  Errors: 11
+    - World Liberty EXPOSED: The Trump DeFi 'Backdoor' Scandal: No subtitle files were downloaded
+    - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
+    - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
 
 ✓ BitcoinStrategy
   Videos found: 28
-  Videos skipped: 15
-  Videos processed: 6
-  Transcripts: 6
+  Videos skipped: 21
+  Videos processed: 0
+  Transcripts: 0
   Errors: 7
     - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded
     - Will Crypto Freak Out? ☢️The Next Few Hours Are Critical: No subtitle files were downloaded

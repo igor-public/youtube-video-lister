@@ -1040,6 +1040,23 @@ header h1 {
     background: #ffe0b2;
 }
 
+.btn-delete {
+    background: #fce8e6;
+    color: #d93025;
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid #f8bbd0;
+    font-weight: bold;
+    line-height: 1;
+    flex: 0 0 auto;
+    min-width: 24px;
+}
+
+.btn-delete:hover {
+    background: #f8bbd0;
+}
+
 .btn-refresh {
     padding: 6px 12px;
     font-size: 13px;

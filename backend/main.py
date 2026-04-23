@@ -152,6 +152,14 @@ class TranscriptResponse(BaseModel):
     size: int
 
 
+class DeleteTranscriptResponse(BaseModel):
+    """Delete transcript response"""
+    success: bool
+    message: str
+    deleted_files: List[str] = Field(..., description="List of deleted file names")
+    errors: Optional[List[str]] = Field(None, description="List of errors if any occurred")
+
+
 class MonitorResponse(BaseModel):
     """Monitoring operation response"""
     success: bool
@@ -427,6 +435,74 @@ async def get_transcript(channel: str, filename: str):
         "channel": channel,
         "size": len(content)
     }
+
+
+@app.delete("/api/transcript/{channel}/{filename}", tags=["Transcripts"], response_model=DeleteTranscriptResponse)
+async def delete_transcript(channel: str, filename: str):
+    """
+    Delete a transcript and its associated files (subtitle, metadata)
+
+    This will remove:
+    - The transcript markdown file
+    - The associated subtitle file (if exists)
+    - The metadata entry
+    """
+    config = await load_config()
+    output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
+
+    # Convert relative path to absolute (relative to project root)
+    if not os.path.isabs(output_dir):
+        output_dir = str(PROJECT_ROOT / output_dir)
+
+    channel_dir = Path(output_dir) / channel
+    transcript_path = channel_dir / "transcripts" / filename
+
+    if not transcript_path.exists():
+        raise HTTPException(status_code=404, detail="Transcript not found")
+
+    # Security: prevent path traversal
+    try:
+        transcript_path.resolve().relative_to(Path(output_dir).resolve())
+    except ValueError:
+        raise HTTPException(status_code=403, detail="Access denied")
+
+    deleted_files = []
+    errors = []
+
+    try:
+        # Delete transcript file
+        transcript_path.unlink()
+        deleted_files.append(str(transcript_path.name))
+
+        # Try to find and delete associated subtitle file
+        # Subtitle filename format: "Video Title.en.srt" (without date prefix)
+        # Extract title from transcript filename: "YYYY-MM-DD_Title.md"
+        transcript_title = filename.replace('.md', '').split('_', 1)
+        if len(transcript_title) == 2:
+            title_part = transcript_title[1].replace('_', ' ')
+
+            subtitles_dir = channel_dir / "subtitles"
+            if subtitles_dir.exists():
+                # Look for subtitle files with similar name
+                for subtitle_file in subtitles_dir.glob(f"{title_part}*.srt"):
+                    try:
+                        subtitle_file.unlink()
+                        deleted_files.append(str(subtitle_file.name))
+                    except Exception as e:
+                        errors.append(f"Failed to delete subtitle {subtitle_file.name}: {str(e)}")
+
+        # Delete metadata
+        metadata_store.delete(channel, filename)
+
+        return {
+            "success": True,
+            "message": f"Transcript deleted successfully",
+            "deleted_files": deleted_files,
+            "errors": errors if errors else None
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to delete transcript: {str(e)}")
 
 
 @app.post("/api/channels", tags=["Channels"])
