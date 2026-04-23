@@ -156,7 +156,6 @@ header h1 {
     background: transparent;
     border-radius: 0 24px 24px 0;
     margin-right: 8px;
-    cursor: pointer;
     user-select: none;
     transition: background 0.15s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
@@ -174,6 +173,7 @@ header h1 {
     font-weight: 500;
     font-size: 14px;
     color: #202124;
+    cursor: pointer;
 }
 
 .tree-channel-count {
@@ -183,6 +183,25 @@ header h1 {
     padding: 2px 8px;
     border-radius: 12px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-channel-delete {
+    background: transparent;
+    border: none;
+    color: #d93025;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: all 0.15s;
+    line-height: 1;
+    margin-left: 4px;
+}
+
+.btn-channel-delete:hover {
+    background: #fce8e6;
+    color: #c5221f;
 }
 
 .unread-badge {

@@ -160,6 +160,15 @@ class DeleteTranscriptResponse(BaseModel):
     errors: Optional[List[str]] = Field(None, description="List of errors if any occurred")
 
 
+class DeleteChannelResponse(BaseModel):
+    """Delete channel response"""
+    success: bool
+    message: str
+    deleted_count: int = Field(..., description="Number of transcripts deleted")
+    channel: str = Field(..., description="Channel name")
+    errors: Optional[List[str]] = Field(None, description="List of errors if any occurred")
+
+
 class MonitorResponse(BaseModel):
     """Monitoring operation response"""
     success: bool
@@ -503,6 +512,70 @@ async def delete_transcript(channel: str, filename: str):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to delete transcript: {str(e)}")
+
+
+@app.delete("/api/channel/{channel}", tags=["Channels"], response_model=DeleteChannelResponse)
+async def delete_channel_data(channel: str):
+    """
+    Delete all data for a channel (transcripts, subtitles, metadata)
+
+    This will remove the entire channel directory including:
+    - All transcript files
+    - All subtitle files
+    - All metadata entries for this channel
+
+    Note: This does not remove the channel from the monitoring configuration.
+    """
+    import shutil
+
+    config = await load_config()
+    output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
+
+    # Convert relative path to absolute (relative to project root)
+    if not os.path.isabs(output_dir):
+        output_dir = str(PROJECT_ROOT / output_dir)
+
+    channel_dir = Path(output_dir) / channel
+
+    if not channel_dir.exists():
+        raise HTTPException(status_code=404, detail="Channel data not found")
+
+    # Security: prevent path traversal
+    try:
+        channel_dir.resolve().relative_to(Path(output_dir).resolve())
+    except ValueError:
+        raise HTTPException(status_code=403, detail="Access denied")
+
+    errors = []
+    deleted_count = 0
+
+    try:
+        # Count transcripts before deletion
+        transcripts_dir = channel_dir / "transcripts"
+        if transcripts_dir.exists():
+            deleted_count = len(list(transcripts_dir.glob("*.md")))
+
+        # Delete all metadata entries for this channel
+        all_metadata = metadata_store.get_all_for_channel(channel)
+        for metadata in all_metadata:
+            try:
+                metadata_store.delete(channel, metadata.filename)
+            except Exception as e:
+                errors.append(f"Failed to delete metadata for {metadata.filename}: {str(e)}")
+
+        # Delete entire channel directory
+        shutil.rmtree(channel_dir)
+
+        return {
+            "success": True,
+            "message": f"Channel data deleted successfully",
+            "deleted_count": deleted_count,
+            "channel": channel,
+            "errors": errors if errors else None
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to delete channel data: {str(e)}")
 
 
 @app.post("/api/channels", tags=["Channels"])

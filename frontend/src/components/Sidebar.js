@@ -94,38 +94,39 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
     onStartSummary(channel, filename, transcript, false);
   };
 
-  const handleDelete = async (channel, filename, title, e) => {
+  const handleDeleteChannel = async (channelName, e) => {
     e.stopPropagation();
 
-    if (!window.confirm(`Delete transcript: "${title}"?\n\nThis will remove the transcript file, associated subtitles, and metadata. This action cannot be undone.`)) {
+    const transcriptCount = sortedTree.find(ch => ch.channel === channelName)?.transcript_count || 0;
+
+    if (!window.confirm(`Delete all data for channel "${channelName}"?\n\nThis will remove ${transcriptCount} transcript(s), all subtitles, and metadata for this channel. This action cannot be undone.`)) {
       return;
     }
 
     try {
-      const encodedChannel = encodeURIComponent(channel);
-      const encodedFilename = encodeURIComponent(filename);
+      const encodedChannel = encodeURIComponent(channelName);
 
       const response = await fetch(
-        `${API_BASE}/transcript/${encodedChannel}/${encodedFilename}`,
+        `${API_BASE}/channel/${encodedChannel}`,
         { method: 'DELETE' }
       );
 
       const data = await response.json();
 
       if (response.ok && data.success) {
-        showStatus(`Transcript deleted: ${title}`, 'success');
-        refreshTree(); // Refresh tree to remove deleted item
+        showStatus(`Channel deleted: ${channelName} (${data.deleted_count} transcripts)`, 'success');
+        refreshTree(); // Refresh tree to remove deleted channel
 
-        // If this was the selected transcript, clear the view
-        if (selectedTranscript && selectedTranscript.channel === channel && selectedTranscript.filename === filename) {
-          // Clear by loading an empty state - you might need to add a clearTranscript function in App.js
+        // If a transcript from this channel was selected, clear the view
+        if (selectedTranscript && selectedTranscript.channel === channelName) {
+          // Clear selection - parent component should handle this
         }
       } else {
-        showStatus(data.detail || 'Failed to delete transcript', 'error');
+        showStatus(data.detail || 'Failed to delete channel', 'error');
       }
     } catch (error) {
-      console.error('Error deleting transcript:', error);
-      showStatus('Error deleting transcript', 'error');
+      console.error('Error deleting channel:', error);
+      showStatus('Error deleting channel', 'error');
     }
   };
 
@@ -177,14 +178,36 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
             <div key={channel.channel} className="tree-channel">
               <div
                 className={`tree-channel-header ${isExpanded ? 'active' : ''}`}
-                onClick={() => toggleChannel(channelId)}
               >
-                <span className="tree-channel-name">{channel.channel}</span>
+                <span
+                  className="tree-channel-name"
+                  onClick={() => toggleChannel(channelId)}
+                >
+                  {channel.channel}
+                </span>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  <span className="tree-channel-count">{channel.transcript_count}</span>
+                  <span
+                    className="tree-channel-count"
+                    onClick={() => toggleChannel(channelId)}
+                  >
+                    {channel.transcript_count}
+                  </span>
                   {unreadCount > 0 && (
-                    <span className="unread-badge" title={`${unreadCount} unread`}>{unreadCount}</span>
+                    <span
+                      className="unread-badge"
+                      title={`${unreadCount} unread`}
+                      onClick={() => toggleChannel(channelId)}
+                    >
+                      {unreadCount}
+                    </span>
                   )}
+                  <button
+                    className="btn-channel-delete"
+                    onClick={(e) => handleDeleteChannel(channel.channel, e)}
+                    title="Delete all channel data"
+                  >
+                    ✕
+                  </button>
                 </div>
               </div>
 
@@ -242,13 +265,6 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
                             ↻
                           </button>
                         )}
-                        <button
-                          className="btn btn-delete btn-small"
-                          onClick={(e) => handleDelete(channel.channel, transcript.filename, transcript.title, e)}
-                          title="Delete transcript"
-                        >
-                          ✕
-                        </button>
                       </div>
                     </div>
                   );
