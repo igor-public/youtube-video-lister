@@ -5,17 +5,17 @@ PROCESSING SUMMARY
 
 Channels processed: 5
 Videos found: 119
-Videos skipped (already processed): 82
-Videos processed: 13
-Transcripts created: 13
-Errors: 24
+Videos skipped (already processed): 96
+Videos processed: 0
+Transcripts created: 0
+Errors: 23
 
 
 ✓ CoinBureauTrading
   Videos found: 14
-  Videos skipped: 7
-  Videos processed: 2
-  Transcripts: 2
+  Videos skipped: 9
+  Videos processed: 0
+  Transcripts: 0
   Errors: 5
     - Episode 3: The Master Indicator Just Flashed THIS… (Don’t Ignore It): No subtitle files were downloaded
     - Bitcoin Keeps Pumping…But Something Doesn't Add Up | LIVE: No subtitle files were downloaded
@@ -23,27 +23,26 @@ Errors: 24
 
 ✓ DataDash
   Videos found: 7
-  Videos skipped: 5
-  Videos processed: 1
-  Transcripts: 1
+  Videos skipped: 6
+  Videos processed: 0
+  Transcripts: 0
   Errors: 1
     - 🚨Bitcoin Is About to Shock Everyone 🚨 $100K Move Coming?: No subtitle files were downloaded
 
 ✓ DwarkeshPatel
   Videos found: 50
-  Videos skipped: 46
-  Videos processed: 1
-  Transcripts: 1
-  Errors: 3
+  Videos skipped: 48
+  Videos processed: 0
+  Transcripts: 0
+  Errors: 2
     - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
     - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
-    - The Truth Behind Machiavelli's "The Prince" - Ada Palmer: No subtitle files were downloaded
 
 ✓ CoinBureau
   Videos found: 14
-  Videos skipped: 3
-  Videos processed: 3
-  Transcripts: 3
+  Videos skipped: 6
+  Videos processed: 0
+  Transcripts: 0
   Errors: 8
     - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
     - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
@@ -51,9 +50,9 @@ Errors: 24
 
 ✓ BitcoinStrategy
   Videos found: 34
-  Videos skipped: 21
-  Videos processed: 6
-  Transcripts: 6
+  Videos skipped: 27
+  Videos processed: 0
+  Transcripts: 0
   Errors: 7
     - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
     - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded

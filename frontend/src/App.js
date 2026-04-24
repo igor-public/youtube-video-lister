@@ -328,6 +328,16 @@ function App() {
           isStreamingSummary={isStreamingSummary}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
+          onRegenerateSummary={() => {
+            if (selectedTranscript) {
+              handleStartSummary(
+                selectedTranscript.channel,
+                selectedTranscript.filename,
+                selectedTranscript,
+                true // isRegenerate = true
+              );
+            }
+          }}
         />
 
         <aside ref={controlsRef} className="controls-panel">

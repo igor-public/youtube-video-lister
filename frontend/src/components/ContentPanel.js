@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryKeywords, isStreamingSummary, activeTab, setActiveTab }) {
+function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryKeywords, isStreamingSummary, activeTab, setActiveTab, onRegenerateSummary }) {
   const summaryContentRef = useRef(null);
 
   // Auto-scroll summary as it streams
@@ -128,11 +128,47 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
         {activeTab === 'summary' && (
           <div className="tab-panel">
             <div className="summary-view" ref={summaryContentRef}>
-              {summaryKeywords && summaryKeywords.length > 0 && (
-                <div className="summary-keywords">
-                  <strong>Focus Keywords:</strong> {summaryKeywords.join(', ')}
-                </div>
-              )}
+              {/* Header with keywords and regenerate button */}
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginBottom: '12px',
+                flexWrap: 'wrap',
+                gap: '8px'
+              }}>
+                {summaryKeywords && summaryKeywords.length > 0 && (
+                  <div className="summary-keywords" style={{ flex: '1', minWidth: '200px' }}>
+                    <strong>Focus Keywords:</strong> {summaryKeywords.join(', ')}
+                  </div>
+                )}
+
+                {hasSummary && !isStreamingSummary && onRegenerateSummary && (
+                  <button
+                    onClick={onRegenerateSummary}
+                    style={{
+                      padding: '6px 12px',
+                      backgroundColor: '#1a73e8',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '4px',
+                      cursor: 'pointer',
+                      fontSize: '13px',
+                      fontWeight: '500',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      transition: 'background-color 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.target.style.backgroundColor = '#1557b0'}
+                    onMouseLeave={(e) => e.target.style.backgroundColor = '#1a73e8'}
+                    title="Regenerate summary with current keywords"
+                  >
+                    <span style={{ fontSize: '16px' }}>↻</span>
+                    Regenerate
+                  </button>
+                )}
+              </div>
 
               {/* DEBUG: Show streaming status */}
               {isStreamingSummary && (

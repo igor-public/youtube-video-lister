@@ -581,9 +581,9 @@
     "video_url": null,
     "keywords": null,
     "keywords_extracted_at": null,
-    "summary": null,
-    "summary_generated_at": null,
-    "summary_model": null,
+    "summary": "**Overview:** Ada Palmer explains Francis Bacon's metaphor of three types of thinkers—the ant, the spider, and the honeybee—and how this framework helped inspire the founding of the English Academy of Sciences and a shift in how intellectual achievement was valued.\n\n**Key Points:**\n• **The Ant (Encyclopedist):** Gathers vast amounts of information and piles it up, like building a library, but merely assembles knowledge without producing anything new from it.\n• **The Spider (System Weaver):** Spins elaborate, beautiful, and intricate logical theories that can be mesmerizing, but these webs are spun entirely from within and lack grounding in the external world.\n• **The Honeybee (Scientist):** Gathers from nature and processes what is collected through one's own being to produce something \"sweet and useful for humankind\"—Bacon's ideal thinker.\n• Bacon championed the honeybee as the model for the scientist, combining empirical gathering with meaningful transformation of knowledge.\n• This metaphor served as a rhetorical call to action that helped inspire the founding of the English Academy of Sciences.\n• The Academy adopted Bacon's vision and began publishing scientific work for the benefit of all.\n• Bacon's framework marked a cultural shift in how great achievement was defined—from building impressive things to discovering and sharing how things work.\n• The emphasis moved from personal monumental accomplishments to the communal sharing of useful knowledge with humankind.",
+    "summary_generated_at": "2026-04-25T00:24:23.505501",
+    "summary_model": "bedrock:eu.anthropic.claude-opus-4-6-v1",
     "size_bytes": 1490,
     "last_modified": "2026-04-20T09:44:51.797496"
   },
@@ -875,9 +875,9 @@
     "video_url": null,
     "keywords": null,
     "keywords_extracted_at": null,
-    "summary": null,
-    "summary_generated_at": null,
-    "summary_model": null,
+    "summary": "**Overview:** The video analyzes Bitcoin's price action as it tests a long-term overhead resistance line, discussing potential upside targets (particularly an $81,145 CME gap fill) while maintaining an overall bearish outlook based on the four-year cycle bottom-year thesis.\n\n**Key Points:**\n\n• Bitcoin has pierced and is testing a long-term logarithmic resistance line established from the October 2025 all-time high and January 2026 pivot high, and a confirmed breakout above it would likely target the CME gap at $81,145 (~7% upside).\n\n• The presenter remains bearish overall, believing this is a bear market bottom year (following the 2014, 2018, 2022 cycle pattern), with potential downside targets of $49,000 or even $38,555.\n\n• RSI (length 7) already flipped overbought on Friday at 77.3, then quickly gave back gains, with Monday's bounce only reaching 61.67 on RSI—signaling underlying weakness.\n\n• A daily close above $76,600 would undermine the bearish thesis and likely push BTC toward the $81K CME gap fill.\n\n• Bears want to see BTC fail to make a higher high and instead break below the $73,390 support level from last Thursday's low to build downside momentum.\n\n• The presenter's proprietary \"support fan\" analysis shows Bitcoin already broke below its first incremental support level, suggesting further downside is more probable.\n\n• The US Dollar Index (DXY) is short-term oversold with a bullish RSI reset, and a potential move higher could pressure equities and crypto downward.\n\n• The S&P 500 has three unfilled gaps below, is massively overbought over an 18-day rally, and is vulnerable to a pullback if the DXY strengthens.\n\n• A rising DXY could push USD/JPY toward the dangerous 161 level, potentially triggering Bank of Japan intervention (selling US bonds) similar to the June-August 2024 episode that caused BTC to crash to $49,000.\n\n• The presenter is currently short Bitcoin and Ethereum, viewing the risk-reward as more favorable for shorts given the macro backdrop, while cautioning traders not to get greedy on the long side.",
+    "summary_generated_at": "2026-04-25T00:50:11.722546",
+    "summary_model": "bedrock:eu.anthropic.claude-opus-4-6-v1",
     "size_bytes": 15311,
     "last_modified": "2026-04-21T10:36:43.589822"
   },
@@ -1288,9 +1288,9 @@
     "video_url": null,
     "keywords": null,
     "keywords_extracted_at": null,
-    "summary": null,
-    "summary_generated_at": null,
-    "summary_model": null,
+    "summary": "**Overview:** Jensen Huang explains why Nvidia initially passed on investing in Anthropic, describing it as a missed opportunity he deeply regrets, and discusses how the unique capital needs of AI labs differed from traditional VC-funded startups.\n\n**Key Points:**\n\n• Nvidia was not in a position to make the multi-billion dollar investment Anthropic needed at the time.\n• Google and AWS stepped in with massive early investments in exchange for Anthropic using their compute infrastructure.\n• Huang's key mistake was not recognizing that Anthropic had no viable alternative funding path — traditional VCs would never commit $5–10 billion to an AI lab on speculation.\n• At the time, Nvidia had never made major external investments and didn't realize it needed to.\n• Huang assumed Anthropic could simply raise from VCs \"like all companies do,\" but their capital requirements were fundamentally different.\n• He credits Anthropic's leadership as \"genius\" for recognizing and navigating their unique funding situation by partnering with cloud providers.\n• Huang has since corrected course, investing in OpenAI and later in Anthropic when the opportunity arose again.\n• He expresses he would have invested earlier if he could have.\n• Despite losing the initial opportunity, Huang says he's still happy Anthropic found the support it needed elsewhere.\n• The interviewer notes that even with Nvidia's record-breaking financial performance, it's still valid to have regrets about missed opportunities.",
+    "summary_generated_at": "2026-04-25T00:03:58.678096",
+    "summary_model": "bedrock:eu.anthropic.claude-opus-4-6-v1",
     "size_bytes": 1698,
     "last_modified": "2026-04-23T09:20:27.362747"
   },
@@ -1432,6 +1432,34 @@
     "summary_generated_at": "2026-04-24T23:47:52.532542",
     "summary_model": "bedrock:eu.anthropic.claude-opus-4-6-v1",
     "size_bytes": 1115,
+    "last_modified": null
+  },
+  "CoinBureauTrading:2026-04-24_Bitcoin_LITERALLY_REPEATING_2022_HERE.md": {
+    "channel": "CoinBureauTrading",
+    "filename": "2026-04-24_Bitcoin_LITERALLY_REPEATING_2022_HERE.md",
+    "title": "Bitcoin LITERALLY REPEATING 2022 HERE",
+    "date": "2026-04-24",
+    "video_url": null,
+    "keywords": null,
+    "keywords_extracted_at": null,
+    "summary": "**Overview:** Aaron Disher argues that Bitcoin's current rally is likely a temporary pivot high before a significant drop, drawing a detailed parallel to the March 2022 bear market rally that preceded a massive sell-off.\n\n**Key Points:**\n• Bitcoin rose 22% from March 29 to April 23, but multiple technical indicators suggest this uptrend is weakening and likely to reverse.\n• A support fan analysis shows BTC is clinging to increasingly vertical support lines that are already being pierced, suggesting an imminent breakdown.\n• A drop of just 4.7–6% would break key pivot lows and trigger fear, panic, and further downside momentum.\n• RSI shows bearish divergence — price made a higher high while RSI made a lower high — a classic sign of weakening momentum.\n• Volume is declining (30 SMA trending down) even as price rises, indicating the rally lacks genuine buying conviction.\n• An unfilled CME gap at ~$81,210 remains the nearest upside target, but the risk-to-reward ratio for longs is poor compared to short positions.\n• The TBO (Trending Breakout) indicator shows BTC piercing the top of a bearish cloud — the exact same pattern that occurred in March 2022 before a prolonged dump.\n• The current decline from BTC's high of ~$126,200 to its low is approximately 52%, matching the 52% drop from $69K before the 2022 bear market rally and subsequent collapse.\n• Disher's downside targets include $73K, $68K, and potentially as low as $49K or even $38,555 if the 2022 playbook repeats.\n• He warns permabulls to be skeptical of \"super cycle\" narratives, noting that identical euphoric sentiment preceded devastating losses in both 2018 and 2022.",
+    "summary_generated_at": "2026-04-25T00:43:39.312702",
+    "summary_model": "bedrock:eu.anthropic.claude-opus-4-6-v1",
+    "size_bytes": 14755,
+    "last_modified": null
+  },
+  "CoinBureauTrading:2026-04-23_RISK_TO_REWARD_RATIO_EXPLAINED_(FULL_TRADING_GUIDE).md": {
+    "channel": "CoinBureauTrading",
+    "filename": "2026-04-23_RISK_TO_REWARD_RATIO_EXPLAINED_(FULL_TRADING_GUIDE).md",
+    "title": "RISK TO REWARD RATIO EXPLAINED (FULL TRADING GUIDE)",
+    "date": "2026-04-23",
+    "video_url": null,
+    "keywords": null,
+    "keywords_extracted_at": null,
+    "summary": "**Overview:** This video by Jordan from Coin Bureau explains the risk-to-reward ratio concept in trading, demonstrating why it is more important than win rate and how to apply it practically in crypto trading for consistent profitability.\n\n**Key Points:**\n• **Risk-to-reward ratio defined:** It is your potential loss divided by your potential gain (e.g., risking $100 to make $300 = 1:3 ratio).\n• **Risk-to-reward matters more than win rate:** A trader with a 40% win rate using a 1:3 ratio can be more profitable than a trader with a 70% win rate using a 1:1 ratio.\n• **Practical example:** A Bitcoin 4-hour parallel channel breakdown-retest trade is used to demonstrate how to identify entry, stop loss, and take profit levels that satisfy a minimum 1:3 risk-to-reward ratio.\n• **Stop loss placement:** Set your stop loss with a buffer above the last major swing high wick, as a break above that level could signal significant adverse price movement.\n• **Use position drawing tools:** The short/long position tool on charting platforms helps visually plan trades and verify the risk-to-reward ratio before entering.\n• **Take gradual profits:** Use tools like Fibonacci retracement to set multiple take-profit levels, and leave a small portion of the position running with a trailing stop for extended moves.\n• **Require confluence:** Always seek 3-5 levels of confluence (market structure, RSI, Stochastic RSI, order blocks, etc.) before entering any trade.\n• **Common beginner mistakes:** Moving stop losses emotionally, taking profits too early, ignoring risk-to-reward entirely, and overtrading low-quality setups.\n• **Position sizing integration:** Tie risk-to-reward into position sizing by ensuring each trade risks only 1-3% of your total account at the stop loss level.\n• **Discipline is essential:** Planning a trade with proper risk-to-reward is meaningless without the discipline to follow through and trade the plan without emotional interference.",
+    "summary_generated_at": "2026-04-25T00:49:39.879307",
+    "summary_model": "bedrock:eu.anthropic.claude-opus-4-6-v1",
+    "size_bytes": 10325,
     "last_modified": null
   }
 }
