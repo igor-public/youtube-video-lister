@@ -4,32 +4,30 @@ PROCESSING SUMMARY
 ================================================================================
 
 Channels processed: 5
-Videos found: 113
-Videos skipped (already processed): 81
-Videos processed: 3
-Transcripts created: 3
-Errors: 29
+Videos found: 119
+Videos skipped (already processed): 82
+Videos processed: 13
+Transcripts created: 13
+Errors: 24
 
 
 ✓ CoinBureauTrading
-  Videos found: 13
+  Videos found: 14
   Videos skipped: 7
-  Videos processed: 1
-  Transcripts: 1
+  Videos processed: 2
+  Transcripts: 2
   Errors: 5
-    - Episode 3: The Master Indicator Just Flashed THIS… (Don’t Ignore It): Failed to download subtitles: ERROR: [youtube] BQY
+    - Episode 3: The Master Indicator Just Flashed THIS… (Don’t Ignore It): No subtitle files were downloaded
     - Bitcoin Keeps Pumping…But Something Doesn't Add Up | LIVE: No subtitle files were downloaded
     - Bitcoin Crash Incoming? The Warning Signs Are Here: No subtitle files were downloaded
 
 ✓ DataDash
-  Videos found: 8
-  Videos skipped: 4
+  Videos found: 7
+  Videos skipped: 5
   Videos processed: 1
   Transcripts: 1
-  Errors: 3
+  Errors: 1
     - 🚨Bitcoin Is About to Shock Everyone 🚨 $100K Move Coming?: No subtitle files were downloaded
-    - XRP's Next Move: Price Structure & the Regulatory Catalyst: No subtitle files were downloaded
-    - Bitcoin Rally Fading? This Key Level Decides What Happens Next: No subtitle files were downloaded
 
 ✓ DwarkeshPatel
   Videos found: 50
@@ -44,21 +42,21 @@ Errors: 29
 ✓ CoinBureau
   Videos found: 14
   Videos skipped: 3
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 11
-    - World Liberty EXPOSED: The Trump DeFi 'Backdoor' Scandal: No subtitle files were downloaded
+  Videos processed: 3
+  Transcripts: 3
+  Errors: 8
     - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
     - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
+    - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
 
 ✓ BitcoinStrategy
-  Videos found: 28
+  Videos found: 34
   Videos skipped: 21
-  Videos processed: 0
-  Transcripts: 0
+  Videos processed: 6
+  Transcripts: 6
   Errors: 7
+    - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
     - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded
     - Will Crypto Freak Out? ☢️The Next Few Hours Are Critical: No subtitle files were downloaded
-    - ⚠️ "This Market Is Easy"...: No subtitle files were downloaded
 
 ================================================================================

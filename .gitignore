@@ -38,7 +38,12 @@ config.json
 # Log files
 *.log
 /tmp/
+logs/
 
 # Downloaded channel data
 channel_data/
+
+# Vanilla JS frontend (removed - using React only)
+static/
+templates/
 

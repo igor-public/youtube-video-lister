@@ -10,6 +10,9 @@ echo ""
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$SCRIPT_DIR"
 
+# Create logs directory
+mkdir -p logs
+
 # Activate virtual environment
 if [ -d "venv" ]; then
     source venv/bin/activate
@@ -43,7 +46,7 @@ fi
 echo ""
 echo "🚀 Starting FastAPI backend on port 5000..."
 cd backend
-uvicorn main:app --host 0.0.0.0 --port 5000 --reload &> /tmp/fastapi.log &
+uvicorn main:app --host 0.0.0.0 --port 5000 --reload --log-level debug 2>&1 | tee ../logs/uvicorn-all.log &
 BACKEND_PID=$!
 echo $BACKEND_PID > /tmp/fastapi.pid
 cd ..
@@ -55,7 +58,7 @@ sleep 3
 if curl -s http://localhost:5000/health > /dev/null; then
     echo "✓ Backend started successfully (PID: $BACKEND_PID)"
 else
-    echo "✗ Backend failed to start. Check /tmp/fastapi.log"
+    echo "✗ Backend failed to start. Check logs/uvicorn-all.log and logs/backend.log"
     exit 1
 fi
 
@@ -63,7 +66,7 @@ fi
 echo ""
 echo "🚀 Starting React frontend on port 3000..."
 cd "$SCRIPT_DIR/frontend"
-PORT=3000 npm start &> /tmp/react.log &
+PORT=3000 npm start 2>&1 | tee ../logs/react.log &
 FRONTEND_PID=$!
 echo $FRONTEND_PID > /tmp/react.pid
 cd "$SCRIPT_DIR"
@@ -78,9 +81,15 @@ echo "  ⚛️  React UI:          http://localhost:3000"
 echo "  📚 API Docs (Swagger): http://localhost:5000/api/docs"
 echo "  📖 API Docs (ReDoc):   http://localhost:5000/api/redoc"
 echo ""
-echo "  Backend PID:  $BACKEND_PID (logs: /tmp/fastapi.log)"
-echo "  Frontend PID: $FRONTEND_PID (logs: /tmp/react.log)"
+echo "  📋 Logs:"
+echo "     Application:  logs/backend.log"
+echo "     Uvicorn:      logs/uvicorn-all.log"
+echo "     React:        logs/react.log"
+echo ""
+echo "  Backend PID:  $BACKEND_PID"
+echo "  Frontend PID: $FRONTEND_PID"
 echo ""
 echo "  To stop all services, run: ./stop_all.sh"
+echo "  To view logs: tail -f logs/backend.log"
 echo ""
 echo "════════════════════════════════════════════════════════════"

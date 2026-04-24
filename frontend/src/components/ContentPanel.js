@@ -10,6 +10,13 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
     }
   }, [summary, isStreamingSummary]);
 
+  // DEBUG: Log when summary updates
+  useEffect(() => {
+    if (isStreamingSummary) {
+      console.log(`[ContentPanel] Summary updated: ${summary.length} chars`);
+    }
+  }, [summary, isStreamingSummary]);
+
   const markdownToHtml = (markdown) => {
     if (!markdown) return '';
 
@@ -124,6 +131,21 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
               {summaryKeywords && summaryKeywords.length > 0 && (
                 <div className="summary-keywords">
                   <strong>Focus Keywords:</strong> {summaryKeywords.join(', ')}
+                </div>
+              )}
+
+              {/* DEBUG: Show streaming status */}
+              {isStreamingSummary && (
+                <div style={{
+                  background: '#fff3e0',
+                  padding: '8px 12px',
+                  marginBottom: '12px',
+                  borderRadius: '4px',
+                  fontSize: '13px',
+                  fontWeight: 'bold',
+                  color: '#e65100'
+                }}>
+                  ⟳ Streaming... {summary.length} characters received
                 </div>
               )}
 

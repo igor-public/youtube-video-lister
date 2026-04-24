@@ -6,8 +6,7 @@ Modern REST API for YouTube channel monitoring and transcript management
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, FileResponse, StreamingResponse
-from fastapi.staticfiles import StaticFiles
+from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel, Field, validator
 from typing import List, Optional, Dict, Any
 import json
@@ -18,12 +17,29 @@ from datetime import datetime
 import subprocess
 import asyncio
 from enum import Enum
-from transcript_metadata import MetadataStore, TranscriptMetadata
+from .transcript_metadata import MetadataStore, TranscriptMetadata
+from .logging_config import setup_logging
+from .llm_client import create_llm_client
 
-# Set up logging
-logger = logging.getLogger("uvicorn.error")
-logger.setLevel(logging.INFO)
-from llm_client import create_llm_client
+# Get the project root directory
+PROJECT_ROOT = Path(__file__).parent.parent
+
+# Set up logging with file output
+log_dir = PROJECT_ROOT / "logs"
+log_dir.mkdir(exist_ok=True)
+
+# Configure logging with rotation
+logger = setup_logging(
+    log_level="DEBUG",
+    log_file=log_dir / "backend.log",
+    max_bytes=50 * 1024 * 1024,  # 50MB per file
+    backup_count=10  # Keep 10 backup files
+)
+
+logger.info("=" * 80)
+logger.info("YouTube Toolkit Backend Starting")
+logger.info(f"Log directory: {log_dir}")
+logger.info("=" * 80)
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -38,23 +54,13 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5000"],
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Mount static files for vanilla JS frontend
-static_path = Path(__file__).parent.parent / "static"
-templates_path = Path(__file__).parent.parent / "templates"
-
-if static_path.exists():
-    app.mount("/css", StaticFiles(directory=str(static_path / "css")), name="css")
-    app.mount("/js", StaticFiles(directory=str(static_path / "js")), name="js")
-
 # Configuration
-# Get the project root directory (parent of backend/)
-PROJECT_ROOT = Path(__file__).parent.parent
 CONFIG_FILE = os.getenv("CONFIG_FILE", str(PROJECT_ROOT / "channels_config.json"))
 OUTPUT_DIR = os.getenv("OUTPUT_DIR", str(PROJECT_ROOT / "channel_data"))
 METADATA_DB = os.getenv("METADATA_DB", str(PROJECT_ROOT / "transcript_metadata.json"))
@@ -70,9 +76,9 @@ metadata_store = MetadataStore(Path(METADATA_DB))
 @app.on_event("startup")
 async def startup_event():
     """Initialize metadata on startup"""
-    print("Initializing transcript metadata from filesystem...")
+    logger.info("Initializing transcript metadata from filesystem...")
     metadata_store.initialize_from_filesystem(Path(OUTPUT_DIR))
-    print(f"Metadata initialized. Total entries: {len(metadata_store.get_all())}")
+    logger.info(f"Metadata initialized. Total entries: {len(metadata_store.get_all())}")
 
 
 # Global state
@@ -372,10 +378,7 @@ def run_monitoring_background(channels: List[Dict], output_dir: str):
 
 @app.get("/", include_in_schema=False)
 async def root():
-    """Serve vanilla JS frontend"""
-    index_path = Path(__file__).parent.parent / "templates" / "index.html"
-    if index_path.exists():
-        return FileResponse(str(index_path))
+    """API root endpoint"""
     return {"message": "YouTube Toolkit API", "docs": "/api/docs", "frontend": "http://localhost:3000"}
 
 
@@ -869,63 +872,25 @@ async def summarize_transcript_stream(channel: str, filename: str):
             # Send initial metadata
             yield f"data: {json.dumps({'type': 'start', 'keywords': transcript_keywords})}\n\n"
 
-            # Generate summary with TRUE async streaming + word-by-word splitting
             llm_client = create_llm_client(llm_config)
-            summary_chunks = []
+            collected = []
 
-            import time
-            start_time = time.time()
-            chunk_num = 0
+            yield ": keep-alive\n\n"
 
-            # Check if client supports async streaming
-            if hasattr(llm_client, 'generate_summary_stream_async'):
-                logger.info(f"[Backend] Using async streaming with word-by-word output")
-                # Use native async streaming (for BedrockClient with aioboto3)
-                async for chunk in llm_client.generate_summary_stream_async(content, transcript_keywords, title):
-                    summary_chunks.append(chunk)
+            async for chunk in llm_client.generate_summary_stream_async(content, transcript_keywords, title):
+                if chunk:
+                    collected.append(chunk)
+                    yield f"data: {json.dumps({'type': 'chunk', 'text': chunk})}\n\n"
 
-                    # Split chunk into words and send each word separately
-                    # This creates more granular updates that bypass buffering
-                    words = chunk.split(' ')
-                    for i, word in enumerate(words):
-                        chunk_num += 1
-                        elapsed = (time.time() - start_time) * 1000
-
-                        # Add space back except for last word in chunk
-                        text_to_send = word if i == len(words) - 1 else word + ' '
-
-                        logger.info(f"[Backend] Word #{chunk_num} at {elapsed:.0f}ms: {repr(text_to_send[:20])}")
-                        yield f"data: {json.dumps({'type': 'chunk', 'text': text_to_send})}\n\n"
-
-                        # Small delay between words for smoother appearance
-                        await asyncio.sleep(0.05)  # 50ms between words
-            else:
-                logger.info(f"[Backend] Falling back to sync streaming")
-                # Fallback to synchronous generator
-                for chunk in llm_client.generate_summary_stream(content, transcript_keywords, title):
-                    summary_chunks.append(chunk)
-
-                    # Split into words for gradual display
-                    words = chunk.split(' ')
-                    for i, word in enumerate(words):
-                        chunk_num += 1
-                        elapsed = (time.time() - start_time) * 1000
-
-                        text_to_send = word if i == len(words) - 1 else word + ' '
-
-                        yield f"data: {json.dumps({'type': 'chunk', 'text': text_to_send})}\n\n"
-                        await asyncio.sleep(0.05)  # 50ms between words
-
-            elapsed = (time.time() - start_time) * 1000
-            logger.info(f"[Backend] All words yielded at {elapsed:.0f}ms. Total: {chunk_num}")
-
-            # Complete - store summary
-            full_summary = ''.join(summary_chunks)
+            full_summary = "".join(collected)
             model_name = f"{llm_config.get('provider')}:{llm_config.get('model', 'default')}"
             metadata_store.update_summary(channel, filename, full_summary, model_name)
 
             yield f"data: {json.dumps({'type': 'done', 'model': model_name})}\n\n"
 
+        except asyncio.CancelledError:
+            logger.info("Client disconnected from summary stream")
+            raise
         except Exception as e:
             yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
 

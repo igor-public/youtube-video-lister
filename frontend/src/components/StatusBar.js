@@ -1,8 +1,14 @@
 import React from 'react';
 
-function StatusBar({ message, type }) {
+function StatusBar({ message, type, streamingCharCount }) {
   // Always show, even if empty message
-  const displayMessage = message || 'Ready';
+  let displayMessage = message || 'Ready';
+
+  // If streaming, ensure character count is always visible
+  if (streamingCharCount > 0 && !message.includes('chars')) {
+    displayMessage = `${message || 'Streaming'} | ${streamingCharCount} chars`;
+  }
+
   const displayType = message ? type : 'info';
 
   return (

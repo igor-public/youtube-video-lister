@@ -9,11 +9,11 @@ import logging
 import asyncio
 from typing import Optional, Dict, Any
 from abc import ABC, abstractmethod
-from prompts import PromptTemplates
+from .prompts import PromptTemplates
 
 # Set up logging
-logger = logging.getLogger("uvicorn.error")
-logger.setLevel(logging.INFO)
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
 
 
 class LLMClient(ABC):
@@ -171,7 +171,7 @@ class BedrockClient(LLMClient):
         self.model = model
 
     async def generate_summary_stream_async(self, content: str, keywords: list[str], title: str):
-        """Generate summary with TRUE async streaming using aioboto3"""
+        """Generate summary with TRUE async streaming using aioboto3 and Converse Stream API"""
         try:
             try:
                 import aioboto3
@@ -183,62 +183,55 @@ class BedrockClient(LLMClient):
             session = aioboto3.Session()
             prompt = PromptTemplates.get_summary_prompt(title, content, keywords)
 
-            # Determine model type
-            is_anthropic = self.model.startswith('anthropic.') or self.model.startswith('us.anthropic.') or self.model.startswith('eu.anthropic.')
+            async with session.client(
+                service_name='bedrock-runtime',
+                region_name=self.aws_region,
+                aws_access_key_id=self.aws_access_key_id,
+                aws_secret_access_key=self.aws_secret_access_key
+            ) as bedrock:
 
-            if is_anthropic:
-                async with session.client(
-                    service_name='bedrock-runtime',
-                    region_name=self.aws_region,
-                    aws_access_key_id=self.aws_access_key_id,
-                    aws_secret_access_key=self.aws_secret_access_key
-                ) as bedrock:
+                # Use Converse Stream API - unified format for all models
+                response = await bedrock.converse_stream(
+                    modelId=self.model,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": [{"text": prompt}]
+                        }
+                    ],
+                    inferenceConfig={
+                        "maxTokens": 1024,
+                        "temperature": 0.7
+                    }
+                )
 
-                    body = json.dumps({
-                        "anthropic_version": "bedrock-2023-05-31",
-                        "max_tokens": 1024,
-                        "messages": [
-                            {"role": "user", "content": prompt}
-                        ]
-                    })
+                # TRUE async streaming with Converse API
+                chunk_count = 0
+                start_time = time.time()
+                last_chunk_time = start_time
 
-                    response = await bedrock.invoke_model_with_response_stream(
-                        modelId=self.model,
-                        body=body
-                    )
+                async for event in response['stream']:
+                    now = time.time()
+                    time_since_start = (now - start_time) * 1000  # ms
+                    time_since_last = (now - last_chunk_time) * 1000  # ms
+                    last_chunk_time = now
 
-                    # TRUE async streaming
-                    chunk_count = 0
-                    start_time = time.time()
-                    last_chunk_time = start_time
+                    chunk_count += 1
+                    logger.info(f"[Bedrock-Async-Converse] Event #{chunk_count} at {time_since_start:.0f}ms (+{time_since_last:.0f}ms)")
 
-                    async for event in response['body']:
-                        now = time.time()
-                        time_since_start = (now - start_time) * 1000  # ms
-                        time_since_last = (now - last_chunk_time) * 1000  # ms
-                        last_chunk_time = now
-
-                        chunk = json.loads(event['chunk']['bytes'].decode())
-                        chunk_count += 1
-                        logger.info(f"[Bedrock-Async] Event #{chunk_count} at {time_since_start:.0f}ms (+{time_since_last:.0f}ms)")
-
-                        if chunk['type'] == 'content_block_delta':
-                            if 'delta' in chunk and 'text' in chunk['delta']:
-                                text = chunk['delta']['text']
-                                logger.info(f"[Bedrock-Async] Yielding at {time_since_start:.0f}ms: {repr(text[:30])}")
+                    # Handle contentBlockDelta events (unified format)
+                    if 'contentBlockDelta' in event:
+                        delta = event['contentBlockDelta'].get('delta', {})
+                        if 'text' in delta:
+                            text = delta['text']
+                            if text:
                                 yield text
-                        elif chunk['type'] == 'message_stop':
-                            logger.info(f"[Bedrock-Async] Complete at {time_since_start:.0f}ms. Total: {chunk_count}")
-                            break
-            else:
-                # Fallback for non-Anthropic models
-                summary = self.generate_summary(content, keywords, title)
-                for char in summary:
-                    yield char
-                    await asyncio.sleep(0.01)
+                    elif 'messageStop' in event:
+                        logger.info(f"[Bedrock-Async-Converse] Complete at {time_since_start:.0f}ms. Total: {chunk_count}")
+                        break
 
         except Exception as e:
-            raise Exception(f"AWS Bedrock async streaming error: {str(e)}")
+            raise Exception(f"AWS Bedrock Converse async streaming error: {str(e)}")
 
     def generate_summary(self, content: str, keywords: list[str], title: str) -> str:
         try:
@@ -256,50 +249,31 @@ class BedrockClient(LLMClient):
 
             prompt = PromptTemplates.get_summary_prompt(title, content, keywords)
 
-            # Determine model type and format request accordingly
-            is_openai = self.model.startswith('openai.')
-
-            if is_openai:
-                # OpenAI format
-                body = json.dumps({
-                    "messages": [
-                        {"role": "user", "content": prompt}
-                    ],
-                    "max_tokens": 1024,
-                    "temperature": 0.7
-                })
-            else:
-                # Anthropic format
-                body = json.dumps({
-                    "anthropic_version": "bedrock-2023-05-31",
-                    "max_tokens": 1024,
-                    "messages": [
-                        {"role": "user", "content": prompt}
-                    ]
-                })
-
-            response = bedrock.invoke_model(
+            # Use Converse API - unified format for all models
+            response = bedrock.converse(
                 modelId=self.model,
-                body=body
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [{"text": prompt}]
+                    }
+                ],
+                inferenceConfig={
+                    "maxTokens": 1024,
+                    "temperature": 0.7
+                }
             )
 
-            response_body = json.loads(response['body'].read())
-
-            # Handle different response formats
-            if 'content' in response_body:
-                # Anthropic format
-                return response_body['content'][0]['text'].strip()
-            elif 'choices' in response_body:
-                # OpenAI format
-                return response_body['choices'][0]['message']['content'].strip()
-            else:
-                raise Exception(f"Unknown response format: {response_body}")
+            # Extract text from unified response format
+            output_message = response['output']['message']
+            text_content = output_message['content'][0]['text']
+            return text_content.strip()
 
         except Exception as e:
-            raise Exception(f"AWS Bedrock API error: {str(e)}")
+            raise Exception(f"AWS Bedrock Converse API error: {str(e)}")
 
     def generate_summary_stream(self, content: str, keywords: list[str], title: str):
-        """Generate summary with true Bedrock streaming"""
+        """Generate summary with true Bedrock streaming using Converse Stream API"""
         try:
             try:
                 import boto3
@@ -315,85 +289,49 @@ class BedrockClient(LLMClient):
 
             prompt = PromptTemplates.get_summary_prompt(title, content, keywords)
 
-            # Determine model type and format request accordingly
-            is_openai = self.model.startswith('openai.')
-            is_anthropic = self.model.startswith('anthropic.') or self.model.startswith('us.anthropic.') or self.model.startswith('eu.anthropic.')
-
-            if is_anthropic:
-                # Use Anthropic streaming with invoke_model_with_response_stream
-                body = json.dumps({
-                    "anthropic_version": "bedrock-2023-05-31",
-                    "max_tokens": 1024,
-                    "messages": [
-                        {"role": "user", "content": prompt}
-                    ]
-                })
-
-                response = bedrock.invoke_model_with_response_stream(
-                    modelId=self.model,
-                    body=body
-                )
-
-                # Stream the response
-                import time
-                chunk_count = 0
-                start_time = time.time()
-                last_chunk_time = start_time
-
-                for event in response['body']:
-                    now = time.time()
-                    time_since_start = (now - start_time) * 1000  # ms
-                    time_since_last = (now - last_chunk_time) * 1000  # ms
-                    last_chunk_time = now
-
-                    chunk = json.loads(event['chunk']['bytes'].decode())
-                    chunk_count += 1
-                    logger.info(f"[Bedrock] Event #{chunk_count} at {time_since_start:.0f}ms (+{time_since_last:.0f}ms), type: {chunk.get('type')}")
-
-                    if chunk['type'] == 'content_block_delta':
-                        if 'delta' in chunk and 'text' in chunk['delta']:
-                            text = chunk['delta']['text']
-                            logger.info(f"[Bedrock] Yielding text ({len(text)} chars) at {time_since_start:.0f}ms: {repr(text[:30])}")
-                            yield text
-                    elif chunk['type'] == 'message_stop':
-                        logger.info(f"[Bedrock] Stream complete at {time_since_start:.0f}ms. Total chunks: {chunk_count}")
-                        break
-
-            elif is_openai:
-                # OpenAI doesn't support streaming via Bedrock the same way
-                # Fall back to word-by-word simulation
-                body = json.dumps({
-                    "messages": [
-                        {"role": "user", "content": prompt}
-                    ],
-                    "max_tokens": 1024,
+            # Use Converse Stream API - unified format for all models
+            response = bedrock.converse_stream(
+                modelId=self.model,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [{"text": prompt}]
+                    }
+                ],
+                inferenceConfig={
+                    "maxTokens": 1024,
                     "temperature": 0.7
-                })
+                }
+            )
 
-                response = bedrock.invoke_model(
-                    modelId=self.model,
-                    body=body
-                )
+            # Stream the response
+            import time
+            chunk_count = 0
+            start_time = time.time()
+            last_chunk_time = start_time
 
-                response_body = json.loads(response['body'].read())
+            for event in response['stream']:
+                now = time.time()
+                time_since_start = (now - start_time) * 1000  # ms
+                time_since_last = (now - last_chunk_time) * 1000  # ms
+                last_chunk_time = now
 
-                if 'choices' in response_body:
-                    full_text = response_body['choices'][0]['message']['content'].strip()
-                    # Simulate streaming
-                    import time
-                    for char in full_text:
-                        yield char
-                        time.sleep(0.01)  # 10ms per character
-            else:
-                # Unknown model type - use non-streaming fallback
-                summary = self.generate_summary(content, keywords, title)
-                import time
-                for char in summary:
-                    yield char
-                    time.sleep(0.01)
+                chunk_count += 1
+                logger.info(f"[Bedrock-Converse] Event #{chunk_count} at {time_since_start:.0f}ms (+{time_since_last:.0f}ms)")
+
+                # Handle contentBlockDelta events (unified format)
+                if 'contentBlockDelta' in event:
+                    delta = event['contentBlockDelta'].get('delta', {})
+                    if 'text' in delta:
+                        text = delta['text']
+                        logger.info(f"[Bedrock-Converse] Yielding text ({len(text)} chars) at {time_since_start:.0f}ms: {repr(text[:30])}")
+                        yield text
+                elif 'messageStop' in event:
+                    logger.info(f"[Bedrock-Converse] Stream complete at {time_since_start:.0f}ms. Total chunks: {chunk_count}")
+                    break
 
         except Exception as e:
-            raise Exception(f"AWS Bedrock streaming error: {str(e)}")
+            raise Exception(f"AWS Bedrock Converse streaming error: {str(e)}")
 
     def extract_keywords(self, content: str, max_keywords: int = 10) -> list[str]:
         try:
@@ -411,49 +349,29 @@ class BedrockClient(LLMClient):
 
             prompt = PromptTemplates.get_keyword_extraction_prompt(content, max_keywords)
 
-            # Determine model type and format request accordingly
-            is_openai = self.model.startswith('openai.')
-
-            if is_openai:
-                # OpenAI format
-                body = json.dumps({
-                    "messages": [
-                        {"role": "user", "content": prompt}
-                    ],
-                    "max_tokens": 200,
-                    "temperature": 0.5
-                })
-            else:
-                # Anthropic format
-                body = json.dumps({
-                    "anthropic_version": "bedrock-2023-05-31",
-                    "max_tokens": 200,
-                    "messages": [
-                        {"role": "user", "content": prompt}
-                    ]
-                })
-
-            response = bedrock.invoke_model(
+            # Use Converse API - unified format for all models
+            response = bedrock.converse(
                 modelId=self.model,
-                body=body
+                messages=[
+                    {
+                        "role": "user",
+                        "content": [{"text": prompt}]
+                    }
+                ],
+                inferenceConfig={
+                    "maxTokens": 200,
+                    "temperature": 0.5
+                }
             )
 
-            response_body = json.loads(response['body'].read())
-
-            # Handle different response formats
-            if 'content' in response_body:
-                # Anthropic format
-                keywords_text = response_body['content'][0]['text'].strip()
-            elif 'choices' in response_body:
-                # OpenAI format
-                keywords_text = response_body['choices'][0]['message']['content'].strip()
-            else:
-                raise Exception(f"Unknown response format: {response_body}")
+            # Extract text from unified response format
+            output_message = response['output']['message']
+            keywords_text = output_message['content'][0]['text'].strip()
 
             return [k.strip() for k in keywords_text.split(',') if k.strip()]
 
         except Exception as e:
-            raise Exception(f"AWS Bedrock API error: {str(e)}")
+            raise Exception(f"AWS Bedrock Converse API error: {str(e)}")
 
 
 def create_llm_client(llm_config: Dict[str, Any]) -> LLMClient:
