@@ -9,15 +9,15 @@ from pathlib import Path
 from src.youtube_toolkit.monitor import ChannelMonitor
 
 
-def load_config(config_file: str = "channels_config.json"):
+def load_config(config_file: str = "backend/config/channels_config.json"):
     """Load configuration from JSON file."""
     config_path = Path(config_file)
 
     if not config_path.exists():
         print(f"Error: Configuration file '{config_file}' not found.")
         print("\nCreate one by copying the example:")
-        print("  cp channels_config.example.json channels_config.json")
-        print("\nThen edit channels_config.json to add your channels.")
+        print("  cp backend/config/channels_config.example.json backend/config/channels_config.json")
+        print("\nThen edit backend/config/channels_config.json to add your channels.")
         sys.exit(1)
 
     with open(config_path, 'r') as f:
@@ -58,7 +58,7 @@ def parse_channels(channels_config, settings):
 
 def main():
     """Main function to monitor channels from config."""
-    config_file = sys.argv[1] if len(sys.argv) > 1 else "channels_config.json"
+    config_file = sys.argv[1] if len(sys.argv) > 1 else "backend/config/channels_config.json"
 
     print(f"Loading configuration from: {config_file}")
     config = load_config(config_file)

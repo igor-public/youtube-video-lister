@@ -45,15 +45,16 @@ if [ ! -f ".env" ]; then
 fi
 
 # Check if channels_config.json exists
-if [ ! -f "channels_config.json" ]; then
+if [ ! -f "backend/config/channels_config.json" ]; then
     echo ""
     echo "No channels_config.json found. Creating from example..."
-    cp channels_config.example.json channels_config.json
+    mkdir -p backend/config
+    cp backend/config/channels_config.example.json backend/config/channels_config.json
     echo ""
-    echo "✓ Created channels_config.json"
+    echo "✓ Created backend/config/channels_config.json"
     echo ""
     echo "Edit this file to add your YouTube channels:"
-    echo "  nano channels_config.json"
+    echo "  nano backend/config/channels_config.json"
     echo ""
 fi
 

@@ -164,11 +164,23 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
               }}
             />
           </div>
-          <div className="sidebar-controls">
-            <button className="btn btn-sort" onClick={toggleSort}>
-              {sortOrder === 'desc' ? '↓ Newest' : '↑ Oldest'}
-            </button>
-            <button className="btn btn-refresh" onClick={refreshTree}>Refresh</button>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+            <div style={{ fontSize: '12px', fontWeight: '500', color: '#5f6368' }}>Channel</div>
+            <div
+              onClick={toggleSort}
+              style={{
+                fontSize: '12px',
+                fontWeight: '500',
+                color: '#5f6368',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '4px'
+              }}
+              title={sortOrder === 'desc' ? 'Sort by date (newest first)' : 'Sort by date (oldest first)'}
+            >
+              Date {sortOrder === 'desc' ? '↓' : '↑'}
+            </div>
           </div>
         </div>
         <div className="tree-view">
@@ -203,15 +215,23 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
             </div>
           )}
         </div>
-        <div className="sidebar-controls">
-          <button
-            className={`btn btn-sort ${sortOrder === 'desc' ? 'descending' : 'ascending'}`}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+          <div style={{ fontSize: '12px', fontWeight: '500', color: '#5f6368' }}>Channel</div>
+          <div
             onClick={toggleSort}
+            style={{
+              fontSize: '12px',
+              fontWeight: '500',
+              color: '#5f6368',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '4px'
+            }}
             title={sortOrder === 'desc' ? 'Sort by date (newest first)' : 'Sort by date (oldest first)'}
           >
-            {sortOrder === 'desc' ? '↓ Newest' : '↑ Oldest'}
-          </button>
-          <button className="btn btn-refresh" onClick={refreshTree}>Refresh</button>
+            Date {sortOrder === 'desc' ? '↓' : '↑'}
+          </div>
         </div>
       </div>
 
@@ -226,17 +246,44 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
           const isExpanded = expandedChannels[channelId];
           const unreadCount = getUnreadCount(channel);
 
+          // Get the most recent transcript date for this channel
+          const latestDate = channel.transcripts && channel.transcripts.length > 0
+            ? channel.transcripts[0].date
+            : 'N/A';
+
           return (
             <div key={channel.channel} className="tree-channel">
               <div
                 className={`tree-channel-header ${isExpanded ? 'active' : ''}`}
+                style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
               >
-                <span
-                  className="tree-channel-name"
-                  onClick={() => toggleChannel(channelId)}
-                >
-                  {channel.channel}
-                </span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1, minWidth: 0 }}>
+                  <span
+                    style={{
+                      fontSize: '11px',
+                      color: '#4a9eff',
+                      minWidth: '70px',
+                      textAlign: 'left',
+                      fontWeight: '500'
+                    }}
+                    onClick={() => toggleChannel(channelId)}
+                  >
+                    {latestDate}
+                  </span>
+                  <span
+                    className="tree-channel-name"
+                    onClick={() => toggleChannel(channelId)}
+                    style={{
+                      flex: 1,
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      whiteSpace: 'nowrap'
+                    }}
+                    title={channel.channel}
+                  >
+                    {channel.channel}
+                  </span>
+                </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                   <span
                     className="tree-channel-count"

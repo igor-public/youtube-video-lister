@@ -184,38 +184,29 @@ function AssetMonitorSection({ showStatus }) {
               <div
                 key={asset.id}
                 style={{
-                  backgroundColor: '#f8f9fa',
-                  padding: '10px',
-                  borderRadius: '4px',
-                  marginBottom: '8px',
-                  border: '1px solid #e0e0e0'
+                  padding: '8px 4px',
+                  marginBottom: '4px',
+                  borderBottom: '1px solid #f0f0f0'
                 }}
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
-                  <div style={{ flex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
-                      <span style={{ fontSize: '16px' }}>{getCategoryIcon(asset.category)}</span>
-                      <strong style={{ fontSize: '14px' }}>{asset.name}</strong>
-                      <span style={{
-                        fontSize: '12px',
-                        color: '#5f6368',
-                        backgroundColor: '#e8eaed',
-                        padding: '2px 6px',
-                        borderRadius: '3px'
-                      }}>
-                        {asset.symbol}
-                      </span>
-                    </div>
-                    <div style={{ fontSize: '12px', color: '#5f6368' }}>
-                      Source: {priceSources.find(s => s.id === asset.source)?.name || asset.source}
-                    </div>
-                    {asset.notes && (
-                      <div style={{ fontSize: '11px', color: '#80868b', marginTop: '4px' }}>
-                        {asset.notes}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ fontSize: '16px' }}>{getCategoryIcon(asset.category)}</span>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <strong style={{ fontSize: '13px' }}>{asset.name}</strong>
+                        <span style={{ fontSize: '11px', color: '#80868b' }}>
+                          {asset.symbol}
+                        </span>
                       </div>
-                    )}
+                      {asset.notes && (
+                        <div style={{ fontSize: '11px', color: '#80868b', marginTop: '2px' }}>
+                          {asset.notes}
+                        </div>
+                      )}
+                    </div>
                   </div>
-                  <div style={{ display: 'flex', gap: '4px' }}>
+                  <div style={{ display: 'flex', gap: '4px', marginLeft: '8px' }}>
                     <button
                       className="btn-icon btn-edit-icon"
                       onClick={() => handleEditAsset(asset)}
@@ -426,7 +417,7 @@ function AssetMonitorSection({ showStatus }) {
                   type="submit"
                   style={{
                     padding: '8px 16px',
-                    backgroundColor: '#1a73e8',
+                    backgroundColor: '#4a9eff',
                     color: 'white',
                     border: 'none',
                     borderRadius: '4px',

@@ -4,11 +4,11 @@ PROCESSING SUMMARY
 ================================================================================
 
 Channels processed: 5
-Videos found: 119
-Videos skipped (already processed): 96
-Videos processed: 0
-Transcripts created: 0
-Errors: 23
+Videos found: 121
+Videos skipped (already processed): 95
+Videos processed: 4
+Transcripts created: 4
+Errors: 22
 
 
 ✓ CoinBureauTrading
@@ -41,18 +41,18 @@ Errors: 23
 ✓ CoinBureau
   Videos found: 14
   Videos skipped: 6
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 8
+  Videos processed: 1
+  Transcripts: 1
+  Errors: 7
     - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
     - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
     - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
 
 ✓ BitcoinStrategy
-  Videos found: 34
-  Videos skipped: 27
-  Videos processed: 0
-  Transcripts: 0
+  Videos found: 36
+  Videos skipped: 26
+  Videos processed: 3
+  Transcripts: 3
   Errors: 7
     - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
     - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded

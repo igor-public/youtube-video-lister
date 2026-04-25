@@ -1414,8 +1414,8 @@
     "video_url": null,
     "keywords": null,
     "keywords_extracted_at": null,
-    "summary": "Overview: The video analyzes Ethereum's recent underperformance following the Kelp.DAO hack, which triggered massive DeFi outflows, and explores whether this presents a buying opportunity or signals continued weakness relative to Bitcoin and altcoins.\n\nKey Points:\n• A hack on Kelp.DAO (possibly linked to North Korea) caused a spillover effect, with Aave alone losing over $10 billion in TVL, dropping from $26B to $15B.\n• Ethereum is underperforming Bitcoin and the broader crypto market despite recent market recovery.\n• Open interest in Ethereum has grown significantly over 6 years, indicating more speculative derivatives trading rather than spot accumulation.\n• Ethereum's funding rate has turned neutral since February, suggesting short-term traders are no longer bullish.\n• Ethereum dominance has been in a downtrend since August last year, after peaking during the ETH treasury company narrative.\n• BitMine (led by Tom Lee) has reached 76% of its ETH accumulation target, with signals that purchases may slow once the 5% mark is hit.\n• Bitcoin treasury companies (led by Saylor's Strategy) continue aggressive buying, contributing to BTC outperforming ETH.\n• DeFi now carries a higher risk premium (10-20% APY needed) due to increasing hack risks, potentially amplified by AI finding vulnerabilities.\n• Ethereum's price relative to altcoin market cap sits at historical average, suggesting altcoins will likely follow ETH's direction.\n• The creator recommends shorting high-inflation altcoins while going long Bitcoin, promoting his copy trading vault with claimed 44% annualized returns.",
-    "summary_generated_at": "2026-04-25T09:22:32.148520",
+    "summary": "Overview: The video examines how a hack on Kelp.DAO triggered a massive outflow from Ethereum-based DeFi protocols like Aave, damaging Ethereum's reputation and underperformance relative to Bitcoin. The presenter explores whether this presents a buying opportunity or signals further weakness for ETH and altcoins.\n\nKey Points:\n• The Kelp.DAO hack (possibly linked to North Korea) caused a spillover effect, with Aave losing over $10 billion in outflows (from $26B to $15B TVL).\n• Ethereum has been underperforming Bitcoin since late August last year, despite the broader crypto market recovering.\n• Open interest in ETH derivatives has grown much faster than ETH's price, indicating increased speculative trading versus spot accumulation.\n• ETH funding rates have turned neutral since February, suggesting short-term speculators are no longer bullish.\n• Ethereum treasury company accumulation (led by Bitmain/Tom Lee) is slowing; Bitmain has reached 76% of its target, with uncertainty about continued purchases.\n• Bitcoin treasury accumulation (led by Michael Saylor's Strategy) continues strong, contributing to BTC outperformance.\n• Ethereum's TVL in ETH terms peaked around 27 million ETH and has dropped sharply after the hack.\n• DeFi now requires a higher risk premium (10-20% APY) due to increasing hack risks, amplified by AI finding vulnerabilities faster.\n• ETH is trading at its historical average relative to altcoins, suggesting altcoins will likely follow ETH's direction.\n• The presenter recommends shorting inflationary altcoins while going long on Bitcoin, promoting his copy trading vault (10%+ YTD, 44% last year).",
+    "summary_generated_at": "2026-04-25T19:12:09.146631",
     "summary_model": "bedrock:eu.anthropic.claude-opus-4-7",
     "size_bytes": 8652,
     "last_modified": null
@@ -1601,5 +1601,61 @@
     "summary_model": null,
     "size_bytes": 1051,
     "last_modified": "2026-04-24T22:48:02.110189"
+  },
+  "CoinBureau:2026-04-25_AI_Is_Tearing_DeFi_Apart!_$1_Can_Hack_Your_Crypto_Now.md": {
+    "channel": "CoinBureau",
+    "filename": "2026-04-25_AI_Is_Tearing_DeFi_Apart!_$1_Can_Hack_Your_Crypto_Now.md",
+    "title": "AI Is Tearing DeFi Apart! $1 Can Hack Your Crypto Now",
+    "date": "2026-04-25",
+    "video_url": null,
+    "keywords": null,
+    "keywords_extracted_at": null,
+    "summary": null,
+    "summary_generated_at": null,
+    "summary_model": null,
+    "size_bytes": 17924,
+    "last_modified": "2026-04-25T19:12:39.441011"
+  },
+  "BitcoinStrategy:2026-04-25_⚠_How_to_ACTUALLY_Outperform️....md": {
+    "channel": "BitcoinStrategy",
+    "filename": "2026-04-25_⚠_How_to_ACTUALLY_Outperform️....md",
+    "title": "⚠ How to ACTUALLY Outperform️...",
+    "date": "2026-04-25",
+    "video_url": null,
+    "keywords": null,
+    "keywords_extracted_at": null,
+    "summary": "Overview: The video presents a strategy of investing only in the top three S&P 500 stocks by market cap (the \"S&P 3\") and rebalancing annually, which has significantly outperformed the broader S&P 500. It also explores using moving average crossovers to time the market for additional returns and reduced drawdowns.\n\nKey Points:\n• The S&P 3 strategy returned 17.7% annually since 1990 vs. 10.5% for the S&P 500, resulting in a >10x difference in final portfolio value ($42,000 vs. $4,000 on $100 invested).\n• Current top 3 holdings are Nvidia, Apple, and Google; past holdings included Exxon Mobil, AT&T, Microsoft, GE, and Pfizer.\n• The strategy only requires annual rebalancing, minimizing tax implications and active management.\n• Outperformance is remarkably consistent year-over-year, with few periods where the S&P 500 beat the S&P 3.\n• The S&P 2 and S&P 3 appear to offer the best risk/reward among concentrated top-stock strategies.\n• Holding 500 stocks provides minimal additional diversification benefit compared to the performance sacrifice.\n• Moving average crossovers (e.g., 6-day vs. 188-day SMA for Nvidia) can add ~10% annual alpha and significantly reduce drawdowns (avoiding 74% of the 2002 Nvidia crash).\n• Using Nvidia's price relative to the Nasdaq 100 (14 vs. 149-day SMA) provides even better timing signals.\n• Active timing strategies require tax efficiency (avoiding short-term capital gains) to be worthwhile.\n• The speaker promotes their \"Bitcoin Strategy Analytics\" premium platform for backtesting and automated alert signals.",
+    "summary_generated_at": "2026-04-25T20:31:04.746942",
+    "summary_model": "bedrock:eu.anthropic.claude-opus-4-7",
+    "size_bytes": 10220,
+    "last_modified": "2026-04-25T19:12:59.106208"
+  },
+  "BitcoinStrategy:2026-04-25_Bitcoin's_Resistance_🤔_The_Golden_Cross_Decision....md": {
+    "channel": "BitcoinStrategy",
+    "filename": "2026-04-25_Bitcoin's_Resistance_🤔_The_Golden_Cross_Decision....md",
+    "title": "Bitcoin's Resistance 🤔 The Golden Cross Decision...",
+    "date": "2026-04-25",
+    "video_url": null,
+    "keywords": null,
+    "keywords_extracted_at": null,
+    "summary": null,
+    "summary_generated_at": null,
+    "summary_model": null,
+    "size_bytes": 1076,
+    "last_modified": "2026-04-25T19:13:02.553038"
+  },
+  "BitcoinStrategy:2026-04-25_☢_ApeCoin's_70%_Pump_Was_Insider_Trading.md": {
+    "channel": "BitcoinStrategy",
+    "filename": "2026-04-25_☢_ApeCoin's_70%_Pump_Was_Insider_Trading.md",
+    "title": "☢ ApeCoin's 70% Pump Was Insider Trading",
+    "date": "2026-04-25",
+    "video_url": null,
+    "keywords": null,
+    "keywords_extracted_at": null,
+    "summary": null,
+    "summary_generated_at": null,
+    "summary_model": null,
+    "size_bytes": 8770,
+    "last_modified": "2026-04-25T19:13:04.779256"
   }
 }

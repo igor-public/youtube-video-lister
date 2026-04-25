@@ -18,7 +18,7 @@ async def test_async_streaming():
     import os
     from pathlib import Path
 
-    config_path = Path(__file__).parent / "channels_config.json"
+    config_path = Path(__file__).parent.parent / "backend" / "config" / "channels_config.json"
     with open(config_path) as f:
         config = json.load(f)
 

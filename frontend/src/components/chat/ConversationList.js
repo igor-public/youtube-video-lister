@@ -1,0 +1,112 @@
+import React from 'react';
+
+/**
+ * Conversation history sidebar
+ * Shows list of past conversations with titles and timestamps
+ */
+function ConversationList({
+  conversations,
+  selectedId,
+  onSelect,
+  onNew,
+  onDelete,
+  loading,
+  error
+}) {
+
+  const formatDate = (timestamp) => {
+    const date = new Date(timestamp);
+    const now = new Date();
+    const diffMs = now - date;
+    const diffMins = Math.floor(diffMs / 60000);
+    const diffHours = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+
+    if (diffMins < 1) return 'Just now';
+    if (diffMins < 60) return `${diffMins}m ago`;
+    if (diffHours < 24) return `${diffHours}h ago`;
+    if (diffDays < 7) return `${diffDays}d ago`;
+
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  };
+
+  const handleDelete = (e, id) => {
+    e.stopPropagation(); // Prevent selecting conversation when deleting
+    if (window.confirm('Delete this conversation?')) {
+      onDelete(id);
+    }
+  };
+
+  return (
+    <div className="conversation-list">
+      {/* Header */}
+      <div className="conversation-list-header">
+        <h3>Conversations</h3>
+        <button
+          className="new-conversation-icon-button"
+          onClick={onNew}
+          title="New conversation"
+        >
+          ➕
+        </button>
+      </div>
+
+      {/* Loading/Error states */}
+      {loading && (
+        <div className="conversation-list-status">
+          Loading...
+        </div>
+      )}
+
+      {error && (
+        <div className="conversation-list-error">
+          {error}
+        </div>
+      )}
+
+      {/* Conversation list */}
+      {!loading && !error && (
+        <div className="conversation-items">
+          {conversations.length === 0 ? (
+            <div className="conversation-empty">
+              No conversations yet. Click ➕ to start.
+            </div>
+          ) : (
+            conversations.map((conv) => (
+              <div
+                key={conv.id}
+                className={`conversation-item ${selectedId === conv.id ? 'selected' : ''}`}
+                onClick={() => onSelect(conv.id)}
+              >
+                <div className="conversation-item-content">
+                  <div className="conversation-title">
+                    {conv.title || 'New Conversation'}
+                  </div>
+                  <div className="conversation-meta">
+                    <span className="conversation-date">
+                      {formatDate(conv.updated_at || conv.created_at)}
+                    </span>
+                    {conv.message_count > 0 && (
+                      <span className="conversation-count">
+                        {conv.message_count} messages
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <button
+                  className="conversation-delete"
+                  onClick={(e) => handleDelete(e, conv.id)}
+                  title="Delete conversation"
+                >
+                  🗑️
+                </button>
+              </div>
+            ))
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default ConversationList;

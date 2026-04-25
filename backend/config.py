@@ -207,7 +207,7 @@ def get_config_manager(config_path: Optional[Path] = None) -> ConfigManager:
     if _config_manager is None:
         if config_path is None:
             # Default path
-            config_path = Path(__file__).parent.parent / "channels_config.json"
+            config_path = Path(__file__).parent / "config" / "channels_config.json"
         _config_manager = ConfigManager(config_path)
 
     return _config_manager

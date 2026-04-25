@@ -9,7 +9,9 @@ import boto3
 import sys
 
 # Load config
-with open('channels_config.json') as f:
+from pathlib import Path
+config_path = Path(__file__).parent.parent / "backend" / "config" / "channels_config.json"
+with open(config_path) as f:
     config = json.load(f)
 
 llm_config = config['llm']

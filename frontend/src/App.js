@@ -6,6 +6,8 @@ import ContentPanel from './components/ContentPanel';
 import ControlsPanel from './components/ControlsPanel';
 import StatusBar from './components/StatusBar';
 import ResizeHandle from './components/ResizeHandle';
+import ChatButton from './components/chat/ChatButton';
+import ChatModal from './components/chat/ChatModal';
 import useLocalStorage from './hooks/useLocalStorage';
 
 const API_BASE = '/api';
@@ -26,6 +28,7 @@ function App() {
   const [statusMessage, setStatusMessage] = useState({ message: '', type: 'info', visible: false });
   const [readTranscripts, setReadTranscripts] = useLocalStorage('readTranscripts', {});
   const [searchQuery, setSearchQuery] = useState('');
+  const [isChatOpen, setIsChatOpen] = useState(false);
   const websocketRef = useRef(null);
   const searchTimeoutRef = useRef(null);
 
@@ -344,26 +347,30 @@ function App() {
           <ResizeHandle targetRef={sidebarRef} direction="right" />
         </aside>
 
-        <ContentPanel
-          transcriptContent={transcriptContent}
-          selectedTranscript={selectedTranscript}
-          summary={summary}
-          summaryKeywords={summaryKeywords}
-          isStreamingSummary={isStreamingSummary}
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-          searchQuery={searchQuery}
-          onRegenerateSummary={() => {
-            if (selectedTranscript) {
-              handleStartSummary(
-                selectedTranscript.channel,
-                selectedTranscript.filename,
-                selectedTranscript,
-                true // isRegenerate = true
-              );
-            }
-          }}
-        />
+        <div className="content-with-chat">
+          <ChatButton onClick={() => setIsChatOpen(true)} />
+
+          <ContentPanel
+            transcriptContent={transcriptContent}
+            selectedTranscript={selectedTranscript}
+            summary={summary}
+            summaryKeywords={summaryKeywords}
+            isStreamingSummary={isStreamingSummary}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+            searchQuery={searchQuery}
+            onRegenerateSummary={() => {
+              if (selectedTranscript) {
+                handleStartSummary(
+                  selectedTranscript.channel,
+                  selectedTranscript.filename,
+                  selectedTranscript,
+                  true // isRegenerate = true
+                );
+              }
+            }}
+          />
+        </div>
 
         <aside ref={controlsRef} className="controls-panel">
           <ControlsPanel
@@ -381,6 +388,11 @@ function App() {
         message={statusMessage.message}
         type={statusMessage.type}
         streamingCharCount={streamingCharCount}
+      />
+
+      <ChatModal
+        isOpen={isChatOpen}
+        onClose={() => setIsChatOpen(false)}
       />
     </div>
   );

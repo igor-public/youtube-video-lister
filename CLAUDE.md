@@ -3,6 +3,8 @@
 ## 📁 Documentation Rules
 
 **CRITICAL:** All `.md` files (except `README.md` and `CLAUDE.md`) must go in the `docs/` folder:
+**CRITICAL:** When new classes/methods/functions added - write unit tests and execute them before completing the changes every time. 
+
 
 ### Documentation Structure
 ```
@@ -298,7 +300,6 @@ Right sidebar → "Asset Monitor" collapsible section (collapsed by default)
 
 ### Committing
 - Only commit when explicitly asked
-- Include Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 - Write clear commit messages explaining "why" not "what"
 - Never use --no-verify or skip hooks
 
@@ -354,10 +355,8 @@ Right sidebar → "Asset Monitor" collapsible section (collapsed by default)
 
 ## Questions to Ask Before Acting
 
-- Is this a vanilla JS change? (Don't - it's removed)
 - Does this need streaming? (Use WebSocket + flushSync)
 - Is this destructive? (Ask user first)
-- Should this be committed? (Only if user asked)
 - Will this work with React 18 batching? (Use flushSync)
 
 ## Project Status

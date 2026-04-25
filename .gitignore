@@ -43,7 +43,11 @@ logs/
 # Downloaded channel data
 channel_data/
 
+# RAG data layer (chat history, vector store, BM25 index)
+backend/data/
+
 # Vanilla JS frontend (removed - using React only)
 static/
 templates/
 
+.claude/worktrees/

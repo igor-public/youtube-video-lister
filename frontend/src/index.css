@@ -178,7 +178,6 @@ header h1 {
 }
 
 .tree-channel-name {
-    flex: 1;
     font-weight: 500;
     font-size: 14px;
     color: #202124;
@@ -325,7 +324,7 @@ header h1 {
 
 /* Content Panel */
 .content-panel {
-    background: #ffffff;
+    background: #f6f8fc;
     border-right: 1px solid #e8eaed;
     width: 60%;
     min-width: 400px;
@@ -649,14 +648,14 @@ header h1 {
 
 /* Non-split view */
 .content-panel > .transcript-view {
-    padding: 32px 48px;
+    padding: 0;
     overflow-y: auto;
     height: 100%;
 }
 
 .transcript-view {
-    max-width: 720px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
 }
 
 .welcome {
@@ -849,9 +848,13 @@ header h1 {
     color: #1967d2;
 }
 
+.btn-delete-icon {
+    color: #d93025;
+}
+
 .btn-delete-icon:hover {
     background: #fce8e6;
-    color: #d93025;
+    color: #c5221f;
 }
 
 .channel-item {
@@ -979,22 +982,23 @@ header h1 {
 }
 
 .btn-primary {
-    background: #1a73e8;
+    background: #4a9eff;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #1765cc;
+    background: #3a8eef;
 }
 
 .btn-secondary {
     background: #ffffff;
-    color: #1a73e8;
+    color: #4a9eff;
     border: 1px solid #dadce0;
 }
 
 .btn-secondary:hover {
     background: #f8f9fa;
+    border-color: #4a9eff;
 }
 
 .btn-danger {

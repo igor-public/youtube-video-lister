@@ -85,10 +85,6 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
     return (
       <main className="content-panel">
         <div className="transcript-view">
-          <div className="welcome">
-            <h2>Welcome to YouTube Toolkit</h2>
-            <p>Select a transcript from the tree view to read it, or configure channels to start monitoring.</p>
-          </div>
         </div>
       </main>
     );
@@ -165,7 +161,7 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
                     onClick={onRegenerateSummary}
                     style={{
                       padding: '6px 12px',
-                      backgroundColor: '#1a73e8',
+                      backgroundColor: '#4a9eff',
                       color: 'white',
                       border: 'none',
                       borderRadius: '4px',
@@ -177,8 +173,8 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
                       gap: '4px',
                       transition: 'background-color 0.2s'
                     }}
-                    onMouseEnter={(e) => e.target.style.backgroundColor = '#1557b0'}
-                    onMouseLeave={(e) => e.target.style.backgroundColor = '#1a73e8'}
+                    onMouseEnter={(e) => e.target.style.backgroundColor = '#3a8eef'}
+                    onMouseLeave={(e) => e.target.style.backgroundColor = '#4a9eff'}
                     title="Regenerate summary with current keywords"
                   >
                     <span style={{ fontSize: '16px' }}>↻</span>

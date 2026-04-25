@@ -21,6 +21,19 @@ from .transcript_metadata import MetadataStore, TranscriptMetadata
 from .logging_config import setup_logging
 from .llm_client import create_llm_client
 
+# RAG imports
+from .rag.vector_store import VectorStore
+from .rag.bm25_store import BM25Store
+from .rag.embeddings import BedrockEmbeddings
+from .rag.chunker import SentenceChunker
+from .rag.indexer import BackgroundIndexer
+from .rag.reranker import CohereReranker, MockReranker
+from .rag.retriever import HybridRetriever
+from .rag.chat_service import RAGChatService
+from .rag import routes as rag_routes
+from .rag import chat_routes
+from .chat.models import ChatDatabase
+
 # Get the project root directory
 PROJECT_ROOT = Path(__file__).parent.parent
 
@@ -61,12 +74,20 @@ app.add_middleware(
 )
 
 # Configuration
-CONFIG_FILE = os.getenv("CONFIG_FILE", str(PROJECT_ROOT / "channels_config.json"))
+CONFIG_FILE = os.getenv("CONFIG_FILE", str(PROJECT_ROOT / "backend" / "config" / "channels_config.json"))
 OUTPUT_DIR = os.getenv("OUTPUT_DIR", str(PROJECT_ROOT / "channel_data"))
-METADATA_DB = os.getenv("METADATA_DB", str(PROJECT_ROOT / "transcript_metadata.json"))
+METADATA_DB = os.getenv("METADATA_DB", str(PROJECT_ROOT / "backend" / "config" / "transcript_metadata.json"))
 
 # Initialize metadata store
 metadata_store = MetadataStore(Path(METADATA_DB))
+
+# Initialize RAG components
+RAG_DATA_DIR = PROJECT_ROOT / "backend" / "data"
+RAG_DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+# Global RAG components (will be initialized on startup)
+rag_indexer = None
+rag_chat_service = None
 
 
 # ============================================================================
@@ -75,10 +96,113 @@ metadata_store = MetadataStore(Path(METADATA_DB))
 
 @app.on_event("startup")
 async def startup_event():
-    """Initialize metadata on startup"""
+    """Initialize metadata and RAG system on startup"""
+    global rag_indexer, rag_chat_service
+
     logger.info("Initializing transcript metadata from filesystem...")
     metadata_store.initialize_from_filesystem(Path(OUTPUT_DIR))
     logger.info(f"Metadata initialized. Total entries: {len(metadata_store.get_all())}")
+
+    # Initialize RAG system
+    logger.info("Initializing RAG system...")
+    try:
+        # Load LLM config
+        config_path = Path(CONFIG_FILE)
+        if config_path.exists():
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+
+            llm_config = config.get('llm', {})
+            rag_config = config.get('rag', {})
+
+            # Initialize data stores
+            vector_store = VectorStore(
+                persist_directory=RAG_DATA_DIR / "chromadb",
+                collection_name="transcript_chunks"
+            )
+
+            bm25_store = BM25Store(
+                index_path=RAG_DATA_DIR / "bm25_index.pkl"
+            )
+
+            # Initialize embeddings
+            embeddings_client = BedrockEmbeddings(
+                model_id="cohere.embed-english-v3",
+                aws_access_key_id=llm_config.get('awsAccessKeyId'),
+                aws_secret_access_key=llm_config.get('awsSecretAccessKey'),
+                aws_region=llm_config.get('awsRegion', 'us-east-1')
+            )
+
+            # Initialize chunker
+            chunker = SentenceChunker(
+                target_tokens=400,
+                max_tokens=500,
+                overlap_sentences=1
+            )
+
+            # Initialize indexer
+            rag_indexer = BackgroundIndexer(
+                vector_store=vector_store,
+                bm25_store=bm25_store,
+                embeddings_client=embeddings_client,
+                chunker=chunker,
+                transcript_dir=Path(OUTPUT_DIR)
+            )
+
+            # Initialize reranker (use mock if no Cohere key)
+            cohere_api_key = rag_config.get('cohere_api_key')
+            if cohere_api_key:
+                try:
+                    reranker = CohereReranker(api_key=cohere_api_key)
+                    logger.info("Using Cohere Rerank API")
+                except:
+                    logger.warning("Cohere API key invalid, using mock reranker")
+                    reranker = MockReranker()
+            else:
+                logger.info("No Cohere API key, using mock reranker")
+                reranker = MockReranker()
+
+            # Initialize retriever
+            retriever = HybridRetriever(
+                vector_store=vector_store,
+                bm25_store=bm25_store,
+                embeddings_client=embeddings_client,
+                reranker=reranker,
+                vector_top_k=rag_config.get('vector_top_k', 20),
+                bm25_top_k=rag_config.get('bm25_top_k', 20),
+                rerank_top_k=rag_config.get('rerank_top_k', 10),
+                final_top_k=rag_config.get('context_top_k', 5)
+            )
+
+            # Initialize chat database
+            chat_db = ChatDatabase(RAG_DATA_DIR / "chat_history.db")
+
+            # Initialize chat service
+            rag_chat_service = RAGChatService(
+                retriever=retriever,
+                chat_db=chat_db,
+                llm_config=llm_config
+            )
+
+            # Set services in route modules
+            rag_routes.set_indexer(rag_indexer)
+            chat_routes.set_chat_service(rag_chat_service)
+
+            # Register routes
+            app.include_router(rag_routes.router)
+            app.include_router(chat_routes.router)
+
+            logger.info("RAG system initialized successfully")
+            logger.info(f"Vector store: {vector_store.count()} chunks")
+            logger.info(f"BM25 store: {bm25_store.count()} documents")
+            logger.info(f"Chat database: {len(chat_db.get_all_conversations())} conversations")
+
+        else:
+            logger.warning(f"Config file not found: {config_path}. RAG system not initialized.")
+
+    except Exception as e:
+        logger.error(f"Failed to initialize RAG system: {e}", exc_info=True)
+        logger.warning("RAG endpoints will not be available")
 
 
 # Global state

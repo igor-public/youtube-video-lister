@@ -1,0 +1,130 @@
+"""
+RAG Chat Service
+Orchestrates retrieval and LLM generation for chat
+"""
+
+import json
+import uuid
+from typing import List, Dict, Any, AsyncGenerator, Optional
+from datetime import datetime
+import logging
+
+from .retriever import HybridRetriever
+from ..chat.models import ChatDatabase
+from ..llm_client import create_llm_client
+
+logger = logging.getLogger(__name__)
+
+
+class ChatResponse:
+    """Chat response container"""
+
+    def __init__(
+        self,
+        type: str,
+        content: Optional[str] = None,
+        sources: Optional[List[Dict[str, Any]]] = None,
+        stats: Optional[Dict[str, Any]] = None,
+        message_id: Optional[str] = None,
+        error: Optional[str] = None
+    ):
+        self.type = type
+        self.content = content
+        self.sources = sources
+        self.stats = stats
+        self.message_id = message_id
+        self.error = error
+
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary for JSON serialization"""
+        data = {'type': self.type}
+
+        if self.content is not None:
+            data['content'] = self.content
+        if self.sources is not None:
+            data['sources'] = self.sources
+        if self.stats is not None:
+            data['stats'] = self.stats
+        if self.message_id is not None:
+            data['message_id'] = self.message_id
+        if self.error is not None:
+            data['error'] = self.error
+
+        return data
+
+
+class RAGChatService:
+    """RAG chat service combining retrieval and generation"""
+
+    def __init__(
+        self,
+        retriever: HybridRetriever,
+        chat_db: ChatDatabase,
+        llm_config: Dict[str, Any]
+    ):
+        """
+        Initialize RAG chat service
+
+        Args:
+            retriever: Hybrid retriever
+            chat_db: Chat database
+            llm_config: LLM configuration from channels_config.json
+        """
+        self.retriever = retriever
+        self.chat_db = chat_db
+        self.llm_config = llm_config
+
+        logger.info("Initialized RAG chat service")
+
+    def _build_prompt(
+        self,
+        query: str,
+        retrieved_chunks: List,
+        conversation_history: List[Dict[str, str]] = None
+    ) -> str:
+        """
+        Build prompt for LLM with retrieved context
+
+        Args:
+            query: User query
+            retrieved_chunks: Retrieved chunks from retriever
+            conversation_history: Previous messages in conversation
+
+        Returns:
+            Formatted prompt
+        """
+        # Build context from chunks
+        context_parts = []
+        for i, chunk in enumerate(retrieved_chunks, 1):
+            metadata = chunk.metadata
+            context_parts.append(
+                f"[Source {i}] {metadata.get('channel', 'Unknown')} - \"{metadata.get('title', 'Unknown')}\" ({metadata.get('date', 'Unknown')})\n"
+                f"{chunk.text}\n"
+            )
+
+        context = "\n".join(context_parts)
+
+        # Build conversation history
+        history = ""
+        if conversation_history:
+            for msg in conversation_history[-5:]:  # Last 5 messages
+                role = msg['role'].capitalize()
+                content = msg['content']
+                history += f"{role}: {content}\n\n"
+
+        # Build full prompt
+        prompt = f"""You are an AI assistant analyzing YouTube video transcripts. Answer questions based on the provided transcript excerpts.
+
+Retrieved Context:
+{context}
+
+{history}User: {query}
+
+Instructions:
+- Provide a structured answer citing specific sources
+- Format your response with clear sections per channel/source
+- Use this format for each source:
+  **@ChannelName** (Date): Brief point or quote...
+- Keep answers concise and actionable
+- If comparing multiple channels, structure comparisons clearly
+- Only use information from the provided context
