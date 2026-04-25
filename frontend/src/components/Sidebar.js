@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import KeywordsModal from './KeywordsModal';
+import { highlightText } from '../utils/highlightText';
 
 const API_BASE = '/api';
 
-function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTranscript, refreshTree, readTranscripts, showStatus, loadSummary, onStartSummary }) {
+function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTranscript, refreshTree, readTranscripts, showStatus, loadSummary, onStartSummary, onSearchChange }) {
   const [expandedChannels, setExpandedChannels] = useState({});
   const [keywordsModal, setKeywordsModal] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchChange = (e) => {
+    const value = e.target.value;
+    setSearchQuery(value);
+    if (onSearchChange) {
+      onSearchChange(value);
+    }
+  };
 
   // Count unread transcripts for a channel
   const getUnreadCount = (channel) => {
@@ -130,7 +140,7 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
     }
   };
 
-  // Tree is already sorted by backend based on sortOrder
+  // Tree is already filtered by backend if search query exists
   const sortedTree = tree;
 
   if (!tree || tree.length === 0) {
@@ -138,6 +148,22 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
       <aside className="sidebar">
         <div className="sidebar-header">
           <h2>Channels & Transcripts</h2>
+          <div className="search-box" style={{ margin: '12px 0' }}>
+            <input
+              type="text"
+              placeholder="Search transcripts..."
+              value={searchQuery}
+              onChange={handleSearchChange}
+              style={{
+                width: '100%',
+                padding: '6px 10px',
+                fontSize: '13px',
+                border: '1px solid #dadce0',
+                borderRadius: '4px',
+                outline: 'none'
+              }}
+            />
+          </div>
           <div className="sidebar-controls">
             <button className="btn btn-sort" onClick={toggleSort}>
               {sortOrder === 'desc' ? '↓ Newest' : '↑ Oldest'}
@@ -156,6 +182,27 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
     <>
       <div className="sidebar-header">
         <h2>Channels & Transcripts</h2>
+        <div className="search-box" style={{ margin: '12px 0' }}>
+          <input
+            type="text"
+            placeholder="Search in transcripts and summaries..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+            style={{
+              width: '100%',
+              padding: '6px 10px',
+              fontSize: '13px',
+              border: '1px solid #dadce0',
+              borderRadius: '4px',
+              outline: 'none'
+            }}
+          />
+          {searchQuery && (
+            <div style={{ fontSize: '11px', color: '#5f6368', marginTop: '4px' }}>
+              Found {sortedTree.reduce((sum, ch) => sum + ch.transcript_count, 0)} result(s)
+            </div>
+          )}
+        </div>
         <div className="sidebar-controls">
           <button
             className={`btn btn-sort ${sortOrder === 'desc' ? 'descending' : 'ascending'}`}
@@ -169,7 +216,12 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
       </div>
 
       <div className="tree-view">
-        {sortedTree.map(channel => {
+        {sortedTree.length === 0 && searchQuery ? (
+          <p className="loading" style={{ fontSize: '13px', color: '#5f6368' }}>
+            No transcripts found matching "{searchQuery}"
+          </p>
+        ) : (
+          sortedTree.map(channel => {
           const channelId = channel.channel.replace(/[^a-zA-Z0-9]/g, '_');
           const isExpanded = expandedChannels[channelId];
           const unreadCount = getUnreadCount(channel);
@@ -226,7 +278,9 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
                       className={`tree-transcript ${isSelected ? 'active' : ''} ${!isRead ? 'unread' : ''}`}
                     >
                       <div onClick={() => loadTranscript(channel.channel, transcript.filename)}>
-                        <div className="transcript-title">{transcript.title}</div>
+                        <div className="transcript-title">
+                          {searchQuery ? highlightText(transcript.title, searchQuery) : transcript.title}
+                        </div>
                         <div className="transcript-meta">
                           {transcript.date} • {(transcript.size / 1024).toFixed(1)} KB
                         </div>
@@ -272,7 +326,8 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
               </div>
             </div>
           );
-        })}
+        })
+        )}
       </div>
 
       {keywordsModal && (

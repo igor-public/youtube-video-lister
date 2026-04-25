@@ -40,18 +40,16 @@ function ConfigSection({ config, loadConfig, showStatus }) {
 
   if (!config || !config.channels) {
     return (
-      <section className="control-section">
-        <h3>Configuration</h3>
+      <>
         <div className="config-channels">
           <p className="loading">Loading...</p>
         </div>
-      </section>
+      </>
     );
   }
 
   return (
-    <section className="control-section">
-      <h3>Configuration</h3>
+    <>
       <div className="config-channels-list">
         {config.channels.map((channel, index) => {
           const channelName = channel.url.split('/').pop();
@@ -121,7 +119,7 @@ function ConfigSection({ config, loadConfig, showStatus }) {
           showStatus={showStatus}
         />
       )}
-    </section>
+    </>
   );
 }
 

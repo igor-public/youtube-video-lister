@@ -25,7 +25,9 @@ function App() {
   const [config, setConfig] = useState(null);
   const [statusMessage, setStatusMessage] = useState({ message: '', type: 'info', visible: false });
   const [readTranscripts, setReadTranscripts] = useLocalStorage('readTranscripts', {});
+  const [searchQuery, setSearchQuery] = useState('');
   const websocketRef = useRef(null);
+  const searchTimeoutRef = useRef(null);
 
   // Refs for resizable panels
   const sidebarRef = useRef(null);
@@ -41,9 +43,26 @@ function App() {
   // Reload tree when sort order changes
   useEffect(() => {
     if (tree.length > 0) {
-      loadTree(sortOrder);
+      loadTree(sortOrder, searchQuery);
     }
   }, [sortOrder]);
+
+  // Debounced search - reload tree when search query changes
+  useEffect(() => {
+    if (searchTimeoutRef.current) {
+      clearTimeout(searchTimeoutRef.current);
+    }
+
+    searchTimeoutRef.current = setTimeout(() => {
+      loadTree(sortOrder, searchQuery);
+    }, 300); // 300ms debounce
+
+    return () => {
+      if (searchTimeoutRef.current) {
+        clearTimeout(searchTimeoutRef.current);
+      }
+    };
+  }, [searchQuery]);
 
   const loadStats = async () => {
     try {
@@ -55,10 +74,14 @@ function App() {
     }
   };
 
-  const loadTree = async (sort = null) => {
+  const loadTree = async (sort = null, searchQuery = null) => {
     try {
       const sortParam = sort || sortOrder;
-      const response = await fetch(`${API_BASE}/tree?sort=${sortParam}`);
+      let url = `${API_BASE}/tree?sort=${sortParam}`;
+      if (searchQuery && searchQuery.trim()) {
+        url += `&search=${encodeURIComponent(searchQuery.trim())}`;
+      }
+      const response = await fetch(url);
       const data = await response.json();
       setTree(data);
     } catch (error) {
@@ -316,6 +339,7 @@ function App() {
             showStatus={showStatus}
             loadSummary={loadSummary}
             onStartSummary={handleStartSummary}
+            onSearchChange={setSearchQuery}
           />
           <ResizeHandle targetRef={sidebarRef} direction="right" />
         </aside>
@@ -328,6 +352,7 @@ function App() {
           isStreamingSummary={isStreamingSummary}
           activeTab={activeTab}
           setActiveTab={setActiveTab}
+          searchQuery={searchQuery}
           onRegenerateSummary={() => {
             if (selectedTranscript) {
               handleStartSummary(

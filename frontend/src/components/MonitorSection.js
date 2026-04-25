@@ -108,12 +108,16 @@ function MonitorSection({ loadStats, loadTree, showStatus }) {
   };
 
   return (
-    <section className="control-section">
-      <h3>Monitor Channels</h3>
+    <>
       <button
-        className="btn btn-primary btn-large"
+        className="btn btn-primary"
         onClick={startMonitoring}
         disabled={isMonitoring}
+        style={{
+          padding: '6px 12px',
+          fontSize: '13px',
+          backgroundColor: '#4a9eff'
+        }}
       >
         {isMonitoring ? 'Updating...' : 'Update'}
       </button>
@@ -154,7 +158,7 @@ function MonitorSection({ loadStats, loadTree, showStatus }) {
           )}
         </div>
       )}
-    </section>
+    </>
   );
 }
 

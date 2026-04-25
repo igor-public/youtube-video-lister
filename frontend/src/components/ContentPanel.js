@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from 'react';
+import { highlightText } from '../utils/highlightText';
+import HighlightMap from './HighlightMap';
 
-function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryKeywords, isStreamingSummary, activeTab, setActiveTab, onRegenerateSummary }) {
+function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryKeywords, isStreamingSummary, activeTab, setActiveTab, searchQuery, onRegenerateSummary }) {
   const summaryContentRef = useRef(null);
+  const transcriptContentRef = useRef(null);
 
   // Auto-scroll summary as it streams
   useEffect(() => {
@@ -17,10 +20,17 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
     }
   }, [summary, isStreamingSummary]);
 
-  const markdownToHtml = (markdown) => {
+  const markdownToHtml = (markdown, highlightQuery = null) => {
     if (!markdown) return '';
 
     let html = markdown;
+
+    // Apply highlighting before markdown conversion if search query exists
+    if (highlightQuery && highlightQuery.trim()) {
+      const query = highlightQuery.trim();
+      const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+      html = html.replace(regex, '<mark class="search-highlight">$1</mark>');
+    }
 
     // Headers (must come before other replacements)
     html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
@@ -114,19 +124,26 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
       <div className="tab-content">
         {/* Transcript Tab */}
         {activeTab === 'transcript' && (
-          <div className="tab-panel">
-            <div className="transcript-view">
+          <div className="tab-panel" style={{ position: 'relative' }}>
+            <div className="transcript-view" ref={transcriptContentRef}>
               <div
                 className="transcript-content"
-                dangerouslySetInnerHTML={{ __html: markdownToHtml(transcriptContent) }}
+                dangerouslySetInnerHTML={{ __html: markdownToHtml(transcriptContent, searchQuery) }}
               />
             </div>
+            {searchQuery && (
+              <HighlightMap
+                text={transcriptContent}
+                searchQuery={searchQuery}
+                scrollContainerRef={transcriptContentRef}
+              />
+            )}
           </div>
         )}
 
         {/* Summary Tab */}
         {activeTab === 'summary' && (
-          <div className="tab-panel">
+          <div className="tab-panel" style={{ position: 'relative' }}>
             <div className="summary-view" ref={summaryContentRef}>
               {/* Header with keywords and regenerate button */}
               <div style={{
@@ -190,7 +207,7 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
                 summary ? (
                   <div
                     className="summary-content"
-                    dangerouslySetInnerHTML={{ __html: markdownToHtml(summary) }}
+                    dangerouslySetInnerHTML={{ __html: markdownToHtml(summary, searchQuery) }}
                   />
                 ) : (
                   <div className="summary-placeholder">
@@ -206,7 +223,7 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
                 // Summary exists
                 <div
                   className="summary-content"
-                  dangerouslySetInnerHTML={{ __html: markdownToHtml(summary) }}
+                  dangerouslySetInnerHTML={{ __html: markdownToHtml(summary, searchQuery) }}
                 />
               ) : (
                 // No summary yet
@@ -218,6 +235,13 @@ function ContentPanel({ transcriptContent, selectedTranscript, summary, summaryK
               )}
             </div>
           </div>
+        )}
+        {activeTab === 'summary' && searchQuery && hasSummary && (
+          <HighlightMap
+            text={summary}
+            searchQuery={searchQuery}
+            scrollContainerRef={summaryContentRef}
+          />
         )}
       </div>
     </main>

@@ -150,6 +150,25 @@ class KeywordsUpdate(BaseModel):
     keywords: List[str]
 
 
+class Asset(BaseModel):
+    """Asset monitoring configuration"""
+    id: Optional[str] = Field(None, description="Asset ID (auto-generated)")
+    name: str = Field(..., description="Asset name")
+    symbol: str = Field(..., description="Asset symbol/ticker")
+    source: str = Field("manual", description="Price source")
+    category: str = Field("crypto", description="Asset category")
+    notes: Optional[str] = Field(None, description="Optional notes")
+
+
+class AssetUpdate(BaseModel):
+    """Asset update payload"""
+    name: str
+    symbol: str
+    source: str = "manual"
+    category: str = "crypto"
+    notes: Optional[str] = None
+
+
 class TranscriptResponse(BaseModel):
     """Transcript content response"""
     content: str
@@ -201,6 +220,7 @@ async def load_config() -> Dict[str, Any]:
         if not os.path.exists(CONFIG_FILE):
             default_config = {
                 "channels": [],
+                "assets": [],
                 "settings": {
                     "default_days_back": 7,
                     "default_languages": ["en"],
@@ -211,7 +231,10 @@ async def load_config() -> Dict[str, Any]:
             return default_config
 
         with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            config = json.load(f)
+            if "assets" not in config:
+                config["assets"] = []
+            return config
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to load config: {str(e)}")
 
@@ -410,13 +433,68 @@ async def update_config(config: Dict[str, Any]):
 
 
 @app.get("/api/tree", tags=["Channels"], response_model=List[Dict[str, Any]])
-async def get_tree(sort: str = "desc"):
+async def get_tree(sort: str = "desc", search: Optional[str] = None):
     """Get channel tree structure with all transcripts
 
     Args:
         sort: Sort order for transcripts ('asc' or 'desc', default 'desc')
+        search: Optional search query to filter transcripts
     """
-    return await get_channel_tree(sort_order=sort)
+    tree = await get_channel_tree(sort_order=sort)
+
+    if not search or not search.strip():
+        return tree
+
+    search_lower = search.lower().strip()
+    filtered_tree = []
+
+    config = await load_config()
+    output_dir = config.get("settings", {}).get("output_directory", OUTPUT_DIR)
+    if not os.path.isabs(output_dir):
+        output_dir = str(PROJECT_ROOT / output_dir)
+
+    for channel in tree:
+        filtered_transcripts = []
+
+        for transcript in channel["transcripts"]:
+            # Search in title
+            if search_lower in transcript["title"].lower():
+                filtered_transcripts.append(transcript)
+                continue
+
+            # Search in keywords
+            if transcript.get("keywords"):
+                if any(search_lower in kw.lower() for kw in transcript["keywords"]):
+                    filtered_transcripts.append(transcript)
+                    continue
+
+            # Search in transcript content
+            transcript_path = Path(output_dir) / channel["channel"] / "transcripts" / transcript["filename"]
+            if transcript_path.exists():
+                try:
+                    with open(transcript_path, 'r', encoding='utf-8') as f:
+                        content = f.read().lower()
+                        if search_lower in content:
+                            filtered_transcripts.append(transcript)
+                            continue
+                except Exception as e:
+                    logger.error(f"Error reading transcript for search: {e}")
+
+            # Search in summary
+            metadata = metadata_store.get(channel["channel"], transcript["filename"])
+            if metadata and metadata.summary:
+                if search_lower in metadata.summary.lower():
+                    filtered_transcripts.append(transcript)
+                    continue
+
+        if filtered_transcripts:
+            filtered_tree.append({
+                **channel,
+                "transcripts": filtered_transcripts,
+                "transcript_count": len(filtered_transcripts)
+            })
+
+    return filtered_tree
 
 
 @app.get("/api/transcript/{channel}/{filename}", tags=["Transcripts"], response_model=TranscriptResponse)
@@ -1149,6 +1227,77 @@ async def extract_keywords_from_transcript(channel: str, filename: str):
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to extract keywords: {str(e)}")
+
+
+# ============================================================================
+# Asset Monitor Endpoints
+# ============================================================================
+
+@app.get("/api/assets", tags=["Asset Monitor"])
+async def get_assets():
+    """Get all monitored assets"""
+    config = await load_config()
+    return {"assets": config.get("assets", [])}
+
+
+@app.post("/api/assets", tags=["Asset Monitor"])
+async def add_asset(asset: AssetUpdate):
+    """Add new asset to monitor"""
+    config = await load_config()
+
+    if "assets" not in config:
+        config["assets"] = []
+
+    import uuid
+    new_asset = {
+        "id": str(uuid.uuid4()),
+        **asset.dict()
+    }
+
+    config["assets"].append(new_asset)
+    await save_config(config)
+
+    return {"success": True, "message": "Asset added successfully", "asset": new_asset}
+
+
+@app.put("/api/assets/{asset_id}", tags=["Asset Monitor"])
+async def update_asset(asset_id: str, asset: AssetUpdate):
+    """Update existing asset"""
+    config = await load_config()
+
+    assets = config.get("assets", [])
+    asset_index = next((i for i, a in enumerate(assets) if a.get("id") == asset_id), None)
+
+    if asset_index is None:
+        raise HTTPException(status_code=404, detail="Asset not found")
+
+    assets[asset_index] = {
+        "id": asset_id,
+        **asset.dict()
+    }
+
+    config["assets"] = assets
+    await save_config(config)
+
+    return {"success": True, "message": "Asset updated successfully"}
+
+
+@app.delete("/api/assets/{asset_id}", tags=["Asset Monitor"])
+async def delete_asset(asset_id: str):
+    """Delete asset from monitoring"""
+    config = await load_config()
+
+    assets = config.get("assets", [])
+    original_count = len(assets)
+
+    config["assets"] = [a for a in assets if a.get("id") != asset_id]
+
+    if len(config["assets"]) == original_count:
+        raise HTTPException(status_code=404, detail="Asset not found")
+
+    await save_config(config)
+
+    return {"success": True, "message": "Asset deleted successfully"}
 
 
 if __name__ == "__main__":

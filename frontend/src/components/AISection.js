@@ -37,9 +37,7 @@ function AISection({ showStatus }) {
   };
 
   return (
-    <section className="control-section">
-      <h3>AI Summarization</h3>
-
+    <>
       {llmStatus && llmStatus.configured && (
         <div className="status-box" style={{ marginBottom: '12px' }}>
           <strong>✓ LLM Configured</strong>
@@ -60,7 +58,7 @@ function AISection({ showStatus }) {
           showStatus={showStatus}
         />
       )}
-    </section>
+    </>
   );
 }
 
