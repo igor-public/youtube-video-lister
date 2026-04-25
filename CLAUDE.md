@@ -37,29 +37,37 @@ docs/
 4. Use clear, descriptive filenames in CAPS_WITH_UNDERSCORES.md
 
 ## Project Overview
-YouTube channel monitoring and transcript management system with AI-powered summarization.
+YouTube channel monitoring and transcript management system with AI-powered summarization and asset tracking.
 
 **Tech Stack:**
-- Backend: FastAPI (Python 3.12) on port 5000
-- Frontend: React 18 on port 3000 (vanilla JS removed)
-- LLM: AWS Bedrock (Anthropic Claude models)
+- Backend: FastAPI (v2.0.0, Python 3.12) on port 5000
+- Frontend: React 19.2.5 on port 3000 (vanilla JS removed)
+- LLM: Multi-provider support (AWS Bedrock, OpenAI, Anthropic)
 - Streaming: WebSocket with React flushSync
+- Testing: pytest with 300s timeout, unit + integration tests
 
 ## Architecture Rules
 
-### Frontend
+### Frontend (React 19.2.5)
 - **ONLY React frontend** - vanilla JS version removed (static/, templates/)
 - Use WebSocket for streaming summaries (not EventSource/SSE)
 - Always use `flushSync()` for immediate renders when streaming
 - API calls go to `http://localhost:5000/api` or `/api` (proxied)
 - WebSocket connects to `ws://localhost:5000/api`
+- Search with 300ms debounce, highlights with light green background
+- Collapsible sidebar sections for space efficiency
+- HighlightMap shows search matches visually in scrollbar area
 
-### Backend
+### Backend (FastAPI v2.0.0)
 - FastAPI runs on port 5000
 - WebSocket endpoint: `/api/transcript/{channel}/{filename}/summarize/ws`
 - SSE endpoint still exists but WebSocket is preferred
+- Search endpoint: `/api/tree?search=query` (full-text across titles, content, keywords, summaries)
+- Asset Monitor API: `/api/assets` with full CRUD operations
 - CORS only allows `http://localhost:3000`
 - Never skip hooks or add `--no-verify` flags
+- BedrockClient handles Claude Opus 4.7 (no temperature parameter)
+- Converse API for unified Bedrock model interface
 
 ### Streaming Implementation
 - **Critical:** Use `flushSync()` from `react-dom` to bypass React 18 batching
@@ -85,15 +93,32 @@ YouTube channel monitoring and transcript management system with AI-powered summ
 ### File Organization
 ```
 backend/
-  main.py              # FastAPI app
-  llm_client.py        # LLM abstraction
-  transcript_metadata.py  # Metadata management
+  main.py                  # FastAPI app with WebSocket + REST APIs
+  llm_client.py            # LLM abstraction (OpenAI, Anthropic, Bedrock)
+  transcript_metadata.py   # Metadata management
+  config.py                # Configuration management (Pydantic models)
+  prompts.py               # Centralized LLM prompt templates
+  logging_config.py        # Colored logging with rotation
+  validators.py            # Input validation utilities
+  exceptions.py            # Custom exceptions
 frontend/src/
-  App.js              # Main app logic
-  components/         # React components
-  hooks/              # Custom hooks
-channel_data/         # Downloaded transcripts
-logs/                 # Application logs
+  App.js                   # Main app logic
+  components/              # React components
+    - Sidebar.js           # Channel tree with search
+    - ContentPanel.js      # Transcript/summary display
+    - ControlsPanel.js     # Collapsible control sections
+    - AssetMonitorSection.js # Asset tracking UI
+    - HighlightMap.js      # Search result visualization
+    - CollapsibleSection.js # Reusable collapsible container
+    - LLMConfigModal.js    # LLM configuration form
+  hooks/                   # Custom hooks (useLocalStorage)
+  utils/                   # Utilities (highlightText)
+channel_data/              # Downloaded transcripts
+logs/                      # Application logs (50MB rotation, 10 backups)
+tests/                     # All test files (pytest + Node.js)
+docs/                      # Documentation
+  guides/                  # Technical guides
+  changes/                 # Change logs and features
 ```
 
 ## Development Workflow
@@ -117,7 +142,22 @@ cd frontend && npm start
 2. Select transcript → Click "Summarize"
 3. Verify word-by-word streaming (not all-at-once)
 4. Check browser console for WebSocket logs
-5. Optional: Run `node test_websocket.js` for CLI test
+5. Optional: Run `node tests/test_websocket.js` for CLI test
+
+### Running Tests
+```bash
+# Run all Python tests
+pytest
+
+# Run specific test file
+pytest tests/test_api.py
+
+# Run with coverage
+pytest --cov=backend tests/
+
+# Run WebSocket test
+node tests/test_websocket.js
+```
 
 ## Important Don'ts
 
@@ -150,9 +190,17 @@ cd frontend && npm start
 ### Debugging Streaming Issues
 1. Check browser console for WebSocket logs
 2. Check `logs/backend.log` for Bedrock streaming events
-3. Run `node test_websocket.js` to test endpoint directly
+3. Run `node tests/test_websocket.js` to test endpoint directly
 4. Verify `flushSync()` is wrapping state updates
 5. Check Network tab → WS for message flow
+
+### Using Search Feature
+1. Type query in search box (above sort buttons in sidebar)
+2. 300ms debounce - results appear automatically
+3. Searches: titles, transcript content, keywords, summaries
+4. Light green highlights show matches
+5. HighlightMap (vertical bar on right) shows match positions
+6. Clear search to see all transcripts again
 
 ### Updating Dependencies
 - Backend: `pip install -r requirements.txt` + `pip install -r backend/requirements.txt`
@@ -165,9 +213,10 @@ cd frontend && npm start
 - 3000: React frontend
 
 ### Configuration Files
-- `channels_config.json` - Channel monitoring config (gitignored, contains AWS keys)
+- `channels_config.json` - Channel monitoring config + asset monitor data (gitignored, contains AWS keys)
 - `transcript_metadata.json` - Transcript metadata database
 - `.env` - Environment variables (gitignored)
+- `pytest.ini` - Test configuration (300s timeout, markers for unit/integration/slow/api/security)
 
 ### Logs
 - `logs/backend.log` - Backend application logs (rotated, 50MB limit)
@@ -177,15 +226,58 @@ cd frontend && npm start
 ## LLM Configuration
 
 ### Supported Providers
-- AWS Bedrock (primary) - True async streaming
-- OpenAI - Simulated streaming
-- Anthropic - Direct API
+- **AWS Bedrock** (primary) - True async streaming via Converse API
+- **OpenAI** - ChatCompletion API with simulated streaming
+- **Anthropic** - Direct Messages API
 
 ### Bedrock Streaming
 - Uses `aioboto3` for async operations
 - Converse Stream API for unified model interface
 - Chunks arrive every ~50ms
 - Backend logs show event timing
+- **Claude Opus 4.7 Support**: Automatically excludes deprecated `temperature` parameter
+- Model detection: checks if model ID contains "claude-opus-4-7"
+
+### LLM Client Methods
+- `generate_summary()` - Non-streaming summary generation
+- `generate_summary_stream()` - Sync streaming (boto3)
+- `generate_summary_stream_async()` - Async streaming (aioboto3)
+- `extract_keywords()` - Keyword extraction from transcripts
+
+## Asset Monitor Feature
+
+### Purpose
+Track trading assets (crypto, commodities, stocks, indices, forex) for investment intelligence gathered from YouTube transcripts.
+
+### Asset Categories
+- **Cryptocurrency** (₿) - Bitcoin, Ethereum, etc.
+- **Commodity** (🛢️) - Gold, Silver, Oil, etc.
+- **Stock** (📈) - Individual stocks
+- **Index** (📊) - S&P 500, etc.
+- **Forex** (💱) - Currency pairs
+- **Other** (💼) - Miscellaneous assets
+
+### Supported Price Sources
+- Manual Entry
+- CoinMarketCap (crypto)
+- CoinGecko (crypto)
+- Yahoo Finance (stocks, commodities)
+- TradingView (all markets)
+- Alpha Vantage (stocks, forex, crypto)
+- Finnhub (real-time data)
+
+### API Endpoints
+- `GET /api/assets` - List all monitored assets
+- `POST /api/assets` - Add new asset
+- `PUT /api/assets/{asset_id}` - Update asset
+- `DELETE /api/assets/{asset_id}` - Delete asset
+
+### Data Storage
+Assets stored in `channels_config.json` under `assets` array with fields:
+- `id` (UUID), `name`, `symbol`, `source`, `category`, `notes`
+
+### UI Location
+Right sidebar → "Asset Monitor" collapsible section (collapsed by default)
 
 ## Documentation
 

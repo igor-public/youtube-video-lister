@@ -170,6 +170,23 @@ class BedrockClient(LLMClient):
         self.aws_region = aws_region
         self.model = model
 
+    def _get_inference_config(self, max_tokens: int = 1024, for_keywords: bool = False):
+        """
+        Get inference configuration based on model.
+        Claude 4.7 (Opus) doesn't support temperature parameter.
+        """
+        config = {"maxTokens": max_tokens}
+
+        # Claude 4.7 Opus models don't support temperature
+        if "claude-opus-4-7" in self.model.lower():
+            # Don't include temperature for Opus 4.7
+            pass
+        else:
+            # Other models support temperature
+            config["temperature"] = 0.5 if for_keywords else 0.7
+
+        return config
+
     async def generate_summary_stream_async(self, content: str, keywords: list[str], title: str):
         """Generate summary with TRUE async streaming using aioboto3 and Converse Stream API"""
         try:
@@ -199,10 +216,7 @@ class BedrockClient(LLMClient):
                             "content": [{"text": prompt}]
                         }
                     ],
-                    inferenceConfig={
-                        "maxTokens": 1024,
-                        "temperature": 0.7
-                    }
+                    inferenceConfig=self._get_inference_config(max_tokens=1024)
                 )
 
                 # TRUE async streaming with Converse API
@@ -258,10 +272,7 @@ class BedrockClient(LLMClient):
                         "content": [{"text": prompt}]
                     }
                 ],
-                inferenceConfig={
-                    "maxTokens": 1024,
-                    "temperature": 0.7
-                }
+                inferenceConfig=self._get_inference_config(max_tokens=1024)
             )
 
             # Extract text from unified response format
@@ -298,10 +309,7 @@ class BedrockClient(LLMClient):
                         "content": [{"text": prompt}]
                     }
                 ],
-                inferenceConfig={
-                    "maxTokens": 1024,
-                    "temperature": 0.7
-                }
+                inferenceConfig=self._get_inference_config(max_tokens=1024)
             )
 
             # Stream the response
@@ -358,10 +366,7 @@ class BedrockClient(LLMClient):
                         "content": [{"text": prompt}]
                     }
                 ],
-                inferenceConfig={
-                    "maxTokens": 200,
-                    "temperature": 0.5
-                }
+                inferenceConfig=self._get_inference_config(max_tokens=200, for_keywords=True)
             )
 
             # Extract text from unified response format
