@@ -8,6 +8,7 @@ function ConversationList({
   conversations,
   selectedId,
   onSelect,
+  onNew,
   onDelete,
   loading,
   error
@@ -45,6 +46,16 @@ function ConversationList({
         <h3>Conversations</h3>
       </div>
 
+      {/* New conversation */}
+      <button
+        type="button"
+        className="new-conversation-btn"
+        onClick={onNew}
+        title="Start a new conversation"
+      >
+        + New conversation
+      </button>
+
       {/* Loading/Error states */}
       {loading && (
         <div className="conversation-list-status">
@@ -63,7 +74,7 @@ function ConversationList({
         <div className="conversation-items">
           {conversations.length === 0 ? (
             <div className="conversation-empty">
-              No conversations yet. Type a message below to start one.
+              No conversations yet. Click + New conversation above to start.
             </div>
           ) : (
             conversations.map((conv) => (

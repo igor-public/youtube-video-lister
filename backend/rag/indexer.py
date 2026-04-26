@@ -88,13 +88,38 @@ class BackgroundIndexer:
         Returns:
             Metadata dictionary
         """
-        # Expected structure: channel_data/ChannelName/filename.md
+        # Expected structure: .../channel_data/<ChannelName>/[subdir/]*/<filename>.md
+        # The correct channel is the path component immediately after "channel_data",
+        # NOT simply parts[-2] (which would pick up intermediate dirs like "transcripts").
         parts = transcript_path.parts
 
         if len(parts) < 2:
             raise ValueError(f"Invalid transcript path structure: {transcript_path}")
 
-        channel = parts[-2]  # Parent directory is channel name
+        channel = None
+        for i, part in enumerate(parts):
+            if part == "channel_data" and i + 1 < len(parts):
+                channel = parts[i + 1]
+                break
+
+        if channel is None:
+            # Fallback: use configured transcript_dir to locate the channel component
+            try:
+                rel = transcript_path.resolve().relative_to(self.transcript_dir.resolve())
+                rel_parts = rel.parts
+                if rel_parts:
+                    channel = rel_parts[0]
+            except Exception:
+                channel = None
+
+        if channel is None:
+            # Last-resort fallback (preserves old behaviour so we never raise here)
+            channel = parts[-2] if len(parts) >= 2 else "unknown"
+            logger.warning(
+                f"Could not locate 'channel_data' segment in path {transcript_path}; "
+                f"falling back to parent dir '{channel}'"
+            )
+
         filename = transcript_path.name
 
         # Try to extract date from filename (e.g., video_20260420.md)

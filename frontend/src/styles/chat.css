@@ -811,3 +811,33 @@
     max-height: 90vh;
   }
 }
+
+/* ============================================================
+   NEW CONVERSATION BUTTON (in conversation-list header area)
+   ============================================================ */
+.new-conversation-btn {
+  display: block;
+  width: calc(100% - 24px);
+  margin: 10px 12px;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  border-radius: 0;
+  color: var(--amber);
+  font-family: var(--mono2);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+.new-conversation-btn:hover {
+  background: rgba(255, 181, 71, 0.08);
+  border-color: var(--amber);
+  color: var(--amber-hot);
+}
+.new-conversation-btn:active {
+  background: rgba(255, 181, 71, 0.14);
+}

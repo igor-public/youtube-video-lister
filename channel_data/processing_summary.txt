@@ -4,8 +4,8 @@ PROCESSING SUMMARY
 ================================================================================
 
 Channels processed: 5
-Videos found: 124
-Videos skipped (already processed): 97
+Videos found: 128
+Videos skipped (already processed): 101
 Videos processed: 4
 Transcripts created: 4
 Errors: 23
@@ -31,26 +31,26 @@ Errors: 23
 
 ✓ DwarkeshPatel
   Videos found: 50
-  Videos skipped: 47
-  Videos processed: 1
-  Transcripts: 1
+  Videos skipped: 48
+  Videos processed: 0
+  Transcripts: 0
   Errors: 2
     - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
     - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
 
 ✓ CoinBureau
-  Videos found: 13
+  Videos found: 14
   Videos skipped: 6
-  Videos processed: 0
-  Transcripts: 0
+  Videos processed: 1
+  Transcripts: 1
   Errors: 7
     - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
     - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
     - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
 
 ✓ BitcoinStrategy
-  Videos found: 40
-  Videos skipped: 29
+  Videos found: 43
+  Videos skipped: 32
   Videos processed: 3
   Transcripts: 3
   Errors: 8

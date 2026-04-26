@@ -3,7 +3,8 @@ Hybrid Retriever
 Combines vector search, BM25 keyword search, and reranking
 """
 
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
+import re
 import logging
 
 from .vector_store import VectorStore
@@ -12,6 +13,37 @@ from .embeddings import BedrockEmbeddings
 from .reranker import CohereReranker
 
 logger = logging.getLogger(__name__)
+
+
+# Module-level regexes so we don't recompile on every call
+_MENTION_RE = re.compile(r'@(\w+)')
+_WHITESPACE_RE = re.compile(r'\s+')
+
+
+def strip_channel_mentions(query: str) -> Tuple[str, List[str]]:
+    """
+    Remove @Channel mentions from a query string.
+
+    This is the single source of truth for mention stripping. Both the
+    retriever (before embedding / BM25) and any other caller that needs a
+    clean query should use this helper. It must run even when the caller
+    has already supplied channel_filters, because the raw @Token noise
+    leaks into the embedding model and the BM25 tokenizer otherwise.
+
+    Args:
+        query: Raw user query, possibly containing @Mentions.
+
+    Returns:
+        (cleaned_query, mentions) where cleaned_query has mentions removed
+        and mentions is a list of channel names (without the @).
+    """
+    if not query:
+        return query, []
+
+    mentions = _MENTION_RE.findall(query)
+    cleaned = _MENTION_RE.sub('', query)
+    cleaned = _WHITESPACE_RE.sub(' ', cleaned).strip()
+    return cleaned, mentions
 
 
 class RetrievedChunk:
@@ -89,9 +121,10 @@ class HybridRetriever:
 
         logger.info(f"Initialized hybrid retriever: vector={vector_top_k}, bm25={bm25_top_k}, rerank={rerank_top_k}, final={final_top_k}")
 
-    def _parse_channel_filters(self, query: str) -> tuple[str, List[str]]:
+    def _parse_channel_filters(self, query: str) -> Tuple[str, List[str]]:
         """
-        Parse @channel mentions from query
+        Parse @channel mentions from query (thin wrapper around
+        strip_channel_mentions kept for backward compatibility).
 
         Args:
             query: User query with optional @channel mentions
@@ -99,22 +132,9 @@ class HybridRetriever:
         Returns:
             Tuple of (cleaned_query, channel_filters)
         """
-        import re
-
-        # Find all @mentions
-        mentions = re.findall(r'@(\w+)', query)
-
-        if not mentions:
-            return query, []
-
-        # Remove @mentions from query
-        cleaned_query = re.sub(r'@\w+', '', query).strip()
-
-        # Remove extra whitespace
-        cleaned_query = re.sub(r'\s+', ' ', cleaned_query)
-
-        logger.debug(f"Parsed channels: {mentions}, cleaned query: {cleaned_query}")
-
+        cleaned_query, mentions = strip_channel_mentions(query)
+        if mentions:
+            logger.debug(f"Parsed channels: {mentions}, cleaned query: {cleaned_query}")
         return cleaned_query, mentions
 
     async def retrieve(
@@ -140,9 +160,17 @@ class HybridRetriever:
 
         logger.info(f"Retrieving chunks for query: '{query[:50]}...'")
 
-        # Parse @mentions if not provided
+        # Always strip @mentions from the text that will be embedded / tokenised,
+        # regardless of whether channel_filters was supplied by the caller. The
+        # @Token noise must never reach the embedding model or BM25 tokenizer.
+        cleaned_query, parsed_mentions = strip_channel_mentions(query)
+
         if channel_filters is None:
-            query, channel_filters = self._parse_channel_filters(query)
+            # No pre-supplied filters — use whatever we parsed from the query.
+            channel_filters = parsed_mentions if parsed_mentions else None
+
+        # Query passed to embedding / BM25 from here on is the cleaned version.
+        query = cleaned_query
 
         if channel_filters:
             logger.info(f"Filtering by channels: {channel_filters}")
@@ -152,7 +180,7 @@ class HybridRetriever:
         # Step 1: Embed query
         if log_callback:
             await log_callback("Step 1/6: Embedding query (Bedrock Cohere v3)...")
-        logger.debug("Embedding query...")
+        logger.info(f"Embedding query text: {query!r}")
         query_embedding = await self.embeddings_client.embed_query_async(query)
         if log_callback:
             await log_callback("Query embedded successfully")

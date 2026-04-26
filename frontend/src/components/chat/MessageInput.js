@@ -17,7 +17,22 @@ function MessageInput({ conversationId, chat, onMessageSent, onNewConversation }
   });
   const textareaRef = useRef(null);
 
-  const { sendMessage, stopStreaming, isStreaming } = chat;
+  const { sendMessage, stopStreaming, isStreaming, error: chatError } = chat;
+
+  // If the stream fails, the `onComplete` callback never fires — so isSending
+  // would stay true and lock the textarea as read-only. Reset it whenever the
+  // hook surfaces an error, or whenever streaming ends unexpectedly.
+  useEffect(() => {
+    if (chatError) setIsSending(false);
+  }, [chatError]);
+  useEffect(() => {
+    if (!isStreaming) {
+      // Covers the case where the socket closes without an explicit error
+      // (e.g. server went away). `onComplete` will have already cleared this
+      // on the happy path; this is a safety net.
+      setIsSending(false);
+    }
+  }, [isStreaming]);
 
   // Load available channels once
   useEffect(() => {
@@ -111,7 +126,10 @@ function MessageInput({ conversationId, chat, onMessageSent, onNewConversation }
 
   const handleSend = async () => {
     const trimmedQuery = query.trim();
-    if (!trimmedQuery || isStreaming) return;
+    if (isStreaming) return;
+    // Allow sending when the user typed only @mentions (no prose): the backend
+    // will interpret a mention-only message and ask a clarifying question.
+    if (!trimmedQuery && channelFilters.length === 0) return;
 
     // Create conversation if none exists
     let activeConversationId = conversationId;
@@ -240,7 +258,7 @@ function MessageInput({ conversationId, chat, onMessageSent, onNewConversation }
           <button
             className="send-button"
             onClick={handleSend}
-            disabled={isDisabled || !query.trim()}
+            disabled={isDisabled || (!query.trim() && channelFilters.length === 0)}
             title="Send message (Enter)"
           >
             ▲
