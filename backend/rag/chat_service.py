@@ -55,7 +55,16 @@ class RAGChatService:
     def _estimate_tokens(self, text: str) -> int:
         return len(text) // 4
     
-    def _build_prompt(self, query: str, retrieved_chunks: List, conversation_history: List[Dict[str, str]] = None) -> str:
+    def _format_history(self, conversation_history: Optional[List[Dict[str, str]]]) -> str:
+        if not conversation_history:
+            return ""
+        lines = []
+        for msg in conversation_history[-5:]:
+            lines.append(f"{msg['role'].capitalize()}: {msg['content']}")
+        return "\n\n".join(lines) + "\n\n"
+
+    def _build_prompt(self, query: str, retrieved_chunks: List, conversation_history: Optional[List[Dict[str, str]]] = None) -> str:
+        """Prompt when retrieval returned relevant chunks."""
         context_parts = []
         for i, chunk in enumerate(retrieved_chunks, 1):
             metadata = chunk.metadata
@@ -63,11 +72,7 @@ class RAGChatService:
                 f"[Source {i}] {metadata.get('channel', 'Unknown')} - \"{metadata.get('title', 'Unknown')}\" ({metadata.get('date', 'Unknown')})\n{chunk.text}\n"
             )
         context = "\n".join(context_parts)
-
-        history = ""
-        if conversation_history:
-            for msg in conversation_history[-5:]:
-                history += f"{msg['role'].capitalize()}: {msg['content']}\n\n"
+        history = self._format_history(conversation_history)
 
         return f"""You are an AI assistant analyzing YouTube video transcripts.
 
@@ -77,59 +82,30 @@ Retrieved Context:
 {history}User: {query}
 
 Instructions:
-- Provide structured answer citing sources
-- Format: **@ChannelName** (Date): point...
-- Keep concise and actionable
-- Only use provided context"""
+- Prefer the retrieved context above when answering; cite sources inline as **@ChannelName** (Date): point...
+- Keep the answer concise and actionable.
+- If the retrieved context does not address the question, say so plainly, then answer from the conversation history or general knowledge and clearly mark which parts are not sourced from the transcripts."""
 
-    def _build_prompt_clarify(self, channel_filters: List[str], conversation_history: List[Dict[str, str]] = None) -> str:
+    def _build_prompt_no_context(self, query: str, conversation_history: Optional[List[Dict[str, str]]] = None) -> str:
+        """Prompt when retrieval returned nothing.
+
+        The LLM should still answer — from conversation history, general
+        knowledge, or a graceful "I don't have that indexed" — rather than
+        surfacing a hard error to the user.
         """
-        Prompt used when the user message consists only of @Channel mentions
-        with no accompanying prose. The user clearly wants something *about*
-        those channels but hasn't said what — ask them a short, specific
-        clarifying question instead of returning an error.
-        """
-        history = ""
-        if conversation_history:
-            for msg in conversation_history[-5:]:
-                history += f"{msg['role'].capitalize()}: {msg['content']}\n\n"
+        history = self._format_history(conversation_history)
+        return f"""You are an AI assistant for a YouTube transcript archive.
 
-        channels = ", ".join(f"@{c}" for c in (channel_filters or []))
-        return f"""You are an AI assistant for a YouTube transcript knowledge base.
+No indexed transcripts were retrieved for the current question. This is normal
+for meta, conversational, or general-knowledge queries (e.g. "summary of the
+channel", "what can you do", "thanks"). Answer directly, briefly, and in plain
+prose. Do not use source citations and do not invent transcript quotes.
 
-The user's message referenced {channels} but did not say what they want to know. Do NOT attempt to answer or summarise — instead, ask a short, friendly clarifying question tailored to the channel(s) they picked.
+If the question is specifically about channel or video content that should be
+in the archive but isn't, say so plainly and suggest the user re-index or
+rephrase (e.g. mention a channel with @ChannelName).
 
-Guidance:
-- One or two sentences, conversational.
-- Offer two or three concrete example prompts the user could pick from (e.g. "Would you like a recap of the last week, the main arguments on bitcoin, or something specific?").
-- No source citations, no invented quotes.
-
-{history}User mentioned: {channels}"""
-
-    def _build_prompt_no_context(self, query: str, conversation_history: List[Dict[str, str]] = None) -> str:
-        """
-        Build a context-free prompt for the graceful fallback path.
-
-        Used when both channel-filtered and un-filtered retrieval returned zero
-        chunks. The LLM is told it has no transcript context and should respond
-        conversationally while acknowledging the gap.
-        """
-        history = ""
-        if conversation_history:
-            for msg in conversation_history[-5:]:
-                history += f"{msg['role'].capitalize()}: {msg['content']}\n\n"
-
-        return f"""You are an AI assistant for a YouTube transcript knowledge base.
-
-No relevant transcript excerpts were retrieved for the user's question.
-
-{history}User: {query}
-
-Instructions:
-- Reply conversationally in a short paragraph.
-- Clearly state that you don't have transcript evidence for this question.
-- Suggest how the user could rephrase or broaden their query (e.g. remove a channel filter, try different keywords) so retrieval succeeds next time.
-- Do not invent citations or sources."""
+{history}User: {query}"""
     
     def _format_sources(self, retrieved_chunks: List) -> List[Dict[str, Any]]:
         sources = []
@@ -245,13 +221,16 @@ Instructions:
             for log_msg in logs_queue:
                 yield ChatResponse(type='log', content=log_msg)
 
-            # Build prompt (with or without retrieved context)
-            if used_no_context_fallback:
-                yield ChatResponse(type='log', content='Building context-free fallback prompt...')
-                prompt = self._build_prompt_no_context(query, history)
-            else:
+            # Build prompt — branch on whether retrieval produced anything.
+            # An empty retrieval is not a failure; many questions (meta,
+            # conversational, general-knowledge) are answerable without it.
+            if retrieved_chunks:
                 yield ChatResponse(type='log', content='Building prompt with retrieved context...')
                 prompt = self._build_prompt(query, retrieved_chunks, history)
+            else:
+                yield ChatResponse(type='log', content='No matching transcripts — answering without retrieval')
+                prompt = self._build_prompt_no_context(query, history)
+
             input_tokens = self._estimate_tokens(prompt)
 
             # Generate answer with LLM streaming
@@ -266,11 +245,13 @@ Instructions:
                 full_response += chunk
                 output_tokens = self._estimate_tokens(full_response)
                 yield ChatResponse(type='chunk', content=chunk)
-            
-            # Format sources
-            yield ChatResponse(type='log', content='Preparing source citations...')
-            sources = self._format_sources(retrieved_chunks)
-            yield ChatResponse(type='sources', sources=sources)
+
+            # Emit citations only when retrieval found something.
+            sources: List[Dict[str, Any]] = []
+            if retrieved_chunks:
+                yield ChatResponse(type='log', content='Preparing source citations...')
+                sources = self._format_sources(retrieved_chunks)
+                yield ChatResponse(type='sources', sources=sources)
 
             # Save assistant message
             yield ChatResponse(type='log', content='Saving to database...')
@@ -280,7 +261,7 @@ Instructions:
                 content=full_response,
                 output_tokens=output_tokens,
                 documents_retrieved=len(retrieved_chunks),
-                sources=sources
+                sources=sources if sources else None,
             )
 
             # Send stats

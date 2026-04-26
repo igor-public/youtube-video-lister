@@ -8,7 +8,7 @@ import AssetMonitorSection from './AssetMonitorSection';
 function ControlsPanel({ config, loadConfig, loadStats, loadTree, showStatus }) {
   return (
     <>
-      <CollapsibleSection title="Monitor Channels" defaultCollapsed={false}>
+      <CollapsibleSection title="Monitor" defaultCollapsed={false} state={{ label: 'idle', kind: 'idle' }}>
         <MonitorSection
           loadStats={loadStats}
           loadTree={loadTree}
@@ -25,15 +25,11 @@ function ControlsPanel({ config, loadConfig, loadStats, loadTree, showStatus }) 
       </CollapsibleSection>
 
       <CollapsibleSection title="LLM" defaultCollapsed={true}>
-        <AISection
-          showStatus={showStatus}
-        />
+        <AISection showStatus={showStatus} />
       </CollapsibleSection>
 
-      <CollapsibleSection title="Asset Monitor" defaultCollapsed={true}>
-        <AssetMonitorSection
-          showStatus={showStatus}
-        />
+      <CollapsibleSection title="Assets" defaultCollapsed={true}>
+        <AssetMonitorSection showStatus={showStatus} />
       </CollapsibleSection>
     </>
   );

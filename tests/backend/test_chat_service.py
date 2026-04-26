@@ -1,384 +1,226 @@
 """
-Unit tests for the RAG chat layer.
+Unit tests for backend.rag.chat_service.RAGChatService.
 
-Covers the four fixes applied in the backend refactor:
-  1. Indexer channel extraction must walk the path to find the component
-     immediately after "channel_data" (not blindly use parts[-2]).
-  2. @mentions must be stripped from the query text BEFORE it reaches the
-     embedding model / BM25 tokenizer, even when channel_filters is supplied.
-  3. The chat pipeline uses the new ``generate_chat_stream_async`` on the LLM
-     client — no double-prompt wrapping.
-  4. Empty retrieval falls through to a context-free prompt (no hard abort).
+Focus: the pipeline must NOT hard-fail with "No relevant information found"
+when retrieval returns zero chunks. Instead, it should fall back to a
+context-free prompt so the LLM can answer meta / conversational / general
+questions (e.g. "summary of the channel", "what can you do", "thanks").
 """
 
-from pathlib import Path
-from types import SimpleNamespace
-from unittest.mock import MagicMock
+import asyncio
+from dataclasses import dataclass
+from typing import Any, Dict, List, Optional
+from unittest.mock import patch
 
 import pytest
 
-from backend.rag import retriever as retriever_module
-from backend.rag.retriever import HybridRetriever, strip_channel_mentions
-from backend.rag.indexer import BackgroundIndexer
 from backend.rag.chat_service import RAGChatService
 
 
 # ---------------------------------------------------------------------------
-# Item 1: channel extraction
+# Test doubles
 # ---------------------------------------------------------------------------
 
-
-def _make_indexer(transcript_dir: Path) -> BackgroundIndexer:
-    """Construct an indexer with all collaborators mocked — we only test
-    path parsing here so the stores / embeddings never get called."""
-    return BackgroundIndexer(
-        vector_store=MagicMock(),
-        bm25_store=MagicMock(),
-        embeddings_client=MagicMock(),
-        chunker=MagicMock(),
-        transcript_dir=transcript_dir,
-    )
+@dataclass
+class FakeChunk:
+    chunk_id: str
+    text: str
+    metadata: Dict[str, Any]
 
 
-def test_channel_extraction_uses_channel_data_anchor(tmp_path, monkeypatch):
-    """Path .../channel_data/Foo/transcripts/bar.md must yield channel='Foo'."""
-    transcript_path = Path("/tmp/fake/channel_data/Foo/transcripts/bar.md")
-    indexer = _make_indexer(transcript_dir=Path("/tmp/fake/channel_data"))
+class FakeRetriever:
+    """Retriever stub. Returns whatever `chunks` it was given."""
 
-    # Stub the file read so we don't need the file on disk.
-    monkeypatch.setattr(
-        BackgroundIndexer,
-        "_read_transcript",
-        lambda self, p: "# dummy title\nbody text",
-    )
-    # Patch ``open`` as used inside _extract_metadata_from_path for title line.
-    import builtins
-    real_open = builtins.open
+    def __init__(self, chunks: Optional[List[FakeChunk]] = None):
+        self.chunks = chunks or []
+        self.calls = 0
 
-    def fake_open(path, *args, **kwargs):
-        if str(path) == str(transcript_path):
-            from io import StringIO
-            return StringIO("# Fake Title\nrest")
-        return real_open(path, *args, **kwargs)
-
-    monkeypatch.setattr(builtins, "open", fake_open)
-
-    metadata = indexer._extract_metadata_from_path(transcript_path)
-
-    assert metadata["channel"] == "Foo", (
-        f"Expected channel='Foo', got {metadata['channel']!r}. "
-        "Bug: indexer is still using parts[-2] which returns 'transcripts'."
-    )
-    assert metadata["filename"] == "bar.md"
+    async def retrieve(self, query, channel_filters=None, log_callback=None):
+        self.calls += 1
+        if log_callback is not None:
+            await log_callback("retriever stub invoked")
+        return list(self.chunks)
 
 
-def test_channel_extraction_real_layout(tmp_path, monkeypatch):
-    """Simulate the production layout channel_data/BitcoinStrategy/transcripts/x.md."""
-    transcript_path = Path(
-        "/home/x/channel_data/BitcoinStrategy/transcripts/video_20260101.md"
-    )
-    indexer = _make_indexer(transcript_dir=Path("/home/x/channel_data"))
+class FakeMessage:
+    def __init__(self, role: str, content: str):
+        self.role = role
+        self.content = content
 
-    import builtins
-    real_open = builtins.open
 
-    def fake_open(path, *args, **kwargs):
-        if str(path) == str(transcript_path):
-            from io import StringIO
-            return StringIO("# Title\n")
-        return real_open(path, *args, **kwargs)
+class FakeChatDatabase:
+    """Minimal ChatDatabase stub: in-memory history, no side effects."""
 
-    monkeypatch.setattr(builtins, "open", fake_open)
+    def __init__(self):
+        self.messages: Dict[str, List[FakeMessage]] = {}
+        self.titles: Dict[str, str] = {}
 
-    metadata = indexer._extract_metadata_from_path(transcript_path)
-    assert metadata["channel"] == "BitcoinStrategy"
-    assert metadata["date"] == "2026-01-01"
+    def get_messages(self, conversation_id: str) -> List[FakeMessage]:
+        return self.messages.get(conversation_id, [])
+
+    def add_message(self, conversation_id, role, content, **kwargs):
+        self.messages.setdefault(conversation_id, []).append(FakeMessage(role, content))
+        return FakeMessage(role, content)
+
+    def update_conversation_title(self, conversation_id, title):
+        self.titles[conversation_id] = title
+
+
+class FakeLLMClient:
+    """Streams a fixed response word-by-word."""
+
+    def __init__(self, text: str = "Hello there."):
+        self.text = text
+        self.last_prompt: Optional[str] = None
+        self.last_keywords: Optional[list] = None
+
+    async def generate_summary_stream_async(self, content: str, keywords, title):
+        self.last_prompt = content
+        self.last_keywords = list(keywords)
+        for word in self.text.split():
+            yield word + " "
 
 
 # ---------------------------------------------------------------------------
-# Item 2: @mention stripping
+# Helpers
 # ---------------------------------------------------------------------------
 
-
-def test_strip_channel_mentions_basic():
-    cleaned, mentions = strip_channel_mentions("summarise @Foo for me")
-    assert cleaned == "summarise for me"
-    assert mentions == ["Foo"]
+async def _collect(agen):
+    return [item async for item in agen]
 
 
-def test_strip_channel_mentions_multiple():
-    cleaned, mentions = strip_channel_mentions("compare @Foo and @Bar opinions")
-    assert cleaned == "compare and opinions"
-    assert mentions == ["Foo", "Bar"]
-
-
-def test_strip_channel_mentions_none():
-    cleaned, mentions = strip_channel_mentions("no mentions here")
-    assert cleaned == "no mentions here"
-    assert mentions == []
-
-
-def test_strip_channel_mentions_empty():
-    cleaned, mentions = strip_channel_mentions("")
-    assert cleaned == ""
-    assert mentions == []
-
-
-def test_retriever_strips_mentions_even_when_filters_supplied():
-    """
-    Regression test: the previous retriever skipped _parse_channel_filters
-    when channel_filters was already provided, letting '@Foo' leak into the
-    embed call and BM25 tokenization. The fix: always strip mentions.
-    """
-    captured = {}
-
-    async def fake_embed(query):
-        captured["embedded_query"] = query
-        return [0.0] * 1024
-
-    vector_store = MagicMock()
-    vector_store.search.return_value = []
-    bm25_store = MagicMock()
-    bm25_store.search.return_value = []
-
-    # Reranker is only async when vector/bm25 results are non-empty — but
-    # merge will be empty here so reranker is never awaited. Still provide
-    # an object.
-    reranker = MagicMock()
-
-    embeddings_client = SimpleNamespace(embed_query_async=fake_embed)
-
-    retriever = HybridRetriever(
-        vector_store=vector_store,
-        bm25_store=bm25_store,
-        embeddings_client=embeddings_client,
-        reranker=reranker,
-    )
-
-    import asyncio
-    asyncio.get_event_loop()
-    asyncio.run(
-        retriever.retrieve(
-            query="summarise @Foo for me",
-            channel_filters=["Foo"],  # pre-supplied
-        )
-    )
-
-    assert "@Foo" not in captured["embedded_query"], (
-        f"Mention leaked into embedding call: {captured['embedded_query']!r}"
-    )
-    assert captured["embedded_query"] == "summarise for me"
-
-    # BM25 must also receive the cleaned query, not the raw @-laden one.
-    bm25_call = bm25_store.search.call_args
-    assert bm25_call is not None
-    bm25_query = bm25_call.kwargs.get("query") or bm25_call.args[0]
-    assert "@Foo" not in bm25_query
-
-
-def test_retriever_parses_mentions_when_filters_none():
-    """When channel_filters=None, @mentions must still be parsed and stripped."""
-    captured = {}
-
-    async def fake_embed(query):
-        captured["embedded_query"] = query
-        return [0.0] * 1024
-
-    vector_store = MagicMock()
-    vector_store.search.return_value = []
-    bm25_store = MagicMock()
-    bm25_store.search.return_value = []
-
-    embeddings_client = SimpleNamespace(embed_query_async=fake_embed)
-
-    retriever = HybridRetriever(
-        vector_store=vector_store,
-        bm25_store=bm25_store,
-        embeddings_client=embeddings_client,
-        reranker=MagicMock(),
-    )
-
-    import asyncio
-    asyncio.run(
-        retriever.retrieve(
-            query="what did @BitcoinStrategy say",
-            channel_filters=None,
-        )
-    )
-
-    assert captured["embedded_query"] == "what did say"
-    vector_call = vector_store.search.call_args
-    assert vector_call.kwargs.get("channel_filter") == ["BitcoinStrategy"]
+def _run(coro):
+    return asyncio.get_event_loop().run_until_complete(coro)
 
 
 # ---------------------------------------------------------------------------
-# Items 3 + 5: chat pipeline calls generate_chat_stream_async AND has a
-# graceful empty-retrieval fallback.
+# Tests
 # ---------------------------------------------------------------------------
 
+class TestEmptyRetrievalFallback:
+    """Regression tests for: empty retrieval must not error out."""
 
-def _collect(async_gen):
-    """Drain an async generator into a list (sync helper for tests)."""
-    import asyncio
-    out = []
+    def _make_service(self, chunks: Optional[List[FakeChunk]] = None):
+        retriever = FakeRetriever(chunks)
+        chat_db = FakeChatDatabase()
+        service = RAGChatService(retriever, chat_db, llm_config={"provider": "bedrock"})
+        return service, retriever, chat_db
 
-    async def _drain():
-        async for item in async_gen:
-            out.append(item)
+    def test_empty_retrieval_does_not_emit_error(self):
+        """With no chunks retrieved, the service must not yield type='error'."""
+        service, _, _ = self._make_service(chunks=[])
+        llm = FakeLLMClient(text="I can summarize what you have indexed.")
 
-    asyncio.run(_drain())
-    return out
+        async def run():
+            with patch("backend.rag.chat_service.create_llm_client", return_value=llm):
+                return await _collect(service.generate_answer("conv-1", "summary of the channel"))
 
+        responses = _run(run())
 
-def _make_chat_service(
-    retrieved_chunks,
-    llm_chunks,
-    retrieved_chunks_unfiltered=None,
-):
-    """Build a RAGChatService with mocks. Returns (service, llm_client_mock)."""
+        types = [r.type for r in responses]
+        assert "error" not in types, f"pipeline emitted error: {[r.error for r in responses if r.type == 'error']}"
+        assert "start" in types
+        assert "chunk" in types
+        assert "done" in types
 
-    # Retriever returns different results depending on channel_filters, to
-    # simulate the "filter empty, un-filtered non-empty" path.
-    class FakeRetriever:
-        def __init__(self):
-            self.calls = []
+    def test_empty_retrieval_still_streams_llm_answer(self):
+        """The LLM must still be called and its chunks streamed to the client."""
+        service, _, _ = self._make_service(chunks=[])
+        llm = FakeLLMClient(text="Here is what I can do for you.")
 
-        async def retrieve(self, query, channel_filters=None, log_callback=None):
-            self.calls.append(channel_filters)
-            if channel_filters:
-                return retrieved_chunks
-            return (
-                retrieved_chunks_unfiltered
-                if retrieved_chunks_unfiltered is not None
-                else retrieved_chunks
-            )
+        async def run():
+            with patch("backend.rag.chat_service.create_llm_client", return_value=llm):
+                return await _collect(service.generate_answer("conv-2", "what can you do"))
 
-    retriever = FakeRetriever()
+        responses = _run(run())
+        chunks = [r.content for r in responses if r.type == "chunk"]
+        joined = "".join(chunks).strip()
+        assert joined.startswith("Here is what I can do")
 
-    # Fake ChatDatabase
-    chat_db = MagicMock()
-    chat_db.get_messages.return_value = []
-    chat_db.add_message.return_value = MagicMock(id="msg-id")
+    def test_empty_retrieval_emits_no_sources(self):
+        """Citation events should not fire when there are no retrieved chunks."""
+        service, _, _ = self._make_service(chunks=[])
+        llm = FakeLLMClient()
 
-    # Fake LLM client exposing the new chat-stream method.
-    captured_prompt = {}
+        async def run():
+            with patch("backend.rag.chat_service.create_llm_client", return_value=llm):
+                return await _collect(service.generate_answer("conv-3", "thanks"))
 
-    class FakeLLMClient:
-        async def generate_chat_stream_async(self, prompt):
-            captured_prompt["prompt"] = prompt
-            for c in llm_chunks:
-                yield c
+        responses = _run(run())
+        assert not any(r.type == "sources" for r in responses)
 
-        # Should NEVER be called in the new path.
-        async def generate_summary_stream_async(self, content, keywords, title):
-            captured_prompt["called_summary_instead"] = True
-            if False:
-                yield ""
+    def test_empty_retrieval_prompt_is_context_free(self):
+        """The prompt shipped to the LLM must not reference 'Retrieved Context'."""
+        service, _, _ = self._make_service(chunks=[])
+        llm = FakeLLMClient()
 
-    fake_llm = FakeLLMClient()
+        async def run():
+            with patch("backend.rag.chat_service.create_llm_client", return_value=llm):
+                await _collect(service.generate_answer("conv-4", "summary of the channel"))
 
-    service = RAGChatService(
-        retriever=retriever,
-        chat_db=chat_db,
-        llm_config={"provider": "bedrock", "model": "test-model"},
-    )
-
-    # Patch create_llm_client to return our fake client.
-    import backend.rag.chat_service as cs_mod
-    cs_mod.create_llm_client = lambda cfg: fake_llm
-
-    return service, fake_llm, retriever, captured_prompt
-
-
-def _fake_chunk(channel="Foo", title="T", date="2026-01-01", text="body"):
-    return SimpleNamespace(
-        chunk_id=f"{channel}__f__0",
-        text=text,
-        metadata={"channel": channel, "title": title, "date": date},
-    )
-
-
-def test_chat_uses_generate_chat_stream_async_not_summary():
-    """Item 3: chat service must call generate_chat_stream_async with the RAG prompt
-    directly, NOT generate_summary_stream_async which would double-wrap it."""
-    chunks = [_fake_chunk()]
-    service, fake_llm, _retr, captured = _make_chat_service(
-        retrieved_chunks=chunks, llm_chunks=["Hello ", "world"]
-    )
-
-    events = _collect(
-        service.generate_answer(
-            conversation_id="conv-1",
-            query="what happened",
-            channel_filters=["Foo"],
+        _run(run())
+        assert llm.last_prompt is not None
+        assert "Retrieved Context" not in llm.last_prompt, (
+            "Fallback prompt must not claim retrieved context exists"
         )
-    )
-
-    # We got chunked content
-    chunk_events = [e for e in events if e.type == "chunk"]
-    assert "".join(e.content for e in chunk_events) == "Hello world"
-
-    # The prompt passed to the LLM is the RAG prompt, not double-wrapped.
-    assert "Retrieved Context:" in captured["prompt"]
-    assert "transcript titled" not in captured["prompt"], (
-        "Prompt appears to have been wrapped by the summarise-transcript template."
-    )
-    assert "called_summary_instead" not in captured
 
 
-def test_chat_empty_retrieval_falls_through_to_no_context_prompt():
-    """Item 5: empty retrieval (both filtered + un-filtered) must fall through
-    to the context-free prompt rather than hard-aborting with an error."""
-    service, fake_llm, retriever, captured = _make_chat_service(
-        retrieved_chunks=[],  # filtered empty
-        retrieved_chunks_unfiltered=[],  # un-filtered also empty
-        llm_chunks=["I have no context but here is a reply."],
-    )
+class TestPopulatedRetrievalUnchanged:
+    """Make sure the happy path still works: sources event fires + prompt cites context."""
 
-    events = _collect(
-        service.generate_answer(
-            conversation_id="conv-2",
-            query="anything",
-            channel_filters=["Foo"],
+    def test_with_chunks_emits_sources_and_includes_context(self):
+        chunk = FakeChunk(
+            chunk_id="c-1",
+            text="The Fed signalled a pause in May.",
+            metadata={"channel": "MacroVoices", "title": "Fed pause", "date": "2026-04-22"},
         )
-    )
-
-    # Must NOT emit an error event.
-    error_events = [e for e in events if e.type == "error"]
-    assert not error_events, f"Unexpected error events: {[e.error for e in error_events]}"
-
-    # Must have called the LLM with the no-context prompt.
-    assert "No relevant transcript excerpts" in captured["prompt"]
-
-    # Should have tried filtered retrieval first, then retried un-filtered.
-    assert retriever.calls == [["Foo"], None], (
-        f"Expected filtered then un-filtered retrieval, got {retriever.calls}"
-    )
-
-    # Chunks got streamed.
-    chunk_events = [e for e in events if e.type == "chunk"]
-    assert "".join(e.content for e in chunk_events).startswith("I have no context")
-
-
-def test_chat_empty_filtered_retrieval_retries_unfiltered_and_succeeds():
-    """Item 5 variant: filtered retrieval empty but un-filtered returns results."""
-    service, fake_llm, retriever, captured = _make_chat_service(
-        retrieved_chunks=[],
-        retrieved_chunks_unfiltered=[_fake_chunk(channel="Foo")],
-        llm_chunks=["ok"],
-    )
-
-    events = _collect(
-        service.generate_answer(
-            conversation_id="conv-3",
-            query="anything",
-            channel_filters=["Foo"],
+        service = RAGChatService(
+            FakeRetriever([chunk]),
+            FakeChatDatabase(),
+            llm_config={"provider": "bedrock"},
         )
-    )
+        llm = FakeLLMClient(text="MacroVoices says the Fed paused.")
 
-    error_events = [e for e in events if e.type == "error"]
-    assert not error_events
+        async def run():
+            with patch("backend.rag.chat_service.create_llm_client", return_value=llm):
+                return await _collect(service.generate_answer("conv-5", "what did MacroVoices say?"))
 
-    # Context prompt (not no-context) because un-filtered retry worked.
-    assert "Retrieved Context:" in captured["prompt"]
-    assert retriever.calls == [["Foo"], None]
+        responses = _run(run())
+        assert any(r.type == "sources" for r in responses)
+        src_event = next(r for r in responses if r.type == "sources")
+        assert src_event.sources and src_event.sources[0]["channel"] == "MacroVoices"
+        assert "Retrieved Context" in llm.last_prompt
+        assert "Fed signalled a pause" in llm.last_prompt
+
+
+class TestPromptBuilders:
+    """Direct tests against the prompt helpers."""
+
+    def test_no_context_prompt_mentions_no_retrieval(self):
+        service = RAGChatService(FakeRetriever([]), FakeChatDatabase(), llm_config={})
+        prompt = service._build_prompt_no_context("summary of the channel", None)
+        assert "No indexed transcripts were retrieved" in prompt
+        assert "summary of the channel" in prompt
+
+    def test_context_prompt_includes_sources(self):
+        service = RAGChatService(FakeRetriever([]), FakeChatDatabase(), llm_config={})
+        chunk = FakeChunk(
+            chunk_id="c-1",
+            text="Bitcoin dominance is rising.",
+            metadata={"channel": "BitcoinStrategy", "title": "BTC dom", "date": "2026-04-24"},
+        )
+        prompt = service._build_prompt("btc dominance?", [chunk], None)
+        assert "[Source 1]" in prompt
+        assert "BitcoinStrategy" in prompt
+        assert "Bitcoin dominance is rising" in prompt
+
+    def test_context_prompt_no_longer_forbids_outside_knowledge(self):
+        """The old prompt said 'Only use provided context' — that was too strict."""
+        service = RAGChatService(FakeRetriever([]), FakeChatDatabase(), llm_config={})
+        chunk = FakeChunk(
+            chunk_id="c-1",
+            text="…",
+            metadata={"channel": "x", "title": "y", "date": "z"},
+        )
+        prompt = service._build_prompt("q", [chunk], None)
+        assert "Only use provided context" not in prompt

@@ -232,52 +232,24 @@ function AssetMonitorSection({ showStatus }) {
 
       {/* Add/Edit Asset Modal */}
       {showModal && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(0,0,0,0.5)',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          zIndex: 1000
-        }}>
-          <div style={{
-            backgroundColor: 'white',
-            padding: '24px',
-            borderRadius: '8px',
-            width: '90%',
-            maxWidth: '500px',
-            maxHeight: '90vh',
-            overflow: 'auto'
-          }}>
-            <h2 style={{ marginTop: 0, marginBottom: '20px' }}>
+        <div className="asset-modal-overlay">
+          <div className="asset-modal">
+            <h2 className="asset-modal-title">
               {editingAsset ? 'Edit Asset' : 'Add New Asset'}
             </h2>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="asset-modal-form">
               {/* Quick Suggestions */}
               {!editingAsset && (
-                <div style={{ marginBottom: '20px' }}>
-                  <label style={{ display: 'block', fontSize: '13px', fontWeight: '500', marginBottom: '8px' }}>
-                    Quick Add:
-                  </label>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                <div className="asset-field">
+                  <label>Quick Add</label>
+                  <div className="asset-suggestions">
                     {assetSuggestions.map(suggestion => (
                       <button
                         key={suggestion.symbol}
                         type="button"
+                        className="asset-suggestion-chip"
                         onClick={() => handleSuggestionClick(suggestion)}
-                        style={{
-                          padding: '6px 12px',
-                          backgroundColor: '#f1f3f4',
-                          border: '1px solid #dadce0',
-                          borderRadius: '16px',
-                          cursor: 'pointer',
-                          fontSize: '12px'
-                        }}
                       >
                         {suggestion.name} ({suggestion.symbol})
                       </button>
@@ -287,62 +259,35 @@ function AssetMonitorSection({ showStatus }) {
               )}
 
               {/* Asset Name */}
-              <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', fontSize: '13px', fontWeight: '500', marginBottom: '6px' }}>
-                  Asset Name *
-                </label>
+              <div className="asset-field">
+                <label>Asset Name *</label>
                 <input
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="e.g., Bitcoin, Gold, S&P 500"
-                  style={{
-                    width: '100%',
-                    padding: '8px',
-                    border: '1px solid #dadce0',
-                    borderRadius: '4px',
-                    fontSize: '14px'
-                  }}
                   required
                 />
               </div>
 
               {/* Symbol */}
-              <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', fontSize: '13px', fontWeight: '500', marginBottom: '6px' }}>
-                  Symbol/Ticker *
-                </label>
+              <div className="asset-field">
+                <label>Symbol / Ticker *</label>
                 <input
                   type="text"
                   value={formData.symbol}
                   onChange={(e) => setFormData({ ...formData, symbol: e.target.value.toUpperCase() })}
                   placeholder="e.g., BTC, XAU, SPX"
-                  style={{
-                    width: '100%',
-                    padding: '8px',
-                    border: '1px solid #dadce0',
-                    borderRadius: '4px',
-                    fontSize: '14px'
-                  }}
                   required
                 />
               </div>
 
               {/* Category */}
-              <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', fontSize: '13px', fontWeight: '500', marginBottom: '6px' }}>
-                  Category
-                </label>
+              <div className="asset-field">
+                <label>Category</label>
                 <select
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-                  style={{
-                    width: '100%',
-                    padding: '8px',
-                    border: '1px solid #dadce0',
-                    borderRadius: '4px',
-                    fontSize: '14px'
-                  }}
                 >
                   {categories.map(cat => (
                     <option key={cat.id} value={cat.id}>
@@ -353,20 +298,11 @@ function AssetMonitorSection({ showStatus }) {
               </div>
 
               {/* Price Source */}
-              <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', fontSize: '13px', fontWeight: '500', marginBottom: '6px' }}>
-                  Price Source
-                </label>
+              <div className="asset-field">
+                <label>Price Source</label>
                 <select
                   value={formData.source}
                   onChange={(e) => setFormData({ ...formData, source: e.target.value })}
-                  style={{
-                    width: '100%',
-                    padding: '8px',
-                    border: '1px solid #dadce0',
-                    borderRadius: '4px',
-                    fontSize: '14px'
-                  }}
                 >
                   {priceSources.map(source => (
                     <option key={source.id} value={source.id}>
@@ -377,56 +313,26 @@ function AssetMonitorSection({ showStatus }) {
               </div>
 
               {/* Notes */}
-              <div style={{ marginBottom: '20px' }}>
-                <label style={{ display: 'block', fontSize: '13px', fontWeight: '500', marginBottom: '6px' }}>
-                  Notes (Optional)
-                </label>
+              <div className="asset-field">
+                <label>Notes (Optional)</label>
                 <textarea
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   placeholder="Add any notes about this asset or why you're monitoring it..."
                   rows={3}
-                  style={{
-                    width: '100%',
-                    padding: '8px',
-                    border: '1px solid #dadce0',
-                    borderRadius: '4px',
-                    fontSize: '13px',
-                    fontFamily: 'inherit',
-                    resize: 'vertical'
-                  }}
                 />
               </div>
 
               {/* Buttons */}
-              <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
+              <div className="asset-modal-actions">
                 <button
                   type="button"
+                  className="btn btn-secondary"
                   onClick={() => setShowModal(false)}
-                  style={{
-                    padding: '8px 16px',
-                    backgroundColor: 'white',
-                    border: '1px solid #dadce0',
-                    borderRadius: '4px',
-                    cursor: 'pointer',
-                    fontSize: '14px'
-                  }}
                 >
                   Cancel
                 </button>
-                <button
-                  type="submit"
-                  style={{
-                    padding: '8px 16px',
-                    backgroundColor: '#4a9eff',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '4px',
-                    cursor: 'pointer',
-                    fontSize: '14px',
-                    fontWeight: '500'
-                  }}
-                >
+                <button type="submit" className="btn btn-primary">
                   {editingAsset ? 'Update Asset' : 'Add Asset'}
                 </button>
               </div>

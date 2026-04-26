@@ -3,11 +3,8 @@
    ============================================ */
 
 /* Chat trigger button (top center of content area) */
-.content-with-chat {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
+/* NOTE: layout sizing for .content-with-chat lives in index.css (20/60/20 rule).
+   Do NOT add flex / width here — it will clobber the main layout ratio. */
 
 .chat-trigger-button {
   align-self: center;

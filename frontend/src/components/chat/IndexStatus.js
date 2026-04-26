@@ -93,7 +93,7 @@ function IndexStatus() {
             padding: '4px 10px',
             fontSize: '11px',
             backgroundColor: 'rgba(255, 255, 255, 0.2)',
-            color: 'blue',
+            color: 'white',
             border: '1px solid rgba(255, 255, 255, 0.3)',
             borderRadius: '12px',
             cursor: refreshing ? 'not-allowed' : 'pointer',
