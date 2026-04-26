@@ -15,7 +15,11 @@ function ConversationList({
 }) {
 
   const formatDate = (timestamp) => {
-    const date = new Date(timestamp);
+    // Backend stores UTC timestamps without timezone - append Z so JS parses as UTC
+    const utcTimestamp = timestamp && !timestamp.endsWith('Z') && !timestamp.includes('+')
+      ? timestamp + 'Z'
+      : timestamp;
+    const date = new Date(utcTimestamp);
     const now = new Date();
     const diffMs = now - date;
     const diffMins = Math.floor(diffMs / 60000);

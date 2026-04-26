@@ -1,17 +1,16 @@
 import React, { useState, useMemo, useRef } from 'react';
-import { useChat } from '../../hooks/chat/useChat';
-import { extractMentions, highlightMentions } from '../../utils/chat/mentionParser';
+import { extractMentions } from '../../utils/chat/mentionParser';
 
 /**
  * Message input with @mention support
  * Parses @ChannelName mentions for filtering
  */
-function MessageInput({ conversationId, onMessageSent, onNewConversation }) {
+function MessageInput({ conversationId, chat, onMessageSent, onNewConversation }) {
   const [query, setQuery] = useState('');
   const [isSending, setIsSending] = useState(false);
   const textareaRef = useRef(null);
 
-  const { sendMessage, stopStreaming, isStreaming } = useChat(conversationId);
+  const { sendMessage, stopStreaming, isStreaming } = chat;
 
   // Extract channel filters from @mentions
   const channelFilters = useMemo(() => {

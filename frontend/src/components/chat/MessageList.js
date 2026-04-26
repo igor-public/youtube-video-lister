@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { flushSync } from 'react-dom';
-import { useChat } from '../../hooks/chat/useChat';
 import { useChatHistory } from '../../hooks/chat/useChatHistory';
 import SourceCitation from './SourceCitation';
 
@@ -8,7 +6,7 @@ import SourceCitation from './SourceCitation';
  * Message list component with streaming support
  * Shows conversation history + live streaming response
  */
-function MessageList({ conversationId, onStatsUpdate, onLogsUpdate }) {
+function MessageList({ conversationId, chat, onConversationStatsUpdate }) {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -18,10 +16,8 @@ function MessageList({ conversationId, onStatsUpdate, onLogsUpdate }) {
     isStreaming,
     currentMessage,
     sources,
-    stats: messageStats,
-    error: streamError,
-    logs
-  } = useChat(conversationId);
+    error: streamError
+  } = chat;
 
   // Load conversation history
   useEffect(() => {
@@ -35,34 +31,36 @@ function MessageList({ conversationId, onStatsUpdate, onLogsUpdate }) {
       const result = await loadMessages(conversationId);
       if (result) {
         setMessages(result.messages || []);
-        if (onStatsUpdate) {
-          onStatsUpdate(null, result.stats);
+        if (onConversationStatsUpdate) {
+          onConversationStatsUpdate(result.stats);
         }
       }
       setLoading(false);
     };
 
     loadHistory();
-  }, [conversationId, loadMessages, onStatsUpdate]);
+  }, [conversationId, loadMessages, onConversationStatsUpdate]);
+
+  // Reload history when streaming completes (to get the final saved message)
+  useEffect(() => {
+    if (!isStreaming && conversationId && currentMessage === '') {
+      // Just finished streaming - reload
+      loadMessages(conversationId).then((result) => {
+        if (result) {
+          setMessages(result.messages || []);
+          if (onConversationStatsUpdate) {
+            onConversationStatsUpdate(result.stats);
+          }
+        }
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isStreaming]);
 
   // Auto-scroll to bottom when new messages arrive or streaming
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, currentMessage]);
-
-  // Update stats when streaming completes
-  useEffect(() => {
-    if (!isStreaming && messageStats && onStatsUpdate) {
-      onStatsUpdate(messageStats, null);
-    }
-  }, [isStreaming, messageStats, onStatsUpdate]);
-
-  // Update logs
-  useEffect(() => {
-    if (onLogsUpdate) {
-      onLogsUpdate(logs);
-    }
-  }, [logs, onLogsUpdate]);
 
   const renderMessageContent = (content, msgSources = null) => {
     if (!msgSources || msgSources.length === 0) {
@@ -113,7 +111,12 @@ function MessageList({ conversationId, onStatsUpdate, onLogsUpdate }) {
           </div>
           {renderMessageContent(msg.content, msg.sources)}
           <div className="message-timestamp">
-            {new Date(msg.timestamp).toLocaleString()}
+            {(() => {
+              const ts = msg.timestamp || msg.created_at;
+              if (!ts) return '';
+              const utc = !ts.endsWith('Z') && !ts.includes('+') ? ts + 'Z' : ts;
+              return new Date(utc).toLocaleString();
+            })()}
           </div>
         </div>
       ))}

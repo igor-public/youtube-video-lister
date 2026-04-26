@@ -6,6 +6,7 @@ import StatsPanel from './StatsPanel';
 import IndexStatus from './IndexStatus';
 import LogPanel from './LogPanel';
 import { useChatHistory } from '../../hooks/chat/useChatHistory';
+import { useChat } from '../../hooks/chat/useChat';
 
 /**
  * Main chat modal window
@@ -14,8 +15,6 @@ import { useChatHistory } from '../../hooks/chat/useChatHistory';
 function ChatModal({ isOpen, onClose }) {
   const [conversationId, setConversationId] = useState(null);
   const [conversationStats, setConversationStats] = useState(null);
-  const [messageStats, setMessageStats] = useState(null);
-  const [logs, setLogs] = useState([]);
 
   const {
     conversations,
@@ -26,6 +25,9 @@ function ChatModal({ isOpen, onClose }) {
     loadConversations
   } = useChatHistory();
 
+  // Single useChat instance shared between MessageList and MessageInput
+  const chat = useChat(conversationId);
+
   if (!isOpen) return null;
 
   const handleNewConversation = async () => {
@@ -33,7 +35,6 @@ function ChatModal({ isOpen, onClose }) {
     if (newId) {
       setConversationId(newId);
       setConversationStats(null);
-      setMessageStats(null);
     }
     return newId;
   };
@@ -41,7 +42,6 @@ function ChatModal({ isOpen, onClose }) {
   const handleSelectConversation = (id) => {
     setConversationId(id);
     setConversationStats(null);
-    setMessageStats(null);
   };
 
   const handleDeleteConversation = async (id) => {
@@ -49,17 +49,7 @@ function ChatModal({ isOpen, onClose }) {
     if (success && id === conversationId) {
       setConversationId(null);
       setConversationStats(null);
-      setMessageStats(null);
     }
-  };
-
-  const handleStatsUpdate = (msgStats, convStats) => {
-    setMessageStats(msgStats);
-    setConversationStats(convStats);
-  };
-
-  const handleLogsUpdate = (newLogs) => {
-    setLogs(newLogs);
   };
 
   return (
@@ -92,22 +82,23 @@ function ChatModal({ isOpen, onClose }) {
             <div className="chat-main">
               <MessageList
                 conversationId={conversationId}
-                onStatsUpdate={handleStatsUpdate}
-                onLogsUpdate={handleLogsUpdate}
+                chat={chat}
+                onConversationStatsUpdate={setConversationStats}
               />
               {conversationId && (
                 <StatsPanel
-                  messageStats={messageStats}
+                  messageStats={chat.stats}
                   conversationStats={conversationStats}
                 />
               )}
               <MessageInput
                 conversationId={conversationId}
+                chat={chat}
                 onMessageSent={() => loadConversations()}
                 onNewConversation={handleNewConversation}
               />
             </div>
-            <LogPanel logs={logs} />
+            <LogPanel logs={chat.logs} isStreaming={chat.isStreaming} />
           </div>
         </div>
       </div>

@@ -683,6 +683,12 @@
   color: #5f6368;
 }
 
+.log-status-indicator {
+  color: #34a853;
+  font-weight: 500;
+  animation: blink 1.5s infinite;
+}
+
 .log-panel-content {
   flex: 1;
   overflow-y: auto;

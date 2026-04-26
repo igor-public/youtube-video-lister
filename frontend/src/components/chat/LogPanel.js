@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 /**
  * Log panel showing real-time processing steps
  */
-function LogPanel({ logs }) {
+function LogPanel({ logs, isStreaming }) {
   const logEndRef = useRef(null);
 
   // Auto-scroll to bottom when new logs arrive
@@ -15,6 +15,7 @@ function LogPanel({ logs }) {
     <div className="log-panel">
       <div className="log-panel-header">
         <strong>Processing Log</strong>
+        {isStreaming && <span className="log-status-indicator"> • Active</span>}
       </div>
       <div className="log-panel-content">
         {logs.length === 0 ? (

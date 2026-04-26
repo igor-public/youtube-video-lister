@@ -5,7 +5,7 @@ SQLite data models for chat conversations and messages
 import sqlite3
 import json
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Optional, Dict, Any
 from dataclasses import dataclass, asdict
@@ -127,7 +127,7 @@ class ChatDatabase:
     def create_conversation(self, title: Optional[str] = None) -> Conversation:
         """Create new conversation"""
         conv_id = str(uuid.uuid4())
-        now = datetime.utcnow().isoformat()
+        now = datetime.now(timezone.utc).isoformat()
 
         conversation = Conversation(
             id=conv_id,
@@ -205,7 +205,7 @@ class ChatDatabase:
             UPDATE conversations
             SET title = ?, updated_at = ?
             WHERE id = ?
-        """, (title, datetime.utcnow().isoformat(), conversation_id))
+        """, (title, datetime.now(timezone.utc).isoformat(), conversation_id))
 
         conn.commit()
         conn.close()
@@ -241,7 +241,7 @@ class ChatDatabase:
             embedding_tokens,
             llm_calls,
             documents_retrieved,
-            datetime.utcnow().isoformat(),
+            datetime.now(timezone.utc).isoformat(),
             conversation_id
         ))
 
@@ -276,7 +276,7 @@ class ChatDatabase:
     ) -> Message:
         """Add message to conversation"""
         msg_id = str(uuid.uuid4())
-        now = datetime.utcnow().isoformat()
+        now = datetime.now(timezone.utc).isoformat()
 
         message = Message(
             id=msg_id,
