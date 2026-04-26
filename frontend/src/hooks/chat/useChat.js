@@ -42,11 +42,22 @@ export function useChat(conversationId) {
     setLogs([]);
   }, []);
 
-  // Reset transient chat state whenever the active conversation id changes.
-  // Without this, a previous conversation's error banner / in-flight stream
-  // persists when the user opens a new conversation.
+  // Reset transient chat state whenever the user switches between two
+  // distinct existing conversations. We deliberately skip:
+  //   - the initial mount (nothing to reset yet)
+  //   - the first null → <id> transition that happens when the user sends
+  //     their first message in a newly-created conversation. In that case
+  //     sendMessage() has just opened a WebSocket; running reset() here
+  //     would close it mid-handshake and produce the
+  //     "WebSocket is closed before the connection is established" error.
+  const prevIdRef = useRef(conversationId);
   useEffect(() => {
-    reset();
+    const prev = prevIdRef.current;
+    prevIdRef.current = conversationId;
+    // Only reset when transitioning between two real ids.
+    if (prev && conversationId && prev !== conversationId) {
+      reset();
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [conversationId]);
 
