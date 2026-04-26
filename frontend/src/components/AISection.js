@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import LLMConfigModal from './LLMConfigModal';
-
-const API_BASE = '/api';
+import { API_BASE } from '../config';
 
 function AISection({ showStatus }) {
   const [showModal, setShowModal] = useState(false);

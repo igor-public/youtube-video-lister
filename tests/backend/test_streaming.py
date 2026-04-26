@@ -10,7 +10,7 @@ import sys
 
 # Load config
 from pathlib import Path
-config_path = Path(__file__).parent.parent / "backend" / "config" / "channels_config.json"
+config_path = Path(__file__).parent.parent.parent / "backend" / "config" / "channels_config.json"
 with open(config_path) as f:
     config = json.load(f)
 

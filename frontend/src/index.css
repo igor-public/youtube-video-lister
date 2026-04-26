@@ -197,19 +197,21 @@ header h1 {
 .btn-channel-delete {
     background: transparent;
     border: none;
-    color: #d93025;
-    font-size: 16px;
+    color: #80868b;
+    font-size: 11px;
     cursor: pointer;
-    padding: 4px 6px;
-    border-radius: 4px;
+    padding: 2px 4px;
+    border-radius: 3px;
     transition: all 0.15s;
     line-height: 1;
-    margin-left: 4px;
+    margin-left: 2px;
+    opacity: 0.6;
 }
 
 .btn-channel-delete:hover {
     background: #fce8e6;
-    color: #c5221f;
+    color: #d93025;
+    opacity: 1;
 }
 
 .unread-badge {

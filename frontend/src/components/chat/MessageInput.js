@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { extractMentions } from '../../utils/chat/mentionParser';
-
-const API_BASE = '/api';
+import { API_BASE } from '../../config';
 
 /**
  * Message input with @mention support and channel autocomplete
@@ -244,7 +243,7 @@ function MessageInput({ conversationId, chat, onMessageSent, onNewConversation }
             disabled={isDisabled || !query.trim()}
             title="Send message (Enter)"
           >
-            ➤
+            ▲
           </button>
         )}
       </div>

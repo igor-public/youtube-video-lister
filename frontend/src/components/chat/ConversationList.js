@@ -8,7 +8,6 @@ function ConversationList({
   conversations,
   selectedId,
   onSelect,
-  onNew,
   onDelete,
   loading,
   error
@@ -35,10 +34,8 @@ function ConversationList({
   };
 
   const handleDelete = (e, id) => {
-    e.stopPropagation(); // Prevent selecting conversation when deleting
-    if (window.confirm('Delete this conversation?')) {
-      onDelete(id);
-    }
+    e.stopPropagation();
+    onDelete(id);
   };
 
   return (
@@ -46,13 +43,6 @@ function ConversationList({
       {/* Header */}
       <div className="conversation-list-header">
         <h3>Conversations</h3>
-        <button
-          className="new-conversation-icon-button"
-          onClick={onNew}
-          title="New conversation"
-        >
-          ➕
-        </button>
       </div>
 
       {/* Loading/Error states */}
@@ -73,7 +63,7 @@ function ConversationList({
         <div className="conversation-items">
           {conversations.length === 0 ? (
             <div className="conversation-empty">
-              No conversations yet. Click ➕ to start.
+              No conversations yet. Type a message below to start one.
             </div>
           ) : (
             conversations.map((conv) => (
@@ -101,8 +91,9 @@ function ConversationList({
                   className="conversation-delete"
                   onClick={(e) => handleDelete(e, conv.id)}
                   title="Delete conversation"
+                  aria-label="Delete conversation"
                 >
-                  🗑️
+                  ✕
                 </button>
               </div>
             ))

@@ -37,12 +37,12 @@ case $TEST_TYPE in
 
     "api")
         echo -e "${YELLOW}Running API tests...${NC}"
-        pytest tests/test_api.py -v -m api
+        pytest tests/backend/test_api.py -v -m api
         ;;
 
     "security")
         echo -e "${YELLOW}Running security tests...${NC}"
-        pytest tests/test_api.py -v -m security
+        pytest tests/backend/test_api.py -v -m security
         ;;
 
     "unit")
@@ -83,7 +83,8 @@ case $TEST_TYPE in
         echo "Examples:"
         echo "  ./run_tests.sh all coverage"
         echo "  ./run_tests.sh api"
-        echo "  ./run_tests.sh specific tests/test_api.py::TestHealthEndpoints"
+        echo "  ./run_tests.sh specific tests/backend/test_api.py::TestHealthEndpoints"
+        echo "  ./run_tests.sh specific tests/backend/           # all backend tests"
         exit 0
         ;;
 

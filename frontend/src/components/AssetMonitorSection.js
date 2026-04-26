@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { API_BASE } from '../config';
 
 function AssetMonitorSection({ showStatus }) {
   const [assets, setAssets] = useState([]);
@@ -48,7 +49,7 @@ function AssetMonitorSection({ showStatus }) {
 
   const loadAssets = async () => {
     try {
-      const response = await fetch('/api/assets');
+      const response = await fetch(`${API_BASE}/assets`);
       if (response.ok) {
         const data = await response.json();
         setAssets(data.assets || []);
@@ -89,7 +90,7 @@ function AssetMonitorSection({ showStatus }) {
     }
 
     try {
-      const response = await fetch(`/api/assets/${assetId}`, {
+      const response = await fetch(`${API_BASE}/assets/${assetId}`, {
         method: 'DELETE'
       });
 
@@ -114,7 +115,7 @@ function AssetMonitorSection({ showStatus }) {
     }
 
     try {
-      const url = editingAsset ? `/api/assets/${editingAsset.id}` : '/api/assets';
+      const url = editingAsset ? `${API_BASE}/assets/${editingAsset.id}` : `${API_BASE}/assets`;
       const method = editingAsset ? 'PUT' : 'POST';
 
       const response = await fetch(url, {

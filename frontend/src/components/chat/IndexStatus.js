@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-const API_BASE = '/api';
+import { API_BASE } from '../../config';
 
 /**
  * Index status indicator with refresh button
@@ -60,7 +59,7 @@ function IndexStatus() {
     switch (status.status) {
       case 'current': return '#34a853';
       case 'updating': return '#fbbc04';
-      case 'stale': return '#f9ab00';
+      case 'stale': return '#5f6368';
       default: return '#5f6368';
     }
   };
@@ -94,7 +93,7 @@ function IndexStatus() {
             padding: '4px 10px',
             fontSize: '11px',
             backgroundColor: 'rgba(255, 255, 255, 0.2)',
-            color: 'white',
+            color: 'blue',
             border: '1px solid rgba(255, 255, 255, 0.3)',
             borderRadius: '12px',
             cursor: refreshing ? 'not-allowed' : 'pointer',
@@ -102,7 +101,7 @@ function IndexStatus() {
           }}
           title="Rebuild index from all transcripts"
         >
-          {refreshing ? '...' : '🔄 Refresh'}
+          {refreshing ? '...' : 'Refresh'}
         </button>
       )}
     </div>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import AddChannelModal from './AddChannelModal';
-
-const API_BASE = '/api';
+import { API_BASE } from '../config';
 
 function ConfigSection({ config, loadConfig, showStatus }) {
   const [showAddModal, setShowAddModal] = useState(false);

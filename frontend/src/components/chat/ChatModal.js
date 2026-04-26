@@ -57,7 +57,7 @@ function ChatModal({ isOpen, onClose }) {
       <div className="chat-modal" onClick={(e) => e.stopPropagation()}>
         {/* Header */}
         <div className="chat-modal-header">
-          <h2>💬 Transcript Chat</h2>
+          <h2> Transcript Chat</h2>
           <IndexStatus />
           <button className="close-button" onClick={onClose} title="Close chat">
             ✕
@@ -71,7 +71,6 @@ function ChatModal({ isOpen, onClose }) {
             conversations={conversations}
             selectedId={conversationId}
             onSelect={handleSelectConversation}
-            onNew={handleNewConversation}
             onDelete={handleDeleteConversation}
             loading={loading}
             error={error}

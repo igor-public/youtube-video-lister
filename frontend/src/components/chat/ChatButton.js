@@ -10,7 +10,7 @@ function ChatButton({ onClick }) {
       onClick={onClick}
       title="Chat with Transcripts"
     >
-      💬 Chat with Transcripts
+      Chat with Transcripts
     </button>
   );
 }

@@ -38,8 +38,8 @@ from .chat.models import ChatDatabase
 PROJECT_ROOT = Path(__file__).parent.parent
 
 # Set up logging with file output
-log_dir = PROJECT_ROOT / "logs"
-log_dir.mkdir(exist_ok=True)
+log_dir = Path(os.getenv("LOG_DIR", str(PROJECT_ROOT / "logs")))
+log_dir.mkdir(parents=True, exist_ok=True)
 
 # Configure logging with rotation
 logger = setup_logging(
@@ -64,10 +64,13 @@ app = FastAPI(
     openapi_url="/api/openapi.json"
 )
 
-# CORS middleware
+# CORS middleware — comma-separated origins; "*" allowed for wide-open dev use.
+_cors_env = os.getenv("CORS_ORIGINS", "http://localhost:3000")
+CORS_ORIGINS = [o.strip() for o in _cors_env.split(",") if o.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -82,7 +85,7 @@ METADATA_DB = os.getenv("METADATA_DB", str(PROJECT_ROOT / "backend" / "config" /
 metadata_store = MetadataStore(Path(METADATA_DB))
 
 # Initialize RAG components
-RAG_DATA_DIR = PROJECT_ROOT / "backend" / "data"
+RAG_DATA_DIR = Path(os.getenv("RAG_DATA_DIR", str(PROJECT_ROOT / "backend" / "data")))
 RAG_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # Global RAG components (will be initialized on startup)
@@ -526,7 +529,7 @@ def run_monitoring_background(channels: List[Dict], output_dir: str):
 @app.get("/", include_in_schema=False)
 async def root():
     """API root endpoint"""
-    return {"message": "YouTube Toolkit API", "docs": "/api/docs", "frontend": "http://localhost:3000"}
+    return {"message": "YouTube Toolkit API", "docs": "/api/docs"}
 
 
 @app.get("/health", tags=["System"])

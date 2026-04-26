@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-const API_BASE = '/api';
+import { API_BASE } from '../config';
 
 function AddChannelModal({ channel, isEdit, onClose, onSuccess, showStatus }) {
   const [url, setUrl] = useState('');

@@ -1,1 +1,1 @@
-"""Test suite for youtube-toolkit package."""
+"""Test suite for youtube-toolkit (split into tests.backend and tests.frontend)."""

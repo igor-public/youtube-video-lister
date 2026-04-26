@@ -14,7 +14,7 @@ import sys
 import os
 
 # Add backend to path
-sys.path.insert(0, str(Path(__file__).parent.parent / "backend"))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / "backend"))
 
 from main import app, metadata_store, OUTPUT_DIR, PROJECT_ROOT
 

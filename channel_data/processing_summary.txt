@@ -4,11 +4,11 @@ PROCESSING SUMMARY
 ================================================================================
 
 Channels processed: 5
-Videos found: 121
-Videos skipped (already processed): 95
+Videos found: 124
+Videos skipped (already processed): 97
 Videos processed: 4
 Transcripts created: 4
-Errors: 22
+Errors: 23
 
 
 ✓ CoinBureauTrading
@@ -31,31 +31,31 @@ Errors: 22
 
 ✓ DwarkeshPatel
   Videos found: 50
-  Videos skipped: 48
-  Videos processed: 0
-  Transcripts: 0
+  Videos skipped: 47
+  Videos processed: 1
+  Transcripts: 1
   Errors: 2
     - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
     - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
 
 ✓ CoinBureau
-  Videos found: 14
+  Videos found: 13
   Videos skipped: 6
-  Videos processed: 1
-  Transcripts: 1
+  Videos processed: 0
+  Transcripts: 0
   Errors: 7
     - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
     - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
     - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
 
 ✓ BitcoinStrategy
-  Videos found: 36
-  Videos skipped: 26
+  Videos found: 40
+  Videos skipped: 29
   Videos processed: 3
   Transcripts: 3
-  Errors: 7
-    - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
+  Errors: 8
     - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded
-    - Will Crypto Freak Out? ☢️The Next Few Hours Are Critical: No subtitle files were downloaded
+    - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
+    - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
 
 ================================================================================

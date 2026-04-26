@@ -4,28 +4,31 @@ A comprehensive tool for monitoring YouTube channels, downloading transcripts, a
 
 ## 🚀 Quick Start
 
-1. **Install Dependencies**
+Backend and frontend run as independent services and can be started together or separately.
+
+1. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    cd frontend && npm install
    ```
 
-2. **Start Backend**
+2. **Configure environment** (optional — defaults work for local dev)
    ```bash
-   source venv/bin/activate
-   cd backend
-   python -m uvicorn main:app --host 127.0.0.1 --port 5000
+   cp backend/.env.example .env                  # backend vars (loaded from project root)
+   cp frontend/.env.example frontend/.env.local  # frontend vars (REACT_APP_*)
    ```
 
-3. **Start Frontend**
+3. **Start services**
    ```bash
-   cd frontend
-   npm start
+   ./start_all.sh               # both
+   # or, to work on one side at a time:
+   ./start_backend_streaming.sh # backend only
+   ./start_frontend.sh          # frontend only
    ```
 
 4. **Access UI**
    - React UI: http://localhost:3000
-   - Vanilla JS UI: http://localhost:5000
+   - Backend API: http://localhost:5000
 
 ## ✨ Features
 
@@ -36,7 +39,6 @@ A comprehensive tool for monitoring YouTube channels, downloading transcripts, a
 - ✅ **Real-time Streaming** - Watch summaries generate word-by-word
 - ✅ **Split-View UI** - View transcript and summary side-by-side
 - ✅ **Read/Unread Tracking** - Track which transcripts you've reviewed
-- ✅ **Dual Frontend** - Choose React or Vanilla JS UI
 - ✅ **Resizable Panels** - Drag-to-resize sidebar and controls
 
 ## 📚 Documentation
@@ -96,10 +98,9 @@ A comprehensive tool for monitoring YouTube channels, downloading transcripts, a
 - boto3 - AWS Bedrock integration
 
 **Frontend:**
-- React 18 - UI framework
-- Vanilla JavaScript - Alternative UI
+- React 19 - UI framework
 - Material Design - UI styling
-- EventSource - Server-sent events for streaming
+- WebSocket + `flushSync` - Real-time streaming updates
 
 **Storage:**
 - JSON files - Configuration and metadata
@@ -116,26 +117,26 @@ A comprehensive tool for monitoring YouTube channels, downloading transcripts, a
 
 ```
 youtube-video-lister/
-├── backend/
-│   ├── main.py              # FastAPI application
+├── backend/                 # FastAPI service — isolated from the UI
+│   ├── main.py              # FastAPI app (REST + WebSocket)
 │   ├── llm_client.py        # LLM provider abstraction
-│   └── transcript_metadata.py # Metadata management
-├── frontend/
+│   ├── transcript_metadata.py
+│   ├── config/              # channels_config.json, transcript_metadata.json
+│   ├── data/                # RAG artifacts (chromadb, bm25 index)
+│   └── .env.example         # Backend env vars (CORS, paths, LLM, AWS)
+├── frontend/                # React 19 SPA — isolated from the backend
 │   ├── src/
 │   │   ├── components/      # React components
-│   │   └── hooks/           # Custom hooks
-│   └── public/
-├── static/                  # Vanilla JS UI
-│   ├── css/
-│   └── js/
-├── templates/               # HTML templates
-├── channel_data/            # Downloaded transcripts
+│   │   ├── hooks/           # Custom hooks
+│   │   └── config.js        # Single source for API_BASE / WS_BASE
+│   ├── public/
+│   └── .env.example         # Frontend env vars (REACT_APP_*)
+├── channel_data/            # Downloaded transcripts (gitignored)
 ├── docs/
-│   ├── guides/             # User guides
-│   └── changes/            # Change logs
-├── channels_config.json    # Channel configuration
-├── transcript_metadata.json # Transcript metadata database
-└── README.md               # This file
+│   ├── guides/              # User guides
+│   └── changes/             # Change logs
+├── .env                     # Backend secrets (gitignored)
+└── README.md
 ```
 
 ## 🎯 Typical Workflow
@@ -200,17 +201,30 @@ Automatically managed. Stores:
 
 ## 🛠️ Development
 
-### Backend Development
+The two services are fully decoupled — editing the UI never requires Python to
+be running, and vice versa. The frontend reaches the backend via a small set of
+environment variables (`REACT_APP_API_BASE`, `REACT_APP_WS_BASE`), and the
+backend's CORS whitelist is driven by `CORS_ORIGINS`.
+
+### Backend only
 ```bash
-source venv/bin/activate
-cd backend
-python -m uvicorn main:app --reload --host 127.0.0.1 --port 5000
+./start_backend_streaming.sh
+# or:
+source venv/bin/activate && uvicorn backend.main:app --reload --port 5000
 ```
 
-### Frontend Development
+### Frontend only
 ```bash
-cd frontend
-npm start  # React dev server on port 3000
+./start_frontend.sh
+# or:
+cd frontend && npm start
+```
+
+### Pointing the frontend at a remote backend
+Copy `frontend/.env.example` to `frontend/.env.local` and set:
+```
+REACT_APP_API_BASE=https://api.example.com/api
+REACT_APP_WS_BASE=wss://api.example.com/api
 ```
 
 ### API Documentation

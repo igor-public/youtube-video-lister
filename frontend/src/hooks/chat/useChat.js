@@ -1,4 +1,5 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
+import { WS_BASE } from '../../config';
 
 /**
  * Custom hook for WebSocket chat functionality
@@ -51,11 +52,7 @@ export function useChat(conversationId) {
     setError(null);
     setLogs([]);
 
-    // Determine WebSocket URL
-    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    const host = window.location.hostname;
-    const port = process.env.REACT_APP_BACKEND_PORT || '5000';
-    const wsUrl = `${protocol}//${host}:${port}/api/chat/conversations/${activeConvId}/message`;
+    const wsUrl = `${WS_BASE}/chat/conversations/${activeConvId}/message`;
 
     // Create WebSocket connection
     const ws = new WebSocket(wsUrl);

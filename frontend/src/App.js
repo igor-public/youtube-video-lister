@@ -9,9 +9,7 @@ import ResizeHandle from './components/ResizeHandle';
 import ChatButton from './components/chat/ChatButton';
 import ChatModal from './components/chat/ChatModal';
 import useLocalStorage from './hooks/useLocalStorage';
-
-const API_BASE = '/api';
-const WS_BASE = 'ws://localhost:5000/api';
+import { API_BASE, WS_BASE } from './config';
 
 function App() {
   const [stats, setStats] = useState({ total_channels: 0, total_transcripts: 0, total_size_mb: 0 });

@@ -1,42 +1,45 @@
 # Tests
 
-This directory contains all test files for the YouTube Toolkit project.
+Tests are split by side of the system so the backend and UI can be worked on
+(and tested) independently.
 
-## Test Files
-
-### Unit Tests
-- `test_api.py` - FastAPI endpoint tests
-- `test_channel_lister.py` - Channel listing functionality tests
-- `test_converter.py` - Converter tests
-- `test_downloader.py` - Downloader tests
-
-### Integration Tests
-- `test_web_api.py` - Web API integration tests
-- `test_bedrock_streaming.py` - AWS Bedrock streaming tests
-- `test_streaming.py` - General streaming functionality tests
-- `test_websocket.js` - WebSocket client tests (Node.js)
-
-## Running Tests
-
-### Python Tests
-```bash
-# Run all Python tests
-pytest
-
-# Run specific test file
-pytest tests/test_api.py
-
-# Run with coverage
-pytest --cov=backend tests/
+```
+tests/
+├── backend/          # Python / pytest — API, streaming, RAG, CLI toolkit
+└── frontend/         # Node.js — WebSocket smoke test
 ```
 
-### JavaScript Tests
+## Backend (`tests/backend/`)
+
+### Unit
+- `test_api.py` — FastAPI endpoint tests
+- `test_channel_lister.py` — Channel-listing functionality
+- `test_converter.py` — Subtitle → text conversion
+- `test_downloader.py` — Subtitle downloader
+
+### Integration / streaming
+- `test_web_api.py` — Web API integration
+- `test_bedrock_streaming.py` — AWS Bedrock streaming
+- `test_streaming.py` — Streaming entrypoint (standalone script)
+- `test_chat_api.py` — Chat REST + WebSocket
+- `test_rag_integration.py` — RAG end-to-end
+
+### Running
 ```bash
-# Run WebSocket test
-node tests/test_websocket.js
+pytest                                # all backend tests (testpaths = tests)
+pytest tests/backend/test_api.py
+pytest --cov=backend tests/backend/   # with coverage
 ```
 
-## Test Configuration
+## Frontend (`tests/frontend/`)
 
-- `pytest.ini` - Pytest configuration in project root
-- `requirements-test.txt` - Test dependencies
+- `test_websocket.js` — CLI WebSocket smoke test against a running backend
+
+### Running
+```bash
+node tests/frontend/test_websocket.js
+```
+
+## Configuration
+- `pytest.ini` — pytest config (project root)
+- `requirements-test.txt` — Python test dependencies (project root)

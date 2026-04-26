@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-const API_BASE = '/api';
+import { API_BASE } from '../config';
 
 function MonitorSection({ loadStats, loadTree, showStatus }) {
   const [isMonitoring, setIsMonitoring] = useState(false);

@@ -117,7 +117,9 @@ frontend/src/
   utils/                   # Utilities (highlightText)
 channel_data/              # Downloaded transcripts
 logs/                      # Application logs (50MB rotation, 10 backups)
-tests/                     # All test files (pytest + Node.js)
+tests/
+  backend/                 # Python / pytest suite
+  frontend/                # Node.js WebSocket smoke test
 docs/                      # Documentation
   guides/                  # Technical guides
   changes/                 # Change logs and features
@@ -144,7 +146,7 @@ cd frontend && npm start
 2. Select transcript → Click "Summarize"
 3. Verify word-by-word streaming (not all-at-once)
 4. Check browser console for WebSocket logs
-5. Optional: Run `node tests/test_websocket.js` for CLI test
+5. Optional: Run `node tests/frontend/test_websocket.js` for CLI test
 
 ### Running Tests
 ```bash
@@ -152,13 +154,13 @@ cd frontend && npm start
 pytest
 
 # Run specific test file
-pytest tests/test_api.py
+pytest tests/backend/test_api.py
 
 # Run with coverage
 pytest --cov=backend tests/
 
 # Run WebSocket test
-node tests/test_websocket.js
+node tests/frontend/test_websocket.js
 ```
 
 ## Important Don'ts
@@ -192,7 +194,7 @@ node tests/test_websocket.js
 ### Debugging Streaming Issues
 1. Check browser console for WebSocket logs
 2. Check `logs/backend.log` for Bedrock streaming events
-3. Run `node tests/test_websocket.js` to test endpoint directly
+3. Run `node tests/frontend/test_websocket.js` to test endpoint directly
 4. Verify `flushSync()` is wrapping state updates
 5. Check Network tab → WS for message flow
 
@@ -293,8 +295,8 @@ Right sidebar → "Asset Monitor" collapsible section (collapsed by default)
 - `IMPLEMENTATION_SUMMARY.md` - User-friendly summary
 
 ### Testing
-- `test_websocket.js` - WebSocket CLI test script
-- `test_bedrock_streaming.py` - Backend streaming test
+- `tests/frontend/test_websocket.js` - WebSocket CLI test script
+- `tests/backend/test_bedrock_streaming.py` - Backend streaming test
 
 ## Git Practices
 
@@ -340,7 +342,7 @@ Right sidebar → "Asset Monitor" collapsible section (collapsed by default)
 1. Check `flushSync()` is being used
 2. Verify WebSocket connection in Network tab
 3. Check backend logs for Bedrock events
-4. Test with `node test_websocket.js`
+4. Test with `node tests/frontend/test_websocket.js`
 
 ### Frontend Won't Start
 1. Kill existing process: `pkill -9 -f react-scripts`

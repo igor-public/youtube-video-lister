@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import KeywordsModal from './KeywordsModal';
 import { highlightText } from '../utils/highlightText';
-
-const API_BASE = '/api';
+import { API_BASE } from '../config';
 
 function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTranscript, refreshTree, readTranscripts, showStatus, loadSummary, onStartSummary, onSearchChange }) {
   const [expandedChannels, setExpandedChannels] = useState({});
@@ -216,7 +215,6 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
           )}
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-          <div style={{ fontSize: '12px', fontWeight: '500', color: '#5f6368' }}>Channel</div>
           <div
             onClick={toggleSort}
             style={{
@@ -232,6 +230,7 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
           >
             Date {sortOrder === 'desc' ? '↓' : '↑'}
           </div>
+          <div style={{ fontSize: '12px', fontWeight: '500', color: '#5f6368' }}>Channel</div>
         </div>
       </div>
 
