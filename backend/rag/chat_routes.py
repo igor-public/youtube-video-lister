@@ -48,7 +48,21 @@ class ConversationSummary(BaseModel):
     created_at: str
     updated_at: str
     message_count: int
-    total_tokens: int
+
+
+class QueryRequest(BaseModel):
+    """Query request for non-streaming endpoint"""
+    query: str
+    channel_filters: Optional[List[str]] = None
+    conversation_id: Optional[str] = None
+
+
+class RAGQueryResponse(BaseModel):
+    """RAG Query response"""
+    answer: str
+    sources: List[Dict[str, Any]]
+    stats: Dict[str, Any]
+    conversation_id: Optional[str] = None
 
 
 class ConversationsListResponse(BaseModel):
@@ -307,3 +321,75 @@ async def send_message(websocket: WebSocket, conversation_id: str):
             await websocket.close()
         except:
             pass
+
+
+@router.post("/query", response_model=RAGQueryResponse)
+async def query_index(request: QueryRequest):
+    """
+    Query the RAG index (non-streaming REST endpoint)
+    
+    This endpoint performs a complete RAG query and returns the full response.
+    Useful for testing, API integrations, or when streaming is not needed.
+    
+    Args:
+        request: Query request with query text, optional channel filters, and optional conversation_id
+        
+    Returns:
+        Complete response with answer, sources, and statistics
+        
+    Example:
+        POST /api/chat/query
+        {
+            "query": "What did @PeterSchiff say about gold?",
+            "channel_filters": ["PeterSchiff"],
+            "conversation_id": null
+        }
+    """
+    try:
+        service = get_chat_service()
+        
+        # Create conversation if not provided
+        conversation_id = request.conversation_id
+        if not conversation_id:
+            conversation = service.chat_db.create_conversation()
+            conversation_id = conversation.id
+        
+        # Check conversation exists
+        conversation = service.chat_db.get_conversation(conversation_id)
+        if not conversation:
+            raise HTTPException(status_code=404, detail="Conversation not found")
+        
+        # Parse @mentions if not provided
+        channel_filters = request.channel_filters
+        if channel_filters is None:
+            import re
+            mentions = re.findall(r'@(\w+)', request.query)
+            channel_filters = mentions if mentions else None
+        
+        # Collect streaming response
+        answer = ""
+        sources = []
+        stats = {}
+        
+        async for response in service.generate_answer(conversation_id, request.query, channel_filters):
+            if response.type == 'chunk':
+                answer += response.content
+            elif response.type == 'sources':
+                sources = response.sources
+            elif response.type == 'stats':
+                stats = response.stats
+            elif response.type == 'error':
+                raise HTTPException(status_code=500, detail=response.error)
+        
+        return RAGQueryResponse(
+            answer=answer,
+            sources=sources,
+            stats=stats,
+            conversation_id=conversation_id
+        )
+    
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Query failed: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
