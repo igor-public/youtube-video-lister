@@ -9,7 +9,7 @@ from typing import List, Dict, Any, AsyncGenerator, Optional
 from datetime import datetime
 import logging
 
-from .retriever import HybridRetriever
+from .retriever import HybridRetriever, strip_channel_mentions
 from ..chat.models import ChatDatabase
 from ..llm_client import create_llm_client
 
@@ -147,10 +147,75 @@ rephrase (e.g. mention a channel with @ChannelName).
                 channel_filters=channel_filters
             )
 
+            # Detect a mention-only message: after stripping @Channel tokens
+            # the semantic content is empty. In that case, don't retrieve —
+            # ask a clarifying question instead of dumping random chunks on
+            # the user.
+            stripped_query, _ = strip_channel_mentions(query)
+            mention_only = (not stripped_query.strip()) and bool(channel_filters)
+
+            if mention_only:
+                logger.info("Mention-only message; skipping retrieval and asking a clarifying question")
+                for msg in logs_queue:
+                    yield ChatResponse(type='log', content=msg)
+                yield ChatResponse(type='log', content='Mention-only message — asking a clarifying question.')
+
+                prompt = self._build_prompt_clarify(channel_filters, history)
+                input_tokens = self._estimate_tokens(prompt)
+
+                yield ChatResponse(type='log', content='Calling Bedrock Claude Opus 4.7...')
+                llm_client = create_llm_client(self.llm_config)
+                full_response = ""
+                output_tokens = 0
+                async for chunk in llm_client.generate_chat_stream_async(prompt=prompt):
+                    full_response += chunk
+                    output_tokens = self._estimate_tokens(full_response)
+                    yield ChatResponse(type='chunk', content=chunk)
+
+                self.chat_db.add_message(
+                    conversation_id=conversation_id,
+                    role='assistant',
+                    content=full_response,
+                    output_tokens=output_tokens,
+                    documents_retrieved=0,
+                    sources=None,
+                )
+                yield ChatResponse(type='stats', stats={
+                    'input_tokens': input_tokens,
+                    'output_tokens': output_tokens,
+                    'embedding_tokens': 0,
+                    'documents_retrieved': 0,
+                    'llm_calls': 1,
+                })
+                if len(messages) == 0:
+                    title = ", ".join(f"@{c}" for c in channel_filters)[:50] or "Clarification needed"
+                    self.chat_db.update_conversation_title(conversation_id, title)
+                yield ChatResponse(type='log', content='✓ Complete')
+                yield ChatResponse(type='done')
+                return
+
             # Retrieve relevant chunks with streaming logs
             logger.info(f"Retrieving chunks for query: {query[:50]}...")
 
             retrieved_chunks = await self.retriever.retrieve(query, channel_filters, log_callback=log_callback)
+
+            # Graceful empty-retrieval fallback:
+            # 1) If channel-filtered retrieval returned nothing, retry once
+            #    un-filtered so the user still gets an answer.
+            # 2) If still nothing, fall through to a context-free prompt so
+            #    the LLM can respond conversationally (no hard abort).
+            used_no_context_fallback = False
+            if not retrieved_chunks and channel_filters:
+                logger.info("Channel-filtered retrieval empty, retrying un-filtered")
+                logs_queue.append('No matches under channel filter; retrying across all channels...')
+                retrieved_chunks = await self.retriever.retrieve(
+                    query, channel_filters=None, log_callback=log_callback
+                )
+
+            if not retrieved_chunks:
+                logger.info("Retrieval empty in both attempts; using context-free fallback prompt")
+                logs_queue.append('No transcript matches found; answering without retrieved context.')
+                used_no_context_fallback = True
 
             # Send all accumulated logs
             for log_msg in logs_queue:
@@ -174,12 +239,9 @@ rephrase (e.g. mention a channel with @ChannelName).
             full_response = ""
             output_tokens = 0
 
-            # Use the LLM's streaming method
-            async for chunk in llm_client.generate_summary_stream_async(
-                content=prompt,
-                keywords=[],  # No keywords needed for chat
-                title="Chat Response"  # Generic title
-            ):
+            # Use the dedicated chat streaming method so the already-built
+            # RAG prompt is sent verbatim (no summarise-the-transcript wrapper).
+            async for chunk in llm_client.generate_chat_stream_async(prompt=prompt):
                 full_response += chunk
                 output_tokens = self._estimate_tokens(full_response)
                 yield ChatResponse(type='chunk', content=chunk)

@@ -4,10 +4,10 @@ PROCESSING SUMMARY
 ================================================================================
 
 Channels processed: 5
-Videos found: 124
-Videos skipped (already processed): 97
-Videos processed: 4
-Transcripts created: 4
+Videos found: 128
+Videos skipped (already processed): 105
+Videos processed: 0
+Transcripts created: 0
 Errors: 23
 
 
@@ -31,16 +31,16 @@ Errors: 23
 
 ✓ DwarkeshPatel
   Videos found: 50
-  Videos skipped: 47
-  Videos processed: 1
-  Transcripts: 1
+  Videos skipped: 48
+  Videos processed: 0
+  Transcripts: 0
   Errors: 2
     - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
     - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
 
 ✓ CoinBureau
-  Videos found: 13
-  Videos skipped: 6
+  Videos found: 14
+  Videos skipped: 7
   Videos processed: 0
   Transcripts: 0
   Errors: 7
@@ -49,10 +49,10 @@ Errors: 23
     - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
 
 ✓ BitcoinStrategy
-  Videos found: 40
-  Videos skipped: 29
-  Videos processed: 3
-  Transcripts: 3
+  Videos found: 43
+  Videos skipped: 35
+  Videos processed: 0
+  Transcripts: 0
   Errors: 8
     - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded
     - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded

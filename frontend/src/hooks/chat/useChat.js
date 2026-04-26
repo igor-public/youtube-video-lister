@@ -25,6 +25,43 @@ export function useChat(conversationId) {
   }, []);
 
   /**
+   * Clear all per-conversation state (message in flight, error, sources, logs).
+   * Also closes any open WebSocket so a stale stream can't write into the new
+   * conversation's view.
+   */
+  const reset = useCallback(() => {
+    if (wsRef.current) {
+      wsRef.current.close();
+      wsRef.current = null;
+    }
+    setIsStreaming(false);
+    setCurrentMessage('');
+    setSources([]);
+    setStats(null);
+    setError(null);
+    setLogs([]);
+  }, []);
+
+  // Reset transient chat state whenever the user switches between two
+  // distinct existing conversations. We deliberately skip:
+  //   - the initial mount (nothing to reset yet)
+  //   - the first null → <id> transition that happens when the user sends
+  //     their first message in a newly-created conversation. In that case
+  //     sendMessage() has just opened a WebSocket; running reset() here
+  //     would close it mid-handshake and produce the
+  //     "WebSocket is closed before the connection is established" error.
+  const prevIdRef = useRef(conversationId);
+  useEffect(() => {
+    const prev = prevIdRef.current;
+    prevIdRef.current = conversationId;
+    // Only reset when transitioning between two real ids.
+    if (prev && conversationId && prev !== conversationId) {
+      reset();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [conversationId]);
+
+  /**
    * Send message via WebSocket and stream response
    * @param {string} query - User query
    * @param {string[]} channelFilters - Optional channel filters
@@ -34,7 +71,15 @@ export function useChat(conversationId) {
   const sendMessage = useCallback((query, channelFilters = null, onComplete = null, targetConversationId = null) => {
     const activeConvId = targetConversationId || conversationId;
 
-    if (!activeConvId || !query.trim()) {
+    if (!activeConvId) {
+      setError('No conversation selected');
+      return;
+    }
+    // Allow @-only queries through; the backend will prompt for clarification
+    // when the non-mention content is empty.
+    const hasText = query && query.trim().length > 0;
+    const hasFilters = Array.isArray(channelFilters) && channelFilters.length > 0;
+    if (!hasText && !hasFilters) {
       setError('Query cannot be empty');
       return;
     }
@@ -151,6 +196,7 @@ export function useChat(conversationId) {
   return {
     sendMessage,
     stopStreaming,
+    reset,
     isStreaming,
     currentMessage,
     sources,
