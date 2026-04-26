@@ -9,6 +9,10 @@ import SourceCitation from './SourceCitation';
 function MessageList({ conversationId, chat, onConversationStatsUpdate }) {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
+  // Holds the just-finished stream so the text doesn't vanish during the
+  // brief window between `isStreaming` flipping false and the refreshed
+  // history arriving from the backend.
+  const [finishedStream, setFinishedStream] = useState(null);
   const messagesEndRef = useRef(null);
 
   const { loadMessages } = useChatHistory();
@@ -21,10 +25,12 @@ function MessageList({ conversationId, chat, onConversationStatsUpdate }) {
 
   // Load conversation history
   useEffect(() => {
-    if (!conversationId) {
-      setMessages([]);
-      return;
-    }
+    // Clear previous conversation's messages immediately so the view flips
+    // to the new/empty conversation without showing stale content during the
+    // async fetch.
+    setMessages([]);
+
+    if (!conversationId) return;
 
     const loadHistory = async () => {
       setLoading(true);
@@ -41,10 +47,13 @@ function MessageList({ conversationId, chat, onConversationStatsUpdate }) {
     loadHistory();
   }, [conversationId, loadMessages, onConversationStatsUpdate]);
 
-  // Reload history when streaming completes (to get the final saved message)
+  // Reload history when streaming completes (to get the final saved message).
+  // Snapshot the streamed text into `finishedStream` before reloading so the
+  // bubble stays visible through the async fetch. Clear it once the history
+  // actually contains the new assistant message.
   useEffect(() => {
-    if (!isStreaming && conversationId && currentMessage === '') {
-      // Just finished streaming - reload
+    if (!isStreaming && conversationId && currentMessage) {
+      setFinishedStream({ content: currentMessage, sources });
       loadMessages(conversationId).then((result) => {
         if (result) {
           setMessages(result.messages || []);
@@ -56,6 +65,21 @@ function MessageList({ conversationId, chat, onConversationStatsUpdate }) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isStreaming]);
+
+  // Once the refreshed history contains the just-finished assistant message,
+  // drop the snapshot so we don't double-render it.
+  useEffect(() => {
+    if (!finishedStream) return;
+    const last = messages[messages.length - 1];
+    if (last && last.role === 'assistant' && (last.content || '').trim() === (finishedStream.content || '').trim()) {
+      setFinishedStream(null);
+    }
+  }, [messages, finishedStream]);
+
+  // Also clear the snapshot when the user navigates to another conversation.
+  useEffect(() => {
+    setFinishedStream(null);
+  }, [conversationId]);
 
   // Auto-scroll to bottom when new messages arrive or streaming
   useEffect(() => {
@@ -139,6 +163,14 @@ function MessageList({ conversationId, chat, onConversationStatsUpdate }) {
               </div>
             </div>
           )}
+        </div>
+      )}
+
+      {/* Just-finished stream, shown until the persisted message arrives from the history reload */}
+      {!isStreaming && finishedStream && (
+        <div className="message message-assistant">
+          <div className="message-role">🤖 Assistant</div>
+          {renderMessageContent(finishedStream.content, finishedStream.sources)}
         </div>
       )}
 

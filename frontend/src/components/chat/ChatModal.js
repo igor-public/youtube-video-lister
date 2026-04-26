@@ -71,6 +71,7 @@ function ChatModal({ isOpen, onClose }) {
             conversations={conversations}
             selectedId={conversationId}
             onSelect={handleSelectConversation}
+            onNew={handleNewConversation}
             onDelete={handleDeleteConversation}
             loading={loading}
             error={error}

@@ -42,6 +42,31 @@ class LLMClient(ABC):
         """Extract keywords from content"""
         pass
 
+    async def generate_chat_stream_async(self, prompt: str):
+        """
+        Stream a chat response given an already-built prompt.
+
+        Unlike ``generate_summary_stream_async``, this method does NOT wrap the
+        prompt in a "summarise this transcript" template — the caller is
+        responsible for the full prompt. Used by the RAG chat service so the
+        RAG prompt isn't double-wrapped.
+
+        Default implementation: falls back to the summary method (so non-Bedrock
+        providers still work, albeit with the legacy wrapping behaviour).
+        Providers that support native streaming should override this.
+        """
+        async for chunk in self._default_chat_stream_fallback(prompt):
+            yield chunk
+
+    async def _default_chat_stream_fallback(self, prompt: str):
+        """Fallback for providers without a dedicated async chat stream."""
+        # Re-use the summary stream, treating the full prompt as "content".
+        # This preserves behaviour for OpenAI / Anthropic providers.
+        import asyncio
+        for chunk in self.generate_summary_stream(content=prompt, keywords=[], title="Chat Response"):
+            yield chunk
+            await asyncio.sleep(0)
+
 
 class OpenAIClient(LLMClient):
     """OpenAI API client"""
@@ -186,6 +211,74 @@ class BedrockClient(LLMClient):
             config["temperature"] = 0.5 if for_keywords else 0.7
 
         return config
+
+    async def generate_chat_stream_async(self, prompt: str):
+        """
+        Stream a chat response for an already-built prompt.
+
+        Sends ``prompt`` directly to the Bedrock Converse Stream API as a single
+        user message — no template wrapping, no system summarise-the-transcript
+        prefix. This is the entry point for the RAG chat service.
+        """
+        try:
+            try:
+                import aioboto3
+            except ImportError:
+                raise Exception("aioboto3 package not installed. Install with: pip install aioboto3")
+
+            import time
+
+            session = aioboto3.Session()
+
+            async with session.client(
+                service_name='bedrock-runtime',
+                region_name=self.aws_region,
+                aws_access_key_id=self.aws_access_key_id,
+                aws_secret_access_key=self.aws_secret_access_key
+            ) as bedrock:
+
+                response = await bedrock.converse_stream(
+                    modelId=self.model,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": [{"text": prompt}]
+                        }
+                    ],
+                    inferenceConfig=self._get_inference_config(max_tokens=1024)
+                )
+
+                chunk_count = 0
+                start_time = time.time()
+                last_chunk_time = start_time
+
+                async for event in response['stream']:
+                    now = time.time()
+                    time_since_start = (now - start_time) * 1000
+                    time_since_last = (now - last_chunk_time) * 1000
+                    last_chunk_time = now
+
+                    chunk_count += 1
+                    logger.info(
+                        f"[Bedrock-Chat-Converse] Event #{chunk_count} at "
+                        f"{time_since_start:.0f}ms (+{time_since_last:.0f}ms)"
+                    )
+
+                    if 'contentBlockDelta' in event:
+                        delta = event['contentBlockDelta'].get('delta', {})
+                        if 'text' in delta:
+                            text = delta['text']
+                            if text:
+                                yield text
+                    elif 'messageStop' in event:
+                        logger.info(
+                            f"[Bedrock-Chat-Converse] Complete at "
+                            f"{time_since_start:.0f}ms. Total: {chunk_count}"
+                        )
+                        break
+
+        except Exception as e:
+            raise Exception(f"AWS Bedrock Converse chat streaming error: {str(e)}")
 
     async def generate_summary_stream_async(self, content: str, keywords: list[str], title: str):
         """Generate summary with TRUE async streaming using aioboto3 and Converse Stream API"""

@@ -30,7 +30,7 @@ class PromptTemplates:
 
     @staticmethod
     def _get_keyword_focused_prompt(title: str, content: str, keywords: List[str]) -> str:
-        """Prompt for keyword-focused summary (3-4 paragraphs)"""
+        """Prompt for keyword-focused summary (1-2 paragraphs)"""
         keywords_str = ", ".join(keywords)
         return f"""Please provide a comprehensive summary of the following video transcript titled "{title}".
 
@@ -39,7 +39,7 @@ Focus particularly on these topics: {keywords_str}
 Transcript:
 {content[:100000]}
 
-Provide a summary in 3-4 paragraphs that:
+Provide a summary in 1-2 paragraphs that:
 1. Highlights key points related to: {keywords_str}
 2. Captures main arguments and insights
 3. Notes any actionable takeaways or predictions"""
@@ -96,4 +96,4 @@ Keywords:"""
         """
         if provider.lower() == "openai":
             return "You are a helpful assistant that summarizes video transcripts clearly and concisely."
-        return ""  # Anthropic and Bedrock don't use separate system messages
+        return "You are a helpful assistant that summarizes video transcripts clearly and concisely. "  # Anthropic and Bedrock don't use separate system messages

@@ -25,6 +25,32 @@ export function useChat(conversationId) {
   }, []);
 
   /**
+   * Clear all per-conversation state (message in flight, error, sources, logs).
+   * Also closes any open WebSocket so a stale stream can't write into the new
+   * conversation's view.
+   */
+  const reset = useCallback(() => {
+    if (wsRef.current) {
+      wsRef.current.close();
+      wsRef.current = null;
+    }
+    setIsStreaming(false);
+    setCurrentMessage('');
+    setSources([]);
+    setStats(null);
+    setError(null);
+    setLogs([]);
+  }, []);
+
+  // Reset transient chat state whenever the active conversation id changes.
+  // Without this, a previous conversation's error banner / in-flight stream
+  // persists when the user opens a new conversation.
+  useEffect(() => {
+    reset();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [conversationId]);
+
+  /**
    * Send message via WebSocket and stream response
    * @param {string} query - User query
    * @param {string[]} channelFilters - Optional channel filters
@@ -34,7 +60,15 @@ export function useChat(conversationId) {
   const sendMessage = useCallback((query, channelFilters = null, onComplete = null, targetConversationId = null) => {
     const activeConvId = targetConversationId || conversationId;
 
-    if (!activeConvId || !query.trim()) {
+    if (!activeConvId) {
+      setError('No conversation selected');
+      return;
+    }
+    // Allow @-only queries through; the backend will prompt for clarification
+    // when the non-mention content is empty.
+    const hasText = query && query.trim().length > 0;
+    const hasFilters = Array.isArray(channelFilters) && channelFilters.length > 0;
+    if (!hasText && !hasFilters) {
       setError('Query cannot be empty');
       return;
     }
@@ -151,6 +185,7 @@ export function useChat(conversationId) {
   return {
     sendMessage,
     stopStreaming,
+    reset,
     isStreaming,
     currentMessage,
     sources,
