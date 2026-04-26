@@ -1540,9 +1540,9 @@
     "video_url": null,
     "keywords": null,
     "keywords_extracted_at": null,
-    "summary": null,
-    "summary_generated_at": null,
-    "summary_model": null,
+    "summary": "Overview: Paul Samson of Data Dash argues that $80,000 is the critical level for Bitcoin, with a daily/weekly close above it confirming bullish momentum toward a $93,000 target. He remains contrarian-bullish despite widespread bearish sentiment, pointing to improving structure across Bitcoin, Ethereum, and the S&P 500.\n\nKey Points:\n• $80,000 (specifically ~$80,500) is the key level — a clean close above confirms a bullish shark pattern targeting $93,000; failure means retesting support.\n• Fear & Greed Index jumped from 21 to 46 in a week, while the S&P sits at 69 (greed) and all-time highs amid the Iran ceasefire news.\n• Paul dismisses the popular bear flag narrative, noting these patterns have under 50% success rates and that he prefers a contrarian bullish view.\n• He bought Bitcoin at $61K, leveraged long at $66K, and Ethereum under $2K during peak fear, targeting higher levels now.\n• Ethereum is set up for a move toward $2,900 (major target one), aligned with Bitcoin's push to $93K.\n• A $3,000 window between last year's average, the 0.5 retracement, and VWAP will decide whether Bitcoin breaks to new all-time highs or rejects into a bear market.\n• MicroStrategy position bought at $141 is up ~50%, with a target near $240 (another 36% upside).\n• Sentiment remains disbelieving — many traders keep shorting rallies, which could fuel a short squeeze if $80,500 flips.\n• Paul's strategy: only buy on big red days or 20–30%+ drawdowns, avoiding all-time-high entries.\n• He expects continued upside through June/July, countering the traditional \"sell in May\" seasonality.\n• Sponsor segment: iTrustCapital now offers stocks/ETFs alongside crypto and metals in tax-advantaged IRAs, with a $100 signup bonus.",
+    "summary_generated_at": "2026-04-26T21:18:23.985607",
+    "summary_model": "bedrock:eu.anthropic.claude-opus-4-7",
     "size_bytes": 15480,
     "last_modified": "2026-04-24T22:46:56.320488"
   },
