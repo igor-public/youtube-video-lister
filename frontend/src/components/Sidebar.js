@@ -3,7 +3,19 @@ import KeywordsModal from './KeywordsModal';
 import { highlightText } from '../utils/highlightText';
 import { API_BASE } from '../config';
 
-function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTranscript, refreshTree, readTranscripts, showStatus, loadSummary, onStartSummary, onSearchChange }) {
+function Sidebar({
+  tree,
+  sortOrder,
+  setSortOrder,
+  loadTranscript,
+  selectedTranscript,
+  refreshTree,
+  readTranscripts,
+  showStatus,
+  loadSummary,
+  onStartSummary,
+  onSearchChange,
+}) {
   const [expandedChannels, setExpandedChannels] = useState({});
   const [keywordsModal, setKeywordsModal] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -11,279 +23,164 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setSearchQuery(value);
-    if (onSearchChange) {
-      onSearchChange(value);
-    }
+    if (onSearchChange) onSearchChange(value);
   };
 
-  // Count unread transcripts for a channel
-  const getUnreadCount = (channel) => {
-    return channel.transcripts.filter(t => {
-      const key = `${channel.channel}:${t.filename}`;
-      return !readTranscripts[key];
-    }).length;
-  };
+  const getUnreadCount = (channel) =>
+    channel.transcripts.filter(
+      (t) => !readTranscripts[`${channel.channel}:${t.filename}`]
+    ).length;
 
   const toggleChannel = (channelName) => {
-    setExpandedChannels(prev => ({
-      ...prev,
-      [channelName]: !prev[channelName]
-    }));
+    setExpandedChannels((prev) => ({ ...prev, [channelName]: !prev[channelName] }));
   };
 
-  const toggleSort = () => {
-    setSortOrder(prev => prev === 'desc' ? 'asc' : 'desc');
-  };
+  const toggleSort = () => setSortOrder((prev) => (prev === 'desc' ? 'asc' : 'desc'));
 
   const handleOpenKeywordsModal = (channel, filename, title, existingKeywords, e) => {
     e.stopPropagation();
-    setKeywordsModal({
-      channel,
-      filename,
-      title,
-      existingKeywords: existingKeywords || []
-    });
+    setKeywordsModal({ channel, filename, title, existingKeywords: existingKeywords || [] });
   };
 
   const handleSaveKeywords = async (keywords) => {
     const { channel, filename } = keywordsModal;
-
     try {
-      const encodedChannel = encodeURIComponent(channel);
-      const encodedFilename = encodeURIComponent(filename);
-
       const response = await fetch(
-        `${API_BASE}/metadata/transcript/${encodedChannel}/${encodedFilename}/keywords`,
+        `${API_BASE}/metadata/transcript/${encodeURIComponent(channel)}/${encodeURIComponent(filename)}/keywords`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(keywords)
+          body: JSON.stringify(keywords),
         }
       );
-
       const data = await response.json();
-
       if (response.ok && data.success) {
         showStatus(`Keywords saved: ${keywords.join(', ')}`, 'success');
         setKeywordsModal(null);
-        refreshTree(); // Refresh to show new keywords
+        refreshTree();
       } else {
         showStatus(data.detail || 'Failed to save keywords', 'error');
       }
-    } catch (error) {
-      console.error('Error saving keywords:', error);
+    } catch (err) {
+      console.error('Error saving keywords:', err);
       showStatus('Error saving keywords', 'error');
     }
   };
 
   const handleRegenerate = async (channel, filename, transcript, e) => {
     e.stopPropagation();
-    // Ensure transcript is loaded
-    if (!selectedTranscript || selectedTranscript.channel !== channel || selectedTranscript.filename !== filename) {
+    if (
+      !selectedTranscript ||
+      selectedTranscript.channel !== channel ||
+      selectedTranscript.filename !== filename
+    ) {
       await loadTranscript(channel, filename);
     }
-    // Trigger summary generation with regenerate flag
     onStartSummary(channel, filename, transcript, true);
   };
 
   const handleSummarize = async (channel, filename, transcript, e) => {
     e.stopPropagation();
-
-    // Ensure transcript is loaded
-    if (!selectedTranscript || selectedTranscript.channel !== channel || selectedTranscript.filename !== filename) {
+    if (
+      !selectedTranscript ||
+      selectedTranscript.channel !== channel ||
+      selectedTranscript.filename !== filename
+    ) {
       await loadTranscript(channel, filename);
     }
-
-    // If summary exists, just switch to summary tab and load it
-    if (transcript.has_summary) {
-      await loadSummary(channel, filename);
-    }
-
-    // Trigger summary generation/display
+    if (transcript.has_summary) await loadSummary(channel, filename);
     onStartSummary(channel, filename, transcript, false);
   };
 
   const handleDeleteChannel = async (channelName, e) => {
     e.stopPropagation();
-
-    const transcriptCount = sortedTree.find(ch => ch.channel === channelName)?.transcript_count || 0;
-
-    if (!window.confirm(`Delete all data for channel "${channelName}"?\n\nThis will remove ${transcriptCount} transcript(s), all subtitles, and metadata for this channel. This action cannot be undone.`)) {
-      return;
-    }
+    const transcriptCount = sortedTree.find((ch) => ch.channel === channelName)?.transcript_count || 0;
+    if (
+      !window.confirm(
+        `Delete all data for channel "${channelName}"?\n\nThis will remove ${transcriptCount} transcript(s), all subtitles, and metadata for this channel. This action cannot be undone.`
+      )
+    ) return;
 
     try {
-      const encodedChannel = encodeURIComponent(channelName);
-
-      const response = await fetch(
-        `${API_BASE}/channel/${encodedChannel}`,
-        { method: 'DELETE' }
-      );
-
+      const response = await fetch(`${API_BASE}/channel/${encodeURIComponent(channelName)}`, {
+        method: 'DELETE',
+      });
       const data = await response.json();
-
       if (response.ok && data.success) {
-        showStatus(`Channel deleted: ${channelName} (${data.deleted_count} transcripts)`, 'success');
-        refreshTree(); // Refresh tree to remove deleted channel
-
-        // If a transcript from this channel was selected, clear the view
-        if (selectedTranscript && selectedTranscript.channel === channelName) {
-          // Clear selection - parent component should handle this
-        }
+        showStatus(
+          `Channel deleted: ${channelName} (${data.deleted_count} transcripts)`,
+          'success'
+        );
+        refreshTree();
       } else {
         showStatus(data.detail || 'Failed to delete channel', 'error');
       }
-    } catch (error) {
-      console.error('Error deleting channel:', error);
+    } catch (err) {
+      console.error('Error deleting channel:', err);
       showStatus('Error deleting channel', 'error');
     }
   };
 
-  // Tree is already filtered by backend if search query exists
   const sortedTree = tree;
-
-  if (!tree || tree.length === 0) {
-    return (
-      <aside className="sidebar">
-        <div className="sidebar-header">
-          <h2>Channels & Transcripts</h2>
-          <div className="search-box" style={{ margin: '12px 0' }}>
-            <input
-              type="text"
-              placeholder="Search transcripts..."
-              value={searchQuery}
-              onChange={handleSearchChange}
-              style={{
-                width: '100%',
-                padding: '6px 10px',
-                fontSize: '13px',
-                border: '1px solid #dadce0',
-                borderRadius: '4px',
-                outline: 'none'
-              }}
-            />
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-            <div style={{ fontSize: '12px', fontWeight: '500', color: '#5f6368' }}>Channel</div>
-            <div
-              onClick={toggleSort}
-              style={{
-                fontSize: '12px',
-                fontWeight: '500',
-                color: '#5f6368',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '4px'
-              }}
-              title={sortOrder === 'desc' ? 'Sort by date (newest first)' : 'Sort by date (oldest first)'}
-            >
-              Date {sortOrder === 'desc' ? '↓' : '↑'}
-            </div>
-          </div>
-        </div>
-        <div className="tree-view">
-          <p className="loading">No channels processed yet. Add channels and start monitoring!</p>
-        </div>
-      </aside>
-    );
-  }
 
   return (
     <>
       <div className="sidebar-header">
-        <h2>Channels & Transcripts</h2>
-        <div className="search-box" style={{ margin: '12px 0' }}>
+        <h2>Archive</h2>
+        <div className="search-box">
           <input
             type="text"
-            placeholder="Search in transcripts and summaries..."
+            placeholder="search titles, content, keywords, summaries"
             value={searchQuery}
             onChange={handleSearchChange}
-            style={{
-              width: '100%',
-              padding: '6px 10px',
-              fontSize: '13px',
-              border: '1px solid #dadce0',
-              borderRadius: '4px',
-              outline: 'none'
-            }}
+            spellCheck={false}
+            autoComplete="off"
           />
           {searchQuery && (
-            <div style={{ fontSize: '11px', color: '#5f6368', marginTop: '4px' }}>
-              Found {sortedTree.reduce((sum, ch) => sum + ch.transcript_count, 0)} result(s)
+            <div className="search-results-count">
+              {sortedTree.reduce((sum, ch) => sum + ch.transcript_count, 0)} result(s)
             </div>
           )}
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-          <div
+        <div className="colhead">
+          <span
             onClick={toggleSort}
-            style={{
-              fontSize: '12px',
-              fontWeight: '500',
-              color: '#5f6368',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '4px'
-            }}
+            className="colhead-sort"
             title={sortOrder === 'desc' ? 'Sort by date (newest first)' : 'Sort by date (oldest first)'}
           >
             Date {sortOrder === 'desc' ? '↓' : '↑'}
-          </div>
-          <div style={{ fontSize: '12px', fontWeight: '500', color: '#5f6368' }}>Channel</div>
+          </span>
+          <span className="colhead-channel">Channel</span>
         </div>
       </div>
 
       <div className="tree-view">
-        {sortedTree.length === 0 && searchQuery ? (
-          <p className="loading" style={{ fontSize: '13px', color: '#5f6368' }}>
-            No transcripts found matching "{searchQuery}"
-          </p>
-        ) : (
-          sortedTree.map(channel => {
+        {(!sortedTree || sortedTree.length === 0) && !searchQuery && (
+          <p className="loading">No channels processed yet. Add channels and start monitoring.</p>
+        )}
+        {sortedTree && sortedTree.length === 0 && searchQuery && (
+          <p className="loading">No transcripts match &ldquo;{searchQuery}&rdquo;</p>
+        )}
+
+        {sortedTree && sortedTree.map((channel) => {
           const channelId = channel.channel.replace(/[^a-zA-Z0-9]/g, '_');
           const isExpanded = expandedChannels[channelId];
           const unreadCount = getUnreadCount(channel);
-
-          // Get the most recent transcript date for this channel
-          const latestDate = channel.transcripts && channel.transcripts.length > 0
-            ? channel.transcripts[0].date
-            : 'N/A';
+          const latestDate =
+            channel.transcripts && channel.transcripts.length > 0
+              ? channel.transcripts[0].date
+              : 'N/A';
 
           return (
             <div key={channel.channel} className="tree-channel">
-              <div
-                className={`tree-channel-header ${isExpanded ? 'active' : ''}`}
-                style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1, minWidth: 0 }}>
-                  <span
-                    style={{
-                      fontSize: '11px',
-                      color: '#4a9eff',
-                      minWidth: '70px',
-                      textAlign: 'left',
-                      fontWeight: '500'
-                    }}
-                    onClick={() => toggleChannel(channelId)}
-                  >
-                    {latestDate}
-                  </span>
-                  <span
-                    className="tree-channel-name"
-                    onClick={() => toggleChannel(channelId)}
-                    style={{
-                      flex: 1,
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
-                      whiteSpace: 'nowrap'
-                    }}
-                    title={channel.channel}
-                  >
+              <div className={`tree-channel-header ${isExpanded ? 'active' : ''}`}>
+                <div className="tree-channel-left" onClick={() => toggleChannel(channelId)}>
+                  <span className="tree-channel-date">{latestDate}</span>
+                  <span className="tree-channel-name" title={channel.channel}>
                     {channel.channel}
                   </span>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <div className="tree-channel-right">
                   <span
                     className="tree-channel-count"
                     onClick={() => toggleChannel(channelId)}
@@ -303,6 +200,7 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
                     className="btn-channel-delete"
                     onClick={(e) => handleDeleteChannel(channel.channel, e)}
                     title="Delete all channel data"
+                    aria-label="Delete channel"
                   >
                     ✕
                   </button>
@@ -310,11 +208,11 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
               </div>
 
               <div className={`tree-transcripts ${isExpanded ? 'open' : ''}`}>
-                {channel.transcripts.map(transcript => {
-                  const isSelected = selectedTranscript &&
+                {channel.transcripts.map((transcript) => {
+                  const isSelected =
+                    selectedTranscript &&
                     selectedTranscript.channel === channel.channel &&
                     selectedTranscript.filename === transcript.filename;
-
                   const key = `${channel.channel}:${transcript.filename}`;
                   const isRead = readTranscripts[key];
 
@@ -323,44 +221,55 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
                       key={transcript.filename}
                       className={`tree-transcript ${isSelected ? 'active' : ''} ${!isRead ? 'unread' : ''}`}
                     >
-                      <div onClick={() => loadTranscript(channel.channel, transcript.filename)}>
+                      <div
+                        className="tree-transcript-main"
+                        onClick={() => loadTranscript(channel.channel, transcript.filename)}
+                      >
                         <div className="transcript-title">
                           {searchQuery ? highlightText(transcript.title, searchQuery) : transcript.title}
                         </div>
                         <div className="transcript-meta">
-                          {transcript.date} • {(transcript.size / 1024).toFixed(1)} KB
+                          {transcript.date} &middot; {(transcript.size / 1024).toFixed(1)} KB
                         </div>
                       </div>
                       <div className="transcript-actions">
                         <button
                           className="btn btn-keywords btn-small"
-                          onClick={(e) => handleOpenKeywordsModal(
-                            channel.channel,
-                            transcript.filename,
-                            transcript.title,
-                            transcript.keywords,
-                            e
-                          )}
-                          title={transcript.keywords && transcript.keywords.length > 0
-                            ? `Keywords: ${transcript.keywords.join(', ')}`
-                            : 'Add keywords for focused summarization'}
+                          onClick={(e) =>
+                            handleOpenKeywordsModal(
+                              channel.channel,
+                              transcript.filename,
+                              transcript.title,
+                              transcript.keywords,
+                              e
+                            )
+                          }
+                          title={
+                            transcript.keywords && transcript.keywords.length > 0
+                              ? `Keywords: ${transcript.keywords.join(', ')}`
+                              : 'Add keywords for focused summarization'
+                          }
                         >
                           {transcript.keywords && transcript.keywords.length > 0
-                            ? `Keywords (${transcript.keywords.length})`
-                            : 'Keywords'}
+                            ? `KW·${transcript.keywords.length}`
+                            : 'KW'}
                         </button>
                         <button
                           className="btn btn-summarize btn-small"
-                          onClick={(e) => handleSummarize(channel.channel, transcript.filename, transcript, e)}
-                          title={transcript.has_summary ? 'View summary' : 'Generate AI summary using keywords'}
+                          onClick={(e) =>
+                            handleSummarize(channel.channel, transcript.filename, transcript, e)
+                          }
+                          title={transcript.has_summary ? 'View summary' : 'Generate AI summary'}
                         >
-                          {transcript.has_summary ? '✓ Summary' : 'Summarize'}
+                          {transcript.has_summary ? 'SUM ✓' : 'SUM'}
                         </button>
                         {transcript.has_summary && (
                           <button
                             className="btn btn-regenerate btn-small"
-                            onClick={(e) => handleRegenerate(channel.channel, transcript.filename, transcript, e)}
-                            title="Regenerate summary with current keywords"
+                            onClick={(e) =>
+                              handleRegenerate(channel.channel, transcript.filename, transcript, e)
+                            }
+                            title="Regenerate summary"
                           >
                             ↻
                           </button>
@@ -372,8 +281,7 @@ function Sidebar({ tree, sortOrder, setSortOrder, loadTranscript, selectedTransc
               </div>
             </div>
           );
-        })
-        )}
+        })}
       </div>
 
       {keywordsModal && (

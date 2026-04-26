@@ -55,7 +55,16 @@ class RAGChatService:
     def _estimate_tokens(self, text: str) -> int:
         return len(text) // 4
     
-    def _build_prompt(self, query: str, retrieved_chunks: List, conversation_history: List[Dict[str, str]] = None) -> str:
+    def _format_history(self, conversation_history: Optional[List[Dict[str, str]]]) -> str:
+        if not conversation_history:
+            return ""
+        lines = []
+        for msg in conversation_history[-5:]:
+            lines.append(f"{msg['role'].capitalize()}: {msg['content']}")
+        return "\n\n".join(lines) + "\n\n"
+
+    def _build_prompt(self, query: str, retrieved_chunks: List, conversation_history: Optional[List[Dict[str, str]]] = None) -> str:
+        """Prompt when retrieval returned relevant chunks."""
         context_parts = []
         for i, chunk in enumerate(retrieved_chunks, 1):
             metadata = chunk.metadata
@@ -63,12 +72,8 @@ class RAGChatService:
                 f"[Source {i}] {metadata.get('channel', 'Unknown')} - \"{metadata.get('title', 'Unknown')}\" ({metadata.get('date', 'Unknown')})\n{chunk.text}\n"
             )
         context = "\n".join(context_parts)
-        
-        history = ""
-        if conversation_history:
-            for msg in conversation_history[-5:]:
-                history += f"{msg['role'].capitalize()}: {msg['content']}\n\n"
-        
+        history = self._format_history(conversation_history)
+
         return f"""You are an AI assistant analyzing YouTube video transcripts.
 
 Retrieved Context:
@@ -77,10 +82,30 @@ Retrieved Context:
 {history}User: {query}
 
 Instructions:
-- Provide structured answer citing sources
-- Format: **@ChannelName** (Date): point...
-- Keep concise and actionable
-- Only use provided context"""
+- Prefer the retrieved context above when answering; cite sources inline as **@ChannelName** (Date): point...
+- Keep the answer concise and actionable.
+- If the retrieved context does not address the question, say so plainly, then answer from the conversation history or general knowledge and clearly mark which parts are not sourced from the transcripts."""
+
+    def _build_prompt_no_context(self, query: str, conversation_history: Optional[List[Dict[str, str]]] = None) -> str:
+        """Prompt when retrieval returned nothing.
+
+        The LLM should still answer — from conversation history, general
+        knowledge, or a graceful "I don't have that indexed" — rather than
+        surfacing a hard error to the user.
+        """
+        history = self._format_history(conversation_history)
+        return f"""You are an AI assistant for a YouTube transcript archive.
+
+No indexed transcripts were retrieved for the current question. This is normal
+for meta, conversational, or general-knowledge queries (e.g. "summary of the
+channel", "what can you do", "thanks"). Answer directly, briefly, and in plain
+prose. Do not use source citations and do not invent transcript quotes.
+
+If the question is specifically about channel or video content that should be
+in the archive but isn't, say so plainly and suggest the user re-index or
+rephrase (e.g. mention a channel with @ChannelName).
+
+{history}User: {query}"""
     
     def _format_sources(self, retrieved_chunks: List) -> List[Dict[str, Any]]:
         sources = []
@@ -130,15 +155,17 @@ Instructions:
             # Send all accumulated logs
             for log_msg in logs_queue:
                 yield ChatResponse(type='log', content=log_msg)
-            
-            if not retrieved_chunks:
-                yield ChatResponse(type='log', content='No relevant information found')
-                yield ChatResponse(type='error', error='No relevant information found')
-                return
 
-            # Build prompt
-            yield ChatResponse(type='log', content='Building prompt with retrieved context...')
-            prompt = self._build_prompt(query, retrieved_chunks, history)
+            # Build prompt — branch on whether retrieval produced anything.
+            # An empty retrieval is not a failure; many questions (meta,
+            # conversational, general-knowledge) are answerable without it.
+            if retrieved_chunks:
+                yield ChatResponse(type='log', content='Building prompt with retrieved context...')
+                prompt = self._build_prompt(query, retrieved_chunks, history)
+            else:
+                yield ChatResponse(type='log', content='No matching transcripts — answering without retrieval')
+                prompt = self._build_prompt_no_context(query, history)
+
             input_tokens = self._estimate_tokens(prompt)
 
             # Generate answer with LLM streaming
@@ -156,11 +183,13 @@ Instructions:
                 full_response += chunk
                 output_tokens = self._estimate_tokens(full_response)
                 yield ChatResponse(type='chunk', content=chunk)
-            
-            # Format sources
-            yield ChatResponse(type='log', content='Preparing source citations...')
-            sources = self._format_sources(retrieved_chunks)
-            yield ChatResponse(type='sources', sources=sources)
+
+            # Emit citations only when retrieval found something.
+            sources: List[Dict[str, Any]] = []
+            if retrieved_chunks:
+                yield ChatResponse(type='log', content='Preparing source citations...')
+                sources = self._format_sources(retrieved_chunks)
+                yield ChatResponse(type='sources', sources=sources)
 
             # Save assistant message
             yield ChatResponse(type='log', content='Saving to database...')
@@ -170,7 +199,7 @@ Instructions:
                 content=full_response,
                 output_tokens=output_tokens,
                 documents_retrieved=len(retrieved_chunks),
-                sources=sources
+                sources=sources if sources else None,
             )
 
             # Send stats
