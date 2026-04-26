@@ -440,8 +440,65 @@
   align-items: flex-end;
 }
 
-.message-textarea {
+.textarea-with-autocomplete {
   flex: 1;
+  position: relative;
+}
+
+.mention-dropdown {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-bottom: 4px;
+  background: white;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(60, 64, 67, 0.15);
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.mention-dropdown-header {
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #5f6368;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+}
+
+.mention-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.1s ease;
+}
+
+.mention-item.selected,
+.mention-item:hover {
+  background: #e8f0fe;
+}
+
+.mention-at {
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+.mention-name {
+  color: #202124;
+}
+
+.message-textarea {
+  width: 100%;
   padding: 8px 12px;
   border: 1px solid #dadce0;
   border-radius: 4px;
@@ -450,6 +507,7 @@
   resize: none;
   transition: border-color 0.2s ease;
   min-height: 32px;
+  box-sizing: border-box;
 }
 
 .message-textarea:focus {
