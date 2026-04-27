@@ -12,6 +12,15 @@ pkill -9 -f "uvicorn.*5000"
 
 sleep 2
 
+# Load project env (AWS_BEARER_TOKEN_BEDROCK, AWS_REGION, ...) so uvicorn's
+# child process sees them and aioboto3 can authenticate against Bedrock.
+if [ -f .env ]; then
+    set -a
+    . ./.env
+    set +a
+    echo "✓ Loaded .env"
+fi
+
 echo "Starting backend with logging to logs/uvicorn.log..."
 echo "View logs with: tail -f logs/uvicorn.log"
 

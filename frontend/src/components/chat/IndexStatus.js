@@ -28,11 +28,10 @@ function IndexStatus() {
       const response = await fetch(`${API_BASE}/chat/index/refresh`, {
         method: 'POST'
       });
-      const data = await response.json();
 
       if (response.ok) {
-        alert(data.message);
-        // Poll status while updating
+        // Poll status while updating (no native alert — the status pill itself
+        // reflects "Indexing: XX%" while the rebuild is in progress).
         const interval = setInterval(async () => {
           await loadStatus();
           if (status && status.status !== 'updating') {

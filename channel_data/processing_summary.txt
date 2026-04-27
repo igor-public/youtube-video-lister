@@ -4,11 +4,11 @@ PROCESSING SUMMARY
 ================================================================================
 
 Channels processed: 5
-Videos found: 128
-Videos skipped (already processed): 105
+Videos found: 101
+Videos skipped (already processed): 82
 Videos processed: 0
 Transcripts created: 0
-Errors: 23
+Errors: 19
 
 
 ✓ CoinBureauTrading
@@ -31,10 +31,11 @@ Errors: 23
 
 ✓ DwarkeshPatel
   Videos found: 50
-  Videos skipped: 48
+  Videos skipped: 47
   Videos processed: 0
   Transcripts: 0
-  Errors: 2
+  Errors: 3
+    - Are we racing China just to become China?: No subtitle files were downloaded
     - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
     - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
 
@@ -49,11 +50,11 @@ Errors: 23
     - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
 
 ✓ BitcoinStrategy
-  Videos found: 43
-  Videos skipped: 35
+  Videos found: 16
+  Videos skipped: 13
   Videos processed: 0
   Transcripts: 0
-  Errors: 8
+  Errors: 3
     - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded
     - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
     - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded

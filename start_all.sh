@@ -21,6 +21,14 @@ else
     echo "✗ Warning: Virtual environment not found. Run: python3 -m venv venv"
 fi
 
+# Load project env (AWS_BEARER_TOKEN_BEDROCK, AWS_REGION, YOUTUBE_API_KEY, ...)
+if [ -f .env ]; then
+    set -a
+    . ./.env
+    set +a
+    echo "✓ Loaded .env"
+fi
+
 # Install backend dependencies if needed
 if [ ! -f "backend/.deps_installed" ]; then
     echo ""
@@ -42,14 +50,14 @@ if [ ! -d "frontend/node_modules" ]; then
     echo "✓ Frontend dependencies installed"
 fi
 
-# Start backend
+# Start backend — run from the project root so `backend` is importable as a
+# package (backend/main.py uses relative imports like `from .rag import ...`).
 echo ""
 echo "🚀 Starting FastAPI backend on port 5000..."
-cd backend
-uvicorn main:app --host 0.0.0.0 --port 5000 --reload --log-level debug 2>&1 | tee ../logs/uvicorn-all.log &
+CONFIG_FILE="${CONFIG_FILE:-backend/config/channels_config.json}" \
+uvicorn backend.main:app --host 0.0.0.0 --port 5000 --reload --log-level debug 2>&1 | tee logs/uvicorn-all.log &
 BACKEND_PID=$!
 echo $BACKEND_PID > /tmp/fastapi.pid
-cd ..
 
 # Wait for backend to start
 sleep 3
