@@ -3,60 +3,72 @@
 PROCESSING SUMMARY
 ================================================================================
 
-Channels processed: 5
-Videos found: 101
-Videos skipped (already processed): 82
-Videos processed: 0
-Transcripts created: 0
-Errors: 19
+Channels processed: 6
+Videos found: 168
+Videos skipped (already processed): 72
+Videos processed: 63
+Transcripts created: 63
+Errors: 33
 
 
 ✓ CoinBureauTrading
-  Videos found: 14
-  Videos skipped: 9
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 5
-    - Episode 3: The Master Indicator Just Flashed THIS… (Don’t Ignore It): No subtitle files were downloaded
-    - Bitcoin Keeps Pumping…But Something Doesn't Add Up | LIVE: No subtitle files were downloaded
-    - Bitcoin Crash Incoming? The Warning Signs Are Here: No subtitle files were downloaded
-
-✓ DataDash
-  Videos found: 7
-  Videos skipped: 6
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 1
-    - 🚨Bitcoin Is About to Shock Everyone 🚨 $100K Move Coming?: No subtitle files were downloaded
-
-✓ DwarkeshPatel
-  Videos found: 50
-  Videos skipped: 47
-  Videos processed: 0
-  Transcripts: 0
-  Errors: 3
-    - Are we racing China just to become China?: No subtitle files were downloaded
-    - Jensen Huang – Will Nvidia’s moat persist?: No subtitle files were downloaded
-    - Darwin's Theory Was Easy. So Why Did It Take So Long? - Michael Nielsen: No subtitle files were downloaded
-
-✓ CoinBureau
-  Videos found: 14
-  Videos skipped: 7
+  Videos found: 12
+  Videos skipped: 5
   Videos processed: 0
   Transcripts: 0
   Errors: 7
-    - Is Strategy a Bitcoin Ponzi Scheme?: No subtitle files were downloaded
-    - The Hidden Playbook: How Insiders Win, Retail Loses: No subtitle files were downloaded
-    - The Private Credit Trap: Next Financial Crisis?: No subtitle files were downloaded
+    - Episode 6: The Master Indicator Is Showing Something BIG...: Failed to download subtitles: ERROR: [youtube] VLm
+    - URGENT: Here’s Why Bitcoin’s Next Move Is So Important: No subtitle files were downloaded
+    - Episode 5: The Master Indicator Is Showing a Big Move…: No subtitle files were downloaded
 
-✓ BitcoinStrategy
-  Videos found: 16
-  Videos skipped: 13
+✓ DataDash
+  Videos found: 7
+  Videos skipped: 2
   Videos processed: 0
   Transcripts: 0
-  Errors: 3
-    - 💀 Are Solana's Best Days Behind?: No subtitle files were downloaded
-    - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
-    - ☢ Zcash Rally: Bull or Trap? ZEC Crypto Analysis: No subtitle files were downloaded
+  Errors: 5
+    - Michael Saylor about to CRASH Bitcoin?: No subtitle files were downloaded
+    - 🚨 Bitcoin Breaking Key Levels While Fear Still Dominates | The $100K Case Just Got Stronger: No subtitle files were downloaded
+    - 🚨 Dogecoin Just Launched 30% | Here's the Setup Nobody's Watching ( DOGE ): No subtitle files were downloaded
+
+✓ DwarkeshPatel
+  Videos found: 50
+  Videos skipped: 44
+  Videos processed: 0
+  Transcripts: 0
+  Errors: 6
+    - Why Hasn't Evolution Eliminated Schizophrenia? - David Reich: No subtitle files were downloaded
+    - Are Humans Getting Genetically Less Studious? - David Reich: No subtitle files were downloaded
+    - What Is the Pentagon's Plan With Anthropic?: No subtitle files were downloaded
+
+✓ CoinBureau
+  Videos found: 14
+  Videos skipped: 10
+  Videos processed: 0
+  Transcripts: 0
+  Errors: 4
+    - Saylor Sells Out: Bitcoin Holders Are NOT Safe: No subtitle files were downloaded
+    - BitMine’s Collapse: Ethereum Holders Beware: No subtitle files were downloaded
+    - JPMorgan’s Desperate Move Exposed: Clarity Act Fallout: No subtitle files were downloaded
+
+✓ BitcoinStrategy
+  Videos found: 50
+  Videos skipped: 11
+  Videos processed: 34
+  Transcripts: 34
+  Errors: 5
+    - ⚠ Spot Bitcoin ETF: $2.7B Inflows!: No subtitle files were downloaded
+    - 🚀 TON Doubled. But Is It Too Late to Buy?: No subtitle files were downloaded
+    - 💀 Future Gold Collapse?: No subtitle files were downloaded
+
+✓ TechWithTim
+  Videos found: 35
+  Videos skipped: 0
+  Videos processed: 29
+  Transcripts: 29
+  Errors: 6
+    - Did you know Python has a built in method to read any file into a clean list? 🔥: No subtitle files were downloaded
+    - Did you know you can flatten any nested list in Python with one line? 🔥: No subtitle files were downloaded
+    - Did you know you can flatten any nested list in Python with one line? 🔥: No subtitle files were downloaded
 
 ================================================================================

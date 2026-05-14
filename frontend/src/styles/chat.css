@@ -1096,13 +1096,14 @@
   text-transform: uppercase !important;
 }
 .mention-item {
-  color: var(--ink) !important;
+  color: var(--amber) !important;
   font-family: var(--mono) !important;
   border-bottom: 1px solid var(--rule) !important;
 }
 .mention-item.selected,
 .mention-item:hover { background: var(--bg-2) !important; color: var(--amber) !important; }
 .mention-at { color: var(--amber) !important; }
+.mention-name { color: var(--amber) !important; }
 
 .message-input-hint { color: var(--ink-mute) !important; font-family: var(--mono2) !important; font-size: 10px !important; }
 .message-input-hint kbd {
